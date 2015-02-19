@@ -452,7 +452,23 @@ namespace steamjazz
                     }
             }
         }
-      
-       
+
+        private void Seivi(Object sender, EventArgs e)
+        {
+            button3.Click += new EventHandler(this.button3_Click);
+            DBConnect komento = new DBConnect();
+            komento.Insert("INSERT INTO info (name, race, background, career, occupation, gender, age, player) VALUES('JP', 'Human', 'Noble', 'Smith', 'Smith', 'Male', '25', 'JP')");
+        }
+
+        private void button3_Click(Object sender, EventArgs e)
+        {
+            DBConnect komento = new DBConnect();
+            komento.Insert("INSERT into info (name, race, background, career, occupation, gender, age, player) VALUES('JP', 'Human', 'Noble', 'Smith', 'Smith', 'Male', '25', 'JP')");
+        }
+        public void tulostus (string e)
+        {
+            richTextBox1.Text = e;
+        
+        }
     }
 }

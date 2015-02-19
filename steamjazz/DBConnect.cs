@@ -52,17 +52,18 @@ namespace steamjazz
                 //The two most common error numbers when connecting are as follows:
                 //0: Cannot connect to server.
                 //1045: Invalid user name and/or password.
+                Form1 formi = new Form1();
                 switch (ex.Number)
                 {
                     case 0:
-                        Console.WriteLine("Cannot connect to server.  Contact administrator");
+                formi.tulostus("Cannot connect to server.  Contact administrator");
                         break;
 
                     case 1045:
-                        Console.WriteLine("Invalid username/password, please try again");
+                        formi.tulostus("Invalid username/password, please try again");
                         break;
                 }
-                //Console.WriteLine(ex.ToString());
+                formi.tulostus(ex.ToString());
                 return false;
             }
         }
