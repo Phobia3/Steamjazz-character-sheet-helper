@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using steamjazz.Properties;
+using System.Reflection;
+
 
 namespace steamjazz
 {
@@ -115,6 +119,7 @@ namespace steamjazz
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string teksti;
             switch (comboBox2.SelectedIndex)
             {
                 case 0:
@@ -354,19 +359,47 @@ namespace steamjazz
                             case 0:
                                 {
                                     // Worker
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.KheimanWorker.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                     using (StreamReader sr = new StreamReader(stream))
+                                     {
+                                         String line = sr.ReadToEnd();
+                                         richTextBox1.Text = line;
+                                     }
                                     break;
                                 }
                             case 1:
                                 {
                                     //warior
-                                    richTextBox1.Text ="";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.KheimanWarior.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
+                                    
                                 }
                             case 2:
                                 {
                                     //clergy
-                                    richTextBox1.Text ="";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.KheimanClergy.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                         }

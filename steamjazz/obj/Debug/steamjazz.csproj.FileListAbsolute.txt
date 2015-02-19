@@ -20,3 +20,9 @@ M:\steamjazz\steamjazz\steamjazz\bin\Debug\steamjazz.exe.lastcodeanalysissucceed
 C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\bin\Debug\steamjazz.exe.config
 C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\obj\Debug\steamjazz.exe
 C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\obj\Debug\steamjazz.pdb
+C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\obj\Debug\steamjazz.Form1.resources
+C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\obj\Debug\steamjazz.Properties.Resources.resources
+C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\obj\Debug\steamjazz.csproj.GenerateResource.Cache
+C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\bin\Debug\steamjazz.exe
+C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\bin\Debug\steamjazz.pdb
+C:\Users\it12\Source\Repos\Steamjazz-character-sheet-helper\steamjazz\obj\Debug\steamjazz.csprojResolveAssemblyReference.cache
