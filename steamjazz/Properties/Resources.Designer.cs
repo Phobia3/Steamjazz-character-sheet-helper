@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace steamjazz.Properties
-{
-
-
+namespace steamjazz.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,105 @@ namespace steamjazz.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("steamjazz.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INT +1
+        ///Initial skill ranks: 
+        ///Knowledge: Kheiman religion 2, Diplomacy
+        ///1, Language: Kheiman 1.
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Alchemy, Art (any), Clockwork, Diplomacy, Etiquette, First
+        ///Aid, Knowledge (any), Law (Kheiman), Leadership,
+        ///Mechanics, Medicine and surgery, Persuade, Teaching, or to
+        ///improve the Starting wealth level.
+        ///
+        ///The children with intellectual tendencies, high social
+        ///intelligence and skills in science are chosen to the Kheiman
+        ///clergy class. All the scientifi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KheimanClergy {
+            get {
+                return ResourceManager.GetString("KheimanClergy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STR +1
+        ///Initial skill ranks: 
+        ///Melee (Powerful) 2, Knowledge (Kheiman
+        ///religion) 1, Martial Arts (Kheiman spear) 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Athletics, Block, Brawl, Craft (Blacksmithing), Gunsmithing,
+        ///Law (Kheiman), Leadership, Listen, Long Guns, Martial Arts
+        ///(Kheiman spear), Ride, Spot, Survival, Throw, Melee
+        ///(Powerful).
+        ///
+        ///
+        ///The people chosen for warrior class are those whose physical
+        ///abilities, courage and ability to follow orders stood out during
+        ///childhood. The trai [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KheimanWarior {
+            get {
+                return ResourceManager.GetString("KheimanWarior", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +1
+        ///Initial skill ranks: 
+        ///Craft or Profession (any) 2, Knowledge
+        ///(Kheiman religion) 1, Art (any) 1
+        ///15 CP can be used to buy ranks in the following skills: Art
+        ///(any), Athletics, Bargain, Brawl, Craft (any), Dodge,
+        ///Mechanics, Perform (Dancing), Profession (any), Survival,
+        ///Track.
+        ///
+        ///The most populous class in Kheiman is the worker class.
+        ///Workers are the manual labourers of Kheiman: farmers,
+        ///craftsmen, miners and factory workers, to mention but a few.
+        ///Both the physically strong and the nimble hande [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KheimanWorker {
+            get {
+                return ResourceManager.GetString("KheimanWorker", resourceCulture);
             }
         }
     }
