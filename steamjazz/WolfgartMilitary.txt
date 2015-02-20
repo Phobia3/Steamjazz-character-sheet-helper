@@ -1,0 +1,61 @@
+﻿STR +1
+Initial skill ranks: 
+Law: Wulffgart 2, Etiquette 1, Intimidate 1.
+10 CP can be used to buy ranks in the following skills: Animal
+Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &
+Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),
+Leadership, Long Guns, Martial Arts (Wolfbite), Melee
+(Powerful), Ride, Stealth, Strategy/Tactics.
+
+In the eyes of the current rulers of Wulffgart, the military is the
+most honoured class of the nation. Military leaders are currently
+holding the reins of Wulffgartian politics, but as with all armies,
+the rank-and-file vastly outnumber those with rank in the
+military class of Wulffgart. The veterans of the 80 Year War are
+held in high esteem, and everyone with the skills and the will to
+serve their country in military service are enlisted into the army
+into a position that reflects their abilities. This makes the army
+of Wulffgart one of the largest in the whole Erthair.
+The military is also responsible for guard duties and law
+enforcement in Wulffgart. All positions of important public
+servants are held by military officers, including in the courts of
+justice. Even schools are organised by the military, and most
+teachers have a military background. The nation offers strong
+supports to military families, trying to ensure they receive
+better education than children of the worker families.
+A military background means better income, better reputation
+and better access to important jobs as public servants or
+politicians. Most military families need not worry about their
+basic needs, and some, especially the families of high ranking
+military officers, even lead rather luxurious lives. However, not
+everyone in Wulffgart respects their authority and standing
+equally. While most of the common folk don’t mind the
+situation, many from the old Wulffgartian upper class resent the
+new regime.
+Being born to a military family in Wulffgart usually means
+strict rules and orderly upbringing. Their children don’t have
+much personal freedom. They learn to follow orders and are
+taught the laws and customs of modern Wulffgart at a young
+age in the militant environment, with plenty of opportunities for
+learning combat skills. Of course, there are some who find the
+idea of a restricted and orderly life pursuing a military career
+unattractive, but those who leave their military backgrounds to
+choose another path without good reason are frowned upon in
+Wulffgartian society.
+
+Adventuring as Military Wulffgartian:
+A Wulffgartian soldier can end up adventuring as part of her
+service. As the military is responsible for a multitude of tasks,
+soldiers are usually the ones sent out as exploration parties,
+spies or simply to guard something or someone. Others have
+deserted, often finding work as mercenaries in other countries.
+
+Suggested careers: 
+Assassin, Detective, Gunner, Inventor, Law
+Enforcer, Lawyer, Martial Artist, Officer, Politician, Ranger,
+Scholar, Scout, Soldier, Spy
+
+Typical names: People of both worker and upper classes can
+have a Wulffgartian military background, so their names come
+from both classes as well. See the typical name lists for Worker
+class and Upper class
