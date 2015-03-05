@@ -55,7 +55,6 @@ namespace steamjazz
                     {
                         //Wolfgart
                         combobox3init("Military","Worker","Upper Class");
-                        combobox5init("");
                         
                         break;
                     }
@@ -94,33 +93,8 @@ namespace steamjazz
         }
 
 
-        private void combobox5init(string militarybg)
-        {
-            //Valmistellaan comboBox5 vastaanottamaan eri kansalaisuuksien luokkamahdollisuudet
-            comboBox5.Items.Clear();
-            string[] mili = new string[] { militarybg };
-            comboBox5.Items.AddRange(mili);
-            comboBox5.Visible = true;
-            comboBox5.SelectedIndex = 0;
-        }
-     /*   private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // riippuen kansalaisuudesta, luokkavaihtoehdot vaihtuvat. Valinnoista riippuen label5 saa eri tekstin. nuthing more to see here - moving along
-            int militarycase = comboBox5.SelectedIndex;
-            switch (militarycase)
-            {
-                case 0:
-                    {
-                        //Military
-                        combobox5init("");
-                        break;
-                    }
-                default:
-                    comboBox5.Visible = false;
-                    break;
-            }
-        }
-       */ 
+       
+        
         private void InitializeComboBox()
         {
             
