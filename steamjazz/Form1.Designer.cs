@@ -30,7 +30,10 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.Button();
+=======
+>>>>>>> master
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -71,6 +74,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
+<<<<<<< HEAD
             this.button3.Size = new System.Drawing.Size(111, 23);
             this.button3.TabIndex = 0;
             this.button3.Text = "New Character";
@@ -86,6 +90,14 @@
             this.button1.Text = "Save Character";
             this.button1.UseVisualStyleBackColor = true;
             // 
+=======
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "New";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+>>>>>>> master
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.label3);
@@ -328,6 +340,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button3;
+<<<<<<< HEAD
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
@@ -339,3 +352,8 @@
     }
 }
 
+=======
+    }
+}
+
+>>>>>>> master
