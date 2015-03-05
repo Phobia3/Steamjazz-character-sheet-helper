@@ -55,6 +55,7 @@ namespace steamjazz
                     {
                         //Wolfgart
                         combobox3init("Military","Worker","Upper Class");
+                        combobox5init("");
                         
                         break;
                     }
@@ -91,9 +92,38 @@ namespace steamjazz
                     break;
             }
         }
+
+
+        private void combobox5init(string militarybg)
+        {
+            //Valmistellaan comboBox5 vastaanottamaan eri kansalaisuuksien luokkamahdollisuudet
+            comboBox5.Items.Clear();
+            string[] mili = new string[] { militarybg };
+            comboBox5.Items.AddRange(mili);
+            comboBox5.Visible = true;
+            comboBox5.SelectedIndex = 0;
+        }
+     /*   private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // riippuen kansalaisuudesta, luokkavaihtoehdot vaihtuvat. Valinnoista riippuen label5 saa eri tekstin. nuthing more to see here - moving along
+            int militarycase = comboBox5.SelectedIndex;
+            switch (militarycase)
+            {
+                case 0:
+                    {
+                        //Military
+                        combobox5init("");
+                        break;
+                    }
+                default:
+                    comboBox5.Visible = false;
+                    break;
+            }
+        }
+       */ 
         private void InitializeComboBox()
         {
-            // Combobox1 info 
+            
             string[] race = new string[]{"Human","Dracosaurian","Basic","Sylph","Kharzul Dwarf"
             ,"Beastfolk","Goliath","Butler","Copper","Craftsman","Doll","Heavy Worker"};
             comboBox1.Items.AddRange(race);
@@ -110,6 +140,11 @@ namespace steamjazz
                 "Merchant","Musketeer","Officer","Personal Entertainer","Physician","Pirate","Politician","Ranger","Rogue","Sailor","Scholar",
                 "Scout","Servant","Soldier","Spy","Warrior","Wyrodian Priest"};
             comboBox4.Items.AddRange(career);
+            //
+            // Combobox5 info
+            //
+            string[] mili = new string[] { "Deserter", "Military service", "Non-military service" };
+            comboBox5.Items.AddRange(mili);
 
         }
 
@@ -453,21 +488,21 @@ namespace steamjazz
             }
         }
 
-        private void Seivi(Object sender, EventArgs e)
-        {
-            button3.Click += new EventHandler(this.button3_Click);
-            DBConnect komento = new DBConnect();
-            komento.Insert("INSERT INTO info (name, race, background, career, occupation, gender, age, player) VALUES('JP', 'Human', 'Noble', 'Smith', 'Smith', 'Male', '25', 'JP')");
-        }
-
+        
         private void button3_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
-            komento.Insert("INSERT into info (name, race, background, career, occupation, gender, age, player) VALUES('JP', 'Human', 'Noble', 'Smith', 'Smith', 'Male', '25', 'JP')");
+            komento.Insert("INSERT into info (name) VALUES('')");
         }
+
+       // private void button1_Click(Object sender, EventArgs e)
+       // {
+       //     DBConnect tallenna = new DBConnect();
+       //     tallenna.Insert("UPDATE info (name, race, background, career, occupation, gender, age, player) VALUES ('', '', '', '', '', '', '', '') WHERE (name='')");
+       // }
         public void tulostus (string e)
         {
-            richTextBox1.Text = e;
+            richTextBox1.Text= e;
         
         }
     }

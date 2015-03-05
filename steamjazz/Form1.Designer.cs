@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,10 +42,16 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
@@ -52,11 +60,31 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(884, 65);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(111, 23);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "New Character";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(120, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Save Character";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel2
             // 
@@ -70,6 +98,13 @@
             this.flowLayoutPanel2.Controls.Add(this.comboBox5);
             this.flowLayoutPanel2.Controls.Add(this.label4);
             this.flowLayoutPanel2.Controls.Add(this.comboBox4);
+            this.flowLayoutPanel2.Controls.Add(this.label5);
+            this.flowLayoutPanel2.Controls.Add(this.textBox2);
+            this.flowLayoutPanel2.Controls.Add(this.label6);
+            this.flowLayoutPanel2.Controls.Add(this.textBox3);
+            this.flowLayoutPanel2.Controls.Add(this.label7);
+            this.flowLayoutPanel2.Controls.Add(this.radioButton1);
+            this.flowLayoutPanel2.Controls.Add(this.radioButton2);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 65);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -152,9 +187,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Occupation";
+            this.label4.Text = "Career";
             // 
             // comboBox4
             // 
@@ -163,6 +198,69 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(183, 21);
             this.comboBox4.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Age";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(3, 229);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(183, 20);
+            this.textBox2.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 252);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Character Name";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(3, 268);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(183, 20);
+            this.textBox3.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 291);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(25, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Sex";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(34, 294);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(48, 17);
+            this.radioButton1.TabIndex = 15;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(88, 294);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(59, 17);
+            this.radioButton2.TabIndex = 16;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel4
             // 
@@ -192,15 +290,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(379, 493);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "New";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -239,6 +328,14 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
 

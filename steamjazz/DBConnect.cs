@@ -90,7 +90,7 @@ namespace steamjazz
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(komento, yhteys);
-
+                
                 //Execute command
                 cmd.ExecuteNonQuery();
 
@@ -98,6 +98,7 @@ namespace steamjazz
                 this.CloseConnection();
             }
         }
+        
         /*
         //Update statement
         public void Update()
