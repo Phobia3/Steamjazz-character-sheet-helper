@@ -118,6 +118,84 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Automatons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Automatons.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Basic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Basic.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="beastfolk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\beastfolk.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BeastfolkBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\BeastfolkBack.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Butler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Butler.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Career" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Career.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Copper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Copper.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Craftsman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Craftsman.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CrimsonCommoner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CrimsonCommoner.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CrimsonMilitary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CrimsonMilitary.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CrimsonMonk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\CrimsonMonk.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Doll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Doll.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Dracosaurian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Dracosaurian.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DracosaurianBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\DracosaurianBack.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FreeIslandFolk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FreeIslandFolk.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FreePelethok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FreePelethok.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FreePirate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\FreePirate.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Goliath" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Goliath.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GoliathBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\GoliathBack.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HanseburgMerchant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\HanseburgMerchant.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HanseburgNoble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\HanseburgNoble.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HanseburgWorker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\HanseburgWorker.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HeavyWorker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\HeavyWorker.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Human" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Human.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="KharzulDwarf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\KharzulDwarf.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="KharzulDwarfBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\KharzulDwarfBack.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="KheimanClergy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\KheimanClergy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
@@ -126,5 +204,17 @@
   </data>
   <data name="KheimanWorker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\KheimanWorker.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="New_Text_Document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\New Text Document.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Sylph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sylph.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SylphBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\SylphBack.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="WolffgartService" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\WolffgartService.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

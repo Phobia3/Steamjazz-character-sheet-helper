@@ -1,0 +1,12 @@
+Careers represent your character’s profession and the skills
+required to be successful in it. Each career contains 12 skills
+that can be considered essential to the career. You must spend
+half of your starting CP to buy ranks in these Career Skills at
+character creation. You do not have to purchase ranks in all
+career skills if you think your character is not going to need all
+of them.
+Career names do not necessarily represent the exact profession
+of a character; instead, they are broader descriptors for a group
+of professions with a similar selection of skills. Most careers
+list a number of actual occupations that can be represented by
+the career’s skill selection in their description.

@@ -506,7 +506,38 @@ namespace steamjazz
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            comboBox2.Items.Clear();
+            if (comboBox1.SelectedIndex == 0)
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                comboBox2.Items.AddRange(background);
+            }
+            if (comboBox1.SelectedIndex == 1)
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Dracosaurian" };
+                comboBox2.Items.AddRange(background);
+            }
+            if (comboBox1.SelectedIndex == 3)
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Sylph" };
+                comboBox2.Items.AddRange(background);
+            }
+            if (comboBox1.SelectedIndex == 4)
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Kharzul Dwarf" };
+                comboBox2.Items.AddRange(background);
+            }
+            if (comboBox1.SelectedIndex == 5)
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Beastfolk" };
+                comboBox2.Items.AddRange(background);
+            }
+            if (comboBox1.SelectedIndex == 6)
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Goliath" };
+                comboBox2.Items.AddRange(background);
+            }
+            
         }
         
         private void combobox3init(string eka, string toka, string kolme)
@@ -566,6 +597,42 @@ namespace steamjazz
                        
                         break;
                     }
+                case 6:
+                    {
+                        comboBox3.Visible = true;
+                        comboBox3.SelectedIndex = 0;
+                        switch(comboBox1.SelectedIndex)
+                        {
+                            //13456
+                            case 1:
+                                {
+                                    comboBox3.Items.Add("Dracosaurian");
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    comboBox3.Items.Add("Sylph");
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    comboBox3.Items.Add("Kharzul Dwarf");
+                                    break;
+                                }
+                            case 5:
+                                {
+                                    comboBox3.Items.Add("Beastfolk");
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    comboBox3.Items.Add("Goliath");
+                                    break;
+                                }
+
+                        }
+                        break;
+                    }
                 default:
                     comboBox3.Visible = false;
                     break;
@@ -578,10 +645,12 @@ namespace steamjazz
             ,"Beastfolk","Goliath","Butler","Copper","Craftsman","Doll","Heavy Worker"};
             comboBox1.Items.AddRange(race);
             //
-            //Combobox2 info
+            //Combobox2 info Default
             //
-            string[] background = new string[]{"Victoria","Wolfgart","Kheiman Empire","Hanseburg","Crimson Empire","Free Islands"};
+            string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
             comboBox2.Items.AddRange(background);
+
+            
             //
             //Combobox4 info
             //
@@ -595,7 +664,7 @@ namespace steamjazz
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string teksti;
+            //string teksti;
             switch (comboBox2.SelectedIndex)
             {
                 case 0:
@@ -729,99 +798,49 @@ namespace steamjazz
                             case 0:
                                 {
                                     // Military
-                                   
-                                    richTextBox1.Text ="STR +1\r\n"+
-                                                    "Initial skill ranks:\r\n Law: Wulffgart 2, Etiquette 1, Intimidate 1."+
-                                                    "10 CP can be used to buy ranks in the following skills: Animal"+
-                                                    "Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &"+
-                                                    "Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),"+
-                                                    "Leadership, Long Guns, Martial Arts (Wolfbite), Melee"+
-                                                    "(Powerful), Ride, Stealth, Strategy/Tactics.\r\n\r\n"+
-                                                    "Adventuring as Military Wulffgartian:\r\n"+
-                                                    "A Wulffgartian soldier can end up adventuring as part of her"+
-                                                    "service. As the military is responsible for a multitude of tasks,"+
-                                                    "soldiers are usually the ones sent out as exploration parties,"+
-                                                    "spies or simply to guard something or someone. Others have"+
-                                                    "deserted, often finding work as mercenaries in other countries.\r\n\r\n"+
-                                                    "Suggested careers:\r\n Assassin, Detective, Gunner, Inventor, Law"+
-                                                    "Enforcer, Lawyer, Martial Artist, Officer, Politician, Ranger,"+
-                                                    "Scholar, Scout, Soldier, Spy"+
-                                                    "Typical names:\r\n"+
-                                                    "People of both worker and upper classes can"+
-                                                    "have a Wulffgartian military background, so their names come"+
-                                                    "from both classes as well.\r\n"+
-                                                    "Common Wulffgartian first names for men include Alexei,"+
-                                                    "Boris, Franco, Herman, Reinhart and Sergei, and for women"+
-                                                    "Alina, Carla, Elise, Helene, Karina and Svenja. Common"+
-                                                    "Wulffgartian surnames include Ackermann, Becker, Krupin and"+
-                                                    "Petrov.\r\n"+
-                                                    "Traditional Wulffgartian upper class names are somewhat"+
-                                                    "different from those of the commoners and are usually more"+
-                                                    "sophisticated. Typical male first names include Andrei,"+
-                                                    "Konstantin, Leonid, Nikolaus, Siegfried, Stanislav and"+
-                                                    "Wolfgang and female first names Anastasia, Bertilda, Gerlinde,"+
-                                                    "Yekaterina, Margareta and Yelena. Typical Wulffgartian upper"+
-                                                    "class surnames include Ivanov, Diefenback, Kirchner and"+
-                                                    "Vasilyev.";
+
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.WolfgartMilitary.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     
                                     break;
                                 }
                             case 1:
                                 {
                                     //worker
-                                    
-                                    richTextBox1.Text = "CON +1\r\n" +
-                                                    "Initial skill ranks: Craft (Gunsmithing 2), Craft (any) 1," +
-                                                    "Mechanics 1\r\n" +
-                                                    "10 CP can be used to buy ranks in the following skills: Animal" +
-                                                    "Handling, Bargain, Brawl, Clockwork, Cooking, Craft (any)," +
-                                                    "Drive, First Aid, Locksmithing, Mechanics, Profession (any)," +
-                                                    "Ride.\r\n\r\n" +
-                                                    "Adventuring as Wulffgartian Worker:\r\n" +
-                                                    "Wulffgartian workers don’t usually have excess time for" +
-                                                    "adventuring on the side of their daily work, so usually only" +
-                                                    "those who are willing to leave their work behind start a new" +
-                                                    "career as adventurers. They might be looking forward to a" +
-                                                    "military career, riches or new experiences, or they may just be" +
-                                                    "in need of a change of scenery from their drab daily routines.\r\n\r\n" +
-                                                    "Suggested careers: Banker, Craftsman, Hunter, Journalist," +
-                                                    "Mechanic, Sailor, Scholar, Servant\r\n\r\n" +
-                                                    "Typical names:\r\n" +
-                                                    "Common Wulffgartian first names for men include Alexei," +
-                                                    "Boris, Franco, Herman, Reinhart and Sergei, and for women" +
-                                                    "Alina, Carla, Elise, Helene, Karina and Svenja. Common" +
-                                                    "Wulffgartian surnames include Ackermann, Becker, Krupin and" +
-                                                    "Petrov. ";
+
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.WolfgartWorker.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                             case 2:
                                 {
                                     // upper class
-                                    richTextBox1.Text = "CHA +1\r\n" +
-                                                    "Initial skill ranks:\r\n Etiquette 2, Diplomacy 1, Language: Wulffgartian 1" +
-                                                    "10 CP can be used to buy ranks in the following skills:\r\n Charm," +
-                                                    "Diplomacy, Etiquette, Intimidate, Language (Wulffgartian)," +
-                                                    "Law (Wulffgart), Long Guns, Perform (Dancing), Perform" +
-                                                    "(Oratory), Ride, or to improve the Starting wealth level or to" +
-                                                    "purchase the Noble, Wulffgartian advantage.\r\n\r\n" +
-                                                    "Adventuring as Upper Class Wulffgartian:\r\n" +
-                                                    "Some upper class Wulffgartians choose to become adventurers." +
-                                                    "To others, the choice was made for them. Those still living in" +
-                                                    "Wulffgart and at least pretending to bow to the new rulers find" +
-                                                    "plenty of opportunities to serve the army, and some who are" +
-                                                    "well connected can find business abroad. Many of those who" +
-                                                    "fled the country during and after the coup have taken up work" +
-                                                    "as mercenaries and explorers for their living.\r\n\r\n" +
-                                                    "Suggested careers:\r\n Assassin, Banker, Con Artist, Inventor," +
-                                                    "Lawyer, Mercenary, Merchant, Officer, Politician, Scholar, Spy\r\n\r\n" +
-                                                    "Typical names:\r\n" +
-                                                    "Traditional Wulffgartian upper class names are somewhat" +
-                                                    "different from those of the commoners and are usually more" +
-                                                    "sophisticated. Typical male first names include Andrei," +
-                                                    "Konstantin, Leonid, Nikolaus, Siegfried, Stanislav and" +
-                                                    "Wolfgang and female first names Anastasia, Bertilda, Gerlinde," +
-                                                    "Yekaterina, Margareta and Yelena. Typical Wulffgartian upper" +
-                                                    "class surnames include Ivanov, Diefenback, Kirchner and Vasilyev";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.WolfgartUpper.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                         }
@@ -889,19 +908,46 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Worker
-                                    richTextBox1.Text ="";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.HanseburgWorker.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                             case 1:
                                 {
                                     //merchant
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.HanseburgMerchant.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                             case 2:
                                 {
                                     //noble
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.HanseburgNoble.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                         }
@@ -915,19 +961,46 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Monk
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.CrimsonCommoner.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                             case 1:
                                 {
                                     //military
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.CrimsonMilitary.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                             case 2:
                                 {
                                     //commoner
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.CrimsonMonk.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                         }
@@ -941,22 +1014,113 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Pelethok
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.FreePelethok.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                             case 1:
                                 {
                                     //pirate
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.FreePirate.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                             case 2:
                                 {
                                     //island folk
-                                    richTextBox1.Text = "";
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.FreeIslandFolk.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
                                     break;
                                 }
                         }
+                        //"Dracosaurian","Basic","Sylph","Kharzul Dwarf" ,"Beastfolk","Goliath"
+                        break;
+                    }
+                case 6:
+                    {
+                        //free islands
+                        switch (comboBox1.SelectedIndex)
+                        {
+                            case 1:
+                                {
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.DracosaurianBack.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.SylphBack.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.KharzulDwarfBack.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
+                                    break;
+                                }
+                            case 5:
+                                {
+                                    comboBox3.Items.Add("Beastfolk");
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    comboBox3.Items.Add("Goliath");
+                                    break;
+                                }
+                                 
+                        }
+                        
+                        //"Dracosaurian","Basic","Sylph","Kharzul Dwarf" ,"Beastfolk","Goliath"
                         break;
                     }
             }

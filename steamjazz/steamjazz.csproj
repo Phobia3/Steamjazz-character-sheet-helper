@@ -117,6 +117,101 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WolfgartMilitary.txt" />
+    <EmbeddedResource Include="WolfgartWorker.txt" />
+    <EmbeddedResource Include="WolfgartUpper.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Craftsman.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrimsonCommoner.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrimsonMilitary.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrimsonMonk.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Doll.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dracosaurian.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DracosaurianBack.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FreeIslandFolk.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FreePelethok.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FreePirate.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Goliath.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GoliathBack.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HanseburgMerchant.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HanseburgNoble.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HanseburgWorker.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HeavyWorker.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Human.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="KharzulDwarf.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="KharzulDwarfBack.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="New Text Document.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sylph.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SylphBack.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WolffgartService.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Automatons.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Basic.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="beastfolk.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BeastfolkBack.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Butler.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Career.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Copper.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
