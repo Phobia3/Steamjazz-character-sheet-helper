@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace steamjazz.Properties
-{
-
-
+namespace steamjazz.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,710 @@ namespace steamjazz.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("steamjazz.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatons in SteamJazz are divided into two distinct groups.
+        ///Some automatons are so simple that sorting boxes into piles
+        ///causes them difficulty, whereas other automatons have no
+        ///trouble making independent decisions while adventuring, What
+        ///makes these two groups apart is the CIC, or the Crystal
+        ///Intelligence Clockwork. A CIC is a small intelligence
+        ///clockwork mechanism designed to be added into any kind of
+        ///automaton for greater intelligence and more independent action.
+        ///It is possible for any kind of a [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Automatons {
+            get {
+                return ResourceManager.GetString("Automatons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STR +1, CON +1, EMP -1
+        ///Basic automaton packages:
+        ///
+        ///Assistant / Servant
+        ///Initial skill ranks: Profession (any) 2, Diplomacy 1,
+        ///Knowledge: Mathematics 1
+        ///10 CP can be used to buy ranks in the following skills:
+        ///Appraise, Bargain, Clockwork, Craft (any), Diplomacy,
+        ///Knowledge (Mathematics), Persuade, Profession (any).
+        ///Guard
+        ///Initial skill ranks: Melee (Balanced) 2, Listen 1, Spot 1
+        ///10 CP can be used to buy ranks in the following skills:
+        ///Athletics, Block, Brawl, Clockwork, Handguns, Intimidate,
+        ///Listen, M [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Basic {
+            get {
+                return ResourceManager.GetString("Basic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EMP -1, CHA -2, allocate +2 to one of the following attributes:
+        ///STR, CON, DEX, REF, WIT and +1 to another attribute from
+        ///the list.
+        ///Animal Handling +1
+        ///Advantage: Alertness
+        ///Advantage: Keen Sense of Smell
+        ///Must purchase at least one Advantage: Natural Weapon.
+        ///Must purchase at least one of the following advantages:
+        ///Hardened Skin, Low-light Vision, Keen Hearing and Keen
+        ///Sense of Sight.
+        ///
+        ///Instinctive behavior: All beastfolk react instinctively to sudden,
+        ///unexpected loud noises and sudden, unexpected mov [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string beastfolk {
+            get {
+                return ResourceManager.GetString("beastfolk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +1
+        ///Initial skill ranks: Survival 2, Animal Handling 1, Brawl 1
+        ///15 CP can be used to buy ranks in the following skills: Animal
+        ///Handling, Archery, Athletics, Brawl, Climb, First Aid,
+        ///Knowledge (Astrology), Knowledge (Folklore), Knowledge
+        ///(Zoology), Listen, Melee (Balanced), Melee (Powerful), Sense
+        ///Motive, Spot, Stealth, Survival, Track, or to the Animal
+        ///Empathy advantage.
+        ///
+        ///
+        ///The beastfolk originate from the Shadewood Forest in Victora,
+        ///and this background represents those beastfolk who have been [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BeastfolkBack {
+            get {
+                return ResourceManager.GetString("BeastfolkBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 15CP
+        ///
+        ///STR -1, CON -1, INT +1, CHA +1, EMP +1
+        ///Advantage: Bilingual
+        ///Initial skill ranks: Etiquette 3, Cooking 2, Diplomacy 2,
+        ///Profession: Waiter 2
+        ///10 CP can be used to buy ranks in the following skills:
+        ///Clockwork, Cooking, Diplomacy, Etiquette, First Aid,
+        ///Language (any), Law (any), Leadership, Listen, Persuade,
+        ///Search, Sense Motive, Spot.
+        ///
+        ///Models:
+        ///Colman Inc CCB-02 Butler, commonly referred to as &quot;Charles&quot;
+        ///or &quot;Charles B-02&quot;
+        ///Colman Inc CCB-03 Maid, commonly referred to as
+        ///“Charlott [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Butler {
+            get {
+                return ResourceManager.GetString("Butler", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Careers represent your character’s profession and the skills
+        ///required to be successful in it. Each career contains 12 skills
+        ///that can be considered essential to the career. You must spend
+        ///half of your starting CP to buy ranks in these Career Skills at
+        ///character creation. You do not have to purchase ranks in all
+        ///career skills if you think your character is not going to need all
+        ///of them.
+        ///Career names do not necessarily represent the exact profession
+        ///of a character; instead, they are broader descriptor [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Career {
+            get {
+                return ResourceManager.GetString("Career", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 5CP
+        ///
+        ///STR +2, CON +2, CHA -1, EMP -2
+        ///Upgrade: Medium Plating, AV 4
+        ///Initial skill ranks: Melee (Balanced) 3, Law (local) 2,
+        ///Intimidate 1
+        ///10 CP can be used to buy ranks in the following skills:
+        ///Athletics, Clockwork, Drive, Handguns, Intimidate, Law (any),
+        ///Melee (Balanced), Persuade, Search, Spot, Track.
+        ///Copper automatons cannot be created or upgraded with the
+        ///Humanlike skin advantage.
+        ///
+        ///Models:
+        ///Rushworth OM-86M (officer model, male)
+        ///Rushworth OM-86F (officer model, female)
+        ///
+        ///Copper  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Copper {
+            get {
+                return ResourceManager.GetString("Copper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 5CP
+        ///
+        ///STR +1, CON +1, DEX +1, CHA -1, EMP -1
+        ///Initial skill ranks: Craft (any) 2, First Aid 1, Knowledge:
+        ///Mathematics 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Alchemy, Clockwork, Craft (any), Drive, Explosives &amp;
+        ///Demolitions, First Aid, Knowledge (Mathematics),
+        ///Locksmithing, Mechanics, Melee (Balanced), Melee
+        ///(Powerful), Steam Engineering.
+        ///
+        ///Craftsman automatons have been designed by craftsmen to aid
+        ///craftsmen. They are equipped with mechanisms and functions
+        ///honed for [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Craftsman {
+            get {
+                return ResourceManager.GetString("Craftsman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +1
+        ///
+        ///Initial skill ranks: Bargain 2, Animal Handling 1, Profession
+        ///(farmer) 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Animal handling, Bargain, Brawl, Cooking, Craft (any), Listen,
+        ///Melee (Balanced), Melee (Powerful), Profession (farmer), Spot,
+        ///Survival, Track
+        ///
+        ///
+        ///Most people in the Crimson Empire are labourers, craftsmen
+        ///and farmers living in small villages and the handful of bigger
+        ///cities in the Empire. Their lifestyle is called the Way of the
+        ///Land, and their work forms the ba [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CrimsonCommoner {
+            get {
+                return ResourceManager.GetString("CrimsonCommoner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DEX +1
+        ///Initial skill ranks: Melee (Balanced) 2, Dodge 1, Law
+        ///(Crimson) 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Archery, Athletics, Bargain, Brawl, Craft (Blacksmithing),
+        ///Diplomacy, Dodge, Intimidate, Law (Crimson), Listen, Martial
+        ///Art (one from Crimson), Melee (Balanced), Melee (Powerful),
+        ///Ride, Spot, Strategy/Tactics
+        ///
+        ///
+        ///The Way of the White Dragon consists of the warriors of the
+        ///Crimson Empire and their families. Most individual followers
+        ///of this Way are common soldiers, but th [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CrimsonMilitary {
+            get {
+                return ResourceManager.GetString("CrimsonMilitary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 20 CP
+        ///
+        ///INT +1
+        ///Initial skill ranks: Law (Crimson) 3, Brawl 2, First aid 2,
+        ///Martial Art (any Crimson) 2, Teaching 2, Clockwork 1, Dodge
+        ///1
+        ///10 CP can be used to buy ranks in the following skills:
+        ///Athletics, Bargain, Brawl, Clockwork, Dodge, Diplomacy, First
+        ///aid, Knowledge (any), Law (Crimson), Listen,Persuade, Martial
+        ///art (one from Crimson), Melee (Balanced), Melee (Finesse),
+        ///Melee (Powerful), Sense motive, Survival, Teaching,
+        ///
+        ///All characters of the Way of the Black Dragon have the Soc [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CrimsonMonk {
+            get {
+                return ResourceManager.GetString("CrimsonMonk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 20 CP
+        ///
+        ///STR -1, CON -1, CHA +2, EMP +1
+        ///Upgrade: Humanlike Skin with the Beautiful / Handsome
+        ///upgrade already included.
+        ///
+        ///Initial skill ranks: Charm 3, Persuade 2, Athletics 1
+        ///10 CP can be used to buy ranks in the following skills:
+        ///Athletics, Bluff, Charm, Diplomacy, Dodge, Etiquette, First
+        ///Aid, Perform (Acting), Perform (Dancing), Persuade, Sense
+        ///Motive.
+        ///
+        ///Models:
+        ///Rushworth CM-54M (civilian model, male)
+        ///Rushworth CM-54F (civilian model, female)
+        ///Colman Inc CLD-04M Doll, commonly ref [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Doll {
+            get {
+                return ResourceManager.GetString("Doll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CHA -2, REF +1; allocate +1 to one of the following: STR,
+        ///CON or DEX
+        ///Cold-blooded: The character’s body cannot control her body
+        ///temperature automatically, but needs external means to keep it
+        ///on optimised level. In very cold temperatures (around and
+        ///under -10°C if the character has clothing to keep himself
+        ///warm), she enters a comatose state. In cool temperatures she
+        ///acts sluggishly, whereas in warm temperatures she is nimbler
+        ///than normally. GM can grant a dracosaurian character a
+        ///modifier between -2 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Dracosaurian {
+            get {
+                return ResourceManager.GetString("Dracosaurian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INT +1
+        ///Initial skill ranks: Survival 2, First Aid 1, Swim 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Alchemy, Animal Handling, Climb, First Aid, Knowledge
+        ///(Botany), Knowledge (Mathematics), Knowledge (Zoology),
+        ///Language (Kheiman), Language (Victoran), Martial art
+        ///(Kheiman spear), Medicine and surgery, Melee (Powerful),
+        ///Sailing, Survival, Swim, Teaching, or to the Bilingual and
+        ///Animal Empathy advantages.
+        ///
+        ///The island of Pelethok was formerly part of Kheiman, but when
+        ///the Free Islands [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DracosaurianBack {
+            get {
+                return ResourceManager.GetString("DracosaurianBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON, REF, WIT or EMP +1
+        ///Initial skill ranks: Bargain 1, Diplomacy 1, Sailing 1, Sense
+        ///Motive 1, Swim 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Appraise, Bargain, Bluff, Brawl, Craft (any), Diplomacy,
+        ///Navigation, Melee (any), Perform (Dancing), Sailing, Sailing
+        ///(Airship), Sense Motive, Spot, Survival, Swim.
+        ///
+        ///
+        ///The Free Islands consists of a large group of islands, and each
+        ///island has its own traditions and customs. The Free Islands is a
+        ///rather young nation, and the only democratic o [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string FreeIslandFolk {
+            get {
+                return ResourceManager.GetString("FreeIslandFolk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Although this island is dominated by Dracosaurians, some
+        ///humans inhabit the island as well. A human character with this
+        ///background uses the rules for the Dracosaurian mutant
+        ///background as her background, with the exception that humans
+        ///cannot take the Animal Empathy advantage.        ///.
+        /// </summary>
+        internal static string FreePelethok {
+            get {
+                return ResourceManager.GetString("FreePelethok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to REF +1
+        ///Initial skill ranks: Sailing or Sailing (Airship) 2, Bluff 1, Brawl
+        ///1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Athletics, Bargain, Bluff, Brawl, Climb, Craft (Gunsmithing),
+        ///Handguns, Intimidate, Melee (Finesse), Navigation, Sailing,
+        ///Sailing (Airship), Sense Motive, Sleight of Hand, Spot, Stealth
+        ///The seas surrounding the Free Islands are crowded with traders
+        ///and travellers, as well as those making a living by preying on
+        ///them. Piracy is a growing threat for the development of th [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string FreePirate {
+            get {
+                return ResourceManager.GetString("FreePirate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 10 CP
+        ///STR +3, CON +3, DEX -2, REF -2, INT -1, WIT -1, EMP -3
+        ///Initial INT and WIT may not be raised to 15 or above.
+        ///Disadvantage: Sterile.
+        ///
+        ///All mutants have the social status: mutie disadvantage and
+        ///must purchase a mutant disadvantage worth at least 3 CP to
+        ///represent that no mutant is born perfect.
+        ///
+        ///
+        ///Goliaths were originally mutants created in Wulffgartian war
+        ///laboratories during the 80 Year War as an attempt to create
+        ///super soldiers. They were mutated from humans who already
+        ///posse [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Goliath {
+            get {
+                return ResourceManager.GetString("Goliath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +1, CHA -1
+        ///Initial skill ranks: None.
+        ///10 CP can be used to buy ranks in any combat skills except
+        ///Martial Arts other than Wolfbite and Northern Bladesmastery.
+        ///
+        ///
+        ///The Goliaths born in laboratories are trained to be
+        ///warmachines, not people. They have no real childhood, as they
+        ///are trained to become soldiers from infancy. All their basic
+        ///needs are well covered, and it is made sure that they are raised
+        ///in the best possible environment to grow physically healthy and
+        ///strong. Different sport activitie [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GoliathBack {
+            get {
+                return ResourceManager.GetString("GoliathBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to “Hanseburgian craftsmen boast with their skillful works and the
+        ///nobles boast with the rich nation. But should they ever forget
+        ///that it is the merchants who sell the craftsmen’s works and
+        ///collect the riches for the country, the nation will fall.” - a head
+        ///of a Hanseburgian merchant family
+        ///
+        ///
+        ///WITS +1
+        ///Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Appraise, Bargain, Bluff, Cooking, Craft (any), Diplomacy,
+        ///Etiquette, Intimidate, Martial  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HanseburgMerchant {
+            get {
+                return ResourceManager.GetString("HanseburgMerchant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 20CP
+        ///CHA +1
+        ///Initial skill ranks: Appraise 2, Bargain 2, Diplomacy 2,
+        ///Etiquette 1.
+        ///
+        ///Advantage: Noble, Hanseburg
+        ///Starting wealth level: Drifter. This can be further raised with CP
+        ///during character creation.
+        ///
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Appraise, Art (any), Bargain, Charm, Diplomacy, Etiquette,
+        ///Knowledge (Heraldry), Language (Victoran), Language
+        ///(Wulffgartian), Martial Arts (Fencing), Martial Arts
+        ///(Hanseburgian Musketeer Fencing), Melee (Finesse), Perform        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HanseburgNoble {
+            get {
+                return ResourceManager.GetString("HanseburgNoble", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INT +1
+        ///
+        ///Initial skill ranks: Craft (any) or Profession (any) 2, Appraise 1,
+        ///Bargain 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Appraise, Bargain, Brawl, Clockwork, Cooking, Craft (any),
+        ///Diplomacy, Drive, Locksmithing, Mechanics, Melee
+        ///(Powerful), Profession (any), Ride.
+        ///
+        ///
+        ///Hanseburg is known for its craftsmanship, design, inventions
+        ///and top class modern steam technology. This naturally creates a
+        ///need for not only lots of factory workers and miners, but also
+        ///for skilled crafters, e [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HanseburgWorker {
+            get {
+                return ResourceManager.GetString("HanseburgWorker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 5 CP
+        ///
+        ///STR +3, CON +3, DEX -2, REF -2, CHA -1, EMP -3
+        ///Initial STR and CON must be at least 12.
+        ///10 CP can be used to buy ranks in the following skills: Craft
+        ///(any), Mechanics, Melee (Powerful), Search, Spot, Steam
+        ///Engineering, or to the Upgraded Automaton advantage.
+        ///
+        ///Heavy Worker automatons cannot be created or upgraded with
+        ///the Humanlike skin advantage.
+        ///
+        ///As the use of automatons for manual labour became more
+        ///common, it was a natural part of progress that they be used for
+        ///increasing [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HeavyWorker {
+            get {
+                return ResourceManager.GetString("HeavyWorker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Humans receive 10 extra CP for purchasing skills and
+        ///advantages from their Background during character creation.
+        ///
+        ///Humans come from various backgrounds and nationalities, so
+        ///their appearance and style varies widely, from the tall muscular
+        ///Wulffgartian in his gray greatcoat to the tender Crimson lady in
+        ///her colorful kimono. Humans are by far the dominant race of
+        ///Erthair, as mutants are descended from humans and automatons
+        ///are created by humans. Because of this, many humans consider
+        ///themselves as the  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Human {
+            get {
+                return ResourceManager.GetString("Human", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +2, CHA -2
+        ///Advantage: low light vision
+        ///Advantage: mule
+        ///Disadvantage: slow
+        ///
+        ///All mutants have the social status: mutie disadvantage and
+        ///must purchase a mutant disadvantage worth at least 3 CP to
+        ///represent that no mutant is born perfect.
+        ///
+        ///
+        ///These short and stout people originate from the northern
+        ///mountains of Wulffgart. They are the descendants of people
+        ///who lived in an old mining town of Kharzul. Almost 200 years
+        ///ago a source of radiation present in the area started to change
+        ///the people. Chil [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KharzulDwarf {
+            get {
+                return ResourceManager.GetString("KharzulDwarf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INT +1
+        ///Initial skill ranks: Profession: Mining 2, Craft (any) 1, Craft
+        ///(Blacksmithing or Gunsmithing) 1
+        ///10 CP can be used to buy ranks in the following skills: Bargain,
+        ///Brawl, Climb, Clockwork, Cooking, Craft (any), Drive,
+        ///Explosives &amp; Demolitions, Intimidate, Locksmithing, Long
+        ///guns, Martial Art (Wolfbite), Melee (Balanced), Melee
+        ///(Powerful), Mechanics, Profession (Mining), Steam
+        ///Engineering
+        ///
+        ///
+        ///Kharzul Dwarves must also choose one of the Wulffgart
+        ///Military Service background options.
+        ///The Kharzu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KharzulDwarfBack {
+            get {
+                return ResourceManager.GetString("KharzulDwarfBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INT +1
+        ///Initial skill ranks: 
+        ///Knowledge: Kheiman religion 2, Diplomacy
+        ///1, Language: Kheiman 1.
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Alchemy, Art (any), Clockwork, Diplomacy, Etiquette, First
+        ///Aid, Knowledge (any), Law (Kheiman), Leadership,
+        ///Mechanics, Medicine and surgery, Persuade, Teaching, or to
+        ///improve the Starting wealth level.
+        ///
+        ///The children with intellectual tendencies, high social
+        ///intelligence and skills in science are chosen to the Kheiman
+        ///clergy class. All the scientifi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KheimanClergy {
+            get {
+                return ResourceManager.GetString("KheimanClergy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STR +1
+        ///Initial skill ranks: 
+        ///Melee (Powerful) 2, Knowledge (Kheiman
+        ///religion) 1, Martial Arts (Kheiman spear) 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Athletics, Block, Brawl, Craft (Blacksmithing), Gunsmithing,
+        ///Law (Kheiman), Leadership, Listen, Long Guns, Martial Arts
+        ///(Kheiman spear), Ride, Spot, Survival, Throw, Melee
+        ///(Powerful).
+        ///
+        ///
+        ///The people chosen for warrior class are those whose physical
+        ///abilities, courage and ability to follow orders stood out during
+        ///childhood. The trai [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KheimanWarior {
+            get {
+                return ResourceManager.GetString("KheimanWarior", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +1
+        ///Initial skill ranks: 
+        ///Craft or Profession (any) 2, Knowledge
+        ///(Kheiman religion) 1, Art (any) 1
+        ///15 CP can be used to buy ranks in the following skills: Art
+        ///(any), Athletics, Bargain, Brawl, Craft (any), Dodge,
+        ///Mechanics, Perform (Dancing), Profession (any), Survival,
+        ///Track.
+        ///
+        ///The most populous class in Kheiman is the worker class.
+        ///Workers are the manual labourers of Kheiman: farmers,
+        ///craftsmen, miners and factory workers, to mention but a few.
+        ///Both the physically strong and the nimble hande [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string KheimanWorker {
+            get {
+                return ResourceManager.GetString("KheimanWorker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string New_Text_Document {
+            get {
+                return ResourceManager.GetString("New_Text_Document", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STR -1, DEX +1
+        ///Sylphs can jump twice as high and far as humans.
+        ///Sylphs gain a +1 racial bonus to Dodge and Athletics. The
+        ///Dodge bonus counts as a rank in the Dodge skill for increasing
+        ///PDM.
+        ///Disadvantage: Frail
+        ///
+        ///All mutants have the social status: mutie disadvantage and
+        ///must purchase a mutant disadvantage worth at least 3 CP to
+        ///represent that no mutant is born perfect.
+        ///
+        ///
+        ///Sylphs are a group of people living in the northern mountains
+        ///of the Crimson Empire. It is unknown when the mutations
+        ///began,  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Sylph {
+            get {
+                return ResourceManager.GetString("Sylph", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to REF +1
+        ///Initial skill ranks: Athletics 2, Climb 1, Survival 1
+        ///15 CP can be used to buy ranks in the following skills: Animal
+        ///Handling, Archery, Athletics, Brawl, Climb, Listen, Melee
+        ///(Balanced), Perform (Singing), Sense Motive, Spot, Survival,
+        ///Stealth, Throw or to the Acute Sense of Direction and Animal
+        ///Empathy advantages.
+        ///
+        ///
+        ///On the slopes of the tallest of the northern mountains of
+        ///Crimson Empire live the secluded Sylphs, whose culture can be
+        ///traced back centuries. Sylphs have a unique rapport wit [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SylphBack {
+            get {
+                return ResourceManager.GetString("SylphBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The military governs so much of the life in Wulffgart that the
+        ///lives of its citizens are largely defined by their military service.
+        ///Around 95% of the men and around 70% of the women in
+        ///Wulffgart serve their country in military service. The service
+        ///takes one year. Men are required to enlist at the age of 16.
+        ///Women have the option for non-military service and usually
+        ///work as medical help, cooks or aid the army some other way
+        ///during this service. If a woman already has children or is
+        ///pregnant, she can  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WolffgartService {
+            get {
+                return ResourceManager.GetString("WolffgartService", resourceCulture);
             }
         }
     }

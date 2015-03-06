@@ -1,0 +1,61 @@
+EMP -1, CHA -2, allocate +2 to one of the following attributes:
+STR, CON, DEX, REF, WIT and +1 to another attribute from
+the list.
+Animal Handling +1
+Advantage: Alertness
+Advantage: Keen Sense of Smell
+Must purchase at least one Advantage: Natural Weapon.
+Must purchase at least one of the following advantages:
+Hardened Skin, Low-light Vision, Keen Hearing and Keen
+Sense of Sight.
+
+Instinctive behavior: All beastfolk react instinctively to sudden,
+unexpected loud noises and sudden, unexpected movements
+close-by. When a beastfolk character is created, you must
+determine an instinctive, animal-like reaction for the character.
+The character always reacts to such situations with the chosen
+instinctive behavior. Examples: Character leaps to the closest
+cover, character attacks with a melee or natural weapon,
+character flees, etc... The character’s initiative changes as if he
+would have delayed his action and he gets to act on the next
+round normally. Instinctive behaviour generally doesn’t trigger
+during combat.
+
+All mutants have the social status: mutie disadvantage and
+must purchase a mutant disadvantage worth at least 3 CP to
+represent that no mutant is born perfect.
+
+
+Beastfolk are a group of people living in the Shadewood Forest
+deep in Victora. It is not known how long these mutants have
+existed, but stories of beastly humanoids in Victoran folklore
+have been told for hundreds of years. As far as it is known, all
+of the beastfolk originate from these woods where some plants
+and mammals specific to that area exist. There is a village near
+the Shadewood forest where people occasionally contract a
+deadly disease that causes horrible tumors, and sometimes
+babies start turning into beasts during the first months of their
+lives. The villagers have an old tradition of taking these babies
+to a forest shrine to calm the spirits of the forest. The beastfolk
+Keepers have a duty to collect these infants from the shrine and
+see that they are raised among the beastfolk tribe. The beastfolk
+were seen as evil spirits in Victoran folklore for centuries, and
+in the old times they were killed on sight. With the increased
+understanding brought by science, beastfolk today are able to
+interact with humans more peacefully.
+
+Beastfolk sport features and traits of a mammal, usually a beast
+native to their region, such as wolf, bear, lynx and fox, but in
+rare cases less beastly mammals like weasels and rats and even
+herbivores like deer. Their bodies are hairier than those of
+normal people, and many of them have claws and canine fangs.
+Many beastfolk have better hearing than normal humans, and
+they are naturally highly alert. They are mostly humanoid by
+stature and facial structure, but always look distinctively
+animal-like. Some of them have a snout-like nose and mouth
+and bestial eyes. Some of them have tails, though it is not
+common. Beastfolk traditionally live in small groups of
+wandering hunter-gatherers in their woods, but nowadays some
+of them have left their tribe and traveled to see the world.
+Beastfolk can reproduce with humans, and around half of the
+time their children are born with beastfolk features.

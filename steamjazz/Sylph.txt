@@ -1,0 +1,31 @@
+STR -1, DEX +1
+Sylphs can jump twice as high and far as humans.
+Sylphs gain a +1 racial bonus to Dodge and Athletics. The
+Dodge bonus counts as a rank in the Dodge skill for increasing
+PDM.
+Disadvantage: Frail
+
+All mutants have the social status: mutie disadvantage and
+must purchase a mutant disadvantage worth at least 3 CP to
+represent that no mutant is born perfect.
+
+
+Sylphs are a group of people living in the northern mountains
+of the Crimson Empire. It is unknown when the mutations
+began, but Sylphs have been around for several centuries at
+least. Due to their extraordinary appearance, they live mostly
+isolated from the people of the Crimson Empire, although lately
+some of the younger Sylphs have headed off to see the world.
+Mutagenic radiation seems to be strong in the region, and the
+mountains where Sylphs live are constantly shadowed by a
+thick cloud cover. Sylphs are very slim, weighing much less
+than average humans, and they are usually a bit taller than the
+people of the Crimson Empire. Their skin is very fair, and they
+have blonde, white or silvery hair. Sylphs have more fragile
+bones than normal humans, although their bones are more
+flexible. They are usually dextrous and can jump higher than
+humans, which makes Sylphs naturally acrobatic. They can
+perform extraordinary feats of dexterity, but their raw strength
+doesn’t quite match that of humans. It is not known whether
+Sylphs can reproduce with humans; at least to this day there are
+no known offspring from such relationships.
