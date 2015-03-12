@@ -41,36 +41,134 @@ namespace steamjazz
                 comboBox5.Visible = false;
             }
             comboBox2.Items.Clear();
-            if (comboBox1.SelectedIndex == 0)
-            {
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-                comboBox2.Items.AddRange(background);
-            }
-            if (comboBox1.SelectedIndex == 1)
+            switch(comboBox1.SelectedIndex)
+            {// rodun infon näyttäminen, sekä rodullisten erikoistaustojen lisääminen taustalistoihin
+                case 0:
+                    {
+                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                        comboBox2.Items.AddRange(background);
+
+                        var assembly = Assembly.GetExecutingAssembly();
+                        List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                        var resourceName = "steamjazz.Human.txt";
+
+                        using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                        using (StreamReader sr = new StreamReader(stream))
+                        {
+                            String line = sr.ReadToEnd();
+                            richTextBox1.Text = line;
+                        }
+
+                        break;
+                    }
+                case 1:
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Dracosaurian" };
                 comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Dracosaurian.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
             }
-            if (comboBox1.SelectedIndex == 3)
+                case 2:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Automatons.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
+            }
+                case 3:
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Sylph" };
                 comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Sylph.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
             }
-            if (comboBox1.SelectedIndex == 4)
+                case 4:
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Kharzul Dwarf" };
                 comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.KharzulDwarf.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
             }
-            if (comboBox1.SelectedIndex == 5)
+                case 5:
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Beastfolk" };
                 comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.beastfolk.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
             }
-            if (comboBox1.SelectedIndex == 6)
+                case 6:
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Goliath" };
                 comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Goliath.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
             }
+        }
             
         }
         
@@ -151,52 +249,7 @@ namespace steamjazz
                        
                         break;
                     }
-               /* case 6:
-                    {   
-                        //comboBox3.Visible = true;
-                        //comboBox3.SelectedIndex = 0;
-                        
-                        if (backgroundcase == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
-                        {
-                            comboBox5.Visible = true;
-                        }
-                        else
-                        {
-                            comboBox5.Visible = false;
-                        }
-                        
-                        switch(comboBox1.SelectedIndex)
-                        {
-                            //13456
-                            case 1:
-                                {
-                                    comboBox3.Items.Add("Dracosaurian");
-                                    break;
-                                }
-                            case 3:
-                                {
-                                    comboBox3.Items.Add("Sylph");
-                                    break;
-                                }
-                            case 4:
-                                {
-                                    comboBox3.Items.Add("Kharzul Dwarf");
-                                    break;
-                                }
-                            case 5:
-                                {
-                                    comboBox3.Items.Add("Beastfolk");
-                                    break;
-                                }
-                            case 6:
-                                {
-                                    comboBox3.Items.Add("Goliath");
-                                    break;
-                                }
-
-                        }
-                        break;
-                    }*/
+              
                 default:
                     comboBox3.Visible = false;
                     break;
@@ -209,11 +262,12 @@ namespace steamjazz
             ,"Beastfolk","Goliath","Butler","Copper","Craftsman","Doll","Heavy Worker"};
             comboBox1.Items.AddRange(race);
             //
-            //Combobox2 info Default
+            //Combobox2 info Default tehdään comboBox1_SelectedIndexChanged funktiossa
             //
-            string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-            comboBox2.Items.AddRange(background);
-
+            /*
+            * string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+            * comboBox2.Items.AddRange(background);
+            */
             
             //
             //Combobox4 info
@@ -654,15 +708,14 @@ namespace steamjazz
                                     break;
                                 }
                         }
-                        //"Dracosaurian","Basic","Sylph","Kharzul Dwarf" ,"Beastfolk","Goliath"
                         break;
                     }
                 case 6:
                     {
-                        //free islands
-                        switch (comboBox1.SelectedIndex)
-                        {
-                            case 1:
+                        //muties
+                        // HOX Jostain syystä kuudennen indeksin valinta ei kutsu comboBox3_SelectedIndexChanged funktiota....
+                        
+                            if (comboBox1.SelectedIndex == 1)
                                 {
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
@@ -674,9 +727,9 @@ namespace steamjazz
                                         String line = sr.ReadToEnd();
                                         richTextBox1.Text = line;
                                     }
-                                    break;
+                                   
                                 }
-                            case 3:
+                             if (comboBox1.SelectedIndex == 3)
                                 {
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
@@ -688,9 +741,9 @@ namespace steamjazz
                                         String line = sr.ReadToEnd();
                                         richTextBox1.Text = line;
                                     }
-                                    break;
+                                   
                                 }
-                            case 4:
+                             if (comboBox1.SelectedIndex == 4)
                                 {
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
@@ -702,24 +755,39 @@ namespace steamjazz
                                         String line = sr.ReadToEnd();
                                         richTextBox1.Text = line;
                                     }
-                                    break;
+                              
                                 }
-                            case 5:
+                             if (comboBox1.SelectedIndex == 5)
                                 {
-                                    comboBox3.Items.Add("Beastfolk");
-                                    break;
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.BeastfolkBack.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
+                                    
                                 }
-                            case 6:
+                             if (comboBox1.SelectedIndex == 6)
                                 {
-                                    comboBox3.Items.Add("Goliath");
-                                    break;
+                                    var assembly = Assembly.GetExecutingAssembly();
+                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    var resourceName = "steamjazz.GoliathBack.txt";
+
+                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                    using (StreamReader sr = new StreamReader(stream))
+                                    {
+                                        String line = sr.ReadToEnd();
+                                        richTextBox1.Text = line;
+                                    }
+                                    
                                 }
-                                 
+                             break;   
                         }
-                        
-                        //"Dracosaurian","Basic","Sylph","Kharzul Dwarf" ,"Beastfolk","Goliath"
-                        break;
-                    }
+                      
             }
         }
       
