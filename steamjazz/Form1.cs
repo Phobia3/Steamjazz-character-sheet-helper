@@ -78,6 +78,7 @@ namespace steamjazz
                 }
                 break;
             }
+                    //automationeiden yhteinen rotuinfo
                 case 2:
                 case 7:
                 case 8:
@@ -247,6 +248,83 @@ namespace steamjazz
                         //Free Islands
                         combobox3init("Pelethok","Pirate","Island Folk");
                        
+                        break;
+                    }
+                case 6:
+                    {
+                        //muties
+                        // HOX Jostain syystä kuudennen indeksin valinta ei kutsu comboBox3_SelectedIndexChanged funktiota....
+
+                        if (comboBox1.SelectedIndex == 1)
+                        {
+                            var assembly = Assembly.GetExecutingAssembly();
+                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            var resourceName = "steamjazz.DracosaurianBack.txt";
+
+                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                            using (StreamReader sr = new StreamReader(stream))
+                            {
+                                String line = sr.ReadToEnd();
+                                richTextBox1.Text = line;
+                            }
+
+                        }
+                        if (comboBox1.SelectedIndex == 3)
+                        {
+                            var assembly = Assembly.GetExecutingAssembly();
+                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            var resourceName = "steamjazz.SylphBack.txt";
+
+                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                            using (StreamReader sr = new StreamReader(stream))
+                            {
+                                String line = sr.ReadToEnd();
+                                richTextBox1.Text = line;
+                            }
+
+                        }
+                        if (comboBox1.SelectedIndex == 4)
+                        {
+                            var assembly = Assembly.GetExecutingAssembly();
+                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            var resourceName = "steamjazz.KharzulDwarfBack.txt";
+
+                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                            using (StreamReader sr = new StreamReader(stream))
+                            {
+                                String line = sr.ReadToEnd();
+                                richTextBox1.Text = line;
+                            }
+
+                        }
+                        if (comboBox1.SelectedIndex == 5)
+                        {
+                            var assembly = Assembly.GetExecutingAssembly();
+                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            var resourceName = "steamjazz.BeastfolkBack.txt";
+
+                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                            using (StreamReader sr = new StreamReader(stream))
+                            {
+                                String line = sr.ReadToEnd();
+                                richTextBox1.Text = line;
+                            }
+
+                        }
+                        if (comboBox1.SelectedIndex == 6)
+                        {
+                            var assembly = Assembly.GetExecutingAssembly();
+                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            var resourceName = "steamjazz.GoliathBack.txt";
+
+                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                            using (StreamReader sr = new StreamReader(stream))
+                            {
+                                String line = sr.ReadToEnd();
+                                richTextBox1.Text = line;
+                            }
+
+                        }
                         break;
                     }
               
@@ -710,83 +788,7 @@ namespace steamjazz
                         }
                         break;
                     }
-                case 6:
-                    {
-                        //muties
-                        // HOX Jostain syystä kuudennen indeksin valinta ei kutsu comboBox3_SelectedIndexChanged funktiota....
-                        
-                            if (comboBox1.SelectedIndex == 1)
-                                {
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                                    var resourceName = "steamjazz.DracosaurianBack.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                   
-                                }
-                             if (comboBox1.SelectedIndex == 3)
-                                {
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                                    var resourceName = "steamjazz.SylphBack.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                   
-                                }
-                             if (comboBox1.SelectedIndex == 4)
-                                {
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                                    var resourceName = "steamjazz.KharzulDwarfBack.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                              
-                                }
-                             if (comboBox1.SelectedIndex == 5)
-                                {
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                                    var resourceName = "steamjazz.BeastfolkBack.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    
-                                }
-                             if (comboBox1.SelectedIndex == 6)
-                                {
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                                    var resourceName = "steamjazz.GoliathBack.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    
-                                }
-                             break;   
-                        }
+                
                       
             }
         }
