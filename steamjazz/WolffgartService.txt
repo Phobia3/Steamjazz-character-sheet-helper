@@ -17,12 +17,15 @@ does a Wulffgartian become a full citizen. A new citizen
 receives a personal identification tattoo to the left wrist (and
 possibly chest as well) as well as a military passport that also
 functions as a weapon permit.
+
 Military Service
 Initial skill ranks: Long Guns 2, Martial Art (Wolfbite) 1, Melee
 (Powerful) 1
+
 Non-military service
 5 CP can be used to buy ranks in the following skills: Alchemy,
 Craft (any), Cooking, First Aid, Mechanics
+
 Deserter
 10 CP to be used freely.
 Wulffgartian deserters are hunted by the Wulffgartian army.

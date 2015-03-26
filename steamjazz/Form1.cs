@@ -21,6 +21,7 @@ namespace steamjazz
         {
             InitializeComponent();
             InitializeComboBox();
+            attributeInit();
         }
 
         private void flowLayoutPanel4_Paint(object sender, PaintEventArgs e)
@@ -381,7 +382,10 @@ namespace steamjazz
             richTextBox1.Text = e;
         
         }
-
+        /// <summary>
+        /// Taustan valinta tapahtuu combobox3:ssa. RichTextBox tulostaa tarvittavan informaation taustoista
+        /// </summary>
+        
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             int backgroundcase = comboBox2.SelectedIndex;
@@ -792,6 +796,118 @@ namespace steamjazz
                       
             }
         }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+            var resourceName = "steamjazz.WolffgartService.txt";
+
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader sr = new StreamReader(stream))
+            {
+                String line = sr.ReadToEnd();
+                richTextBox1.Text = line;
+            }
+        }
+
+        /// <summary>
+        /// Attribuuttien sähellykset alkaa tästä
+        /// todo:
+        /// attributeAdd tarkistaa kutsuneen objektin ja sen mukaan lisää oikeata attribuuttia
+        /// attributeAdd poistaa lisäyksen vaativan pistemäärän
+        /// attributeAdd tarkistaa voiko samaa attribuuttia lisätä vielä kertaalleen, mikäli ei lähettävä objecti enabled=false
+        /// AttributeTake vähentää kutsuneen objektiin liittyvää attribuuttia
+        /// attributeTake antaa kyseisen attribuutin lisäävälle objektille enabled=true
+        /// attributeTake antaa poiston mukaisen pistemäärän.
+        /// </summary>
+        private void attributeInit()
+        {
+            string a = "10";
+            label8.Text = a;
+            label10.Text = a;
+            label12.Text = a;
+            label30.Text = a;
+            label33.Text = a;
+            label35.Text = a;
+            label37.Text = a;
+            label6.Text = a;
+        }
+        
+        private void attributeAdd(Object sender, EventArgs e)
+        {
+            if (sender==label13)
+            {//str
+                label6.Text= Convert.ToString(Convert.ToInt32(label6.Text) + 1);
+            }
+            if (sender == label15)
+            {//str
+                label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) + 1);
+            }
+            if (sender == label17)
+            {//str
+                label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) + 1);
+            }
+            if (sender == label19)
+            {//str
+                label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) + 1);
+            }
+            if (sender == label21)
+            {//str
+                label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) + 1);
+            }
+            if (sender == label23)
+            {//str
+                label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) + 1);
+            }
+            if (sender == label25)
+            {//str
+                label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) + 1);
+            }
+            if (sender == label27)
+            {//str
+                label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) + 1);
+            }
+        }
+        private void attributeTake(Object sender, EventArgs e)
+        {
+            if (sender == label14)
+            {//str
+                label6.Text = Convert.ToString(Convert.ToInt32(label6.Text) - 1);
+            }
+            if (sender == label16)
+            {//str
+                label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) - 1);
+            }
+            if (sender == label18)
+            {//str
+                label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) - 1);
+            }
+            if (sender == label20)
+            {//str
+                label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) - 1);
+            }
+            if (sender == label22)
+            {//str
+                label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) - 1);
+            }
+            if (sender == label24)
+            {//str
+                label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) - 1);
+            }
+            if (sender == label26)
+            {//str
+                label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) - 1);
+            }
+            if (sender == label28)
+            {//str
+                label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) - 1);
+            }
+        }
+
+       
+
+       
       
        
     }
