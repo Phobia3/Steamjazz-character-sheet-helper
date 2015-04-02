@@ -12,28 +12,31 @@ using steamjazz.Properties;
 using System.Reflection;
 
 
+
 namespace steamjazz
 {
     public partial class Form1 : Form
         
     {
-        
+        public void tabbi()
+        {
+            
+            string title = "Create " + (tabControl1.TabCount + 1).ToString();
+            TabPage Create = new TabPage(title);
+            tabControl1.TabPages.Add(Create);
+        }
         public Form1()
         {
             InitializeComponent();
             InitializeComboBox();
             attributeChange("10","10","10","10","10","10","10","10");
         }
-
+       
         private void flowLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
-        private void flowLayoutPanel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+    
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
         {
@@ -973,9 +976,10 @@ namespace steamjazz
 
        
 
-       
+      
       
        
     }
 }
-
+ 
+ 
