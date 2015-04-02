@@ -1,0 +1,51 @@
+CON +1, CHA -1
+Initial skill ranks: None.
+10 CP can be used to buy ranks in any combat skills except
+Martial Arts other than Wolfbite and Northern Bladesmastery.
+
+
+The Goliaths born in laboratories are trained to be
+warmachines, not people. They have no real childhood, as they
+are trained to become soldiers from infancy. All their basic
+needs are well covered, and it is made sure that they are raised
+in the best possible environment to grow physically healthy and
+strong. Different sport activities are introduced to them at a
+young age. Goliaths do not have parents. Their teachers,
+commanders, trainers, physicians and scientists are their
+mothers and their fathers. They aren’t treated as individuals but
+as members of a unit, and the most specialised goliath units are
+usually trained for their function together from early childhood.
+Goliath training consists of not only combat training but also
+psychological training, how to endure pain and torture, how to
+act under mental stress, how to follow orders and how to kill
+without thinking. One of the goals of their training is to strip
+them of unnecessary feelings, such as empathy and compassion.
+They are taught to think more like machines than humans.
+Goliaths don’t have a real society or culture of their own. They
+are part of the Wulffgart army. They are members of their unit,
+which is the closest thing to family they know. Now that the 80
+Year War is over, many Goliaths have been retired from active
+duty, and their integration to the Wulffgart society has started.
+Considering their background, normal life is something new
+and strange to Goliaths. Those Goliaths who are now a part of
+the society have to learn completely new ways of thinking and
+interacting with people. Most Goliaths, whose mental faculties
+were never intended for understanding abstract concepts or
+absorbing new information, are ill equipped to face such
+challenges, and adapting to normal society is very difficult for
+most of them. Many Goliaths are also mentally traumatised by
+their past, despite the Wulffgartian military leaders and
+scientists claiming otherwise.
+
+Adventuring as Goliath:
+Many Goliaths still serve in the ranks of the Wulffgart army.
+Those that have chosen a different path for their future are often
+recruited by mercenary groups. For most Goliaths, fighting is
+the only life they have ever known, and it takes a very rare
+individual to even consider anything else
+
+Suggested careers: Gunner, Hunter, Law Enforcer, Martial
+Artist, Mercenary, Ranger, Scout, Soldier, Warrior
+
+Typical names: Goliath’s are usually given Wulffgartian names.
+See Wulffgartian backgrounds for reference.

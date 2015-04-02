@@ -1,0 +1,68 @@
+Cost to play: 20 CP
+
+STR -1, CON -1, CHA +2, EMP +1
+Upgrade: Humanlike Skin with the Beautiful / Handsome
+upgrade already included.
+
+Initial skill ranks: Charm 3, Persuade 2, Athletics 1
+10 CP can be used to buy ranks in the following skills:
+Athletics, Bluff, Charm, Diplomacy, Dodge, Etiquette, First
+Aid, Perform (Acting), Perform (Dancing), Persuade, Sense
+Motive.
+
+Models:
+Rushworth CM-54M (civilian model, male)
+Rushworth CM-54F (civilian model, female)
+Colman Inc CLD-04M Doll, commonly referred to as “Louis”
+or “Louis D-04”
+Colman Inc CLD-04F Doll, commonly referred to as “Louisa”
+or “Louisa D-04”
+
+Early experiments with human-like automatons revealed that
+although people generally prefer their artificial servants to share
+some human-like features, trying to mimic a living being too
+closely produced an unnatural and unnerving result. These
+automaton prototypes could be made to look like humans, but
+their behavior revealed them as artificial, and this lack of
+symmetry caused considerable discomfort. Therefore, many
+experts on automaton research concluded that it is best not to
+try to mimic life too closely.
+Recent breakthroughs in miniaturisation and synthetic materials
+have, however, overcome this challenge, especially when
+combined with the level of intelligence and artificial personality
+provided by a CIC. Dolls not only look like humans but are
+able to imitate their behavior, facial expressions and even
+feelings accurately enough so as not to cause the feeling of
+revulsion towards the unnatural that plagued the older models
+with humanlike skin. This remarkable amount of detail is not
+limited to their faces alone, but their entire bodies have been
+constructed to resemble that of living people with precision that
+would be considered quite unnecessary for other automatons.
+Dolls can still be identified as artificial constructs on closer
+inspection, but at a casual glance or during normal interaction
+they can easily be mistaken for a living person.
+A Doll's body is similar to that of the Butler's, but is covered
+with rubber derivative skin detailed and shaped with underlying
+silicone elements. The skin itself is almost like a full-body sock
+split into segments, with seams covered with special putty glue.
+Whenever a part of the Doll needs maintenance, the skin is
+opened from these seams, providing access to the structures
+beneath. The only major exception is on a Doll’s back, which
+resembles a corset, providing easy access for routine
+maintenance such as recharging and fluid replacement. As with
+all automatons with the Humanlike Skin advantage, repairing a
+Doll costs three times as much as it would cost to repair one
+without the advantage.
+Given that Dolls can pass as humans, they are used in highly
+diverse roles, from maids and assistants to sex workers and
+even diplomats. They also make excellent spies, since no
+human can simply swap her face to a different one or replace
+her voice with a new voice box.
+However, some people still feel uneasy about Dolls. Whereas
+some of these people have deeper philosophical resentment
+towards what they see as mockery of life, some people are
+simply disturbed by the idea that one cannot easily tell man and
+machine apart. As a result, Dolls are occasionally treated with
+unwarranted hostility and distrust, and some Dolls that have
+gone rogue go to great lengths in order to conceal their true
+nature.

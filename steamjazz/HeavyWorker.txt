@@ -1,0 +1,42 @@
+Cost to play: 5 CP
+
+STR +3, CON +3, DEX -2, REF -2, CHA -1, EMP -3
+Initial STR and CON must be at least 12.
+10 CP can be used to buy ranks in the following skills: Craft
+(any), Mechanics, Melee (Powerful), Search, Spot, Steam
+Engineering, or to the Upgraded Automaton advantage.
+
+Heavy Worker automatons cannot be created or upgraded with
+the Humanlike skin advantage.
+
+As the use of automatons for manual labour became more
+common, it was a natural part of progress that they be used for
+increasingly heavy duties, so that their human masters would
+not need to strain themselves except to occasionally replace
+worn or broken parts to their workers. This industrial evolution
+brought into being Heavy Worker automatons.
+Heavy Workers are, in an essence, a forklift and its operator
+combined into one, super-powerful package. Where most
+automatons utilise leather straps and finely tuned clockwork
+mechanisms for limb movement, Heavy workers run with steel
+chains moved by heavy cogs. The trade-off is obvious; Heavy
+Workers may be slower and clumsier, but they more than make
+up for it in terms of pure strength and endurance.
+Heavy Workers still retain a humanoid appearance, but due to
+their heavy industrial purpose, most of their physical
+proportions are highly exaggerated. Seeing a silhouette of a
+Heavy Worker in the dark would first give an onlooker the
+impression of an enormous gorilla rather than a human being.
+Upgrading a Heavy Worker with humanlike skin would make
+no sense, and they generally look rigid, industrial and
+functional. Still, nothing prevents the owner from fitting them
+with decorations as detailed and elaborate as those of any other
+service automaton.
+Heavy Workers are largely considered to be pure workforce,
+heavy-lifting beasts of burden and nothing more. However,
+while they might otherwise be considered the lowest class of
+automatons, they are physically menacing enough to keep
+attitudes towards them somewhat civil. Also, while their
+borderline ape-like frame may make them seem dumb as a box
+of hammers, in truth they are no stupider than other automaton
+types.

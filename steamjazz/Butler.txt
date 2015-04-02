@@ -1,0 +1,47 @@
+Cost to play: 15CP
+
+STR -1, CON -1, INT +1, CHA +1, EMP +1
+Advantage: Bilingual
+Initial skill ranks: Etiquette 3, Cooking 2, Diplomacy 2,
+Profession: Waiter 2
+10 CP can be used to buy ranks in the following skills:
+Clockwork, Cooking, Diplomacy, Etiquette, First Aid,
+Language (any), Law (any), Leadership, Listen, Persuade,
+Search, Sense Motive, Spot.
+
+Models:
+Colman Inc CCB-02 Butler, commonly referred to as "Charles"
+or "Charles B-02"
+Colman Inc CCB-03 Maid, commonly referred to as
+“Charlotte” or “Charlotte B-03”
+
+As the popularity of automaton workforce increased, so did the
+need for more specialised models. As always, the aristocracy
+was the first to adopt the new luxuries, calling for a reliable,
+efficient and cheaper-to-upkeep replacement for their servants.
+From a purely mechanical standpoint, Butlers are essentially
+lighter versions of the basic archetype, with added emphasis on
+balance and finesse as opposed to raw power and endurance.
+However, their clockwork programming is also more
+sophisticated by default, and Butlers usually come equipped
+with more advanced social skills.
+As the Butler designs were refined, so was their programming,
+and the more modern automatons excel in psychology. When
+combined with their extensive knowledge of law and
+diplomacy, these Butlers are able to accurately anticipate the
+ever-changing whims of their masters - sometimes even better
+than their human counterparts.
+Butler builds are similar in physical design to the basic
+archetype, only usually lighter and with more delicate and
+decorative features. For example, instead of bolted-on factorymade
+metal masks, Butlers have more aesthetically pleasing
+designs crafted of porcelain, marble or precious metals. Butler
+faces are made to resemble human features, but are always
+heavily stylised – closer to a stylistic Art Deco figurine than a
+classic porcelain doll.
+Many human masters become quite dependent on their Butlers
+and learn to appreciate them much more than other automatons.
+Then again, considering that most high-class noblemen treat
+even their human servants as far-from-equals, this
+preferentialism isn’t yet saying very much about how the
+Butlers are actually treated.

@@ -1,0 +1,44 @@
+CHA -2, REF +1; allocate +1 to one of the following: STR,
+CON or DEX
+Cold-blooded: The character’s body cannot control her body
+temperature automatically, but needs external means to keep it
+on optimised level. In very cold temperatures (around and
+under -10°C if the character has clothing to keep himself
+warm), she enters a comatose state. In cool temperatures she
+acts sluggishly, whereas in warm temperatures she is nimbler
+than normally. GM can grant a dracosaurian character a
+modifier between -2 and +2 to DEX and REF related skills in
+cold or hot conditions.
+
+Dracosaurians receive a -3 penalty to listen rolls, a +2 bonus to
+Spot rolls and a +2 bonus to track when able to use their sense
+of smell.
+
+All mutants have the social status: mutie disadvantage and
+must purchase a mutant disadvantage worth at least 3 CP to
+represent that no mutant is born perfect. Dracosaurians can
+purchase deaf as a mutant disadvantage even though it is not
+normally listed as one.
+Dracosaurians gain 5 CP for purchasing mutant advantages.
+
+
+Dracosaurians are lizard-like people originating from the
+Pelethok island near Kheiman. Around a century ago there was
+an explosion in a research laboratory that was examining the
+extraordinary qualities of local lizards. After the explosion
+many of the babies of the islanders were born with mutations,
+and in a few decades almost half of the population had lizardlike
+characteristics: scaly skin usually of brownish or greenish
+hue, though other colors are not unheard of, excellent eyesight
+with superb color vision, and atrophied ears, with many having
+no ear lobes at all. Their eyes usually have slit pupils and are of
+bright color, like golden yellow, red, orange, green or purple,
+and they have two sets of eyelids, normal and semilunar. Most
+of them have lizard-like tongues and an enhanced sense of
+smell, and some of them even have lizard-like tails. Nowadays
+some babies are born mostly resembling normal human
+children and some are born badly disfigured, but most children
+of dracosaurians are born as described above. Dracosaurians
+can reproduce with humans. About half the time this results in
+offspring with lizard-like characteristics, but half the time a
+normal human child is born.

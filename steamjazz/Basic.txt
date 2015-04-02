@@ -1,0 +1,49 @@
+STR +1, CON +1, EMP -1
+Basic automaton packages:
+
+Assistant / Servant
+Initial skill ranks: Profession (any) 2, Diplomacy 1,
+Knowledge: Mathematics 1
+10 CP can be used to buy ranks in the following skills:
+Appraise, Bargain, Clockwork, Craft (any), Diplomacy,
+Knowledge (Mathematics), Persuade, Profession (any).
+Guard
+Initial skill ranks: Melee (Balanced) 2, Listen 1, Spot 1
+10 CP can be used to buy ranks in the following skills:
+Athletics, Block, Brawl, Clockwork, Handguns, Intimidate,
+Listen, Melee (Balanced), Spot.
+
+Trooper
+Initial skill ranks: Long Guns 2, Clockwork 1, Melee
+(Balanced) 1
+10 CP can be used to buy ranks in the following skills :
+Athletics, Brawl, Clockwork, Craft (Gunsmithing), Explosives
+& Demolitions, First Aid, Handgun, Intimidate, Long Guns,
+Melee (Balanced), Stealth
+
+Models:
+Colman Inc CBA-05 Automaton, commonly referred to as
+"Martin A-05" or “Maria A-05”
+Rushworth BM-23M/F (basic model)
+Stahlman B-WMT Soldat ( basic automaton soldier for military
+use)
+
+Basic automatons are just what it says on the tin, the archetype
+of human-shaped automatons from which most of the more
+specialized models were derived. However, this doesn't mean
+that basic automatons are useless or obsolete; on the contrary,
+not being specialised in any single purpose by design makes
+them the most flexible and well-rounded of the various builds.
+By default, a basic automaton is ‘naked’ - it has no synthetic
+skin, decorative covering or heavy armor - thus showcasing its
+biomechanical clockwork imitation of muscle structure.
+However, there are plenty of options to choose from when it
+comes to customizing the basic archetype, ranging from
+humanlike skin and ceramic decorative plates to armor plating.
+The basic automaton archetypes are produced in large numbers
+and are therefore utilised in many areas of life where a large
+workforce is needed, ranging from factory labour to guard
+duties. Given that they are such a common sight and are
+considered property and not people, it is extremely easy for a
+basic archetype with an installed CIC to blend into society - but
+feeling like fitting in is an altogether different challenge.
