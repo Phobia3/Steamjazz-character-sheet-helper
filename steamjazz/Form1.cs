@@ -17,11 +17,12 @@ namespace steamjazz
     public partial class Form1 : Form
         
     {
+        
         public Form1()
         {
             InitializeComponent();
             InitializeComboBox();
-            attributeInit();
+            attributeChange("10","10","10","10","10","10","10","10");
         }
 
         private void flowLayoutPanel4_Paint(object sender, PaintEventArgs e)
@@ -408,7 +409,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //low class
-                                   
+                                    attributeChange("10", "11", "10", "10", "10", "10", "10", "10");
                                     richTextBox1.Text = "CON +1\r\n" +
                                                     "Initial skill ranks: Survival 2, Brawl 1, Stealth 1\r\n" +
                                                     "15 CP can be used to buy ranks in the following skills: Animal\r\n" +
@@ -441,7 +442,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //middle clas
-                                    
+                                    attributeChange("10", "10", "10", "10", "10", "11", "10", "10");
                                     richTextBox1.Text = "WIT +1\r\n" +
                                                     "Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1\r\n" +
                                                     "15 CP can be used to buy ranks in the following skills:\r\n" +
@@ -479,7 +480,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     // upper class
-                                  
+                                    attributeChange("10", "10", "10", "10", "10", "10", "11", "10");
                                     richTextBox1.Text = "Cost to play: 10CP\r\n" +
                                                     "CHA +1\r\n" +
                                                     "Initial skill ranks: Etiquette 3, Diplomacy 2, Language: Victoran 1" +
@@ -531,7 +532,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     // Military
-
+                                    attributeChange("11", "10", "10", "10", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.WolfgartMilitary.txt";
@@ -548,7 +549,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //worker
-
+                                    attributeChange("10", "11", "10", "10", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.WolfgartWorker.txt";
@@ -564,6 +565,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     // upper class
+                                    attributeChange("10", "10", "10", "10", "10", "10", "11", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.WolfgartUpper.txt";
@@ -587,6 +589,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     // Worker
+                                    attributeChange("10", "11", "10", "10", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.KheimanWorker.txt";
@@ -602,6 +605,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //warior
+                                    attributeChange("11", "10", "10", "10", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.KheimanWarior.txt";
@@ -618,6 +622,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     //clergy
+                                    attributeChange("10", "10", "10", "10", "11", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.KheimanClergy.txt";
@@ -641,6 +646,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Worker
+                                    attributeChange("10", "10", "10", "10", "11", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.HanseburgWorker.txt";
@@ -656,6 +662,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //merchant
+                                    attributeChange("10", "10", "10", "10", "10", "11", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.HanseburgMerchant.txt";
@@ -671,6 +678,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     //noble
+                                    attributeChange("10", "10", "10", "10", "10", "10", "11", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.HanseburgNoble.txt";
@@ -694,6 +702,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Monk
+                                    attributeChange("10", "10", "10", "10", "11", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.CrimsonCommoner.txt";
@@ -709,6 +718,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //military
+                                    attributeChange("10", "10", "11", "10", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.CrimsonMilitary.txt";
@@ -724,6 +734,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     //commoner
+                                    attributeChange("10", "11", "10", "10", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.CrimsonMonk.txt";
@@ -747,6 +758,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Pelethok
+                                    attributeChange("10", "10", "10", "10", "11", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.FreePelethok.txt";
@@ -762,6 +774,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //pirate
+                                    attributeChange("10", "10", "10", "11", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.FreePirate.txt";
@@ -777,6 +790,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     //island folk
+                                    attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.FreeIslandFolk.txt";
@@ -821,87 +835,135 @@ namespace steamjazz
         /// attributeTake antaa kyseisen attribuutin lisäävälle objektille enabled=true
         /// attributeTake antaa poiston mukaisen pistemäärän.
         /// </summary>
-        private void attributeInit()
+       
+        private void attributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp )
         {
-            string a = "10";
-            label8.Text = a;
-            label10.Text = a;
-            label12.Text = a;
-            label30.Text = a;
-            label33.Text = a;
-            label35.Text = a;
-            label37.Text = a;
-            label6.Text = a;
+            
+            label6.Text = Str;
+            label8.Text = Con;
+            label10.Text = Dex;
+            label12.Text = Ref;
+            label30.Text = Int;
+            label33.Text = Wit;
+            label35.Text = Cha;
+            label37.Text = Emp;
+
+        }
+        private void attributeChange(string att, int change, int points)
+        {
+            switch (att)
+            {
+                case "str":
+                    {
+                        label6.Text = Convert.ToString(Convert.ToInt32(label6.Text) + change);
+                        break;
+                    }
+                case "con":
+                    {
+                        label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) + change);
+                        break;
+                    }
+                case "dex":
+                    {
+                        label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) + change);
+                        break;
+                    }
+                case "ref":
+                    {
+                        label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) + change);
+                        break;
+                    }
+                case "int":
+                    {
+                        label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) + change);
+                        break;
+                    }
+                case "wit":
+                    {
+                        label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) + change);
+                        break;
+                    }
+                case "cha":
+                    {
+                        label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) + change);
+                        break;
+                    }
+                case "emp":
+                    {
+                        label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) + change);
+                        break;
+                    }
+            }
         }
         
         private void attributeAdd(Object sender, EventArgs e)
         {
             if (sender==label13)
-            {//str
-                label6.Text= Convert.ToString(Convert.ToInt32(label6.Text) + 1);
+            {
+                attributeChange("str", 1, Convert.ToInt32(label39.Text));
             }
             if (sender == label15)
-            {//str
-                label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) + 1);
+            {
+                attributeChange("con", 1, Convert.ToInt32(label39.Text));
             }
             if (sender == label17)
-            {//str
-                label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) + 1);
+            {
+                attributeChange("dex", 1, Convert.ToInt32(label39.Text));
             }
             if (sender == label19)
-            {//str
-                label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) + 1);
+            {
+                attributeChange("ref", 1, Convert.ToInt32(label39.Text));
             }
             if (sender == label21)
-            {//str
-                label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) + 1);
+            {
+                attributeChange("int", 1, Convert.ToInt32(label39.Text));
             }
             if (sender == label23)
-            {//str
-                label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) + 1);
+            {
+                attributeChange("wit", 1, Convert.ToInt32(label39.Text));
             }
             if (sender == label25)
-            {//str
-                label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) + 1);
+            {
+                attributeChange("cha", 1, Convert.ToInt32(label39.Text));
             }
             if (sender == label27)
-            {//str
-                label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) + 1);
+            {
+                attributeChange("emp", 1, Convert.ToInt32(label39.Text));
             }
         }
         private void attributeTake(Object sender, EventArgs e)
         {
             if (sender == label14)
             {//str
-                label6.Text = Convert.ToString(Convert.ToInt32(label6.Text) - 1);
+                attributeChange("str", -1, Convert.ToInt32(label39.Text));
             }
             if (sender == label16)
-            {//str
-                label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) - 1);
+            {
+                attributeChange("con", -1, Convert.ToInt32(label39.Text));
             }
             if (sender == label18)
-            {//str
-                label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) - 1);
+            {
+                attributeChange("dex", -1, Convert.ToInt32(label39.Text));
             }
             if (sender == label20)
-            {//str
-                label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) - 1);
+            {
+                attributeChange("ref", -1, Convert.ToInt32(label39.Text));
             }
             if (sender == label22)
-            {//str
-                label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) - 1);
+            {
+                attributeChange("int", -1, Convert.ToInt32(label39.Text));
             }
             if (sender == label24)
-            {//str
-                label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) - 1);
+            {
+                attributeChange("wit", -1, Convert.ToInt32(label39.Text));
             }
             if (sender == label26)
-            {//str
-                label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) - 1);
+            {
+                attributeChange("cha", -1, Convert.ToInt32(label39.Text));
             }
             if (sender == label28)
-            {//str
-                label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) - 1);
+            {
+                attributeChange("emp", -1, Convert.ToInt32(label39.Text));
             }
         }
 
