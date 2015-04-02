@@ -29,6 +29,10 @@ namespace steamjazz
         {
 
         }
+        private void flowLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
@@ -254,10 +258,11 @@ namespace steamjazz
                     }
                 case 6:
                     {
+                        //muties
+                        // HOX Jostain syystä kuudennen indeksin valinta ei kutsu comboBox3_SelectedIndexChanged funktiota....
 
                         if (comboBox1.SelectedIndex == 1)
                         {
-                            
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.DracosaurianBack.txt";
@@ -300,7 +305,6 @@ namespace steamjazz
                         }
                         if (comboBox1.SelectedIndex == 5)
                         {
-                            attributeChange("10", "11", "10", "10", "10", "10", "10", "10");
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.BeastfolkBack.txt";
@@ -315,7 +319,6 @@ namespace steamjazz
                         }
                         if (comboBox1.SelectedIndex == 6)
                         {
-                            attributeChange("10", "11", "10", "10", "10", "10", "9", "10");
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.GoliathBack.txt";
