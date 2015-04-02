@@ -290,9 +290,7 @@ namespace steamjazz
                     }
                 case 6:
                     {
-                        //muties
-                        // HOX Jostain syystä kuudennen indeksin valinta ei kutsu comboBox3_SelectedIndexChanged funktiota....
-
+                       
                         if (comboBox1.SelectedIndex == 1)
                         {
                             attributeChange("int", 1);

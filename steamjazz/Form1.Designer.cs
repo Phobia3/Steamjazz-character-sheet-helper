@@ -778,6 +778,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(184, 21);
             this.comboBox6.TabIndex = 2;
+            this.comboBox6.Visible = false;
             // 
             // comboBox7
             // 
@@ -786,6 +787,7 @@
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(183, 21);
             this.comboBox7.TabIndex = 3;
+            this.comboBox7.Visible = false;
             // 
             // Form1
             // 
