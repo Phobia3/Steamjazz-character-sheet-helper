@@ -45,10 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,12 +56,15 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -81,26 +82,32 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
             this.flowLayoutPanel10.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
-            this.flowLayoutPanel8.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel12.SuspendLayout();
+            this.flowLayoutPanel13.SuspendLayout();
+            this.flowLayoutPanel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -158,16 +165,10 @@
             // 
             // flowLayoutPanel10
             // 
-            this.flowLayoutPanel10.Controls.Add(this.label3);
-            this.flowLayoutPanel10.Controls.Add(this.textBox1);
-            this.flowLayoutPanel10.Controls.Add(this.label1);
-            this.flowLayoutPanel10.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel10.Controls.Add(this.label2);
-            this.flowLayoutPanel10.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel10.Controls.Add(this.comboBox3);
-            this.flowLayoutPanel10.Controls.Add(this.comboBox5);
-            this.flowLayoutPanel10.Controls.Add(this.label4);
-            this.flowLayoutPanel10.Controls.Add(this.comboBox4);
+            this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel5);
+            this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel12);
+            this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel13);
+            this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel14);
             this.flowLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel10.Location = new System.Drawing.Point(3, 38);
             this.flowLayoutPanel10.Name = "flowLayoutPanel10";
@@ -193,7 +194,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 39);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
@@ -202,7 +203,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 55);
+            this.comboBox1.Location = new System.Drawing.Point(3, 16);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(183, 21);
             this.comboBox1.TabIndex = 1;
@@ -211,7 +212,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 79);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 2;
@@ -220,7 +221,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 95);
+            this.comboBox2.Location = new System.Drawing.Point(3, 16);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(183, 21);
             this.comboBox2.TabIndex = 0;
@@ -229,7 +230,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(3, 122);
+            this.comboBox3.Location = new System.Drawing.Point(3, 43);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(183, 21);
             this.comboBox3.TabIndex = 0;
@@ -239,7 +240,7 @@
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(3, 149);
+            this.comboBox5.Location = new System.Drawing.Point(3, 70);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(184, 21);
             this.comboBox5.TabIndex = 7;
@@ -249,7 +250,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 173);
+            this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 4;
@@ -258,27 +259,18 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(3, 189);
+            this.comboBox4.Location = new System.Drawing.Point(3, 16);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(183, 21);
             this.comboBox4.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel5);
+            this.flowLayoutPanel2.Controls.Add(this.richTextBox1);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(212, 38);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(393, 496);
             this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // flowLayoutPanel5
-            // 
-            this.flowLayoutPanel5.Controls.Add(this.richTextBox1);
-            this.flowLayoutPanel5.Controls.Add(this.label32);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(388, 496);
-            this.flowLayoutPanel5.TabIndex = 4;
             // 
             // richTextBox1
             // 
@@ -287,28 +279,21 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(379, 493);
+            this.richTextBox1.Size = new System.Drawing.Size(390, 483);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // label32
+            // flowLayoutPanel11
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(3, 499);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 13);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "label32";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(852, 522);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Skills";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel4);
+            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel6);
+            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel3);
+            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel7);
+            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel8);
+            this.flowLayoutPanel11.Location = new System.Drawing.Point(611, 38);
+            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
+            this.flowLayoutPanel11.Size = new System.Drawing.Size(231, 195);
+            this.flowLayoutPanel11.TabIndex = 9;
             // 
             // flowLayoutPanel4
             // 
@@ -406,25 +391,20 @@
             this.label36.TabIndex = 15;
             this.label36.Text = "EMP";
             // 
-            // label37
+            // flowLayoutPanel6
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(3, 323);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(27, 51);
-            this.label37.TabIndex = 16;
-            this.label37.Text = "label37";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(3, 272);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(27, 51);
-            this.label35.TabIndex = 14;
-            this.label35.Text = "label35";
+            this.flowLayoutPanel6.Controls.Add(this.label6);
+            this.flowLayoutPanel6.Controls.Add(this.label8);
+            this.flowLayoutPanel6.Controls.Add(this.label10);
+            this.flowLayoutPanel6.Controls.Add(this.label12);
+            this.flowLayoutPanel6.Controls.Add(this.label30);
+            this.flowLayoutPanel6.Controls.Add(this.label33);
+            this.flowLayoutPanel6.Controls.Add(this.label35);
+            this.flowLayoutPanel6.Controls.Add(this.label37);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(65, 3);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(38, 143);
+            this.flowLayoutPanel6.TabIndex = 6;
             // 
             // label6
             // 
@@ -465,6 +445,46 @@
             this.label12.Size = new System.Drawing.Size(27, 51);
             this.label12.TabIndex = 8;
             this.label12.Text = "label12";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(3, 170);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(27, 51);
+            this.label30.TabIndex = 10;
+            this.label30.Text = "label30";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(3, 221);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(27, 51);
+            this.label33.TabIndex = 12;
+            this.label33.Text = "label33";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(3, 272);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(27, 51);
+            this.label35.TabIndex = 14;
+            this.label35.Text = "label35";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(3, 323);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(27, 51);
+            this.label37.TabIndex = 16;
+            this.label37.Text = "label37";
             // 
             // flowLayoutPanel3
             // 
@@ -665,41 +685,6 @@
             this.label28.Text = "-";
             this.label28.Click += new System.EventHandler(this.attributeTake);
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(3, 170);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(27, 51);
-            this.label30.TabIndex = 10;
-            this.label30.Text = "label30";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(3, 221);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(27, 51);
-            this.label33.TabIndex = 12;
-            this.label33.Text = "label33";
-            // 
-            // flowLayoutPanel6
-            // 
-            this.flowLayoutPanel6.Controls.Add(this.label6);
-            this.flowLayoutPanel6.Controls.Add(this.label8);
-            this.flowLayoutPanel6.Controls.Add(this.label10);
-            this.flowLayoutPanel6.Controls.Add(this.label12);
-            this.flowLayoutPanel6.Controls.Add(this.label30);
-            this.flowLayoutPanel6.Controls.Add(this.label33);
-            this.flowLayoutPanel6.Controls.Add(this.label35);
-            this.flowLayoutPanel6.Controls.Add(this.label37);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(65, 3);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(38, 143);
-            this.flowLayoutPanel6.TabIndex = 6;
-            // 
             // flowLayoutPanel7
             // 
             this.flowLayoutPanel7.Location = new System.Drawing.Point(158, 3);
@@ -736,17 +721,71 @@
             this.label39.TabIndex = 1;
             this.label39.Text = "72";
             // 
-            // flowLayoutPanel11
+            // tabPage2
             // 
-            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel4);
-            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel6);
-            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel3);
-            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel7);
-            this.flowLayoutPanel11.Controls.Add(this.flowLayoutPanel8);
-            this.flowLayoutPanel11.Location = new System.Drawing.Point(611, 38);
-            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
-            this.flowLayoutPanel11.Size = new System.Drawing.Size(231, 195);
-            this.flowLayoutPanel11.TabIndex = 9;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(876, 535);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Skills";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.label3);
+            this.flowLayoutPanel5.Controls.Add(this.textBox1);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(200, 47);
+            this.flowLayoutPanel5.TabIndex = 8;
+            // 
+            // flowLayoutPanel12
+            // 
+            this.flowLayoutPanel12.Controls.Add(this.label1);
+            this.flowLayoutPanel12.Controls.Add(this.comboBox1);
+            this.flowLayoutPanel12.Controls.Add(this.comboBox6);
+            this.flowLayoutPanel12.Controls.Add(this.comboBox7);
+            this.flowLayoutPanel12.Location = new System.Drawing.Point(3, 56);
+            this.flowLayoutPanel12.Name = "flowLayoutPanel12";
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel12.TabIndex = 9;
+            // 
+            // flowLayoutPanel13
+            // 
+            this.flowLayoutPanel13.Controls.Add(this.label2);
+            this.flowLayoutPanel13.Controls.Add(this.comboBox2);
+            this.flowLayoutPanel13.Controls.Add(this.comboBox3);
+            this.flowLayoutPanel13.Controls.Add(this.comboBox5);
+            this.flowLayoutPanel13.Location = new System.Drawing.Point(3, 162);
+            this.flowLayoutPanel13.Name = "flowLayoutPanel13";
+            this.flowLayoutPanel13.Size = new System.Drawing.Size(200, 103);
+            this.flowLayoutPanel13.TabIndex = 10;
+            // 
+            // flowLayoutPanel14
+            // 
+            this.flowLayoutPanel14.Controls.Add(this.label4);
+            this.flowLayoutPanel14.Controls.Add(this.comboBox4);
+            this.flowLayoutPanel14.Location = new System.Drawing.Point(3, 271);
+            this.flowLayoutPanel14.Name = "flowLayoutPanel14";
+            this.flowLayoutPanel14.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel14.TabIndex = 11;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(3, 43);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(184, 21);
+            this.comboBox6.TabIndex = 2;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(3, 70);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(183, 21);
+            this.comboBox7.TabIndex = 3;
             // 
             // Form1
             // 
@@ -761,19 +800,24 @@
             this.tabPage1.ResumeLayout(false);
             this.flowLayoutPanel9.ResumeLayout(false);
             this.flowLayoutPanel10.ResumeLayout(false);
-            this.flowLayoutPanel10.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel5.ResumeLayout(false);
-            this.flowLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel11.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
             this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel6.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel8.PerformLayout();
-            this.flowLayoutPanel11.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel12.ResumeLayout(false);
+            this.flowLayoutPanel12.PerformLayout();
+            this.flowLayoutPanel13.ResumeLayout(false);
+            this.flowLayoutPanel13.PerformLayout();
+            this.flowLayoutPanel14.ResumeLayout(false);
+            this.flowLayoutPanel14.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -783,7 +827,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -827,7 +870,6 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
@@ -841,6 +883,12 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel13;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel14;
     }
 }
 
