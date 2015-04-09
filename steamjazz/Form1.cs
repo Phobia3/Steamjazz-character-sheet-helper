@@ -170,6 +170,13 @@ namespace steamjazz
                      */
                 groupBox2.Visible = true;
                 radioButton12.Visible = false;
+                radioButton13.Visible = false;
+                radioButton15.Visible = false;
+                radioButton16.Visible = false;
+                groupBox1.Visible = true;
+                radioButton5.Visible = false;
+                radioButton7.Visible = false;
+                radioButton8.Visible = false;
 
                 
                 
