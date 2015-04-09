@@ -77,6 +77,8 @@ namespace steamjazz
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Dracosaurian" };
                 comboBox2.Items.AddRange(background);
+                attributeChange("cha", -2);
+                attributeChange("ref", 1);
                 /*
                  * CHA -2, REF +1; allocate +1 to one of the following: STR,
                  * CON or DEX
@@ -165,11 +167,7 @@ namespace steamjazz
                 attributeChange("cha", -2);
                 
                 string[] list = new string[] { "STR", "CON", "DEX","REF","WIT" };
-                /*
-                     * EMP -1, CHA -2, allocate +2 to one of the following attributes:
-                     * STR, CON, DEX, REF, WIT and +1 to another attribute from
-                     * the list.
-                     */
+                
                 groupBox2.Visible = true;
                 radioButton13.Visible = false;
                 radioButton15.Visible = false;
