@@ -40,6 +40,7 @@ namespace steamjazz
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
         {
+            attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
             int backgroundcase = comboBox2.SelectedIndex;
             if (backgroundcase == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
             {
@@ -78,8 +79,7 @@ namespace steamjazz
                  * CHA -2, REF +1; allocate +1 to one of the following: STR,
                  * CON or DEX
                  */
-                string[] list = new string[] { "STR","CON","DEX" };
-                comboBox7.Items.AddRange(list);
+               
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                 var resourceName = "steamjazz.Dracosaurian.txt";
@@ -159,15 +159,19 @@ namespace steamjazz
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Beastfolk" };
                 comboBox2.Items.AddRange(background);
+                attributeChange("emp", -1);
+                attributeChange("cha", -2);
+                
+                string[] list = new string[] { "STR", "CON", "DEX","REF","WIT" };
                 /*
                      * EMP -1, CHA -2, allocate +2 to one of the following attributes:
                      * STR, CON, DEX, REF, WIT and +1 to another attribute from
                      * the list.
                      */
+                groupBox2.Visible = true;
+                radioButton12.Visible = false;
 
-                string[] list = new string[] { "STR", "CON", "DEX","REF","WIT" };
-                comboBox6.Items.AddRange(list);
-                comboBox7.Items.AddRange(list);
+                
                 
                 
 
@@ -1052,6 +1056,201 @@ namespace steamjazz
                 attributeChange("emp", -1, Convert.ToInt32(label39.Text));
             }
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("str", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("str", -1);
+            }
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("emp", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("emp", -1);
+            }
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("cha", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("cha", -1);
+            }
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("wit", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("wit", -1);
+            }
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("int", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("int", -1);
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("ref", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("ref", -1);
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("dex", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("dex", -1);
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("con", 1);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("con", -1);
+            }
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("str", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("str", -2);
+            }
+           }
+
+        private void radioButton16_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("emp", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("emp", -2);
+            }
+        }
+
+        private void radioButton15_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("cha", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("cha", -2);
+            }
+        }
+
+        private void radioButton14_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("wit", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("wit", -2);
+            }
+        }
+
+        private void radioButton13_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("int", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("int", -2);
+            }
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("ref", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("ref", -2);
+            }
+        }
+
+        private void radioButton11_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("dex", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("dex", -2);
+            }
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton9.Checked == true)
+            {
+                attributeChange("con", 2);
+            }
+            if (radioButton9.Checked == false)
+            {
+                attributeChange("con", -2);
+            }
+        }
+
+
+
 
        
 
