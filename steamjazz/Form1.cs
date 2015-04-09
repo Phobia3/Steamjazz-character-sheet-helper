@@ -42,7 +42,28 @@ namespace steamjazz
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
         {
+            //pohjustuksia
             attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
+            groupBox1.Visible = false;
+            radioButton1.Visible = true;
+            radioButton2.Visible = true;
+            radioButton3.Visible = true;
+            radioButton4.Visible = true;
+            radioButton5.Visible = true;
+            radioButton6.Visible = true;
+            radioButton7.Visible = true;
+            radioButton8.Visible = true;
+            groupBox2.Visible = false;
+            radioButton9.Visible = true;
+            radioButton10.Visible = true;
+            radioButton11.Visible = true;
+            radioButton12.Visible = true;
+            radioButton13.Visible = true;
+            radioButton14.Visible = true;
+            radioButton15.Visible = true;
+            radioButton16.Visible = true;
+
+
             int backgroundcase = comboBox2.SelectedIndex;
             if (backgroundcase == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
             {
@@ -79,10 +100,14 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
                 attributeChange("cha", -2);
                 attributeChange("ref", 1);
-                /*
-                 * CHA -2, REF +1; allocate +1 to one of the following: STR,
-                 * CON or DEX
-                 */
+               
+                groupBox1.Visible = true;
+                radioButton4.Visible = false;
+                radioButton5.Visible = false;
+                radioButton6.Visible = false;
+                radioButton7.Visible = false;
+                radioButton8.Visible = false;
+                
                
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
@@ -98,10 +123,105 @@ namespace steamjazz
             }
                     //automationeiden yhteinen rotuinfo
                 case 2:
+            {
+
+                attributeChange("str", 1);
+                attributeChange("con", 1);
+                attributeChange("emp", -1);
+
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Basic.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                
+                
+                break;
+
+                /*
+                "Human","Dracosaurian","Basic","Sylph","Kharzul Dwarf"
+            ,"Beastfolk","Goliath","Butler","Copper","Craftsman","Doll","Heavy Worker"*/
+            }
                 case 7:
+            {
+
+
+
+
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Automatons.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
+            }
                 case 8:
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Automatons.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
+            }
                 case 9:
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Automatons.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
+            }
                 case 10:
+            {
+                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                comboBox2.Items.AddRange(background);
+
+                var assembly = Assembly.GetExecutingAssembly();
+                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                var resourceName = "steamjazz.Automatons.txt";
+
+                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
+                break;
+            }
                 case 11:
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
