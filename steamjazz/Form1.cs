@@ -18,6 +18,8 @@ namespace steamjazz
     public partial class Form1 : Form
         
     {
+        object previous;
+        object previous2;
         public void tabbi()
         {
             
@@ -169,7 +171,14 @@ namespace steamjazz
                      * the list.
                      */
                 groupBox2.Visible = true;
-                radioButton12.Visible = false;
+                radioButton13.Visible = false;
+                radioButton15.Visible = false;
+                radioButton16.Visible = false;
+                groupBox1.Visible = true;
+                radioButton5.Visible = false;
+                radioButton7.Visible = false;
+                radioButton8.Visible = false;
+                
 
                 
                 
@@ -1056,203 +1065,170 @@ namespace steamjazz
                 attributeChange("emp", -1, Convert.ToInt32(label39.Text));
             }
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+         private void radioAdd(Object sender, EventArgs e)
         {
-            if (radioButton9.Checked == true)
-            {
+            if (sender == radioButton1 )
+            {//str
                 attributeChange("str", 1);
             }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("str", -1);
-            }
-        }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("emp", 1);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("emp", -1);
-            }
-        }
-
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("cha", 1);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("cha", -1);
-            }
-        }
-
-        private void radioButton6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("wit", 1);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("wit", -1);
-            }
-        }
-
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("int", 1);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("int", -1);
-            }
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("ref", 1);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("ref", -1);
-            }
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("dex", 1);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("dex", -1);
-            }
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
+            if (sender == radioButton2)
             {
                 attributeChange("con", 1);
             }
-            if (radioButton9.Checked == false)
+            if (sender == radioButton3 )
             {
-                attributeChange("con", -1);
+                attributeChange("dex", 1);
             }
+            if (sender == radioButton4)
+            {
+                attributeChange("ref", 1);
+            }
+            if (sender == radioButton5)
+            {
+                attributeChange("int", 1);
+            }
+            if (sender == radioButton6)
+            {
+                attributeChange("wit", 1);
+            }
+            if (sender == radioButton7)
+            {
+                attributeChange("cha", 1);
+            }
+            if (sender == radioButton8)
+            {
+                attributeChange("emp", 1);
+            }
+
+            
+            radioTake(previous);
+            previous = sender;
         }
+        private void radioAdd2(object sender, EventArgs e)
+         {
+             if (sender == radioButton9)
+             {//str
+                 attributeChange("str", 2);
+                 radioButton1.Visible = false;
+             }
+             if (sender == radioButton10)
+             {
+                 attributeChange("con", 2);
+                 radioButton2.Visible = false;
+             }
+             if (sender == radioButton11)
+             {
+                 attributeChange("dex", 2);
+                 radioButton3.Visible = false;
+             }
+             if (sender == radioButton12)
+             {
+                 attributeChange("ref", 2);
+                 radioButton4.Visible = false;
+             }
+             if (sender == radioButton13)
+             {
+                 attributeChange("int", 2);
+                 radioButton5.Visible = false;
+             }
+             if (sender == radioButton14)
+             {
+                 attributeChange("wit", 2);
+                 radioButton6.Visible = false;
+             }
+             if (sender == radioButton15)
+             {
+                 attributeChange("cha", 2);
+                 radioButton7.Visible = false;
+             }
+             if (sender == radioButton16)
+             {
+                 attributeChange("emp", 2);
+                 radioButton8.Visible = false;
+             }
+             radioTake2(previous2);
+             previous2 = sender;
+         }
+         private void radioTake2(object previous)
+         {
+             if (previous == radioButton9)
+             {//str
+                 attributeChange("str", -2);
+                 radioButton1.Visible = true;
+             }
+             if (previous == radioButton10)
+             {
+                 attributeChange("con", -2);
+                 radioButton2.Visible = true;
+             }
+             if (previous == radioButton11)
+             {
+                 attributeChange("dex", -2);
+                 radioButton3.Visible = true;
+             }
+             if (previous == radioButton12)
+             {
+                 attributeChange("ref", -2);
+                 radioButton4.Visible = true;
+             }
+             if (previous == radioButton13)
+             {
+                 attributeChange("int", -2);
+                 radioButton5.Visible = true;
+             }
+             if (previous == radioButton14)
+             {
+                 attributeChange("wit", -2);
+                 radioButton6.Visible = true;
+             }
+             if (previous == radioButton15)
+             {
+                 attributeChange("cha", -2);
+                 radioButton7.Visible = true;
+             }
+             if (previous == radioButton16)
+             {
+                 attributeChange("emp", -2);
+                 radioButton8.Visible = true;
+             }
+         }
+        private void radioTake(object previous)
+         {
+             if (previous == radioButton1)
+             {//str
+                 attributeChange("str", -1);
+             }
+             if (previous == radioButton2)
+             {
+                 attributeChange("con", -1);
+             }
+             if (previous == radioButton3)
+             {
+                 attributeChange("dex", -1);
+             }
+             if (previous == radioButton4)
+             {
+                 attributeChange("ref", -1);
+             }
+             if (previous == radioButton5)
+             {
+                 attributeChange("int", -1);
+             }
+             if (previous == radioButton6)
+             {
+                 attributeChange("wit", -1);
+             }
+             if (previous == radioButton7)
+             {
+                 attributeChange("cha", -1);
+             }
+             if (previous == radioButton8)
+             {
+                 attributeChange("emp", -1);
+             }
 
-        private void radioButton9_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("str", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("str", -2);
-            }
-           }
-
-        private void radioButton16_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("emp", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("emp", -2);
-            }
-        }
-
-        private void radioButton15_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("cha", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("cha", -2);
-            }
-        }
-
-        private void radioButton14_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("wit", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("wit", -2);
-            }
-        }
-
-        private void radioButton13_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("int", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("int", -2);
-            }
-        }
-
-        private void radioButton12_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("ref", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("ref", -2);
-            }
-        }
-
-        private void radioButton11_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("dex", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("dex", -2);
-            }
-        }
-
-        private void radioButton10_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton9.Checked == true)
-            {
-                attributeChange("con", 2);
-            }
-            if (radioButton9.Checked == false)
-            {
-                attributeChange("con", -2);
-            }
-        }
-
-
-
-
-       
+             
+         }          
 
       
       
