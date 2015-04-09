@@ -153,15 +153,19 @@ namespace steamjazz
                 case 7:
             {
 
-
-
+                 attributeChange("str", -1);
+                 attributeChange("con", -1);
+                 attributeChange("int", 1);
+                 attributeChange("cha", 1);
+                 attributeChange("emp", 1);
+                
 
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                var resourceName = "steamjazz.Automatons.txt";
+                var resourceName = "steamjazz.Butler.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
                 using (StreamReader sr = new StreamReader(stream))
@@ -173,12 +177,18 @@ namespace steamjazz
             }
                 case 8:
             {
+
+                attributeChange("str", 2);
+                attributeChange("con", 2);
+                attributeChange("emp", -2);
+                attributeChange("cha", -1);
+
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                var resourceName = "steamjazz.Automatons.txt";
+                var resourceName = "steamjazz.Copper.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
                 using (StreamReader sr = new StreamReader(stream))
@@ -190,12 +200,20 @@ namespace steamjazz
             }
                 case 9:
             {
+
+                
+                attributeChange("str", 1);
+                attributeChange("con", 1);
+                attributeChange("dex", 1);
+                attributeChange("emp", -1);
+                attributeChange("cha", -1);
+
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                var resourceName = "steamjazz.Automatons.txt";
+                var resourceName = "steamjazz.Craftsman.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
                 using (StreamReader sr = new StreamReader(stream))
@@ -207,12 +225,19 @@ namespace steamjazz
             }
                 case 10:
             {
+
+                attributeChange("str", -1);
+                attributeChange("con", -1);
+                attributeChange("emp", 1);
+                attributeChange("cha", 2);
+
+
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                var resourceName = "steamjazz.Automatons.txt";
+                var resourceName = "steamjazz.Doll.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
                 using (StreamReader sr = new StreamReader(stream))
@@ -224,12 +249,23 @@ namespace steamjazz
             }
                 case 11:
             {
+
+
+                
+                attributeChange("str", 3);
+                attributeChange("con", 3);
+                attributeChange("dex", -2);
+                attributeChange("ref", -2);
+                attributeChange("emp", -3);
+                attributeChange("cha", -1);
+
+
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
-                var resourceName = "steamjazz.Automatons.txt";
+                var resourceName = "steamjazz.HeavyWorker.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
                 using (StreamReader sr = new StreamReader(stream))
@@ -541,6 +577,7 @@ namespace steamjazz
         {
             DBConnect komento = new DBConnect();
             komento.Insert("INSERT INTO info (name, race, background, career, occupation, gender, age, player) VALUES ('" + textBox1.Text + "','" + comboBox1.Text + "','" + comboBox3.Text + "','" + comboBox4.Text + "',' ',' ',' ',' ')");
+              
         }
 
 
@@ -1073,47 +1110,69 @@ namespace steamjazz
                     }
             }
         }
+        private int pointCalc(int x,int points, int change)
+        {
+            
+            if (x<10)
+            {
+                    points = points - change * 5;
+            }
+            if(x==10 && change <0)
+            {
+                points = points - change * 5;
+            }
+            return points;
+        }
         private void attributeChange(string att, int change, int points)
         {
+            
             switch (att)
             {
                 case "str":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label6.Text), points, change));
                         label6.Text = Convert.ToString(Convert.ToInt32(label6.Text) + change);
                         break;
                     }
                 case "con":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label8.Text), points, change));
                         label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) + change);
                         break;
                     }
                 case "dex":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label10.Text), points, change));
                         label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) + change);
                         break;
                     }
                 case "ref":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label12.Text), points, change));
                         label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) + change);
                         break;
                     }
                 case "int":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label30.Text), points, change));
                         label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) + change);
                         break;
                     }
                 case "wit":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label33.Text), points, change));
                         label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) + change);
                         break;
                     }
                 case "cha":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label35.Text), points, change));
                         label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) + change);
                         break;
                     }
                 case "emp":
                     {
+                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label37.Text), points, change));
                         label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) + change);
                         break;
                     }
