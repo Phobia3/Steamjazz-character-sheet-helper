@@ -60,4 +60,4 @@ choose any advantages that are labelled for “living” but not for
 “automaton”. Automatons can be upgraded with Automaton
 Upgrades, which can be found in the Equipment chapter.
 Money for these upgrades can be acquired during character
-creation with the upgraded automaton advantage.
+creation with the upgraded automaton advantage.
