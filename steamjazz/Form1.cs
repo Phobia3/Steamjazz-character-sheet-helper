@@ -385,6 +385,13 @@ namespace steamjazz
             DBConnect komento = new DBConnect();
             komento.Insert("INSERT into info (name, race, background, career, occupation, gender, age, player) VALUES('JP', 'Human', 'Noble', 'Smith', 'Smith', 'Male', '25', 'JP')");
         }
+
+       // private void Update(Object sender, EventArgs e)
+       // {
+       // button1.Click += new EventHandler(this.button1_Click);
+       //    DBConnect komento = new DBConnect();
+       //   komento.Insert("UPDATE info SET name="+textBox1.Text+", race="+comboBox1.Text+", background="+comboBox2.Text+", career="+comboBox3.Text+", occupation="+comboBox4.Text+", gender, age, player WHERE name="+textBox1.Text+"");
+       // }
         public void tulostus (string e)
         {
             richTextBox1.Text = e;
