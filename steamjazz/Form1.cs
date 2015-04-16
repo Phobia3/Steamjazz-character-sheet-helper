@@ -20,7 +20,7 @@ namespace steamjazz
     {
         object previous;
         object previous2;
-        public void tabbi()
+                public void tabbi()
         {
             
             string title = "Create " + (tabControl1.TabCount + 1).ToString();
@@ -547,15 +547,9 @@ namespace steamjazz
         private void button1_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
-            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE ID=''");
+            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE ID=' '");
         }
 
-       // private void Update(Object sender, EventArgs e)
-       // {
-       // button1.Click += new EventHandler(this.button1_Click);
-       //    DBConnect komento = new DBConnect();
-       //   komento.Insert("UPDATE info SET name="+textBox1.Text+", race="+comboBox1.Text+", background="+comboBox2.Text+", career="+comboBox3.Text+", occupation="+comboBox4.Text+", gender, age, player WHERE name="+textBox1.Text+"");
-       // }
         public void tulostus (string e)
         {
             richTextBox1.Text = e;
