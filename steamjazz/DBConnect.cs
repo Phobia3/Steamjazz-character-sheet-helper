@@ -90,16 +90,15 @@ namespace steamjazz
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(komento, yhteys);
-
+           
                 //Execute command
                 
                 cmd.ExecuteNonQuery();
-                cmd.CommandText = ("SELECT LAST (id) FROM info");
                 //close connection
                 this.CloseConnection();
             }
         }
-        
+       
         /*
         //Update statement
         public void Update()
