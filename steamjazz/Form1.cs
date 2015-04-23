@@ -20,7 +20,8 @@ namespace steamjazz
     {
         object previous;
         object previous2;
-                public void tabbi()
+        
+        public void tabbi()
         {
             
             string title = "Create " + (tabControl1.TabCount + 1).ToString();
@@ -43,7 +44,8 @@ namespace steamjazz
 
         {
             //pohjustuksia
-            attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
+            //attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
+            //label39.Text = "72";
             groupBox1.Visible = false;
             radioButton1.Visible = true;
             radioButton2.Visible = true;
@@ -98,8 +100,7 @@ namespace steamjazz
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Dracosaurian" };
                 comboBox2.Items.AddRange(background);
-                attributeChange("cha", -2);
-                attributeChange("ref", 1);
+                
                
                 groupBox1.Visible = true;
                 radioButton4.Visible = false;
@@ -125,9 +126,7 @@ namespace steamjazz
                 case 2:
             {
 
-                attributeChange("str", 1);
-                attributeChange("con", 1);
-                attributeChange("emp", -1);
+               
 
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
@@ -153,11 +152,7 @@ namespace steamjazz
                 case 7:
             {
 
-                 attributeChange("str", -1);
-                 attributeChange("con", -1);
-                 attributeChange("int", 1);
-                 attributeChange("cha", 1);
-                 attributeChange("emp", 1);
+                 
                 
 
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
@@ -178,10 +173,7 @@ namespace steamjazz
                 case 8:
             {
 
-                attributeChange("str", 2);
-                attributeChange("con", 2);
-                attributeChange("emp", -2);
-                attributeChange("cha", -1);
+                
 
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
@@ -202,11 +194,7 @@ namespace steamjazz
             {
 
                 
-                attributeChange("str", 1);
-                attributeChange("con", 1);
-                attributeChange("dex", 1);
-                attributeChange("emp", -1);
-                attributeChange("cha", -1);
+                
 
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
@@ -226,11 +214,7 @@ namespace steamjazz
                 case 10:
             {
 
-                attributeChange("str", -1);
-                attributeChange("con", -1);
-                attributeChange("emp", 1);
-                attributeChange("cha", 2);
-
+                
 
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                 comboBox2.Items.AddRange(background);
@@ -252,12 +236,7 @@ namespace steamjazz
 
 
                 
-                attributeChange("str", 3);
-                attributeChange("con", 3);
-                attributeChange("dex", -2);
-                attributeChange("ref", -2);
-                attributeChange("emp", -3);
-                attributeChange("cha", -1);
+                
 
 
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
@@ -280,8 +259,7 @@ namespace steamjazz
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Sylph" };
                 comboBox2.Items.AddRange(background);
 
-                attributeChange("str", -1);
-                attributeChange("dex", 1);
+                
 
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
@@ -300,8 +278,7 @@ namespace steamjazz
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Kharzul Dwarf" };
                 comboBox2.Items.AddRange(background);
 
-                attributeChange("cha", -2);
-                attributeChange("con", 2);
+                
 
                 var assembly = Assembly.GetExecutingAssembly();
                 List<string> rs = new List<string>(assembly.GetManifestResourceNames());
@@ -319,8 +296,7 @@ namespace steamjazz
             {
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Beastfolk" };
                 comboBox2.Items.AddRange(background);
-                attributeChange("emp", -1);
-                attributeChange("cha", -2);
+               
                 
                 string[] list = new string[] { "STR", "CON", "DEX","REF","WIT" };
                 
@@ -352,13 +328,7 @@ namespace steamjazz
             }
                 case 6:
             {
-                attributeChange("str", 3);
-                attributeChange("con", 3);
-                attributeChange("dex", -2);
-                attributeChange("ref", -2);
-                attributeChange("int", -1);
-                attributeChange("wit", -1);
-                attributeChange("emp", -3);
+                
                 string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Goliath" };
                 comboBox2.Items.AddRange(background);
 
@@ -402,8 +372,8 @@ namespace steamjazz
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             // riippuen kansalaisuudesta, luokkavaihtoehdot vaihtuvat. Valinnoista riippuen label5 saa eri tekstin. nuthing more to see here - moving along
-            int backgroundcase = comboBox2.SelectedIndex;
-            if (backgroundcase == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
+            
+            if (comboBox2.SelectedIndex == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
             {
                 comboBox5.Visible = true;
             }
@@ -411,7 +381,7 @@ namespace steamjazz
             {
                 comboBox5.Visible = false;
             }
-            switch (backgroundcase)
+            switch (comboBox2.SelectedIndex)
             {
                 case 0:
                     {
@@ -580,14 +550,19 @@ namespace steamjazz
               
         }
 
-        
-        
+
         private void button1_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
-            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE name ='" + textBox1.Text + "' AND background = '"+comboBox3.Text+"'");
+            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE ID=''");
         }
-    
+
+       // private void Update(Object sender, EventArgs e)
+       // {
+       // button1.Click += new EventHandler(this.button1_Click);
+       //    DBConnect komento = new DBConnect();
+       //   komento.Insert("UPDATE info SET name="+textBox1.Text+", race="+comboBox1.Text+", background="+comboBox2.Text+", career="+comboBox3.Text+", occupation="+comboBox4.Text+", gender, age, player WHERE name="+textBox1.Text+"");
+       // }
         public void tulostus (string e)
         {
             richTextBox1.Text = e;
@@ -1020,6 +995,139 @@ namespace steamjazz
                       
             }
         }
+        private void backAttribute()
+        {
+            switch(comboBox1.SelectedIndex)
+            {
+                    
+                case 0:
+                    {      
+                        // Human
+                        break;
+                    }
+                case 1:
+                    {
+                        //Dracosaurian
+                        attributeChange("cha", -2);
+                        attributeChange("ref", 1);
+                        break;
+                    }
+                case 2:
+                    {
+                        // Basic
+                        attributeChange("str", 1);
+                        attributeChange("con", 1);
+                        attributeChange("emp", -1);
+                        break;
+                    }
+                case 3:
+                    {
+                        //Sylph
+                        attributeChange("str", -1);
+                        attributeChange("dex", 1);
+                        break;
+                    }
+                case 4:
+                    {
+                        // Kharzul Dwarf
+                        attributeChange("cha", -2);
+                        attributeChange("con", 2);
+                        break;
+                    }
+                case 5:
+                    {
+                        //Beatfolk
+                        attributeChange("emp", -1);
+                        attributeChange("cha", -2);
+                        break;
+                    }
+                case 6:
+                    {
+                        //Goliath
+                        attributeChange("str", 3);
+                        attributeChange("con", 3);
+                        attributeChange("dex", -2);
+                        attributeChange("ref", -2);
+                        attributeChange("int", -1);
+                        attributeChange("wit", -1);
+                        attributeChange("emp", -3);
+                        break;
+                    }
+                case 7:
+                    {
+                        //Buttler
+                        attributeChange("str", -1);
+                        attributeChange("con", -1);
+                        attributeChange("int", 1);
+                        attributeChange("cha", 1);
+                        attributeChange("emp", 1);
+                        break;
+                    }
+                case 8:
+                    {
+                        // Copper
+                        attributeChange("str", 2);
+                        attributeChange("con", 2);
+                        attributeChange("emp", -2);
+                        attributeChange("cha", -1);
+                        break;
+                    }
+                case 9:
+                    {
+                        // Craftsman
+                        attributeChange("str", 1);
+                        attributeChange("con", 1);
+                        attributeChange("dex", 1);
+                        attributeChange("emp", -1);
+                        attributeChange("cha", -1);
+                        break;
+                    }
+                case 10:
+                    {
+                        //Doll
+                        attributeChange("str", -1);
+                        attributeChange("con", -1);
+                        attributeChange("emp", 1);
+                        attributeChange("cha", 2);
+
+                        break;
+                    }
+                case 11:
+                    {
+                        //Heavy Worker
+                        attributeChange("str", 3);
+                        attributeChange("con", 3);
+                        attributeChange("dex", -2);
+                        attributeChange("ref", -2);
+                        attributeChange("emp", -3);
+                        attributeChange("cha", -1);
+                        break;
+                    }
+            }
+            switch (comboBox2.SelectedIndex)
+            {
+                case 0:
+                    {
+                        break;
+                    }
+                case 1:
+                    {
+                        break;
+                    }
+                case 2:
+                    {
+                        break;
+                    }
+                case 3:
+                    {
+                        break;
+                    }
+                case 4:
+                    {
+                        break;
+                    }
+            }
+        }
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1107,6 +1215,7 @@ namespace steamjazz
         }
         private int pointCalc(int x,int points, int change)
         {
+            int[] hinta = new int[] {0,1,4,9,16,25,36,49,64 };
             
             if (x<10)
             {
@@ -1115,6 +1224,35 @@ namespace steamjazz
             if(x==10 && change <0)
             {
                 points = points - change * 5;
+            }
+            if (x == 10 && change >0)
+            {
+                while(change>0)
+                {
+
+                    points = points - hinta[change];
+                    change--;
+                }
+            }
+            if(x>10)
+            {
+                if (change > 0)
+                {
+                    
+                    int diff = 0;
+                    diff = x - 10;
+                    
+                    points = points - hinta[diff+change];
+
+                }
+                if(change<0)
+                {
+                    int diff = 0;
+                    diff = x - 10;
+                    points = points + hinta[diff];
+
+
+                }
             }
             return points;
         }
@@ -1407,7 +1545,75 @@ namespace steamjazz
              }
 
              
-         }          
+         }
+        private int Calc(int x)
+        {
+
+            int y = 0;
+
+            if (x > 0)
+            {
+                while (x > 0)
+                {
+                    x = x - 2;
+                    y++;
+                }
+            }
+            if (x < 0)
+            {
+                do
+                {
+                    x = x + 2;
+                    y--;
+                }
+
+                while (x < 0);
+
+            }
+
+            return y;
+        }
+        private void label6_TextChanged(object sender, EventArgs e)
+        {
+            label32.Text = Convert.ToString(Calc(Convert.ToInt32(label6.Text) - 10));
+        }
+        
+        private void label8_TextChanged(object sender, EventArgs e)
+        {
+            label40.Text = Convert.ToString(Calc(Convert.ToInt32(label8.Text) - 10));
+        }
+
+        private void label10_TextChanged(object sender, EventArgs e)
+        {
+            label41.Text = Convert.ToString(Calc(Convert.ToInt32(label10.Text) - 10));
+        }
+
+        private void label12_TextChanged(object sender, EventArgs e)
+        {
+            label42.Text = Convert.ToString(Calc(Convert.ToInt32(label12.Text) - 10));
+        }
+
+        private void label30_TextChanged(object sender, EventArgs e)
+        {
+            label43.Text = Convert.ToString(Calc(Convert.ToInt32(label30.Text) - 10));
+        }
+
+        private void label33_TextChanged(object sender, EventArgs e)
+        {
+            label44.Text = Convert.ToString(Calc(Convert.ToInt32(label33.Text) - 10));
+        }
+
+        private void label35_TextChanged(object sender, EventArgs e)
+        {
+            label45.Text = Convert.ToString(Calc(Convert.ToInt32(label35.Text) - 10));
+        }
+
+        private void label37_TextChanged(object sender, EventArgs e)
+        {
+            label46.Text = Convert.ToString(Calc(Convert.ToInt32(label37.Text) - 10));
+        }
+
+       
 
       
       
