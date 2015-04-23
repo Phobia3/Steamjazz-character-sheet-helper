@@ -235,6 +235,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabControl1
             // 
@@ -1720,7 +1721,7 @@
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Steamjazz Character sheet helper";
+            this.Text = "Form1";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
