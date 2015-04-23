@@ -118,6 +118,60 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel23 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel24 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel28 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel29 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel30 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel31 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel32 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel33 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -136,12 +190,27 @@
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.flowLayoutPanel16.SuspendLayout();
+            this.flowLayoutPanel17.SuspendLayout();
+            this.flowLayoutPanel18.SuspendLayout();
+            this.flowLayoutPanel19.SuspendLayout();
+            this.flowLayoutPanel20.SuspendLayout();
+            this.flowLayoutPanel21.SuspendLayout();
+            this.flowLayoutPanel22.SuspendLayout();
+            this.flowLayoutPanel23.SuspendLayout();
+            this.flowLayoutPanel29.SuspendLayout();
+            this.flowLayoutPanel30.SuspendLayout();
+            this.flowLayoutPanel31.SuspendLayout();
+            this.flowLayoutPanel32.SuspendLayout();
+            this.flowLayoutPanel33.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -1011,7 +1080,7 @@
             this.flowLayoutPanel7.Controls.Add(this.label46);
             this.flowLayoutPanel7.Location = new System.Drawing.Point(161, 3);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(42, 146);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(42, 143);
             this.flowLayoutPanel7.TabIndex = 7;
             // 
             // label32
@@ -1098,7 +1167,7 @@
             // 
             this.flowLayoutPanel8.Controls.Add(this.label38);
             this.flowLayoutPanel8.Controls.Add(this.label39);
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 155);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 152);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(200, 28);
             this.flowLayoutPanel8.TabIndex = 8;
@@ -1125,6 +1194,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.flowLayoutPanel16);
+            this.tabPage2.Controls.Add(this.flowLayoutPanel15);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1132,6 +1203,515 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Skills";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel15
+            // 
+            this.flowLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel15.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel15.Name = "flowLayoutPanel15";
+            this.flowLayoutPanel15.Size = new System.Drawing.Size(870, 100);
+            this.flowLayoutPanel15.TabIndex = 0;
+            // 
+            // flowLayoutPanel16
+            // 
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel17);
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel18);
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel19);
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel20);
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel21);
+            this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel22);
+            this.flowLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel16.Location = new System.Drawing.Point(3, 103);
+            this.flowLayoutPanel16.Name = "flowLayoutPanel16";
+            this.flowLayoutPanel16.Size = new System.Drawing.Size(870, 429);
+            this.flowLayoutPanel16.TabIndex = 1;
+            // 
+            // flowLayoutPanel17
+            // 
+            this.flowLayoutPanel17.Controls.Add(this.label47);
+            this.flowLayoutPanel17.Controls.Add(this.label53);
+            this.flowLayoutPanel17.Controls.Add(this.label54);
+            this.flowLayoutPanel17.Controls.Add(this.flowLayoutPanel23);
+            this.flowLayoutPanel17.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel17.Name = "flowLayoutPanel17";
+            this.flowLayoutPanel17.Size = new System.Drawing.Size(287, 158);
+            this.flowLayoutPanel17.TabIndex = 0;
+            // 
+            // flowLayoutPanel18
+            // 
+            this.flowLayoutPanel18.Controls.Add(this.label48);
+            this.flowLayoutPanel18.Controls.Add(this.label55);
+            this.flowLayoutPanel18.Controls.Add(this.label56);
+            this.flowLayoutPanel18.Controls.Add(this.flowLayoutPanel24);
+            this.flowLayoutPanel18.Location = new System.Drawing.Point(296, 3);
+            this.flowLayoutPanel18.Name = "flowLayoutPanel18";
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(274, 155);
+            this.flowLayoutPanel18.TabIndex = 1;
+            // 
+            // flowLayoutPanel19
+            // 
+            this.flowLayoutPanel19.Controls.Add(this.label49);
+            this.flowLayoutPanel19.Controls.Add(this.label57);
+            this.flowLayoutPanel19.Controls.Add(this.label58);
+            this.flowLayoutPanel19.Controls.Add(this.flowLayoutPanel25);
+            this.flowLayoutPanel19.Location = new System.Drawing.Point(576, 3);
+            this.flowLayoutPanel19.Name = "flowLayoutPanel19";
+            this.flowLayoutPanel19.Size = new System.Drawing.Size(291, 155);
+            this.flowLayoutPanel19.TabIndex = 2;
+            // 
+            // flowLayoutPanel20
+            // 
+            this.flowLayoutPanel20.Controls.Add(this.label50);
+            this.flowLayoutPanel20.Controls.Add(this.label59);
+            this.flowLayoutPanel20.Controls.Add(this.label60);
+            this.flowLayoutPanel20.Controls.Add(this.flowLayoutPanel26);
+            this.flowLayoutPanel20.Location = new System.Drawing.Point(3, 167);
+            this.flowLayoutPanel20.Name = "flowLayoutPanel20";
+            this.flowLayoutPanel20.Size = new System.Drawing.Size(287, 181);
+            this.flowLayoutPanel20.TabIndex = 3;
+            // 
+            // flowLayoutPanel21
+            // 
+            this.flowLayoutPanel21.Controls.Add(this.label51);
+            this.flowLayoutPanel21.Controls.Add(this.label61);
+            this.flowLayoutPanel21.Controls.Add(this.label62);
+            this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel27);
+            this.flowLayoutPanel21.Location = new System.Drawing.Point(296, 167);
+            this.flowLayoutPanel21.Name = "flowLayoutPanel21";
+            this.flowLayoutPanel21.Size = new System.Drawing.Size(274, 181);
+            this.flowLayoutPanel21.TabIndex = 4;
+            // 
+            // flowLayoutPanel22
+            // 
+            this.flowLayoutPanel22.Controls.Add(this.label52);
+            this.flowLayoutPanel22.Controls.Add(this.label63);
+            this.flowLayoutPanel22.Controls.Add(this.label64);
+            this.flowLayoutPanel22.Controls.Add(this.flowLayoutPanel28);
+            this.flowLayoutPanel22.Location = new System.Drawing.Point(576, 167);
+            this.flowLayoutPanel22.Name = "flowLayoutPanel22";
+            this.flowLayoutPanel22.Size = new System.Drawing.Size(291, 181);
+            this.flowLayoutPanel22.TabIndex = 5;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(3, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(61, 13);
+            this.label47.TabIndex = 0;
+            this.label47.Text = "Agility Skills";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(3, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(66, 13);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "Mental Skills";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(3, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(71, 13);
+            this.label49.TabIndex = 0;
+            this.label49.Text = "Intuition Skills";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(3, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(63, 13);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Social Skills";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(3, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(78, 13);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Empathic Skills";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(3, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(70, 13);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "Combat Skills";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(70, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(29, 13);
+            this.label53.TabIndex = 1;
+            this.label53.Text = "DEX";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(105, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(41, 13);
+            this.label54.TabIndex = 2;
+            this.label54.Text = "label54";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(75, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(25, 13);
+            this.label55.TabIndex = 1;
+            this.label55.Text = "INT";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(106, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(41, 13);
+            this.label56.TabIndex = 2;
+            this.label56.Text = "label56";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(80, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(28, 13);
+            this.label57.TabIndex = 1;
+            this.label57.Text = "WIT";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(114, 0);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(41, 13);
+            this.label58.TabIndex = 2;
+            this.label58.Text = "label58";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(72, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(29, 13);
+            this.label59.TabIndex = 1;
+            this.label59.Text = "CHA";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(107, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(41, 13);
+            this.label60.TabIndex = 2;
+            this.label60.Text = "label60";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(87, 0);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(30, 13);
+            this.label61.TabIndex = 1;
+            this.label61.Text = "EMP";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(123, 0);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(41, 13);
+            this.label62.TabIndex = 2;
+            this.label62.Text = "label62";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(79, 0);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(29, 13);
+            this.label63.TabIndex = 1;
+            this.label63.Text = "DEX";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(114, 0);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(41, 13);
+            this.label64.TabIndex = 2;
+            this.label64.Text = "label64";
+            // 
+            // flowLayoutPanel23
+            // 
+            this.flowLayoutPanel23.Controls.Add(this.flowLayoutPanel29);
+            this.flowLayoutPanel23.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel23.Name = "flowLayoutPanel23";
+            this.flowLayoutPanel23.Size = new System.Drawing.Size(284, 139);
+            this.flowLayoutPanel23.TabIndex = 3;
+            // 
+            // flowLayoutPanel24
+            // 
+            this.flowLayoutPanel24.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel24.Name = "flowLayoutPanel24";
+            this.flowLayoutPanel24.Size = new System.Drawing.Size(271, 139);
+            this.flowLayoutPanel24.TabIndex = 3;
+            // 
+            // flowLayoutPanel25
+            // 
+            this.flowLayoutPanel25.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel25.Name = "flowLayoutPanel25";
+            this.flowLayoutPanel25.Size = new System.Drawing.Size(286, 139);
+            this.flowLayoutPanel25.TabIndex = 3;
+            // 
+            // flowLayoutPanel26
+            // 
+            this.flowLayoutPanel26.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel26.Name = "flowLayoutPanel26";
+            this.flowLayoutPanel26.Size = new System.Drawing.Size(284, 165);
+            this.flowLayoutPanel26.TabIndex = 3;
+            // 
+            // flowLayoutPanel27
+            // 
+            this.flowLayoutPanel27.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
+            this.flowLayoutPanel27.Size = new System.Drawing.Size(271, 165);
+            this.flowLayoutPanel27.TabIndex = 3;
+            // 
+            // flowLayoutPanel28
+            // 
+            this.flowLayoutPanel28.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel28.Name = "flowLayoutPanel28";
+            this.flowLayoutPanel28.Size = new System.Drawing.Size(286, 165);
+            this.flowLayoutPanel28.TabIndex = 3;
+            // 
+            // flowLayoutPanel29
+            // 
+            this.flowLayoutPanel29.Controls.Add(this.flowLayoutPanel32);
+            this.flowLayoutPanel29.Controls.Add(this.flowLayoutPanel33);
+            this.flowLayoutPanel29.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel29.Name = "flowLayoutPanel29";
+            this.flowLayoutPanel29.Size = new System.Drawing.Size(236, 136);
+            this.flowLayoutPanel29.TabIndex = 0;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(3, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(47, 13);
+            this.label65.TabIndex = 0;
+            this.label65.Text = "Athletics";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(3, 13);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(32, 13);
+            this.label66.TabIndex = 1;
+            this.label66.Text = "Climb";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(3, 26);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(32, 13);
+            this.label67.TabIndex = 2;
+            this.label67.Text = "Drive";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(3, 39);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(29, 13);
+            this.label68.TabIndex = 3;
+            this.label68.Text = "Ride";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(3, 62);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(78, 13);
+            this.label69.TabIndex = 4;
+            this.label69.Text = "Sleight of hand";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(3, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(40, 13);
+            this.label70.TabIndex = 5;
+            this.label70.Text = "Stealth";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(3, 13);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(32, 13);
+            this.label71.TabIndex = 6;
+            this.label71.Text = "Swim";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(3, 26);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(37, 13);
+            this.label72.TabIndex = 7;
+            this.label72.Text = "Throw";
+            // 
+            // flowLayoutPanel30
+            // 
+            this.flowLayoutPanel30.Controls.Add(this.label65);
+            this.flowLayoutPanel30.Controls.Add(this.label66);
+            this.flowLayoutPanel30.Controls.Add(this.label67);
+            this.flowLayoutPanel30.Controls.Add(this.label68);
+            this.flowLayoutPanel30.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel30.Name = "flowLayoutPanel30";
+            this.flowLayoutPanel30.Size = new System.Drawing.Size(55, 56);
+            this.flowLayoutPanel30.TabIndex = 8;
+            // 
+            // flowLayoutPanel31
+            // 
+            this.flowLayoutPanel31.Controls.Add(this.label70);
+            this.flowLayoutPanel31.Controls.Add(this.label71);
+            this.flowLayoutPanel31.Controls.Add(this.label72);
+            this.flowLayoutPanel31.Location = new System.Drawing.Point(3, 78);
+            this.flowLayoutPanel31.Name = "flowLayoutPanel31";
+            this.flowLayoutPanel31.Size = new System.Drawing.Size(48, 47);
+            this.flowLayoutPanel31.TabIndex = 9;
+            // 
+            // flowLayoutPanel32
+            // 
+            this.flowLayoutPanel32.Controls.Add(this.flowLayoutPanel30);
+            this.flowLayoutPanel32.Controls.Add(this.label69);
+            this.flowLayoutPanel32.Controls.Add(this.flowLayoutPanel31);
+            this.flowLayoutPanel32.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel32.Name = "flowLayoutPanel32";
+            this.flowLayoutPanel32.Size = new System.Drawing.Size(90, 133);
+            this.flowLayoutPanel32.TabIndex = 10;
+            // 
+            // flowLayoutPanel33
+            // 
+            this.flowLayoutPanel33.Controls.Add(this.label73);
+            this.flowLayoutPanel33.Controls.Add(this.label74);
+            this.flowLayoutPanel33.Controls.Add(this.label75);
+            this.flowLayoutPanel33.Controls.Add(this.label76);
+            this.flowLayoutPanel33.Controls.Add(this.label77);
+            this.flowLayoutPanel33.Controls.Add(this.label78);
+            this.flowLayoutPanel33.Controls.Add(this.label79);
+            this.flowLayoutPanel33.Controls.Add(this.label80);
+            this.flowLayoutPanel33.Location = new System.Drawing.Point(99, 3);
+            this.flowLayoutPanel33.Name = "flowLayoutPanel33";
+            this.flowLayoutPanel33.Size = new System.Drawing.Size(55, 133);
+            this.flowLayoutPanel33.TabIndex = 11;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(3, 0);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(48, 15);
+            this.label73.TabIndex = 0;
+            this.label73.Text = "label73";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(3, 15);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(48, 15);
+            this.label74.TabIndex = 1;
+            this.label74.Text = "label74";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(3, 30);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(48, 15);
+            this.label75.TabIndex = 2;
+            this.label75.Text = "label75";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Location = new System.Drawing.Point(3, 45);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(48, 15);
+            this.label76.TabIndex = 3;
+            this.label76.Text = "label76";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.Location = new System.Drawing.Point(3, 60);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(48, 15);
+            this.label77.TabIndex = 4;
+            this.label77.Text = "label77";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Location = new System.Drawing.Point(3, 75);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(48, 15);
+            this.label78.TabIndex = 5;
+            this.label78.Text = "label78";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(3, 90);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(48, 15);
+            this.label79.TabIndex = 6;
+            this.label79.Text = "label79";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(3, 105);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(48, 15);
+            this.label80.TabIndex = 7;
+            this.label80.Text = "label80";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(165, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Load";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1170,6 +1750,30 @@
             this.flowLayoutPanel7.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel8.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.flowLayoutPanel16.ResumeLayout(false);
+            this.flowLayoutPanel17.ResumeLayout(false);
+            this.flowLayoutPanel17.PerformLayout();
+            this.flowLayoutPanel18.ResumeLayout(false);
+            this.flowLayoutPanel18.PerformLayout();
+            this.flowLayoutPanel19.ResumeLayout(false);
+            this.flowLayoutPanel19.PerformLayout();
+            this.flowLayoutPanel20.ResumeLayout(false);
+            this.flowLayoutPanel20.PerformLayout();
+            this.flowLayoutPanel21.ResumeLayout(false);
+            this.flowLayoutPanel21.PerformLayout();
+            this.flowLayoutPanel22.ResumeLayout(false);
+            this.flowLayoutPanel22.PerformLayout();
+            this.flowLayoutPanel23.ResumeLayout(false);
+            this.flowLayoutPanel29.ResumeLayout(false);
+            this.flowLayoutPanel30.ResumeLayout(false);
+            this.flowLayoutPanel30.PerformLayout();
+            this.flowLayoutPanel31.ResumeLayout(false);
+            this.flowLayoutPanel31.PerformLayout();
+            this.flowLayoutPanel32.ResumeLayout(false);
+            this.flowLayoutPanel32.PerformLayout();
+            this.flowLayoutPanel33.ResumeLayout(false);
+            this.flowLayoutPanel33.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1266,6 +1870,60 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel16;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel17;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel23;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel29;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel32;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel30;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel31;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel33;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel18;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel24;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel19;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel25;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel20;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel26;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel21;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel27;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel22;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel28;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel15;
+        private System.Windows.Forms.Button button2;
     }
 }
 

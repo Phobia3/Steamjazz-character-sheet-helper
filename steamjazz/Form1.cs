@@ -20,6 +20,9 @@ namespace steamjazz
     {
         object previous;
         object previous2;
+        int backPrevious1 = -1;
+        int backPrevious2 = -1;
+        int backPrevious3 = -1;
         
         public void tabbi()
         {
@@ -43,6 +46,7 @@ namespace steamjazz
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
         {
+            backAttribute();
             //pohjustuksia
             //attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
             //label39.Text = "72";
@@ -371,6 +375,7 @@ namespace steamjazz
 	
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            backAttribute();
             // riippuen kansalaisuudesta, luokkavaihtoehdot vaihtuvat. Valinnoista riippuen label5 saa eri tekstin. nuthing more to see here - moving along
             
             if (comboBox2.SelectedIndex == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
@@ -429,8 +434,7 @@ namespace steamjazz
                     {
                        
                         if (comboBox1.SelectedIndex == 1)
-                        {
-                            attributeChange("int", 1);
+                        { 
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.DracosaurianBack.txt";
@@ -444,8 +448,7 @@ namespace steamjazz
 
                         }
                         if (comboBox1.SelectedIndex == 3)
-                        {
-                            attributeChange("ref", 1);
+                        { 
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.SylphBack.txt";
@@ -459,8 +462,7 @@ namespace steamjazz
 
                         }
                         if (comboBox1.SelectedIndex == 4)
-                        {
-                            attributeChange("int", 1);
+                        { 
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.KharzulDwarfBack.txt";
@@ -474,8 +476,7 @@ namespace steamjazz
 
                         }
                         if (comboBox1.SelectedIndex == 5)
-                        {
-                            attributeChange("con", 1);
+                        { 
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.BeastfolkBack.txt";
@@ -489,9 +490,7 @@ namespace steamjazz
 
                         }
                         if (comboBox1.SelectedIndex == 6)
-                        {
-                            attributeChange("con", 1);
-                            attributeChange("cha", -1);
+                        { 
                             var assembly = Assembly.GetExecutingAssembly();
                             List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                             var resourceName = "steamjazz.GoliathBack.txt";
@@ -537,9 +536,7 @@ namespace steamjazz
 
             string[] mili = new string[] { "Deserter", "Military Service", "Non-military Service" };
             comboBox5.Items.AddRange(mili);
-            //
-            //Combobox5 info
-            //
+           
         }
 
 
@@ -574,6 +571,7 @@ namespace steamjazz
         
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            backAttribute();
             int backgroundcase = comboBox2.SelectedIndex;
             if (backgroundcase == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
             {
@@ -594,7 +592,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //low class
-                                    attributeChange("con", 1);
+                                     
                                     richTextBox1.Text = "CON +1\r\n" +
                                                     "Initial skill ranks: Survival 2, Brawl 1, Stealth 1\r\n" +
                                                     "15 CP can be used to buy ranks in the following skills: Animal\r\n" +
@@ -627,7 +625,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //middle clas
-                                    attributeChange("wit", 1);
+                                     
                                     richTextBox1.Text = "WIT +1\r\n" +
                                                     "Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1\r\n" +
                                                     "15 CP can be used to buy ranks in the following skills:\r\n" +
@@ -665,7 +663,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     // upper class
-                                    attributeChange("cha", 1);
+                                     
                                     richTextBox1.Text = "Cost to play: 10CP\r\n" +
                                                     "CHA +1\r\n" +
                                                     "Initial skill ranks: Etiquette 3, Diplomacy 2, Language: Victoran 1" +
@@ -717,7 +715,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     // Military
-                                    attributeChange("str", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.WolfgartMilitary.txt";
@@ -734,7 +732,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //worker
-                                    attributeChange("con", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.WolfgartWorker.txt";
@@ -750,7 +748,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     // upper class
-                                    attributeChange("cha", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.WolfgartUpper.txt";
@@ -774,7 +772,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     // Worker
-                                    attributeChange("con", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.KheimanWorker.txt";
@@ -790,7 +788,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //warior
-                                    attributeChange("str", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.KheimanWarior.txt";
@@ -807,7 +805,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     //clergy
-                                    attributeChange("int", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.KheimanClergy.txt";
@@ -831,7 +829,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Worker
-                                    attributeChange("int", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.HanseburgWorker.txt";
@@ -847,7 +845,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //merchant
-                                    attributeChange("wit", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.HanseburgMerchant.txt";
@@ -863,7 +861,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     //noble
-                                    attributeChange("cha", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.HanseburgNoble.txt";
@@ -887,7 +885,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Monk
-                                    attributeChange("int", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.CrimsonCommoner.txt";
@@ -903,7 +901,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //military
-                                    attributeChange("dex", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.CrimsonMilitary.txt";
@@ -919,7 +917,7 @@ namespace steamjazz
                             case 2:
                                 {
                                     //commoner
-                                    attributeChange("con", 1);
+                                     
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.CrimsonMonk.txt";
@@ -943,7 +941,7 @@ namespace steamjazz
                             case 0:
                                 {
                                     //Pelethok
-                                    attributeChange("int", 1);
+                                    
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.FreePelethok.txt";
@@ -959,7 +957,7 @@ namespace steamjazz
                             case 1:
                                 {
                                     //pirate
-                                    attributeChange("ref", 1);
+                                    
                                     var assembly = Assembly.GetExecutingAssembly();
                                     List<string> rs = new List<string>(assembly.GetManifestResourceNames());
                                     var resourceName = "steamjazz.FreePirate.txt";
@@ -997,6 +995,7 @@ namespace steamjazz
         }
         private void backAttribute()
         {
+            backAttributeTake();
             switch(comboBox1.SelectedIndex)
             {
                     
@@ -1106,27 +1105,511 @@ namespace steamjazz
             }
             switch (comboBox2.SelectedIndex)
             {
+                    
                 case 0:
                     {
+                        //Victoria
+                        switch(comboBox3.SelectedIndex)
+                        {
+                            case 0:
+                                { 
+                                    attributeChange("con", 1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("wit", 1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("cha", 1);
+
+                                    break;
+                                }
+                        }
+                       
                         break;
                     }
                 case 1:
                     {
+                        //Wolfgart
+                        switch (comboBox3.SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("str", 1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("con", 1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("cha", 1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 2:
+                    {
+                        //Kheiman Empire                        
+                        switch (comboBox3.SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("con", 1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("str", 1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("int", 1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 3:
+                    {
+                        //Hansenburg
+                        switch (comboBox3.SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("int", 1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("wit", 1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("cha", 1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 4:
+                    {
+                        //Crimson Empire
+                        switch (comboBox3.SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("int", 1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("dex", 1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("con", 1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 5:
+                    {
+                        //Free Islands
+                        switch (comboBox3.SelectedIndex)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("int", 1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("ref", 1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    groupBox1.Visible = true;
+                                    radioButton1.Visible = false;
+                                    radioButton2.Visible = true;
+                                    radioButton3.Visible = false;
+                                    radioButton4.Visible = true;
+                                    radioButton5.Visible = false;
+                                    radioButton6.Visible = true;
+                                    radioButton7.Visible = false;
+                                    radioButton8.Visible = true;
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 6:
+                    {
+
+                        if (comboBox1.SelectedIndex == 1)
+                        {
+                            attributeChange("int", 1);
+                            
+
+                        }
+                        if (comboBox1.SelectedIndex == 3)
+                        {
+                            attributeChange("ref", 1);
+                           
+                        }
+                        if (comboBox1.SelectedIndex == 4)
+                        {
+                            attributeChange("int", 1);
+                            
+                        }
+                        if (comboBox1.SelectedIndex == 5)
+                        {
+                            attributeChange("con", 1);
+                           
+                        }
+                        if (comboBox1.SelectedIndex == 6)
+                        {
+                            attributeChange("con", 1);
+                            attributeChange("cha", -1);
+                            
+                        }
+
+                        }
+                        break;
+                    }
+            backPrevious1 = comboBox1.SelectedIndex;
+            backPrevious2 = comboBox2.SelectedIndex;
+            backPrevious3 = comboBox3.SelectedIndex;
+            }
+        private void backAttributeTake()
+        {
+            switch (backPrevious1)
+            {
+
+                case 0:
+                    {
+                        // Human
+                        break;
+                    }
+                case 1:
+                    {
+                        //Dracosaurian
+                        attributeChange("cha", 2);
+                        attributeChange("ref", -1);
                         break;
                     }
                 case 2:
                     {
+                        // Basic
+                        attributeChange("str", -1);
+                        attributeChange("con", -1);
+                        attributeChange("emp", 1);
                         break;
                     }
                 case 3:
                     {
+                        //Sylph
+                        attributeChange("str", 1);
+                        attributeChange("dex", -1);
                         break;
                     }
                 case 4:
                     {
+                        // Kharzul Dwarf
+                        attributeChange("cha", 2);
+                        attributeChange("con", -2);
+                        break;
+                    }
+                case 5:
+                    {
+                        //Beatfolk
+                        attributeChange("emp", 1);
+                        attributeChange("cha", 2);
+                        break;
+                    }
+                case 6:
+                    {
+                        //Goliath
+                        attributeChange("str", -3);
+                        attributeChange("con", -3);
+                        attributeChange("dex", 2);
+                        attributeChange("ref", 2);
+                        attributeChange("int", 1);
+                        attributeChange("wit", 1);
+                        attributeChange("emp", 3);
+                        break;
+                    }
+                case 7:
+                    {
+                        //Buttler
+                        attributeChange("str", 1);
+                        attributeChange("con", 1);
+                        attributeChange("int", -1);
+                        attributeChange("cha", -1);
+                        attributeChange("emp", -1);
+                        break;
+                    }
+                case 8:
+                    {
+                        // Copper
+                        attributeChange("str", -2);
+                        attributeChange("con", -2);
+                        attributeChange("emp", 2);
+                        attributeChange("cha", 1);
+                        break;
+                    }
+                case 9:
+                    {
+                        // Craftsman
+                        attributeChange("str", -1);
+                        attributeChange("con", -1);
+                        attributeChange("dex", -1);
+                        attributeChange("emp", 1);
+                        attributeChange("cha", 1);
+                        break;
+                    }
+                case 10:
+                    {
+                        //Doll
+                        attributeChange("str", 1);
+                        attributeChange("con", 1);
+                        attributeChange("emp", -1);
+                        attributeChange("cha", -2);
+
+                        break;
+                    }
+                case 11:
+                    {
+                        //Heavy Worker
+                        attributeChange("str", -3);
+                        attributeChange("con", -3);
+                        attributeChange("dex", 2);
+                        attributeChange("ref", 2);
+                        attributeChange("emp", 3);
+                        attributeChange("cha", 1);
                         break;
                     }
             }
+            switch (backPrevious2)
+            {
+                case 0:
+                    {
+                        //Victoria
+                        switch (backPrevious3)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("con", -1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("wit", -1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("cha", -1);
+
+                                    break;
+                                }
+                        }
+
+                        break;
+                    }
+                case 1:
+                    {
+                        //Wolfgart
+                        switch (backPrevious3)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("str", -1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("con", -1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("cha", -1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 2:
+                    {
+                        //Kheiman Empire                        
+                        switch (backPrevious3)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("con", -1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("str", -1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("int", -1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 3:
+                    {
+                        //Hansenburg
+                        switch (backPrevious3)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("int", -1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("wit", -1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("cha", -1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 4:
+                    {
+                        //Crimson Empire
+                        switch (backPrevious3)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("int", -1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("dex", -1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    attributeChange("con", -1);
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 5:
+                    {
+                        //Free Islands
+                        switch (backPrevious3)
+                        {
+                            case 0:
+                                {
+                                    attributeChange("int", -1);
+
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    attributeChange("ref", -1);
+
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    groupBox1.Visible = true;
+                                    radioButton1.Visible = false;
+                                    radioButton2.Visible = true;
+                                    radioButton3.Visible = false;
+                                    radioButton4.Visible = true;
+                                    radioButton5.Visible = false;
+                                    radioButton6.Visible = true;
+                                    radioButton7.Visible = false;
+                                    radioButton8.Visible = true;
+
+                                    break;
+                                }
+                        } break;
+                    }
+                case 6:
+                    {
+
+                        if (backPrevious1 == 1)
+                        {
+                            attributeChange("int", -1);
+
+
+                        }
+                        if (backPrevious1 == 3)
+                        {
+                            attributeChange("ref", -1);
+
+                        }
+                        if (backPrevious1 == 4)
+                        {
+                            attributeChange("int", -1);
+
+                        }
+                        if (backPrevious1 == 5)
+                        {
+                            attributeChange("con", -1);
+
+                        }
+                        if (backPrevious1 == 6)
+                        {
+                            attributeChange("con", -1);
+                            attributeChange("cha", 1);
+
+                        }
+
+                    }
+                    break;
+            }
+            
         }
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
@@ -1586,6 +2069,8 @@ namespace steamjazz
         private void label10_TextChanged(object sender, EventArgs e)
         {
             label41.Text = Convert.ToString(Calc(Convert.ToInt32(label10.Text) - 10));
+            label54.Text = label41.Text;
+            label64.Text = label41.Text;
         }
 
         private void label12_TextChanged(object sender, EventArgs e)
@@ -1596,21 +2081,25 @@ namespace steamjazz
         private void label30_TextChanged(object sender, EventArgs e)
         {
             label43.Text = Convert.ToString(Calc(Convert.ToInt32(label30.Text) - 10));
+            label56.Text = label43.Text;
         }
 
         private void label33_TextChanged(object sender, EventArgs e)
         {
             label44.Text = Convert.ToString(Calc(Convert.ToInt32(label33.Text) - 10));
+            label58.Text = label44.Text;
         }
 
         private void label35_TextChanged(object sender, EventArgs e)
         {
             label45.Text = Convert.ToString(Calc(Convert.ToInt32(label35.Text) - 10));
+            label60.Text = label45.Text;
         }
 
         private void label37_TextChanged(object sender, EventArgs e)
         {
             label46.Text = Convert.ToString(Calc(Convert.ToInt32(label37.Text) - 10));
+            label62.Text = label46.Text;
         }
 
        
