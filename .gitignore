@@ -9,3 +9,9 @@ steamjazz/obj/Debug/steamjazz.csproj.GenerateResource.Cache
 steamjazz/obj/Debug/steamjazz.pdb
 steamjazz/obj/Debug/
 steamjazz/bin/Debug/
+/steamjazz/steamjazz_TemporaryKey.pfx
+*.psess
+/steamjazz150425(1).vsp
+/steamjazz150425.vsp
+/steamjazz/GlobalSuppressions.cs
+/steamjazz/rules.ruleset

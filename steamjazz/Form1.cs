@@ -18,6 +18,7 @@ namespace steamjazz
     public partial class Form1 : Form
         
     {
+        Skills Skill = new Skills();
         object previous;
         object previous2;
         int backPrevious1 = -1;
@@ -31,25 +32,49 @@ namespace steamjazz
             TabPage Create = new TabPage(title);
             tabControl1.TabPages.Add(Create);
         }
+        /// <summary>
+        /// ensimmäiset alustukset
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
+            InitializeSkills();
+            attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
+            
             InitializeComboBox();
-            attributeChange("10","10","10","10","10","10","10","10");
+            
+            
+            
+        }
+        private void InitializeSkills()
+        {
+            label73.Text = "0";
+            label74.Text = "0";
+            label75.Text = "0";
+            label76.Text = "0";
+            label77.Text = "0";
+            label78.Text = "0";
+            label79.Text = "0";
+            label80.Text = "0";
         }
        
         private void flowLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
-    
+
+        /// <summary>
+        /// Combobox1 sisältää tiedon hahmon rodusta. Rotu vaikuttaa atribuuttien lisäksi muutamaan uniikkiin taustavaihtoehtoon.
+        /// Richtextbox:lle lähetetään tuloste combobox1:n valitusta rodusta.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times")]
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
         {
             backAttribute();
-            //pohjustuksia
-            //attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
-            //label39.Text = "72";
             groupBox1.Visible = false;
             radioButton1.Visible = true;
             radioButton2.Visible = true;
@@ -70,8 +95,8 @@ namespace steamjazz
             radioButton16.Visible = true;
 
 
-            int backgroundcase = comboBox2.SelectedIndex;
-            if (backgroundcase == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
+            
+            if (comboBox2.SelectedIndex == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
             {
                 comboBox5.Visible = true;
             }
@@ -88,7 +113,7 @@ namespace steamjazz
                         comboBox2.Items.AddRange(background);
 
                         var assembly = Assembly.GetExecutingAssembly();
-                        List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                       // // 
                         var resourceName = "steamjazz.Human.txt";
 
                         using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -115,7 +140,7 @@ namespace steamjazz
                 
                
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Dracosaurian.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -136,7 +161,7 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Basic.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -163,7 +188,7 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Butler.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -183,7 +208,7 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Copper.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -204,7 +229,7 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Craftsman.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -224,7 +249,7 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Doll.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -247,7 +272,7 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.HeavyWorker.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -266,7 +291,7 @@ namespace steamjazz
                 
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Sylph.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -285,7 +310,7 @@ namespace steamjazz
                 
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.KharzulDwarf.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -302,8 +327,6 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
                
                 
-                string[] list = new string[] { "STR", "CON", "DEX","REF","WIT" };
-                
                 groupBox2.Visible = true;
                 radioButton13.Visible = false;
                 radioButton15.Visible = false;
@@ -319,7 +342,7 @@ namespace steamjazz
                 
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.beastfolk.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -337,7 +360,7 @@ namespace steamjazz
                 comboBox2.Items.AddRange(background);
 
                 var assembly = Assembly.GetExecutingAssembly();
-                List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                // 
                 var resourceName = "steamjazz.Goliath.txt";
 
                 using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -351,10 +374,16 @@ namespace steamjazz
         }
             
         }
-        
+        /// <summary>
+        /// Valmistellaan comboBox3 vastaanottamaan eri kansalaisuuksien luokkamahdollisuudet
+        /// </summary>
+        /// <param name="eka"></param>
+        /// valitun maan kolme eri luokkatasoa, eroteltuna kolmeen eri string muuttujaan
+        /// <param name="toka"></param>
+        /// <param name="kolme"></param>
         private void combobox3init(string eka, string toka, string kolme)
         {
-            //Valmistellaan comboBox3 vastaanottamaan eri kansalaisuuksien luokkamahdollisuudet
+            
             comboBox3.Items.Clear();
             string[] race = new string[]{eka,toka,kolme};
             comboBox3.Items.AddRange(race);
@@ -362,17 +391,12 @@ namespace steamjazz
             comboBox3.SelectedIndex = 0;
         }
 
-        private void combobox5init(string militarybg)
-        {
-            //Valmistellaan comboBox5 vastaanottamaan eri kansalaisuuksien luokkamahdollisuudet
-            comboBox5.Items.Clear();
-            string[] mili = new string[] { militarybg };
-            comboBox5.Items.AddRange(mili);
-
-            comboBox5.Visible = false;
-            comboBox5.SelectedIndex = 0;
-        }
-	
+	/// <summary>
+	/// Hahmon taustanluonnin ensimmäinen pykälä. Mahdollisuus valita kansalaisuus.
+    /// Muokkaa combobox3 sisältöä
+	/// </summary>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             backAttribute();
@@ -436,7 +460,7 @@ namespace steamjazz
                         if (comboBox1.SelectedIndex == 1)
                         { 
                             var assembly = Assembly.GetExecutingAssembly();
-                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            //// 
                             var resourceName = "steamjazz.DracosaurianBack.txt";
 
                             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -450,7 +474,7 @@ namespace steamjazz
                         if (comboBox1.SelectedIndex == 3)
                         { 
                             var assembly = Assembly.GetExecutingAssembly();
-                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            // 
                             var resourceName = "steamjazz.SylphBack.txt";
 
                             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -464,7 +488,7 @@ namespace steamjazz
                         if (comboBox1.SelectedIndex == 4)
                         { 
                             var assembly = Assembly.GetExecutingAssembly();
-                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            // 
                             var resourceName = "steamjazz.KharzulDwarfBack.txt";
 
                             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -478,7 +502,7 @@ namespace steamjazz
                         if (comboBox1.SelectedIndex == 5)
                         { 
                             var assembly = Assembly.GetExecutingAssembly();
-                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            // 
                             var resourceName = "steamjazz.BeastfolkBack.txt";
 
                             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -492,7 +516,7 @@ namespace steamjazz
                         if (comboBox1.SelectedIndex == 6)
                         { 
                             var assembly = Assembly.GetExecutingAssembly();
-                            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                            // 
                             var resourceName = "steamjazz.GoliathBack.txt";
 
                             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -511,23 +535,16 @@ namespace steamjazz
                     break;
             }
         }
+        /// <summary>
+        /// alustaa combobox:t joiden sisältö ei vaihdu.
+        /// </summary>
         private void InitializeComboBox()
         {
             // Combobox1 info 
             string[] race = new string[]{"Human","Dracosaurian","Basic","Sylph","Kharzul Dwarf"
             ,"Beastfolk","Goliath","Butler","Copper","Craftsman","Doll","Heavy Worker"};
             comboBox1.Items.AddRange(race);
-            //
-            //Combobox2 info Default tehdään comboBox1_SelectedIndexChanged funktiossa
-            //
-            /*
-            * string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-            * comboBox2.Items.AddRange(background);
-            */
-            
-            //
-            //Combobox4 info
-            //
+           
             string[] career = new string[] { "Aristocrat","Artist","Assassin","Banker","Butler","Con Artist","Craftsman","Detective","Druid",
                 "Entertainer","Gangster","Gunner","Hunter","Inventor","Journalist","Law Enforcer","Lawyer","Martial Artist","Mechanic","Mercenary",
                 "Merchant","Musketeer","Officer","Personal Entertainer","Physician","Pirate","Politician","Ranger","Rogue","Sailor","Scholar",
@@ -539,7 +556,12 @@ namespace steamjazz
            
         }
 
-
+        /// <summary>
+        /// Luo uuden rivin steamjazz tietokannan tauluihin, ottaen samalla talteen info taulun id arvon. Id arvoa tullaan myöhemmin 
+        /// hyödyntämään hahmon tallennuksessa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button3_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
@@ -547,26 +569,29 @@ namespace steamjazz
               
         }
 
-
+        /// <summary>
+        /// Tallennusfunktio, päivittää aikaisemmin talteen otetun id:n mukaiset rivit.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
             komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE ID=''");
         }
 
-       // private void Update(Object sender, EventArgs e)
-       // {
-       // button1.Click += new EventHandler(this.button1_Click);
-       //    DBConnect komento = new DBConnect();
-       //   komento.Insert("UPDATE info SET name="+textBox1.Text+", race="+comboBox1.Text+", background="+comboBox2.Text+", career="+comboBox3.Text+", occupation="+comboBox4.Text+", gender, age, player WHERE name="+textBox1.Text+"");
-       // }
+       /// <summary>
+       /// tulosteita mahdollisten virheiden varalta.
+       /// </summary>
+       /// <param name="e"></param>
         public void tulostus (string e)
         {
             richTextBox1.Text = e;
         
         }
         /// <summary>
-        /// Taustan valinta tapahtuu combobox3:ssa. RichTextBox tulostaa tarvittavan informaation taustoista
+        /// Taustan valinta tapahtuu combobox3:ssa. RichTextBox tulostaa tarvittavan informaation taustoista. Vaikuttaa atribuutteihin ja muihin
+        /// ominaisuuksiin
         /// </summary>
         
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -717,7 +742,7 @@ namespace steamjazz
                                     // Military
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.WolfgartMilitary.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -734,7 +759,7 @@ namespace steamjazz
                                     //worker
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.WolfgartWorker.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -750,7 +775,7 @@ namespace steamjazz
                                     // upper class
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.WolfgartUpper.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -774,7 +799,7 @@ namespace steamjazz
                                     // Worker
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.KheimanWorker.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -790,7 +815,7 @@ namespace steamjazz
                                     //warior
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.KheimanWarior.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -807,7 +832,7 @@ namespace steamjazz
                                     //clergy
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.KheimanClergy.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -831,7 +856,7 @@ namespace steamjazz
                                     //Worker
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.HanseburgWorker.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -847,7 +872,7 @@ namespace steamjazz
                                     //merchant
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.HanseburgMerchant.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -863,7 +888,7 @@ namespace steamjazz
                                     //noble
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.HanseburgNoble.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -887,7 +912,7 @@ namespace steamjazz
                                     //Monk
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.CrimsonCommoner.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -903,7 +928,7 @@ namespace steamjazz
                                     //military
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.CrimsonMilitary.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -919,7 +944,7 @@ namespace steamjazz
                                     //commoner
                                      
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.CrimsonMonk.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -943,7 +968,7 @@ namespace steamjazz
                                     //Pelethok
                                     
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.FreePelethok.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -959,7 +984,7 @@ namespace steamjazz
                                     //pirate
                                     
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.FreePirate.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -975,7 +1000,7 @@ namespace steamjazz
                                     //island folk
                                    
                                     var assembly = Assembly.GetExecutingAssembly();
-                                    List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+                                    // 
                                     var resourceName = "steamjazz.FreeIslandFolk.txt";
 
                                     using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -993,6 +1018,9 @@ namespace steamjazz
                       
             }
         }
+        /// <summary>
+        /// Tarkistaa combobox1, -2 ja -3 arvot ja muokkaa attribuutteja sen mukaisesti.
+        /// </summary>
         private void backAttribute()
         {
             backAttributeTake();
@@ -1304,6 +1332,9 @@ namespace steamjazz
             backPrevious2 = comboBox2.SelectedIndex;
             backPrevious3 = comboBox3.SelectedIndex;
             }
+        /// <summary>
+        /// Poistaa edeltävän valinnan muutokset atribuutteihin.
+        /// </summary>
         private void backAttributeTake()
         {
             switch (backPrevious1)
@@ -1611,11 +1642,16 @@ namespace steamjazz
             }
             
         }
+        /// <summary>
+        /// Pieni erillinen funktio kuvaamaan wolffgartin palveluksen vaikutuksia hahmon taitoihin
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
             var assembly = Assembly.GetExecutingAssembly();
-            List<string> rs = new List<string>(assembly.GetManifestResourceNames());
+            // 
             var resourceName = "steamjazz.WolffgartService.txt";
 
             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
@@ -1627,14 +1663,7 @@ namespace steamjazz
         }
 
         /// <summary>
-        /// Attribuuttien sähellykset alkaa tästä
-        /// todo:
-        /// attributeAdd tarkistaa kutsuneen objektin ja sen mukaan lisää oikeata attribuuttia
-        /// attributeAdd poistaa lisäyksen vaativan pistemäärän
-        /// attributeAdd tarkistaa voiko samaa attribuuttia lisätä vielä kertaalleen, mikäli ei lähettävä objecti enabled=false
-        /// AttributeTake vähentää kutsuneen objektiin liittyvää attribuuttia
-        /// attributeTake antaa kyseisen attribuutin lisäävälle objektille enabled=true
-        /// attributeTake antaa poiston mukaisen pistemäärän.
+        /// Laskee muutokset attribuutteihin. Overloaded alustusta ja taustan muutoksia varten.
         /// </summary>
        
         private void attributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp )
@@ -1696,7 +1725,17 @@ namespace steamjazz
                     }
             }
         }
-        private int pointCalc(int x,int points, int change)
+        /// <summary>
+        /// Vastaa attribuutin lisäämisen tai vähentämisen vaikutuksesta attribuuttipisteiden määrään.
+        /// </summary>
+        /// <param name="x"></param>
+        /// attribuutin nykyinen arvo
+        /// <param name="points"></param>
+        /// vapaiden attribuuttipisteiden määrä
+        /// <param name="change"></param>
+        /// muutoksen määrä
+        /// <returns></returns>
+        private static int pointCalc(int x,int points, int change)
         {
             int[] hinta = new int[] {0,1,4,9,16,25,36,49,64 };
             
@@ -1739,6 +1778,15 @@ namespace steamjazz
             }
             return points;
         }
+        /// <summary>
+        /// Muokkaa attribuuttien määrän ilmoittavien label:n tekstin arvoa
+        /// </summary>
+        /// <param name="att"></param>
+        /// attribuutin nimi
+        /// <param name="change"></param>
+        /// muutos
+        /// <param name="points"></param>
+        /// attribuuttipisteiden määrä
         private void attributeChange(string att, int change, int points)
         {
             
@@ -1794,7 +1842,11 @@ namespace steamjazz
                     }
             }
         }
-        
+        /// <summary>
+        /// Lisää toiminnallisuuden + merkkisiin label:in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void attributeAdd(Object sender, EventArgs e)
         {
             if (sender==label13)
@@ -1830,6 +1882,11 @@ namespace steamjazz
                 attributeChange("emp", 1, Convert.ToInt32(label39.Text));
             }
         }
+        /// <summary>
+        /// Lisää toiminnallisuutta - merkkisiin label:in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void attributeTake(Object sender, EventArgs e)
         {
             if (sender == label14)
@@ -1865,6 +1922,11 @@ namespace steamjazz
                 attributeChange("emp", -1, Convert.ToInt32(label39.Text));
             }
         }
+        /// <summary>
+        /// Toiminnallisuutta radiobutton:in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
          private void radioAdd(Object sender, EventArgs e)
         {
             if (sender == radioButton1 )
@@ -1904,6 +1966,11 @@ namespace steamjazz
             radioTake(previous);
             previous = sender;
         }
+        /// <summary>
+        /// samaa kuten radioAdd:sä
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void radioAdd2(object sender, EventArgs e)
          {
              if (sender == radioButton9)
@@ -1949,6 +2016,10 @@ namespace steamjazz
              radioTake2(previous2);
              previous2 = sender;
          }
+        /// <summary>
+        /// Poistaa edeltävän valinnan muutokset
+        /// </summary>
+        /// <param name="previous"></param>
          private void radioTake2(object previous)
          {
              if (previous == radioButton9)
@@ -1992,6 +2063,10 @@ namespace steamjazz
                  radioButton8.Visible = true;
              }
          }
+         /// <summary>
+         /// Poistaa edeltävän valinnan muutokset
+         /// </summary>
+         /// <param name="previous"></param>
         private void radioTake(object previous)
          {
              if (previous == radioButton1)
@@ -2029,7 +2104,14 @@ namespace steamjazz
 
              
          }
-        private int Calc(int x)
+        /// <summary>
+        /// laskee attribbuuttiboonuksen
+        /// </summary>
+        /// <param name="x">
+        /// attribuutin nykyinen arvo
+        /// </param>
+        /// <returns></returns>
+        private static int Calc(int x)
         {
 
             int y = 0;
@@ -2056,55 +2138,89 @@ namespace steamjazz
 
             return y;
         }
-        private void label6_TextChanged(object sender, EventArgs e)
-        {
-            label32.Text = Convert.ToString(Calc(Convert.ToInt32(label6.Text) - 10));
-        }
+        /// <summary>
+        /// reagoinnit attribuuttien muutokseen, että attribuuttiboonukset saadaan lasketttua ja tulostettua.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         
-        private void label8_TextChanged(object sender, EventArgs e)
+        private void  burden ( string x, string y)
         {
-            label40.Text = Convert.ToString(Calc(Convert.ToInt32(label8.Text) - 10));
+            double tulos2 = Convert.ToInt32(x) + Convert.ToInt32(y);
+            label105.Text = Convert.ToString(tulos2 * 2) + "kg";
+            label106.Text = Convert.ToString(tulos2 * 4) + "kg";
+            label107.Text = Convert.ToString(tulos2 * 6) + "kg";
         }
-
-        private void label10_TextChanged(object sender, EventArgs e)
+        private void speed ( string h, string i)
         {
-            label41.Text = Convert.ToString(Calc(Convert.ToInt32(label10.Text) - 10));
-            label54.Text = label41.Text;
-            label64.Text = label41.Text;
+            double x = Convert.ToInt32(h);
+            double y = Convert.ToInt32(i);
+            double tulos = x * 0.2 + y * 0.2;
+            label104.Text = Convert.ToString(tulos);
         }
-
-        private void label12_TextChanged(object sender, EventArgs e)
+        private void label_TextChanged ( object sender, EventArgs e)
         {
-            label42.Text = Convert.ToString(Calc(Convert.ToInt32(label12.Text) - 10));
-        }
+            if ( sender == label6)
+            {
+                burden(label6.Text, label8.Text);
+                label32.Text = Convert.ToString(Calc(Convert.ToInt32(label6.Text) - 10));
+                label103.Text = label32.Text;
+                speed(label6.Text, label10.Text);
+                
+                
+            }
+            if (sender == label8) 
+            {
 
-        private void label30_TextChanged(object sender, EventArgs e)
-        {
-            label43.Text = Convert.ToString(Calc(Convert.ToInt32(label30.Text) - 10));
-            label56.Text = label43.Text;
-        }
+                burden(label6.Text, label8.Text);
+                label40.Text = Convert.ToString(Calc(Convert.ToInt32(label8.Text) - 10));
 
-        private void label33_TextChanged(object sender, EventArgs e)
-        {
-            label44.Text = Convert.ToString(Calc(Convert.ToInt32(label33.Text) - 10));
-            label58.Text = label44.Text;
-        }
+            }
+            if (sender == label10)
+             
+            {
+                
+                speed(label6.Text, label10.Text);
+                label41.Text = Convert.ToString(Calc(Convert.ToInt32(label10.Text) - 10));
+                label54.Text = label41.Text;
+                label64.Text = label41.Text;
+                label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label73.Text, label54.Text))+8);
+                label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label74.Text, label54.Text))+8);
+                label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label75.Text, label54.Text))+8);
+                label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label76.Text, label54.Text))+8);
+                label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label77.Text, label54.Text))+8);
+                label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label78.Text, label54.Text))+8);
+                label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label79.Text, label54.Text))+8);
+                label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label80.Text, label54.Text))+7);
+            
+            }
 
-        private void label35_TextChanged(object sender, EventArgs e)
-        {
-            label45.Text = Convert.ToString(Calc(Convert.ToInt32(label35.Text) - 10));
-            label60.Text = label45.Text;
-        }
-
-        private void label37_TextChanged(object sender, EventArgs e)
-        {
-            label46.Text = Convert.ToString(Calc(Convert.ToInt32(label37.Text) - 10));
-            label62.Text = label46.Text;
-        }
-
-       
-
-      
+            if ( sender==label12)
+            {
+                label42.Text = Convert.ToString(Calc(Convert.ToInt32(label12.Text) - 10));
+            }
+            
+            if ( sender==label30)
+            {
+                label43.Text = Convert.ToString(Calc(Convert.ToInt32(label30.Text) - 10));
+                label56.Text = label43.Text;
+            }
+            if ( sender==label33)
+            {
+                label44.Text = Convert.ToString(Calc(Convert.ToInt32(label33.Text) - 10));
+                label58.Text = label44.Text;
+            }
+            if (sender == label35)
+            {
+                label45.Text = Convert.ToString(Calc(Convert.ToInt32(label35.Text) - 10));
+                label60.Text = label45.Text;
+            }
+            if (sender == label37)
+            {
+                label46.Text = Convert.ToString(Calc(Convert.ToInt32(label37.Text) - 10));
+                label62.Text = label46.Text;
+            }
+        }      
       
        
     }
