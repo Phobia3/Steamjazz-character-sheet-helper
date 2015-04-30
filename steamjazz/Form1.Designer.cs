@@ -2169,7 +2169,7 @@
             this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel54);
             this.flowLayoutPanel27.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel27.Name = "flowLayoutPanel27";
-            this.flowLayoutPanel27.Size = new System.Drawing.Size(271, 70);
+            this.flowLayoutPanel27.Size = new System.Drawing.Size(271, 71);
             this.flowLayoutPanel27.TabIndex = 3;
             // 
             // flowLayoutPanel22
@@ -2320,26 +2320,26 @@
             this.flowLayoutPanel51.Controls.Add(this.label139);
             this.flowLayoutPanel51.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel51.Name = "flowLayoutPanel51";
-            this.flowLayoutPanel51.Size = new System.Drawing.Size(63, 57);
+            this.flowLayoutPanel51.Size = new System.Drawing.Size(102, 57);
             this.flowLayoutPanel51.TabIndex = 0;
             // 
             // flowLayoutPanel52
             // 
-            this.flowLayoutPanel52.Location = new System.Drawing.Point(72, 3);
+            this.flowLayoutPanel52.Location = new System.Drawing.Point(111, 3);
             this.flowLayoutPanel52.Name = "flowLayoutPanel52";
-            this.flowLayoutPanel52.Size = new System.Drawing.Size(75, 57);
+            this.flowLayoutPanel52.Size = new System.Drawing.Size(41, 57);
             this.flowLayoutPanel52.TabIndex = 1;
             // 
             // flowLayoutPanel53
             // 
-            this.flowLayoutPanel53.Location = new System.Drawing.Point(153, 3);
+            this.flowLayoutPanel53.Location = new System.Drawing.Point(158, 3);
             this.flowLayoutPanel53.Name = "flowLayoutPanel53";
             this.flowLayoutPanel53.Size = new System.Drawing.Size(48, 57);
             this.flowLayoutPanel53.TabIndex = 2;
             // 
             // flowLayoutPanel54
             // 
-            this.flowLayoutPanel54.Location = new System.Drawing.Point(207, 3);
+            this.flowLayoutPanel54.Location = new System.Drawing.Point(212, 3);
             this.flowLayoutPanel54.Name = "flowLayoutPanel54";
             this.flowLayoutPanel54.Size = new System.Drawing.Size(48, 57);
             this.flowLayoutPanel54.TabIndex = 3;
@@ -2669,36 +2669,36 @@
             this.label136.AutoSize = true;
             this.label136.Location = new System.Drawing.Point(3, 0);
             this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(47, 13);
+            this.label136.Size = new System.Drawing.Size(78, 13);
             this.label136.TabIndex = 1;
-            this.label136.Text = "label136";
+            this.label136.Text = "Anim. Handling";
             // 
             // label137
             // 
             this.label137.AutoSize = true;
             this.label137.Location = new System.Drawing.Point(3, 13);
             this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(47, 13);
+            this.label137.Size = new System.Drawing.Size(56, 13);
             this.label137.TabIndex = 2;
-            this.label137.Text = "label137";
+            this.label137.Text = "Diplomacy";
             // 
             // label138
             // 
             this.label138.AutoSize = true;
             this.label138.Location = new System.Drawing.Point(3, 26);
             this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(47, 13);
+            this.label138.Size = new System.Drawing.Size(71, 13);
             this.label138.TabIndex = 3;
-            this.label138.Text = "label138";
+            this.label138.Text = "Sense motive";
             // 
             // label139
             // 
             this.label139.AutoSize = true;
             this.label139.Location = new System.Drawing.Point(3, 39);
             this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(47, 13);
+            this.label139.Size = new System.Drawing.Size(52, 13);
             this.label139.TabIndex = 4;
-            this.label139.Text = "label139";
+            this.label139.Text = "Teaching";
             // 
             // label140
             // 
