@@ -39,7 +39,7 @@ namespace steamjazz
         public Form1()
         {
             InitializeComponent();
-            InitializeSkills();
+            //InitializeSkills();
             attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
             
             InitializeComboBox();
@@ -57,6 +57,7 @@ namespace steamjazz
             label78.Text = "0";
             label79.Text = "0";
             label80.Text = "0";
+            label190.Text = "0";
         }
        
         private void flowLayoutPanel4_Paint(object sender, PaintEventArgs e)
@@ -2185,6 +2186,7 @@ namespace steamjazz
                 label41.Text = Convert.ToString(Calc(Convert.ToInt32(label10.Text) - 10));
                 label54.Text = label41.Text;
                 label64.Text = label41.Text;
+                //agility
                 label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label73.Text, label54.Text))+8);
                 label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label74.Text, label54.Text))+8);
                 label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label75.Text, label54.Text))+8);
@@ -2193,6 +2195,21 @@ namespace steamjazz
                 label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label78.Text, label54.Text))+8);
                 label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label79.Text, label54.Text))+8);
                 label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label80.Text, label54.Text))+7);
+                //combat skills
+                label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label174.Text, label54.Text)) + 8);
+                label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label175.Text, label54.Text)) + 7);
+                label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label176.Text, label54.Text)) + 8);
+                label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label177.Text, label54.Text)) + 7);
+                label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label178.Text, label54.Text)) + 8);
+                label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label179.Text, label54.Text)) + 7);
+                label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label180.Text, label54.Text)) + 7);
+                label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label181.Text, label54.Text)) + 6);
+                label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label182.Text, label54.Text)) + 7);
+                label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label183.Text, label54.Text)) + 7);
+                label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label184.Text, label54.Text)) + 7);
+                label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label185.Text, label54.Text)) + 7);
+                label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label186.Text, label54.Text)) + 6);
+                label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label187.Text, label54.Text)) + 7);
             
             }
 
@@ -2218,11 +2235,31 @@ namespace steamjazz
             }
             if (sender == label37)
             {
+
+                //EMP
                 label46.Text = Convert.ToString(Calc(Convert.ToInt32(label37.Text) - 10));
                 label62.Text = label46.Text;
+                SDM();
+            }
+            if (sender == label190)
+            {
+
+                SDM();
+
             }
         }      
+        private void SDM ()
+        { 
+            label108.Text = Convert.ToString(12-Convert.ToInt32(label37.Text)-0.5*Convert.ToInt32(label190.Text));
+        }
+        
+        private void SkillsInit(object sender)
       
+        {
+
+
+
+        }
        
     }
 }
