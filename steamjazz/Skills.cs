@@ -58,6 +58,12 @@ namespace steamjazz
         {
             return Convert.ToString(Convert.ToInt32(x) + 1);
         }
+
+        public string skillRemove(string x)
+        {
+            return Convert.ToString(Convert.ToInt32(x) - 1);
+        }
+
         private int skillRank(int points, int label)
         {
             if (label == 81)
@@ -132,6 +138,12 @@ namespace steamjazz
         public string pointBuy(string points)
         {
             string tulos = Convert.ToString(Convert.ToInt32(points) - cost);
+            cost = 0;
+            return tulos;
+        }
+        public string pointRefund(string points)
+        {
+            string tulos = Convert.ToString(Convert.ToInt32(points) + cost);
             cost = 0;
             return tulos;
         }
