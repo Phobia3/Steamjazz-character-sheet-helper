@@ -2253,14 +2253,23 @@ namespace steamjazz
             label108.Text = Convert.ToString(12-Convert.ToInt32(label37.Text)-0.5*Convert.ToInt32(label190.Text));
         }
         
-        private void SkillsInit(object sender)
+        private void skillClick(object sender)
       
         {
 
+            if(sender==label81)
+            {
+                if (Skill.enough(label81.Text, label213.Text) == true)
+                {
 
+                    label81.Text = Skill.skillAdd(label81.Text);
+                }
+            }
 
         }
-       
+
+        
+    
     }
 }
  
