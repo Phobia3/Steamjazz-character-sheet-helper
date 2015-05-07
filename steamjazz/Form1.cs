@@ -2548,6 +2548,256 @@ namespace steamjazz
             }
 
 
+            if (sender == label245)
+            {
+                if (Skill.enough(label192.Text, label213.Text, 192) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label192.Text = Skill.skillAdd(label192.Text);
+                }
+            }
+
+            if (sender == label246)
+            {
+                if (Skill.enough(label193.Text, label213.Text, 193) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label193.Text = Skill.skillAdd(label193.Text);
+                }
+            }
+            if (sender == label247)
+            {
+                if (Skill.enough(label194.Text, label213.Text, 194) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label194.Text = Skill.skillAdd(label194.Text);
+                }
+            }
+            if (sender == label248)
+            {
+                if (Skill.enough(label195.Text, label213.Text, 195) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label195.Text = Skill.skillAdd(label195.Text);
+                }
+            }
+            if (sender == label249)
+            {
+                if (Skill.enough(label196.Text, label213.Text, 196) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label196.Text = Skill.skillAdd(label196.Text);
+                }
+            }
+            if (sender == label250)
+            {
+                if (Skill.enough(label197.Text, label213.Text, 197) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label197.Text = Skill.skillAdd(label197.Text);
+                }
+            }
+            if (sender == label251)
+            {
+                if (Skill.enough(label198.Text, label213.Text, 198) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label198.Text = Skill.skillAdd(label198.Text);
+                }
+            }
+            if (sender == label252)
+            {
+                if (Skill.enough(label199.Text, label213.Text, 199) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label199.Text = Skill.skillAdd(label199.Text);
+                }
+            }
+            if (sender == label253)
+            {
+                if (Skill.enough(label200.Text, label213.Text, 200) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label200.Text = Skill.skillAdd(label200.Text);
+                }
+            }
+            if (sender == label254)
+            {
+                if (Skill.enough(label201.Text, label213.Text, 201) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label201.Text = Skill.skillAdd(label201.Text);
+                }
+            }
+            if (sender == label255)
+            {
+                if (Skill.enough(label202.Text, label213.Text, 202) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label202.Text = Skill.skillAdd(label202.Text);
+                }
+            }
+            if (sender == label256)
+            {
+                if (Skill.enough(label203.Text, label213.Text, 203) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label203.Text = Skill.skillAdd(label203.Text);
+                }
+            }
+            if (sender == label257)
+            {
+                if (Skill.enough(label204.Text, label213.Text, 204) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label204.Text = Skill.skillAdd(label204.Text);
+                }
+            }
+            if (sender == label258)
+            {
+                if (Skill.enough(label205.Text, label213.Text, 205) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label205.Text = Skill.skillAdd(label205.Text);
+                }
+            }
+            if (sender == label259)
+            {
+                if (Skill.enough(label206.Text, label213.Text, 206) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label206.Text = Skill.skillAdd(label206.Text);
+                }
+            }
+            if (sender == label260)
+            {
+                if (Skill.enough(label207.Text, label213.Text, 207) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label207.Text = Skill.skillAdd(label207.Text);
+                }
+            }
+            if (sender == label261)
+            {
+                if (Skill.enough(label208.Text, label213.Text, 208) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label208.Text = Skill.skillAdd(label208.Text);
+                }
+            }
+            if (sender == label262)
+            {
+                if (Skill.enough(label209.Text, label213.Text, 209) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label209.Text = Skill.skillAdd(label209.Text);
+                }
+            }
+            if (sender == label263)
+            {
+                if (Skill.enough(label210.Text, label213.Text, 210) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label210.Text = Skill.skillAdd(label210.Text);
+                }
+
+           if (sender == label264)
+           {
+                if (Skill.enough(label211.Text, label213.Text, 211) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label211.Text = Skill.skillAdd(label211.Text);
+                }
+                }
+            }
+
+            if (sender == label265)
+            {
+                if (Skill.enough(label212.Text, label213.Text, 212) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label212.Text = Skill.skillAdd(label212.Text);
+                }
+            }
+
+
+
+            if (sender == label241)
+            {
+                if (Skill.enough(label188.Text, label213.Text, 188) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label188.Text = Skill.skillAdd(label188.Text);
+                }
+            }
+
+            if (sender == label242)
+            {
+                if (Skill.enough(label189.Text, label213.Text, 189) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label189.Text = Skill.skillAdd(label189.Text);
+                }
+            }
+
+            if (sender == label243)
+            {
+                if (Skill.enough(label190.Text, label213.Text, 190) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label190.Text = Skill.skillAdd(label190.Text);
+                }
+            }
+
+            if (sender == label244)
+            {
+                if (Skill.enough(label191.Text, label213.Text, 191) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label191.Text = Skill.skillAdd(label191.Text);
+                }
+            }
+
+
+
+            if (sender == label293)
+            {
+                if (Skill.enough(label188.Text, label213.Text, 188) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label188.Text = Skill.skillRemove(label188.Text);
+                }
+            }
+
+            if (sender == label294)
+            {
+                if (Skill.enough(label189.Text, label213.Text,189) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label189.Text = Skill.skillRemove(label242.Text);
+                }
+            }
+
+            if (sender == label295)
+            {
+                if (Skill.enough(label190.Text, label213.Text, 190) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label190.Text = Skill.skillRemove(label190.Text);
+                }
+            }
+
+            if (sender == label296)
+            {
+                if (Skill.enough(label191.Text, label213.Text, 191) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label191.Text = Skill.skillRemove(label191.Text);
+                }
+            }
+
+
+
         }
 
         
