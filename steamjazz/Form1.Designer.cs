@@ -1657,9 +1657,9 @@
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel63);
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel18);
             this.flowLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel16.Location = new System.Drawing.Point(3, 103);
+            this.flowLayoutPanel16.Location = new System.Drawing.Point(3, 62);
             this.flowLayoutPanel16.Name = "flowLayoutPanel16";
-            this.flowLayoutPanel16.Size = new System.Drawing.Size(906, 458);
+            this.flowLayoutPanel16.Size = new System.Drawing.Size(906, 499);
             this.flowLayoutPanel16.TabIndex = 1;
             // 
             // flowLayoutPanel63
@@ -2320,12 +2320,12 @@
             this.flowLayoutPanel44.Controls.Add(this.label219);
             this.flowLayoutPanel44.Location = new System.Drawing.Point(111, 3);
             this.flowLayoutPanel44.Name = "flowLayoutPanel44";
-            this.flowLayoutPanel44.Size = new System.Drawing.Size(49, 83);
+            this.flowLayoutPanel44.Size = new System.Drawing.Size(22, 83);
             this.flowLayoutPanel44.TabIndex = 1;
             // 
             // flowLayoutPanel46
             // 
-            this.flowLayoutPanel46.Location = new System.Drawing.Point(166, 3);
+            this.flowLayoutPanel46.Location = new System.Drawing.Point(139, 3);
             this.flowLayoutPanel46.Name = "flowLayoutPanel46";
             this.flowLayoutPanel46.Size = new System.Drawing.Size(54, 83);
             this.flowLayoutPanel46.TabIndex = 3;
@@ -2544,12 +2544,12 @@
             this.flowLayoutPanel57.Controls.Add(this.label226);
             this.flowLayoutPanel57.Location = new System.Drawing.Point(111, 3);
             this.flowLayoutPanel57.Name = "flowLayoutPanel57";
-            this.flowLayoutPanel57.Size = new System.Drawing.Size(54, 100);
+            this.flowLayoutPanel57.Size = new System.Drawing.Size(22, 100);
             this.flowLayoutPanel57.TabIndex = 2;
             // 
             // flowLayoutPanel58
             // 
-            this.flowLayoutPanel58.Location = new System.Drawing.Point(171, 3);
+            this.flowLayoutPanel58.Location = new System.Drawing.Point(139, 3);
             this.flowLayoutPanel58.Name = "flowLayoutPanel58";
             this.flowLayoutPanel58.Size = new System.Drawing.Size(46, 100);
             this.flowLayoutPanel58.TabIndex = 3;
@@ -2560,7 +2560,7 @@
             this.flowLayoutPanel65.Controls.Add(this.flowLayoutPanel21);
             this.flowLayoutPanel65.Location = new System.Drawing.Point(298, 3);
             this.flowLayoutPanel65.Name = "flowLayoutPanel65";
-            this.flowLayoutPanel65.Size = new System.Drawing.Size(298, 432);
+            this.flowLayoutPanel65.Size = new System.Drawing.Size(298, 346);
             this.flowLayoutPanel65.TabIndex = 7;
             // 
             // flowLayoutPanel22
@@ -3103,7 +3103,7 @@
             this.flowLayoutPanel18.Controls.Add(this.flowLayoutPanel24);
             this.flowLayoutPanel18.Location = new System.Drawing.Point(625, 3);
             this.flowLayoutPanel18.Name = "flowLayoutPanel18";
-            this.flowLayoutPanel18.Size = new System.Drawing.Size(274, 445);
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(274, 349);
             this.flowLayoutPanel18.TabIndex = 1;
             // 
             // label48
@@ -3141,7 +3141,7 @@
             this.flowLayoutPanel24.Controls.Add(this.flowLayoutPanel50);
             this.flowLayoutPanel24.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel24.Name = "flowLayoutPanel24";
-            this.flowLayoutPanel24.Size = new System.Drawing.Size(271, 382);
+            this.flowLayoutPanel24.Size = new System.Drawing.Size(271, 307);
             this.flowLayoutPanel24.TabIndex = 3;
             // 
             // flowLayoutPanel47
@@ -3619,7 +3619,7 @@
             this.flowLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel15.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel15.Name = "flowLayoutPanel15";
-            this.flowLayoutPanel15.Size = new System.Drawing.Size(906, 100);
+            this.flowLayoutPanel15.Size = new System.Drawing.Size(906, 59);
             this.flowLayoutPanel15.TabIndex = 0;
             // 
             // label213
@@ -3636,117 +3636,130 @@
             this.label214.AutoSize = true;
             this.label214.Location = new System.Drawing.Point(3, 0);
             this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(41, 26);
+            this.label214.Size = new System.Drawing.Size(13, 13);
             this.label214.TabIndex = 0;
-            this.label214.Text = "label214";
+            this.label214.Text = "+";
+            this.label214.Click += new System.EventHandler(this.skillClick);
             // 
             // label215
             // 
             this.label215.AutoSize = true;
-            this.label215.Location = new System.Drawing.Point(3, 26);
+            this.label215.Location = new System.Drawing.Point(3, 13);
             this.label215.Name = "label215";
-            this.label215.Size = new System.Drawing.Size(41, 26);
+            this.label215.Size = new System.Drawing.Size(13, 13);
             this.label215.TabIndex = 1;
-            this.label215.Text = "label215";
+            this.label215.Text = "+";
+            this.label215.Click += new System.EventHandler(this.skillClick);
             // 
             // label216
             // 
             this.label216.AutoSize = true;
-            this.label216.Location = new System.Drawing.Point(3, 52);
+            this.label216.Location = new System.Drawing.Point(3, 26);
             this.label216.Name = "label216";
-            this.label216.Size = new System.Drawing.Size(41, 26);
+            this.label216.Size = new System.Drawing.Size(13, 13);
             this.label216.TabIndex = 2;
-            this.label216.Text = "label216";
+            this.label216.Text = "+";
+            this.label216.Click += new System.EventHandler(this.skillClick);
             // 
             // label217
             // 
             this.label217.AutoSize = true;
-            this.label217.Location = new System.Drawing.Point(3, 78);
+            this.label217.Location = new System.Drawing.Point(3, 39);
             this.label217.Name = "label217";
-            this.label217.Size = new System.Drawing.Size(41, 26);
+            this.label217.Size = new System.Drawing.Size(13, 13);
             this.label217.TabIndex = 3;
-            this.label217.Text = "label217";
+            this.label217.Text = "+";
+            this.label217.Click += new System.EventHandler(this.skillClick);
             // 
             // label218
             // 
             this.label218.AutoSize = true;
-            this.label218.Location = new System.Drawing.Point(3, 104);
+            this.label218.Location = new System.Drawing.Point(3, 52);
             this.label218.Name = "label218";
-            this.label218.Size = new System.Drawing.Size(41, 26);
+            this.label218.Size = new System.Drawing.Size(13, 13);
             this.label218.TabIndex = 4;
-            this.label218.Text = "label218";
+            this.label218.Text = "+";
+            this.label218.Click += new System.EventHandler(this.skillClick);
             // 
             // label219
             // 
             this.label219.AutoSize = true;
-            this.label219.Location = new System.Drawing.Point(3, 130);
+            this.label219.Location = new System.Drawing.Point(3, 65);
             this.label219.Name = "label219";
-            this.label219.Size = new System.Drawing.Size(41, 26);
+            this.label219.Size = new System.Drawing.Size(13, 13);
             this.label219.TabIndex = 5;
-            this.label219.Text = "label219";
+            this.label219.Text = "+";
+            this.label219.Click += new System.EventHandler(this.skillClick);
             // 
             // label220
             // 
             this.label220.AutoSize = true;
             this.label220.Location = new System.Drawing.Point(3, 0);
             this.label220.Name = "label220";
-            this.label220.Size = new System.Drawing.Size(47, 13);
+            this.label220.Size = new System.Drawing.Size(13, 13);
             this.label220.TabIndex = 1;
-            this.label220.Text = "label220";
+            this.label220.Text = "+";
+            this.label220.Click += new System.EventHandler(this.skillClick);
             // 
             // label221
             // 
             this.label221.AutoSize = true;
             this.label221.Location = new System.Drawing.Point(3, 13);
             this.label221.Name = "label221";
-            this.label221.Size = new System.Drawing.Size(47, 13);
+            this.label221.Size = new System.Drawing.Size(13, 13);
             this.label221.TabIndex = 2;
-            this.label221.Text = "label221";
+            this.label221.Text = "+";
+            this.label221.Click += new System.EventHandler(this.skillClick);
             // 
             // label222
             // 
             this.label222.AutoSize = true;
             this.label222.Location = new System.Drawing.Point(3, 26);
             this.label222.Name = "label222";
-            this.label222.Size = new System.Drawing.Size(47, 13);
+            this.label222.Size = new System.Drawing.Size(13, 13);
             this.label222.TabIndex = 3;
-            this.label222.Text = "label222";
+            this.label222.Text = "+";
+            this.label222.Click += new System.EventHandler(this.skillClick);
             // 
             // label223
             // 
             this.label223.AutoSize = true;
             this.label223.Location = new System.Drawing.Point(3, 39);
             this.label223.Name = "label223";
-            this.label223.Size = new System.Drawing.Size(47, 13);
+            this.label223.Size = new System.Drawing.Size(13, 13);
             this.label223.TabIndex = 4;
-            this.label223.Text = "label223";
+            this.label223.Text = "+";
+            this.label223.Click += new System.EventHandler(this.skillClick);
             // 
             // label224
             // 
             this.label224.AutoSize = true;
             this.label224.Location = new System.Drawing.Point(3, 52);
             this.label224.Name = "label224";
-            this.label224.Size = new System.Drawing.Size(47, 13);
+            this.label224.Size = new System.Drawing.Size(13, 13);
             this.label224.TabIndex = 5;
-            this.label224.Text = "label224";
+            this.label224.Text = "+";
+            this.label224.Click += new System.EventHandler(this.skillClick);
             // 
             // label225
             // 
             this.label225.AutoSize = true;
             this.label225.Location = new System.Drawing.Point(3, 65);
             this.label225.Name = "label225";
-            this.label225.Size = new System.Drawing.Size(47, 13);
+            this.label225.Size = new System.Drawing.Size(13, 13);
             this.label225.TabIndex = 6;
-            this.label225.Text = "label225";
+            this.label225.Text = "+";
+            this.label225.Click += new System.EventHandler(this.skillClick);
             // 
             // label226
             // 
             this.label226.AutoSize = true;
             this.label226.Location = new System.Drawing.Point(3, 78);
             this.label226.Name = "label226";
-            this.label226.Size = new System.Drawing.Size(47, 13);
+            this.label226.Size = new System.Drawing.Size(13, 13);
             this.label226.TabIndex = 7;
-            this.label226.Text = "label226";
+            this.label226.Text = "+";
+            this.label226.Click += new System.EventHandler(this.skillClick);
             // 
             // label227
             // 
@@ -3756,6 +3769,7 @@
             this.label227.Size = new System.Drawing.Size(47, 13);
             this.label227.TabIndex = 1;
             this.label227.Text = "label227";
+            this.label227.Click += new System.EventHandler(this.skillClick);
             // 
             // label228
             // 
@@ -3765,6 +3779,7 @@
             this.label228.Size = new System.Drawing.Size(47, 13);
             this.label228.TabIndex = 2;
             this.label228.Text = "label228";
+            this.label228.Click += new System.EventHandler(this.skillClick);
             // 
             // label229
             // 
@@ -3774,6 +3789,7 @@
             this.label229.Size = new System.Drawing.Size(47, 13);
             this.label229.TabIndex = 3;
             this.label229.Text = "label229";
+            this.label229.Click += new System.EventHandler(this.skillClick);
             // 
             // label230
             // 
@@ -3783,6 +3799,7 @@
             this.label230.Size = new System.Drawing.Size(47, 13);
             this.label230.TabIndex = 4;
             this.label230.Text = "label230";
+            this.label230.Click += new System.EventHandler(this.skillClick);
             // 
             // label231
             // 
@@ -3792,6 +3809,7 @@
             this.label231.Size = new System.Drawing.Size(47, 13);
             this.label231.TabIndex = 5;
             this.label231.Text = "label231";
+            this.label231.Click += new System.EventHandler(this.skillClick);
             // 
             // label232
             // 
@@ -3801,6 +3819,7 @@
             this.label232.Size = new System.Drawing.Size(47, 13);
             this.label232.TabIndex = 6;
             this.label232.Text = "label232";
+            this.label232.Click += new System.EventHandler(this.skillClick);
             // 
             // label233
             // 
@@ -3810,6 +3829,7 @@
             this.label233.Size = new System.Drawing.Size(47, 13);
             this.label233.TabIndex = 7;
             this.label233.Text = "label233";
+            this.label233.Click += new System.EventHandler(this.skillClick);
             // 
             // label234
             // 
@@ -3819,6 +3839,7 @@
             this.label234.Size = new System.Drawing.Size(47, 13);
             this.label234.TabIndex = 8;
             this.label234.Text = "label234";
+            this.label234.Click += new System.EventHandler(this.skillClick);
             // 
             // label235
             // 
@@ -3828,6 +3849,7 @@
             this.label235.Size = new System.Drawing.Size(47, 13);
             this.label235.TabIndex = 9;
             this.label235.Text = "label235";
+            this.label235.Click += new System.EventHandler(this.skillClick);
             // 
             // label236
             // 
@@ -3837,6 +3859,7 @@
             this.label236.Size = new System.Drawing.Size(47, 13);
             this.label236.TabIndex = 10;
             this.label236.Text = "label236";
+            this.label236.Click += new System.EventHandler(this.skillClick);
             // 
             // label237
             // 
@@ -3846,6 +3869,7 @@
             this.label237.Size = new System.Drawing.Size(47, 13);
             this.label237.TabIndex = 11;
             this.label237.Text = "label237";
+            this.label237.Click += new System.EventHandler(this.skillClick);
             // 
             // label238
             // 
@@ -3855,6 +3879,7 @@
             this.label238.Size = new System.Drawing.Size(47, 13);
             this.label238.TabIndex = 12;
             this.label238.Text = "label238";
+            this.label238.Click += new System.EventHandler(this.skillClick);
             // 
             // label239
             // 
@@ -3864,6 +3889,7 @@
             this.label239.Size = new System.Drawing.Size(47, 13);
             this.label239.TabIndex = 13;
             this.label239.Text = "label239";
+            this.label239.Click += new System.EventHandler(this.skillClick);
             // 
             // label240
             // 
@@ -3873,6 +3899,7 @@
             this.label240.Size = new System.Drawing.Size(47, 13);
             this.label240.TabIndex = 14;
             this.label240.Text = "label240";
+            this.label240.Click += new System.EventHandler(this.skillClick);
             // 
             // label241
             // 
