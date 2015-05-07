@@ -2252,17 +2252,71 @@ namespace steamjazz
         { 
             label108.Text = Convert.ToString(12-Convert.ToInt32(label37.Text)-0.5*Convert.ToInt32(label190.Text));
         }
-        
-        private void skillClick(object sender)
-      
+
+        private void skillClick(object sender, EventArgs e)
         {
-
-            if(sender==label81)
+            if (sender == label81)
             {
-                if (Skill.enough(label81.Text, label213.Text) == true)
+                if (Skill.enough(label73.Text, label213.Text, 81) == true)
                 {
-
-                    label81.Text = Skill.skillAdd(label81.Text);
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label73.Text = Skill.skillAdd(label73.Text);
+                }
+            }
+            if (sender == label82)
+            {
+                if (Skill.enough(label74.Text, label213.Text, 82) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label74.Text = Skill.skillAdd(label74.Text);
+                }
+            }
+            if (sender == label83)
+            {
+                if (Skill.enough(label75.Text, label213.Text, 83) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label75.Text = Skill.skillAdd(label75.Text);
+                }
+            }
+            if (sender == label84)
+            {
+                if (Skill.enough(label76.Text, label213.Text, 84) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label76.Text = Skill.skillAdd(label76.Text);
+                }
+            }
+            if (sender == label85)
+            {
+                if (Skill.enough(label77.Text, label213.Text, 85) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label77.Text = Skill.skillAdd(label77.Text);
+                }
+            }
+            if (sender == label86)
+            {
+                if (Skill.enough(label78.Text, label213.Text, 86) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label78.Text = Skill.skillAdd(label78.Text);
+                }
+            }
+            if (sender == label87)
+            {
+                if (Skill.enough(label79.Text, label213.Text, 87) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label79.Text = Skill.skillAdd(label79.Text);
+                }
+            }
+            if (sender == label88)
+            {
+                if (Skill.enough(label80.Text, label213.Text, 88) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text);
+                    label80.Text = Skill.skillAdd(label80.Text);
                 }
             }
 
