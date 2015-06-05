@@ -1132,6 +1132,7 @@ namespace steamjazz
                         attributeChange("cha", -1);
                         break;
                     }
+             
             }
             switch (comboBox2.SelectedIndex)
             {
@@ -2187,29 +2188,29 @@ namespace steamjazz
                 label54.Text = label41.Text;
                 label64.Text = label41.Text;
                 //agility
-                label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label73.Text, label54.Text))+8);
-                label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label74.Text, label54.Text))+8);
-                label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label75.Text, label54.Text))+8);
-                label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label76.Text, label54.Text))+8);
-                label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label77.Text, label54.Text))+8);
-                label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label78.Text, label54.Text))+8);
-                label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label79.Text, label54.Text))+8);
-                label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label80.Text, label54.Text))+7);
+                label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label73.Text, label54.Text)));
+                label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label74.Text, label54.Text)));
+                label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label75.Text, label54.Text)));
+                label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label76.Text, label54.Text)));
+                label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label77.Text, label54.Text)));
+                label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label78.Text, label54.Text)));
+                label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label79.Text, label54.Text)));
+                label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label80.Text, label54.Text)));
                 //combat skills
-                label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label174.Text, label54.Text)) + 8);
-                label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label175.Text, label54.Text)) + 7);
-                label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label176.Text, label54.Text)) + 8);
-                label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label177.Text, label54.Text)) + 7);
-                label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label178.Text, label54.Text)) + 8);
-                label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label179.Text, label54.Text)) + 7);
-                label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label180.Text, label54.Text)) + 7);
-                label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label181.Text, label54.Text)) + 6);
-                label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label182.Text, label54.Text)) + 7);
-                label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label183.Text, label54.Text)) + 7);
-                label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label184.Text, label54.Text)) + 7);
-                label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label185.Text, label54.Text)) + 7);
-                label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label186.Text, label54.Text)) + 6);
-                label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label187.Text, label54.Text)) + 7);
+                label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label174.Text, label54.Text)));
+                label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label175.Text, label54.Text)));
+                label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label176.Text, label54.Text)));
+                label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label177.Text, label54.Text)));
+                label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label178.Text, label54.Text)));
+                label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label179.Text, label54.Text)));
+                label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label180.Text, label54.Text)));
+                label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label181.Text, label54.Text)));
+                label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label182.Text, label54.Text)));
+                label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label183.Text, label54.Text)));
+                label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label184.Text, label54.Text)));
+                label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label185.Text, label54.Text)));
+                label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label186.Text, label54.Text)));
+                label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label187.Text, label54.Text)));
             
             }
 
@@ -2766,9 +2767,74 @@ namespace steamjazz
                     label191.Text = Skill.skillAdd(label191.Text);
                 }
             }
+            // vähennykset
 
+            if (sender == label89)
+            {
+                if (Skill.enough(label73.Text, label213.Text, 73) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label73.Text = Skill.skillRemove(label73.Text);
+                }
+            }
+            if (sender == label90)
+            {
+                if (Skill.enough(label74.Text, label213.Text, 74) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label74.Text = Skill.skillRemove(label74.Text);
+                }
+            }
+            if (sender == label91)
+            {
+                if (Skill.enough(label75.Text, label213.Text, 75) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label75.Text = Skill.skillRemove(label75.Text);
+                }
+            }
+            if (sender == label92)
+            {
+                if (Skill.enough(label76.Text, label213.Text, 76) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label76.Text = Skill.skillRemove(label76.Text);
+                }
+            }
+            if (sender == label93)
+            {
+                if (Skill.enough(label77.Text, label213.Text, 77) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label77.Text = Skill.skillRemove(label77.Text);
+                }
+            }
+            if (sender == label94)
+            {
+                if (Skill.enough(label78.Text, label213.Text, 78) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label78.Text = Skill.skillRemove(label78.Text);
+                }
+            }
+            if (sender == label95)
+            {
+                if (Skill.enough(label79.Text, label213.Text, 79) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label79.Text = Skill.skillRemove(label79.Text);
+                }
+            }
+            if (sender == label96)
+            {
+                if (Skill.enough(label80.Text, label213.Text, 80) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text);
+                    label80.Text = Skill.skillRemove(label80.Text);
+                }
+            }
 
-
+            // empatia ->
             if (sender == label293)
             {
                 if (Skill.enough(label188.Text, label213.Text, 188) == true)
@@ -2977,7 +3043,505 @@ namespace steamjazz
 
 
         }
+        private void prob (object sender,EventArgs e )
+        {
+            double[] prob3d6 ={0, 0 ,0, 0.46, 1.85, 4.63, 9.26, 16.2, 25.93, 37.5, 50, 62.5, 74.1, 83.83, 90.74, 95.37, 98.15, 99.54, 100 }  ;
+            double[] prob2d6 = { 0, 0, 0, 0, 0, 0, 0, 0, 2.78, 8.33, 16.67, 27.78, 41.67, 58.33, 72.22, 83.33, 91.67, 97.22, 100 };
 
+            //agility
+            if(sender ==label73)
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label73.Text)]);
+            }
+            if (sender == label74)
+            {
+                label319.Text = Convert.ToString(prob3d6[Convert.ToInt32(label74.Text)]);
+            }
+            if(sender ==label75 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label75.Text)]);
+            }
+            if(sender ==label76 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label76.Text)]);
+            }
+            if(sender ==label77 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label77.Text)]);
+            }
+            if(sender ==label78 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label78.Text)]);
+            }
+            if(sender ==label79 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label79.Text)]);
+            }
+            if(sender ==label80 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label80.Text)]);
+            }
+            //social
+            if(sender ==label161 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label161.Text)]);
+            }
+            if(sender ==label162 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label162.Text)]);
+            }
+            if(sender ==label163 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label163.Text)]);
+            }
+            if(sender ==label164)
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label164.Text)]);
+            }
+            if(sender ==label165)
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label165.Text)]);
+            }
+            if(sender ==label166 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label166.Text)]);
+            }
+            //Intuition
+            if(sender ==label167 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label167.Text)]);
+            }
+            if(sender ==label168 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label168.Text)]);
+            }
+            if(sender ==label169 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label169.Text)]);
+            }
+            if(sender ==label170 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label170.Text)]);
+            }
+            if(sender ==label171 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label171.Text)]);
+            }
+            if(sender ==label172 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label172.Text)]);
+            }
+            if(sender ==label173 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label173.Text)]);
+            }
+            //combat skills
+            if(sender ==label174 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label174.Text)]);
+            }
+            if(sender ==label175 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label175.Text)]);
+            }
+            if(sender ==label176 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label176.Text)]);
+            }
+            if(sender ==label177 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label177.Text)]);
+            }
+            if(sender ==label178 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label178.Text)]);
+            }
+            if(sender ==label179 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label179.Text)]);
+            }
+            if(sender ==label180 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label180.Text)]);
+            }
+            if(sender ==label181 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label181.Text)]);
+            }
+            if(sender ==label182 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label182.Text)]);
+            }
+            if(sender ==label183 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label183.Text)]);
+            }
+            if(sender ==label184 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label184.Text)]);
+            }
+            if(sender ==label185 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label185.Text)]);
+            }
+            if(sender ==label186 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label186.Text)]);
+            }
+            if(sender ==label187 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label187.Text)]);
+            }
+            //empatia
+            if(sender ==label188 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label188.Text)]);
+            }
+            if(sender ==label189 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label189.Text)]);
+            }
+            if(sender ==label190 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label190.Text)]);
+            }
+            if(sender ==label191 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label191.Text)]);
+            }
+            //int
+            if(sender ==label192 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label192.Text)]);
+            }
+            if(sender ==label193 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label193.Text)]);
+            }
+            if(sender ==label194 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label194.Text)]);
+            }
+            if(sender ==label195 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label195.Text)]);
+            }
+            if(sender ==label196 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label196.Text)]);
+            }
+            if(sender ==label197 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label197.Text)]);
+            }
+            if(sender ==label198 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label198.Text)]);
+            }
+            if(sender ==label199 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label199.Text)]);
+            }
+            if(sender ==label200 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label200.Text)]);
+            }
+            if(sender ==label201 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label201.Text)]);
+            }
+            if(sender ==label202 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label202.Text)]);
+            }
+            if(sender ==label203 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label203.Text)]);
+            }
+            if(sender ==label204 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label204.Text)]);
+            }
+            if(sender ==label205 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label205.Text)]);
+            }
+            if(sender ==label206 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label206.Text)]);
+            }
+            if(sender ==label207 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label207.Text)]);
+            }
+            if(sender ==label208 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label208.Text)]);
+            }
+            if(sender ==label209 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label209.Text)]);
+            }
+            if(sender ==label210 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label210.Text)]);
+            }
+            if(sender ==label211 )
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label211.Text)]);
+            }
+            if(sender ==label212)
+            {
+                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label212.Text)]);
+            }
+
+            // HOX POX
+            if (sender == label73)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label73.Text)]);
+            }
+            if (sender == label74)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label74.Text)]);
+            }
+            if (sender == label75)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label75.Text)]);
+            }
+            if (sender == label76)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label76.Text)]);
+            }
+            if (sender == label77)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label77.Text)]);
+            }
+            if (sender == label78)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label78.Text)]);
+            }
+            if (sender == label79)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label79.Text)]);
+            }
+            if (sender == label80)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label80.Text)]);
+            }
+            //social
+            if (sender == label161)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label161.Text)]);
+            }
+            if (sender == label162)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label162.Text)]);
+            }
+            if (sender == label163)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label163.Text)]);
+            }
+            if (sender == label164)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label164.Text)]);
+            }
+            if (sender == label165)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label165.Text)]);
+            }
+            if (sender == label166)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label166.Text)]);
+            }
+            //Intuition
+            if (sender == label167)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label167.Text)]);
+            }
+            if (sender == label168)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label168.Text)]);
+            }
+            if (sender == label169)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label169.Text)]);
+            }
+            if (sender == label170)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label170.Text)]);
+            }
+            if (sender == label171)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label171.Text)]);
+            }
+            if (sender == label172)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label172.Text)]);
+            }
+            if (sender == label173)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label173.Text)]);
+            }
+            //combat skills
+            if (sender == label174)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label174.Text)]);
+            }
+            if (sender == label175)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label175.Text)]);
+            }
+            if (sender == label176)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label176.Text)]);
+            }
+            if (sender == label177)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label177.Text)]);
+            }
+            if (sender == label178)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label178.Text)]);
+            }
+            if (sender == label179)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label179.Text)]);
+            }
+            if (sender == label180)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label180.Text)]);
+            }
+            if (sender == label181)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label181.Text)]);
+            }
+            if (sender == label182)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label182.Text)]);
+            }
+            if (sender == label183)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label183.Text)]);
+            }
+            if (sender == label184)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label184.Text)]);
+            }
+            if (sender == label185)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label185.Text)]);
+            }
+            if (sender == label186)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label186.Text)]);
+            }
+            if (sender == label187)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label187.Text)]);
+            }
+            //empatia
+            if (sender == label188)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label188.Text)]);
+            }
+            if (sender == label189)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label189.Text)]);
+            }
+            if (sender == label190)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label190.Text)]);
+            }
+            if (sender == label191)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label191.Text)]);
+            }
+            //int
+            if (sender == label192)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label192.Text)]);
+            }
+            if (sender == label193)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label193.Text)]);
+            }
+            if (sender == label194)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label194.Text)]);
+            }
+            if (sender == label195)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label195.Text)]);
+            }
+            if (sender == label196)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label196.Text)]);
+            }
+            if (sender == label197)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label197.Text)]);
+            }
+            if (sender == label198)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label198.Text)]);
+            }
+            if (sender == label199)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label199.Text)]);
+            }
+            if (sender == label200)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label200.Text)]);
+            }
+            if (sender == label201)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label201.Text)]);
+            }
+            if (sender == label202)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label202.Text)]);
+            }
+            if (sender == label203)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label203.Text)]);
+            }
+            if (sender == label204)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label204.Text)]);
+            }
+            if (sender == label205)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label205.Text)]);
+            }
+            if (sender == label206)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label206.Text)]);
+            }
+            if (sender == label207)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label207.Text)]);
+            }
+            if (sender == label208)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label208.Text)]);
+            }
+            if (sender == label209)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label209.Text)]);
+            }
+            if (sender == label210)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label210.Text)]);
+            }
+            if (sender == label211)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label211.Text)]);
+            }
+            if (sender == label212)
+            {
+                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label212.Text)]);
+            }
+        }
         private void flowLayoutPanel62_Paint(object sender, PaintEventArgs e)
         {
 

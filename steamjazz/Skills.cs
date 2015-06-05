@@ -9,45 +9,11 @@ namespace steamjazz
 {
     class Skills
     {
-        //agility
-        int bonus73 = 8;
-        int bonus74 = 8;
-        int bonus75 = 8;
-        int bonus76 = 8;
-        int bonus77 = 8;
-        int bonus78 = 8;
-        int bonus79 = 8;
-        int bonus80 = 7;
-        //social
-        int bonus161 = 8;
-        int bonus162 = 8;
-        int bonus163 = 8;
-        int bonus164 = 8;
-        int bonus165 = 8;
-        int bonus166 = 8;
-        //Intuition
-        int bonus167 = 8;
-        int bonus168 = 10;
-        int bonus169 = 7;
-        int bonus170 = 7;
-        int bonus171 = 8;
-        int bonus172 = 8;
-        int bonus173 = 8;
-        //combat skills
-        int bonus174 = 8;
-        int bonus175 = 7;
-        int bonus176 = 8;
-        int bonus177 = 7;
-        int bonus178 = 8;
-        int bonus179 = 7;
-        int bonus180 = 7;
-        int bonus181 = 6;
-        int bonus182 = 7;
-        int bonus183 = 7;
-        int bonus184 = 7;
-        int bonus185 = 7;
-        int bonus186 = 6;
-        int bonus187 = 7;
+        int[,] bonus = new int[,] { { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 10, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, };
+        //agility 0-7
+        //social 8-13
+        //Intuition 14- 20
+        //combat skills21-34
         //empatia
         int bonus188 = 7;
         int bonus189 = 7;
@@ -80,6 +46,10 @@ namespace steamjazz
         public Skills()
         {
           
+        }
+        void skillInit(string labelValue, string bonus)
+        {
+
         }
         /// <summary>
         /// laskee attribuuttiboonuksen vaikutuksen taitoihin
@@ -259,6 +229,94 @@ namespace steamjazz
             if (label == 190)
             {
                 return points - bonus190;
+            }
+            if (label == 191)
+            {
+                return points - bonus191;
+            }
+            if (label == 192)
+            {
+                return points - bonus192;
+            }
+            if (label == 193)
+            {
+                return points - bonus193;
+            }
+            if (label == 194)
+            {
+                return points - bonus194;
+            }
+            if (label == 195)
+            {
+                return points - bonus195;
+            }
+            if (label == 196)
+            {
+                return points - bonus196;
+            }
+            if (label == 197)
+            {
+                return points - bonus197;
+            }
+            if (label == 198)
+            {
+                return points - bonus198;
+            }
+            if (label == 199)
+            {
+                return points - bonus199;
+            }
+            if (label == 200)
+            {
+                return points - bonus200;
+            }
+            if (label == 201)
+            {
+                return points - bonus201;
+            }
+            if (label == 202)
+            {
+                return points - bonus202;
+            }
+            if (label == 203)
+            {
+                return points - bonus203;
+            }
+            if (label == 204)
+            {
+                return points - bonus204;
+            }
+            if (label == 205)
+            {
+                return points - bonus205;
+            }
+            if (label == 206)
+            {
+                return points - bonus206;
+            }
+            if (label == 207)
+            {
+                return points - bonus207;
+            }
+            if (label == 208)
+            {
+                return points - bonus208;
+            }
+            if (label == 209)
+            {
+                return points - bonus209;
+            }
+            if (label == 210)
+            {
+                return points - bonus210;
+            }
+            if (label == 211)
+            {
+                return points - bonus211;
+            }
+            if (label == 212)
+            {
+                return points - bonus212;
             }
 
             else
