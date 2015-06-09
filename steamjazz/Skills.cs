@@ -9,38 +9,14 @@ namespace steamjazz
 {
     class Skills
     {
-        int[,] bonus = new int[,] { { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 10, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, };
+        int[,] bonus = new int[,] { { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 10, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 6, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 } };
         //agility 0-7
         //social 8-13
         //Intuition 14- 20
         //combat skills21-34
-        //empatia
-        int bonus188 = 7;
-        int bonus189 = 7;
-        int bonus190 = 7;
-        int bonus191 = 7;
-        //int
-        int bonus192 = 7;
-        int bonus193 = 8;
-        int bonus194 = 7;
-        int bonus195 = 8;
-        int bonus196 = 8;
-        int bonus197 = 8;
-        int bonus198 = 7;
-        int bonus199 = 7;
-        int bonus200 = 8;
-        int bonus201 = 7;
-        int bonus202 = 8;
-        int bonus203 = 7;
-        int bonus204 = 8;
-        int bonus205 = 6;
-        int bonus206 = 8;
-        int bonus207 = 7;
-        int bonus208 = 7;
-        int bonus209 = 8;
-        int bonus210 = 8;
-        int bonus211 = 7;
-        int bonus212 = 8;
+        //empatia 35-38
+        //int 39-59
+
         string prevBonus= "0";
         int cost = 0;
         public Skills()
@@ -66,257 +42,737 @@ namespace steamjazz
             prevBonus = labelBonus; 
             return labelSkill;
         }
-        public string skillAdd(string x)
-        {
-            return Convert.ToString(Convert.ToInt32(x) + 1);
-        }
-
-        public string skillRemove(string x)
-        {
-            return Convert.ToString(Convert.ToInt32(x) - 1);
-        }
-
-        private int skillRank(int points, int label)
+        public string skillAdd(string x, int label)
         {
             if (label == 73)
             {
-                return points - bonus73;
+                bonus[0, 1] = bonus[0, 1] + 1;
             }
             if (label == 74)
             {
-                return points - bonus74;
+                bonus[1, 1] = bonus[1, 1] + 1;
             }
             if (label == 75)
             {
-                return points - bonus75;
+                bonus[2, 1] = bonus[2, 1] + 1;
             }
             if (label == 76)
             {
-                return points - bonus76;
+                bonus[3, 1] = bonus[3, 1] + 1;
             }
             if (label == 77)
             {
-                return points - bonus77;
+                bonus[4, 1] = bonus[4, 1] + 1;
             }
             if (label == 78)
             {
-                return points - bonus78;
+                bonus[5, 1] = bonus[5, 1] + 1;
             }
             if (label == 79)
             {
-                return points - bonus79;
+                bonus[6, 1] = bonus[6, 1] + 1;
             }
             if (label == 80)
             {
-                return points - bonus80;
+                bonus[7, 1] = bonus[7, 1] + 1;
             }
             if (label == 161)
             {
-                return points - bonus161;
+                bonus[8, 1] = bonus[8, 1] + 1;
             }
             if (label == 162)
             {
-                return points - bonus162;
+                bonus[9, 1] = bonus[9, 1] + 1;
             }
             if (label == 163)
             {
-                return points - bonus163;
+                bonus[10, 1] = bonus[10, 1] + 1;
             }
             if (label == 164)
             {
-                return points - bonus164;
+                bonus[11, 1] = bonus[11, 1] + 1;
             }
             if (label == 165)
             {
-                return points - bonus165;
+                bonus[12, 1] = bonus[12, 1] + 1;
             }
             if (label == 166)
             {
-                return points - bonus166;
+                bonus[13, 1] = bonus[13, 1] + 1;
             }
             if (label == 167)
             {
-                return points - bonus167;
+                bonus[14, 1] = bonus[14, 1] + 1;
             }
             if (label == 168)
             {
-                return points - bonus168;
+                bonus[15, 1] = bonus[15, 1] + 1;
             }
             if (label == 169)
             {
-                return points - bonus169;
+                bonus[16, 1] = bonus[16, 1] + 1;
             }
             if (label == 170)
             {
-                return points - bonus170;
+                bonus[17, 1] = bonus[17, 1] + 1;
             }
             if (label == 171)
             {
-                return points - bonus171;
+                bonus[18, 1] = bonus[18, 1] + 1;
             }
             if (label == 172)
             {
-                return points - bonus172;
+                bonus[19, 1] = bonus[19, 1] + 1;
             }
             if (label == 173)
             {
-                return points - bonus173;
+                bonus[20, 1] = bonus[20, 1] + 1;
             }
             if (label == 174)
             {
-                return points - bonus174;
+                bonus[21, 1] = bonus[21, 1] + 1;
             }
             if (label == 175)
             {
-                return points - bonus175;
+                bonus[22, 1] = bonus[22, 1] + 1;
             }
             if (label == 176)
             {
-                return points - bonus176;
+                bonus[23, 1] = bonus[23, 1] + 1;
             }
             if (label == 177)
             {
-                return points - bonus177;
+                bonus[24, 1] = bonus[24, 1] + 1;
             }
             if (label == 178)
             {
-                return points - bonus178;
+                bonus[25, 1] = bonus[25, 1] + 1;
             }
             if (label == 179)
             {
-                return points - bonus179;
+                bonus[26, 1] = bonus[26, 1] + 1;
             }
             if (label == 180)
             {
-                return points - bonus180;
+                bonus[27, 1] = bonus[27, 1] + 1;
             }
             if (label == 181)
             {
-                return points - bonus181;
+                bonus[28, 1] = bonus[28, 1] + 1;
             }
             if (label == 182)
             {
-                return points - bonus182;
+                bonus[29, 1] = bonus[29, 1] + 1;
             }
             if (label == 183)
             {
-                return points - bonus183;
+                bonus[30, 1] = bonus[30, 1] + 1;
             }
             if (label == 184)
             {
-                return points - bonus184;
+                bonus[31, 1] = bonus[31, 1] + 1;
             }
             if (label == 185)
             {
-                return points - bonus185;
+                bonus[32, 1] = bonus[32, 1] + 1;
             }
             if (label == 186)
             {
-                return points - bonus186;
+                bonus[33, 1] = bonus[33, 1] + 1;
             }
             if (label == 187)
             {
-                return points - bonus187;
+                bonus[34, 1] = bonus[34, 1] + 1;
             }
             if (label == 188)
             {
-                return points - bonus188;
+                bonus[35, 1] = bonus[35, 1] + 1;
             }
             if (label == 189)
             {
-                return points - bonus189;
+                bonus[36, 1] = bonus[36, 1] + 1;
             }
             if (label == 190)
             {
-                return points - bonus190;
+                bonus[37, 1] = bonus[37, 1] + 1;
             }
             if (label == 191)
             {
-                return points - bonus191;
+                bonus[38, 1] = bonus[38, 1] + 1;
             }
             if (label == 192)
             {
-                return points - bonus192;
+                bonus[39, 1] = bonus[39, 1] + 1;
             }
             if (label == 193)
             {
-                return points - bonus193;
+                bonus[40, 1] = bonus[40, 1] + 1;
             }
             if (label == 194)
             {
-                return points - bonus194;
+                bonus[41, 1] = bonus[41, 1] + 1;
             }
             if (label == 195)
             {
-                return points - bonus195;
+                bonus[42, 1] = bonus[42, 1] + 1;
             }
             if (label == 196)
             {
-                return points - bonus196;
+                bonus[43, 1] = bonus[43, 1] + 1;
             }
             if (label == 197)
             {
-                return points - bonus197;
+                bonus[44, 1] = bonus[44, 1] + 1;
             }
             if (label == 198)
             {
-                return points - bonus198;
+                bonus[45, 1] = bonus[45, 1] + 1;
             }
             if (label == 199)
             {
-                return points - bonus199;
+                bonus[46, 1] = bonus[46, 1] + 1;
             }
             if (label == 200)
             {
-                return points - bonus200;
+                bonus[47, 1] = bonus[47, 1] + 1;
             }
             if (label == 201)
             {
-                return points - bonus201;
+                bonus[48, 1] = bonus[48, 1] + 1;
             }
             if (label == 202)
             {
-                return points - bonus202;
+                bonus[49, 1] = bonus[49, 1] + 1;
             }
             if (label == 203)
             {
-                return points - bonus203;
+                bonus[50, 1] = bonus[50, 1] + 1;
             }
             if (label == 204)
             {
-                return points - bonus204;
+                bonus[51, 1] = bonus[51, 1] + 1;
             }
             if (label == 205)
             {
-                return points - bonus205;
+                bonus[52, 1] = bonus[52, 1] + 1;
             }
             if (label == 206)
             {
-                return points - bonus206;
+                bonus[53, 1] = bonus[53, 1] + 1;
             }
             if (label == 207)
             {
-                return points - bonus207;
+                bonus[54, 1] = bonus[54, 1] + 1;
             }
             if (label == 208)
             {
-                return points - bonus208;
+                bonus[55, 1] = bonus[55, 1] + 1;
             }
             if (label == 209)
             {
-                return points - bonus209;
+                bonus[56, 1] = bonus[56, 1] + 1;
             }
             if (label == 210)
             {
-                return points - bonus210;
+                bonus[57, 1] = bonus[57, 1] + 1;
             }
             if (label == 211)
             {
-                return points - bonus211;
+                bonus[58, 1] = bonus[58, 1] + 1;
             }
             if (label == 212)
             {
-                return points - bonus212;
+                bonus[59, 1] = bonus[59, 1] + 1;
+            }
+            return Convert.ToString(Convert.ToInt32(x) + 1);
+        }
+
+        public string skillRemove(string x, int label)
+        {
+            if (label == 73)
+            {
+                bonus[0, 1] = bonus[0, 1]-1;
+            }
+            if (label == 74)
+            {
+                bonus[1, 1] = bonus[1, 1]-1;
+            }
+            if (label == 75)
+            {
+                bonus[2, 1] = bonus[2, 1]-1;
+            }
+            if (label == 76)
+            {
+                bonus[3, 1] = bonus[3, 1]-1;
+            }
+            if (label == 77)
+            {
+                bonus[4, 1] = bonus[4, 1]-1;
+            }
+            if (label == 78)
+            {
+                bonus[5, 1] = bonus[5, 1]-1;
+            }
+            if (label == 79)
+            {
+                bonus[6, 1] = bonus[6, 1]-1;
+            }
+            if (label == 80)
+            {
+                bonus[7, 1] = bonus[7, 1]-1;
+            }
+            if (label == 161)
+            {
+                bonus[8, 1] = bonus[8, 1]-1;
+            }
+            if (label == 162)
+            {
+                bonus[9, 1] = bonus[9, 1]-1;
+            }
+            if (label == 163)
+            {
+                bonus[10, 1] = bonus[10, 1]-1;
+            }
+            if (label == 164)
+            {
+                bonus[11, 1] = bonus[11, 1]-1;
+            }
+            if (label == 165)
+            {
+                bonus[12, 1] = bonus[12, 1]-1;
+            }
+            if (label == 166)
+            {
+                bonus[13, 1] = bonus[13, 1]-1;
+            }
+            if (label == 167)
+            {
+                bonus[14, 1] = bonus[14, 1]-1;
+            }
+            if (label == 168)
+            {
+                bonus[15, 1] = bonus[15, 1]-1;
+            }
+            if (label == 169)
+            {
+                bonus[16, 1] = bonus[16, 1]-1;
+            }
+            if (label == 170)
+            {
+                bonus[17, 1] = bonus[17, 1]-1;
+            }
+            if (label == 171)
+            {
+                bonus[18, 1] = bonus[18, 1]-1;
+            }
+            if (label == 172)
+            {
+                bonus[19, 1] = bonus[19, 1]-1;
+            }
+            if (label == 173)
+            {
+                bonus[20, 1] = bonus[20, 1]-1;
+            }
+            if (label == 174)
+            {
+                bonus[21, 1] = bonus[21, 1]-1;
+            }
+            if (label == 175)
+            {
+                bonus[22, 1] = bonus[22, 1]-1;
+            }
+            if (label == 176)
+            {
+                bonus[23, 1] = bonus[23, 1]-1;
+            }
+            if (label == 177)
+            {
+                bonus[24, 1] = bonus[24, 1]-1;
+            }
+            if (label == 178)
+            {
+                bonus[25, 1] = bonus[25, 1]-1;
+            }
+            if (label == 179)
+            {
+                bonus[26, 1] = bonus[26, 1]-1;
+            }
+            if (label == 180)
+            {
+                bonus[27, 1] = bonus[27, 1]-1;
+            }
+            if (label == 181)
+            {
+                bonus[28, 1] = bonus[28, 1]-1;
+            }
+            if (label == 182)
+            {
+                bonus[29, 1] = bonus[29, 1]-1;
+            }
+            if (label == 183)
+            {
+                bonus[30, 1] = bonus[30, 1]-1;
+            }
+            if (label == 184)
+            {
+                bonus[31, 1] = bonus[31, 1]-1;
+            }
+            if (label == 185)
+            {
+                bonus[32, 1] = bonus[32, 1]-1;
+            }
+            if (label == 186)
+            {
+                bonus[33, 1] = bonus[33, 1]-1;
+            }
+            if (label == 187)
+            {
+                bonus[34, 1] = bonus[34, 1]-1;
+            }
+            if (label == 188)
+            {
+                bonus[35, 1] = bonus[35, 1]-1;
+            }
+            if (label == 189)
+            {
+                bonus[36, 1] = bonus[36, 1]-1;
+            }
+            if (label == 190)
+            {
+                bonus[37, 1] = bonus[37, 1]-1;
+            }
+            if (label == 191)
+            {
+                bonus[38, 1] = bonus[38, 1]-1;
+            }
+            if (label == 192)
+            {
+                bonus[39, 1] = bonus[39, 1]-1;
+            }
+            if (label == 193)
+            {
+                bonus[40, 1] = bonus[40, 1]-1;
+            }
+            if (label == 194)
+            {
+                bonus[41, 1] = bonus[41, 1]-1;
+            }
+            if (label == 195)
+            {
+                bonus[42, 1] = bonus[42, 1]-1;
+            }
+            if (label == 196)
+            {
+                bonus[43, 1] = bonus[43, 1]-1;
+            }
+            if (label == 197)
+            {
+                bonus[44, 1] = bonus[44, 1]-1;
+            }
+            if (label == 198)
+            {
+                bonus[45, 1] = bonus[45, 1]-1;
+            }
+            if (label == 199)
+            {
+                bonus[46, 1] = bonus[46, 1]-1;
+            }
+            if (label == 200)
+            {
+                bonus[47, 1] = bonus[47, 1]-1;
+            }
+            if (label == 201)
+            {
+                bonus[48, 1] = bonus[48, 1]-1;
+            }
+            if (label == 202)
+            {
+                bonus[49, 1] = bonus[49, 1]-1;
+            }
+            if (label == 203)
+            {
+                bonus[50, 1] = bonus[50, 1]-1;
+            }
+            if (label == 204)
+            {
+                bonus[51, 1] = bonus[51, 1]-1;
+            }
+            if (label == 205)
+            {
+                bonus[52, 1] = bonus[52, 1]-1;
+            }
+            if (label == 206)
+            {
+                bonus[53, 1] = bonus[53, 1]-1;
+            }
+            if (label == 207)
+            {
+                bonus[54, 1] = bonus[54, 1]-1;
+            }
+            if (label == 208)
+            {
+                bonus[55, 1] = bonus[55, 1]-1;
+            }
+            if (label == 209)
+            {
+                bonus[56, 1] = bonus[56, 1]-1;
+            }
+            if (label == 210)
+            {
+                bonus[57, 1] = bonus[57, 1]-1;
+            }
+            if (label == 211)
+            {
+                bonus[58, 1] = bonus[58, 1]-1;
+            }
+            if (label == 212)
+            {
+                bonus[59, 1] = bonus[59, 1] - 1;
+            }
+            return Convert.ToString(Convert.ToInt32(x) - 1);
+        }
+
+        private int skillRank(int label)
+        {
+            if (label == 73)
+            {
+                return bonus[0,1];
+            }
+            if (label == 74)
+            {
+                return bonus[1, 1];
+            }
+            if (label == 75)
+            {
+                return bonus[2, 1];
+            }
+            if (label == 76)
+            {
+                return bonus[3, 1];
+            }
+            if (label == 77)
+            {
+                return bonus[4, 1];
+            }
+            if (label == 78)
+            {
+                return bonus[5, 1];
+            }
+            if (label == 79)
+            {
+                return bonus[6, 1];
+            }
+            if (label == 80)
+            {
+                return bonus[7, 1];
+            }
+            if (label == 161)
+            {
+                return bonus[8, 1];
+            }
+            if (label == 162)
+            {
+                return bonus[9, 1];
+            }
+            if (label == 163)
+            {
+                return bonus[10, 1];
+            }
+            if (label == 164)
+            {
+                return bonus[11, 1];
+            }
+            if (label == 165)
+            {
+                return bonus[12, 1];
+            }
+            if (label == 166)
+            {
+                return bonus[13, 1];
+            }
+            if (label == 167)
+            {
+                return bonus[14, 1];
+            }
+            if (label == 168)
+            {
+                return bonus[15, 1];
+            }
+            if (label == 169)
+            {
+                return bonus[16, 1];
+            }
+            if (label == 170)
+            {
+                return bonus[17, 1];
+            }
+            if (label == 171)
+            {
+                return bonus[18, 1];
+            }
+            if (label == 172)
+            {
+                return bonus[19, 1];
+            }
+            if (label == 173)
+            {
+                return bonus[20, 1];
+            }
+            if (label == 174)
+            {
+                return bonus[21, 1];
+            }
+            if (label == 175)
+            {
+                return bonus[22, 1];
+            }
+            if (label == 176)
+            {
+                return bonus[23, 1];
+            }
+            if (label == 177)
+            {
+                return bonus[24, 1];
+            }
+            if (label == 178)
+            {
+                return bonus[25, 1];
+            }
+            if (label == 179)
+            {
+                return bonus[26, 1];
+            }
+            if (label == 180)
+            {
+                return bonus[27, 1];
+            }
+            if (label == 181)
+            {
+                return bonus[28, 1];
+            }
+            if (label == 182)
+            {
+                return bonus[29, 1];
+            }
+            if (label == 183)
+            {
+                return bonus[30, 1];
+            }
+            if (label == 184)
+            {
+                return bonus[31, 1];
+            }
+            if (label == 185)
+            {
+                return bonus[32, 1];
+            }
+            if (label == 186)
+            {
+                return bonus[33, 1];
+            }
+            if (label == 187)
+            {
+                return bonus[34, 1];
+            }
+            if (label == 188)
+            {
+                return bonus[35, 1];
+            }
+            if (label == 189)
+            {
+                return bonus[36, 1];
+            }
+            if (label == 190)
+            {
+                return bonus[37, 1];
+            }
+            if (label == 191)
+            {
+                return bonus[38, 1];
+            }
+            if (label == 192)
+            {
+                return bonus[39, 1];
+            }
+            if (label == 193)
+            {
+                return bonus[40, 1];
+            }
+            if (label == 194)
+            {
+                return bonus[41, 1];
+            }
+            if (label == 195)
+            {
+                return bonus[42, 1];
+            }
+            if (label == 196)
+            {
+                return bonus[43, 1];
+            }
+            if (label == 197)
+            {
+                return bonus[44, 1];
+            }
+            if (label == 198)
+            {
+                return bonus[45, 1];
+            }
+            if (label == 199)
+            {
+                return bonus[46, 1];
+            }
+            if (label == 200)
+            {
+                return bonus[47, 1];
+            }
+            if (label == 201)
+            {
+                return bonus[48, 1];
+            }
+            if (label == 202)
+            {
+                return bonus[49, 1];
+            }
+            if (label == 203)
+            {
+                return bonus[50, 1];
+            }
+            if (label == 204)
+            {
+                return bonus[51, 1];
+            }
+            if (label == 205)
+            {
+                return bonus[52, 1];
+            }
+            if (label == 206)
+            {
+                return bonus[53, 1];
+            }
+            if (label == 207)
+            {
+                return bonus[54, 1];
+            }
+            if (label == 208)
+            {
+                return bonus[55, 1];
+            }
+            if (label == 209)
+            {
+                return bonus[56, 1];
+            }
+            if (label == 210)
+            {
+                return bonus[57, 1];
+            }
+            if (label == 211)
+            {
+                return bonus[58, 1];
+            }
+            if (label == 212)
+            {
+                return bonus[59, 1];
             }
 
             else
@@ -335,7 +791,7 @@ namespace steamjazz
         public bool enough(string points, string pointsBuy, int label)
         {
 
-            int point = skillRank(Convert.ToInt32(points),label);
+            int point = skillRank(label);
             int pointBuy = Convert.ToInt32(pointsBuy);
             cost = 0;
             int add = point + 1;
@@ -355,15 +811,15 @@ namespace steamjazz
             }
         }
 
-        public string pointBuy(string points)
+        public string pointBuy(string points,int label)
         {
-            string tulos = Convert.ToString(Convert.ToInt32(points) - cost);
-            cost = 0;
+            string tulos = Convert.ToString(Convert.ToInt32(points) - skillRank(label)-1);
+            
             return tulos;
         }
-        public string pointRefund(string points)
+        public string pointRefund(string points, int label)
         {
-            string tulos = Convert.ToString(Convert.ToInt32(points) + cost);
+            string tulos = Convert.ToString(Convert.ToInt32(points) + skillRank(label));
             cost = 0;
             return tulos;
         }

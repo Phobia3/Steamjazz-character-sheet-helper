@@ -713,6 +713,32 @@ namespace steamjazz.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to skillit
+        ///- nimet
+        ///- attribuuttibonukset kaikille
+        ///- ei negatiivisia skill rank
+        ///
+        ///Attribuutit
+        ///
+        ///Taustat
+        ///- päivitä tekstitiedostot nykyisen säännöstön mukaisiksi
+        ///- päivitä taustojen boonukset nykyisen säännöstön mukaisiksi
+        ///
+        ///Advantage&amp;&amp;disadvantage
+        ///- kaikki
+        ///
+        ///Tietokanta
+        ///- id ylös, kun new nappulaa painetaan
+        ///- save update lauseella
+        ///- load ominaisuus pelaajan nimellä.
+        /// </summary>
+        internal static string todo {
+            get {
+                return ResourceManager.GetString("todo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The military governs so much of the life in Wulffgart that the
         ///lives of its citizens are largely defined by their military service.
         ///Around 95% of the men and around 70% of the women in
@@ -726,6 +752,67 @@ namespace steamjazz.Properties {
         internal static string WolffgartService {
             get {
                 return ResourceManager.GetString("WolffgartService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STR +1
+        ///Initial skill ranks: 
+        ///Law: Wulffgart 2, Etiquette 1, Intimidate 1.
+        ///10 CP can be used to buy ranks in the following skills: Animal
+        ///Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &amp;
+        ///Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),
+        ///Leadership, Long Guns, Martial Arts (Wolfbite), Melee
+        ///(Powerful), Ride, Stealth, Strategy/Tactics.
+        ///
+        ///In the eyes of the current rulers of Wulffgart, the military is the
+        ///most honoured class of the nation. Military leaders are currently
+        ///holdi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WolfgartMilitary {
+            get {
+                return ResourceManager.GetString("WolfgartMilitary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CHA +1
+        ///Initial skill ranks: 
+        ///Etiquette 2, Diplomacy 1, Language:Wulffgartian 1
+        ///10 CP can be used to buy ranks in the following skills: Charm,
+        ///Diplomacy, Etiquette, Intimidate, Language (Wulffgartian), 
+        ///Law (Wulffgart), Long Guns, Perform (Dancing), Perform
+        ///(Oratory), Ride, or to improve the
+        ///Starting wealth level or to purchase the Noble, Wulffgartian
+        ///advantage.
+        ///
+        ///Members of the Wulffgartian upper class used to be the leaders
+        ///of their nation and those who were respected by everyone. After
+        ///the mili [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WolfgartUpper {
+            get {
+                return ResourceManager.GetString("WolfgartUpper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +1
+        ///Initial skill ranks: 
+        ///Craft (Gunsmithing 2), Craft (any) 1, Mechanics 1
+        ///10 CP can be used to buy ranks in the following skills: Animal
+        ///Handling, Bargain, Brawl, Clockwork, Cooking, Craft (any),
+        ///Drive, First Aid, Locksmithing, Mechanics, Profession (any),
+        ///Ride.
+        ///
+        ///The life of Wulffgartian workers has improved since the feudal
+        ///days. The fruits of their labour are vital to the army, so their pay
+        ///has increased, even though they are still expected to work as
+        ///long and as hard as before. As the nat [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string WolfgartWorker {
+            get {
+                return ResourceManager.GetString("WolfgartWorker", resourceCulture);
             }
         }
     }

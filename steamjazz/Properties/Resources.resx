@@ -214,7 +214,19 @@
   <data name="SylphBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\SylphBack.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="todo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\todo.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="WolffgartService" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\WolffgartService.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="WolfgartMilitary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\WolfgartMilitary.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="WolfgartUpper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\WolfgartUpper.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="WolfgartWorker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\WolfgartWorker.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

@@ -585,6 +585,7 @@
             // 
             // flowLayoutPanel9
             // 
+            this.flowLayoutPanel9.BackColor = System.Drawing.Color.Gainsboro;
             this.flowLayoutPanel9.Controls.Add(this.flowLayoutPanel1);
             this.flowLayoutPanel9.Controls.Add(this.flowLayoutPanel10);
             this.flowLayoutPanel9.Controls.Add(this.flowLayoutPanel2);
@@ -1520,6 +1521,7 @@
             // 
             // flowLayoutPanel36
             // 
+            this.flowLayoutPanel36.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel36.Controls.Add(this.flowLayoutPanel37);
             this.flowLayoutPanel36.Controls.Add(this.flowLayoutPanel38);
             this.flowLayoutPanel36.Location = new System.Drawing.Point(3, 186);
@@ -1707,6 +1709,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
             this.tabPage2.Controls.Add(this.flowLayoutPanel16);
             this.tabPage2.Controls.Add(this.flowLayoutPanel15);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -1715,16 +1718,15 @@
             this.tabPage2.Size = new System.Drawing.Size(912, 564);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Skills";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel16
             // 
+            this.flowLayoutPanel16.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel63);
             this.flowLayoutPanel16.Controls.Add(this.flowLayoutPanel18);
-            this.flowLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel16.Location = new System.Drawing.Point(3, 62);
             this.flowLayoutPanel16.Name = "flowLayoutPanel16";
-            this.flowLayoutPanel16.Size = new System.Drawing.Size(906, 499);
+            this.flowLayoutPanel16.Size = new System.Drawing.Size(906, 470);
             this.flowLayoutPanel16.TabIndex = 1;
             // 
             // flowLayoutPanel63
@@ -2489,7 +2491,7 @@
             this.flowLayoutPanel46.Controls.Add(this.label271);
             this.flowLayoutPanel46.Location = new System.Drawing.Point(139, 3);
             this.flowLayoutPanel46.Name = "flowLayoutPanel46";
-            this.flowLayoutPanel46.Size = new System.Drawing.Size(54, 83);
+            this.flowLayoutPanel46.Size = new System.Drawing.Size(26, 83);
             this.flowLayoutPanel46.TabIndex = 3;
             // 
             // label266
@@ -2497,9 +2499,9 @@
             this.label266.AutoSize = true;
             this.label266.Location = new System.Drawing.Point(3, 0);
             this.label266.Name = "label266";
-            this.label266.Size = new System.Drawing.Size(47, 13);
+            this.label266.Size = new System.Drawing.Size(10, 13);
             this.label266.TabIndex = 0;
-            this.label266.Text = "label266";
+            this.label266.Text = "-";
             this.label266.Click += new System.EventHandler(this.skillClick);
             // 
             // label267
@@ -2507,9 +2509,9 @@
             this.label267.AutoSize = true;
             this.label267.Location = new System.Drawing.Point(3, 13);
             this.label267.Name = "label267";
-            this.label267.Size = new System.Drawing.Size(47, 13);
+            this.label267.Size = new System.Drawing.Size(10, 13);
             this.label267.TabIndex = 1;
-            this.label267.Text = "label267";
+            this.label267.Text = "-";
             this.label267.Click += new System.EventHandler(this.skillClick);
             // 
             // label268
@@ -2517,9 +2519,9 @@
             this.label268.AutoSize = true;
             this.label268.Location = new System.Drawing.Point(3, 26);
             this.label268.Name = "label268";
-            this.label268.Size = new System.Drawing.Size(47, 13);
+            this.label268.Size = new System.Drawing.Size(10, 13);
             this.label268.TabIndex = 2;
-            this.label268.Text = "label268";
+            this.label268.Text = "-";
             this.label268.Click += new System.EventHandler(this.skillClick);
             // 
             // label269
@@ -2527,9 +2529,9 @@
             this.label269.AutoSize = true;
             this.label269.Location = new System.Drawing.Point(3, 39);
             this.label269.Name = "label269";
-            this.label269.Size = new System.Drawing.Size(47, 13);
+            this.label269.Size = new System.Drawing.Size(10, 13);
             this.label269.TabIndex = 3;
-            this.label269.Text = "label269";
+            this.label269.Text = "-";
             this.label269.Click += new System.EventHandler(this.skillClick);
             // 
             // label270
@@ -2537,9 +2539,9 @@
             this.label270.AutoSize = true;
             this.label270.Location = new System.Drawing.Point(3, 52);
             this.label270.Name = "label270";
-            this.label270.Size = new System.Drawing.Size(47, 13);
+            this.label270.Size = new System.Drawing.Size(10, 13);
             this.label270.TabIndex = 4;
-            this.label270.Text = "label270";
+            this.label270.Text = "-";
             this.label270.Click += new System.EventHandler(this.skillClick);
             // 
             // label271
@@ -2547,9 +2549,9 @@
             this.label271.AutoSize = true;
             this.label271.Location = new System.Drawing.Point(3, 65);
             this.label271.Name = "label271";
-            this.label271.Size = new System.Drawing.Size(47, 13);
+            this.label271.Size = new System.Drawing.Size(10, 13);
             this.label271.TabIndex = 5;
-            this.label271.Text = "label271";
+            this.label271.Text = "-";
             this.label271.Click += new System.EventHandler(this.skillClick);
             // 
             // flowLayoutPanel19
@@ -2857,7 +2859,7 @@
             this.flowLayoutPanel58.Controls.Add(this.label278);
             this.flowLayoutPanel58.Location = new System.Drawing.Point(139, 3);
             this.flowLayoutPanel58.Name = "flowLayoutPanel58";
-            this.flowLayoutPanel58.Size = new System.Drawing.Size(54, 100);
+            this.flowLayoutPanel58.Size = new System.Drawing.Size(26, 100);
             this.flowLayoutPanel58.TabIndex = 3;
             // 
             // label272
@@ -2865,9 +2867,9 @@
             this.label272.AutoSize = true;
             this.label272.Location = new System.Drawing.Point(3, 0);
             this.label272.Name = "label272";
-            this.label272.Size = new System.Drawing.Size(47, 13);
+            this.label272.Size = new System.Drawing.Size(10, 13);
             this.label272.TabIndex = 0;
-            this.label272.Text = "label272";
+            this.label272.Text = "-";
             this.label272.Click += new System.EventHandler(this.skillClick);
             // 
             // label273
@@ -2875,9 +2877,9 @@
             this.label273.AutoSize = true;
             this.label273.Location = new System.Drawing.Point(3, 13);
             this.label273.Name = "label273";
-            this.label273.Size = new System.Drawing.Size(47, 13);
+            this.label273.Size = new System.Drawing.Size(10, 13);
             this.label273.TabIndex = 1;
-            this.label273.Text = "label273";
+            this.label273.Text = "-";
             this.label273.Click += new System.EventHandler(this.skillClick);
             // 
             // label274
@@ -2885,9 +2887,9 @@
             this.label274.AutoSize = true;
             this.label274.Location = new System.Drawing.Point(3, 26);
             this.label274.Name = "label274";
-            this.label274.Size = new System.Drawing.Size(47, 13);
+            this.label274.Size = new System.Drawing.Size(10, 13);
             this.label274.TabIndex = 2;
-            this.label274.Text = "label274";
+            this.label274.Text = "-";
             this.label274.Click += new System.EventHandler(this.skillClick);
             // 
             // label275
@@ -2895,9 +2897,9 @@
             this.label275.AutoSize = true;
             this.label275.Location = new System.Drawing.Point(3, 39);
             this.label275.Name = "label275";
-            this.label275.Size = new System.Drawing.Size(47, 13);
+            this.label275.Size = new System.Drawing.Size(10, 13);
             this.label275.TabIndex = 3;
-            this.label275.Text = "label275";
+            this.label275.Text = "-";
             this.label275.Click += new System.EventHandler(this.skillClick);
             // 
             // label276
@@ -2905,9 +2907,9 @@
             this.label276.AutoSize = true;
             this.label276.Location = new System.Drawing.Point(3, 52);
             this.label276.Name = "label276";
-            this.label276.Size = new System.Drawing.Size(47, 13);
+            this.label276.Size = new System.Drawing.Size(10, 13);
             this.label276.TabIndex = 4;
-            this.label276.Text = "label276";
+            this.label276.Text = "-";
             this.label276.Click += new System.EventHandler(this.skillClick);
             // 
             // label277
@@ -2915,9 +2917,9 @@
             this.label277.AutoSize = true;
             this.label277.Location = new System.Drawing.Point(3, 65);
             this.label277.Name = "label277";
-            this.label277.Size = new System.Drawing.Size(47, 13);
+            this.label277.Size = new System.Drawing.Size(10, 13);
             this.label277.TabIndex = 5;
-            this.label277.Text = "label277";
+            this.label277.Text = "-";
             this.label277.Click += new System.EventHandler(this.skillClick);
             // 
             // label278
@@ -2925,9 +2927,9 @@
             this.label278.AutoSize = true;
             this.label278.Location = new System.Drawing.Point(3, 78);
             this.label278.Name = "label278";
-            this.label278.Size = new System.Drawing.Size(47, 13);
+            this.label278.Size = new System.Drawing.Size(10, 13);
             this.label278.TabIndex = 6;
-            this.label278.Text = "label278";
+            this.label278.Text = "-";
             this.label278.Click += new System.EventHandler(this.skillClick);
             // 
             // flowLayoutPanel65
@@ -3475,7 +3477,7 @@
             this.flowLayoutPanel62.Controls.Add(this.label292);
             this.flowLayoutPanel62.Location = new System.Drawing.Point(147, 3);
             this.flowLayoutPanel62.Name = "flowLayoutPanel62";
-            this.flowLayoutPanel62.Size = new System.Drawing.Size(70, 186);
+            this.flowLayoutPanel62.Size = new System.Drawing.Size(22, 186);
             this.flowLayoutPanel62.TabIndex = 3;
             this.flowLayoutPanel62.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel62_Paint);
             // 
@@ -3484,9 +3486,9 @@
             this.label279.AutoSize = true;
             this.label279.Location = new System.Drawing.Point(3, 0);
             this.label279.Name = "label279";
-            this.label279.Size = new System.Drawing.Size(47, 13);
+            this.label279.Size = new System.Drawing.Size(10, 13);
             this.label279.TabIndex = 4;
-            this.label279.Text = "label279";
+            this.label279.Text = "-";
             this.label279.Click += new System.EventHandler(this.skillClick);
             // 
             // label280
@@ -3494,9 +3496,9 @@
             this.label280.AutoSize = true;
             this.label280.Location = new System.Drawing.Point(3, 13);
             this.label280.Name = "label280";
-            this.label280.Size = new System.Drawing.Size(47, 13);
+            this.label280.Size = new System.Drawing.Size(10, 13);
             this.label280.TabIndex = 5;
-            this.label280.Text = "label280";
+            this.label280.Text = "-";
             this.label280.Click += new System.EventHandler(this.skillClick);
             // 
             // label281
@@ -3504,9 +3506,9 @@
             this.label281.AutoSize = true;
             this.label281.Location = new System.Drawing.Point(3, 26);
             this.label281.Name = "label281";
-            this.label281.Size = new System.Drawing.Size(47, 13);
+            this.label281.Size = new System.Drawing.Size(10, 13);
             this.label281.TabIndex = 6;
-            this.label281.Text = "label281";
+            this.label281.Text = "-";
             this.label281.Click += new System.EventHandler(this.skillClick);
             // 
             // label282
@@ -3514,9 +3516,9 @@
             this.label282.AutoSize = true;
             this.label282.Location = new System.Drawing.Point(3, 39);
             this.label282.Name = "label282";
-            this.label282.Size = new System.Drawing.Size(47, 13);
+            this.label282.Size = new System.Drawing.Size(10, 13);
             this.label282.TabIndex = 7;
-            this.label282.Text = "label282";
+            this.label282.Text = "-";
             this.label282.Click += new System.EventHandler(this.skillClick);
             // 
             // label283
@@ -3524,9 +3526,9 @@
             this.label283.AutoSize = true;
             this.label283.Location = new System.Drawing.Point(3, 52);
             this.label283.Name = "label283";
-            this.label283.Size = new System.Drawing.Size(47, 13);
+            this.label283.Size = new System.Drawing.Size(10, 13);
             this.label283.TabIndex = 8;
-            this.label283.Text = "label283";
+            this.label283.Text = "-";
             this.label283.Click += new System.EventHandler(this.skillClick);
             // 
             // label284
@@ -3534,9 +3536,9 @@
             this.label284.AutoSize = true;
             this.label284.Location = new System.Drawing.Point(3, 65);
             this.label284.Name = "label284";
-            this.label284.Size = new System.Drawing.Size(47, 13);
+            this.label284.Size = new System.Drawing.Size(10, 13);
             this.label284.TabIndex = 9;
-            this.label284.Text = "label284";
+            this.label284.Text = "-";
             this.label284.Click += new System.EventHandler(this.skillClick);
             // 
             // label285
@@ -3544,9 +3546,9 @@
             this.label285.AutoSize = true;
             this.label285.Location = new System.Drawing.Point(3, 78);
             this.label285.Name = "label285";
-            this.label285.Size = new System.Drawing.Size(47, 13);
+            this.label285.Size = new System.Drawing.Size(10, 13);
             this.label285.TabIndex = 10;
-            this.label285.Text = "label285";
+            this.label285.Text = "-";
             this.label285.Click += new System.EventHandler(this.skillClick);
             // 
             // label286
@@ -3554,9 +3556,9 @@
             this.label286.AutoSize = true;
             this.label286.Location = new System.Drawing.Point(3, 91);
             this.label286.Name = "label286";
-            this.label286.Size = new System.Drawing.Size(47, 13);
+            this.label286.Size = new System.Drawing.Size(10, 13);
             this.label286.TabIndex = 11;
-            this.label286.Text = "label286";
+            this.label286.Text = "-";
             this.label286.Click += new System.EventHandler(this.skillClick);
             // 
             // label287
@@ -3564,9 +3566,9 @@
             this.label287.AutoSize = true;
             this.label287.Location = new System.Drawing.Point(3, 104);
             this.label287.Name = "label287";
-            this.label287.Size = new System.Drawing.Size(47, 13);
+            this.label287.Size = new System.Drawing.Size(10, 13);
             this.label287.TabIndex = 12;
-            this.label287.Text = "label287";
+            this.label287.Text = "-";
             this.label287.Click += new System.EventHandler(this.skillClick);
             // 
             // label288
@@ -3574,9 +3576,9 @@
             this.label288.AutoSize = true;
             this.label288.Location = new System.Drawing.Point(3, 117);
             this.label288.Name = "label288";
-            this.label288.Size = new System.Drawing.Size(47, 13);
+            this.label288.Size = new System.Drawing.Size(10, 13);
             this.label288.TabIndex = 13;
-            this.label288.Text = "label288";
+            this.label288.Text = "-";
             this.label288.Click += new System.EventHandler(this.skillClick);
             // 
             // label289
@@ -3584,9 +3586,9 @@
             this.label289.AutoSize = true;
             this.label289.Location = new System.Drawing.Point(3, 130);
             this.label289.Name = "label289";
-            this.label289.Size = new System.Drawing.Size(47, 13);
+            this.label289.Size = new System.Drawing.Size(10, 13);
             this.label289.TabIndex = 14;
-            this.label289.Text = "label289";
+            this.label289.Text = "-";
             this.label289.Click += new System.EventHandler(this.skillClick);
             // 
             // label290
@@ -3594,9 +3596,9 @@
             this.label290.AutoSize = true;
             this.label290.Location = new System.Drawing.Point(3, 143);
             this.label290.Name = "label290";
-            this.label290.Size = new System.Drawing.Size(47, 13);
+            this.label290.Size = new System.Drawing.Size(10, 13);
             this.label290.TabIndex = 15;
-            this.label290.Text = "label290";
+            this.label290.Text = "-";
             this.label290.Click += new System.EventHandler(this.skillClick);
             // 
             // label291
@@ -3604,9 +3606,9 @@
             this.label291.AutoSize = true;
             this.label291.Location = new System.Drawing.Point(3, 156);
             this.label291.Name = "label291";
-            this.label291.Size = new System.Drawing.Size(47, 13);
+            this.label291.Size = new System.Drawing.Size(10, 13);
             this.label291.TabIndex = 16;
-            this.label291.Text = "label291";
+            this.label291.Text = "-";
             this.label291.Click += new System.EventHandler(this.skillClick);
             // 
             // label292
@@ -3614,9 +3616,9 @@
             this.label292.AutoSize = true;
             this.label292.Location = new System.Drawing.Point(3, 169);
             this.label292.Name = "label292";
-            this.label292.Size = new System.Drawing.Size(47, 13);
+            this.label292.Size = new System.Drawing.Size(10, 13);
             this.label292.TabIndex = 17;
-            this.label292.Text = "label292";
+            this.label292.Text = "-";
             this.label292.Click += new System.EventHandler(this.skillClick);
             // 
             // flowLayoutPanel21
@@ -3825,7 +3827,7 @@
             this.flowLayoutPanel54.Controls.Add(this.label296);
             this.flowLayoutPanel54.Location = new System.Drawing.Point(167, 3);
             this.flowLayoutPanel54.Name = "flowLayoutPanel54";
-            this.flowLayoutPanel54.Size = new System.Drawing.Size(56, 57);
+            this.flowLayoutPanel54.Size = new System.Drawing.Size(26, 57);
             this.flowLayoutPanel54.TabIndex = 3;
             // 
             // label293
@@ -3833,9 +3835,9 @@
             this.label293.AutoSize = true;
             this.label293.Location = new System.Drawing.Point(3, 0);
             this.label293.Name = "label293";
-            this.label293.Size = new System.Drawing.Size(47, 13);
+            this.label293.Size = new System.Drawing.Size(10, 13);
             this.label293.TabIndex = 4;
-            this.label293.Text = "label293";
+            this.label293.Text = "-";
             this.label293.Click += new System.EventHandler(this.skillClick);
             // 
             // label294
@@ -3843,9 +3845,9 @@
             this.label294.AutoSize = true;
             this.label294.Location = new System.Drawing.Point(3, 13);
             this.label294.Name = "label294";
-            this.label294.Size = new System.Drawing.Size(47, 13);
+            this.label294.Size = new System.Drawing.Size(10, 13);
             this.label294.TabIndex = 5;
-            this.label294.Text = "label294";
+            this.label294.Text = "-";
             this.label294.Click += new System.EventHandler(this.skillClick);
             // 
             // label295
@@ -3853,9 +3855,9 @@
             this.label295.AutoSize = true;
             this.label295.Location = new System.Drawing.Point(3, 26);
             this.label295.Name = "label295";
-            this.label295.Size = new System.Drawing.Size(47, 13);
+            this.label295.Size = new System.Drawing.Size(10, 13);
             this.label295.TabIndex = 6;
-            this.label295.Text = "label295";
+            this.label295.Text = "-";
             this.label295.Click += new System.EventHandler(this.skillClick);
             // 
             // label296
@@ -3863,9 +3865,9 @@
             this.label296.AutoSize = true;
             this.label296.Location = new System.Drawing.Point(3, 39);
             this.label296.Name = "label296";
-            this.label296.Size = new System.Drawing.Size(47, 13);
+            this.label296.Size = new System.Drawing.Size(10, 13);
             this.label296.TabIndex = 7;
-            this.label296.Text = "label296";
+            this.label296.Text = "-";
             this.label296.Click += new System.EventHandler(this.skillClick);
             // 
             // flowLayoutPanel18
@@ -4635,7 +4637,7 @@
             this.flowLayoutPanel50.Controls.Add(this.label317);
             this.flowLayoutPanel50.Location = new System.Drawing.Point(159, 3);
             this.flowLayoutPanel50.Name = "flowLayoutPanel50";
-            this.flowLayoutPanel50.Size = new System.Drawing.Size(57, 285);
+            this.flowLayoutPanel50.Size = new System.Drawing.Size(25, 285);
             this.flowLayoutPanel50.TabIndex = 3;
             // 
             // label297
@@ -4643,9 +4645,9 @@
             this.label297.AutoSize = true;
             this.label297.Location = new System.Drawing.Point(3, 0);
             this.label297.Name = "label297";
-            this.label297.Size = new System.Drawing.Size(47, 13);
+            this.label297.Size = new System.Drawing.Size(10, 13);
             this.label297.TabIndex = 4;
-            this.label297.Text = "label297";
+            this.label297.Text = "-";
             this.label297.Click += new System.EventHandler(this.skillClick);
             // 
             // label298
@@ -4653,9 +4655,9 @@
             this.label298.AutoSize = true;
             this.label298.Location = new System.Drawing.Point(3, 13);
             this.label298.Name = "label298";
-            this.label298.Size = new System.Drawing.Size(47, 13);
+            this.label298.Size = new System.Drawing.Size(10, 13);
             this.label298.TabIndex = 5;
-            this.label298.Text = "label298";
+            this.label298.Text = "-";
             this.label298.Click += new System.EventHandler(this.skillClick);
             // 
             // label299
@@ -4663,9 +4665,9 @@
             this.label299.AutoSize = true;
             this.label299.Location = new System.Drawing.Point(3, 26);
             this.label299.Name = "label299";
-            this.label299.Size = new System.Drawing.Size(47, 13);
+            this.label299.Size = new System.Drawing.Size(10, 13);
             this.label299.TabIndex = 6;
-            this.label299.Text = "label299";
+            this.label299.Text = "-";
             this.label299.Click += new System.EventHandler(this.skillClick);
             // 
             // label300
@@ -4673,9 +4675,9 @@
             this.label300.AutoSize = true;
             this.label300.Location = new System.Drawing.Point(3, 39);
             this.label300.Name = "label300";
-            this.label300.Size = new System.Drawing.Size(47, 13);
+            this.label300.Size = new System.Drawing.Size(10, 13);
             this.label300.TabIndex = 7;
-            this.label300.Text = "label300";
+            this.label300.Text = "-";
             this.label300.Click += new System.EventHandler(this.skillClick);
             // 
             // label301
@@ -4683,9 +4685,9 @@
             this.label301.AutoSize = true;
             this.label301.Location = new System.Drawing.Point(3, 52);
             this.label301.Name = "label301";
-            this.label301.Size = new System.Drawing.Size(47, 13);
+            this.label301.Size = new System.Drawing.Size(10, 13);
             this.label301.TabIndex = 8;
-            this.label301.Text = "label301";
+            this.label301.Text = "-";
             this.label301.Click += new System.EventHandler(this.skillClick);
             // 
             // label302
@@ -4693,9 +4695,9 @@
             this.label302.AutoSize = true;
             this.label302.Location = new System.Drawing.Point(3, 65);
             this.label302.Name = "label302";
-            this.label302.Size = new System.Drawing.Size(47, 13);
+            this.label302.Size = new System.Drawing.Size(10, 13);
             this.label302.TabIndex = 9;
-            this.label302.Text = "label302";
+            this.label302.Text = "-";
             this.label302.Click += new System.EventHandler(this.skillClick);
             // 
             // label303
@@ -4703,9 +4705,9 @@
             this.label303.AutoSize = true;
             this.label303.Location = new System.Drawing.Point(3, 78);
             this.label303.Name = "label303";
-            this.label303.Size = new System.Drawing.Size(47, 13);
+            this.label303.Size = new System.Drawing.Size(10, 13);
             this.label303.TabIndex = 10;
-            this.label303.Text = "label303";
+            this.label303.Text = "-";
             this.label303.Click += new System.EventHandler(this.skillClick);
             // 
             // label304
@@ -4713,9 +4715,9 @@
             this.label304.AutoSize = true;
             this.label304.Location = new System.Drawing.Point(3, 91);
             this.label304.Name = "label304";
-            this.label304.Size = new System.Drawing.Size(47, 13);
+            this.label304.Size = new System.Drawing.Size(10, 13);
             this.label304.TabIndex = 11;
-            this.label304.Text = "label304";
+            this.label304.Text = "-";
             this.label304.Click += new System.EventHandler(this.skillClick);
             // 
             // label305
@@ -4723,9 +4725,9 @@
             this.label305.AutoSize = true;
             this.label305.Location = new System.Drawing.Point(3, 104);
             this.label305.Name = "label305";
-            this.label305.Size = new System.Drawing.Size(47, 13);
+            this.label305.Size = new System.Drawing.Size(10, 13);
             this.label305.TabIndex = 12;
-            this.label305.Text = "label305";
+            this.label305.Text = "-";
             this.label305.Click += new System.EventHandler(this.skillClick);
             // 
             // label306
@@ -4733,9 +4735,9 @@
             this.label306.AutoSize = true;
             this.label306.Location = new System.Drawing.Point(3, 117);
             this.label306.Name = "label306";
-            this.label306.Size = new System.Drawing.Size(47, 13);
+            this.label306.Size = new System.Drawing.Size(10, 13);
             this.label306.TabIndex = 13;
-            this.label306.Text = "label306";
+            this.label306.Text = "-";
             this.label306.Click += new System.EventHandler(this.skillClick);
             // 
             // label307
@@ -4743,9 +4745,9 @@
             this.label307.AutoSize = true;
             this.label307.Location = new System.Drawing.Point(3, 130);
             this.label307.Name = "label307";
-            this.label307.Size = new System.Drawing.Size(47, 13);
+            this.label307.Size = new System.Drawing.Size(10, 13);
             this.label307.TabIndex = 14;
-            this.label307.Text = "label307";
+            this.label307.Text = "-";
             this.label307.Click += new System.EventHandler(this.skillClick);
             // 
             // label308
@@ -4753,9 +4755,9 @@
             this.label308.AutoSize = true;
             this.label308.Location = new System.Drawing.Point(3, 143);
             this.label308.Name = "label308";
-            this.label308.Size = new System.Drawing.Size(47, 13);
+            this.label308.Size = new System.Drawing.Size(10, 13);
             this.label308.TabIndex = 15;
-            this.label308.Text = "label308";
+            this.label308.Text = "-";
             this.label308.Click += new System.EventHandler(this.skillClick);
             // 
             // label309
@@ -4763,9 +4765,9 @@
             this.label309.AutoSize = true;
             this.label309.Location = new System.Drawing.Point(3, 156);
             this.label309.Name = "label309";
-            this.label309.Size = new System.Drawing.Size(47, 13);
+            this.label309.Size = new System.Drawing.Size(10, 13);
             this.label309.TabIndex = 16;
-            this.label309.Text = "label309";
+            this.label309.Text = "-";
             this.label309.Click += new System.EventHandler(this.skillClick);
             // 
             // label310
@@ -4773,9 +4775,9 @@
             this.label310.AutoSize = true;
             this.label310.Location = new System.Drawing.Point(3, 169);
             this.label310.Name = "label310";
-            this.label310.Size = new System.Drawing.Size(47, 13);
+            this.label310.Size = new System.Drawing.Size(10, 13);
             this.label310.TabIndex = 17;
-            this.label310.Text = "label310";
+            this.label310.Text = "-";
             this.label310.Click += new System.EventHandler(this.skillClick);
             // 
             // label311
@@ -4783,9 +4785,9 @@
             this.label311.AutoSize = true;
             this.label311.Location = new System.Drawing.Point(3, 182);
             this.label311.Name = "label311";
-            this.label311.Size = new System.Drawing.Size(47, 13);
+            this.label311.Size = new System.Drawing.Size(10, 13);
             this.label311.TabIndex = 18;
-            this.label311.Text = "label311";
+            this.label311.Text = "-";
             this.label311.Click += new System.EventHandler(this.skillClick);
             // 
             // label312
@@ -4793,9 +4795,9 @@
             this.label312.AutoSize = true;
             this.label312.Location = new System.Drawing.Point(3, 195);
             this.label312.Name = "label312";
-            this.label312.Size = new System.Drawing.Size(47, 13);
+            this.label312.Size = new System.Drawing.Size(10, 13);
             this.label312.TabIndex = 19;
-            this.label312.Text = "label312";
+            this.label312.Text = "-";
             this.label312.Click += new System.EventHandler(this.skillClick);
             // 
             // label313
@@ -4803,9 +4805,9 @@
             this.label313.AutoSize = true;
             this.label313.Location = new System.Drawing.Point(3, 208);
             this.label313.Name = "label313";
-            this.label313.Size = new System.Drawing.Size(47, 13);
+            this.label313.Size = new System.Drawing.Size(10, 13);
             this.label313.TabIndex = 20;
-            this.label313.Text = "label313";
+            this.label313.Text = "-";
             this.label313.Click += new System.EventHandler(this.skillClick);
             // 
             // label314
@@ -4813,9 +4815,9 @@
             this.label314.AutoSize = true;
             this.label314.Location = new System.Drawing.Point(3, 221);
             this.label314.Name = "label314";
-            this.label314.Size = new System.Drawing.Size(47, 13);
+            this.label314.Size = new System.Drawing.Size(10, 13);
             this.label314.TabIndex = 21;
-            this.label314.Text = "label314";
+            this.label314.Text = "-";
             this.label314.Click += new System.EventHandler(this.skillClick);
             // 
             // label315
@@ -4823,9 +4825,9 @@
             this.label315.AutoSize = true;
             this.label315.Location = new System.Drawing.Point(3, 234);
             this.label315.Name = "label315";
-            this.label315.Size = new System.Drawing.Size(47, 13);
+            this.label315.Size = new System.Drawing.Size(10, 13);
             this.label315.TabIndex = 22;
-            this.label315.Text = "label315";
+            this.label315.Text = "-";
             this.label315.Click += new System.EventHandler(this.skillClick);
             // 
             // label316
@@ -4833,9 +4835,9 @@
             this.label316.AutoSize = true;
             this.label316.Location = new System.Drawing.Point(3, 247);
             this.label316.Name = "label316";
-            this.label316.Size = new System.Drawing.Size(47, 13);
+            this.label316.Size = new System.Drawing.Size(10, 13);
             this.label316.TabIndex = 23;
-            this.label316.Text = "label316";
+            this.label316.Text = "-";
             this.label316.Click += new System.EventHandler(this.skillClick);
             // 
             // label317
@@ -4843,13 +4845,14 @@
             this.label317.AutoSize = true;
             this.label317.Location = new System.Drawing.Point(3, 260);
             this.label317.Name = "label317";
-            this.label317.Size = new System.Drawing.Size(47, 13);
+            this.label317.Size = new System.Drawing.Size(10, 13);
             this.label317.TabIndex = 24;
-            this.label317.Text = "label317";
+            this.label317.Text = "-";
             this.label317.Click += new System.EventHandler(this.skillClick);
             // 
             // flowLayoutPanel15
             // 
+            this.flowLayoutPanel15.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel15.Controls.Add(this.label213);
             this.flowLayoutPanel15.Controls.Add(this.flowLayoutPanel66);
             this.flowLayoutPanel15.Controls.Add(this.flowLayoutPanel67);

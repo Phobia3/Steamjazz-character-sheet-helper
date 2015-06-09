@@ -215,6 +215,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Copper.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\todo.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

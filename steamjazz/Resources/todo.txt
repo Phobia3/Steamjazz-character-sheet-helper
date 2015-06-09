@@ -1,0 +1,18 @@
+skillit
+- nimet
+- attribuuttibonukset kaikille
+- ei negatiivisia skill rank
+
+Attribuutit
+
+Taustat
+- päivitä tekstitiedostot nykyisen säännöstön mukaisiksi
+- päivitä taustojen boonukset nykyisen säännöstön mukaisiksi
+
+Advantage&&disadvantage
+- kaikki
+
+Tietokanta
+- id ylös, kun new nappulaa painetaan
+- save update lauseella
+- load ominaisuus pelaajan nimellä

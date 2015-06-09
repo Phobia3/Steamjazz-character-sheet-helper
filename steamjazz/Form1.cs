@@ -2269,64 +2269,64 @@ namespace steamjazz
             {
                 if (Skill.enough(label73.Text, label213.Text,73 ) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label73.Text = Skill.skillAdd(label73.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 73);
+                    label73.Text = Skill.skillAdd(label73.Text, 73);
                 }
             }
             if (sender == label82)
             {
                 if (Skill.enough(label74.Text, label213.Text, 74) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label74.Text = Skill.skillAdd(label74.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 74);
+                    label74.Text = Skill.skillAdd(label74.Text,74);
                 }
             }
             if (sender == label83)
             {
                 if (Skill.enough(label75.Text, label213.Text, 75) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label75.Text = Skill.skillAdd(label75.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 75);
+                    label75.Text = Skill.skillAdd(label75.Text,78);
                 }
             }
             if (sender == label84)
             {
                 if (Skill.enough(label76.Text, label213.Text, 76) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label76.Text = Skill.skillAdd(label76.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 76);
+                    label76.Text = Skill.skillAdd(label76.Text,76);
                 }
             }
             if (sender == label85)
             {
                 if (Skill.enough(label77.Text, label213.Text, 77) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label77.Text = Skill.skillAdd(label77.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 77);
+                    label77.Text = Skill.skillAdd(label77.Text,77);
                 }
             }
             if (sender == label86)
             {
                 if (Skill.enough(label78.Text, label213.Text, 78) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label78.Text = Skill.skillAdd(label78.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 78);
+                    label78.Text = Skill.skillAdd(label78.Text,78);
                 }
             }
             if (sender == label87)
             {
                 if (Skill.enough(label79.Text, label213.Text, 79) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label79.Text = Skill.skillAdd(label79.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 79);
+                    label79.Text = Skill.skillAdd(label79.Text,79);
                 }
             }
             if (sender == label88)
             {
                 if (Skill.enough(label80.Text, label213.Text, 80) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label80.Text = Skill.skillAdd(label80.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 80);
+                    label80.Text = Skill.skillAdd(label80.Text,80);
                 }
             }
             //Social Skills
@@ -2334,48 +2334,48 @@ namespace steamjazz
             {
                 if (Skill.enough(label161.Text, label213.Text, 161) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label161.Text = Skill.skillAdd(label161.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 161);
+                    label161.Text = Skill.skillAdd(label161.Text,161);
                 }
             }
             if (sender == label215)
             {
                 if (Skill.enough(label162.Text, label213.Text, 162) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label162.Text = Skill.skillAdd(label162.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 162);
+                    label162.Text = Skill.skillAdd(label162.Text,162);
                 }
             }
             if (sender == label216)
             {
                 if (Skill.enough(label163.Text, label213.Text, 163) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label163.Text = Skill.skillAdd(label163.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 163);
+                    label163.Text = Skill.skillAdd(label163.Text,163);
                 }
             }
             if (sender == label217)
             {
                 if (Skill.enough(label164.Text, label213.Text, 164) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label164.Text = Skill.skillAdd(label164.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 164);
+                    label164.Text = Skill.skillAdd(label164.Text,164);
                 }
             }
             if (sender == label218)
             {
                 if (Skill.enough(label165.Text, label213.Text, 165) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label165.Text = Skill.skillAdd(label165.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 165);
+                    label165.Text = Skill.skillAdd(label165.Text,165);
                 }
             }
             if (sender == label219)
             {
                 if (Skill.enough(label166.Text, label213.Text, 166) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label16.Text = Skill.skillAdd(label166.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 166);
+                    label16.Text = Skill.skillAdd(label166.Text,166);
                 }
             }
             // Intution
@@ -2384,8 +2384,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label167.Text, label213.Text, 167) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label167.Text = Skill.skillAdd(label167.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 167);
+                    label167.Text = Skill.skillAdd(label167.Text,167);
                 }
             } 
             
@@ -2393,8 +2393,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label168.Text, label213.Text, 168) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label168.Text = Skill.skillAdd(label168.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 168);
+                    label168.Text = Skill.skillAdd(label168.Text,168);
                 }
             } 
             
@@ -2402,8 +2402,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label169.Text, label213.Text, 169) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label169.Text = Skill.skillAdd(label169.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 169);
+                    label169.Text = Skill.skillAdd(label169.Text,169);
                 }
             } 
             
@@ -2411,8 +2411,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label170.Text, label213.Text, 170) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label170.Text = Skill.skillAdd(label170.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 170);
+                    label170.Text = Skill.skillAdd(label170.Text,170);
                 }
             } 
             
@@ -2420,8 +2420,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label166.Text, label213.Text, 171) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label171.Text = Skill.skillAdd(label171.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 171);
+                    label171.Text = Skill.skillAdd(label171.Text,171);
                 }
             } 
 
@@ -2429,8 +2429,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label172.Text, label213.Text, 172) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label172.Text = Skill.skillAdd(label172.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 172);
+                    label172.Text = Skill.skillAdd(label172.Text,172);
                 }
             } 
            
@@ -2438,8 +2438,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label173.Text, label213.Text, 173) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label173.Text = Skill.skillAdd(label173.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 173);
+                    label173.Text = Skill.skillAdd(label173.Text,173);
                 }
             }
 
@@ -2448,112 +2448,112 @@ namespace steamjazz
             {
                 if (Skill.enough(label174.Text, label213.Text, 174) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label174.Text = Skill.skillAdd(label174.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 174);
+                    label174.Text = Skill.skillAdd(label174.Text,174);
                 }
             }
             if (sender == label228)
             {
                 if (Skill.enough(label178.Text, label213.Text, 178) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label178.Text = Skill.skillAdd(label178.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 178);
+                    label178.Text = Skill.skillAdd(label178.Text,178);
                 }
             }
             if (sender == label229)
             {
                 if (Skill.enough(label179.Text, label213.Text, 179) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label179.Text = Skill.skillAdd(label179.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 179);
+                    label179.Text = Skill.skillAdd(label179.Text,179);
                 }
             }
             if (sender == label230)
             {
                 if (Skill.enough(label180.Text, label213.Text, 180) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label180.Text = Skill.skillAdd(label180.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 180);
+                    label180.Text = Skill.skillAdd(label180.Text,180);
                 }
             }
             if (sender == label231)
             {
                 if (Skill.enough(label181.Text, label213.Text, 181) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label181.Text = Skill.skillAdd(label181.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 181);
+                    label181.Text = Skill.skillAdd(label181.Text,181);
                 }
             }
             if (sender == label232)
             {
                 if (Skill.enough(label182.Text, label213.Text, 182) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label182.Text = Skill.skillAdd(label182.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 182);
+                    label182.Text = Skill.skillAdd(label182.Text,182);
                 }
             }
             if (sender == label233)
             {
                 if (Skill.enough(label183.Text, label213.Text, 183) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label183.Text = Skill.skillAdd(label183.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 183);
+                    label183.Text = Skill.skillAdd(label183.Text,183);
                 }
             }
             if (sender == label234)
             {
                 if (Skill.enough(label184.Text, label213.Text, 184) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label184.Text = Skill.skillAdd(label184.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 184);
+                    label184.Text = Skill.skillAdd(label184.Text,184);
                 }
             }
             if (sender == label235)
             {
                 if (Skill.enough(label185.Text, label213.Text, 185) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label185.Text = Skill.skillAdd(label185.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 185);
+                    label185.Text = Skill.skillAdd(label185.Text,185);
                 }
             }
             if (sender == label236)
             {
                 if (Skill.enough(label186.Text, label213.Text, 186) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label186.Text = Skill.skillAdd(label186.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 186);
+                    label186.Text = Skill.skillAdd(label186.Text,186);
                 }
             }
             if (sender == label237)
             {
                 if (Skill.enough(label187.Text, label213.Text, 187) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label187.Text = Skill.skillAdd(label187.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 187);
+                    label187.Text = Skill.skillAdd(label187.Text,187);
                 }
             }
             if (sender == label238)
             {
                 if (Skill.enough(label188.Text, label213.Text, 188) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label188.Text = Skill.skillAdd(label188.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 188);
+                    label188.Text = Skill.skillAdd(label188.Text,188);
                 }
             }
             if (sender == label239)
             {
                 if (Skill.enough(label189.Text, label213.Text, 189) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label189.Text = Skill.skillAdd(label189.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 189);
+                    label189.Text = Skill.skillAdd(label189.Text,189);
                 }
             }
             if (sender == label240)
             {
                 if (Skill.enough(label190.Text, label213.Text, 190) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label190.Text = Skill.skillAdd(label190.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 190);
+                    label190.Text = Skill.skillAdd(label190.Text,190);
                 }
             }
 
@@ -2562,8 +2562,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label192.Text, label213.Text, 192) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label192.Text = Skill.skillAdd(label192.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 192);
+                    label192.Text = Skill.skillAdd(label192.Text,192);
                 }
             }
 
@@ -2571,152 +2571,152 @@ namespace steamjazz
             {
                 if (Skill.enough(label193.Text, label213.Text, 193) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label193.Text = Skill.skillAdd(label193.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 193);
+                    label193.Text = Skill.skillAdd(label193.Text,193);
                 }
             }
             if (sender == label247)
             {
                 if (Skill.enough(label194.Text, label213.Text, 194) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label194.Text = Skill.skillAdd(label194.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 194);
+                    label194.Text = Skill.skillAdd(label194.Text,194);
                 }
             }
             if (sender == label248)
             {
                 if (Skill.enough(label195.Text, label213.Text, 195) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label195.Text = Skill.skillAdd(label195.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 195);
+                    label195.Text = Skill.skillAdd(label195.Text,195);
                 }
             }
             if (sender == label249)
             {
                 if (Skill.enough(label196.Text, label213.Text, 196) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label196.Text = Skill.skillAdd(label196.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 196);
+                    label196.Text = Skill.skillAdd(label196.Text,196);
                 }
             }
             if (sender == label250)
             {
                 if (Skill.enough(label197.Text, label213.Text, 197) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label197.Text = Skill.skillAdd(label197.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 197);
+                    label197.Text = Skill.skillAdd(label197.Text,197);
                 }
             }
             if (sender == label251)
             {
                 if (Skill.enough(label198.Text, label213.Text, 198) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label198.Text = Skill.skillAdd(label198.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 198);
+                    label198.Text = Skill.skillAdd(label198.Text,198);
                 }
             }
             if (sender == label252)
             {
                 if (Skill.enough(label199.Text, label213.Text, 199) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label199.Text = Skill.skillAdd(label199.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 199);
+                    label199.Text = Skill.skillAdd(label199.Text,199);
                 }
             }
             if (sender == label253)
             {
                 if (Skill.enough(label200.Text, label213.Text, 200) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label200.Text = Skill.skillAdd(label200.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 200);
+                    label200.Text = Skill.skillAdd(label200.Text,200);
                 }
             }
             if (sender == label254)
             {
                 if (Skill.enough(label201.Text, label213.Text, 201) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label201.Text = Skill.skillAdd(label201.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 201);
+                    label201.Text = Skill.skillAdd(label201.Text,201);
                 }
             }
             if (sender == label255)
             {
                 if (Skill.enough(label202.Text, label213.Text, 202) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label202.Text = Skill.skillAdd(label202.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 202);
+                    label202.Text = Skill.skillAdd(label202.Text,202);
                 }
             }
             if (sender == label256)
             {
                 if (Skill.enough(label203.Text, label213.Text, 203) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label203.Text = Skill.skillAdd(label203.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 203);
+                    label203.Text = Skill.skillAdd(label203.Text,203);
                 }
             }
             if (sender == label257)
             {
                 if (Skill.enough(label204.Text, label213.Text, 204) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label204.Text = Skill.skillAdd(label204.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 204);
+                    label204.Text = Skill.skillAdd(label204.Text,204);
                 }
             }
             if (sender == label258)
             {
                 if (Skill.enough(label205.Text, label213.Text, 205) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label205.Text = Skill.skillAdd(label205.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 205);
+                    label205.Text = Skill.skillAdd(label205.Text,205);
                 }
             }
             if (sender == label259)
             {
                 if (Skill.enough(label206.Text, label213.Text, 206) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label206.Text = Skill.skillAdd(label206.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 206);
+                    label206.Text = Skill.skillAdd(label206.Text,206);
                 }
             }
             if (sender == label260)
             {
                 if (Skill.enough(label207.Text, label213.Text, 207) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label207.Text = Skill.skillAdd(label207.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 207);
+                    label207.Text = Skill.skillAdd(label207.Text,207);
                 }
             }
             if (sender == label261)
             {
                 if (Skill.enough(label208.Text, label213.Text, 208) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label208.Text = Skill.skillAdd(label208.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 208);
+                    label208.Text = Skill.skillAdd(label208.Text,208);
                 }
             }
             if (sender == label262)
             {
                 if (Skill.enough(label209.Text, label213.Text, 209) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label209.Text = Skill.skillAdd(label209.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 209);
+                    label209.Text = Skill.skillAdd(label209.Text,209);
                 }
             }
             if (sender == label263)
             {
                 if (Skill.enough(label210.Text, label213.Text, 210) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label210.Text = Skill.skillAdd(label210.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 210);
+                    label210.Text = Skill.skillAdd(label210.Text,210);
                 }
 
            if (sender == label264)
            {
                 if (Skill.enough(label211.Text, label213.Text, 211) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label211.Text = Skill.skillAdd(label211.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 211);
+                    label211.Text = Skill.skillAdd(label211.Text,211);
                 }
                 }
             }
@@ -2725,8 +2725,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label212.Text, label213.Text, 212) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label212.Text = Skill.skillAdd(label212.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 212);
+                    label212.Text = Skill.skillAdd(label212.Text,212);
                 }
             }
 
@@ -2736,8 +2736,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label188.Text, label213.Text, 188) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label188.Text = Skill.skillAdd(label188.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 188);
+                    label188.Text = Skill.skillAdd(label188.Text,213);
                 }
             }
 
@@ -2745,8 +2745,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label189.Text, label213.Text, 189) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label189.Text = Skill.skillAdd(label189.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 189);
+                    label189.Text = Skill.skillAdd(label189.Text,189);
                 }
             }
 
@@ -2754,8 +2754,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label190.Text, label213.Text, 190) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label190.Text = Skill.skillAdd(label190.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 190);
+                    label190.Text = Skill.skillAdd(label190.Text,190);
                 }
             }
 
@@ -2763,84 +2763,306 @@ namespace steamjazz
             {
                 if (Skill.enough(label191.Text, label213.Text, 191) == true)
                 {
-                    label213.Text = Skill.pointBuy(label213.Text);
-                    label191.Text = Skill.skillAdd(label191.Text);
+                    label213.Text = Skill.pointBuy(label213.Text, 191);
+                    label191.Text = Skill.skillAdd(label191.Text,191);
                 }
             }
+            //
             // vähennykset
+            //
 
+            //agility 73-80
             if (sender == label89)
             {
                 if (Skill.enough(label73.Text, label213.Text, 73) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label73.Text = Skill.skillRemove(label73.Text);
+                    label213.Text = Skill.pointRefund(label213.Text,73);
+                    label73.Text = Skill.skillRemove(label73.Text, 73);
                 }
             }
             if (sender == label90)
             {
                 if (Skill.enough(label74.Text, label213.Text, 74) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label74.Text = Skill.skillRemove(label74.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 74);
+                    label74.Text = Skill.skillRemove(label74.Text,74);
                 }
             }
             if (sender == label91)
             {
                 if (Skill.enough(label75.Text, label213.Text, 75) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label75.Text = Skill.skillRemove(label75.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 75);
+                    label75.Text = Skill.skillRemove(label75.Text,75);
                 }
             }
             if (sender == label92)
             {
                 if (Skill.enough(label76.Text, label213.Text, 76) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label76.Text = Skill.skillRemove(label76.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 76);
+                    label76.Text = Skill.skillRemove(label76.Text,76);
                 }
             }
             if (sender == label93)
             {
                 if (Skill.enough(label77.Text, label213.Text, 77) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label77.Text = Skill.skillRemove(label77.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 77);
+                    label77.Text = Skill.skillRemove(label77.Text,77);
                 }
             }
             if (sender == label94)
             {
                 if (Skill.enough(label78.Text, label213.Text, 78) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label78.Text = Skill.skillRemove(label78.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 78);
+                    label78.Text = Skill.skillRemove(label78.Text,78);
                 }
             }
             if (sender == label95)
             {
                 if (Skill.enough(label79.Text, label213.Text, 79) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label79.Text = Skill.skillRemove(label79.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 79);
+                    label79.Text = Skill.skillRemove(label79.Text,79);
                 }
             }
             if (sender == label96)
             {
                 if (Skill.enough(label80.Text, label213.Text, 80) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label80.Text = Skill.skillRemove(label80.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 80);
+                    label80.Text = Skill.skillRemove(label80.Text,80);
                 }
             }
-
+            //social
+            if (sender == label266)
+            {
+                if (Skill.enough(label161.Text, label213.Text, 161) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 161);
+                    label161.Text = Skill.skillRemove(label161.Text, 161);
+                }
+            } 
+            if (sender == label267)
+            {
+                if (Skill.enough(label162.Text, label213.Text, 162) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 162);
+                    label162.Text = Skill.skillRemove(label162.Text, 162);
+                }
+            } 
+            if (sender == label268)
+            {
+                if (Skill.enough(label163.Text, label213.Text, 163) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 163);
+                    label163.Text = Skill.skillRemove(label163.Text, 163);
+                }
+            } 
+            if (sender == label269)
+            {
+                if (Skill.enough(label164.Text, label213.Text, 164) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 164);
+                    label164.Text = Skill.skillRemove(label164.Text, 164);
+                }
+            }
+            if (sender == label270)
+            {
+                if (Skill.enough(label165.Text, label213.Text, 165) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 165);
+                    label165.Text = Skill.skillRemove(label165.Text, 165);
+                }
+            }
+            if (sender == label271)
+            {
+                if (Skill.enough(label166.Text, label213.Text, 166) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 166);
+                    label166.Text = Skill.skillRemove(label166.Text, 166);
+                }
+            }
+            //intuition
+            if (sender == label272)
+            {
+                if (Skill.enough(label167.Text, label213.Text, 167) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 167);
+                    label167.Text = Skill.skillRemove(label167.Text, 167);
+                }
+            } 
+            if (sender == label273)
+            {
+                if (Skill.enough(label168.Text, label213.Text, 168) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 168);
+                    label168.Text = Skill.skillRemove(label168.Text, 168);
+                }
+            } 
+            if (sender == label274)
+            {
+                if (Skill.enough(label169.Text, label213.Text, 169) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 169);
+                    label169.Text = Skill.skillRemove(label169.Text, 169);
+                }
+            } 
+            if (sender == label275)
+            {
+                if (Skill.enough(label170.Text, label213.Text, 170) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 170);
+                    label170.Text = Skill.skillRemove(label170.Text, 170);
+                }
+            }
+            if (sender == label276)
+            {
+                if (Skill.enough(label171.Text, label213.Text, 171) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 171);
+                    label171.Text = Skill.skillRemove(label171.Text, 171);
+                }
+            } 
+            if (sender == label277)
+            {
+                if (Skill.enough(label172.Text, label213.Text, 172) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 172);
+                    label172.Text = Skill.skillRemove(label172.Text, 172);
+                }
+            }
+            
+            if (sender == label278)
+            {
+                if (Skill.enough(label173.Text, label213.Text, 173) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 173);
+                    label173.Text = Skill.skillRemove(label173.Text, 173);
+                }
+            } //combat
+            
+            if (sender == label279)
+            {
+                if (Skill.enough(label174.Text, label213.Text, 174) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 174);
+                    label174.Text = Skill.skillRemove(label174.Text, 174);
+                }
+            }
+            if (sender == label280)
+            {
+                if (Skill.enough(label175.Text, label213.Text, 175) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 175);
+                    label175.Text = Skill.skillRemove(label175.Text, 175);
+                }
+            } 
+            if (sender == label281)
+            {
+                if (Skill.enough(label176.Text, label213.Text, 176) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 176);
+                    label176.Text = Skill.skillRemove(label176.Text, 176);
+                }
+            } 
+            if (sender == label282)
+            {
+                if (Skill.enough(label177.Text, label213.Text, 177) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 177);
+                    label177.Text = Skill.skillRemove(label177.Text, 177);
+                }
+            }
+            if (sender == label283)
+            {
+                if (Skill.enough(label178.Text, label213.Text, 178) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 178);
+                    label178.Text = Skill.skillRemove(label178.Text, 178);
+                }
+            } 
+            if (sender == label284)
+            {
+                if (Skill.enough(label179.Text, label213.Text, 179) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 179);
+                    label179.Text = Skill.skillRemove(label179.Text, 179);
+                }
+            }
+            if (sender == label285)
+            {
+                if (Skill.enough(label180.Text, label213.Text, 180) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 180);
+                    label180.Text = Skill.skillRemove(label180.Text, 180);
+                }
+            }
+            if (sender == label286)
+            {
+                if (Skill.enough(label181.Text, label213.Text, 181) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 181);
+                    label181.Text = Skill.skillRemove(label181.Text, 181);
+                }
+            }
+            if (sender == label287)
+            {
+                if (Skill.enough(label182.Text, label213.Text, 182) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 182);
+                    label182.Text = Skill.skillRemove(label182.Text, 182);
+                }
+            }
+            if (sender == label288)
+            {
+                if (Skill.enough(label183.Text, label213.Text, 183) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 183);
+                    label183.Text = Skill.skillRemove(label183.Text, 183);
+                }
+            }
+            if (sender == label289)
+            {
+                if (Skill.enough(label184.Text, label213.Text, 184) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 184);
+                    label184.Text = Skill.skillRemove(label184.Text, 184);
+                }
+            }
+            if (sender == label290)
+            {
+                if (Skill.enough(label185.Text, label213.Text, 185) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 185);
+                    label185.Text = Skill.skillRemove(label185.Text, 185);
+                }
+            }
+            if (sender == label291)
+            {
+                if (Skill.enough(label186.Text, label213.Text, 186) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 186);
+                    label186.Text = Skill.skillRemove(label186.Text, 186);
+                }
+            }
+            if (sender == label292)
+            {
+                if (Skill.enough(label187.Text, label213.Text, 187) == true)
+                {
+                    label213.Text = Skill.pointRefund(label213.Text, 187);
+                    label187.Text = Skill.skillRemove(label187.Text, 187);
+                }
+            }
             // empatia ->
             if (sender == label293)
             {
                 if (Skill.enough(label188.Text, label213.Text, 188) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label188.Text = Skill.skillRemove(label188.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 188);
+                    label188.Text = Skill.skillRemove(label188.Text,188);
                 }
             }
 
@@ -2848,8 +3070,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label189.Text, label213.Text,189) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label189.Text = Skill.skillRemove(label242.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 189);
+                    label189.Text = Skill.skillRemove(label189.Text,189);
                 }
             }
 
@@ -2857,8 +3079,8 @@ namespace steamjazz
             {
                 if (Skill.enough(label190.Text, label213.Text, 190) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label190.Text = Skill.skillRemove(label190.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 190);
+                    label190.Text = Skill.skillRemove(label190.Text,190);
                 }
             }
 
@@ -2866,17 +3088,17 @@ namespace steamjazz
             {
                 if (Skill.enough(label191.Text, label213.Text, 191) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label191.Text = Skill.skillRemove(label191.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 191);
+                    label191.Text = Skill.skillRemove(label191.Text,191);
                 }
             }
-
+            //inteligence 192-212
             if (sender == label297)
             {
                 if (Skill.enough(label192.Text, label213.Text, 192) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label192.Text = Skill.skillRemove(label192.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 192);
+                    label192.Text = Skill.skillRemove(label192.Text,192);
                 }
             }
 
@@ -2884,160 +3106,160 @@ namespace steamjazz
             {
                 if (Skill.enough(label193.Text, label213.Text, 193) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label193.Text = Skill.skillRemove(label193.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 193);
+                    label193.Text = Skill.skillRemove(label193.Text,193);
                 }
             }
             if (sender == label299)
             {
                 if (Skill.enough(label194.Text, label213.Text, 194) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label194.Text = Skill.skillRemove(label194.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 194);
+                    label194.Text = Skill.skillRemove(label194.Text,194);
                 }
             }
             if (sender == label300)
             {
                 if (Skill.enough(label195.Text, label213.Text, 195) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label195.Text = Skill.skillRemove(label195.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 195);
+                    label195.Text = Skill.skillRemove(label195.Text,195);
                 }
             }
             if (sender == label301)
             {
                 if (Skill.enough(label196.Text, label213.Text, 196) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label196.Text = Skill.skillRemove(label196.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 196);
+                    label196.Text = Skill.skillRemove(label196.Text,196);
                 }
             }
             if (sender == label302)
             {
                 if (Skill.enough(label197.Text, label213.Text, 197) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label197.Text = Skill.skillRemove(label197.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 197);
+                    label197.Text = Skill.skillRemove(label197.Text,197);
                 }
             }
             if (sender == label303)
             {
                 if (Skill.enough(label198.Text, label213.Text, 198) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label198.Text = Skill.skillRemove(label198.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 198);
+                    label198.Text = Skill.skillRemove(label198.Text,198);
                 }
             }
             if (sender == label304)
             {
                 if (Skill.enough(label199.Text, label213.Text, 199) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label199.Text = Skill.skillRemove(label199.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 199);
+                    label199.Text = Skill.skillRemove(label199.Text,199);
                 }
             }
             if (sender == label305)
             {
                 if (Skill.enough(label200.Text, label213.Text, 200) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label200.Text = Skill.skillRemove(label200.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 200);
+                    label200.Text = Skill.skillRemove(label200.Text,200);
                 }
             }
             if (sender == label306)
             {
                 if (Skill.enough(label201.Text, label213.Text, 201) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label201.Text = Skill.skillRemove(label201.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 201);
+                    label201.Text = Skill.skillRemove(label201.Text,201);
                 }
             }
             if (sender == label307)
             {
                 if (Skill.enough(label202.Text, label213.Text, 202) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label202.Text = Skill.skillRemove(label202.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 202);
+                    label202.Text = Skill.skillRemove(label202.Text,202);
                 }
             }
             if (sender == label308)
             {
                 if (Skill.enough(label203.Text, label213.Text, 203) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label203.Text = Skill.skillRemove(label203.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 203);
+                    label203.Text = Skill.skillRemove(label203.Text,203);
                 }
             }
             if (sender == label309)
             {
                 if (Skill.enough(label204.Text, label213.Text, 204) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label204.Text = Skill.skillRemove(label204.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 204);
+                    label204.Text = Skill.skillRemove(label204.Text,204);
                 }
             }
             if (sender == label310)
             {
                 if (Skill.enough(label205.Text, label213.Text, 205) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label205.Text = Skill.skillRemove(label205.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 205);
+                    label205.Text = Skill.skillRemove(label205.Text,205);
                 }
             }
             if (sender == label311)
             {
                 if (Skill.enough(label206.Text, label213.Text, 206) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label206.Text = Skill.skillRemove(label206.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 206);
+                    label206.Text = Skill.skillRemove(label206.Text,206);
                 }
             }
             if (sender == label312)
             {
                 if (Skill.enough(label207.Text, label213.Text, 207) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label207.Text = Skill.skillRemove(label207.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 207);
+                    label207.Text = Skill.skillRemove(label207.Text,207);
                 }
             }
             if (sender == label313)
             {
                 if (Skill.enough(label208.Text, label213.Text, 208) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label208.Text = Skill.skillRemove(label208.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 208);
+                    label208.Text = Skill.skillRemove(label208.Text,208);
                 }
             }
             if (sender == label314)
             {
                 if (Skill.enough(label209.Text, label213.Text, 209) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label209.Text = Skill.skillRemove(label209.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 209);
+                    label209.Text = Skill.skillRemove(label209.Text,209);
                 }
             }
             if (sender == label315)
             {
                 if (Skill.enough(label210.Text, label213.Text, 210) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label210.Text = Skill.skillRemove(label210.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 210);
+                    label210.Text = Skill.skillRemove(label210.Text,210);
                 }
             }
             if (sender == label316)
             {
                 if (Skill.enough(label211.Text, label213.Text, 211) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label211.Text = Skill.skillRemove(label211.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 211);
+                    label211.Text = Skill.skillRemove(label211.Text,211);
                 }
             }
             if (sender == label317)
             {
                 if (Skill.enough(label212.Text, label213.Text, 212) == true)
                 {
-                    label213.Text = Skill.pointRefund(label213.Text);
-                    label212.Text = Skill.skillRemove(label212.Text);
+                    label213.Text = Skill.pointRefund(label213.Text, 212);
+                    label212.Text = Skill.skillRemove(label212.Text,212);
                 }
             }
 
