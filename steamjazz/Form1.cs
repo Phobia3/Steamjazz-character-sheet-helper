@@ -2188,30 +2188,31 @@ namespace steamjazz
                 label54.Text = label41.Text;
                 label64.Text = label41.Text;
                 //agility
-                label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label73.Text, label54.Text)));
-                label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label74.Text, label54.Text)));
-                label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label75.Text, label54.Text)));
-                label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label76.Text, label54.Text)));
-                label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label77.Text, label54.Text)));
-                label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label78.Text, label54.Text)));
-                label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label79.Text, label54.Text)));
-                label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label80.Text, label54.Text)));
-                //combat skills
-                label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label174.Text, label54.Text)));
-                label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label175.Text, label54.Text)));
-                label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label176.Text, label54.Text)));
-                label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label177.Text, label54.Text)));
-                label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label178.Text, label54.Text)));
-                label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label179.Text, label54.Text)));
-                label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label180.Text, label54.Text)));
-                label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label181.Text, label54.Text)));
-                label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label182.Text, label54.Text)));
-                label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label183.Text, label54.Text)));
-                label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label184.Text, label54.Text)));
-                label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label185.Text, label54.Text)));
-                label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label186.Text, label54.Text)));
-                label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(label187.Text, label54.Text)));
+                label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(73, label73.Text, label54.Text)));
+                label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(74,label74.Text, label54.Text)));
+                label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(75,label75.Text, label54.Text)));
+                label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(76,label76.Text, label54.Text)));
+                label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(77,label77.Text, label54.Text)));
+                label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(78,label78.Text, label54.Text)));
+                label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(79,label79.Text, label54.Text)));
+                label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(80,label80.Text, label54.Text)));
+                //combat skills 2.pt. of agility
+                label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(174,label174.Text, label54.Text)));
+                label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(175,label175.Text, label54.Text)));
+                label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(176,label176.Text, label54.Text)));
+                label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(177,label177.Text, label54.Text)));
+                label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(178,label178.Text, label54.Text)));
+                label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(179,label179.Text, label54.Text)));
+                label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(180,label180.Text, label54.Text)));
+                label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(181,label181.Text, label54.Text)));
+                label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(182,label182.Text, label54.Text)));
+                label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(183,label183.Text, label54.Text)));
+                label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(184,label184.Text, label54.Text)));
+                label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(185,label185.Text, label54.Text)));
+                label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(186,label186.Text, label54.Text)));
+                label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(187,label187.Text, label54.Text)));
             
+                
             }
 
             if ( sender==label12)
@@ -2221,18 +2222,56 @@ namespace steamjazz
             
             if ( sender==label30)
             {
+                //int
                 label43.Text = Convert.ToString(Calc(Convert.ToInt32(label30.Text) - 10));
                 label56.Text = label43.Text;
+                label192.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(192,label192.Text, label56.Text)));
+                label193.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(193,label193.Text, label56.Text)));
+                label194.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(194,label194.Text, label56.Text))); 
+                label195.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(195,label195.Text, label56.Text)));
+                label196.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(196,label196.Text, label56.Text)));
+                label197.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(197,label197.Text, label56.Text)));
+                label198.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(198,label198.Text, label56.Text)));
+                label199.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(199,label199.Text, label56.Text)));
+                label200.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(200,label200.Text, label56.Text)));
+                label201.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(201,label201.Text, label56.Text)));
+                label202.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(202,label202.Text, label56.Text)));
+                label203.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(203,label203.Text, label56.Text)));
+                label204.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(204,label204.Text, label56.Text)));
+                label205.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(205,label205.Text, label56.Text)));
+                label206.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(206,label206.Text, label56.Text)));
+                label207.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(207,label207.Text, label56.Text)));
+                label208.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(208,label208.Text, label56.Text)));
+                label209.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(209,label209.Text, label56.Text)));
+                label210.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(210,label210.Text, label56.Text)));
+                label211.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(211,label211.Text, label56.Text)));
+                label212.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(212,label212.Text, label56.Text)));
+
             }
             if ( sender==label33)
             {
                 label44.Text = Convert.ToString(Calc(Convert.ToInt32(label33.Text) - 10));
                 label58.Text = label44.Text;
+                //WIT
+                label167.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(167,label167.Text, label58.Text)));
+                label168.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(168,label168.Text, label58.Text)));
+                label169.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(169,label169.Text, label58.Text)));
+                label170.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(170,label170.Text, label58.Text)));
+                label171.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(171,label171.Text, label58.Text)));
+                label172.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(172,label172.Text, label58.Text)));
+                label173.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(173,label173.Text, label58.Text)));
             }
             if (sender == label35)
             {
                 label45.Text = Convert.ToString(Calc(Convert.ToInt32(label35.Text) - 10));
                 label60.Text = label45.Text;
+                //Social
+                label161.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(161,label161.Text, label54.Text)));
+                label162.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(162,label162.Text, label54.Text)));
+                label163.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(163,label163.Text, label54.Text)));
+                label164.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(164,label164.Text, label54.Text)));
+                label165.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(165,label165.Text, label54.Text)));
+                label166.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(166,label166.Text, label54.Text)));
             }
             if (sender == label37)
             {
@@ -2240,6 +2279,10 @@ namespace steamjazz
                 //EMP
                 label46.Text = Convert.ToString(Calc(Convert.ToInt32(label37.Text) - 10));
                 label62.Text = label46.Text;
+                label188.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(188,label188.Text, label46.Text)));
+                label189.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(189,label189.Text, label46.Text)));
+                label190.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(190,label190.Text, label46.Text)));
+                label191.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(191,label191.Text, label46.Text)));
                 SDM();
             }
             if (sender == label190)
@@ -2774,7 +2817,7 @@ namespace steamjazz
             //agility 73-80
             if (sender == label89)
             {
-                if (Skill.enough(label73.Text, label213.Text, 73) == true)
+                if (Skill.bonus[0,1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text,73);
                     label73.Text = Skill.skillRemove(label73.Text, 73);
@@ -2782,7 +2825,7 @@ namespace steamjazz
             }
             if (sender == label90)
             {
-                if (Skill.enough(label74.Text, label213.Text, 74) == true)
+                if (Skill.bonus[1, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 74);
                     label74.Text = Skill.skillRemove(label74.Text,74);
@@ -2790,7 +2833,7 @@ namespace steamjazz
             }
             if (sender == label91)
             {
-                if (Skill.enough(label75.Text, label213.Text, 75) == true)
+                if (Skill.bonus[2, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 75);
                     label75.Text = Skill.skillRemove(label75.Text,75);
@@ -2798,7 +2841,7 @@ namespace steamjazz
             }
             if (sender == label92)
             {
-                if (Skill.enough(label76.Text, label213.Text, 76) == true)
+                if (Skill.bonus[3, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 76);
                     label76.Text = Skill.skillRemove(label76.Text,76);
@@ -2806,7 +2849,7 @@ namespace steamjazz
             }
             if (sender == label93)
             {
-                if (Skill.enough(label77.Text, label213.Text, 77) == true)
+                if (Skill.bonus[4, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 77);
                     label77.Text = Skill.skillRemove(label77.Text,77);
@@ -2814,7 +2857,7 @@ namespace steamjazz
             }
             if (sender == label94)
             {
-                if (Skill.enough(label78.Text, label213.Text, 78) == true)
+                if (Skill.bonus[5, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 78);
                     label78.Text = Skill.skillRemove(label78.Text,78);
@@ -2822,7 +2865,7 @@ namespace steamjazz
             }
             if (sender == label95)
             {
-                if (Skill.enough(label79.Text, label213.Text, 79) == true)
+                if (Skill.bonus[6, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 79);
                     label79.Text = Skill.skillRemove(label79.Text,79);
@@ -2830,7 +2873,7 @@ namespace steamjazz
             }
             if (sender == label96)
             {
-                if (Skill.enough(label80.Text, label213.Text, 80) == true)
+                if (Skill.bonus[7, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 80);
                     label80.Text = Skill.skillRemove(label80.Text,80);
@@ -2839,7 +2882,7 @@ namespace steamjazz
             //social
             if (sender == label266)
             {
-                if (Skill.enough(label161.Text, label213.Text, 161) == true)
+                if (Skill.bonus[8, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 161);
                     label161.Text = Skill.skillRemove(label161.Text, 161);
@@ -2847,7 +2890,7 @@ namespace steamjazz
             } 
             if (sender == label267)
             {
-                if (Skill.enough(label162.Text, label213.Text, 162) == true)
+                if (Skill.bonus[9, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 162);
                     label162.Text = Skill.skillRemove(label162.Text, 162);
@@ -2855,7 +2898,7 @@ namespace steamjazz
             } 
             if (sender == label268)
             {
-                if (Skill.enough(label163.Text, label213.Text, 163) == true)
+                if (Skill.bonus[10, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 163);
                     label163.Text = Skill.skillRemove(label163.Text, 163);
@@ -2863,7 +2906,7 @@ namespace steamjazz
             } 
             if (sender == label269)
             {
-                if (Skill.enough(label164.Text, label213.Text, 164) == true)
+                if (Skill.bonus[11, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 164);
                     label164.Text = Skill.skillRemove(label164.Text, 164);
@@ -2871,7 +2914,7 @@ namespace steamjazz
             }
             if (sender == label270)
             {
-                if (Skill.enough(label165.Text, label213.Text, 165) == true)
+                if (Skill.bonus[12, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 165);
                     label165.Text = Skill.skillRemove(label165.Text, 165);
@@ -2879,7 +2922,7 @@ namespace steamjazz
             }
             if (sender == label271)
             {
-                if (Skill.enough(label166.Text, label213.Text, 166) == true)
+                if (Skill.bonus[13, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 166);
                     label166.Text = Skill.skillRemove(label166.Text, 166);
@@ -2888,7 +2931,7 @@ namespace steamjazz
             //intuition
             if (sender == label272)
             {
-                if (Skill.enough(label167.Text, label213.Text, 167) == true)
+                if (Skill.bonus[14, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 167);
                     label167.Text = Skill.skillRemove(label167.Text, 167);
@@ -2896,7 +2939,7 @@ namespace steamjazz
             } 
             if (sender == label273)
             {
-                if (Skill.enough(label168.Text, label213.Text, 168) == true)
+                if (Skill.bonus[15, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 168);
                     label168.Text = Skill.skillRemove(label168.Text, 168);
@@ -2904,7 +2947,7 @@ namespace steamjazz
             } 
             if (sender == label274)
             {
-                if (Skill.enough(label169.Text, label213.Text, 169) == true)
+                if (Skill.bonus[16, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 169);
                     label169.Text = Skill.skillRemove(label169.Text, 169);
@@ -2912,7 +2955,7 @@ namespace steamjazz
             } 
             if (sender == label275)
             {
-                if (Skill.enough(label170.Text, label213.Text, 170) == true)
+                if (Skill.bonus[17, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 170);
                     label170.Text = Skill.skillRemove(label170.Text, 170);
@@ -2920,7 +2963,7 @@ namespace steamjazz
             }
             if (sender == label276)
             {
-                if (Skill.enough(label171.Text, label213.Text, 171) == true)
+                if (Skill.bonus[18, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 171);
                     label171.Text = Skill.skillRemove(label171.Text, 171);
@@ -2928,7 +2971,7 @@ namespace steamjazz
             } 
             if (sender == label277)
             {
-                if (Skill.enough(label172.Text, label213.Text, 172) == true)
+                if (Skill.bonus[19, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 172);
                     label172.Text = Skill.skillRemove(label172.Text, 172);
@@ -2937,7 +2980,7 @@ namespace steamjazz
             
             if (sender == label278)
             {
-                if (Skill.enough(label173.Text, label213.Text, 173) == true)
+                if (Skill.bonus[20, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 173);
                     label173.Text = Skill.skillRemove(label173.Text, 173);
@@ -2946,7 +2989,7 @@ namespace steamjazz
             
             if (sender == label279)
             {
-                if (Skill.enough(label174.Text, label213.Text, 174) == true)
+                if (Skill.bonus[21, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 174);
                     label174.Text = Skill.skillRemove(label174.Text, 174);
@@ -2954,7 +2997,7 @@ namespace steamjazz
             }
             if (sender == label280)
             {
-                if (Skill.enough(label175.Text, label213.Text, 175) == true)
+                if (Skill.bonus[22, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 175);
                     label175.Text = Skill.skillRemove(label175.Text, 175);
@@ -2962,7 +3005,7 @@ namespace steamjazz
             } 
             if (sender == label281)
             {
-                if (Skill.enough(label176.Text, label213.Text, 176) == true)
+                if (Skill.bonus[23, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 176);
                     label176.Text = Skill.skillRemove(label176.Text, 176);
@@ -2970,7 +3013,7 @@ namespace steamjazz
             } 
             if (sender == label282)
             {
-                if (Skill.enough(label177.Text, label213.Text, 177) == true)
+                if (Skill.bonus[24, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 177);
                     label177.Text = Skill.skillRemove(label177.Text, 177);
@@ -2978,7 +3021,7 @@ namespace steamjazz
             }
             if (sender == label283)
             {
-                if (Skill.enough(label178.Text, label213.Text, 178) == true)
+                if (Skill.bonus[25, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 178);
                     label178.Text = Skill.skillRemove(label178.Text, 178);
@@ -2986,7 +3029,7 @@ namespace steamjazz
             } 
             if (sender == label284)
             {
-                if (Skill.enough(label179.Text, label213.Text, 179) == true)
+                if (Skill.bonus[26, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 179);
                     label179.Text = Skill.skillRemove(label179.Text, 179);
@@ -2994,7 +3037,7 @@ namespace steamjazz
             }
             if (sender == label285)
             {
-                if (Skill.enough(label180.Text, label213.Text, 180) == true)
+                if (Skill.bonus[27, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 180);
                     label180.Text = Skill.skillRemove(label180.Text, 180);
@@ -3002,7 +3045,7 @@ namespace steamjazz
             }
             if (sender == label286)
             {
-                if (Skill.enough(label181.Text, label213.Text, 181) == true)
+                if (Skill.bonus[28, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 181);
                     label181.Text = Skill.skillRemove(label181.Text, 181);
@@ -3010,7 +3053,7 @@ namespace steamjazz
             }
             if (sender == label287)
             {
-                if (Skill.enough(label182.Text, label213.Text, 182) == true)
+                if (Skill.bonus[29, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 182);
                     label182.Text = Skill.skillRemove(label182.Text, 182);
@@ -3018,7 +3061,7 @@ namespace steamjazz
             }
             if (sender == label288)
             {
-                if (Skill.enough(label183.Text, label213.Text, 183) == true)
+                if (Skill.bonus[30,1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 183);
                     label183.Text = Skill.skillRemove(label183.Text, 183);
@@ -3026,7 +3069,7 @@ namespace steamjazz
             }
             if (sender == label289)
             {
-                if (Skill.enough(label184.Text, label213.Text, 184) == true)
+                if (Skill.bonus[31, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 184);
                     label184.Text = Skill.skillRemove(label184.Text, 184);
@@ -3034,7 +3077,7 @@ namespace steamjazz
             }
             if (sender == label290)
             {
-                if (Skill.enough(label185.Text, label213.Text, 185) == true)
+                if (Skill.bonus[32, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 185);
                     label185.Text = Skill.skillRemove(label185.Text, 185);
@@ -3042,7 +3085,7 @@ namespace steamjazz
             }
             if (sender == label291)
             {
-                if (Skill.enough(label186.Text, label213.Text, 186) == true)
+                if (Skill.bonus[33, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 186);
                     label186.Text = Skill.skillRemove(label186.Text, 186);
@@ -3050,7 +3093,7 @@ namespace steamjazz
             }
             if (sender == label292)
             {
-                if (Skill.enough(label187.Text, label213.Text, 187) == true)
+                if (Skill.bonus[34, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 187);
                     label187.Text = Skill.skillRemove(label187.Text, 187);
@@ -3059,7 +3102,7 @@ namespace steamjazz
             // empatia ->
             if (sender == label293)
             {
-                if (Skill.enough(label188.Text, label213.Text, 188) == true)
+                if (Skill.bonus[35, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 188);
                     label188.Text = Skill.skillRemove(label188.Text,188);
@@ -3068,7 +3111,7 @@ namespace steamjazz
 
             if (sender == label294)
             {
-                if (Skill.enough(label189.Text, label213.Text,189) == true)
+                if (Skill.bonus[36, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 189);
                     label189.Text = Skill.skillRemove(label189.Text,189);
@@ -3077,7 +3120,7 @@ namespace steamjazz
 
             if (sender == label295)
             {
-                if (Skill.enough(label190.Text, label213.Text, 190) == true)
+                if (Skill.bonus[37, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 190);
                     label190.Text = Skill.skillRemove(label190.Text,190);
@@ -3086,7 +3129,7 @@ namespace steamjazz
 
             if (sender == label296)
             {
-                if (Skill.enough(label191.Text, label213.Text, 191) == true)
+                if (Skill.bonus[38, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 191);
                     label191.Text = Skill.skillRemove(label191.Text,191);
@@ -3095,7 +3138,7 @@ namespace steamjazz
             //inteligence 192-212
             if (sender == label297)
             {
-                if (Skill.enough(label192.Text, label213.Text, 192) == true)
+                if (Skill.bonus[39, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 192);
                     label192.Text = Skill.skillRemove(label192.Text,192);
@@ -3104,7 +3147,7 @@ namespace steamjazz
 
             if (sender == label298)
             {
-                if (Skill.enough(label193.Text, label213.Text, 193) == true)
+                if (Skill.bonus[40, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 193);
                     label193.Text = Skill.skillRemove(label193.Text,193);
@@ -3112,7 +3155,7 @@ namespace steamjazz
             }
             if (sender == label299)
             {
-                if (Skill.enough(label194.Text, label213.Text, 194) == true)
+                if (Skill.bonus[41, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 194);
                     label194.Text = Skill.skillRemove(label194.Text,194);
@@ -3120,7 +3163,7 @@ namespace steamjazz
             }
             if (sender == label300)
             {
-                if (Skill.enough(label195.Text, label213.Text, 195) == true)
+                if (Skill.bonus[42, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 195);
                     label195.Text = Skill.skillRemove(label195.Text,195);
@@ -3128,7 +3171,7 @@ namespace steamjazz
             }
             if (sender == label301)
             {
-                if (Skill.enough(label196.Text, label213.Text, 196) == true)
+                if (Skill.bonus[43, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 196);
                     label196.Text = Skill.skillRemove(label196.Text,196);
@@ -3136,7 +3179,7 @@ namespace steamjazz
             }
             if (sender == label302)
             {
-                if (Skill.enough(label197.Text, label213.Text, 197) == true)
+                if (Skill.bonus[44, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 197);
                     label197.Text = Skill.skillRemove(label197.Text,197);
@@ -3144,7 +3187,7 @@ namespace steamjazz
             }
             if (sender == label303)
             {
-                if (Skill.enough(label198.Text, label213.Text, 198) == true)
+                if (Skill.bonus[45, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 198);
                     label198.Text = Skill.skillRemove(label198.Text,198);
@@ -3152,7 +3195,7 @@ namespace steamjazz
             }
             if (sender == label304)
             {
-                if (Skill.enough(label199.Text, label213.Text, 199) == true)
+                if (Skill.bonus[46, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 199);
                     label199.Text = Skill.skillRemove(label199.Text,199);
@@ -3160,7 +3203,7 @@ namespace steamjazz
             }
             if (sender == label305)
             {
-                if (Skill.enough(label200.Text, label213.Text, 200) == true)
+                if (Skill.bonus[47, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 200);
                     label200.Text = Skill.skillRemove(label200.Text,200);
@@ -3168,7 +3211,7 @@ namespace steamjazz
             }
             if (sender == label306)
             {
-                if (Skill.enough(label201.Text, label213.Text, 201) == true)
+                if (Skill.bonus[48, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 201);
                     label201.Text = Skill.skillRemove(label201.Text,201);
@@ -3176,7 +3219,7 @@ namespace steamjazz
             }
             if (sender == label307)
             {
-                if (Skill.enough(label202.Text, label213.Text, 202) == true)
+                if (Skill.bonus[49, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 202);
                     label202.Text = Skill.skillRemove(label202.Text,202);
@@ -3184,7 +3227,7 @@ namespace steamjazz
             }
             if (sender == label308)
             {
-                if (Skill.enough(label203.Text, label213.Text, 203) == true)
+                if (Skill.bonus[50, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 203);
                     label203.Text = Skill.skillRemove(label203.Text,203);
@@ -3192,7 +3235,7 @@ namespace steamjazz
             }
             if (sender == label309)
             {
-                if (Skill.enough(label204.Text, label213.Text, 204) == true)
+                if (Skill.bonus[51, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 204);
                     label204.Text = Skill.skillRemove(label204.Text,204);
@@ -3200,7 +3243,7 @@ namespace steamjazz
             }
             if (sender == label310)
             {
-                if (Skill.enough(label205.Text, label213.Text, 205) == true)
+                if (Skill.bonus[52, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 205);
                     label205.Text = Skill.skillRemove(label205.Text,205);
@@ -3208,7 +3251,7 @@ namespace steamjazz
             }
             if (sender == label311)
             {
-                if (Skill.enough(label206.Text, label213.Text, 206) == true)
+                if (Skill.bonus[53, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 206);
                     label206.Text = Skill.skillRemove(label206.Text,206);
@@ -3216,7 +3259,7 @@ namespace steamjazz
             }
             if (sender == label312)
             {
-                if (Skill.enough(label207.Text, label213.Text, 207) == true)
+                if (Skill.bonus[54, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 207);
                     label207.Text = Skill.skillRemove(label207.Text,207);
@@ -3224,7 +3267,7 @@ namespace steamjazz
             }
             if (sender == label313)
             {
-                if (Skill.enough(label208.Text, label213.Text, 208) == true)
+                if (Skill.bonus[55,1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 208);
                     label208.Text = Skill.skillRemove(label208.Text,208);
@@ -3232,7 +3275,7 @@ namespace steamjazz
             }
             if (sender == label314)
             {
-                if (Skill.enough(label209.Text, label213.Text, 209) == true)
+                if (Skill.bonus[56, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 209);
                     label209.Text = Skill.skillRemove(label209.Text,209);
@@ -3240,7 +3283,7 @@ namespace steamjazz
             }
             if (sender == label315)
             {
-                if (Skill.enough(label210.Text, label213.Text, 210) == true)
+                if (Skill.bonus[57, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 210);
                     label210.Text = Skill.skillRemove(label210.Text,210);
@@ -3248,7 +3291,7 @@ namespace steamjazz
             }
             if (sender == label316)
             {
-                if (Skill.enough(label211.Text, label213.Text, 211) == true)
+                if (Skill.bonus[58, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 211);
                     label211.Text = Skill.skillRemove(label211.Text,211);
@@ -3256,7 +3299,7 @@ namespace steamjazz
             }
             if (sender == label317)
             {
-                if (Skill.enough(label212.Text, label213.Text, 212) == true)
+                if (Skill.bonus[59, 1]>0)
                 {
                     label213.Text = Skill.pointRefund(label213.Text, 212);
                     label212.Text = Skill.skillRemove(label212.Text,212);
@@ -3768,6 +3811,8 @@ namespace steamjazz
         {
 
         }
+
+       
 
         
     

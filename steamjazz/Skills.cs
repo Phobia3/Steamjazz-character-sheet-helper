@@ -9,7 +9,8 @@ namespace steamjazz
 {
     class Skills
     {
-        int[,] bonus = new int[,] { { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 10, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 6, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 }, { 6, 0 }, { 8, 0 }, { 7, 0 }, { 7, 0 }, { 8, 0 }, { 8, 0 }, { 7, 0 }, { 8, 0 } };
+        //bonus[perusarvo,rank,attribuutin bonus]
+        public int[,] bonus = new int[60,3] { { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 10, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 6, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 6, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 6, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0 }, { 7, 0 , 0 }, { 8, 0 , 0 }, { 8, 0 , 0 }, { 7, 0 , 0}, { 8, 0 , 0 } };
         //agility 0-7
         //social 8-13
         //Intuition 14- 20
@@ -17,29 +18,446 @@ namespace steamjazz
         //empatia 35-38
         //int 39-59
 
-        string prevBonus= "0";
+        
         int cost = 0;
         public Skills()
         {
-          
-        }
-        void skillInit(string labelValue, string bonus)
-        {
 
         }
+        
         /// <summary>
         /// laskee attribuuttiboonuksen vaikutuksen taitoihin
         /// </summary>
+        /// <param name="label"></param>
+        /// taidon label numero. esim. label73 olisi siis 73
         /// <param name="labelSkill"></param>
         /// sisältää attribuutti boonuksen vaikutuksen taitoihin
         /// <param name="labelBonus"></param>
         /// varsinainen attribuutti boonus
         /// <returns></returns>
-        public string attBonus(string labelSkill, string labelBonus)
+        public string attBonus(int label, string labelSkill, string labelBonus)
         {
-            int bonus = Convert.ToInt32(labelBonus) - Convert.ToInt32(prevBonus);
-            labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + bonus);
-            prevBonus = labelBonus; 
+            int erotus = 0;
+            if (label == 73)
+            {
+                erotus = Convert.ToInt32(labelBonus)-bonus[0,2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[0, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 74)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[1, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[1, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 75)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[2, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[2, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 76)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[3, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[3, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 77)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[4, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[4, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 78)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[5, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[5, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 79)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[6, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[6, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 80)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[7, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[7, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 161)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[8, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[8, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 162)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[9, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[9, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 163)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[10, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[10, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 164)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[11, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[11, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 165)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[12, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[12, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 166)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[13, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[13, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 167)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[14, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[14, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 168)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[15, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[15, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 169)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[16, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[16, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 170)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[17, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[17, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 171)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[18, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[18, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 172)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[19, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[19, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 173)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[20, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[20, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 174)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[21, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[21, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 175)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[22, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[22, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 176)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[23, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[23, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 177)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[24, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[24, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 178)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[25, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[25, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 179)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[26, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[26, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 180)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[27, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[27, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 181)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[28, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[28, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 182)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[29, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[29, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 183)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[30, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[30, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 184)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[31, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[31, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 185)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[32, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[32, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 186)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[33, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[33, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 187)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[34, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[34, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 188)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[35, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[35, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 189)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[36, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[36, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 190)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[37, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[37, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 191)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[38, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[38, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 192)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[39, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[39, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 193)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[40, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[40, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 194)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[41, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[41, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 195)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[42, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[42, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 196)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[43, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[43, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 197)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[44, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[44, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 198)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[45, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[45, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 199)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[46, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[46, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 200)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[47, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[47, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 201)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[48, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[48, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 202)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[49, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[49, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 203)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[50, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[50, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 204)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[51, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[51, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 205)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[52, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[52, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 206)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[53, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[53, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 207)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[54, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[54, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 208)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[55, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[55, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 209)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[56, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[56, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 210)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[57, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[57, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 211)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[58, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[58, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
+            if (label == 212)
+            {
+                erotus = Convert.ToInt32(labelBonus) - bonus[59, 2];
+                labelSkill = Convert.ToString(Convert.ToInt32(labelSkill) + erotus);
+                bonus[59, 2] = Convert.ToInt32(labelBonus);
+                return labelSkill;
+            }
             return labelSkill;
         }
         public string skillAdd(string x, int label)
@@ -820,7 +1238,7 @@ namespace steamjazz
         public string pointRefund(string points, int label)
         {
             string tulos = Convert.ToString(Convert.ToInt32(points) + skillRank(label));
-            cost = 0;
+            
             return tulos;
         }
     }

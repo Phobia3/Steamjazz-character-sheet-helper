@@ -1,7 +1,7 @@
 skillit
 - nimet
-- attribuuttibonukset kaikille
-- ei negatiivisia skill rank
+- listalliset taidot matkaan mukaan..
+- ammattitaidot osio
 
 Attribuutit
 
