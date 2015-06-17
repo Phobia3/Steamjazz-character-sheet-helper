@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using steamjazz.Properties;
+using Steamjazz.Properties;
 using System.Reflection;
 
 
@@ -19,6 +19,7 @@ namespace steamjazz
     public partial class Form1 : Form
         
     {
+        cBackground Background = new cBackground();
         Skills Skill = new Skills();
         object previous;
         object previous2;
@@ -47,18 +48,7 @@ namespace steamjazz
             
             
         }
-        private void InitializeSkills()
-        {
-            label73.Text = "0";
-            label74.Text = "0";
-            label75.Text = "0";
-            label76.Text = "0";
-            label77.Text = "0";
-            label78.Text = "0";
-            label79.Text = "0";
-            label80.Text = "0";
-            label190.Text = "0";
-        }
+       
        
         private void flowLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
@@ -113,267 +103,72 @@ namespace steamjazz
                     {
                         string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
                         comboBox2.Items.AddRange(background);
-
-                        var assembly = Assembly.GetExecutingAssembly();
-                       // // 
-                        var resourceName = "steamjazz.Human.txt";
-
-                        using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                        using (StreamReader sr = new StreamReader(stream))
-                        {
-                            String line = sr.ReadToEnd();
-                            richTextBox1.Text = line;
-                        }
-
                         break;
                     }
                 case 1:
-            {
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Dracosaurian" };
-                comboBox2.Items.AddRange(background);
-                
-               
-                groupBox1.Visible = true;
-                radioButton4.Visible = false;
-                radioButton5.Visible = false;
-                radioButton6.Visible = false;
-                radioButton7.Visible = false;
-                radioButton8.Visible = false;
-                
-               
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Dracosaurian.txt";
+                    {
+                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Dracosaurian" };
+                        comboBox2.Items.AddRange(background);
+                        groupBox1.Visible = true;
+                        radioButton4.Visible = false;
+                        radioButton5.Visible = false;
+                        radioButton6.Visible = false;
+                        radioButton7.Visible = false;
+                        radioButton8.Visible = false;
+                        break;
+                    }
 
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
-                    //automationeiden yhteinen rotuinfo
                 case 2:
-            {
-
-               
-
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-                comboBox2.Items.AddRange(background);
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Basic.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                
-                
-                break;
-
-                /*
-                "Human","Dracosaurian","Basic","Sylph","Kharzul Dwarf"
-            ,"Beastfolk","Goliath","Butler","Copper","Craftsman","Doll","Heavy Worker"*/
-            }
-                case 7:
-            {
-
-                 
-                
-
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-                comboBox2.Items.AddRange(background);
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Butler.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
-                case 8:
-            {
-
-                
-
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-                comboBox2.Items.AddRange(background);
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Copper.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
-                case 9:
-            {
-
-                
-                
-
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-                comboBox2.Items.AddRange(background);
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Craftsman.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
-                case 10:
-            {
-
-                
-
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-                comboBox2.Items.AddRange(background);
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Doll.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
-                case 11:
-            {
-
-
-                
-                
-
-
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
-                comboBox2.Items.AddRange(background);
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.HeavyWorker.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
+                    {
+                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Sylph" };
+                        comboBox2.Items.AddRange(background);
+                        break;
+                    }
                 case 3:
-            {
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Sylph" };
-                comboBox2.Items.AddRange(background);
-
-                
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Sylph.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
+                    {
+                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Kharzul Dwarf" };
+                        comboBox2.Items.AddRange(background);
+                        break;
+                    }
                 case 4:
-            {
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Kharzul Dwarf" };
-                comboBox2.Items.AddRange(background);
+                    {
+                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Beastfolk" };
+                        comboBox2.Items.AddRange(background);
 
-                
+                        groupBox2.Visible = true;
+                        radioButton13.Visible = false;
+                        radioButton15.Visible = false;
+                        radioButton16.Visible = false;
+                        groupBox1.Visible = true;
+                        radioButton5.Visible = false;
+                        radioButton7.Visible = false;
+                        radioButton8.Visible = false;
 
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.KharzulDwarf.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
+                        break;
+                    }
                 case 5:
-            {
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Beastfolk" };
-                comboBox2.Items.AddRange(background);
-               
-                
-                groupBox2.Visible = true;
-                radioButton13.Visible = false;
-                radioButton15.Visible = false;
-                radioButton16.Visible = false;
-                groupBox1.Visible = true;
-                radioButton5.Visible = false;
-                radioButton7.Visible = false;
-                radioButton8.Visible = false;
-                
+                    {
+                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Goliath" };
+                        comboBox2.Items.AddRange(background);
 
-                
-                
-                
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.beastfolk.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
-            }
+                        break;
+                    }
                 case 6:
-            {
-                
-                string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Goliath" };
-                comboBox2.Items.AddRange(background);
-
-                var assembly = Assembly.GetExecutingAssembly();
-                // 
-                var resourceName = "steamjazz.Goliath.txt";
-
-                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                using (StreamReader sr = new StreamReader(stream))
-                {
-                    String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
-                }
-                break;
+                    {
+                        string[] background = new string[] { "Basic", "Buttler", "Copper", "Craftsmann", "Doll", "Heavy Worker" };
+                        comboBox2.Items.AddRange(background);
+                        break;
+                    }
             }
-        }
+            var assembly = Assembly.GetExecutingAssembly();
+
+            var resourceName = Background.Race(comboBox1.SelectedIndex);
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader sr = new StreamReader(stream))
+            {
+                String line = sr.ReadToEnd();
+                richTextBox1.Text = line;
+            }
             
         }
         /// <summary>
@@ -404,7 +199,7 @@ namespace steamjazz
             backAttribute();
             // riippuen kansalaisuudesta, luokkavaihtoehdot vaihtuvat. Valinnoista riippuen label5 saa eri tekstin. nuthing more to see here - moving along
             
-            if (comboBox2.SelectedIndex == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
+            if (comboBox2.SelectedIndex == 1 || comboBox1.SelectedIndex == 3 && comboBox2.SelectedIndex == 5)
             {
                 comboBox5.Visible = true;
             }
@@ -456,86 +251,13 @@ namespace steamjazz
                        
                         break;
                     }
-                case 6:
-                    {
-                       
-                        if (comboBox1.SelectedIndex == 1)
-                        { 
-                            var assembly = Assembly.GetExecutingAssembly();
-                            //// 
-                            var resourceName = "steamjazz.DracosaurianBack.txt";
-
-                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                            using (StreamReader sr = new StreamReader(stream))
-                            {
-                                String line = sr.ReadToEnd();
-                                richTextBox1.Text = line;
-                            }
-
-                        }
-                        if (comboBox1.SelectedIndex == 3)
-                        { 
-                            var assembly = Assembly.GetExecutingAssembly();
-                            // 
-                            var resourceName = "steamjazz.SylphBack.txt";
-
-                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                            using (StreamReader sr = new StreamReader(stream))
-                            {
-                                String line = sr.ReadToEnd();
-                                richTextBox1.Text = line;
-                            }
-
-                        }
-                        if (comboBox1.SelectedIndex == 4)
-                        { 
-                            var assembly = Assembly.GetExecutingAssembly();
-                            // 
-                            var resourceName = "steamjazz.KharzulDwarfBack.txt";
-
-                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                            using (StreamReader sr = new StreamReader(stream))
-                            {
-                                String line = sr.ReadToEnd();
-                                richTextBox1.Text = line;
-                            }
-
-                        }
-                        if (comboBox1.SelectedIndex == 5)
-                        { 
-                            var assembly = Assembly.GetExecutingAssembly();
-                            // 
-                            var resourceName = "steamjazz.BeastfolkBack.txt";
-
-                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                            using (StreamReader sr = new StreamReader(stream))
-                            {
-                                String line = sr.ReadToEnd();
-                                richTextBox1.Text = line;
-                            }
-
-                        }
-                        if (comboBox1.SelectedIndex == 6)
-                        { 
-                            var assembly = Assembly.GetExecutingAssembly();
-                            // 
-                            var resourceName = "steamjazz.GoliathBack.txt";
-
-                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                            using (StreamReader sr = new StreamReader(stream))
-                            {
-                                String line = sr.ReadToEnd();
-                                richTextBox1.Text = line;
-                            }
-
-                        }
-                        break;
-                    }
-              
+               
                 default:
                     comboBox3.Visible = false;
                     break;
             }
+            RichTextBoxTulostus(Background.Nationality(comboBox2.SelectedIndex,comboBox1.SelectedIndex));
+
         }
         /// <summary>
         /// alustaa combobox:t joiden sisältö ei vaihdu.
@@ -543,8 +265,8 @@ namespace steamjazz
         private void InitializeComboBox()
         {
             // Combobox1 info 
-            string[] race = new string[]{"Human","Dracosaurian","Basic","Sylph","Kharzul Dwarf"
-            ,"Beastfolk","Goliath","Butler","Copper","Craftsman","Doll","Heavy Worker"};
+            string[] race = new string[]{"Human","Dracosaurian","Sylph","Kharzul Dwarf"
+            ,"Beastfolk","Goliath","Automaton"};
             comboBox1.Items.AddRange(race);
            
             string[] career = new string[] { "Aristocrat","Artist","Assassin","Banker","Butler","Con Artist","Craftsman","Detective","Druid",
@@ -592,6 +314,22 @@ namespace steamjazz
         
         }
         /// <summary>
+        /// Tulostaa RichTextBox1:n annetun resurssin mukaisen datan
+        /// </summary>
+        /// <param name="resurssi"></param>
+        /// tulostettavan resurssin nimi.
+        private void RichTextBoxTulostus(string resurssi)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceName = resurssi;
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (StreamReader sr = new StreamReader(stream))
+            {
+                String line = sr.ReadToEnd();
+                richTextBox1.Text = line;
+            }
+        }
+        /// <summary>
         /// Taustan valinta tapahtuu combobox3:ssa. RichTextBox tulostaa tarvittavan informaation taustoista. Vaikuttaa atribuutteihin ja muihin
         /// ominaisuuksiin
         /// </summary>
@@ -608,420 +346,11 @@ namespace steamjazz
             {
                 comboBox5.Visible = false;
             }
-            //string teksti;
-            switch (comboBox2.SelectedIndex)
-            {
-                case 0:
-                    {
-                        //victoria
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    //low class
-                                     
-                                    richTextBox1.Text = "CON +1\r\n" +
-                                                    "Initial skill ranks: Survival 2, Brawl 1, Stealth 1\r\n" +
-                                                    "15 CP can be used to buy ranks in the following skills: Animal\r\n" +
-                                                    "Handling, Bluff, Brawl, Climb, Cooking, First Aid, Gaming,\r\n" +
-                                                    "Handguns, Intimidate, Listen, Melee (Balanced), Melee\r\n" +
-                                                    "(Powerful), Spot, Stealth, Survival, Throw, Track.\r\n" +
-                                                    "Starting Wealth level\r\n" +
-                                                    "cannot be higher than ‘Well off’\r\n\r\n" +
-                                                    "Adventuring as a Lower Class Victoran:\r\n" +
-                                                    "It isn’t hard to find reasons for a lower class Victoran to leave" +
-                                                    "her normal life behind and starting a career as an adventurer." +
-                                                    "Almost any alternative would be an improvement to the" +
-                                                   " monotony of endless labour. If given the chance, many Victoran" +
-                                                    "lower class people would take up the offer to join a mercenary" +
-                                                    "group or another adventuring opportunity, but many of the" +
-                                                    "downtrodden lack the imagination or the ambition to rise above" +
-                                                    "the squalor that is the only life they have ever known.\r\n\r\n" +
-                                                    "Suggested careers: Con Artist, Craftsman, Hunter, Mercenary," +
-                                                    "Rogue, Sailor, Scout, Soldier, Warrior\r\n\r\n" +
-                                                    "Typical names:\r\n" +
-                                                    "Victoran lower class people have short, typically English" +
-                                                    "sounding names. Southern Victoran names have a more French" +
-                                                    "or South European flavour. Female names include Amy, Brett," +
-                                                    "Hannah, Katie and Pepper, male names include Ash, Bob, Brad," +
-                                                    "Cole, John and Stan. Surnames are simple, and often describe" +
-                                                    "the family trade or are otherwise descriptive, like Brown, Hill," +
-                                                    "Miller, Smith and Tanner.\r\n";
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    //middle clas
-                                     
-                                    richTextBox1.Text = "WIT +1\r\n" +
-                                                    "Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1\r\n" +
-                                                    "15 CP can be used to buy ranks in the following skills:\r\n" +
-                                                    "Appraise, Bargain, Bluff, Brawl, Craft (any), Cooking," +
-                                                    "Diplomacy, Etiquette, Handguns, Intimidate, Martial Arts" +
-                                                    "(Victoran Pugilism), Mechanics, Perform (dancing), Persuade," +
-                                                    "Profession (any), Ride.\r\n\r\n" +
-                                                    "Adventuring as Middle Class Victoran: \r\n " +
-                                                    "Many reasons could encourage a middle class Victoran to start" +
-                                                    "a career as an adventurer. She could see it as an opportunity to" +
-                                                    "earn a large amount of wealth quickly in order to improve her" +
-                                                    "lifestyle and perhaps reach the status as a member of the upper" +
-                                                    "class. She may wish to break the dull everyday routines of life" +
-                                                    "at work and get to see the world. Some do it for love, some do" +
-                                                    "it for hate. Some are driven by betrayal, oath or wager, and" +
-                                                    "some do it just to experience something new and maybe have" +
-                                                    "some fun in the meantime.r\n\r\n" +
-                                                    "Suggested careers:\r\n Artist, Banker, Butler, Craftsman," +
-                                                    "Detective, Inventor, Journalist, Law Enforcer, Mechanic," +
-                                                    "Merchant, Scholar, Spy, Wyrodian Priestr\n\r\n" +
-                                                    "Typical names:r\n" +
-                                                    "The Victoran middle class people have a wide variety of names," +
-                                                    "mostly somewhat longer English-sounding names than the" +
-                                                    "lower class. Southern Victoran names have a more French or" +
-                                                    "Southern European flavour. Female names include Aileen," +
-                                                    "Caitlin, Diana, Fanny, Isabel and Perlie, male names include" +
-                                                    "Alexis, Barney, Eddie, Harold, Jayson and Norbert . Surnames" +
-                                                    "are usually carried by the families over generations and often" +
-                                                    "refer to the business or craft of the family or the place from" +
-                                                    "which they originate, such as Allclock, Blackwood, Taylor and" +
-                                                    "Wright. Patronymics (although usually from an ancestor from" +
-                                                    "several generations ago), such as Stevenson, are also common.";
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    // upper class
-                                     
-                                    richTextBox1.Text = "Cost to play: 10CP\r\n" +
-                                                    "CHA +1\r\n" +
-                                                    "Initial skill ranks: Etiquette 3, Diplomacy 2, Language: Victoran 1" +
-                                                    "The Starting wealth level of Victoran upper class characters" +
-                                                    "must be Drifter or higher. The 5 CP cost of Drifter has already" +
-                                                    "been calculated into the Background cost and can be further" +
-                                                    "increased with CP during character creation.15 CP can be used " +
-                                                    "to buy ranks in the following skills: Art (any), Charm, Diplomacy," +
-                                                    "Etiquette, Knowledge: Heraldry," +
-                                                    "Language (Victoran), Long Guns, Martial Arts (Fencing)," +
-                                                    "Melee (Finesse), Melee (Balanced), Perform (Dancing)," +
-                                                    "Perform (Oratory), Ride, or to improve the" +
-                                                    "Starting wealth level by 10 CP or to purchase the" +
-                                                    "Noble, Victoran advantager\r\n\r\n" +
-                                                    "Adventuring as Upper Class Victoran:\r\n" +
-                                                    "Some of the upper class Victorans have duties that lead them to" +
-                                                    "an adventurer’s life, such as diplomatic missions to foreign" +
-                                                    "countries, working as spies or leading expeditions to conquer" +
-                                                    "new lands. Business may take some of the more hands-on" +
-                                                    "industrialists onto long trips and adventures. However, most of" +
-                                                    "the upper class Victorans who have taken up adventuring are" +
-                                                    "those youngsters who have gotten tired of the strict regulations" +
-                                                    "of upper class life and have left it behind to see the world.\r\n\r\n" +
-                                                    "Suggested careers: Assassin, Inventor, Journalist, Lawyer," +
-                                                    "Officer, Physician, Politician, Scholar, Spy\r\n\r\n" +
-                                                    "Typical names:\r\n" +
-                                                    "The Victoran upper class people prefer long, elaborate names." +
-                                                    "The differences between northern and southern naming" +
-                                                    "conventions are less prominent among the upper class, as many" +
-                                                    "upper class families have merged through marriage across the" +
-                                                    "whole country. Female names include Annabelle, Eleanora," +
-                                                    "Ophelia, Patricia, Ravenna and Seraphina, male names include" +
-                                                    "Alexander, Beaumont, Leonard, Quentin, Radclyffe and" +
-                                                    "Theodore. Family names are important, and are presented with" +
-                                                    "pride, as the name carries with it the power behind the" +
-                                                    "individual. Notable noble surnames include the names of the" +
-                                                    "ducal families: Charleston, MacLachlan, O’Callaghan and" +
-                                                    "Neville.";
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-                case 1:
-                    {
-                        // wolfgart
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    // Military
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.WolfgartMilitary.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    //worker
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.WolfgartWorker.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    // upper class
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.WolfgartUpper.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-                case 2:
-                    {
-                        //kheiman empire
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    // Worker
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.KheimanWorker.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                     using (StreamReader sr = new StreamReader(stream))
-                                     {
-                                         String line = sr.ReadToEnd();
-                                         richTextBox1.Text = line;
-                                     }
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    //warior
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.KheimanWarior.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                    
-                                }
-                            case 2:
-                                {
-                                    //clergy
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.KheimanClergy.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-                case 3:
-                    {
-                        //hanseburg
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    //Worker
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.HanseburgWorker.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    //merchant
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.HanseburgMerchant.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    //noble
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.HanseburgNoble.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-                case 4:
-                    {
-                        //crimson empire
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    //Monk
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.CrimsonCommoner.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    //military
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.CrimsonMilitary.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    //commoner
-                                     
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.CrimsonMonk.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-                case 5:
-                    {
-                        //free islands
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    //Pelethok
-                                    
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.FreePelethok.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    //pirate
-                                    
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.FreePirate.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    //island folk
-                                   
-                                    var assembly = Assembly.GetExecutingAssembly();
-                                    // 
-                                    var resourceName = "steamjazz.FreeIslandFolk.txt";
-
-                                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-                                    using (StreamReader sr = new StreamReader(stream))
-                                    {
-                                        String line = sr.ReadToEnd();
-                                        richTextBox1.Text = line;
-                                    }
-                                    break;
-                                }
-                        }
-                        break;
-                    }
-                
-                      
-            }
+            RichTextBoxTulostus(Background.SocialClass(comboBox2.SelectedIndex, comboBox3.SelectedIndex));
+            
         }
         /// <summary>
-        /// Tarkistaa combobox1, -2 ja -3 arvot ja muokkaa attribuutteja sen mukaisesti.
+        /// Tarkistaa combobox1, -2 ja -3 arvot ja muokkaa attribuutteja sen mukaisesti. KESKEN
         /// </summary>
         private void backAttribute()
         {
@@ -1336,7 +665,7 @@ namespace steamjazz
             backPrevious3 = comboBox3.SelectedIndex;
             }
         /// <summary>
-        /// Poistaa edeltävän valinnan muutokset atribuutteihin.
+        /// Poistaa edeltävän valinnan muutokset atribuutteihin. KESKEN
         /// </summary>
         private void backAttributeTake()
         {
@@ -1646,7 +975,7 @@ namespace steamjazz
             
         }
         /// <summary>
-        /// Pieni erillinen funktio kuvaamaan wolffgartin palveluksen vaikutuksia hahmon taitoihin
+        /// Pieni erillinen funktio kuvaamaan wolfgartin asepalveluksen vaikutuksia hahmon taitoihin KESKEN
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -1666,9 +995,16 @@ namespace steamjazz
         }
 
         /// <summary>
-        /// Laskee muutokset attribuutteihin. Overloaded alustusta ja taustan muutoksia varten.
+        /// Määrittelee kaikki attribuutit suoraan.
         /// </summary>
-       
+        /// <param name="Str"></param>
+        /// <param name="Con"></param>
+        /// <param name="Dex"></param>
+        /// <param name="Ref"></param>
+        /// <param name="Int"></param>
+        /// <param name="Wit"></param>
+        /// <param name="Cha"></param>
+        /// <param name="Emp"></param>
         private void attributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp )
         {
             
@@ -1682,6 +1018,13 @@ namespace steamjazz
             label37.Text = Emp;
 
         }
+        /// <summary>
+        /// Muuttaa haluttua attribuuttia halutun määrän verran
+        /// </summary>
+        /// <param name="att"></param>
+        /// halutun attribuutin lyhenne
+        /// <param name="change"></param>
+        /// haluttu muutos
         private void attributeChange(string att, int change)
         {
             switch (att)
@@ -2161,6 +1504,13 @@ namespace steamjazz
             double tulos = x * 0.2 + y * 0.2;
             label104.Text = Convert.ToString(tulos);
         }
+
+        /// <summary>
+        /// Vastaa attribuuttibonusten laskemisesta taitoihin, attrtibuuttibonusten laskusta sekä laskettujen attribuuttien laskemisesta.
+        /// Kutsutaan attribuutin arvon muuttuessa.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void label_TextChanged ( object sender, EventArgs e)
         {
             if ( sender == label6)
@@ -3308,6 +2658,11 @@ namespace steamjazz
 
 
         }
+        /// <summary>
+        /// Laskee todennäköisyydet onnistumiselle, sekä kriittiselle onnistumiselle
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void prob (object sender,EventArgs e )
         {
             double[] prob3d6 ={0, 0 ,0, 0.46, 1.85, 4.63, 9.26, 16.2, 25.93, 37.5, 50, 62.5, 74.1, 83.83, 90.74, 95.37, 98.15, 99.54, 100 }  ;
@@ -3807,10 +3162,7 @@ namespace steamjazz
                 label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label212.Text)]);
             }
         }
-        private void flowLayoutPanel62_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+      
 
        
 

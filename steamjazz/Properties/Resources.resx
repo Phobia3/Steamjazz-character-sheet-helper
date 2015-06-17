@@ -229,4 +229,13 @@
   <data name="WolfgartWorker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\WolfgartWorker.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="VictoraMiddle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\VictoraMiddle.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VictoranLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\VictoranLow.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VictoraUpper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\VictoraUpper.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

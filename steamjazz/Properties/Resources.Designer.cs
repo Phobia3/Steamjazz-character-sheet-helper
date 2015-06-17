@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace steamjazz.Properties {
+namespace Steamjazz.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace steamjazz.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("steamjazz.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Steamjazz.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -715,8 +715,8 @@ namespace steamjazz.Properties {
         /// <summary>
         ///   Looks up a localized string similar to skillit
         ///- nimet
-        ///- attribuuttibonukset kaikille
-        ///- ei negatiivisia skill rank
+        ///- listalliset taidot matkaan mukaan..
+        ///- ammattitaidot osio
         ///
         ///Attribuutit
         ///
@@ -730,11 +730,76 @@ namespace steamjazz.Properties {
         ///Tietokanta
         ///- id ylös, kun new nappulaa painetaan
         ///- save update lauseella
-        ///- load ominaisuus pelaajan nimellä.
+        ///- load ominaisuus pelaajan nimellä
+        ///
+        ///
+        ///Dokumentaatio
+        ///- Dokumentaatio, Dokumentaatio.
         /// </summary>
         internal static string todo {
             get {
                 return ResourceManager.GetString("todo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WIT +1
+        ///Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Appraise, Bargain, Bluff, Brawl, Craft (any), Cooking,
+        ///Diplomacy, Etiquette, Handguns, Intimidate, Martial Arts
+        ///(Victoran Pugilism), Mechanics, Perform (dancing), Persuade,
+        ///Profession (any), Ride.
+        ///
+        ///
+        ///Adventuring as Middle Class Victoran: 
+        ///Many reasons could encourage a middle class Victoran to start
+        ///a career as an adventurer. She could see it as an opportunity to
+        ///earn a large amo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string VictoraMiddle {
+            get {
+                return ResourceManager.GetString("VictoraMiddle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CON +1
+        ///Initial skill ranks: Survival 2, Brawl 1, Stealth 1
+        ///15 CP can be used to buy ranks in the following skills: Animal
+        ///Handling, Bluff, Brawl, Climb, Cooking, First Aid, Gaming,
+        ///Handguns, Intimidate, Listen, Melee (Balanced), Melee
+        ///(Powerful), Spot, Stealth, Survival, Throw, Track.
+        ///Starting Wealth level
+        ///cannot be higher than ‘Well off’
+        ///
+        ///
+        ///Adventuring as a Lower Class Victoran:
+        ///It isn’t hard to find reasons for a lower class Victoran to leave
+        ///her normal life behind and starting a career as an a [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string VictoranLow {
+            get {
+                return ResourceManager.GetString("VictoranLow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cost to play: 10CP
+        ///CHA +1
+        ///Initial skill ranks: Etiquette 3, Diplomacy 2, Language: Victoran 1
+        ///The Starting wealth level of Victoran upper class characters
+        ///must be Drifter or higher. The 5 CP cost of Drifter has already
+        ///been calculated into the Background cost and can be further
+        ///increased with CP during character creation.
+        ///15 CP can be used to buy ranks in the following skills: 
+        ///Art (any), Charm, Diplomacy, Etiquette, Knowledge: Heraldry,
+        ///Language (Victoran), Long Guns, Martial Arts (Fencing),
+        ///Mele [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string VictoraUpper {
+            get {
+                return ResourceManager.GetString("VictoraUpper", resourceCulture);
             }
         }
         

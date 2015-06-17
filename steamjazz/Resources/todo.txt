@@ -16,3 +16,7 @@ Tietokanta
 - id ylös, kun new nappulaa painetaan
 - save update lauseella
 - load ominaisuus pelaajan nimellä
+
+
+Dokumentaatio
+- Dokumentaatio, Dokumentaatio

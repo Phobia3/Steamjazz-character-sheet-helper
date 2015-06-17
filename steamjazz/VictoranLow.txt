@@ -1,0 +1,33 @@
+﻿CON +1
+Initial skill ranks: Survival 2, Brawl 1, Stealth 1
+15 CP can be used to buy ranks in the following skills: Animal
+Handling, Bluff, Brawl, Climb, Cooking, First Aid, Gaming,
+Handguns, Intimidate, Listen, Melee (Balanced), Melee
+(Powerful), Spot, Stealth, Survival, Throw, Track.
+Starting Wealth level
+cannot be higher than ‘Well off’
+
+
+Adventuring as a Lower Class Victoran:
+It isn’t hard to find reasons for a lower class Victoran to leave
+her normal life behind and starting a career as an adventurer.
+Almost any alternative would be an improvement to the
+monotony of endless labour. If given the chance, many Victoran
+lower class people would take up the offer to join a mercenary
+group or another adventuring opportunity, but many of the
+downtrodden lack the imagination or the ambition to rise above
+the squalor that is the only life they have ever known.
+
+
+Suggested careers: Con Artist, Craftsman, Hunter, Mercenary,
+Rogue, Sailor, Scout, Soldier, Warrior
+
+
+Typical names:
+Victoran lower class people have short, typically English
+sounding names. Southern Victoran names have a more French
+or South European flavour. Female names include Amy, Brett,
+Hannah, Katie and Pepper, male names include Ash, Bob, Brad,
+Cole, John and Stan. Surnames are simple, and often describe
+the family trade or are otherwise descriptive, like Brown, Hill,
+Miller, Smith and Tanner.

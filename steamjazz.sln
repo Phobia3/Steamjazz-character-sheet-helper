@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "steamjazz", "steamjazz\steamjazz.csproj", "{E2BF9421-668D-4671-9D5A-946022F59613}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steamjazz", "steamjazz\Steamjazz.csproj", "{E2BF9421-668D-4671-9D5A-946022F59613}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
