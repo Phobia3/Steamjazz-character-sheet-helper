@@ -16,24 +16,20 @@ using System.Reflection;
 namespace steamjazz
 {
 
+    
     public partial class Form1 : Form
         
     {
         cBackground Background = new cBackground();
         Skills Skill = new Skills();
+        cCareer Career = new cCareer();
+
         object previous;
         object previous2;
         int backPrevious1 = -1;
         int backPrevious2 = -1;
         int backPrevious3 = -1;
-        
-        public void tabbi()
-        {
-            
-            string title = "Create " + (tabControl1.TabCount + 1).ToString();
-            TabPage Create = new TabPage(title);
-            tabControl1.TabPages.Add(Create);
-        }
+
         /// <summary>
         /// ensimmäiset alustukset
         /// </summary>
@@ -42,17 +38,7 @@ namespace steamjazz
             InitializeComponent();
             //InitializeSkills();
             attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
-            
             InitializeComboBox();
-            
-            
-            
-        }
-       
-       
-        private void flowLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         /// <summary>
@@ -279,7 +265,10 @@ namespace steamjazz
             comboBox5.Items.AddRange(mili);
            
         }
-
+       
+       
+       
+        
         /// <summary>
         /// Luo uuden rivin steamjazz tietokannan tauluihin, ottaen samalla talteen info taulun id arvon. Id arvoa tullaan myöhemmin 
         /// hyödyntämään hahmon tallennuksessa
@@ -1649,6 +1638,17 @@ namespace steamjazz
         { 
             label108.Text = Convert.ToString(12-Convert.ToInt32(label37.Text)-0.5*Convert.ToInt32(label190.Text));
         }
+        private void CareerClick(object sender, EventArgs e)
+        {
+            if (sender == label346)
+            {
+                Label334 = Convert.ToString(Convert.ToInt32(Label334) + 1);
+                if(comboBox4.SelectedIndex==0)
+                {
+                    label163.Text = Label334;
+                }
+            }
+        }
         /// <summary>
         /// Tarkastelee skill välilehden + ja - merkkien painalluksia. Tarkistaa painetun labelin ja toimii sen mukaisesti
         /// </summary>
@@ -1660,7 +1660,7 @@ namespace steamjazz
         {
             if (sender == label81)
             {
-                if (Skill.enough(label73.Text, label213.Text,73 ) == true)
+                if (Skill.enough( label213.Text,73 ) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 73);
                     label73.Text = Skill.skillAdd(label73.Text, 73);
@@ -1668,7 +1668,7 @@ namespace steamjazz
             }
             if (sender == label82)
             {
-                if (Skill.enough(label74.Text, label213.Text, 74) == true)
+                if (Skill.enough(label213.Text, 74) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 74);
                     label74.Text = Skill.skillAdd(label74.Text,74);
@@ -1676,15 +1676,15 @@ namespace steamjazz
             }
             if (sender == label83)
             {
-                if (Skill.enough(label75.Text, label213.Text, 75) == true)
+                if (Skill.enough(label213.Text, 75) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 75);
-                    label75.Text = Skill.skillAdd(label75.Text,78);
+                    label75.Text = Skill.skillAdd(label75.Text,75);
                 }
             }
             if (sender == label84)
             {
-                if (Skill.enough(label76.Text, label213.Text, 76) == true)
+                if (Skill.enough(label213.Text, 76) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 76);
                     label76.Text = Skill.skillAdd(label76.Text,76);
@@ -1692,7 +1692,7 @@ namespace steamjazz
             }
             if (sender == label85)
             {
-                if (Skill.enough(label77.Text, label213.Text, 77) == true)
+                if (Skill.enough(label213.Text, 77) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 77);
                     label77.Text = Skill.skillAdd(label77.Text,77);
@@ -1700,7 +1700,7 @@ namespace steamjazz
             }
             if (sender == label86)
             {
-                if (Skill.enough(label78.Text, label213.Text, 78) == true)
+                if (Skill.enough(label213.Text, 78) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 78);
                     label78.Text = Skill.skillAdd(label78.Text,78);
@@ -1708,7 +1708,7 @@ namespace steamjazz
             }
             if (sender == label87)
             {
-                if (Skill.enough(label79.Text, label213.Text, 79) == true)
+                if (Skill.enough(label213.Text, 79) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 79);
                     label79.Text = Skill.skillAdd(label79.Text,79);
@@ -1716,7 +1716,7 @@ namespace steamjazz
             }
             if (sender == label88)
             {
-                if (Skill.enough(label80.Text, label213.Text, 80) == true)
+                if (Skill.enough(label213.Text, 80) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 80);
                     label80.Text = Skill.skillAdd(label80.Text,80);
@@ -1725,7 +1725,7 @@ namespace steamjazz
             //Social Skills
             if( sender == label214)
             {
-                if (Skill.enough(label161.Text, label213.Text, 161) == true)
+                if (Skill.enough(label213.Text, 161) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 161);
                     label161.Text = Skill.skillAdd(label161.Text,161);
@@ -1733,7 +1733,7 @@ namespace steamjazz
             }
             if (sender == label215)
             {
-                if (Skill.enough(label162.Text, label213.Text, 162) == true)
+                if (Skill.enough(label213.Text, 162) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 162);
                     label162.Text = Skill.skillAdd(label162.Text,162);
@@ -1741,7 +1741,7 @@ namespace steamjazz
             }
             if (sender == label216)
             {
-                if (Skill.enough(label163.Text, label213.Text, 163) == true)
+                if (Skill.enough(label213.Text, 163) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 163);
                     label163.Text = Skill.skillAdd(label163.Text,163);
@@ -1749,7 +1749,7 @@ namespace steamjazz
             }
             if (sender == label217)
             {
-                if (Skill.enough(label164.Text, label213.Text, 164) == true)
+                if (Skill.enough(label213.Text, 164) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 164);
                     label164.Text = Skill.skillAdd(label164.Text,164);
@@ -1757,7 +1757,7 @@ namespace steamjazz
             }
             if (sender == label218)
             {
-                if (Skill.enough(label165.Text, label213.Text, 165) == true)
+                if (Skill.enough(label213.Text, 165) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 165);
                     label165.Text = Skill.skillAdd(label165.Text,165);
@@ -1765,17 +1765,17 @@ namespace steamjazz
             }
             if (sender == label219)
             {
-                if (Skill.enough(label166.Text, label213.Text, 166) == true)
+                if (Skill.enough(label213.Text, 166) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 166);
-                    label16.Text = Skill.skillAdd(label166.Text,166);
+                    label166.Text = Skill.skillAdd(label166.Text,166);
                 }
             }
             // Intution
 
             if (sender == label220)
             {
-                if (Skill.enough(label167.Text, label213.Text, 167) == true)
+                if (Skill.enough(label213.Text, 167) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 167);
                     label167.Text = Skill.skillAdd(label167.Text,167);
@@ -1784,7 +1784,7 @@ namespace steamjazz
             
             if (sender == label221)
             {
-                if (Skill.enough(label168.Text, label213.Text, 168) == true)
+                if (Skill.enough(label213.Text, 168) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 168);
                     label168.Text = Skill.skillAdd(label168.Text,168);
@@ -1793,7 +1793,7 @@ namespace steamjazz
             
             if (sender == label222)
             {
-                if (Skill.enough(label169.Text, label213.Text, 169) == true)
+                if (Skill.enough(label213.Text, 169) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 169);
                     label169.Text = Skill.skillAdd(label169.Text,169);
@@ -1802,7 +1802,7 @@ namespace steamjazz
             
             if (sender == label223)
             {
-                if (Skill.enough(label170.Text, label213.Text, 170) == true)
+                if (Skill.enough(label213.Text, 170) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 170);
                     label170.Text = Skill.skillAdd(label170.Text,170);
@@ -1811,7 +1811,7 @@ namespace steamjazz
             
             if (sender == label224)
             {
-                if (Skill.enough(label166.Text, label213.Text, 171) == true)
+                if (Skill.enough(label213.Text, 171) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 171);
                     label171.Text = Skill.skillAdd(label171.Text,171);
@@ -1820,7 +1820,7 @@ namespace steamjazz
 
             if (sender == label225)
             {
-                if (Skill.enough(label172.Text, label213.Text, 172) == true)
+                if (Skill.enough(label213.Text, 172) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 172);
                     label172.Text = Skill.skillAdd(label172.Text,172);
@@ -1829,7 +1829,7 @@ namespace steamjazz
            
             if (sender == label226)
             {
-                if (Skill.enough(label173.Text, label213.Text, 173) == true)
+                if (Skill.enough(label213.Text, 173) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 173);
                     label173.Text = Skill.skillAdd(label173.Text,173);
@@ -1839,7 +1839,7 @@ namespace steamjazz
             //combat
             if (sender == label227)
             {
-                if (Skill.enough(label174.Text, label213.Text, 174) == true)
+                if (Skill.enough(label213.Text, 174) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 174);
                     label174.Text = Skill.skillAdd(label174.Text,174);
@@ -1847,113 +1847,150 @@ namespace steamjazz
             }
             if (sender == label228)
             {
-                if (Skill.enough(label178.Text, label213.Text, 178) == true)
+                if (Skill.enough(label213.Text, 175) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text, 175);
+                    label175.Text = Skill.skillAdd(label178.Text,175);
+                }
+            }
+            if (sender == label229)
+            {
+                if (Skill.enough(label213.Text, 176) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text, 176);
+                    label176.Text = Skill.skillAdd(label176.Text,176);
+                }
+            }
+            if (sender == label230)
+            {
+                if (Skill.enough(label213.Text, 177) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text, 177);
+                    label177.Text = Skill.skillAdd(label177.Text,177);
+                }
+            }
+            if (sender == label231)
+            {
+                if (Skill.enough(label213.Text, 178) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 178);
                     label178.Text = Skill.skillAdd(label178.Text,178);
                 }
             }
-            if (sender == label229)
+            if (sender == label232)
             {
-                if (Skill.enough(label179.Text, label213.Text, 179) == true)
+                if (Skill.enough(label213.Text, 179) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 179);
                     label179.Text = Skill.skillAdd(label179.Text,179);
                 }
             }
-            if (sender == label230)
+            if (sender == label233)
             {
-                if (Skill.enough(label180.Text, label213.Text, 180) == true)
+                if (Skill.enough(label213.Text, 180) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 180);
                     label180.Text = Skill.skillAdd(label180.Text,180);
                 }
             }
-            if (sender == label231)
+            if (sender == label234)
             {
-                if (Skill.enough(label181.Text, label213.Text, 181) == true)
+                if (Skill.enough(label213.Text, 181) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 181);
                     label181.Text = Skill.skillAdd(label181.Text,181);
                 }
             }
-            if (sender == label232)
+            if (sender == label235)
             {
-                if (Skill.enough(label182.Text, label213.Text, 182) == true)
+                if (Skill.enough(label213.Text, 182) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 182);
                     label182.Text = Skill.skillAdd(label182.Text,182);
                 }
             }
-            if (sender == label233)
+            if (sender == label236)
             {
-                if (Skill.enough(label183.Text, label213.Text, 183) == true)
+                if (Skill.enough(label213.Text, 183) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 183);
                     label183.Text = Skill.skillAdd(label183.Text,183);
                 }
             }
-            if (sender == label234)
+            if (sender == label237)
             {
-                if (Skill.enough(label184.Text, label213.Text, 184) == true)
+                if (Skill.enough(label213.Text, 184) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 184);
                     label184.Text = Skill.skillAdd(label184.Text,184);
                 }
             }
-            if (sender == label235)
+            if (sender == label238)
             {
-                if (Skill.enough(label185.Text, label213.Text, 185) == true)
+                if (Skill.enough(label213.Text, 185) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 185);
                     label185.Text = Skill.skillAdd(label185.Text,185);
                 }
             }
-            if (sender == label236)
+            if (sender == label239)
             {
-                if (Skill.enough(label186.Text, label213.Text, 186) == true)
+                if (Skill.enough(label213.Text, 186) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 186);
                     label186.Text = Skill.skillAdd(label186.Text,186);
                 }
             }
-            if (sender == label237)
+            if (sender == label240)
             {
-                if (Skill.enough(label187.Text, label213.Text, 187) == true)
+                if (Skill.enough(label213.Text, 187) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 187);
                     label187.Text = Skill.skillAdd(label187.Text,187);
                 }
             }
-            if (sender == label238)
+
+            //Empatia
+            if (sender == label241)
             {
-                if (Skill.enough(label188.Text, label213.Text, 188) == true)
+                if (Skill.enough(label213.Text, 188) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 188);
-                    label188.Text = Skill.skillAdd(label188.Text,188);
+                    label188.Text = Skill.skillAdd(label188.Text, 188);
                 }
             }
-            if (sender == label239)
+
+            if (sender == label242)
             {
-                if (Skill.enough(label189.Text, label213.Text, 189) == true)
+                if (Skill.enough(label213.Text, 189) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 189);
-                    label189.Text = Skill.skillAdd(label189.Text,189);
+                    label189.Text = Skill.skillAdd(label189.Text, 189);
                 }
             }
-            if (sender == label240)
+
+            if (sender == label243)
             {
-                if (Skill.enough(label190.Text, label213.Text, 190) == true)
+                if (Skill.enough(label213.Text, 190) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 190);
-                    label190.Text = Skill.skillAdd(label190.Text,190);
+                    label190.Text = Skill.skillAdd(label190.Text, 190);
                 }
             }
 
+            if (sender == label244)
+            {
+                if (Skill.enough(label213.Text, 191) == true)
+                {
+                    label213.Text = Skill.pointBuy(label213.Text, 191);
+                    label191.Text = Skill.skillAdd(label191.Text, 191);
+                }
+            }
 
+            //inteligence
             if (sender == label245)
             {
-                if (Skill.enough(label192.Text, label213.Text, 192) == true)
+                if (Skill.enough(label213.Text, 192) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 192);
                     label192.Text = Skill.skillAdd(label192.Text,192);
@@ -1962,7 +1999,7 @@ namespace steamjazz
 
             if (sender == label246)
             {
-                if (Skill.enough(label193.Text, label213.Text, 193) == true)
+                if (Skill.enough(label213.Text, 193) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 193);
                     label193.Text = Skill.skillAdd(label193.Text,193);
@@ -1970,7 +2007,7 @@ namespace steamjazz
             }
             if (sender == label247)
             {
-                if (Skill.enough(label194.Text, label213.Text, 194) == true)
+                if (Skill.enough(label213.Text, 194) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 194);
                     label194.Text = Skill.skillAdd(label194.Text,194);
@@ -1978,7 +2015,7 @@ namespace steamjazz
             }
             if (sender == label248)
             {
-                if (Skill.enough(label195.Text, label213.Text, 195) == true)
+                if (Skill.enough(label213.Text, 195) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 195);
                     label195.Text = Skill.skillAdd(label195.Text,195);
@@ -1986,7 +2023,7 @@ namespace steamjazz
             }
             if (sender == label249)
             {
-                if (Skill.enough(label196.Text, label213.Text, 196) == true)
+                if (Skill.enough(label213.Text, 196) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 196);
                     label196.Text = Skill.skillAdd(label196.Text,196);
@@ -1994,7 +2031,7 @@ namespace steamjazz
             }
             if (sender == label250)
             {
-                if (Skill.enough(label197.Text, label213.Text, 197) == true)
+                if (Skill.enough(label213.Text, 197) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 197);
                     label197.Text = Skill.skillAdd(label197.Text,197);
@@ -2002,7 +2039,7 @@ namespace steamjazz
             }
             if (sender == label251)
             {
-                if (Skill.enough(label198.Text, label213.Text, 198) == true)
+                if (Skill.enough(label213.Text, 198) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 198);
                     label198.Text = Skill.skillAdd(label198.Text,198);
@@ -2010,7 +2047,7 @@ namespace steamjazz
             }
             if (sender == label252)
             {
-                if (Skill.enough(label199.Text, label213.Text, 199) == true)
+                if (Skill.enough(label213.Text, 199) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 199);
                     label199.Text = Skill.skillAdd(label199.Text,199);
@@ -2018,7 +2055,7 @@ namespace steamjazz
             }
             if (sender == label253)
             {
-                if (Skill.enough(label200.Text, label213.Text, 200) == true)
+                if (Skill.enough(label213.Text, 200) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 200);
                     label200.Text = Skill.skillAdd(label200.Text,200);
@@ -2026,7 +2063,7 @@ namespace steamjazz
             }
             if (sender == label254)
             {
-                if (Skill.enough(label201.Text, label213.Text, 201) == true)
+                if (Skill.enough(label213.Text, 201) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 201);
                     label201.Text = Skill.skillAdd(label201.Text,201);
@@ -2034,7 +2071,7 @@ namespace steamjazz
             }
             if (sender == label255)
             {
-                if (Skill.enough(label202.Text, label213.Text, 202) == true)
+                if (Skill.enough(label213.Text, 202) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 202);
                     label202.Text = Skill.skillAdd(label202.Text,202);
@@ -2042,7 +2079,7 @@ namespace steamjazz
             }
             if (sender == label256)
             {
-                if (Skill.enough(label203.Text, label213.Text, 203) == true)
+                if (Skill.enough(label213.Text, 203) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 203);
                     label203.Text = Skill.skillAdd(label203.Text,203);
@@ -2050,7 +2087,7 @@ namespace steamjazz
             }
             if (sender == label257)
             {
-                if (Skill.enough(label204.Text, label213.Text, 204) == true)
+                if (Skill.enough(label213.Text, 204) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 204);
                     label204.Text = Skill.skillAdd(label204.Text,204);
@@ -2058,7 +2095,7 @@ namespace steamjazz
             }
             if (sender == label258)
             {
-                if (Skill.enough(label205.Text, label213.Text, 205) == true)
+                if (Skill.enough(label213.Text, 205) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 205);
                     label205.Text = Skill.skillAdd(label205.Text,205);
@@ -2066,7 +2103,7 @@ namespace steamjazz
             }
             if (sender == label259)
             {
-                if (Skill.enough(label206.Text, label213.Text, 206) == true)
+                if (Skill.enough(label213.Text, 206) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 206);
                     label206.Text = Skill.skillAdd(label206.Text,206);
@@ -2074,7 +2111,7 @@ namespace steamjazz
             }
             if (sender == label260)
             {
-                if (Skill.enough(label207.Text, label213.Text, 207) == true)
+                if (Skill.enough(label213.Text, 207) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 207);
                     label207.Text = Skill.skillAdd(label207.Text,207);
@@ -2082,7 +2119,7 @@ namespace steamjazz
             }
             if (sender == label261)
             {
-                if (Skill.enough(label208.Text, label213.Text, 208) == true)
+                if (Skill.enough(label213.Text, 208) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 208);
                     label208.Text = Skill.skillAdd(label208.Text,208);
@@ -2090,7 +2127,7 @@ namespace steamjazz
             }
             if (sender == label262)
             {
-                if (Skill.enough(label209.Text, label213.Text, 209) == true)
+                if (Skill.enough(label213.Text, 209) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 209);
                     label209.Text = Skill.skillAdd(label209.Text,209);
@@ -2098,7 +2135,7 @@ namespace steamjazz
             }
             if (sender == label263)
             {
-                if (Skill.enough(label210.Text, label213.Text, 210) == true)
+                if (Skill.enough(label213.Text, 210) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 210);
                     label210.Text = Skill.skillAdd(label210.Text,210);
@@ -2106,7 +2143,7 @@ namespace steamjazz
 
            if (sender == label264)
            {
-                if (Skill.enough(label211.Text, label213.Text, 211) == true)
+                if (Skill.enough(label213.Text, 211) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 211);
                     label211.Text = Skill.skillAdd(label211.Text,211);
@@ -2116,7 +2153,7 @@ namespace steamjazz
 
             if (sender == label265)
             {
-                if (Skill.enough(label212.Text, label213.Text, 212) == true)
+                if (Skill.enough(label213.Text, 212) == true)
                 {
                     label213.Text = Skill.pointBuy(label213.Text, 212);
                     label212.Text = Skill.skillAdd(label212.Text,212);
@@ -2124,42 +2161,7 @@ namespace steamjazz
             }
 
 
-
-            if (sender == label241)
-            {
-                if (Skill.enough(label188.Text, label213.Text, 188) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 188);
-                    label188.Text = Skill.skillAdd(label188.Text,213);
-                }
-            }
-
-            if (sender == label242)
-            {
-                if (Skill.enough(label189.Text, label213.Text, 189) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 189);
-                    label189.Text = Skill.skillAdd(label189.Text,189);
-                }
-            }
-
-            if (sender == label243)
-            {
-                if (Skill.enough(label190.Text, label213.Text, 190) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 190);
-                    label190.Text = Skill.skillAdd(label190.Text,190);
-                }
-            }
-
-            if (sender == label244)
-            {
-                if (Skill.enough(label191.Text, label213.Text, 191) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 191);
-                    label191.Text = Skill.skillAdd(label191.Text,191);
-                }
-            }
+            
             //
             // vähennykset
             //
@@ -2278,7 +2280,7 @@ namespace steamjazz
                     label166.Text = Skill.skillRemove(label166.Text, 166);
                 }
             }
-            //intuition
+            //Intuition
             if (sender == label272)
             {
                 if (Skill.bonus[14, 1]>0)
@@ -3160,6 +3162,37 @@ namespace steamjazz
             if (sender == label212)
             {
                 label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label212.Text)]);
+            }
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            Label322 = Career.CareerSkillNames(comboBox4.SelectedIndex)[0];
+            Label323 = Career.CareerSkillNames(comboBox4.SelectedIndex)[1];
+            Label324 = Career.CareerSkillNames(comboBox4.SelectedIndex)[2];
+            Label325 = Career.CareerSkillNames(comboBox4.SelectedIndex)[3];
+            Label326 = Career.CareerSkillNames(comboBox4.SelectedIndex)[4];
+            Label327 = Career.CareerSkillNames(comboBox4.SelectedIndex)[5];
+            Label328 = Career.CareerSkillNames(comboBox4.SelectedIndex)[6];
+            Label329 = Career.CareerSkillNames(comboBox4.SelectedIndex)[7];
+            Label330 = Career.CareerSkillNames(comboBox4.SelectedIndex)[8];
+            Label331 = Career.CareerSkillNames(comboBox4.SelectedIndex)[9];
+            Label332 = Career.CareerSkillNames(comboBox4.SelectedIndex)[10];
+            Label333 = Career.CareerSkillNames(comboBox4.SelectedIndex)[11];
+            switch(comboBox4.SelectedIndex)
+            {
+                case 0:
+                    {
+                        Label334 = label163.Text;
+                        Label335 = label199.Text;
+                        Label337 = label165.Text;
+                        Label338 = label184.Text;
+                        Label340 = label166.Text;
+                        Label341 = label76.Text;
+                        Label342 = label190.Text;
+                        break;
+                    }
             }
         }
       

@@ -238,4 +238,16 @@
   <data name="VictoraUpper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\VictoraUpper.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="Grapling" xml:space="preserve">
+    <value>Grapling</value>
+  </data>
+  <data name="kriittinen" xml:space="preserve">
+    <value>Kriittinen onnistuminen (%): </value>
+  </data>
+  <data name="onnistuminen" xml:space="preserve">
+    <value>Taitoheiton onnistuminen (%):</value>
+  </data>
+  <data name="UnburdCarry" xml:space="preserve">
+    <value>Unburd. Carry</value>
+  </data>
 </root>

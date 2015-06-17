@@ -22,7 +22,7 @@ namespace Steamjazz.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Steamjazz.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Steamjazz.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Steamjazz.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -71,7 +71,7 @@ namespace Steamjazz.Properties {
         ///automaton for greater intelligence and more independent action.
         ///It is possible for any kind of a [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Automatons {
+        public static string Automatons {
             get {
                 return ResourceManager.GetString("Automatons", resourceCulture);
             }
@@ -93,7 +93,7 @@ namespace Steamjazz.Properties {
         ///Athletics, Block, Brawl, Clockwork, Handguns, Intimidate,
         ///Listen, M [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Basic {
+        public static string Basic {
             get {
                 return ResourceManager.GetString("Basic", resourceCulture);
             }
@@ -114,7 +114,7 @@ namespace Steamjazz.Properties {
         ///Instinctive behavior: All beastfolk react instinctively to sudden,
         ///unexpected loud noises and sudden, unexpected mov [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string beastfolk {
+        public static string beastfolk {
             get {
                 return ResourceManager.GetString("beastfolk", resourceCulture);
             }
@@ -134,7 +134,7 @@ namespace Steamjazz.Properties {
         ///The beastfolk originate from the Shadewood Forest in Victora,
         ///and this background represents those beastfolk who have been [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string BeastfolkBack {
+        public static string BeastfolkBack {
             get {
                 return ResourceManager.GetString("BeastfolkBack", resourceCulture);
             }
@@ -158,7 +158,7 @@ namespace Steamjazz.Properties {
         ///Colman Inc CCB-03 Maid, commonly referred to as
         ///“Charlott [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Butler {
+        public static string Butler {
             get {
                 return ResourceManager.GetString("Butler", resourceCulture);
             }
@@ -175,7 +175,7 @@ namespace Steamjazz.Properties {
         ///Career names do not necessarily represent the exact profession
         ///of a character; instead, they are broader descriptor [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Career {
+        public static string Career {
             get {
                 return ResourceManager.GetString("Career", resourceCulture);
             }
@@ -200,7 +200,7 @@ namespace Steamjazz.Properties {
         ///
         ///Copper  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Copper {
+        public static string Copper {
             get {
                 return ResourceManager.GetString("Copper", resourceCulture);
             }
@@ -222,7 +222,7 @@ namespace Steamjazz.Properties {
         ///craftsmen. They are equipped with mechanisms and functions
         ///honed for [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Craftsman {
+        public static string Craftsman {
             get {
                 return ResourceManager.GetString("Craftsman", resourceCulture);
             }
@@ -244,7 +244,7 @@ namespace Steamjazz.Properties {
         ///cities in the Empire. Their lifestyle is called the Way of the
         ///Land, and their work forms the ba [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CrimsonCommoner {
+        public static string CrimsonCommoner {
             get {
                 return ResourceManager.GetString("CrimsonCommoner", resourceCulture);
             }
@@ -265,7 +265,7 @@ namespace Steamjazz.Properties {
         ///Crimson Empire and their families. Most individual followers
         ///of this Way are common soldiers, but th [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CrimsonMilitary {
+        public static string CrimsonMilitary {
             get {
                 return ResourceManager.GetString("CrimsonMilitary", resourceCulture);
             }
@@ -286,7 +286,7 @@ namespace Steamjazz.Properties {
         ///
         ///All characters of the Way of the Black Dragon have the Soc [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string CrimsonMonk {
+        public static string CrimsonMonk {
             get {
                 return ResourceManager.GetString("CrimsonMonk", resourceCulture);
             }
@@ -310,7 +310,7 @@ namespace Steamjazz.Properties {
         ///Rushworth CM-54F (civilian model, female)
         ///Colman Inc CLD-04M Doll, commonly ref [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Doll {
+        public static string Doll {
             get {
                 return ResourceManager.GetString("Doll", resourceCulture);
             }
@@ -328,7 +328,7 @@ namespace Steamjazz.Properties {
         ///than normally. GM can grant a dracosaurian character a
         ///modifier between -2 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Dracosaurian {
+        public static string Dracosaurian {
             get {
                 return ResourceManager.GetString("Dracosaurian", resourceCulture);
             }
@@ -348,7 +348,7 @@ namespace Steamjazz.Properties {
         ///The island of Pelethok was formerly part of Kheiman, but when
         ///the Free Islands [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string DracosaurianBack {
+        public static string DracosaurianBack {
             get {
                 return ResourceManager.GetString("DracosaurianBack", resourceCulture);
             }
@@ -368,7 +368,7 @@ namespace Steamjazz.Properties {
         ///island has its own traditions and customs. The Free Islands is a
         ///rather young nation, and the only democratic o [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string FreeIslandFolk {
+        public static string FreeIslandFolk {
             get {
                 return ResourceManager.GetString("FreeIslandFolk", resourceCulture);
             }
@@ -381,7 +381,7 @@ namespace Steamjazz.Properties {
         ///background as her background, with the exception that humans
         ///cannot take the Animal Empathy advantage.        ///.
         /// </summary>
-        internal static string FreePelethok {
+        public static string FreePelethok {
             get {
                 return ResourceManager.GetString("FreePelethok", resourceCulture);
             }
@@ -399,7 +399,7 @@ namespace Steamjazz.Properties {
         ///and travellers, as well as those making a living by preying on
         ///them. Piracy is a growing threat for the development of th [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string FreePirate {
+        public static string FreePirate {
             get {
                 return ResourceManager.GetString("FreePirate", resourceCulture);
             }
@@ -421,7 +421,7 @@ namespace Steamjazz.Properties {
         ///super soldiers. They were mutated from humans who already
         ///posse [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Goliath {
+        public static string Goliath {
             get {
                 return ResourceManager.GetString("Goliath", resourceCulture);
             }
@@ -441,9 +441,18 @@ namespace Steamjazz.Properties {
         ///in the best possible environment to grow physically healthy and
         ///strong. Different sport activitie [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string GoliathBack {
+        public static string GoliathBack {
             get {
                 return ResourceManager.GetString("GoliathBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grapling.
+        /// </summary>
+        public static string Grapling {
+            get {
+                return ResourceManager.GetString("Grapling", resourceCulture);
             }
         }
         
@@ -461,7 +470,7 @@ namespace Steamjazz.Properties {
         ///Appraise, Bargain, Bluff, Cooking, Craft (any), Diplomacy,
         ///Etiquette, Intimidate, Martial  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string HanseburgMerchant {
+        public static string HanseburgMerchant {
             get {
                 return ResourceManager.GetString("HanseburgMerchant", resourceCulture);
             }
@@ -483,7 +492,7 @@ namespace Steamjazz.Properties {
         ///(Wulffgartian), Martial Arts (Fencing), Martial Arts
         ///(Hanseburgian Musketeer Fencing), Melee (Finesse), Perform        /// [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string HanseburgNoble {
+        public static string HanseburgNoble {
             get {
                 return ResourceManager.GetString("HanseburgNoble", resourceCulture);
             }
@@ -505,7 +514,7 @@ namespace Steamjazz.Properties {
         ///need for not only lots of factory workers and miners, but also
         ///for skilled crafters, e [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string HanseburgWorker {
+        public static string HanseburgWorker {
             get {
                 return ResourceManager.GetString("HanseburgWorker", resourceCulture);
             }
@@ -527,7 +536,7 @@ namespace Steamjazz.Properties {
         ///common, it was a natural part of progress that they be used for
         ///increasing [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string HeavyWorker {
+        public static string HeavyWorker {
             get {
                 return ResourceManager.GetString("HeavyWorker", resourceCulture);
             }
@@ -545,7 +554,7 @@ namespace Steamjazz.Properties {
         ///are created by humans. Because of this, many humans consider
         ///themselves as the  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Human {
+        public static string Human {
             get {
                 return ResourceManager.GetString("Human", resourceCulture);
             }
@@ -568,7 +577,7 @@ namespace Steamjazz.Properties {
         ///ago a source of radiation present in the area started to change
         ///the people. Chil [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string KharzulDwarf {
+        public static string KharzulDwarf {
             get {
                 return ResourceManager.GetString("KharzulDwarf", resourceCulture);
             }
@@ -590,7 +599,7 @@ namespace Steamjazz.Properties {
         ///Military Service background options.
         ///The Kharzu [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string KharzulDwarfBack {
+        public static string KharzulDwarfBack {
             get {
                 return ResourceManager.GetString("KharzulDwarfBack", resourceCulture);
             }
@@ -611,7 +620,7 @@ namespace Steamjazz.Properties {
         ///intelligence and skills in science are chosen to the Kheiman
         ///clergy class. All the scientifi [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string KheimanClergy {
+        public static string KheimanClergy {
             get {
                 return ResourceManager.GetString("KheimanClergy", resourceCulture);
             }
@@ -633,7 +642,7 @@ namespace Steamjazz.Properties {
         ///abilities, courage and ability to follow orders stood out during
         ///childhood. The trai [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string KheimanWarior {
+        public static string KheimanWarior {
             get {
                 return ResourceManager.GetString("KheimanWarior", resourceCulture);
             }
@@ -654,18 +663,36 @@ namespace Steamjazz.Properties {
         ///craftsmen, miners and factory workers, to mention but a few.
         ///Both the physically strong and the nimble hande [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string KheimanWorker {
+        public static string KheimanWorker {
             get {
                 return ResourceManager.GetString("KheimanWorker", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kriittinen onnistuminen (%): .
+        /// </summary>
+        public static string kriittinen {
+            get {
+                return ResourceManager.GetString("kriittinen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string New_Text_Document {
+        public static string New_Text_Document {
             get {
                 return ResourceManager.GetString("New_Text_Document", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taitoheiton onnistuminen (%):.
+        /// </summary>
+        public static string onnistuminen {
+            get {
+                return ResourceManager.GetString("onnistuminen", resourceCulture);
             }
         }
         
@@ -686,7 +713,7 @@ namespace Steamjazz.Properties {
         ///of the Crimson Empire. It is unknown when the mutations
         ///began,  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Sylph {
+        public static string Sylph {
             get {
                 return ResourceManager.GetString("Sylph", resourceCulture);
             }
@@ -706,7 +733,7 @@ namespace Steamjazz.Properties {
         ///Crimson Empire live the secluded Sylphs, whose culture can be
         ///traced back centuries. Sylphs have a unique rapport wit [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string SylphBack {
+        public static string SylphBack {
             get {
                 return ResourceManager.GetString("SylphBack", resourceCulture);
             }
@@ -736,9 +763,18 @@ namespace Steamjazz.Properties {
         ///Dokumentaatio
         ///- Dokumentaatio, Dokumentaatio.
         /// </summary>
-        internal static string todo {
+        public static string todo {
             get {
                 return ResourceManager.GetString("todo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unburd. Carry.
+        /// </summary>
+        public static string UnburdCarry {
+            get {
+                return ResourceManager.GetString("UnburdCarry", resourceCulture);
             }
         }
         
@@ -757,7 +793,7 @@ namespace Steamjazz.Properties {
         ///a career as an adventurer. She could see it as an opportunity to
         ///earn a large amo [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string VictoraMiddle {
+        public static string VictoraMiddle {
             get {
                 return ResourceManager.GetString("VictoraMiddle", resourceCulture);
             }
@@ -778,7 +814,7 @@ namespace Steamjazz.Properties {
         ///It isn’t hard to find reasons for a lower class Victoran to leave
         ///her normal life behind and starting a career as an a [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string VictoranLow {
+        public static string VictoranLow {
             get {
                 return ResourceManager.GetString("VictoranLow", resourceCulture);
             }
@@ -797,7 +833,7 @@ namespace Steamjazz.Properties {
         ///Language (Victoran), Long Guns, Martial Arts (Fencing),
         ///Mele [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string VictoraUpper {
+        public static string VictoraUpper {
             get {
                 return ResourceManager.GetString("VictoraUpper", resourceCulture);
             }
@@ -814,7 +850,7 @@ namespace Steamjazz.Properties {
         ///during this service. If a woman already has children or is
         ///pregnant, she can  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string WolffgartService {
+        public static string WolffgartService {
             get {
                 return ResourceManager.GetString("WolffgartService", resourceCulture);
             }
@@ -834,7 +870,7 @@ namespace Steamjazz.Properties {
         ///most honoured class of the nation. Military leaders are currently
         ///holdi [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string WolfgartMilitary {
+        public static string WolfgartMilitary {
             get {
                 return ResourceManager.GetString("WolfgartMilitary", resourceCulture);
             }
@@ -855,7 +891,7 @@ namespace Steamjazz.Properties {
         ///of their nation and those who were respected by everyone. After
         ///the mili [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string WolfgartUpper {
+        public static string WolfgartUpper {
             get {
                 return ResourceManager.GetString("WolfgartUpper", resourceCulture);
             }
@@ -875,7 +911,7 @@ namespace Steamjazz.Properties {
         ///has increased, even though they are still expected to work as
         ///long and as hard as before. As the nat [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string WolfgartWorker {
+        public static string WolfgartWorker {
             get {
                 return ResourceManager.GetString("WolfgartWorker", resourceCulture);
             }

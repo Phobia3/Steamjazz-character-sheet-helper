@@ -1206,7 +1206,7 @@ namespace steamjazz
         /// <param name="pointsBuy"></param>
         /// kuinka monta ostopistettä on jäljellä tällä hetkellä
         /// <returns></returns>
-        public bool enough(string points, string pointsBuy, int label)
+        public bool enough(string pointsBuy, int label)
         {
 
             int point = skillRank(label);

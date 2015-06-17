@@ -12,3 +12,13 @@ NameLabels: 322-333
 labels	:	334-345
 +		:	346-357
 -		:	358-369
+
+Ability	value	+	-	mod
+str		6		13	14	32
+con		8		15	16	40
+dex		10		17	18	41
+ref		12		19	20	42
+int		30		21	22	43
+wit		33		23	24	44
+cha		35		25	26	45
+emp		37		27	28	46
