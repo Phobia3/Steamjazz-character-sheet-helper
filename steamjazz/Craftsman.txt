@@ -1,6 +1,6 @@
 Cost to play: 5CP
-
-STR +1, CON +1, DEX +1, CHA -1, EMP -1
+STR +1, CON +1, INT +1, CHA -1, EMP -1
+Initial STR and CON must be at least 10.
 Initial skill ranks: Craft (any) 2, First Aid 1, Knowledge:
 Mathematics 1
 15 CP can be used to buy ranks in the following skills:
@@ -17,6 +17,7 @@ enough to work as machine shop aids and autonomous nurses,
 while ones equipped with Crystal Intelligence Clockwork can,
 depending on circumstances, become engineers and even
 inventors.
+
 Craftsmen have great variety in their physical appearance.
 While common workshop workers look like basic bulk
 automatons without fancy decor, those whose professions
@@ -26,10 +27,11 @@ masks to even a realistic-looking skin. It is also not uncommon
 for the owners to equip their longer-serving assistants with
 more and more humanlike features as they grow more fond of
 them.
+
 Like the nobles who trust their Butlers, many inventors,
 engineers and doctors have grown to depend on their
 Craftsmen. After all, who would bother dabbling with an
 abacus if you have an assistant with a mechanical computer for
 a head? Or which doctor would go through his ointment
 almanacs if her nurse has them in memory? And the fact they
-can assist with the actual work certainly doesn’t hurt either.
+can assist with the actual work certainly doesn’t hurt either.

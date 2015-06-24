@@ -1,31 +1,30 @@
 Cost to play: 20 CP
-
-INT +1
+DEX, INT or WIT +1
 Initial skill ranks: Law (Crimson) 3, Brawl 2, First aid 2,
-Martial Art (any Crimson) 2, Teaching 2, Clockwork 1, Dodge
-1
+Martial Art (any Crimson) 2, Teaching 2, Clockwork 1, Dodge 1
 10 CP can be used to buy ranks in the following skills:
-Athletics, Bargain, Brawl, Clockwork, Dodge, Diplomacy, First
-aid, Knowledge (any), Law (Crimson), Listen,Persuade, Martial
-art (one from Crimson), Melee (Balanced), Melee (Finesse),
-Melee (Powerful), Sense motive, Survival, Teaching,
+Athletics, Brawl, Clockwork, Dodge, First aid, Knowledge
+(any), Law (Crimson), Listen, Persuade, Martial art (one from
+Crimson), Melee (Balanced), Melee (Finesse), Melee
+(Powerful), Negotiate, Sense motive, Survival, Teaching,
+Advantage: Crimson monk status
+All characters of the Way of the Black Dragon have this
+advatage. It is worth 10CP and the cost is already calculated
+into the cost of this background package. This advantage
+represents the special social status of the philosopher monks in
+the Crimson Empire. All philosopher monks are expected to be
+wise and righteous judges, teachers and warriors in the Crimson
+Empire. They are above the rule and jurisdiction of the
+shoguns, and only monks of higher rank and the Emperor
+himself have the right to pass judgment upon a monk or
+otherwise restrict her actions. It is extremely rare for a
+philosopher monk to be found wanting in such a manner as to
+warrant consequences.
 
-All characters of the Way of the Black Dragon have the Social
-status: Philosopher monk advantage (10CP, already calculated
-into the cost of this background package). This represents the
-special social status of the philosopher monks in the Crimson
-Empire. All philosopher monks are expected to be wise and
-righteous judges, teachers and warriors in the Crimson Empire.
-They are above the rule and jurisdiction of the shoguns, and
-only monks of higher rank and the Emperor himself have the
-right to pass judgment upon a monk or otherwise restrict her
-actions. It is extremely rare for a philosopher monk to be found
-wanting in such a manner as to warrant consequences.
-Unlike other backgrounds with a cost, the 20 CP cost to to play
-a character of the Way of the Black Dragon is paid from career
-CP. The long and demanding training of the philosopher monks
-is seen as part of their career training.
-
+Unlike other backgrounds with a cost, the 20 CP cost to to
+play a character of the Way of the Black Dragon is paid
+from career CP. The long and demanding training of the
+philosopher monks is seen as part of their career training.
 
 The Way of the Black Dragon teaches the philosophy, religious
 beliefs and law of the Crimson Empire as well as martial arts
@@ -40,6 +39,7 @@ the the Emperor, only monks of the Way of the Black Dragon
 have the authority to judge the shoguns. The Council of the
 philosopher monks also chooses a new emperor from among
 the shoguns when the time arises.
+
 The philosopher monks also keep an eye out for promising
 children as they travel. Those who show interest and talent for
 philosophy and learning are taken to one of their monasteries to
@@ -55,6 +55,7 @@ follow it for the rest of their lives. After basic training at the
 monastery, a mentor is nominated from among the veteran
 monks for the monks-in-training to follow until they are ready
 to assume the role of philosopher monks themselves.
+
 Philosopher monks vow not to settle down until they become
 too old or otherwise unable to serve in their duties anymore.
 They travel all their lives, stopping only briefly in villages and
@@ -65,6 +66,7 @@ there for a season to teach and then continue on their way
 again. Monks are allowed to have relationships, and many even
 have children, but they are not allowed to settle down even with
 a family, nor may their family accompany them on their travels.
+
 Monks are usually treated as welcome guests in villages and
 cities, the village elders and even daimyos and shoguns offering
 the best they have for them. This tends to guarantee that the
@@ -83,10 +85,12 @@ their duty to help solve them, sometimes putting themselves in
 peril. Philosopher monks are also sometimes sent abroad to
 serve as diplomats.
 
-Suggested careers: Detective, Law Enforcer, Lawyer, Martial
+Suggested careers: 
+Detective, Law Enforcer, Lawyer, Martial
 Artist, Physician, Politician, Scholar
 
-Typical names: As people are chosen into the Way of the Black
+Typical names: 
+As people are chosen into the Way of the Black
 Dragon from both those born into the Way of the Land and
 those of the Way of the White Dragon, their names can come
 from either group. When becoming monks, followers of the

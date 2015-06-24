@@ -71,6 +71,23 @@ namespace Steamjazz.Properties {
         ///automaton for greater intelligence and more independent action.
         ///It is possible for any kind of a [rest of string was truncated]&quot;;.
         /// </summary>
+        public static string Automaton {
+            get {
+                return ResourceManager.GetString("Automaton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatons in SteamJazz are divided into two distinct groups.
+        ///Some automatons are so simple that sorting boxes into piles
+        ///causes them difficulty, whereas other automatons have no
+        ///trouble making independent decisions while adventuring, What
+        ///makes these two groups apart is the CIC, or the Crystal
+        ///Intelligence Clockwork. A CIC is a small intelligence
+        ///clockwork mechanism designed to be added into any kind of
+        ///automaton for greater intelligence and more independent action.
+        ///It is possible for any kind of a [rest of string was truncated]&quot;;.
+        /// </summary>
         public static string Automatons {
             get {
                 return ResourceManager.GetString("Automatons", resourceCulture);
@@ -79,19 +96,21 @@ namespace Steamjazz.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to STR +1, CON +1, EMP -1
+        ///
         ///Basic automaton packages:
         ///
         ///Assistant / Servant
-        ///Initial skill ranks: Profession (any) 2, Diplomacy 1,
-        ///Knowledge: Mathematics 1
+        ///Initial skill ranks: Profession (any) 2, Negotiate 1, Knowledge:
+        ///Mathematics 1
         ///10 CP can be used to buy ranks in the following skills:
-        ///Appraise, Bargain, Clockwork, Craft (any), Diplomacy,
-        ///Knowledge (Mathematics), Persuade, Profession (any).
+        ///Appraise, Clockwork, Craft (any), Knowledge (Mathematics),
+        ///Negotiate, Persuade, Profession (any).
+        ///
         ///Guard
         ///Initial skill ranks: Melee (Balanced) 2, Listen 1, Spot 1
         ///10 CP can be used to buy ranks in the following skills:
         ///Athletics, Block, Brawl, Clockwork, Handguns, Intimidate,
-        ///Listen, M [rest of string was truncated]&quot;;.
+        ///Listen, Melee  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Basic {
             get {
@@ -145,12 +164,12 @@ namespace Steamjazz.Properties {
         ///
         ///STR -1, CON -1, INT +1, CHA +1, EMP +1
         ///Advantage: Bilingual
-        ///Initial skill ranks: Etiquette 3, Cooking 2, Diplomacy 2,
+        ///Initial skill ranks: Etiquette 3, Cooking 2, Negotiate 2,
         ///Profession: Waiter 2
         ///10 CP can be used to buy ranks in the following skills:
-        ///Clockwork, Cooking, Diplomacy, Etiquette, First Aid,
-        ///Language (any), Law (any), Leadership, Listen, Persuade,
-        ///Search, Sense Motive, Spot.
+        ///Clockwork, Cooking, Negotiate, Etiquette, First Aid, Language
+        ///(any), Law (any), Leadership, Listen, Persuade, Search, Sense
+        ///Motive, Spot.
         ///
         ///Models:
         ///Colman Inc CCB-02 Butler, commonly referred to as &quot;Charles&quot;
@@ -184,21 +203,20 @@ namespace Steamjazz.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Cost to play: 5CP
         ///
-        ///STR +2, CON +2, CHA -1, EMP -2
+        ///STR +1, CON +2, CHA -1, EMP -1
+        ///Initial STR and CON must be at least 12.
         ///Upgrade: Medium Plating, AV 4
         ///Initial skill ranks: Melee (Balanced) 3, Law (local) 2,
         ///Intimidate 1
         ///10 CP can be used to buy ranks in the following skills:
         ///Athletics, Clockwork, Drive, Handguns, Intimidate, Law (any),
-        ///Melee (Balanced), Persuade, Search, Spot, Track.
+        ///Melee (Balanced), Persuade, Search, Spot, Survival.
         ///Copper automatons cannot be created or upgraded with the
         ///Humanlike skin advantage.
         ///
         ///Models:
         ///Rushworth OM-86M (officer model, male)
-        ///Rushworth OM-86F (officer model, female)
-        ///
-        ///Copper  [rest of string was truncated]&quot;;.
+        ///Rushwo [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Copper {
             get {
@@ -208,8 +226,8 @@ namespace Steamjazz.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Cost to play: 5CP
-        ///
-        ///STR +1, CON +1, DEX +1, CHA -1, EMP -1
+        ///STR +1, CON +1, INT +1, CHA -1, EMP -1
+        ///Initial STR and CON must be at least 10.
         ///Initial skill ranks: Craft (any) 2, First Aid 1, Knowledge:
         ///Mathematics 1
         ///15 CP can be used to buy ranks in the following skills:
@@ -219,8 +237,7 @@ namespace Steamjazz.Properties {
         ///(Powerful), Steam Engineering.
         ///
         ///Craftsman automatons have been designed by craftsmen to aid
-        ///craftsmen. They are equipped with mechanisms and functions
-        ///honed for [rest of string was truncated]&quot;;.
+        ///craftsmen. They are equipped  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Craftsman {
             get {
@@ -229,20 +246,35 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CON +1
-        ///
-        ///Initial skill ranks: Bargain 2, Animal Handling 1, Profession
+        ///   Looks up a localized string similar to The Crimson Empire is an isolated country in the southeastern
+        ///part of the continent. Except for some trade and border
+        ///skirmishes with Kheiman, Crimson people have lived in
+        ///isolation from other nations for a long time, until very recently
+        ///the Two Dragon Port was opened for trade and travellers from
+        ///other countries. Most Crimson people lead a life without
+        ///contact with other nations. Few would ever try to wander to
+        ///foreign lands, for leaving the country without orders from the
+        ///Emperor or shogun is puni [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Crimson {
+            get {
+                return ResourceManager.GetString("Crimson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STR, CON or EMP +1
+        ///Initial skill ranks: Persuade 2, Animal Handling 1, Profession
         ///(farmer) 1
         ///15 CP can be used to buy ranks in the following skills:
-        ///Animal handling, Bargain, Brawl, Cooking, Craft (any), Listen,
-        ///Melee (Balanced), Melee (Powerful), Profession (farmer), Spot,
-        ///Survival, Track
-        ///
+        ///Animal handling, Brawl, Cooking, Craft (any), Listen, Melee
+        ///(Balanced), Melee (Powerful), Persuade, Profession (farmer),
+        ///Spot, Survival.
         ///
         ///Most people in the Crimson Empire are labourers, craftsmen
         ///and farmers living in small villages and the handful of bigger
         ///cities in the Empire. Their lifestyle is called the Way of the
-        ///Land, and their work forms the ba [rest of string was truncated]&quot;;.
+        ///Land, and their work forms th [rest of string was truncated]&quot;;.
         /// </summary>
         public static string CrimsonCommoner {
             get {
@@ -251,19 +283,18 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DEX +1
+        ///   Looks up a localized string similar to STR, DEX or CHA +1
         ///Initial skill ranks: Melee (Balanced) 2, Dodge 1, Law
         ///(Crimson) 1
         ///15 CP can be used to buy ranks in the following skills:
-        ///Archery, Athletics, Bargain, Brawl, Craft (Blacksmithing),
-        ///Diplomacy, Dodge, Intimidate, Law (Crimson), Listen, Martial
-        ///Art (one from Crimson), Melee (Balanced), Melee (Powerful),
+        ///Archery, Athletics, Brawl, Craft (Blacksmithing), Negotiate,
+        ///Dodge, Intimidate, Law (Crimson), Listen, Martial Art (one
+        ///from Crimson), Melee (Balanced), Melee (Powerful), Persuade,
         ///Ride, Spot, Strategy/Tactics
-        ///
         ///
         ///The Way of the White Dragon consists of the warriors of the
         ///Crimson Empire and their families. Most individual followers
-        ///of this Way are common soldiers, but th [rest of string was truncated]&quot;;.
+        ///of this Way are common soldi [rest of string was truncated]&quot;;.
         /// </summary>
         public static string CrimsonMilitary {
             get {
@@ -294,21 +325,18 @@ namespace Steamjazz.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Cost to play: 20 CP
-        ///
         ///STR -1, CON -1, CHA +2, EMP +1
         ///Upgrade: Humanlike Skin with the Beautiful / Handsome
         ///upgrade already included.
-        ///
         ///Initial skill ranks: Charm 3, Persuade 2, Athletics 1
         ///10 CP can be used to buy ranks in the following skills:
-        ///Athletics, Bluff, Charm, Diplomacy, Dodge, Etiquette, First
-        ///Aid, Perform (Acting), Perform (Dancing), Persuade, Sense
-        ///Motive.
+        ///Athletics, Bluff, Charm, Negotiate, Dodge, Etiquette, First Aid,
+        ///Perform (Acting), Perform (Dancing), Persuade, Sense Motive.
         ///
         ///Models:
         ///Rushworth CM-54M (civilian model, male)
         ///Rushworth CM-54F (civilian model, female)
-        ///Colman Inc CLD-04M Doll, commonly ref [rest of string was truncated]&quot;;.
+        ///Colman Inc CLD-04M Doll, commonly referred [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Doll {
             get {
@@ -319,14 +347,16 @@ namespace Steamjazz.Properties {
         /// <summary>
         ///   Looks up a localized string similar to CHA -2, REF +1; allocate +1 to one of the following: STR,
         ///CON or DEX
+        ///
+        ///Dracosaurians receive a -3 penalty to Listen rolls, a +2 bonus to
+        ///Spot rolls and a +2 bonus to survival when able to track using
+        ///their sense of smell.
+        ///
         ///Cold-blooded: The character’s body cannot control her body
         ///temperature automatically, but needs external means to keep it
         ///on optimised level. In very cold temperatures (around and
         ///under -10°C if the character has clothing to keep himself
-        ///warm), she enters a comatose state. In cool temperatures she
-        ///acts sluggishly, whereas in warm temperatures she is nimbler
-        ///than normally. GM can grant a dracosaurian character a
-        ///modifier between -2 [rest of string was truncated]&quot;;.
+        ///warm), she enters a comatose state. In co [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Dracosaurian {
             get {
@@ -355,18 +385,34 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CON, REF, WIT or EMP +1
-        ///Initial skill ranks: Bargain 1, Diplomacy 1, Sailing 1, Sense
-        ///Motive 1, Swim 1
+        ///   Looks up a localized string similar to The Free Islands is the only democratic republic in Erthair. It is
+        ///a very young country, having gained its independence at the
+        ///end of the 80 Year War. This is strongly reflected in the lives of
+        ///those who have been born and raised here.
+        ///Many call the Free Islands the land of opportunities and the
+        ///land of freedom. Those with the skill and cunning can make
+        ///their fortunes among the Isles, for here a person’s success is not
+        ///measured by their heritage or social class but by their ability to
+        ///seize the oppo [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string FreeIsland {
+            get {
+                return ResourceManager.GetString("FreeIsland", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Any attribute +1
+        ///Initial skill ranks: Athletics 1, Negotiate 1, Persuade 1, Sailing
+        ///1, Sense Motive 1
         ///15 CP can be used to buy ranks in the following skills:
-        ///Appraise, Bargain, Bluff, Brawl, Craft (any), Diplomacy,
-        ///Navigation, Melee (any), Perform (Dancing), Sailing, Sailing
-        ///(Airship), Sense Motive, Spot, Survival, Swim.
-        ///
+        ///Appraise, Athletics, Bluff, Brawl, Craft (any), Navigation,
+        ///Melee (any), Negotiate, Perform (Dancing), Persuade, Sailing,
+        ///Sailing (Airship), Sense Motive, Spot, Survival.
         ///
         ///The Free Islands consists of a large group of islands, and each
         ///island has its own traditions and customs. The Free Islands is a
-        ///rather young nation, and the only democratic o [rest of string was truncated]&quot;;.
+        ///rather young nation, and the only democrati [rest of string was truncated]&quot;;.
         /// </summary>
         public static string FreeIslandFolk {
             get {
@@ -388,16 +434,15 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to REF +1
-        ///Initial skill ranks: Sailing or Sailing (Airship) 2, Bluff 1, Brawl
-        ///1
+        ///   Looks up a localized string similar to REF, WIT or CHA +1
+        ///Initial skill ranks: Sailing or Sailing (Airship) 2, Bluff 1, Brawl 1
         ///15 CP can be used to buy ranks in the following skills:
-        ///Athletics, Bargain, Bluff, Brawl, Climb, Craft (Gunsmithing),
-        ///Handguns, Intimidate, Melee (Finesse), Navigation, Sailing,
+        ///Athletics, Bluff, Brawl, Craft (Gunsmithing), Handguns,
+        ///Intimidate, Melee (Finesse), Navigation, Persuade, Sailing,
         ///Sailing (Airship), Sense Motive, Sleight of Hand, Spot, Stealth
         ///The seas surrounding the Free Islands are crowded with traders
         ///and travellers, as well as those making a living by preying on
-        ///them. Piracy is a growing threat for the development of th [rest of string was truncated]&quot;;.
+        ///them. Piracy is a growing threat for the development  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string FreePirate {
             get {
@@ -406,20 +451,18 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cost to play: 10 CP
-        ///STR +3, CON +3, DEX -2, REF -2, INT -1, WIT -1, EMP -3
-        ///Initial INT and WIT may not be raised to 15 or above.
+        ///   Looks up a localized string similar to STR +3, CON +3, REF -2, INT -2, WIT -2, CHA -2
+        ///Initial STR and CON must be at least 10.
         ///Disadvantage: Sterile.
         ///
         ///All mutants have the social status: mutie disadvantage and
         ///must purchase a mutant disadvantage worth at least 3 CP to
         ///represent that no mutant is born perfect.
         ///
-        ///
         ///Goliaths were originally mutants created in Wulffgartian war
         ///laboratories during the 80 Year War as an attempt to create
         ///super soldiers. They were mutated from humans who already
-        ///posse [rest of string was truncated]&quot;;.
+        ///possessed great strength and constitution. Drugs  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Goliath {
             get {
@@ -457,18 +500,34 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hanseburg is a small but very wealthy state neighbouring both
+        ///Victora and Wulffgart. Hanseburg managed to remain neutral
+        ///during the 80 Year War, trading with both countries and, when
+        ///necessary, occasionally granting them free passage through
+        ///their lands. This has led to close knit but cool relations with
+        ///both countries. Hanseburg is the centre of trade in Erthair, and
+        ///many rich merchants from other countries have chosen do
+        ///deposit their wealth to Hanseburgian banks for safekeeping,
+        ///which has made Ha [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Hanseburg {
+            get {
+                return ResourceManager.GetString("Hanseburg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to “Hanseburgian craftsmen boast with their skillful works and the
         ///nobles boast with the rich nation. But should they ever forget
         ///that it is the merchants who sell the craftsmen’s works and
         ///collect the riches for the country, the nation will fall.” - a head
         ///of a Hanseburgian merchant family
         ///
-        ///
-        ///WITS +1
-        ///Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1
+        ///DEX, WIT or CHA +1
+        ///Initial skill ranks: Appraise 2, Negotiate 1, Persuade 1
         ///15 CP can be used to buy ranks in the following skills:
-        ///Appraise, Bargain, Bluff, Cooking, Craft (any), Diplomacy,
-        ///Etiquette, Intimidate, Martial  [rest of string was truncated]&quot;;.
+        ///Appraise, Bluff, Cooking, Craft (any), Etiquette, Intimidate,
+        ///Martial Arts (Fenc [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HanseburgMerchant {
             get {
@@ -478,19 +537,16 @@ namespace Steamjazz.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Cost to play: 20CP
-        ///CHA +1
-        ///Initial skill ranks: Appraise 2, Bargain 2, Diplomacy 2,
-        ///Etiquette 1.
-        ///
+        ///DEX, CHA or EMP +1
+        ///Initial skill ranks: Appraise 2, Charm 2, Negotiate 2, Etiquette 1.
         ///Advantage: Noble, Hanseburg
         ///Starting wealth level: Drifter. This can be further raised with CP
         ///during character creation.
-        ///
         ///15 CP can be used to buy ranks in the following skills:
-        ///Appraise, Art (any), Bargain, Charm, Diplomacy, Etiquette,
-        ///Knowledge (Heraldry), Language (Victoran), Language
-        ///(Wulffgartian), Martial Arts (Fencing), Martial Arts
-        ///(Hanseburgian Musketeer Fencing), Melee (Finesse), Perform        /// [rest of string was truncated]&quot;;.
+        ///Appraise, Art (any), Charm, Etiquette, Knowledge (Heraldry),
+        ///Language (Victoran), Language (Wulffgartian), Martial Arts
+        ///(Fencing), Martial Arts (Hanseburgian Musketeer Fencing),
+        ///Melee (Finesse), Negotiate, Perform (Dan [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HanseburgNoble {
             get {
@@ -499,20 +555,18 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to INT +1
-        ///
+        ///   Looks up a localized string similar to CON, INT or EMP +1
         ///Initial skill ranks: Craft (any) or Profession (any) 2, Appraise 1,
-        ///Bargain 1
+        ///Persuade 1
         ///15 CP can be used to buy ranks in the following skills:
-        ///Appraise, Bargain, Brawl, Clockwork, Cooking, Craft (any),
-        ///Diplomacy, Drive, Locksmithing, Mechanics, Melee
-        ///(Powerful), Profession (any), Ride.
-        ///
+        ///Appraise, Brawl, Clockwork, Cooking, Craft (any), Negotiate,
+        ///Drive, Locksmithing, Mechanics, Melee (Powerful), Persuade,
+        ///Profession (any), Ride.
         ///
         ///Hanseburg is known for its craftsmanship, design, inventions
         ///and top class modern steam technology. This naturally creates a
         ///need for not only lots of factory workers and miners, but also
-        ///for skilled crafters, e [rest of string was truncated]&quot;;.
+        ///for skilled c [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HanseburgWorker {
             get {
@@ -522,19 +576,17 @@ namespace Steamjazz.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Cost to play: 5 CP
-        ///
-        ///STR +3, CON +3, DEX -2, REF -2, CHA -1, EMP -3
+        ///STR +3, CON +3, DEX -2, REF -2, CHA -1, EMP -2
         ///Initial STR and CON must be at least 12.
+        ///Upgrade: Medium Plating, AV 4
+        ///Gorilla punch: Heavy worker fist damage deals d6+1 points of
+        ///damage. (x CP)
+        ///Forklift: Heavy worker can lift and carry three times the normal
+        ///amount for its STR+CON.
         ///10 CP can be used to buy ranks in the following skills: Craft
         ///(any), Mechanics, Melee (Powerful), Search, Spot, Steam
         ///Engineering, or to the Upgraded Automaton advantage.
-        ///
-        ///Heavy Worker automatons cannot be created or upgraded with
-        ///the Humanlike skin advantage.
-        ///
-        ///As the use of automatons for manual labour became more
-        ///common, it was a natural part of progress that they be used for
-        ///increasing [rest of string was truncated]&quot;;.
+        ///Heavy Worker automatons cann [rest of string was truncated]&quot;;.
         /// </summary>
         public static string HeavyWorker {
             get {
@@ -545,14 +597,13 @@ namespace Steamjazz.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Humans receive 10 extra CP for purchasing skills and
         ///advantages from their Background during character creation.
-        ///
         ///Humans come from various backgrounds and nationalities, so
         ///their appearance and style varies widely, from the tall muscular
         ///Wulffgartian in his gray greatcoat to the tender Crimson lady in
         ///her colorful kimono. Humans are by far the dominant race of
         ///Erthair, as mutants are descended from humans and automatons
         ///are created by humans. Because of this, many humans consider
-        ///themselves as the  [rest of string was truncated]&quot;;.
+        ///themselves as the on [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Human {
             get {
@@ -570,12 +621,11 @@ namespace Steamjazz.Properties {
         ///must purchase a mutant disadvantage worth at least 3 CP to
         ///represent that no mutant is born perfect.
         ///
-        ///
         ///These short and stout people originate from the northern
         ///mountains of Wulffgart. They are the descendants of people
         ///who lived in an old mining town of Kharzul. Almost 200 years
         ///ago a source of radiation present in the area started to change
-        ///the people. Chil [rest of string was truncated]&quot;;.
+        ///the people. Childr [rest of string was truncated]&quot;;.
         /// </summary>
         public static string KharzulDwarf {
             get {
@@ -606,19 +656,35 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to INT +1
-        ///Initial skill ranks: 
-        ///Knowledge: Kheiman religion 2, Diplomacy
-        ///1, Language: Kheiman 1.
+        ///   Looks up a localized string similar to Life in Kheiman is strongly influenced and regulated by their
+        ///religion. As the state and the church in Kheiman are virtually
+        ///one entity, the laws and traditions in Kheiman are mostly those
+        ///enacted by the church.
+        ///Kheiman has an expansive education system, and so every child
+        ///in Kheiman receives basic education and the opportunity to
+        ///educate themselves further in some way. The literacy rate in
+        ///Kheiman is the highest among the countries in Erthair.
+        ///Kheiman people are divided into three classes: workers, [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Kheiman {
+            get {
+                return ResourceManager.GetString("Kheiman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INT, WIT, EMP or CHA +1
+        ///Initial skill ranks: Knowledge: Kheiman religion 2, Negotiate 1,
+        ///Language: Kheiman 1.
         ///15 CP can be used to buy ranks in the following skills:
-        ///Alchemy, Art (any), Clockwork, Diplomacy, Etiquette, First
-        ///Aid, Knowledge (any), Law (Kheiman), Leadership,
-        ///Mechanics, Medicine and surgery, Persuade, Teaching, or to
-        ///improve the Starting wealth level.
+        ///Alchemy, Art (any), Clockwork, Negotiate, Etiquette, First Aid,
+        ///Knowledge (any), Law (Kheiman), Leadership, Mechanics,
+        ///Medicine and surgery, Persuade, Teaching, or to improve the
+        ///Starting wealth level.
         ///
         ///The children with intellectual tendencies, high social
         ///intelligence and skills in science are chosen to the Kheiman
-        ///clergy class. All the scientifi [rest of string was truncated]&quot;;.
+        ///clergy class. Al [rest of string was truncated]&quot;;.
         /// </summary>
         public static string KheimanClergy {
             get {
@@ -627,9 +693,8 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to STR +1
-        ///Initial skill ranks: 
-        ///Melee (Powerful) 2, Knowledge (Kheiman
+        ///   Looks up a localized string similar to STR, DEX or WIT +1
+        ///Initial skill ranks: Melee (Powerful) 2, Knowledge (Kheiman
         ///religion) 1, Martial Arts (Kheiman spear) 1
         ///15 CP can be used to buy ranks in the following skills:
         ///Athletics, Block, Brawl, Craft (Blacksmithing), Gunsmithing,
@@ -637,10 +702,9 @@ namespace Steamjazz.Properties {
         ///(Kheiman spear), Ride, Spot, Survival, Throw, Melee
         ///(Powerful).
         ///
-        ///
         ///The people chosen for warrior class are those whose physical
         ///abilities, courage and ability to follow orders stood out during
-        ///childhood. The trai [rest of string was truncated]&quot;;.
+        ///childhood.  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string KheimanWarior {
             get {
@@ -649,19 +713,17 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CON +1
-        ///Initial skill ranks: 
-        ///Craft or Profession (any) 2, Knowledge
+        ///   Looks up a localized string similar to STR, CON or INT +1
+        ///Initial skill ranks: Craft or Profession (any) 2, Knowledge
         ///(Kheiman religion) 1, Art (any) 1
         ///15 CP can be used to buy ranks in the following skills: Art
-        ///(any), Athletics, Bargain, Brawl, Craft (any), Dodge,
-        ///Mechanics, Perform (Dancing), Profession (any), Survival,
-        ///Track.
+        ///(any), Athletics, Brawl, Craft (any), Dodge, Mechanics,
+        ///Perform (Dancing), Persuade, Profession (any), Survival.
         ///
         ///The most populous class in Kheiman is the worker class.
         ///Workers are the manual labourers of Kheiman: farmers,
         ///craftsmen, miners and factory workers, to mention but a few.
-        ///Both the physically strong and the nimble hande [rest of string was truncated]&quot;;.
+        ///Both the physically strong and the nimble ha [rest of string was truncated]&quot;;.
         /// </summary>
         public static string KheimanWorker {
             get {
@@ -698,20 +760,19 @@ namespace Steamjazz.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to STR -1, DEX +1
+        ///
         ///Sylphs can jump twice as high and far as humans.
-        ///Sylphs gain a +1 racial bonus to Dodge and Athletics. The
-        ///Dodge bonus counts as a rank in the Dodge skill for increasing
-        ///PDM.
+        ///Sylphs gain a +1 racial bonus to dodge and athletics. The dodge
+        ///bonus counts as a rank in the dodge skill for increasing PDM.
         ///Disadvantage: Frail
         ///
         ///All mutants have the social status: mutie disadvantage and
         ///must purchase a mutant disadvantage worth at least 3 CP to
         ///represent that no mutant is born perfect.
         ///
-        ///
         ///Sylphs are a group of people living in the northern mountains
         ///of the Crimson Empire. It is unknown when the mutations
-        ///began,  [rest of string was truncated]&quot;;.
+        ///began, b [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Sylph {
             get {
@@ -779,19 +840,34 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to WIT +1
-        ///Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1
+        ///   Looks up a localized string similar to Life in Victora can be very different depending on where you
+        ///were born. The social class structure in the feudal Victora is
+        ///very rigid. The nobles, nowadays together with rich merchants
+        ///and industrialists, direct the country, leaving the common folk
+        ///with little freedom of choice. Things are stirring in Victora
+        ///though, as rebellion is rising in many areas. The Workers Union
+        ///movement is gaining momentum, trying to improve the
+        ///working conditions and salary of common workers. The
+        ///Women’s Rights movement [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Victora {
+            get {
+                return ResourceManager.GetString("Victora", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DEX, INT or WIT +1
+        ///Initial skill ranks: Appraise 2, Persuade 1, Negotiate 1
         ///15 CP can be used to buy ranks in the following skills:
-        ///Appraise, Bargain, Bluff, Brawl, Craft (any), Cooking,
-        ///Diplomacy, Etiquette, Handguns, Intimidate, Martial Arts
-        ///(Victoran Pugilism), Mechanics, Perform (dancing), Persuade,
-        ///Profession (any), Ride.
+        ///Appraise, Bluff, Brawl, Craft (any), Cooking, Negotiate,
+        ///Etiquette, Handguns, Intimidate, Martial Arts (Victoran
+        ///Pugilism), Mechanics, Perform (dancing), Persuade, Profession
+        ///(any), Ride.
         ///
-        ///
-        ///Adventuring as Middle Class Victoran: 
-        ///Many reasons could encourage a middle class Victoran to start
-        ///a career as an adventurer. She could see it as an opportunity to
-        ///earn a large amo [rest of string was truncated]&quot;;.
+        ///The Victoran middle class lead more prosperous lives than the
+        ///lower class, but lack the status of the upper class. So, as the
+        ///upper class still looks down on them as commoners, the  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string VictoraMiddle {
             get {
@@ -800,19 +876,18 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CON +1
+        ///   Looks up a localized string similar to CON, REF or EMP +1
         ///Initial skill ranks: Survival 2, Brawl 1, Stealth 1
-        ///15 CP can be used to buy ranks in the following skills: Animal
-        ///Handling, Bluff, Brawl, Climb, Cooking, First Aid, Gaming,
-        ///Handguns, Intimidate, Listen, Melee (Balanced), Melee
-        ///(Powerful), Spot, Stealth, Survival, Throw, Track.
-        ///Starting Wealth level
-        ///cannot be higher than ‘Well off’
+        ///15 CP can be used to buy ranks in the following skills:
+        ///Athletics, Animal Handling, Bluff, Brawl, Cooking, Dodge,
+        ///First Aid, Forgery, Gaming, Grappling, Handguns, Intimidate,
+        ///Listen, Melee (Balanced), Melee (Powerful), Spot, Stealth,
+        ///Survival, Throw or to purchase up to 10 CP worth of acquirable
+        ///advantages.
+        ///Starting Wealth level cannot be higher than ‘Well off’.
         ///
-        ///
-        ///Adventuring as a Lower Class Victoran:
-        ///It isn’t hard to find reasons for a lower class Victoran to leave
-        ///her normal life behind and starting a career as an a [rest of string was truncated]&quot;;.
+        ///One of the the toughest fates in Victora is to be born into a
+        ///lo [rest of string was truncated]&quot;;.
         /// </summary>
         public static string VictoranLow {
             get {
@@ -822,16 +897,16 @@ namespace Steamjazz.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Cost to play: 10CP
-        ///CHA +1
-        ///Initial skill ranks: Etiquette 3, Diplomacy 2, Language: Victoran 1
+        ///INT or CHA +1
+        ///Initial skill ranks: Etiquette 3, Negotiate 2, Language: Victoran
+        ///1
         ///The Starting wealth level of Victoran upper class characters
         ///must be Drifter or higher. The 5 CP cost of Drifter has already
         ///been calculated into the Background cost and can be further
         ///increased with CP during character creation.
-        ///15 CP can be used to buy ranks in the following skills: 
-        ///Art (any), Charm, Diplomacy, Etiquette, Knowledge: Heraldry,
-        ///Language (Victoran), Long Guns, Martial Arts (Fencing),
-        ///Mele [rest of string was truncated]&quot;;.
+        ///15 CP can be used to buy ranks in the following skills: Art
+        ///(any), Charm, Negotiate, Etiquette, Knowledge: Heraldry,
+        ///Language (Victoran), Long Guns, Martial Arts (Fencing) [rest of string was truncated]&quot;;.
         /// </summary>
         public static string VictoraUpper {
             get {
@@ -857,9 +932,25 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to STR +1
-        ///Initial skill ranks: 
-        ///Law: Wulffgart 2, Etiquette 1, Intimidate 1.
+        ///   Looks up a localized string similar to Wulffgart went through a major change 16 years ago, when
+        ///Tzar Ivan the Fourth was overthrown from power and Marshal
+        ///General Friedrich Krause rose to rule the nation. The military
+        ///has been leading Wulffgart ever since and changing its political
+        ///structure in major ways. most of the lands and wealth of
+        ///Wulffgartian nobility was confiscated by the military
+        ///government, and the nobles are nowadays little more than
+        ///Wulffgartian commoners with glorified titles. Military service
+        ///shapes the lives of Wulffgart [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Wolfgart {
+            get {
+                return ResourceManager.GetString("Wolfgart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STR or DEX +1
+        ///Initial skill ranks: Law: Wulffgart 2, Etiquette 1, Intimidate 1.
         ///10 CP can be used to buy ranks in the following skills: Animal
         ///Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &amp;
         ///Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),
@@ -868,7 +959,7 @@ namespace Steamjazz.Properties {
         ///
         ///In the eyes of the current rulers of Wulffgart, the military is the
         ///most honoured class of the nation. Military leaders are currently
-        ///holdi [rest of string was truncated]&quot;;.
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         public static string WolfgartMilitary {
             get {
@@ -877,19 +968,18 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CHA +1
-        ///Initial skill ranks: 
-        ///Etiquette 2, Diplomacy 1, Language:Wulffgartian 1
+        ///   Looks up a localized string similar to INT or CHA +1
+        ///Initial skill ranks: Etiquette 2, Negotiate 1, Language:
+        ///Wulffgartian 1
         ///10 CP can be used to buy ranks in the following skills: Charm,
-        ///Diplomacy, Etiquette, Intimidate, Language (Wulffgartian), 
-        ///Law (Wulffgart), Long Guns, Perform (Dancing), Perform
-        ///(Oratory), Ride, or to improve the
-        ///Starting wealth level or to purchase the Noble, Wulffgartian
-        ///advantage.
+        ///Negotiate, Etiquette, Intimidate, Language (Wulffgartian), Law
+        ///(Wulffgart), Long Guns, Perform (Dancing), Perform (Oratory),
+        ///Ride, or to improve the Starting wealth level or to purchase the
+        ///Noble, Wulffgartian advantage.
         ///
         ///Members of the Wulffgartian upper class used to be the leaders
         ///of their nation and those who were respected by everyone. After
-        ///the mili [rest of string was truncated]&quot;;.
+        ///the [rest of string was truncated]&quot;;.
         /// </summary>
         public static string WolfgartUpper {
             get {
@@ -898,18 +988,18 @@ namespace Steamjazz.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CON +1
-        ///Initial skill ranks: 
-        ///Craft (Gunsmithing 2), Craft (any) 1, Mechanics 1
+        ///   Looks up a localized string similar to STR, CON or INT +1
+        ///Initial skill ranks: Craft (Gunsmithing 2), Craft (any) 1,
+        ///Mechanics 1
         ///10 CP can be used to buy ranks in the following skills: Animal
-        ///Handling, Bargain, Brawl, Clockwork, Cooking, Craft (any),
-        ///Drive, First Aid, Locksmithing, Mechanics, Profession (any),
+        ///Handling, Brawl, Clockwork, Cooking, Craft (any), Drive, 
+        ///First Aid, Locksmithing, Mechanics, Persuade, Profession (any),
         ///Ride.
         ///
         ///The life of Wulffgartian workers has improved since the feudal
         ///days. The fruits of their labour are vital to the army, so their pay
         ///has increased, even though they are still expected to work as
-        ///long and as hard as before. As the nat [rest of string was truncated]&quot;;.
+        ///long and as hard as befor [rest of string was truncated]&quot;;.
         /// </summary>
         public static string WolfgartWorker {
             get {

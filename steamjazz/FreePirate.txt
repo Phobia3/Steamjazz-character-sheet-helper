@@ -1,15 +1,13 @@
-REF +1
-Initial skill ranks: Sailing or Sailing (Airship) 2, Bluff 1, Brawl
-1
+REF, WIT or CHA +1
+Initial skill ranks: Sailing or Sailing (Airship) 2, Bluff 1, Brawl 1
 15 CP can be used to buy ranks in the following skills:
-Athletics, Bargain, Bluff, Brawl, Climb, Craft (Gunsmithing),
-Handguns, Intimidate, Melee (Finesse), Navigation, Sailing,
+Athletics, Bluff, Brawl, Craft (Gunsmithing), Handguns,
+Intimidate, Melee (Finesse), Navigation, Persuade, Sailing,
 Sailing (Airship), Sense Motive, Sleight of Hand, Spot, Stealth
 The seas surrounding the Free Islands are crowded with traders
 and travellers, as well as those making a living by preying on
 them. Piracy is a growing threat for the development of the
 region.
-
 
 The republic of Free Islands, as well as some of the rich
 merchants calling the Islands their home often hire the services
@@ -24,7 +22,8 @@ the seas of Erthair.This means here are often survivors left on
 ships that have been targeted by hostile forces. Because of this,
 it is often advantageous to hire a private naval force that cannot
 be easily traced back to the employer whose good reputation
-might otherwise suffer from sponsoring such actions
+might otherwise suffer from sponsoring such actions.
+
 Many pirate ships and communities are working for no master
 other than themselves. They interpret the concepts of freedom
 and opportunity as justification to sail the seas surrounding the
@@ -41,6 +40,7 @@ back to the villagers, who are naturally fiercely protective of
 their adventurous compatriots. Also, the line between pirate
 and privateer is often one drawn in the water, and many
 privateers work as free agents on the side.
+
 Nowadays airships and even airplanes are used by some
 privateers and pirates. Although most of their forces still utilise
 normal seafaring vessels, the support provided by a single
@@ -65,10 +65,12 @@ of a pirate or privateer crew herself, or her skills as seamanship
 and subterfuge could be beneficial in the service of a mercenary
 party.
 
-Suggested careers: Assassin, Con Artist, Gunner, Martial Artist,
+Suggested careers: 
+Assassin, Con Artist, Gunner, Martial Artist,
 Mechanic, Mercenary, Officer, Personal Entertainer, Pirate,
 Rogue, Sailor, Scout, Spy
 
-Typical names: People from a Pirate background come from
+Typical names: 
+People from a Pirate background come from
 same roots as Island Folk, they have very similar names too.
-See Island folk.
+See Island folk.

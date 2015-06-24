@@ -1,17 +1,16 @@
-﻿CON +1
-Initial skill ranks: 
-Craft or Profession (any) 2, Knowledge
+﻿STR, CON or INT +1
+Initial skill ranks: Craft or Profession (any) 2, Knowledge
 (Kheiman religion) 1, Art (any) 1
 15 CP can be used to buy ranks in the following skills: Art
-(any), Athletics, Bargain, Brawl, Craft (any), Dodge,
-Mechanics, Perform (Dancing), Profession (any), Survival,
-Track.
+(any), Athletics, Brawl, Craft (any), Dodge, Mechanics,
+Perform (Dancing), Persuade, Profession (any), Survival.
 
 The most populous class in Kheiman is the worker class.
 Workers are the manual labourers of Kheiman: farmers,
 craftsmen, miners and factory workers, to mention but a few.
 Both the physically strong and the nimble handed can find
 suitable work as a member of the worker class.
+
 As everyone in Kheiman receives basic education, being a
 worker in Kheiman is not a sign of stupidity or ignorance. It
 was simply determined that the person’s strength did not lie in
@@ -19,6 +18,7 @@ martial prowess or higher spiritual or scientific thinking, but in
 the skills necessary for building the base of the society. Almost
 everyone in Kheiman is literate and knows the basics of
 mathematics and other sciences, even the humble workers.
+
 Most Kheiman workers, such as farmers, miners and factory
 workers, get a low pay for their work, and so their lifestyle is
 simple. They usually don’t lack any of the basic needs: they get
@@ -26,16 +26,20 @@ enough to eat, a roof on their heads and basic clothing with the
 money they earn, and the Kheiman state church sponsors their
 hobbies and health care. On the other hand, they don’t have
 money for luxuries, such as a big house, fine clothing, jewellery
-or traveling. Some specialised workers, whose skills are in high
+or traveling.
+
+Some specialised workers, whose skills are in high
 demand, can actually earn even more than some of the clergy.
 These include skilled artisans making weapons, jewellery or art
 objects for the rich, and renowned artists who decorate the
 insides of the temples and houses of rich clergy with paintings.
+
 Still, most of the workers in Kheiman do hard, physical work,
 and even with the advanced medicine and science of Kheiman,
 their life spans are usually noticeably shorter than people of the
 clergy class. And once a person has been chosen to be a worker
 in their childhood, she remains a worker for the rest of her life.
+
 Most workers are stuck with the career chosen for them as
 children, unwilling or unable to pursue other trades even within
 the limits of the working class. Furthermore, should a dispute
@@ -58,17 +62,4 @@ they can implement into their works.
 
 Suggested careers: 
 Artist, Craftsman, Hunter, Mechanic,
-Mercenary, Merchant, ServantTypical names in Kheiman:
-As Kheiman classes aren’t divided solely based on family
-background, naming conventions between classes are mostly
-similar. Most names end in consonants. Many of the names are
-derived from religious bases; the suffix “es” means a follower
-of a deity. Male names include Aetes, Arumes, Canopus,
-Kafhutes, Hagiel, Nekhartemes, Sefkh, Sevekthat and
-Tiumautef. Female names include Bektehat, Hentateth, Ibynes,
-Neith, Omorosises (or Omoroses), Tibes, Teiharset and
-Sanbises. Combination names, like Neith-Ibynes, are also
-common. The surname is usually a patronym derived from the
-father’s name with the suffix “i”, e.g. Hagien Arumesi.
-Sometimes the city or region from which the person hails from
-is included in the name as well
+Mercenary, Merchant, Servant

@@ -1,24 +1,25 @@
-DEX +1
+STR, DEX or CHA +1
 Initial skill ranks: Melee (Balanced) 2, Dodge 1, Law
 (Crimson) 1
 15 CP can be used to buy ranks in the following skills:
-Archery, Athletics, Bargain, Brawl, Craft (Blacksmithing),
-Diplomacy, Dodge, Intimidate, Law (Crimson), Listen, Martial
-Art (one from Crimson), Melee (Balanced), Melee (Powerful),
+Archery, Athletics, Brawl, Craft (Blacksmithing), Negotiate,
+Dodge, Intimidate, Law (Crimson), Listen, Martial Art (one
+from Crimson), Melee (Balanced), Melee (Powerful), Persuade,
 Ride, Spot, Strategy/Tactics
-
 
 The Way of the White Dragon consists of the warriors of the
 Crimson Empire and their families. Most individual followers
 of this Way are common soldiers, but the followers of the White
 Dragon also include the rulers of the Crimson Empire whose
 power reflects upon the whole Way.
+
 Usually those born to the families of soldiers and samurai are
 raised to the Way of the White Dragon, and even some of the
 girls receive combat training at young age. As the Way of the
 White Dragon is not only one of a fighter, but also that of a
 leader who can act as a commander for the common folk if
 need be, education and social skills are important as well.
+
 Usually these children receive at least a few years of education
 in schools kept by the elders of the White Dragon. Children of
 wealthier families can be taught by private governesses instead.
@@ -32,6 +33,7 @@ and daimyos are in constant need for more warriors to march
 under their banners, potential recruits are actively sought from
 the ranks of the Way of the Land in addition to the children
 born to White Dragon families.
+
 In theory, anyone of the Way of the White Dragon has the
 potential to become a leader, daimyo or shogun. In practise,
 though, it is much more likely that those positions are granted
@@ -50,9 +52,12 @@ Dragon decide to see the world and leave the Crimson Empire
 behind, for leaving without permission means exile, but with
 their skills they can hire out as mercenaries abroad.
 
-Suggested careers: Assassin, Gunner, Hunter, Law Enforcer,
+Suggested careers: 
+Assassin, Gunner, Hunter, Law Enforcer,
 Martial Artist, Officer, Scout, Soldier, Spy
-Typical names: Names of the Crimson people vary a bit
+
+Typical names: 
+Names of the Crimson people vary a bit
 depending on their Way as well as their native region. The
 names of those living in the western part of the Empire have an
 Indian sound to them, whereas the names in the east resemble

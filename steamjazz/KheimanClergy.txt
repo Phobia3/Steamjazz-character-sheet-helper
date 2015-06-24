@@ -1,12 +1,11 @@
-﻿INT +1
-Initial skill ranks: 
-Knowledge: Kheiman religion 2, Diplomacy
-1, Language: Kheiman 1.
+﻿INT, WIT, EMP or CHA +1
+Initial skill ranks: Knowledge: Kheiman religion 2, Negotiate 1,
+Language: Kheiman 1.
 15 CP can be used to buy ranks in the following skills:
-Alchemy, Art (any), Clockwork, Diplomacy, Etiquette, First
-Aid, Knowledge (any), Law (Kheiman), Leadership,
-Mechanics, Medicine and surgery, Persuade, Teaching, or to
-improve the Starting wealth level.
+Alchemy, Art (any), Clockwork, Negotiate, Etiquette, First Aid,
+Knowledge (any), Law (Kheiman), Leadership, Mechanics,
+Medicine and surgery, Persuade, Teaching, or to improve the
+Starting wealth level.
 
 The children with intellectual tendencies, high social
 intelligence and skills in science are chosen to the Kheiman
@@ -14,6 +13,7 @@ clergy class. All the scientific knowledge and wisdom in
 Kheiman comes from the clergy. Members of the clergy fill a
 range of professions: physicians, judges, engineers, scientists of
 many areas and teachers, to mention but a few.
+
 The education of children chosen for the clergy class is very
 different from those of the worker and warrior classes, whose
 education focuses on the practical knowledge and skills needed
@@ -25,6 +25,7 @@ and start studying the practical skills needed in their chosen
 duty. Unlike those of the worker and warrior classes, young
 members of the clergy are allowed to affect the choice of
 profession they’ll be taking as adults, at least to some extent.
+
 Some of the young clergymen and -women are chosen to
 become temple priests. All members of the clergy have the right
 and duty to teach the Kheiman religion and spread its word to
@@ -35,19 +36,21 @@ learn. They are the highest political power in Kheiman after the
 Pharaoh himself. The priests are also the ones who choose the
 paths of life for Kheiman children, usually after consulting the
 teachers and tutors of the children for guidance.
+
 Other members of the clergy class hold important positions in
 the society as well. Judges and lawyers work in close contact
 with the priests, as they execute the laws of Kheiman. Teachers
 are in charge of educating the Kheiman children and
 youngsters, and so they have a very important task considering
 the future of the nation. Scientists and engineers have an
-important part in the development of the nation, both for 
+important part in the development of the nation, both for
 civilian life and the army. Physicians have an important role in
 the development and application of medical sciences for the
 good of the nation and Kheiman people. Finally, although this
 happens rarely, sometimes skilled mechanics are selected from
 among the worker class to study further and become members
 of the clergy class as engineers.
+
 The life as member of the clergy class is usually quite
 comfortable, if demanding at the same time. Most of them can
 secure a comfortable home, rather comfortable lifestyle and
@@ -59,6 +62,7 @@ revered by most Kheiman people, which gives them both
 freedom and responsibilities. All of those in clergy are expected
 to do their work with exemplary skill, consideration and
 dignity.
+
 The priesthood regulates the science, research and teaching in
 Kheiman very carefully. All of the clergy are considered to
 work for the nation and the church at least to some extent, and
@@ -86,18 +90,3 @@ Suggested careers:
 Banker, Inventor, Journalist, Lawyer,
 Mechanic, Merchant, Officer, Physician, Politician, Scholar,
 Spy
-
-Typical names in Kheiman:
-As Kheiman classes aren’t divided solely based on family
-background, naming conventions between classes are mostly
-similar. Most names end in consonants. Many of the names are
-derived from religious bases; the suffix “es” means a follower
-of a deity. Male names include Aetes, Arumes, Canopus,
-Kafhutes, Hagiel, Nekhartemes, Sefkh, Sevekthat and
-Tiumautef. Female names include Bektehat, Hentateth, Ibynes,
-Neith, Omorosises (or Omoroses), Tibes, Teiharset and
-Sanbises. Combination names, like Neith-Ibynes, are also
-common. The surname is usually a patronym derived from the
-father’s name with the suffix “i”, e.g. Hagien Arumesi.
-Sometimes the city or region from which the person hails from
-is included in the name as well

@@ -51,26 +51,11 @@ namespace steamjazz
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times")]
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 
-        {
+        { 
+            groupBoxInit();
             backAttribute();
-            groupBox1.Visible = false;
-            radioButton1.Visible = true;
-            radioButton2.Visible = true;
-            radioButton3.Visible = true;
-            radioButton4.Visible = true;
-            radioButton5.Visible = true;
-            radioButton6.Visible = true;
-            radioButton7.Visible = true;
-            radioButton8.Visible = true;
-            groupBox2.Visible = false;
-            radioButton9.Visible = true;
-            radioButton10.Visible = true;
-            radioButton11.Visible = true;
-            radioButton12.Visible = true;
-            radioButton13.Visible = true;
-            radioButton14.Visible = true;
-            radioButton15.Visible = true;
-            radioButton16.Visible = true;
+           
+           
 
 
             
@@ -87,56 +72,39 @@ namespace steamjazz
             {// rodun infon näyttäminen, sekä rodullisten erikoistaustojen lisääminen taustalistoihin
                 case 0:
                     {
-                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands" };
+                        string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire" };
                         comboBox2.Items.AddRange(background);
                         break;
                     }
                 case 1:
                     {
-                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Dracosaurian" };
+                        string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Beastfolk" };
                         comboBox2.Items.AddRange(background);
-                        groupBox1.Visible = true;
-                        radioButton4.Visible = false;
-                        radioButton5.Visible = false;
-                        radioButton6.Visible = false;
-                        radioButton7.Visible = false;
-                        radioButton8.Visible = false;
+                        break;
+                    }
+                case 2:
+                    {
+                        string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Dracosaurian" };
+                        comboBox2.Items.AddRange(background);
                         break;
                     }
 
-                case 2:
-                    {
-                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Sylph" };
-                        comboBox2.Items.AddRange(background);
-                        break;
-                    }
                 case 3:
                     {
-                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Kharzul Dwarf" };
+                        string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Goliath" };
                         comboBox2.Items.AddRange(background);
                         break;
                     }
                 case 4:
                     {
-                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Beastfolk" };
+                        string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Kharzul Dwarf" };
                         comboBox2.Items.AddRange(background);
-
-                        groupBox2.Visible = true;
-                        radioButton13.Visible = false;
-                        radioButton15.Visible = false;
-                        radioButton16.Visible = false;
-                        groupBox1.Visible = true;
-                        radioButton5.Visible = false;
-                        radioButton7.Visible = false;
-                        radioButton8.Visible = false;
-
                         break;
                     }
                 case 5:
                     {
-                        string[] background = new string[] { "Victoria", "Wolfgart", "Kheiman Empire", "Hanseburg", "Crimson Empire", "Free Islands", "Goliath" };
+                        string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Sylph" };
                         comboBox2.Items.AddRange(background);
-
                         break;
                     }
                 case 6:
@@ -146,15 +114,8 @@ namespace steamjazz
                         break;
                     }
             }
-            var assembly = Assembly.GetExecutingAssembly();
-
-            var resourceName = Background.Race(comboBox1.SelectedIndex);
-            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-            using (StreamReader sr = new StreamReader(stream))
-            {
-                String line = sr.ReadToEnd();
-                richTextBox1.Text = line;
-            }
+            RichTextBoxTulostus(Background.Race(comboBox1.SelectedIndex));
+            
             
         }
         /// <summary>
@@ -171,7 +132,6 @@ namespace steamjazz
             string[] race = new string[]{eka,toka,kolme};
             comboBox3.Items.AddRange(race);
             comboBox3.Visible = true;
-            comboBox3.SelectedIndex = 0;
         }
 
 	/// <summary>
@@ -199,42 +159,36 @@ namespace steamjazz
                     {
                         //Victoria
                         combobox3init("Lower Class","Middle Class","Upper Class");
-                        
                         break;
                     }
                 case 1:
                     {
                         //Wolfgart
-                        combobox3init("Military","Worker","Upper Class");
-                        
+                        combobox3init("Worker", "Military", "Upper Class");
                         break;
                     }
                 case 2:
                     {
                         //Kheiman Empire                        
                         combobox3init("Worker","Warrior","Clergy");
-                       
                         break;
                     }
                 case 3:
                     {
                         //Hansenburg
                         combobox3init("Worker","Merchant","Noble");
-                        
                         break;
                     }
                 case 4:
                     {
                         //Crimson Empire
-                        combobox3init("Monk","Military","Commoner");
-                        
+                        combobox3init("Commoner", "Military", "Monk");
                         break;
                     }
                 case 5:
                     {
                         //Free Islands
-                        combobox3init("Pelethok","Pirate","Island Folk");
-                       
+                        combobox3init("Island Folk", "Pirate", "Pelethok");
                         break;
                     }
                
@@ -251,8 +205,8 @@ namespace steamjazz
         private void InitializeComboBox()
         {
             // Combobox1 info 
-            string[] race = new string[]{"Human","Dracosaurian","Sylph","Kharzul Dwarf"
-            ,"Beastfolk","Goliath","Automaton"};
+            string[] race = new string[]{"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph"
+            ,"Automaton"};
             comboBox1.Items.AddRange(race);
            
             string[] career = new string[] { "Aristocrat","Artist","Assassin","Banker","Butler","Con Artist","Craftsman","Detective","Druid",
@@ -346,108 +300,60 @@ namespace steamjazz
             backAttributeTake();
             switch(comboBox1.SelectedIndex)
             {
-                    
+                    //"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph" ,"Automaton"
                 case 0:
                     {      
-                        // Human
+                        //Human
                         break;
                     }
                 case 1:
                     {
-                        //Dracosaurian
+                        // Beastfolk
+                        attributeChange("emp", -1);
                         attributeChange("cha", -2);
-                        attributeChange("ref", 1);
+                        //allocate +2 to one of the following attributes: STR, CON, DEX, REF, WIT and +1 to another attribute from the list.
+                        groupBox2Visibility("str", "con", "dex", "ref", "wit");
                         break;
                     }
                 case 2:
                     {
-                        // Basic
-                        attributeChange("str", 1);
-                        attributeChange("con", 1);
-                        attributeChange("emp", -1);
+                        //Dracosaurian CHA -2, REF +1; allocate +1 to one of the following: STR, CON or DEX
+                        attributeChange("cha", -2);
+                        attributeChange("ref", 1);
+                        groupBox1Visibility("str", "con", "dex");
                         break;
-                    }
+                    } 
                 case 3:
                     {
-                        //Sylph
-                        attributeChange("str", -1);
-                        attributeChange("dex", 1);
+                        //Goliath STR +3, CON +3, REF -2, INT -2, WIT -2, CHA -2 Initial STR and CON must be at least 10.
+                        attributeChange("str", 3);
+                        attributeChange("con", 3);
+                        attributeChange("ref", -2);
+                        attributeChange("int", -2);
+                        attributeChange("wit", -2);
+                        attributeChange("cha", -2);
                         break;
-                    }
+                    } 
                 case 4:
                     {
-                        // Kharzul Dwarf
-                        attributeChange("cha", -2);
+                        //Kharzul Dwarf CON +2, CHA -2 Advantage: low light vision Advantage: mule Disadvantage: slow
                         attributeChange("con", 2);
+                        attributeChange("cha", -2);
                         break;
                     }
                 case 5:
                     {
-                        //Beatfolk
-                        attributeChange("emp", -1);
-                        attributeChange("cha", -2);
+                        // Sylph STR -1, DEX +1 Sylphs can jump twice as high and far as humans. Sylphs gain a +1 racial bonus to dodge and athletics. The dodge bonus counts as a rank in the dodge skill for increasing PDM. Disadvantage: Frail
+                        attributeChange("str", -1);
+                        attributeChange("dex", 1);
                         break;
                     }
+               
+                
+               
                 case 6:
                     {
-                        //Goliath
-                        attributeChange("str", 3);
-                        attributeChange("con", 3);
-                        attributeChange("dex", -2);
-                        attributeChange("ref", -2);
-                        attributeChange("int", -1);
-                        attributeChange("wit", -1);
-                        attributeChange("emp", -3);
-                        break;
-                    }
-                case 7:
-                    {
-                        //Buttler
-                        attributeChange("str", -1);
-                        attributeChange("con", -1);
-                        attributeChange("int", 1);
-                        attributeChange("cha", 1);
-                        attributeChange("emp", 1);
-                        break;
-                    }
-                case 8:
-                    {
-                        // Copper
-                        attributeChange("str", 2);
-                        attributeChange("con", 2);
-                        attributeChange("emp", -2);
-                        attributeChange("cha", -1);
-                        break;
-                    }
-                case 9:
-                    {
-                        // Craftsman
-                        attributeChange("str", 1);
-                        attributeChange("con", 1);
-                        attributeChange("dex", 1);
-                        attributeChange("emp", -1);
-                        attributeChange("cha", -1);
-                        break;
-                    }
-                case 10:
-                    {
-                        //Doll
-                        attributeChange("str", -1);
-                        attributeChange("con", -1);
-                        attributeChange("emp", 1);
-                        attributeChange("cha", 2);
-
-                        break;
-                    }
-                case 11:
-                    {
-                        //Heavy Worker
-                        attributeChange("str", 3);
-                        attributeChange("con", 3);
-                        attributeChange("dex", -2);
-                        attributeChange("ref", -2);
-                        attributeChange("emp", -3);
-                        attributeChange("cha", -1);
+                        //Automaton
                         break;
                     }
              
@@ -3195,12 +3101,199 @@ namespace steamjazz
                     }
             }
         }
+        private void groupBoxInit()
+        {
+            groupBox2.Visible = false;
+            groupBox1.Visible = false;
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton10.Visible = false;
+            radioButton11.Visible = false;
+            radioButton12.Visible = false;
+            radioButton13.Visible = false;
+            radioButton14.Visible = false;
+            radioButton15.Visible = false;
+            radioButton16.Visible = false;
+        }
+        /// <summary>
+        /// muttaa halutun radiobuttonin näkyvyyden todeksi
+        /// </summary>
+        /// <param name="att"></param>
+        /// attribuutin kolmikirjaiminen lyhenne
+        /// <param name="x"></param>
+        /// 1 tai 2 riippuen kumman groupBoxin radiobutton on kyseessä
+        /// 
+        private void attributeVisibility(string att, int x)
+        {
+            
+            if (x==1)
+            {
+                groupBox1.Visible = true;
+                switch (att)
+                {
+                    case "str":
+                        {
+                            radioButton1.Visible = true;
+                            break;
+                        }
+                    case "con":
+                        {
+                            radioButton2.Visible = true;
+                            break;
+                        }
+                    case "dex":
+                        {
+                            radioButton3.Visible = true;
+                            break;
+                        }
+                    case "ref":
+                        {
+                            radioButton4.Visible = true;
+                            break;
+                        }
+                    case "int":
+                        {
+                            radioButton5.Visible = true;
+                            break;
+                        }
+                    case "wit":
+                        {
+                            radioButton6.Visible = true;
+                            break;
+                        }
+                    case "cha":
+                        {
+                            radioButton7.Visible = true;
+                            break;
+                        }
+                    case "emp":
+                        {
+                            radioButton8.Visible = true;
+                            break;
+                        }
+                } 
+            }
+            if (x == 2)
+            {
+                groupBox2.Visible = true;
+                switch (att)
+                {
+                    case "str":
+                        {
+                            radioButton9.Visible = true;
+                            break;
+                        }
+                    case "con":
+                        {
+                            radioButton10.Visible = true;
+                            break;
+                        }
+                    case "dex":
+                        {
+                            radioButton11.Visible = true;
+                            break;
+                        }
+                    case "ref":
+                        {
+                            radioButton12.Visible = true;
+                            break;
+                        }
+                    case "int":
+                        {
+                            radioButton13.Visible = true;
+                            break;
+                        }
+                    case "wit":
+                        {
+                            radioButton14.Visible = true;
+                            break;
+                        }
+                    case "cha":
+                        {
+                            radioButton15.Visible = true;
+                            break;
+                        }
+                    case "emp":
+                        {
+                            radioButton16.Visible = true;
+                            break;
+                        }
+                }
+            }
+        }
       
-
-       
-
+        private void groupBox1Visibility(string att1)
+      
+        {
+            
+            attributeVisibility(att1, 1);
+        }
         
-    
+        private void groupBox1Visibility(string att1, string att2)
+        {
+            attributeVisibility(att1, 1);
+            attributeVisibility(att2, 1);
+        }
+        private void groupBox1Visibility(string att1, string att2, string att3)
+        {
+            attributeVisibility(att1, 1);
+            attributeVisibility(att2, 1);
+            attributeVisibility(att3, 1);
+        }
+        private void groupBox1Visibility(string att1, string att2, string att3, string att4)
+        {
+            attributeVisibility(att1, 1);
+            attributeVisibility(att2, 1);
+            attributeVisibility(att3, 1);
+            attributeVisibility(att4, 1);
+        }
+        private void groupBox1Visibility(string att1, string att2, string att3, string att4, string att5)
+        {
+            attributeVisibility(att1, 1);
+            attributeVisibility(att2, 1);
+            attributeVisibility(att3, 1);
+            attributeVisibility(att4, 1);
+            attributeVisibility(att5, 1);
+        }
+
+        private void groupBox2Visibility(string att1)
+        {
+            attributeVisibility(att1, 2);
+        }
+
+        private void groupBox2Visibility(string att1, string att2)
+        {
+            attributeVisibility(att1, 2);
+            attributeVisibility(att2, 2);
+        }
+        private void groupBox2Visibility(string att1, string att2, string att3)
+        {
+            attributeVisibility(att1, 2);
+            attributeVisibility(att2, 2);
+            attributeVisibility(att3, 2);
+        }
+        private void groupBox2Visibility(string att1, string att2, string att3, string att4)
+        {
+            attributeVisibility(att1, 2);
+            attributeVisibility(att2, 2);
+            attributeVisibility(att3, 2);
+            attributeVisibility(att4, 2);
+        }
+        private void groupBox2Visibility(string att1, string att2, string att3, string att4, string att5)
+        {
+            attributeVisibility(att1, 2);
+            attributeVisibility(att2, 2);
+            attributeVisibility(att3, 2);
+            attributeVisibility(att4, 2);
+            attributeVisibility(att5, 2);
+        }
     }
 }
  

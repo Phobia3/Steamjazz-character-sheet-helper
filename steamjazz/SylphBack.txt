@@ -1,17 +1,17 @@
-REF +1
-Initial skill ranks: Athletics 2, Climb 1, Survival 1
+REF, WIT or EMP +1
+Initial skill ranks: Athletics 2, Animal Handling 1, Survival 1
 15 CP can be used to buy ranks in the following skills: Animal
-Handling, Archery, Athletics, Brawl, Climb, Listen, Melee
-(Balanced), Perform (Singing), Sense Motive, Spot, Survival,
-Stealth, Throw or to the Acute Sense of Direction and Animal
-Empathy advantages.
-
+Handling, Archery, Athletics, Brawl, Listen, Melee (Balanced),
+Perform (Singing), Sense Motive, Spot, Survival, Stealth,
+Throw or to the Acute Sense of Direction and Animal Empathy
+advantages.
 
 On the slopes of the tallest of the northern mountains of
 Crimson Empire live the secluded Sylphs, whose culture can be
 traced back centuries. Sylphs have a unique rapport with the
 nature surrounding them. Sylphs live as hunter-gatherers or
 raising herds of goats or flocks of local birds, usually geese.
+
 Some Sylphs have the ability to communicate with avians, so
 they do not keep the birds caged, but live side by side with
 them, and the avians follow the village they are bound to.
@@ -23,6 +23,7 @@ Philosophy, but with an added emphasis on the importance of
 nature as part of the philosophy, and they see themselves as
 spiritually connected to the animals, plants and the rock of the
 mountains themselves.
+
 Sylphs call the small nomadic groups they live in ‘villages’.
 One village usually consists of around two dozen adult Sylphs,
 their children and their herds. A village usually stops in one
@@ -36,9 +37,11 @@ environment of their homelands, Sylphs learn to be sure footed
 and agile from a very young age. They have developed both the
 optimal physiology and the skills necessary to climb the
 mountain sides as easily as the goats they herd.
+
 Although most people would consider the Sylph way of living
 quite primitive, Sylphs do have their own higher culture too.
-Writing is always taught to new generations by older Sylphs. Asthe villages are constantly on the move and the distances
+Writing is always taught to new generations by older Sylphs. As
+the villages are constantly on the move and the distances
 between them are long, it is important to be able to leave
 written messages behind or let carrier birds take them to other
 villages. This tradition is seen as supporting the theory that
@@ -46,6 +49,7 @@ Sylphs have mutated from the people of Crimson Empire in
 ancient times. Sylphs are renowned for their beautiful singing
 voices, and sometimes travelers in the mountains can hear
 haunting echoes of the travel songs sung by the Sylph villagers.
+
 Song is part of the normal daily duties, long travels, as well as
 philosophical and spiritual growth in Sylph culture.
 Sylphs have ritual places where several villages gather in
@@ -60,6 +64,7 @@ copper-breasted swallow to the mountains in the summer and
 the first snow in the lower slopes of the mountains in the
 winter. These occasions are usually celebrated together with the
 closest villages.
+
 Sylphs get everything they need from the animals they hunt and
 herd and from the mountains around them, and are able to find
 some use for everything they find. They dress in animal skins
@@ -81,17 +86,17 @@ Dragon Port has opened its gates to the outside world, some
 Sylphs have even left to see the brave new world and seek their
 fortunes there.
 
-Suggested careers: Artist, Assassin, Craftsman, Druid, Hunter,
+Suggested careers: 
+Artist, Assassin, Craftsman, Druid, Hunter,
 Martial Artist, Rogue, Scout, Spy, Warrior
 
-Typical names: Sylph names are a peculiar mixture of names
+Typical names: 
+Sylph names are a peculiar mixture of names
 used in the Crimson Empire and names derived from nature.
-Sylph names usually end in a vowel. 
-Typical female names are Birche, Changyi, Chionodi, Flora,
-Lanfei, Luli and Qiuyue.
+Sylph names usually end in a vowel. Typical female names are
+Birche, Changyi, Chionodi, Flora, Lanfei, Luli and Qiuyue.
 Typical male names include Aconi, Bohai, Lei, Monti, Shany,
-Shilaji and Tengfei.
-Sylph surname is derived from the name of
+Shilaji and Tengfei. Sylph surname is derived from the name of
 their village. Villages are usually named after animals or other
 creations of nature, e.g. Village of Hawk, Leopard, Goat or
 Juniper.

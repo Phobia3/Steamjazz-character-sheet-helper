@@ -1,13 +1,63 @@
-﻿WIT +1
-Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1
+﻿DEX, INT or WIT +1
+Initial skill ranks: Appraise 2, Persuade 1, Negotiate 1
 15 CP can be used to buy ranks in the following skills:
-Appraise, Bargain, Bluff, Brawl, Craft (any), Cooking,
-Diplomacy, Etiquette, Handguns, Intimidate, Martial Arts
-(Victoran Pugilism), Mechanics, Perform (dancing), Persuade,
-Profession (any), Ride.
+Appraise, Bluff, Brawl, Craft (any), Cooking, Negotiate,
+Etiquette, Handguns, Intimidate, Martial Arts (Victoran
+Pugilism), Mechanics, Perform (dancing), Persuade, Profession
+(any), Ride.
 
+The Victoran middle class lead more prosperous lives than the
+lower class, but lack the status of the upper class. So, as the
+upper class still looks down on them as commoners, the lower
+class counts them as the same oppressors as the upper class but
+often a safer target for venting their anger than the nobility. On
+the other hand, both sides recognise the middle class as a vital
+part of society.
 
-Adventuring as Middle Class Victoran: 
+The Victoran middle class includes people of many trades:
+merchants, small landowners, scholars, well faring craftsmen,
+butlers and artists, to name but a few. There is one thing in
+common for the middle class: they strive for higher status, more
+wealth, more customers, more fame. Most middle class people
+are born to middle class families, the children of merchant and
+craftsman families, or the families of minor landlords. Some
+have fought their way up from the lower class by their wits and
+skill to establish a successful trade or profession. And there are
+some who have once tasted the bitter sweet fruit of being a
+member of the upper class but then fallen from grace to face
+life in the middle class, such as a successful businessman who
+has lost his fortune due to failed business ventures or an
+unlucky accident and has to start all over again. It is rare for
+those born into actual nobility to lose their status, but it is not
+unheard of.
+
+Many middle class people are quite content with the life they
+lead. They are able to take care of their families, usually men
+doing their daily work, and women looking after children and
+taking care of their home. Most have a small house or even a
+small farm of their own, and many also have a business to run.
+Middle class children receive education in the common, larger
+private schools, and some even have a governess to teach them
+at home. Most middle class children receive at least 4 to 5 years
+of education before becoming apprentices to learn a trade of
+their own. Some even get the opportunity to study at the
+university and become teachers, doctors, scientists and
+specialists of different areas.
+
+On the other hand, living in the middle class has challenges of
+its own. The middle class is often subject to heavy taxation.
+Many middle class Victorans are constantly struggling to
+maintain their comfortable lifestyle and not plunge into the
+poverty of the lower class. For others, the challenge lies in
+trying to reach forward and become one of the upper class
+themselves. Although at first glance it would seem that the
+middle class people in Victora have an abundance of
+opportunities, only a few actually possess what it takes to
+continue reaching for improvement. Before long most middle
+class people simply settle for the routine of doing their job and
+for being happy to have sufficient food and shelter every day.
+
+Adventuring as Middle Class Victoran:
 Many reasons could encourage a middle class Victoran to start
 a career as an adventurer. She could see it as an opportunity to
 earn a large amount of wealth quickly in order to improve her
@@ -18,11 +68,9 @@ it for hate. Some are driven by betrayal, oath or wager, and
 some do it just to experience something new and maybe have
 some fun in the meantime.
 
-
-Suggested careers:Artist, Banker, Butler, Craftsman,
+Suggested careers: Artist, Banker, Butler, Craftsman,
 Detective, Inventor, Journalist, Law Enforcer, Mechanic,
 Merchant, Scholar, Spy, Wyrodian Priest
-
 
 Typical names:
 The Victoran middle class people have a wide variety of names,
@@ -35,4 +83,4 @@ are usually carried by the families over generations and often
 refer to the business or craft of the family or the place from
 which they originate, such as Allclock, Blackwood, Taylor and
 Wright. Patronymics (although usually from an ancestor from
-several generations ago), such as Stevenson, are also common.
+several generations ago), such as Stevenson, are also common.

@@ -1,0 +1,69 @@
+Automatons in SteamJazz are divided into two distinct groups.
+Some automatons are so simple that sorting boxes into piles
+causes them difficulty, whereas other automatons have no
+trouble making independent decisions while adventuring, What
+makes these two groups apart is the CIC, or the Crystal
+Intelligence Clockwork. A CIC is a small intelligence
+clockwork mechanism designed to be added into any kind of
+automaton for greater intelligence and more independent action.
+It is possible for any kind of automaton to have a CIC - and
+because the device is relatively inexpensive, installing that
+extra intelligence even to automatons designed for manual
+labour is a small investment for much greater potential.
+
+Although it is common knowledge that the CIC enhances the
+intelligence and decision-making capabilities of automatons,
+what isn’t known is that the CIC also gives the automaton
+emotions and feelings. All player character automatons are
+equipped with a Crystal Intelligence Clockwork. Some
+automatons with a CIC are content with their lives as machines
+in the service of humans, but some have developed a desire for
+independence, which has led to some rogue automatons running
+away from their masters. Some automatons have great difficulty
+understanding the meaning of their emotions, which causes
+them some existential headache, but the greatest trouble finding
+their place in the world is suffered by those automatons who are
+genuinely beginning to understand what it means to have
+emotions and a free will.
+
+All automatons have some common traits. As automatons are
+machines, built by humans, they are treated accordingly.
+Humans do not see automatons as persons, but as someone’s
+property. Therefore automatons usually do not have any
+possessions. Automatons don’t breathe, eat or drink. They are
+immune to diseases and poisons. They do not tire like living
+beings. Automatons calculate their carrying limits from STR
+only. An automaton character’s CON stat affects only its Hit
+Points; an automaton has 3x CON Hit Points. An automaton’s
+STR and CON scores are strongly linked: all automatons must
+have their initial STR and CON at the same value. Additional
+modifiers from background, modifications or equipment may
+increase either attribute above the other.
+
+All automatons (except dolls and coppers) have a thin layer of
+armor for protection offering 2 AV as part of their standard
+design. The armour can be upgraded to a heavier version or
+removed altogether to be replaced with rubbery skin-like tissue.
+All standard automatons run on powerful winding springs in
+their torsos. They are recharged with a winding mechanism
+located in the back. The winding mechanism is usually operated
+with a separate steam engine. The basic winding spring can
+power an automaton for 24 hours with full winding. After that
+the automaton can act on spare power for the next 24 hours, but
+suffers a -4 penalty to all checks and can only walk half speed
+until wound again. The winding spring can be replaced with a
+back-mounted steam engine. 
+
+All automatons also have the considered property disadvantage. 
+Its cost is already included in the automaton race package, 
+so you do not get extra points for selecting it. 
+This disadvantage may never be removed.
+
+Automatons may not have a greater wealth level than drifter at
+character creation. Automatons may choose certain advantages
+and disadvantages available only for automatons, but cannot
+choose any advantages that are labelled for “living” but not for
+“automaton”. Automatons can be upgraded with Automaton
+Upgrades, which can be found in the Equipment chapter.
+Money for these upgrades can be acquired during character
+creation with the upgraded automaton advantage.

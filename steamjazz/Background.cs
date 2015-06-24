@@ -19,68 +19,89 @@ namespace steamjazz
         {
             if(Box1SelectedIndex==0)
             {
-                return "steamjazz.Human.txt";
+                return "Steamjazz.Human.txt";
             }
             if (Box1SelectedIndex == 1)
             {
-                return "steamjazz.Dracosaurian.txt";
+                return "Steamjazz.Dracosaurian.txt";
             }
             if (Box1SelectedIndex == 2)
             {
-                return "steamjazz.Sylph.txt";
+                return "Steamjazz.Sylph.txt";
             }
             if (Box1SelectedIndex == 3)
             {
-                return "steamjazz.KharzulDwarf.txt";
+                return "Steamjazz.KharzulDwarf.txt";
             }
             if (Box1SelectedIndex == 4)
             {
-                return "steamjazz.Beastfolk.txt";
+                return "Steamjazz.beastfolk.txt";
             }
             if (Box1SelectedIndex == 5)
             {
-                return "steamjazz.Goliath.txt";
+                return "Steamjazz.Goliath.txt";
             }
             if (Box1SelectedIndex == 6)
             {
-                return "steamjazz.Automaton.txt";
+                return "Steamjazz.Automaton.txt";
             }
             
             return "-1";
         }
         public string Nationality(int Box2SelectedIndex, int Box1SelectedIndex)
         {
-            if (Box2SelectedIndex==6)
+            if (Box1SelectedIndex != 6)
             {
-                switch(Box1SelectedIndex)
+
+                if (Box2SelectedIndex == 6)
                 {
-                    case 1:
-                        {
+                    switch (Box1SelectedIndex)
+                    {
+                        case 1:
+                            {
+                                return "Steamjazz.BeastfolkBack.txt";
+                            }
+                        case 2:
+                            {
 
-                            return "steamjazz.DracosaurianBack.txt";
-                        }
+                                return "Steamjazz.DracosaurianBack.txt";
+                            }
+                        case 3:
+                            {
+
+                                return "Steamjazz.GoliathBack.txt";
+                            }
+                        case 4:
+                            {
+
+                                return "Steamjazz.KharzulDwarfBack.txt";
+                            }
+                        case 5:
+                            {
+
+                                return "Steamjazz.SylphBack.txt";
+                            }
+                    }
+
+                }
+                //"Victoria", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", muties
+                switch(Box2SelectedIndex)
+                {
+                    case 0:
+                        return "Steamjazz.Victora.txt";
+                    case 1 :
+                        return "Steamjazz.Wolfgart.txt";
                     case 2:
-                        {
-
-                            return "steamjazz.SylphBack.txt";
-                        }
+                        return "Steamjazz.Hanseburg.txt";
                     case 3:
-                        {
-
-                            return "steamjazz.KharzulDwarfBack.txt";
-                        }
+                        return "Steamjazz.FreeIsland.txt";
                     case 4:
-                        {
-
-                            return "steamjazz.BeastfolkBack.txt";
-                        }
+                        return "Steamjazz.Kheiman.txt";
                     case 5:
-                        {
-
-                            return "steamjazz.GoliathBack.txt";
-                        }
+                        return "Steamjazz.Crimson.txt";
                 }
             }
+            
             return "-1";
         }
         /// <summary>
@@ -100,36 +121,37 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     //low class
-                    return "steamjazz.VictoranLow.txt";
+                    return "Steamjazz.VictoranLow.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //middle clas
-                    return "steamjazz.VictoranMiddle.txt";
+                    return "Steamjazz.VictoranMiddle.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     // upper class
-                    return "steamjazz.VictoraUpper.txt";
+                    return "Steamjazz.VictoraUpper.txt";
                 }
                 return "-1";
             }
             if (Box2SelectedIndex==1)
             {
-                // wolfgart
                 if (Box3SelectedIndex==0)
                 {
-                    return "steamjazz.WolfgartMilitary.txt";
+                    //worker
+                    return "Steamjazz.WolfgartWorker.txt";
                 }
+                // wolfgart
                 if (Box3SelectedIndex==1)
                 {
-                    //worker
-                    return "steamjazz.WolfgartWorker.txt";
+                    return "Steamjazz.WolfgartMilitary.txt";
                 }
+                
                 if (Box3SelectedIndex==2)
                 {
                     // upper class
-                    return "steamjazz.WolfgartUpper.txt";
+                    return "Steamjazz.WolfgartUpper.txt";
                 }
                 return "-1";
             }
@@ -139,17 +161,17 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     // Worker
-                    return "steamjazz.KheimanWorker.txt";
+                    return "Steamjazz.KheimanWorker.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //warior
-                    return "steamjazz.KheimanWarior.txt";
+                    return "Steamjazz.KheimanWarior.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     //clergy
-                    return "steamjazz.KheimanClergy.txt";
+                    return "Steamjazz.KheimanClergy.txt";
                 }
                 return "-1";
             }
@@ -159,17 +181,17 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     //Worker
-                    return "steamjazz.HanseburgWorker.txt";
+                    return "Steamjazz.HanseburgWorker.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //merchant
-                    return "steamjazz.HanseburgMerchant.txt";
+                    return "Steamjazz.HanseburgMerchant.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     //noble
-                    return "steamjazz.HanseburgNoble.txt";
+                    return "Steamjazz.HanseburgNoble.txt";
                 }
                 return "-1";
             }
@@ -179,42 +201,45 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     //Monk
-                    return "steamjazz.CrimsonCommoner.txt";
+                    return "Steamjazz.CrimsonCommoner.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //military
-                    return "steamjazz.CrimsonMilitary.txt";
+                    return "Steamjazz.CrimsonMilitary.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     //commoner
-                    return "steamjazz.CrimsonMonk.txt";
+                    return "Steamjazz.CrimsonMonk.txt";
                 }
                 return "-1";
             }
             if (Box2SelectedIndex==5)
             {
-                //free islands
-                if (Box3SelectedIndex==0)
+                if (Box3SelectedIndex==1)
                 {
-                    //Pelethok
-                    return "steamjazz.FreePelethok.txt";
+                    //island folk
+                    return "Steamjazz.FreeIslandFolk.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //pirate
-                    return "steamjazz.FreePirate.txt";
+                    return "Steamjazz.FreePirate.txt";
                 }
+                //free islands
                 if (Box3SelectedIndex==2)
                 {
-                    //island folk
-                    return "steamjazz.FreeIslandFolk.txt";
+                    //Pelethok
+                    return "Steamjazz.FreePelethok.txt";
                 }
+                
+                
                 return "-1";
             }
             return "-1";
         }
+
     }
 }
 

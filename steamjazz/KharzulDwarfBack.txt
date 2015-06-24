@@ -1,16 +1,15 @@
-INT +1
+STR or INT +1
 Initial skill ranks: Profession: Mining 2, Craft (any) 1, Craft
 (Blacksmithing or Gunsmithing) 1
-10 CP can be used to buy ranks in the following skills: Bargain,
-Brawl, Climb, Clockwork, Cooking, Craft (any), Drive,
-Explosives & Demolitions, Intimidate, Locksmithing, Long
-guns, Martial Art (Wolfbite), Melee (Balanced), Melee
-(Powerful), Mechanics, Profession (Mining), Steam
-Engineering
-
+10 CP can be used to buy ranks in the following skills: Brawl,
+Clockwork, Cooking, Craft (any), Drive, Explosives &
+Demolitions, Intimidate, Locksmithing, Long guns, Martial Art
+(Wolfbite), Melee (Balanced), Melee (Powerful), Mechanics,
+Persuade, Profession (Mining), Steam Engineering
 
 Kharzul Dwarves must also choose one of the Wulffgart
 Military Service background options.
+
 The Kharzul Dwarves originate from the mining town of
 Kharzul in Wulffgart. Unlike most mutants, they are generally
 accepted as members of Wulffgartian society, as the nation’s
@@ -18,6 +17,7 @@ war industry is dependent on the minerals and inventions
 produced in the town of Kharzul. Some of the best military
 mechanics come from Kharzul, and the Dwarves are reputed to
 have created the finest weapons and warmachines in Wulffgart.
+
 Life in Kharzul is somewhat secluded. Although the town is
 open for trade and traffic, no visitor ever stays long, in fear of
 contracting whatever causes the mutation. Many Kharzul
@@ -28,6 +28,7 @@ though, as long as the equipment and materials they require are
 brought to the town and they can sell and deliver their products
 to the buyers. Perhaps unsurprisingly, their most important
 customer is the Wulffgart army.
+
 Kharzul Dwarves who are born in the town learn much about
 mining and weapons crafting at an early age simply by
 following the everyday life around them. There are many
@@ -35,6 +36,7 @@ possibilities for apprenticeship in the mining, gunsmithing and
 steam crafting industries. Kharzul Dwarves also love good food
 and strong brews, and both their brewery products and their
 appetite for them enjoy worldwide fame.
+
 Because Kharzul is part of Wulffgart, the Dwarves must serve
 in the Wulffgartian military. Choose one of the Wulffgart
 Military Service options explained in the Wulffgart
@@ -51,10 +53,12 @@ uncommon these days to see rather many Kharzul Dwarves
 travelling with mercenary parties, working as craftsmen and
 engineers abroad or serving as escorts to merchants.
 
-Suggested careers: Banker, Craftsman, Gunner, Inventor,
+Suggested careers: 
+Banker, Craftsman, Gunner, Inventor,
 Journalist, Law Enforcer, Mechanic, Mercenary, Merchant,
 Officer, Politician, Ranger, Soldier
 
-Typical names: Kharzul Dwarf names are usually similar to
+Typical names: 
+Kharzul Dwarf names are usually similar to
 Wulffgartians, but sometimes resemble Hanseburgian or
-northern Victoran names. See those backgrounds for reference.
+northern Victoran names. See those backgrounds for reference.
