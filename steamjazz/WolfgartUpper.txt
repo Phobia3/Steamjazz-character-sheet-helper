@@ -1,11 +1,12 @@
-﻿INT or CHA +1
-Initial skill ranks: Etiquette 2, Negotiate 1, Language:
-Wulffgartian 1
+﻿CHA +1
+Initial skill ranks: 
+Etiquette 2, Diplomacy 1, Language:Wulffgartian 1
 10 CP can be used to buy ranks in the following skills: Charm,
-Negotiate, Etiquette, Intimidate, Language (Wulffgartian), Law
-(Wulffgart), Long Guns, Perform (Dancing), Perform (Oratory),
-Ride, or to improve the Starting wealth level or to purchase the
-Noble, Wulffgartian advantage.
+Diplomacy, Etiquette, Intimidate, Language (Wulffgartian), 
+Law (Wulffgart), Long Guns, Perform (Dancing), Perform
+(Oratory), Ride, or to improve the
+Starting wealth level or to purchase the Noble, Wulffgartian
+advantage.
 
 Members of the Wulffgartian upper class used to be the leaders
 of their nation and those who were respected by everyone. After
@@ -17,7 +18,6 @@ mostly their fancy titles, now without the influence and
 authority they used to bring, as well as what little land and
 property the military allowed them to retain. Many even lost
 their family manors.
-
 Not everyone from the upper class accepted this. Those who
 refused to recognise the new ruler or surrender most of their
 property to the army were either killed or jailed, unless they
@@ -70,4 +70,4 @@ Konstantin, Leonid, Nikolaus, Siegfried, Stanislav and
 Wolfgang and female first names Anastasia, Bertilda, Gerlinde,
 Yekaterina, Margareta and Yelena. Typical Wulffgartian upper
 class surnames include Ivanov, Diefenback, Kirchner and
-Vasilyev.
+Vasilyev.

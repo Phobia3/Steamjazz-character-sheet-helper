@@ -7,6 +7,7 @@ All mutants have the social status: mutie disadvantage and
 must purchase a mutant disadvantage worth at least 3 CP to
 represent that no mutant is born perfect.
 
+
 These short and stout people originate from the northern
 mountains of Wulffgart. They are the descendants of people
 who lived in an old mining town of Kharzul. Almost 200 years
@@ -23,4 +24,4 @@ also causes bad bite, which causes headache. They are usually
 skilled in mechanics, and some of the most famous master
 smiths come from amongst them. Kharzul Dwarves and
 humans can reproduce, but their children are always born with
-the Kharzul Dwarves mutation.
+the Kharzul Dwarves mutation.

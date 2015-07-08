@@ -24,14 +24,16 @@ during combat.
 All mutants have the social status: mutie disadvantage and
 must purchase a mutant disadvantage worth at least 3 CP to
 represent that no mutant is born perfect.
+
+
 Beastfolk are a group of people living in the Shadewood Forest
 deep in Victora. It is not known how long these mutants have
 existed, but stories of beastly humanoids in Victoran folklore
 have been told for hundreds of years. As far as it is known, all
 of the beastfolk originate from these woods where some plants
 and mammals specific to that area exist. There is a village near
-the Shadewood forest where people occasionally contract a deadly 
-disease that causes horrible tumors, and sometimes
+the Shadewood forest where people occasionally contract a
+deadly disease that causes horrible tumors, and sometimes
 babies start turning into beasts during the first months of their
 lives. The villagers have an old tradition of taking these babies
 to a forest shrine to calm the spirits of the forest. The beastfolk
@@ -56,4 +58,4 @@ common. Beastfolk traditionally live in small groups of
 wandering hunter-gatherers in their woods, but nowadays some
 of them have left their tribe and traveled to see the world.
 Beastfolk can reproduce with humans, and around half of the
-time their children are born with beastfolk features.
+time their children are born with beastfolk features.

@@ -1,10 +1,11 @@
-Any attribute +1
-Initial skill ranks: Athletics 1, Negotiate 1, Persuade 1, Sailing
-1, Sense Motive 1
+CON, REF, WIT or EMP +1
+Initial skill ranks: Bargain 1, Diplomacy 1, Sailing 1, Sense
+Motive 1, Swim 1
 15 CP can be used to buy ranks in the following skills:
-Appraise, Athletics, Bluff, Brawl, Craft (any), Navigation,
-Melee (any), Negotiate, Perform (Dancing), Persuade, Sailing,
-Sailing (Airship), Sense Motive, Spot, Survival.
+Appraise, Bargain, Bluff, Brawl, Craft (any), Diplomacy,
+Navigation, Melee (any), Perform (Dancing), Sailing, Sailing
+(Airship), Sense Motive, Spot, Survival, Swim.
+
 
 The Free Islands consists of a large group of islands, and each
 island has its own traditions and customs. The Free Islands is a
@@ -12,7 +13,6 @@ rather young nation, and the only democratic one in Erthair.
 Many things, like the education system, are still under
 development, and this is a time of constant change on the Free
 Islands. Many see it as change towards a better future.
-
 The Free Islands has abolished the traditional class system, and
 in theory, everyone is granted equal opportunity to affect their
 own fates. Unfortunately, reality is often not quite as rosy, as
@@ -27,7 +27,6 @@ everyone is expected to make their own fame and fortune in the
 Free Islands, and only those with the strength of character and
 the will to work in order to reach their goals can truly achieve
 success.
-
 The Free Islands is a melting pot of people from every corner of
 Erthair and as such, there is no uniform appearance to the
 Island Folk. Only Crimson people are rare. Mutants also are
@@ -57,16 +56,14 @@ ever before. In the and of freedom and opportunity, adventuring
 could be considered the highest calling for finding one’s
 fortune.
 
-Suggested careers: 
-Artist, Assassin, Con Artist. Craftsman,
+Suggested careers: Artist, Assassin, Con Artist. Craftsman,
 Entertainer, Gunner, Hunter, Mechanic, Mercenary, Merchant,
 Officer, Politician, Rogue, Sailor, Scout, Spy, Warrior
 
-Typical names: 
-The northmost islands’ inhabitants have names
+Typical names: The northmost islands’ inhabitants have names
 similar names to Wulffgartians and Victoran people. The
 southern islands’ inhabitants have similar names to Kheiman
 people or names specific to the Island Folk. Examples of the
 southern islands men’s names are Cedro, Holokai, Jose, Kahuna
 and Tua. Female names include Delfia, Luana, Shalonna, Takira
-and Yali.
+and Yali.

@@ -1,5 +1,6 @@
-﻿STR, DEX or WIT +1
-Initial skill ranks: Melee (Powerful) 2, Knowledge (Kheiman
+﻿STR +1
+Initial skill ranks: 
+Melee (Powerful) 2, Knowledge (Kheiman
 religion) 1, Martial Arts (Kheiman spear) 1
 15 CP can be used to buy ranks in the following skills:
 Athletics, Block, Brawl, Craft (Blacksmithing), Gunsmithing,
@@ -7,12 +8,12 @@ Law (Kheiman), Leadership, Listen, Long Guns, Martial Arts
 (Kheiman spear), Ride, Spot, Survival, Throw, Melee
 (Powerful).
 
+
 The people chosen for warrior class are those whose physical
 abilities, courage and ability to follow orders stood out during
 childhood. The training of warriors is tough, and after basic
 training they receive specialised training for a variety of duties
 in the army and the guard.
-
 Due to the emphasis on physical abilities, most of Kheiman
 warriors are men, but female warriors are not unheard of.
 Warriors are usually trained in groups, and they receive training
@@ -22,7 +23,6 @@ training. Also, depending of their position and rank, some
 warriors receive training in mechanical skills or additional
 training in leadership skills, and some of them are highly
 trained in social skills.
-
 Kheiman didn’t take an active part in the 80 Year War, but they
 still maintain a large army and guard force. The army responds
 directly to the church, and only the highest priests have more
@@ -33,7 +33,6 @@ Guardians of the Law, who are subordinate to the church and
 acts as the police force of Kheiman, and private guard forces
 who serve as protectors and bodyguards of people in high
 positions, mostly rich clergymen.
-
 The life of an average Kheiman warrior is secure with enough
 pay to have a comfortable home, enough food and minor
 luxuries. Some of the personal guards of rich, high ranking
@@ -63,3 +62,18 @@ Suggested careers:
 Assassin, Detective, Gunner, Hunter, Law
 Enforcer, Martial Artist, Mechanic, Mercenary, Officer, Ranger,
 Scout, Soldier, Spy
+
+Typical names in Kheiman:
+As Kheiman classes aren’t divided solely based on family
+background, naming conventions between classes are mostly
+similar. Most names end in consonants. Many of the names are
+derived from religious bases; the suffix “es” means a follower
+of a deity. Male names include Aetes, Arumes, Canopus,
+Kafhutes, Hagiel, Nekhartemes, Sefkh, Sevekthat and
+Tiumautef. Female names include Bektehat, Hentateth, Ibynes,
+Neith, Omorosises (or Omoroses), Tibes, Teiharset and
+Sanbises. Combination names, like Neith-Ibynes, are also
+common. The surname is usually a patronym derived from the
+father’s name with the suffix “i”, e.g. Hagien Arumesi.
+Sometimes the city or region from which the person hails from
+is included in the name as well

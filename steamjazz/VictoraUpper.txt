@@ -1,74 +1,18 @@
 ﻿Cost to play: 10CP
-INT or CHA +1
-Initial skill ranks: Etiquette 3, Negotiate 2, Language: Victoran
-1
+CHA +1
+Initial skill ranks: Etiquette 3, Diplomacy 2, Language: Victoran 1
 The Starting wealth level of Victoran upper class characters
 must be Drifter or higher. The 5 CP cost of Drifter has already
 been calculated into the Background cost and can be further
 increased with CP during character creation.
-15 CP can be used to buy ranks in the following skills: Art
-(any), Charm, Negotiate, Etiquette, Knowledge: Heraldry,
+15 CP can be used to buy ranks in the following skills: 
+Art (any), Charm, Diplomacy, Etiquette, Knowledge: Heraldry,
 Language (Victoran), Long Guns, Martial Arts (Fencing),
 Melee (Finesse), Melee (Balanced), Perform (Dancing),
-Perform (Oratory), Ride, or to improve the Starting wealth level
-by 10 CP or to purchase the Noble, Victoran advantage.
+Perform (Oratory), Ride, or to improve the
+Starting wealth level by 10 CP or to purchase the
+Noble, Victoran advantage
 
-The upper class of Victora rules the nation. Even if they are few
-in numbers, they wield all the power in Victora - or at least they
-used to. As times are changing, the Victoran upper class has
-been facing more and more threats and challenges to their
-supremacy.
-
-The Victoran nobility has been the core of the Victoran upper
-class for ages. Many of them have impressive family trees, lots
-of influence and immense wealth. They spend their lives in
-opulence, trying to impress their peers in a myriad of events,
-ceremonies and celebrations, while their servants and workers
-take care of the more trivial things of life such as housekeeping,
-cooking etc. Their life is one of glamour, politics and
-diplomacy. On the other hand their lives are regulated by the
-rules of etiquette as well as the history and reputation of their
-families.
-
-The Victoran upper class has recently experienced major
-changes. The rise of industrialism has made it possible to
-accumulate wealth and power independent of the whims of
-nobility, and so major industrialists, notable scientists and
-famous craftsmen have been able to climb up and join the ranks
-of upper class. Politics are changing, and in the modern world,
-money is power. Some of the old houses of the nobility are
-suddenly afraid of their status, as businessmen born to peasant
-bloodlines are now standing amongst them as near-equals, and
-sometimes with far more wealth than some of the nobility has
-ever seen.
-
-Most upper class children lead very secure lives, and although
-their personal freedom may be limited (for their own safety, of
-course), all their material needs are satisfied. They unused to
-physical work, and they tend to have much more free time for
-pursuing hobbies and partying than youngsters of the lower and
-middle classes. They are educated by governesses or elite
-private schools, and most of them enter universities, even if
-they may never need to actually work for a single day of their
-lives. Some upper class people do work, but these are almost
-without exception positions of importance, such as highranking
-officials, and usually the second and third sons of upper
-class families have to find a job to make their living, whereas
-daughters are encouraged to marry to families of good standing.
-The importance of family history and reputation is emphasised
-for the children of the upper class at an early age, as are the
-skills of diplomacy and presenting oneself in favourable light.
-Although it might seem like the people of the upper class want
-for nothing, their lives is far from a bed of roses. Strict rules
-regulate their lives, and they are constantly walking the very
-thin lines between diplomacy and deceit. Backstabbing has
-never been unknown within the Victoran upper class, and there
-are no signs of change in this matter. Many upper class people
-are also worried about the rise of the workers and women’s
-right movements, which are seen as threats to their status. On
-the other hand, there are some upper class people who have
-declared themselves patrons of the movements, and work for a
-chance for a better life for all Victorans in the future.
 
 Adventuring as Upper Class Victoran:
 Some of the upper class Victorans have duties that lead them to
@@ -79,10 +23,9 @@ industrialists onto long trips and adventures. However, most of
 the upper class Victorans who have taken up adventuring are
 those youngsters who have gotten tired of the strict regulations
 of upper class life and have left it behind to see the world.
-
-Suggested careers: 
-Assassin, Inventor, Journalist, Lawyer,
+Suggested careers: Assassin, Inventor, Journalist, Lawyer,
 Officer, Physician, Politician, Scholar, Spy
+
 
 Typical names:
 The Victoran upper class people prefer long, elaborate names.
@@ -90,7 +33,7 @@ The differences between northern and southern naming
 conventions are less prominent among the upper class, as many
 upper class families have merged through marriage across the
 whole country. Female names include Annabelle, Eleanora,
-Ophelia, Patricia, Ravenna and Seraphina, male names include
+Ophelia, Patricia, Ravenna and Seraphimbly, male names include
 Alexander, Beaumont, Leonard, Quentin, Radclyffe and
 Theodore. Family names are important, and are presented with
 pride, as the name carries with it the power behind the

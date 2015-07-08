@@ -4,20 +4,21 @@ that it is the merchants who sell the craftsmen’s works and
 collect the riches for the country, the nation will fall.” - a head
 of a Hanseburgian merchant family
 
-DEX, WIT or CHA +1
-Initial skill ranks: Appraise 2, Negotiate 1, Persuade 1
+
+WITS +1
+Initial skill ranks: Appraise 2, Bargain 1, Diplomacy 1
 15 CP can be used to buy ranks in the following skills:
-Appraise, Bluff, Cooking, Craft (any), Etiquette, Intimidate,
-Martial Arts (Fencing), Mechanics, Melee (Finesse), Negotiate,
-Persuade, Profession (any), Ride, or to improve the Starting
-wealth level.
+Appraise, Bargain, Bluff, Cooking, Craft (any), Diplomacy,
+Etiquette, Intimidate, Martial Arts (Fencing), Mechanics, Melee
+(Finesse), Persuade, Profession (any), Ride, or to improve the
+Starting wealth level.
+
 
 The merchants of Hanseburg have played an important role in
 shaping their nation, exporting goods from Hanseburg and
 carrying the gold back to their home nation. They are well
 known for their bargaining skills, especially in the neighbouring
 countries of Wulffgart and Victora.
-
 Due to their place in society, merchants have close connections
 with both the workers and nobles of Hanseburg, buying, selling
 and delivering goods across the country. Not all Hanseburgian
@@ -26,7 +27,6 @@ from small town shops selling basic goods to commoners, while
 the wealthiest and most successful entrepreneurs deliver goods
 to kings and emperors, making Hanseburg famous all over the
 world.
-
 Hanseburgian merchants need skill in diplomacy as well as
 bargaining. Many opportunities for careers and travelling are
 open to those born to the merchant class. Even the smallest
@@ -38,7 +38,6 @@ determined Hanseburgian merchant. Their success and
 reputation makes them ideal targets for con artists, and they
 need to be constantly wary of business opportunities that seem
 too good to be true.
-
 The children of Hanseburgian merchant families learn to
 appraise and calculate everything at a young age, counting
 every trinket and every favour. Everything has a price, and a
@@ -56,13 +55,11 @@ allows them to see the wonders of the great cities and exotic
 places of the world - and perhaps find new ways to profit from
 them.
 
-Suggested careers: 
-Artist, Banker, Butler, Con Artist, Detective,
+Suggested careers: Artist, Banker, Butler, Con Artist, Detective,
 Inventor, Journalist, Lawyer, Merchant, Musketeer, Physician,
 Scholar, Wyrodian Priest
 
-Typical names: 
-Hanseburgian names derive from both
+Typical names: Hanseburgian names derive from both
 Wulffgartian and Victoran origins. There are also names
 specific to Hanseburg. The first names of merchants are rather
 similar to Hanseburgian worker names. Well known

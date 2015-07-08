@@ -1,10 +1,12 @@
-STR +3, CON +3, REF -2, INT -2, WIT -2, CHA -2
-Initial STR and CON must be at least 10.
+Cost to play: 10 CP
+STR +3, CON +3, DEX -2, REF -2, INT -1, WIT -1, EMP -3
+Initial INT and WIT may not be raised to 15 or above.
 Disadvantage: Sterile.
 
 All mutants have the social status: mutie disadvantage and
 must purchase a mutant disadvantage worth at least 3 CP to
 represent that no mutant is born perfect.
+
 
 Goliaths were originally mutants created in Wulffgartian war
 laboratories during the 80 Year War as an attempt to create
@@ -21,4 +23,4 @@ combat drugs during the war, now causing mutations in the
 foetus. Goliaths are considerably larger than normal humans,
 growing to be over 2.5 meters tall and having massive body
 structure. They are strong and tough, but their intellect rarely
-reaches the human average. All goliaths are sterile.
+reaches the human average. All goliaths are sterile.

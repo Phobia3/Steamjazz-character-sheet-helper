@@ -1,55 +1,12 @@
-﻿CON, REF or EMP +1
+﻿CON +1
 Initial skill ranks: Survival 2, Brawl 1, Stealth 1
-15 CP can be used to buy ranks in the following skills:
-Athletics, Animal Handling, Bluff, Brawl, Cooking, Dodge,
-First Aid, Forgery, Gaming, Grappling, Handguns, Intimidate,
-Listen, Melee (Balanced), Melee (Powerful), Spot, Stealth,
-Survival, Throw or to purchase up to 10 CP worth of acquirable
-advantages.
-Starting Wealth level cannot be higher than ‘Well off’.
+15 CP can be used to buy ranks in the following skills: Animal
+Handling, Bluff, Brawl, Climb, Cooking, First Aid, Gaming,
+Handguns, Intimidate, Listen, Melee (Balanced), Melee
+(Powerful), Spot, Stealth, Survival, Throw, Track.
+Starting Wealth level
+cannot be higher than ‘Well off’
 
-One of the the toughest fates in Victora is to be born into a
-lower class family. Most of the lower class people receive only
-very basic education, if any, and many of them cannot even
-write their own name, let alone read. The masses of the
-Victoran lower class are the ones who work in the countless
-mines, factories, shipyards and other sites important to the
-rapidly growing industry of Victora. They are the ones who
-keep the wheels of the growing cities turning. The working
-days and weeks are long, salaries are low and working
-conditions leave much to be hoped for. It is a small comfort that
-the people of the Victoran lower class don’t have much free
-time to ponder upon the state of their living.
-
-Some lower class families lead a decent life with the bread the
-adults of the family bring to the table, but in many families
-even young children have to go to work, handling simple and
-lighter tasks, such as gathering scrap metal in factories. Despite
-this, some families still don’t have enough money to feed and
-clothe their many children, and thus some of the children are
-left on the streets. Most of the youngsters of the Victoran lower
-class learn to defend themselves and survive in less than
-desirable circumstances at an early age.
-
-Much of the Victoran lower class still live in the countryside,
-which is the main source of food and other basic resources in
-Victora. Farm life has more freedom than working in the city,
-but children are equally likely to need to work on the
-countryside as well, especially during the busy planting and
-harvest seasons. The lives of those peasants who are lucky
-enough to live under the rule of a good lord are much happier
-than those of most city-dwellers, but the unlucky ones suffer
-under heavy-handed taxation while their gluttonous lords grow
-fat.
-
-Under these circumstances it is understandable that a rebellion
-is brewing in Victora. The workers are rising to barricades to
-improve their living standards out of the gutter - if not for
-themselves, then for their children. The peasants are starting to
-question the rule of their lords. The example of Free Islands’
-democracy has fed more fuel to these flames. The Victoran
-Rebellion has adopted many of the ways of this newly formed
-nation, including jazz, the music of the free people.
 
 Adventuring as a Lower Class Victoran:
 It isn’t hard to find reasons for a lower class Victoran to leave
@@ -61,8 +18,10 @@ group or another adventuring opportunity, but many of the
 downtrodden lack the imagination or the ambition to rise above
 the squalor that is the only life they have ever known.
 
+
 Suggested careers: Con Artist, Craftsman, Hunter, Mercenary,
 Rogue, Sailor, Scout, Soldier, Warrior
+
 
 Typical names:
 Victoran lower class people have short, typically English
@@ -71,4 +30,4 @@ or South European flavour. Female names include Amy, Brett,
 Hannah, Katie and Pepper, male names include Ash, Bob, Brad,
 Cole, John and Stan. Surnames are simple, and often describe
 the family trade or are otherwise descriptive, like Brown, Hill,
-Miller, Smith and Tanner
+Miller, Smith and Tanner.

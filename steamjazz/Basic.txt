@@ -1,14 +1,12 @@
 STR +1, CON +1, EMP -1
-
 Basic automaton packages:
 
 Assistant / Servant
-Initial skill ranks: Profession (any) 2, Negotiate 1, Knowledge:
-Mathematics 1
+Initial skill ranks: Profession (any) 2, Diplomacy 1,
+Knowledge: Mathematics 1
 10 CP can be used to buy ranks in the following skills:
-Appraise, Clockwork, Craft (any), Knowledge (Mathematics),
-Negotiate, Persuade, Profession (any).
-
+Appraise, Bargain, Clockwork, Craft (any), Diplomacy,
+Knowledge (Mathematics), Persuade, Profession (any).
 Guard
 Initial skill ranks: Melee (Balanced) 2, Listen 1, Spot 1
 10 CP can be used to buy ranks in the following skills:
@@ -20,7 +18,7 @@ Initial skill ranks: Long Guns 2, Clockwork 1, Melee
 (Balanced) 1
 10 CP can be used to buy ranks in the following skills :
 Athletics, Brawl, Clockwork, Craft (Gunsmithing), Explosives
-& Demolitions, First Aid, Handguns, Intimidate, Long Guns,
+& Demolitions, First Aid, Handgun, Intimidate, Long Guns,
 Melee (Balanced), Stealth
 
 Models:
@@ -48,4 +46,4 @@ workforce is needed, ranging from factory labour to guard
 duties. Given that they are such a common sight and are
 considered property and not people, it is extremely easy for a
 basic archetype with an installed CIC to blend into society - but
-feeling like fitting in is an altogether different challenge.
+feeling like fitting in is an altogether different challenge.

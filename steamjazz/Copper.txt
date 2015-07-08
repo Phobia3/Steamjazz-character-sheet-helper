@@ -1,13 +1,12 @@
 Cost to play: 5CP
 
-STR +1, CON +2, CHA -1, EMP -1
-Initial STR and CON must be at least 12.
+STR +2, CON +2, CHA -1, EMP -2
 Upgrade: Medium Plating, AV 4
 Initial skill ranks: Melee (Balanced) 3, Law (local) 2,
 Intimidate 1
 10 CP can be used to buy ranks in the following skills:
 Athletics, Clockwork, Drive, Handguns, Intimidate, Law (any),
-Melee (Balanced), Persuade, Search, Spot, Survival.
+Melee (Balanced), Persuade, Search, Spot, Track.
 Copper automatons cannot be created or upgraded with the
 Humanlike skin advantage.
 
@@ -23,11 +22,10 @@ officers, being a Copper is socially a double-edged sword; those
 who respect the law have more respect for the Coppers, while
 criminals and anarchists can view them as the lowest caste of
 the automatons.
-
 While the majority of Coppers are non-decorated basic
 automatons by appearance, they can be equipped with more
 humanlike features, like those of a Butler, depending on their
 duty and purpose. CIC-equipped Coppers can become quite the
 crime-solving sleuths, but things being as they are with
 automatons, more often than not their human superiors take all
-the credit.
+the credit

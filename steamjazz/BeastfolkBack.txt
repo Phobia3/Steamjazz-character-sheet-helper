@@ -1,10 +1,13 @@
-CON, REF or WIT +1
+CON +1
 Initial skill ranks: Survival 2, Animal Handling 1, Brawl 1
 15 CP can be used to buy ranks in the following skills: Animal
-Handling, Archery, Athletics, Brawl, First Aid, Knowledge
-(Astrology), Knowledge (Folklore), Knowledge (Zoology),
-Listen, Melee (Balanced), Melee (Powerful), Sense Motive,
-Spot, Stealth, Survival, or to the Animal Empathy advantage.
+Handling, Archery, Athletics, Brawl, Climb, First Aid,
+Knowledge (Astrology), Knowledge (Folklore), Knowledge
+(Zoology), Listen, Melee (Balanced), Melee (Powerful), Sense
+Motive, Spot, Stealth, Survival, Track, or to the Animal
+Empathy advantage.
+
+
 The beastfolk originate from the Shadewood Forest in Victora,
 and this background represents those beastfolk who have been
 raised among the tribes calling Shadewood their home. They
@@ -55,14 +58,17 @@ standing, although some tribes look up to those with great
 wisdom and understanding of the ways of nature instead.
 Although the druids offer the tribes spiritual guidance,
 leadership of the tribes is usually assumed by the strongest.
+
 Adventuring as Beastfolk:
 Although life in the Shadewood Forest quite possibly counts as
 adventure by itself, the truly adventurous Beastfolk leave
 behind the home they know to see the world. Beastfolk can now
 be found in mercenary parties, pirate crews and sometimes even
 serving in the army.
+
 Suggested careers: Assassin, Craftsman, Druid, Hunter, Martial
 Artist, Mercenary, Ranger, Rogue, Scout, Warrior
+
 Typical names: Sometimes beastfolk use old Victoran names,
 but it is more common to use descriptive ones. Typical male
 beastfolk names include Angus, Barden, Fang, Spirit, Trevor
@@ -72,4 +78,4 @@ but when interacting with other tribes or other people not of
 their tribe they usually use their tribe name as a substitute to a
 surname. Typical tribe names include Claws, Fastfeet and
 Sharpears, so a female beastfolk could introduce herself as Fair
-Sharpears.
+Sharpears.

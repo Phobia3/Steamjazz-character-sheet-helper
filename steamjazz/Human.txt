@@ -1,5 +1,6 @@
 Humans receive 10 extra CP for purchasing skills and
 advantages from their Background during character creation.
+
 Humans come from various backgrounds and nationalities, so
 their appearance and style varies widely, from the tall muscular
 Wulffgartian in his gray greatcoat to the tender Crimson lady in
@@ -16,6 +17,7 @@ Erthair, humans have more opportunities to learn things at
 younger age, more places in which to study, and more people to
 teach them. As a result, human characters get extra character
 points for their Background skills.
+
 Human civilization has spread aeons ago across the whole
 continent, and they have six known nations: Wulffgart,
 Hanseburg and Victora in the north, Free islands in the west and
@@ -41,4 +43,29 @@ backgrounds, humans from both the north and the south, rich
 and poor, even mutants - everyone is welcome there. It is the
 only democratic nation on Erthair and it is probably the only
 place where someone not born a human - a mutant - has a
-chance to influence the important decisions of their nation.
+chance to influence the important decisions of their nation.
+Mutants
+
+All mutant races of Erthair have mutated from humans at some
+point in history. Some mutant races have existed for centuries,
+some only for the length of a single generation. The old mutant
+races, Beastfolk, Sylphs and Kharzul Dwarves, have been
+mutated by a natural mutagen, such as a virus, radiation or
+chemical reagent that has occurred in their environment
+naturally. They have been seen as monsters and evil spirits
+throughout most of their existence, and have been cast away
+from human society until recently. The newer mutant races,
+such as Goliaths and Dracosaurians, have been created by
+human-made mutagens, either purposefully or by accident. This
+has increased the awareness of mutant origins, which has
+slightly improved the status of mutants as part of society.
+Mutants still carry a stigma, and most humans consider mutants
+“lower class people” - if they consider them people at all. This
+is why every mutant character has the social status: mutie
+disadvantage (CP already calculated in the cost of the race). No
+mutant is born perfect, and all of them have some physical
+hindrances related to their mutation, such as abnormal limbs or
+impaired senses. Each mutant must purchase a mutant
+disadvantage worth at least 3 CP to represent this (but the
+character gains CP for this normally, just like for any other
+disadvantage).

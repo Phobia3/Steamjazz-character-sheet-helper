@@ -1,10 +1,5 @@
 CHA -2, REF +1; allocate +1 to one of the following: STR,
 CON or DEX
-
-Dracosaurians receive a -3 penalty to Listen rolls, a +2 bonus to
-Spot rolls and a +2 bonus to survival when able to track using
-their sense of smell.
-
 Cold-blooded: The character’s body cannot control her body
 temperature automatically, but needs external means to keep it
 on optimised level. In very cold temperatures (around and
@@ -15,12 +10,17 @@ than normally. GM can grant a dracosaurian character a
 modifier between -2 and +2 to DEX and REF related skills in
 cold or hot conditions.
 
-Dracosaurians gain 5 CP for purchasing mutant advantages.
+Dracosaurians receive a -3 penalty to listen rolls, a +2 bonus to
+Spot rolls and a +2 bonus to track when able to use their sense
+of smell.
+
 All mutants have the social status: mutie disadvantage and
 must purchase a mutant disadvantage worth at least 3 CP to
 represent that no mutant is born perfect. Dracosaurians can
 purchase deaf as a mutant disadvantage even though it is not
 normally listed as one.
+Dracosaurians gain 5 CP for purchasing mutant advantages.
+
 
 Dracosaurians are lizard-like people originating from the
 Pelethok island near Kheiman. Around a century ago there was

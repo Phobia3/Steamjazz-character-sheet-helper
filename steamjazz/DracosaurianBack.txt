@@ -1,12 +1,12 @@
-CON, INT or WIT +1
-Initial skill ranks: Survival 2, Athletics 1, First Aid 1
+INT +1
+Initial skill ranks: Survival 2, First Aid 1, Swim 1
 15 CP can be used to buy ranks in the following skills:
-Alchemy, Animal Handling, Athletics, First Aid, Knowledge
+Alchemy, Animal Handling, Climb, First Aid, Knowledge
 (Botany), Knowledge (Mathematics), Knowledge (Zoology),
 Language (Kheiman), Language (Victoran), Martial art
 (Kheiman spear), Medicine and surgery, Melee (Powerful),
-Sailing, Survival, Teaching, or to the Bilingual and Animal
-Empathy advantages.
+Sailing, Survival, Swim, Teaching, or to the Bilingual and
+Animal Empathy advantages.
 
 The island of Pelethok was formerly part of Kheiman, but when
 the Free Islands was established, Pelethok joined to be part of
@@ -14,12 +14,11 @@ the new republic. The people of Pelethok never adopted the
 Kheiman religion, and holding on to their old tradition of
 revering their ancestors as lizard spirits during their long
 history under Kheiman rule. When a research centre examining
-the lizards native to the island’s was destroyed in a massive
+the lizards native to the island’s was destroyed in a massive 
 explosion and the resulting fallout started mutating those living
 on the island, few in Kheiman felt any great sense of loss when
 what they saw as an island full of pagan lizards decided to
 secede.
-
 The Kheiman had introduced their education system on the
 islands long ago, so although the islanders lived in tribal
 communities, leading simple lives in small villages, most of
@@ -33,7 +32,6 @@ of the injured as they could. As a result, field medicine and
 surgery have developed in great leaps on the island, and this has
 also brought the natives of the island and the foreign scientists
 together in an unprecedented way.
-
 After the islanders finished rebuilding, many small research
 centres were established in the small villages, collaborating to
 learn more of the special wildlife and plants of the island and
@@ -41,7 +39,6 @@ especially their medical applications. Some people suggest that
 the primary motivation for such intensive research is to stop the
 deadly or malignant mutations from spreading, or even to find a
 way to cure the dracosaurian mutation completely.
-
 The people of Pelethok hold education in high esteem, and so
 all children receive good basic education. Many islanders still
 live in small tribal villages, getting their subsistence by fishing
@@ -53,7 +50,6 @@ Pelethok, and some private entrepreneurs see the research as a
 potential investment as well. This has resulted in a peculiar
 contrast between the tribesfolk and the scientists from civilised
 lands, and the island society is in a constant state of change.
-
 Not all of the people on the island are Dracosaurians, but less
 than half of them are humans. This mutant background can be
 taken by a human character as well, with the exception that
@@ -66,13 +62,11 @@ mainland on missions of trade and science. Some
 Dracosaurians have also joined mercenary parties for better
 income and to see the world.
 
-Suggested careers: 
-Craftsman, Detective, Hunter, Inventor,
+Suggested careers: Craftsman, Detective, Hunter, Inventor,
 Mechanic, Mercenary, Physician, Pirate, Politician, Sailor,
 Scholar
 
-Typical names: 
-Traditional Pelethok names are still commonly
+Typical names: Traditional Pelethok names are still commonly
 used among the natives, but after joining the Free Islands, many
 younger generation islanders have started to adopt the naming
 traditions in use on other islands. See the Island Folk

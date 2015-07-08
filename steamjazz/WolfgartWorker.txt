@@ -1,9 +1,9 @@
-﻿STR, CON or INT +1
-Initial skill ranks: Craft (Gunsmithing 2), Craft (any) 1,
-Mechanics 1
+﻿CON +1
+Initial skill ranks: 
+Craft (Gunsmithing 2), Craft (any) 1, Mechanics 1
 10 CP can be used to buy ranks in the following skills: Animal
-Handling, Brawl, Clockwork, Cooking, Craft (any), Drive, 
-First Aid, Locksmithing, Mechanics, Persuade, Profession (any),
+Handling, Bargain, Brawl, Clockwork, Cooking, Craft (any),
+Drive, First Aid, Locksmithing, Mechanics, Profession (any),
 Ride.
 
 The life of Wulffgartian workers has improved since the feudal
@@ -15,7 +15,6 @@ workers are needed in factories all across the land, so even
 youngsters are hired to work in the service of military industry.
 Many workers are also needed to tend the expansive fields and
 farms of the Wulffgartian countryside.
-
 Most children of Wulffgartian worker families receive basic
 education and learn to read and count. They also learn many
 crafts, as well as the basics of trade and street brawling, with
@@ -24,9 +23,7 @@ countryside villages. Higher education is available only to the
 select few, either those whose families have contacts to people
 with influence or those who are picked during their military
 training to develop their exceptional talents in a field of
-specialty.
-
-In the old days it was hard for a worker to rise to any other
+specialty. In the old days it was hard for a worker to rise to any other
 position in life. This has recently changed, because those who
 show exceptional qualities towards military professions during
 their military service can be chosen to have a military career.
@@ -35,7 +32,6 @@ craftsmen and inventors, are classified as workers, and most
 workers get paid equally, no matter how demanding their job is,
 unless they are specifically important for the military
 government.
-
 The pay of Wulffgartian workers can cover their basic needs,
 but not much more. Their life isn’t easy, but at least they need
 not fear starvation or freezing to death during cold nights. Their

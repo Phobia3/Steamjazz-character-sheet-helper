@@ -1,10 +1,12 @@
-CON, INT or EMP +1
+INT +1
+
 Initial skill ranks: Craft (any) or Profession (any) 2, Appraise 1,
-Persuade 1
+Bargain 1
 15 CP can be used to buy ranks in the following skills:
-Appraise, Brawl, Clockwork, Cooking, Craft (any), Negotiate,
-Drive, Locksmithing, Mechanics, Melee (Powerful), Persuade,
-Profession (any), Ride.
+Appraise, Bargain, Brawl, Clockwork, Cooking, Craft (any),
+Diplomacy, Drive, Locksmithing, Mechanics, Melee
+(Powerful), Profession (any), Ride.
+
 
 Hanseburg is known for its craftsmanship, design, inventions
 and top class modern steam technology. This naturally creates a
@@ -14,7 +16,6 @@ other countries, these people are not disparaged by the betteroff
 Hanseburgians. It is the fruits of their labour that brings the
 merchants and nobles their fortunes, and they are appreciated
 accordingly.
-
 Hanseburg is home to many of the finest experts on both the old
 and traditional crafts like shipbuilding, and new branches of
 technology, such as steam machinery. The youngsters of the
@@ -24,7 +25,6 @@ crafting careers, and there are many opportunities to rise in rank
 on almost every career. For example a skilled miner in
 Hanseburg is likely to become a mine manager or mining craft
 engineer at a later point of her career.
-
 The craftsmanship in Hanseburg is renowned for its quality,
 but this reputation is not easy to maintain. Hard training and
 hard work are needed to meet the expectations. As the
@@ -34,7 +34,6 @@ pursuing leisurely hobbies or spending time with family. The
 workers make decent living with their work, and the most
 skilled and well-known can often even afford a rather luxurious
 life during their evening years.
-
 The farmers of Hanseburg also belong to the worker class.
 Although life in the country requires equally hard work and has
 fewer opportunities to gain wealth, it is much more relaxed and
@@ -44,7 +43,6 @@ mountains, most of the land is fertile earth suitable for fields
 and farming. Hanseburgian cheese, bread and cakes are well
 known for their deliciousness and exported to other countries as
 well.
-
 Of course, not everyone manages to pursue a successful career
 even in Hanseburg. Those who abandon the traditional craft of
 their families or simply fail to be successful in it are easily left
@@ -62,16 +60,14 @@ Hanseburgian mechanics and engineers are often found
 travellling with mercenary or military groups to maintain their
 automatons and vehicles.
 
-Suggested careers: 
-Butler, Craftsman, Gunner, Hunter, Inventor,
+Suggested careers: Butler, Craftsman, Gunner, Hunter, Inventor,
 Law Enforcer, Mechanic, Mercenary, Musketeer, Ranger,
 Rogue, Sailor, Scout, Servant, Soldier
 
-Typical names: 
-Hanseburgian names derive from both
+Typical names: Hanseburgian names derive from both
 Wulffgartian and Victoran origins. There are also names
 specific to Hanseburg. Hanseburgian worker male names
 include Elias, Fritz, Joel, Luis, Thoman and Walter and female
 names include Alina, Claudia, Emma, Heidi, Leonie and Nadia.
 Typical surnames include Accola, Benziger, Gaugler and
-Reichling. 
+Reichling

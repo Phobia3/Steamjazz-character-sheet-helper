@@ -1,16 +1,19 @@
 Cost to play: 20CP
-DEX, CHA or EMP +1
-Initial skill ranks: Appraise 2, Charm 2, Negotiate 2, Etiquette 1.
+CHA +1
+Initial skill ranks: Appraise 2, Bargain 2, Diplomacy 2,
+Etiquette 1.
+
 Advantage: Noble, Hanseburg
 Starting wealth level: Drifter. This can be further raised with CP
 during character creation.
+
 15 CP can be used to buy ranks in the following skills:
-Appraise, Art (any), Charm, Etiquette, Knowledge (Heraldry),
-Language (Victoran), Language (Wulffgartian), Martial Arts
-(Fencing), Martial Arts (Hanseburgian Musketeer Fencing),
-Melee (Finesse), Negotiate, Perform (Dancing), Perform
-(Oratory), Persuade, Ride, or to improve the starting wealth
-level.
+Appraise, Art (any), Bargain, Charm, Diplomacy, Etiquette,
+Knowledge (Heraldry), Language (Victoran), Language
+(Wulffgartian), Martial Arts (Fencing), Martial Arts
+(Hanseburgian Musketeer Fencing), Melee (Finesse), Perform
+(Dancing), Perform (Oratory), Persuade, Ride, or to improve
+the starting wealth level.
 
 Hanseburgian nobles are the rulers of Hanseburg. The nation is
 governed by three noble houses, called the Royal Families. The
@@ -19,7 +22,6 @@ own country, as many of them have diplomatic contacts with
 the neighbouring countries. They also have close contacts with
 Hanseburgian merchants, who are vital to the continuous wealth
 of their country.
-
 Most Hanseburgian noble families are very wealthy. Although
 some of them don’t own large amounts of land, they have often
 invested heavily in Hanseburgian craftsmanship and trade,
@@ -28,15 +30,13 @@ country and her nobles are well known by the common folk, so
 noble families pay close attention to maintaining their
 reputation. Even the children of noble families are expected to
 behave themselves with dignity and pride.
-
 The noble houses of Hanseburg hold education in high esteem.
 Hanseburg has some private schools of great renown that are
 mostly used to school the children of the noble families, and
-some families even send their children to the greatest private
+some families even send their children to the greatest private 
 schools in Victora to study. Skilled governesses are often hired
 to teach younger children until they are old enough to be sent to
 school.
-
 Most of the noble families live secure lives inside their castles
 and manors. Their daily lives consist of diplomacy and
 representing their house. Many nobles are also interested in
@@ -53,13 +53,11 @@ nobles often act as diplomats, travelling abroad to represent
 Hanseburg and their families. Some nobles even search for
 adventures themselves, working as mercenaries.
 
-Suggested careers: 
-Banker, Con Artist, Inventor, Journalist,
+Suggested careers: Banker, Con Artist, Inventor, Journalist,
 Lawyer, Musketeer, Officer, Physician, Politician, Scholar, Spy,
 Wyrodian Priest
 
-Typical names: 
-Hanseburgian names derive from both
+Typical names: Hanseburgian names derive from both
 Wulffgartian and Victoran origins. There are also names
 specific to Hanseburg. In addition to names common to
 craftsmen and merchants, there are some names that are usually
@@ -70,4 +68,4 @@ prefix ”de”: de Schulz, de Colman and de Weissager. Other
 noble families’ surnames resemble the names of other
 Hanseburgian people. Examples of such last names are
 Breneman, Ellenberger, Gremminger, Pfenninger and
-Scherzinger. 
+Scherzinger.

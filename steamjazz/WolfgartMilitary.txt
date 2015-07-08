@@ -1,5 +1,6 @@
-﻿STR or DEX +1
-Initial skill ranks: Law: Wulffgart 2, Etiquette 1, Intimidate 1.
+﻿STR +1
+Initial skill ranks: 
+Law: Wulffgart 2, Etiquette 1, Intimidate 1.
 10 CP can be used to buy ranks in the following skills: Animal
 Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &
 Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),
@@ -31,7 +32,6 @@ everyone in Wulffgart respects their authority and standing
 equally. While most of the common folk don’t mind the
 situation, many from the old Wulffgartian upper class resent the
 new regime.
-
 Being born to a military family in Wulffgart usually means
 strict rules and orderly upbringing. Their children don’t have
 much personal freedom. They learn to follow orders and are
@@ -55,8 +55,7 @@ Assassin, Detective, Gunner, Inventor, Law
 Enforcer, Lawyer, Martial Artist, Officer, Politician, Ranger,
 Scholar, Scout, Soldier, Spy
 
-Typical names: 
-People of both worker and upper classes can
+Typical names: People of both worker and upper classes can
 have a Wulffgartian military background, so their names come
 from both classes as well. See the typical name lists for Worker
 class and Upper class

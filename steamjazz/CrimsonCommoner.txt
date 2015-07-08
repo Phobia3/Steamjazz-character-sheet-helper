@@ -1,10 +1,12 @@
-STR, CON or EMP +1
-Initial skill ranks: Persuade 2, Animal Handling 1, Profession
+CON +1
+
+Initial skill ranks: Bargain 2, Animal Handling 1, Profession
 (farmer) 1
 15 CP can be used to buy ranks in the following skills:
-Animal handling, Brawl, Cooking, Craft (any), Listen, Melee
-(Balanced), Melee (Powerful), Persuade, Profession (farmer),
-Spot, Survival.
+Animal handling, Bargain, Brawl, Cooking, Craft (any), Listen,
+Melee (Balanced), Melee (Powerful), Profession (farmer), Spot,
+Survival, Track
+
 
 Most people in the Crimson Empire are labourers, craftsmen
 and farmers living in small villages and the handful of bigger
@@ -12,7 +14,6 @@ cities in the Empire. Their lifestyle is called the Way of the
 Land, and their work forms the basis of the nation. They usually
 lead simple lives, doing what needs to be done for the people to
 get their daily food and the nation to run.
-
 The quality of life of commoners depends mostly of the shogun
 and daimyo ruling the land on which they live. Those who are
 ruled by righteous leaders can get enough from their farms and
@@ -20,21 +21,19 @@ handiwork so as to get their daily bread and even save up for
 something special. Not many are as lucky, for many lords
 squeeze their subjects dry with heavy-handed taxes, leaving
 them with barely enough to survive.
-
 Most commoners live in villages run by an Elder. Elders are
 wise men or women who guide the village people, giving
 advice and teaching how to tend the land. The Elders and their
 aides teach the children of their village, and most villagers of
 Crimson Empire can read and know at least the basics of
 writing and counting. Elders are also responsible for teaching
-the lore and history of the Empire to the younger generations.
+the lore and history of the Empire to the younger generations. 
 In bigger cities the Elder tradition has practically died out, and
 unless the ruling daimyo or shogun cares about children
 receiving basic education and hires teachers to run schools,
 education is left to the passing monks and the children’s
 parents. Because of this, workers in big cities are usually less
 educated than those in small villages.
-
 As the followers of the Way of the White Dragon wield both
 political power and weapons, and those of the Way of the Black
 Dragon have the power of knowledge and the right to pass
@@ -52,13 +51,10 @@ defending their villages against wild beasts and sometimes even
 the armies of hostile daimyos. Some commoners leave their
 fields or work behind to find more meaning to their lives,
 sometimes even leaving the Crimson Empire behind.
-
-Suggested careers: 
-Artist, Craftsman, Hunter, Mechanic,
+Suggested careers: Artist, Craftsman, Hunter, Mechanic,
 Ranger, Sailor, Servant
 
-Typical names: 
-Names of the Crimson people vary a bit
+Typical names: Names of the Crimson people vary a bit
 depending on their Way as well as their native region. The
 names of those living in the western part of the Empire have an
 Indian sound to them, whereas the names in the east resemble

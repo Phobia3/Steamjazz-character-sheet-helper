@@ -2,12 +2,12 @@ Cost to play: 15CP
 
 STR -1, CON -1, INT +1, CHA +1, EMP +1
 Advantage: Bilingual
-Initial skill ranks: Etiquette 3, Cooking 2, Negotiate 2,
+Initial skill ranks: Etiquette 3, Cooking 2, Diplomacy 2,
 Profession: Waiter 2
 10 CP can be used to buy ranks in the following skills:
-Clockwork, Cooking, Negotiate, Etiquette, First Aid, Language
-(any), Law (any), Leadership, Listen, Persuade, Search, Sense
-Motive, Spot.
+Clockwork, Cooking, Diplomacy, Etiquette, First Aid,
+Language (any), Law (any), Leadership, Listen, Persuade,
+Search, Sense Motive, Spot.
 
 Models:
 Colman Inc CCB-02 Butler, commonly referred to as "Charles"
@@ -25,14 +25,12 @@ balance and finesse as opposed to raw power and endurance.
 However, their clockwork programming is also more
 sophisticated by default, and Butlers usually come equipped
 with more advanced social skills.
-
 As the Butler designs were refined, so was their programming,
 and the more modern automatons excel in psychology. When
 combined with their extensive knowledge of law and
 diplomacy, these Butlers are able to accurately anticipate the
 ever-changing whims of their masters - sometimes even better
 than their human counterparts.
-
 Butler builds are similar in physical design to the basic
 archetype, only usually lighter and with more delicate and
 decorative features. For example, instead of bolted-on factorymade
@@ -41,7 +39,6 @@ designs crafted of porcelain, marble or precious metals. Butler
 faces are made to resemble human features, but are always
 heavily stylised – closer to a stylistic Art Deco figurine than a
 classic porcelain doll.
-
 Many human masters become quite dependent on their Butlers
 and learn to appreciate them much more than other automatons.
 Then again, considering that most high-class noblemen treat
