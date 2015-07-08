@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="70138c56-bda9-4dc0-b871-67a651ce07b1"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="3a94b46d-727e-4fd5-ab84-65cb087c3de2">
+      <profileInstance
+        Id="7cc76414-c6d0-43e7-a51b-8c95158791f5"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="307b9ae0-4c5a-4998-bdd0-5c840e61df05"
+        LastKnownName="Steamjazz"
+        LastKnownLocation="Package_1405.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4917a9ce-2fa1-4434-9e63-04ed0a367a6c"
+        LastKnownName="MySql"
+        LastKnownLocation="Package1_1405.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ee8f7af5-4ac2-4ce7-8bfd-053a61dc767b"
+        LastKnownName="System"
+        LastKnownLocation="Package_1406.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="1f8879df-919d-4186-9f66-d365208a723a"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="e7184d15-7b23-4340-9408-f3597586e645"
+            name="Initial1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ff49a093-2ad8-4d3f-9894-845e0cca004a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="bf946671-238b-4624-a46e-c624c11ab454"
+                  LastKnownName="Aloitus ruutu"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <objectNode
+            Id="bf946671-238b-4624-a46e-c624c11ab454"
+            name="Aloitus ruutu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="31bad98d-5dba-4dfb-8fc7-e4d6fc646871"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="75a54b53-52c3-4df1-8b37-e25cbd1a4518"
+                  LastKnownName="Uusi hahmo?"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="17cd6f23-57ec-4dee-a9f5-4368e0ffbffe"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <decisionNode
+            Id="dd2d57ae-3207-4ec6-a55f-1b00378524a3"
+            name="Decision1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="8a7fb625-110d-44d6-8913-63af7bdde898"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="a2caf0ae-0213-4642-919f-932c163689c5"
+                  LastKnownName="Oletus näkymä"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="75a54b53-52c3-4df1-8b37-e25cbd1a4518"
+            name="Uusi hahmo?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8957b63d-807e-402b-b7d2-390139f2eb25"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="dd2d57ae-3207-4ec6-a55f-1b00378524a3"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="a2caf0ae-0213-4642-919f-932c163689c5"
+            name="Oletus näkymä"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="8517eef0-188d-41c0-9746-6cf2eaafba21"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="05a6df59-c90b-43f8-adb5-d9210a010d34"
+                  LastKnownName="Muutetaanko Rotua?"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="f7182321-285d-48b5-ba7d-69c7a87a632c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="05a6df59-c90b-43f8-adb5-d9210a010d34"
+            name="Muutetaanko Rotua?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="979572dd-b949-4ea0-b9d9-5fc89f5f075f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="340403a1-6695-4319-9b49-cf9832061763"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="340403a1-6695-4319-9b49-cf9832061763"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="937a0eec-af1b-4564-86a6-a5d44b3e32f8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fd9ff4bd-5ce0-44d5-b7aa-6cc5d022f9c6"
+                  LastKnownName="Mikä rotu valittiin?"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7f175649-181e-472c-9682-22dc0bdec73e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1072fcc4-36f4-438e-b6bb-006af0564be5"
+                  LastKnownName="Muutetaanko kansalaisuutta/Mallia?"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="fd9ff4bd-5ce0-44d5-b7aa-6cc5d022f9c6"
+            name="Mikä rotu valittiin?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d608a82f-3a21-4644-9888-9118df3a15b3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c22bf9c0-45e6-4957-b4cc-f6b08437372c"
+                  LastKnownName="Lisätään rodun boonukset"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c22bf9c0-45e6-4957-b4cc-f6b08437372c"
+            name="Lisätään rodun boonukset"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e30b0f1a-7766-443b-8e23-80648842dee0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8bc5e169-f98c-457e-9b66-0a30177eb053"
+                  LastKnownName="Poistetaan edeltävät bonukset"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8bc5e169-f98c-457e-9b66-0a30177eb053"
+            name="Poistetaan edeltävät bonukset"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b9e28b01-3793-4d62-96ee-760132c17c38"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05a6df59-c90b-43f8-adb5-d9210a010d34"
+                  LastKnownName="Muutetaanko Rotua?"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1072fcc4-36f4-438e-b6bb-006af0564be5"
+            name="Muutetaanko kansalaisuutta/Mallia?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2b711c69-b34c-4d1d-8d5f-5d3583a69e8d"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="8b51d622-a2d1-469c-98f2-6f6fc2216ccb"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="8b51d622-a2d1-469c-98f2-6f6fc2216ccb"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce564b6e-d7f6-4956-89d4-7f72c3a4e467"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1eb462b9-9af6-4dbf-bd37-20c5d9c183c5"
+                  LastKnownName="Mikä kansalaisuus/malli valittiin?"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="1eb462b9-9af6-4dbf-bd37-20c5d9c183c5"
+            name="Mikä kansalaisuus/malli valittiin?"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9f50ba4a-d625-4037-850c-e2caef6cdcb8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4c2f3e3d-3488-48cb-80e8-97f6319f0815"
+                  LastKnownName="Lisätään boonukset"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4c2f3e3d-3488-48cb-80e8-97f6319f0815"
+            name="Lisätään boonukset"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bc574b29-cfaf-4253-ae9a-5c340105cf74"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="08c7b390-a2d7-48af-b182-59412df24af2"
+                  LastKnownName="Poistetaan vanhat bonukset"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="08c7b390-a2d7-48af-b182-59412df24af2"
+            name="Poistetaan vanhat bonukset"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2db37e75-0ed6-4fd1-aaac-87a3f2592b67"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1072fcc4-36f4-438e-b6bb-006af0564be5"
+                  LastKnownName="Muutetaanko kansalaisuutta/Mallia?"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

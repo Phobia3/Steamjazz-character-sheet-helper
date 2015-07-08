@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace steamjazz
+namespace Steamjazz
 {
     class Skills
     {
@@ -1228,7 +1228,14 @@ namespace steamjazz
                 return false;
             }
         }
-
+        public void SkillLabelMod(string labelPointsLeft, int labelNumber, Label label)
+        {
+            if ( enough(labelPointsLeft, labelNumber) == true)
+            {
+                labelPointsLeft = pointBuy(labelPointsLeft, labelNumber);
+                label.Text = skillAdd(label.Text, labelNumber);
+            }
+        }
         public string pointBuy(string points,int label)
         {
             string tulos = Convert.ToString(Convert.ToInt32(points) - skillRank(label)-1);

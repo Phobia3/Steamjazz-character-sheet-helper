@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace steamjazz
+namespace Steamjazz
 {
     class cCareer
     {
@@ -14,11 +14,11 @@ namespace steamjazz
         {
 
         }
-      
+        string[] Names =  new string[12];
         public string[] CareerSkillNames(int Box4SelectedIndex)
         {
 
-            string[] Names =new string[12];
+            
             if(Box4SelectedIndex ==0)
             {
 

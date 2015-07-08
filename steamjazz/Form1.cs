@@ -13,7 +13,7 @@ using System.Reflection;
 
 
 
-namespace steamjazz
+namespace Steamjazz
 {
 
     
@@ -23,6 +23,7 @@ namespace steamjazz
         cBackground Background = new cBackground();
         Skills Skill = new Skills();
         cCareer Career = new cCareer();
+        cAttributes Attributes = new cAttributes();
 
         object previous;
         object previous2;
@@ -244,7 +245,7 @@ namespace steamjazz
         private void button1_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
-            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE ID=''");
+            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE ID='" +"'");
         }
 
        /// <summary>
@@ -264,13 +265,23 @@ namespace steamjazz
         private void RichTextBoxTulostus(string resurssi)
         {
             var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = resurssi;
-            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-            using (StreamReader sr = new StreamReader(stream))
+            Stream stream = null;
+            try
             {
-                String line = sr.ReadToEnd();
-                richTextBox1.Text = line;
+                stream = assembly.GetManifestResourceStream(resurssi);
+                using (StreamReader sr = new StreamReader(stream))
+                    {
+                        stream = null;
+                        String line = sr.ReadToEnd();
+                        richTextBox1.Text = line;
+                    }
             }
+            finally
+            {
+                if (stream != null)
+                { stream.Dispose(); }
+            }
+            
         }
         /// <summary>
         /// Taustan valinta tapahtuu combobox3:ssa. RichTextBox tulostaa tarvittavan informaation taustoista. Vaikuttaa atribuutteihin ja muihin
@@ -298,6 +309,7 @@ namespace steamjazz
         private void backAttribute()
         {
             backAttributeTake();
+            groupBoxInit();
             switch(comboBox1.SelectedIndex)
             {
                     //"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph" ,"Automaton"
@@ -367,21 +379,21 @@ namespace steamjazz
                         switch(comboBox3.SelectedIndex)
                         {
                             case 0:
-                                { 
-                                    attributeChange("con", 1);
-
+                                {
+                                    // Low  CON, REF or EMP +1 Initial skill ranks: Survival 2, Brawl 1, Stealth 1 15 CP can be used to buy ranks in the following skills: Athletics, Animal Handling, Bluff, Brawl, Cooking, Dodge, First Aid, Forgery, Gaming, Grappling, Handguns, Intimidate, Listen, Melee (Balanced), Melee (Powerful), Spot, Stealth, Survival, Throw or to purchase up to 10 CP worth of acquirable advantages. Starting Wealth level cannot be higher than ‘Well off’.
+                                    groupBox4Visibility("con", "ref", "emp");
                                     break;
                                 }
                             case 1:
                                 {
-                                    attributeChange("wit", 1);
-
+                                    // Middle DEX, INT or WIT +1 Initial skill ranks: Appraise 2, Persuade 1, Negotiate 1 15 CP can be used to buy ranks in the following skills: Appraise, Bluff, Brawl, Craft (any), Cooking, Negotiate, Etiquette, Handguns, Intimidate, Martial Arts (Victoran Pugilism), Mechanics, Perform (dancing), Persuade, Profession (any), Ride.
+                                    groupBox4Visibility("dex", "int", "wit");
                                     break;
                                 }
                             case 2:
                                 {
-                                    attributeChange("cha", 1);
-
+                                    // Upper Cost to play: 10CP INT or CHA +1 Initial skill ranks: Etiquette 3, Negotiate 2, Language: Victoran 1 The Starting wealth level of Victoran upper class characters must be Drifter or higher. The 5 CP cost of Drifter has already been calculated into the Background cost and can be further increased with CP during character creation. 15 CP can be used to buy ranks in the following skills: Art (any), Charm, Negotiate, Etiquette, Knowledge: Heraldry, Language (Victoran), Long Guns, Martial Arts (Fencing), Melee (Finesse), Melee (Balanced), Perform (Dancing), Perform (Oratory), Ride, or to improve the Starting wealth level by 10 CP or to purchase the Noble, Victoran advantage.
+                                    groupBox4Visibility("dex", "int", "wit");
                                     break;
                                 }
                         }
@@ -395,19 +407,44 @@ namespace steamjazz
                         {
                             case 0:
                                 {
-                                    attributeChange("str", 1);
+                                    /*STR, CON or INT +1
+                                    Initial skill ranks: Craft (Gunsmithing 2), Craft (any) 1,
+                                    Mechanics 1
+                                    10 CP can be used to buy ranks in the following skills: Animal
+                                    Handling, Brawl, Clockwork, Cooking, Craft (any), Drive, 
+                                    First Aid, Locksmithing, Mechanics, Persuade, Profession (any),
+                                    Ride.
+                                    */
+                                    groupBox4Visibility("str", "con", "int");
 
                                     break;
                                 }
                             case 1:
                                 {
-                                    attributeChange("con", 1);
+                                    /*STR or DEX +1
+                                    Initial skill ranks: Law: Wulffgart 2, Etiquette 1, Intimidate 1.
+                                    10 CP can be used to buy ranks in the following skills: Animal
+                                    Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &
+                                    Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),
+                                    Leadership, Long Guns, Martial Arts (Wolfbite), Melee
+                                    (Powerful), Ride, Stealth, Strategy/Tactics.
+                                    */
+                                    groupBox4Visibility("str", "dex");
 
                                     break;
                                 }
                             case 2:
                                 {
-                                    attributeChange("cha", 1);
+                                    /*INT or CHA +1
+                                    Initial skill ranks: Etiquette 2, Negotiate 1, Language:
+                                    Wulffgartian 1
+                                    10 CP can be used to buy ranks in the following skills: Charm,
+                                    Negotiate, Etiquette, Intimidate, Language (Wulffgartian), Law
+                                    (Wulffgart), Long Guns, Perform (Dancing), Perform (Oratory),
+                                    Ride, or to improve the Starting wealth level or to purchase the
+                                    Noble, Wulffgartian advantage.
+                                    */
+                                    groupBox4Visibility("int", "cha");
 
                                     break;
                                 }
@@ -420,19 +457,45 @@ namespace steamjazz
                         {
                             case 0:
                                 {
-                                    attributeChange("con", 1);
+                                    /*STR, CON or INT +1
+                                    Initial skill ranks: Craft or Profession (any) 2, Knowledge
+                                    (Kheiman religion) 1, Art (any) 1
+                                    15 CP can be used to buy ranks in the following skills: Art
+                                    (any), Athletics, Brawl, Craft (any), Dodge, Mechanics,
+                                    Perform (Dancing), Persuade, Profession (any), Survival.
+                                    */
+                                    groupBox4Visibility("str", "con", "int");
 
                                     break;
                                 }
                             case 1:
                                 {
-                                    attributeChange("str", 1);
+                                    /* STR, DEX or WIT +1
+                                    Initial skill ranks: Melee (Powerful) 2, Knowledge (Kheiman
+                                    religion) 1, Martial Arts (Kheiman spear) 1
+                                    15 CP can be used to buy ranks in the following skills:
+                                    Athletics, Block, Brawl, Craft (Blacksmithing), Gunsmithing,
+                                    Law (Kheiman), Leadership, Listen, Long Guns, Martial Arts
+                                    (Kheiman spear), Ride, Spot, Survival, Throw, Melee
+                                    (Powerful).
+                                    */
+                                    groupBox4Visibility("str", "dex", "wit");
 
                                     break;
                                 }
                             case 2:
                                 {
-                                    attributeChange("int", 1);
+                                    /*
+                                     *  INT, WIT, EMP or CHA +1
+                                        Initial skill ranks: Knowledge: Kheiman religion 2, Negotiate 1,
+                                        Language: Kheiman 1.
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Alchemy, Art (any), Clockwork, Negotiate, Etiquette, First Aid,
+                                        Knowledge (any), Law (Kheiman), Leadership, Mechanics,
+                                        Medicine and surgery, Persuade, Teaching, or to improve the
+                                        Starting wealth level.
+                                      */
+                                    groupBox4Visibility("int", "wit", "emp","cha");
 
                                     break;
                                 }
@@ -445,19 +508,49 @@ namespace steamjazz
                         {
                             case 0:
                                 {
-                                    attributeChange("int", 1);
+                                    /*CON, INT or EMP +1
+                                    Initial skill ranks: Craft (any) or Profession (any) 2, Appraise 1,
+                                    Persuade 1
+                                    15 CP can be used to buy ranks in the following skills:
+                                    Appraise, Brawl, Clockwork, Cooking, Craft (any), Negotiate,
+                                    Drive, Locksmithing, Mechanics, Melee (Powerful), Persuade,
+                                    Profession (any), Ride.
+                                    */
+                                    groupBox4Visibility("con", "int", "emp");
 
                                     break;
                                 }
                             case 1:
                                 {
-                                    attributeChange("wit", 1);
+                                    /*DEX, WIT or CHA +1
+                                    Initial skill ranks: Appraise 2, Negotiate 1, Persuade 1
+                                    15 CP can be used to buy ranks in the following skills:
+                                    Appraise, Bluff, Cooking, Craft (any), Etiquette, Intimidate,
+                                    Martial Arts (Fencing), Mechanics, Melee (Finesse), Negotiate,
+                                    Persuade, Profession (any), Ride, or to improve the Starting
+                                    wealth level.
+                                    */
+                                    groupBox4Visibility( "dex", "wit", "cha");
 
                                     break;
                                 }
                             case 2:
                                 {
-                                    attributeChange("cha", 1);
+                                    /*Cost to play: 20CP
+                                    DEX, CHA or EMP +1
+                                    Initial skill ranks: Appraise 2, Charm 2, Negotiate 2, Etiquette 1.
+                                    Advantage: Noble, Hanseburg
+                                    Starting wealth level: Drifter. This can be further raised with CP
+                                    during character creation.
+                                    15 CP can be used to buy ranks in the following skills:
+                                    Appraise, Art (any), Charm, Etiquette, Knowledge (Heraldry),
+                                    Language (Victoran), Language (Wulffgartian), Martial Arts
+                                    (Fencing), Martial Arts (Hanseburgian Musketeer Fencing),
+                                    Melee (Finesse), Negotiate, Perform (Dancing), Perform
+                                    (Oratory), Persuade, Ride, or to improve the starting wealth
+                                    level.
+                                    */
+                                    groupBox4Visibility("dex", "cha", "emp");
 
                                     break;
                                 }
@@ -470,19 +563,51 @@ namespace steamjazz
                         {
                             case 0:
                                 {
-                                    attributeChange("int", 1);
+                                    /*
+                                     * STR, CON or EMP +1
+                                        Initial skill ranks: Persuade 2, Animal Handling 1, Profession
+                                        (farmer) 1
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Animal handling, Brawl, Cooking, Craft (any), Listen, Melee
+                                        (Balanced), Melee (Powerful), Persuade, Profession (farmer),
+                                        Spot, Survival.
+                                        */
+                                    groupBox4Visibility("str", "con", "emp");
 
                                     break;
                                 }
                             case 1:
                                 {
-                                    attributeChange("dex", 1);
+                                    /* STR, DEX or CHA +1
+                                    Initial skill ranks: Melee (Balanced) 2, Dodge 1, Law
+                                    (Crimson) 1
+                                    15 CP can be used to buy ranks in the following skills:
+                                    Archery, Athletics, Brawl, Craft (Blacksmithing), Negotiate,
+                                    Dodge, Intimidate, Law (Crimson), Listen, Martial Art (one
+                                    from Crimson), Melee (Balanced), Melee (Powerful), Persuade,
+                                    Ride, Spot, Strategy/Tactics
+                                    */
+                                    groupBox4Visibility("str", "dex", "cha");
 
                                     break;
                                 }
                             case 2:
                                 {
-                                    attributeChange("con", 1);
+                                    /*Cost to play: 20 CP
+                                    DEX, INT or WIT +1
+                                    Initial skill ranks: Law (Crimson) 3, Brawl 2, First aid 2,
+                                    Martial Art (any Crimson) 2, Teaching 2, Clockwork 1, Dodge 1
+                                    10 CP can be used to buy ranks in the following skills:
+                                    Athletics, Brawl, Clockwork, Dodge, First aid, Knowledge
+                                    (any), Law (Crimson), Listen, Persuade, Martial art (one from
+                                    Crimson), Melee (Balanced), Melee (Finesse), Melee
+                                    (Powerful), Negotiate, Sense motive, Survival, Teaching,
+                                    Advantage: Crimson monk status
+                                    All characters of the Way of the Black Dragon have this
+                                    advatage. It is worth 10CP and the cost is already calculated
+                                    into the cost of this background package.
+                                    */
+                                    groupBox4Visibility("dex", "int", "wit");
 
                                     break;
                                 }
@@ -495,7 +620,15 @@ namespace steamjazz
                         {
                             case 0:
                                 {
-                                    attributeChange("int", 1);
+                                    /*Any attribute +1
+                                    Initial skill ranks: Athletics 1, Negotiate 1, Persuade 1, Sailing
+                                    1, Sense Motive 1
+                                    15 CP can be used to buy ranks in the following skills:
+                                    Appraise, Athletics, Bluff, Brawl, Craft (any), Navigation,
+                                    Melee (any), Negotiate, Perform (Dancing), Persuade, Sailing,
+                                    Sailing (Airship), Sense Motive, Spot, Survival.
+*/
+                                    groupBox4Visibility("str", "con", "dex", "ref", "int", "wit", "cha", "emp");
 
                                     break;
                                 }
@@ -559,13 +692,59 @@ namespace steamjazz
             backPrevious2 = comboBox2.SelectedIndex;
             backPrevious3 = comboBox3.SelectedIndex;
             }
+
+       
         /// <summary>
         /// Poistaa edeltävän valinnan muutokset atribuutteihin. KESKEN
         /// </summary>
         private void backAttributeTake()
         {
+            RaceTake();
+            switch (backPrevious2)
+            {
+                case 0:
+                    {
+                        VictoraTake();
+                        break;
+                    }
+                case 1:
+                    {
+                        WolfgartTake();
+                        break;
+                    }
+                case 2:
+                    {
+                        KheimanTake();                       
+                        break;
+                    }
+                case 3:
+                    {
+                        HanseburgTake();
+                        break;
+                    }
+                case 4:
+                    {
+                        CrimsonTake();
+                        break;
+                    }
+                case 5:
+                    {
+                        FreeIslandTake();
+                        break;
+                    }
+                case 6:
+                    {
+                        AutomatonTake();
+                        break;
+                    }
+            }
+            
+        }
+        private void RaceTake()
+        {
             switch (backPrevious1)
             {
+                //"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph" ,"Automaton"
 
                 case 0:
                     {
@@ -574,24 +753,27 @@ namespace steamjazz
                     }
                 case 1:
                     {
+                        //Beatfolk
+                        attributeChange("emp", 1);
+                        attributeChange("cha", 2);
+                        break;
+                    }
+                case 2:
+                    {
                         //Dracosaurian
                         attributeChange("cha", 2);
                         attributeChange("ref", -1);
                         break;
                     }
-                case 2:
-                    {
-                        // Basic
-                        attributeChange("str", -1);
-                        attributeChange("con", -1);
-                        attributeChange("emp", 1);
-                        break;
-                    }
                 case 3:
                     {
-                        //Sylph
-                        attributeChange("str", 1);
-                        attributeChange("dex", -1);
+                        //Goliath STR +3, CON +3, REF -2, INT -2, WIT -2, CHA -2
+                        attributeChange("str", -3);
+                        attributeChange("con", -3);
+                        attributeChange("ref", 2);
+                        attributeChange("int", 2);
+                        attributeChange("wit", 2);
+                        attributeChange("cha", 2);
                         break;
                     }
                 case 4:
@@ -603,271 +785,180 @@ namespace steamjazz
                     }
                 case 5:
                     {
-                        //Beatfolk
-                        attributeChange("emp", 1);
-                        attributeChange("cha", 2);
+                        //Sylph
+                        attributeChange("str", 1);
+                        attributeChange("dex", -1);
                         break;
                     }
                 case 6:
                     {
-                        //Goliath
-                        attributeChange("str", -3);
-                        attributeChange("con", -3);
-                        attributeChange("dex", 2);
-                        attributeChange("ref", 2);
-                        attributeChange("int", 1);
-                        attributeChange("wit", 1);
-                        attributeChange("emp", 3);
-                        break;
-                    }
-                case 7:
-                    {
-                        //Buttler
-                        attributeChange("str", 1);
-                        attributeChange("con", 1);
-                        attributeChange("int", -1);
-                        attributeChange("cha", -1);
-                        attributeChange("emp", -1);
-                        break;
-                    }
-                case 8:
-                    {
-                        // Copper
-                        attributeChange("str", -2);
-                        attributeChange("con", -2);
-                        attributeChange("emp", 2);
-                        attributeChange("cha", 1);
-                        break;
-                    }
-                case 9:
-                    {
-                        // Craftsman
-                        attributeChange("str", -1);
-                        attributeChange("con", -1);
-                        attributeChange("dex", -1);
-                        attributeChange("emp", 1);
-                        attributeChange("cha", 1);
-                        break;
-                    }
-                case 10:
-                    {
-                        //Doll
-                        attributeChange("str", 1);
-                        attributeChange("con", 1);
-                        attributeChange("emp", -1);
-                        attributeChange("cha", -2);
-
-                        break;
-                    }
-                case 11:
-                    {
-                        //Heavy Worker
-                        attributeChange("str", -3);
-                        attributeChange("con", -3);
-                        attributeChange("dex", 2);
-                        attributeChange("ref", 2);
-                        attributeChange("emp", 3);
-                        attributeChange("cha", 1);
+                        // Automaton
                         break;
                     }
             }
-            switch (backPrevious2)
+        }
+        /// <summary>
+        /// Victoria placeholder until I get something to remove
+        /// </summary>
+        private void VictoraTake()
+        {
+            switch (backPrevious3)
             {
                 case 0:
                     {
-                        //Victoria
-                        switch (backPrevious3)
-                        {
-                            case 0:
-                                {
-                                    attributeChange("con", -1);
 
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    attributeChange("wit", -1);
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    attributeChange("cha", -1);
-
-                                    break;
-                                }
-                        }
 
                         break;
                     }
                 case 1:
                     {
-                        //Wolfgart
-                        switch (backPrevious3)
-                        {
-                            case 0:
-                                {
-                                    attributeChange("str", -1);
 
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    attributeChange("con", -1);
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    attributeChange("cha", -1);
-
-                                    break;
-                                }
-                        } break;
+                        break;
                     }
                 case 2:
                     {
-                        //Kheiman Empire                        
-                        switch (backPrevious3)
-                        {
-                            case 0:
-                                {
-                                    attributeChange("con", -1);
 
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    attributeChange("str", -1);
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    attributeChange("int", -1);
-
-                                    break;
-                                }
-                        } break;
+                        break;
                     }
-                case 3:
-                    {
-                        //Hansenburg
-                        switch (backPrevious3)
-                        {
-                            case 0:
-                                {
-                                    attributeChange("int", -1);
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    attributeChange("wit", -1);
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    attributeChange("cha", -1);
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 4:
-                    {
-                        //Crimson Empire
-                        switch (backPrevious3)
-                        {
-                            case 0:
-                                {
-                                    attributeChange("int", -1);
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    attributeChange("dex", -1);
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    attributeChange("con", -1);
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 5:
-                    {
-                        //Free Islands
-                        switch (backPrevious3)
-                        {
-                            case 0:
-                                {
-                                    attributeChange("int", -1);
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    attributeChange("ref", -1);
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    groupBox1.Visible = true;
-                                    radioButton1.Visible = false;
-                                    radioButton2.Visible = true;
-                                    radioButton3.Visible = false;
-                                    radioButton4.Visible = true;
-                                    radioButton5.Visible = false;
-                                    radioButton6.Visible = true;
-                                    radioButton7.Visible = false;
-                                    radioButton8.Visible = true;
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 6:
-                    {
-
-                        if (backPrevious1 == 1)
-                        {
-                            attributeChange("int", -1);
-
-
-                        }
-                        if (backPrevious1 == 3)
-                        {
-                            attributeChange("ref", -1);
-
-                        }
-                        if (backPrevious1 == 4)
-                        {
-                            attributeChange("int", -1);
-
-                        }
-                        if (backPrevious1 == 5)
-                        {
-                            attributeChange("con", -1);
-
-                        }
-                        if (backPrevious1 == 6)
-                        {
-                            attributeChange("con", -1);
-                            attributeChange("cha", 1);
-
-                        }
-
-                    }
-                    break;
             }
-            
+        }
+        /// <summary>
+        /// Wolfgart placeholder
+        /// </summary>
+        private void WolfgartTake()
+        {
+            switch (backPrevious3)
+            {
+                case 0:
+                    {
+                        break;
+                    }
+                case 1:
+                    {
+
+
+                        break;
+                    }
+                case 2:
+                    {
+
+
+                        break;
+                    }
+            }
+        }
+        /// <summary>
+        /// Placeholder for Kheiman Empire
+        /// </summary>
+        private void KheimanTake()
+        {
+            switch (backPrevious3)
+            {
+                case 0:
+                    {
+
+
+                        break;
+                    }
+                case 1:
+                    {
+
+
+                        break;
+                    }
+                case 2:
+                    {
+
+
+                        break;
+                    }
+            }
+        }
+        /// <summary>
+        /// Placeholder for Hanseburg
+        /// </summary>
+        private void HanseburgTake()
+        {
+            switch (backPrevious3)
+            {
+                case 0:
+                    {
+                        break;
+                    }
+                case 1:
+                    {
+                        break;
+                    }
+                case 2:
+                    {
+                        break;
+                    }
+            } 
+        }
+        /// <summary>
+        /// Placeholder for Crimson Empire
+        /// </summary>
+        private void CrimsonTake()
+        {
+
+            switch (backPrevious3)
+            {
+                case 0:
+                    {
+                        break;
+                    }
+                case 1:
+                    {
+                        break;
+                    }
+                case 2:
+                    {
+                        break;
+                    }
+            } 
+        }
+        /// <summary>
+        /// Placeholder for Free Islands
+        /// </summary>
+
+        private void FreeIslandTake()
+        {
+            switch (backPrevious3)
+            {
+                case 0:
+                    {
+                        break;
+                    }
+                case 1:
+                    {
+                        break;
+                    }
+                case 2:
+                    {
+                        break;
+                    }
+            } 
+        }
+        /// <summary>
+        /// placeholder for Automatons
+        /// </summary>
+        private void AutomatonTake()
+        {
+            if (backPrevious1 == 1)
+            {
+            }
+            if (backPrevious1 == 3)
+            {
+            }
+            if (backPrevious1 == 4)
+            {
+            }
+            if (backPrevious1 == 5)
+            {
+            }
+            if (backPrevious1 == 6)
+            {
+            }
         }
         /// <summary>
         /// Pieni erillinen funktio kuvaamaan wolfgartin asepalveluksen vaikutuksia hahmon taitoihin KESKEN
@@ -880,13 +971,24 @@ namespace steamjazz
             var assembly = Assembly.GetExecutingAssembly();
             // 
             var resourceName = "steamjazz.WolffgartService.txt";
-
-            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
-            using (StreamReader sr = new StreamReader(stream))
+            Stream stream1 = null;
+            try
             {
-                String line = sr.ReadToEnd();
-                richTextBox1.Text = line;
+                stream1 = assembly.GetManifestResourceStream(resourceName);
+            
+                using (StreamReader sr = new StreamReader(stream1))
+                {
+                    stream1 = null;
+                    String line = sr.ReadToEnd();
+                    richTextBox1.Text = line;
+                }
             }
+            finally
+            {
+                if (stream1 != null)
+                    stream1.Dispose();
+            }
+            
         }
 
         /// <summary>
@@ -966,123 +1068,7 @@ namespace steamjazz
                     }
             }
         }
-        /// <summary>
-        /// Vastaa attribuutin lisäämisen tai vähentämisen vaikutuksesta attribuuttipisteiden määrään.
-        /// </summary>
-        /// <param name="x"></param>
-        /// attribuutin nykyinen arvo
-        /// <param name="points"></param>
-        /// vapaiden attribuuttipisteiden määrä
-        /// <param name="change"></param>
-        /// muutoksen määrä
-        /// <returns></returns>
-        private static int pointCalc(int x,int points, int change)
-        {
-            int[] hinta = new int[] {0,1,4,9,16,25,36,49,64 };
-            
-            if (x<10)
-            {
-                    points = points - change * 5;
-            }
-            if(x==10 && change <0)
-            {
-                points = points - change * 5;
-            }
-            if (x == 10 && change >0)
-            {
-                while(change>0)
-                {
 
-                    points = points - hinta[change];
-                    change--;
-                }
-            }
-            if(x>10)
-            {
-                if (change > 0)
-                {
-                    
-                    int diff = 0;
-                    diff = x - 10;
-                    
-                    points = points - hinta[diff+change];
-
-                }
-                if(change<0)
-                {
-                    int diff = 0;
-                    diff = x - 10;
-                    points = points + hinta[diff];
-
-
-                }
-            }
-            return points;
-        }
-        /// <summary>
-        /// Muokkaa attribuuttien määrän ilmoittavien label:n tekstin arvoa
-        /// </summary>
-        /// <param name="att"></param>
-        /// attribuutin nimi
-        /// <param name="change"></param>
-        /// muutos
-        /// <param name="points"></param>
-        /// attribuuttipisteiden määrä
-        private void attributeChange(string att, int change, int points)
-        {
-            
-            switch (att)
-            {
-                case "str":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label6.Text), points, change));
-                        label6.Text = Convert.ToString(Convert.ToInt32(label6.Text) + change);
-                        break;
-                    }
-                case "con":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label8.Text), points, change));
-                        label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) + change);
-                        break;
-                    }
-                case "dex":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label10.Text), points, change));
-                        label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) + change);
-                        break;
-                    }
-                case "ref":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label12.Text), points, change));
-                        label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) + change);
-                        break;
-                    }
-                case "int":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label30.Text), points, change));
-                        label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) + change);
-                        break;
-                    }
-                case "wit":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label33.Text), points, change));
-                        label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) + change);
-                        break;
-                    }
-                case "cha":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label35.Text), points, change));
-                        label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) + change);
-                        break;
-                    }
-                case "emp":
-                    {
-                        label39.Text= Convert.ToString(pointCalc(Convert.ToInt32(label37.Text), points, change));
-                        label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) + change);
-                        break;
-                    }
-            }
-        }
         /// <summary>
         /// Lisää toiminnallisuuden + merkkisiin label:in
         /// </summary>
@@ -1092,35 +1078,35 @@ namespace steamjazz
         {
             if (sender==label13)
             {
-                attributeChange("str", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("str", 1, Convert.ToInt32(label39.Text), label6, label39);
             }
             if (sender == label15)
             {
-                attributeChange("con", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("con", 1, Convert.ToInt32(label39.Text), label8, label39);
             }
             if (sender == label17)
             {
-                attributeChange("dex", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("dex", 1, Convert.ToInt32(label39.Text), label10, label39);
             }
             if (sender == label19)
             {
-                attributeChange("ref", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("ref", 1, Convert.ToInt32(label39.Text), label12, label39);
             }
             if (sender == label21)
             {
-                attributeChange("int", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("int", 1, Convert.ToInt32(label39.Text), label30, label39);
             }
             if (sender == label23)
             {
-                attributeChange("wit", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("wit", 1, Convert.ToInt32(label39.Text), label33, label39);
             }
             if (sender == label25)
             {
-                attributeChange("cha", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("cha", 1, Convert.ToInt32(label39.Text), label35, label39);
             }
             if (sender == label27)
             {
-                attributeChange("emp", 1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("emp", 1, Convert.ToInt32(label39.Text), label37, label39);
             }
         }
         /// <summary>
@@ -1132,35 +1118,35 @@ namespace steamjazz
         {
             if (sender == label14)
             {//str
-                attributeChange("str", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("str", -1, Convert.ToInt32(label39.Text),label6, label39);
             }
             if (sender == label16)
             {
-                attributeChange("con", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("con", -1, Convert.ToInt32(label39.Text),label8, label39);
             }
             if (sender == label18)
             {
-                attributeChange("dex", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("dex", -1, Convert.ToInt32(label39.Text), label10, label39);
             }
             if (sender == label20)
             {
-                attributeChange("ref", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("ref", -1, Convert.ToInt32(label39.Text), label12, label39);
             }
             if (sender == label22)
             {
-                attributeChange("int", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("int", -1, Convert.ToInt32(label39.Text), label30, label39);
             }
             if (sender == label24)
             {
-                attributeChange("wit", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("wit", -1, Convert.ToInt32(label39.Text), label33, label39);
             }
             if (sender == label26)
             {
-                attributeChange("cha", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("cha", -1, Convert.ToInt32(label39.Text), label35, label39);
             }
             if (sender == label28)
             {
-                attributeChange("emp", -1, Convert.ToInt32(label39.Text));
+                Attributes.attributeChange("emp", -1, Convert.ToInt32(label39.Text), label37, label39);
             }
         }
         /// <summary>
@@ -1203,6 +1189,39 @@ namespace steamjazz
                 attributeChange("emp", 1);
             }
 
+            if (sender == radioButton25)
+            {//str
+                attributeChange("str", 1);
+            }
+            if (sender == radioButton27)
+            {
+                attributeChange("con", 1);
+            }
+            if (sender == radioButton29)
+            {
+                attributeChange("dex", 1);
+            }
+            if (sender == radioButton31)
+            {
+                attributeChange("ref", 1);
+            }
+            if (sender == radioButton32)
+            {
+                attributeChange("int", 1);
+            }
+            if (sender == radioButton30)
+            {
+                attributeChange("wit", 1);
+            }
+            if (sender == radioButton28)
+            {
+                attributeChange("cha", 1);
+            }
+            if (sender == radioButton26)
+            {
+                attributeChange("emp", 1);
+            }
+
             
             radioTake(previous);
             previous = sender;
@@ -1214,10 +1233,9 @@ namespace steamjazz
         /// <param name="e"></param>
         private void radioAdd2(object sender, EventArgs e)
          {
-             if (sender == radioButton9)
+             if (sender == radioButton9 )
              {//str
                  attributeChange("str", 2);
-                 radioButton1.Visible = false;
              }
              if (sender == radioButton10)
              {
@@ -1339,6 +1357,38 @@ namespace steamjazz
                  attributeChange("cha", -1);
              }
              if (previous == radioButton8)
+             {
+                 attributeChange("emp", -1);
+             }
+             if (previous == radioButton25)
+             {//str
+                 attributeChange("str", -1);
+             }
+             if (previous == radioButton27)
+             {
+                 attributeChange("con", -1);
+             }
+             if (previous == radioButton29)
+             {
+                 attributeChange("dex", -1);
+             }
+             if (previous == radioButton31)
+             {
+                 attributeChange("ref", -1);
+             }
+             if (previous == radioButton32)
+             {
+                 attributeChange("int", -1);
+             }
+             if (previous == radioButton30)
+             {
+                 attributeChange("wit", -1);
+             }
+             if (previous == radioButton28)
+             {
+                 attributeChange("cha", -1);
+             }
+             if (previous == radioButton26)
              {
                  attributeChange("emp", -1);
              }
@@ -1555,6 +1605,7 @@ namespace steamjazz
                 }
             }
         }
+        
         /// <summary>
         /// Tarkastelee skill välilehden + ja - merkkien painalluksia. Tarkistaa painetun labelin ja toimii sen mukaisesti
         /// </summary>
@@ -1562,402 +1613,214 @@ namespace steamjazz
         /// Klikattu label
         /// <param name="e"></param>
         /// perus e event argumentti
-        private void skillClick(object sender, EventArgs e)
+        private void SkillClick(object sender, EventArgs e)
         {
             if (sender == label81)
             {
-                if (Skill.enough( label213.Text,73 ) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 73);
-                    label73.Text = Skill.skillAdd(label73.Text, 73);
-                }
+                Skill.SkillLabelMod(label213.Text, 73, label73);
             }
             if (sender == label82)
             {
-                if (Skill.enough(label213.Text, 74) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 74);
-                    label74.Text = Skill.skillAdd(label74.Text,74);
-                }
+                Skill.SkillLabelMod(label213.Text, 74, label74);
             }
             if (sender == label83)
             {
-                if (Skill.enough(label213.Text, 75) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 75);
-                    label75.Text = Skill.skillAdd(label75.Text,75);
-                }
+                Skill.SkillLabelMod(label213.Text, 75, label75);
             }
             if (sender == label84)
             {
-                if (Skill.enough(label213.Text, 76) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 76);
-                    label76.Text = Skill.skillAdd(label76.Text,76);
-                }
+                Skill.SkillLabelMod(label213.Text, 76, label76);
             }
             if (sender == label85)
             {
-                if (Skill.enough(label213.Text, 77) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 77);
-                    label77.Text = Skill.skillAdd(label77.Text,77);
-                }
+                Skill.SkillLabelMod(label213.Text, 77, label77);
             }
             if (sender == label86)
             {
-                if (Skill.enough(label213.Text, 78) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 78);
-                    label78.Text = Skill.skillAdd(label78.Text,78);
-                }
+                Skill.SkillLabelMod(label213.Text, 78, label78);
             }
             if (sender == label87)
             {
-                if (Skill.enough(label213.Text, 79) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 79);
-                    label79.Text = Skill.skillAdd(label79.Text,79);
-                }
+                Skill.SkillLabelMod(label213.Text, 79, label79);
             }
             if (sender == label88)
             {
-                if (Skill.enough(label213.Text, 80) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 80);
-                    label80.Text = Skill.skillAdd(label80.Text,80);
-                }
+                Skill.SkillLabelMod(label213.Text, 80, label80);
             }
             //Social Skills
             if( sender == label214)
             {
-                if (Skill.enough(label213.Text, 161) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 161);
-                    label161.Text = Skill.skillAdd(label161.Text,161);
-                }
+                Skill.SkillLabelMod(label213.Text, 161, label161);
             }
             if (sender == label215)
             {
-                if (Skill.enough(label213.Text, 162) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 162);
-                    label162.Text = Skill.skillAdd(label162.Text,162);
-                }
+                Skill.SkillLabelMod(label213.Text, 162, label162);
             }
             if (sender == label216)
             {
-                if (Skill.enough(label213.Text, 163) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 163);
-                    label163.Text = Skill.skillAdd(label163.Text,163);
-                }
+                Skill.SkillLabelMod(label213.Text, 163, label163);
             }
             if (sender == label217)
             {
-                if (Skill.enough(label213.Text, 164) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 164);
-                    label164.Text = Skill.skillAdd(label164.Text,164);
-                }
+                Skill.SkillLabelMod(label213.Text, 164, label164);
             }
             if (sender == label218)
             {
-                if (Skill.enough(label213.Text, 165) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 165);
-                    label165.Text = Skill.skillAdd(label165.Text,165);
-                }
+                Skill.SkillLabelMod(label213.Text, 165, label165);
             }
             if (sender == label219)
             {
-                if (Skill.enough(label213.Text, 166) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 166);
-                    label166.Text = Skill.skillAdd(label166.Text,166);
-                }
+                Skill.SkillLabelMod(label213.Text, 166, label166);
             }
             // Intution
 
             if (sender == label220)
             {
-                if (Skill.enough(label213.Text, 167) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 167);
-                    label167.Text = Skill.skillAdd(label167.Text,167);
-                }
+                Skill.SkillLabelMod(label213.Text, 167, label167);
             } 
             
             if (sender == label221)
             {
-                if (Skill.enough(label213.Text, 168) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 168);
-                    label168.Text = Skill.skillAdd(label168.Text,168);
-                }
+                Skill.SkillLabelMod(label213.Text, 168, label168);
             } 
             
             if (sender == label222)
             {
-                if (Skill.enough(label213.Text, 169) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 169);
-                    label169.Text = Skill.skillAdd(label169.Text,169);
-                }
+                Skill.SkillLabelMod(label213.Text, 169, label169);
             } 
             
             if (sender == label223)
             {
-                if (Skill.enough(label213.Text, 170) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 170);
-                    label170.Text = Skill.skillAdd(label170.Text,170);
-                }
+                Skill.SkillLabelMod(label213.Text, 170, label170);
             } 
             
             if (sender == label224)
             {
-                if (Skill.enough(label213.Text, 171) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 171);
-                    label171.Text = Skill.skillAdd(label171.Text,171);
-                }
+                Skill.SkillLabelMod(label213.Text, 171, label171);
             } 
 
             if (sender == label225)
             {
-                if (Skill.enough(label213.Text, 172) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 172);
-                    label172.Text = Skill.skillAdd(label172.Text,172);
-                }
+                Skill.SkillLabelMod(label213.Text, 172, label172);
             } 
            
             if (sender == label226)
             {
-                if (Skill.enough(label213.Text, 173) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 173);
-                    label173.Text = Skill.skillAdd(label173.Text,173);
-                }
+                Skill.SkillLabelMod(label213.Text, 173, label173);
             }
 
             //combat
             if (sender == label227)
             {
-                if (Skill.enough(label213.Text, 174) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 174);
-                    label174.Text = Skill.skillAdd(label174.Text,174);
-                }
+                Skill.SkillLabelMod(label213.Text, 174, label174);
             }
             if (sender == label228)
             {
-                if (Skill.enough(label213.Text, 175) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 175);
-                    label175.Text = Skill.skillAdd(label178.Text,175);
-                }
+                Skill.SkillLabelMod(label213.Text, 175, label175);
             }
             if (sender == label229)
             {
-                if (Skill.enough(label213.Text, 176) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 176);
-                    label176.Text = Skill.skillAdd(label176.Text,176);
-                }
+                Skill.SkillLabelMod(label213.Text, 176, label176);
             }
             if (sender == label230)
             {
-                if (Skill.enough(label213.Text, 177) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 177);
-                    label177.Text = Skill.skillAdd(label177.Text,177);
-                }
+                Skill.SkillLabelMod(label213.Text, 177, label177);
             }
             if (sender == label231)
             {
-                if (Skill.enough(label213.Text, 178) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 178);
-                    label178.Text = Skill.skillAdd(label178.Text,178);
-                }
+                Skill.SkillLabelMod(label213.Text, 178, label178);
             }
             if (sender == label232)
             {
-                if (Skill.enough(label213.Text, 179) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 179);
-                    label179.Text = Skill.skillAdd(label179.Text,179);
-                }
+                Skill.SkillLabelMod(label213.Text, 179, label179);
             }
             if (sender == label233)
             {
-                if (Skill.enough(label213.Text, 180) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 180);
-                    label180.Text = Skill.skillAdd(label180.Text,180);
-                }
+                Skill.SkillLabelMod(label213.Text, 180, label180);
             }
             if (sender == label234)
             {
-                if (Skill.enough(label213.Text, 181) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 181);
-                    label181.Text = Skill.skillAdd(label181.Text,181);
-                }
+                Skill.SkillLabelMod(label213.Text, 181, label181);
             }
             if (sender == label235)
             {
-                if (Skill.enough(label213.Text, 182) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 182);
-                    label182.Text = Skill.skillAdd(label182.Text,182);
-                }
+                Skill.SkillLabelMod(label213.Text, 182, label182);
             }
             if (sender == label236)
             {
-                if (Skill.enough(label213.Text, 183) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 183);
-                    label183.Text = Skill.skillAdd(label183.Text,183);
-                }
+                Skill.SkillLabelMod(label213.Text, 183, label183);
             }
             if (sender == label237)
             {
-                if (Skill.enough(label213.Text, 184) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 184);
-                    label184.Text = Skill.skillAdd(label184.Text,184);
-                }
+                Skill.SkillLabelMod(label213.Text, 184, label184);
             }
             if (sender == label238)
             {
-                if (Skill.enough(label213.Text, 185) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 185);
-                    label185.Text = Skill.skillAdd(label185.Text,185);
-                }
+                Skill.SkillLabelMod(label213.Text, 185, label185);
             }
             if (sender == label239)
             {
-                if (Skill.enough(label213.Text, 186) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 186);
-                    label186.Text = Skill.skillAdd(label186.Text,186);
-                }
+                Skill.SkillLabelMod(label213.Text, 186, label186);
             }
             if (sender == label240)
             {
-                if (Skill.enough(label213.Text, 187) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 187);
-                    label187.Text = Skill.skillAdd(label187.Text,187);
-                }
+                Skill.SkillLabelMod(label213.Text, 187, label187);
             }
 
             //Empatia
             if (sender == label241)
             {
-                if (Skill.enough(label213.Text, 188) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 188);
-                    label188.Text = Skill.skillAdd(label188.Text, 188);
-                }
+                Skill.SkillLabelMod(label213.Text, 188, label188);
             }
 
             if (sender == label242)
             {
-                if (Skill.enough(label213.Text, 189) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 189);
-                    label189.Text = Skill.skillAdd(label189.Text, 189);
-                }
+                Skill.SkillLabelMod(label213.Text, 189, label189);
             }
 
             if (sender == label243)
             {
-                if (Skill.enough(label213.Text, 190) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 190);
-                    label190.Text = Skill.skillAdd(label190.Text, 190);
-                }
+                Skill.SkillLabelMod(label213.Text, 190, label190);
             }
 
             if (sender == label244)
             {
-                if (Skill.enough(label213.Text, 191) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 191);
-                    label191.Text = Skill.skillAdd(label191.Text, 191);
-                }
+                Skill.SkillLabelMod(label213.Text, 191, label191);
             }
 
             //inteligence
             if (sender == label245)
             {
-                if (Skill.enough(label213.Text, 192) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 192);
-                    label192.Text = Skill.skillAdd(label192.Text,192);
-                }
+                Skill.SkillLabelMod(label213.Text, 192, label192);
             }
 
             if (sender == label246)
             {
-                if (Skill.enough(label213.Text, 193) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 193);
-                    label193.Text = Skill.skillAdd(label193.Text,193);
-                }
+                Skill.SkillLabelMod(label213.Text, 193, label193);
             }
             if (sender == label247)
             {
-                if (Skill.enough(label213.Text, 194) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 194);
-                    label194.Text = Skill.skillAdd(label194.Text,194);
-                }
+                Skill.SkillLabelMod(label213.Text, 194, label194);
             }
             if (sender == label248)
             {
-                if (Skill.enough(label213.Text, 195) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 195);
-                    label195.Text = Skill.skillAdd(label195.Text,195);
-                }
+                Skill.SkillLabelMod(label213.Text, 195, label195);
             }
             if (sender == label249)
             {
-                if (Skill.enough(label213.Text, 196) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 196);
-                    label196.Text = Skill.skillAdd(label196.Text,196);
-                }
+                Skill.SkillLabelMod(label213.Text, 196, label196);
             }
             if (sender == label250)
             {
-                if (Skill.enough(label213.Text, 197) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 197);
-                    label197.Text = Skill.skillAdd(label197.Text,197);
-                }
+                Skill.SkillLabelMod(label213.Text, 197, label197);
             }
             if (sender == label251)
             {
-                if (Skill.enough(label213.Text, 198) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 198);
-                    label198.Text = Skill.skillAdd(label198.Text,198);
-                }
+                Skill.SkillLabelMod(label213.Text, 198, label198);
             }
             if (sender == label252)
             {
-                if (Skill.enough(label213.Text, 199) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 199);
-                    label199.Text = Skill.skillAdd(label199.Text,199);
-                }
+                Skill.SkillLabelMod(label213.Text, 199, label199);
             }
             if (sender == label253)
             {
@@ -3105,6 +2968,7 @@ namespace steamjazz
         {
             groupBox2.Visible = false;
             groupBox1.Visible = false;
+            groupBox4.Visible = false;
             radioButton1.Visible = false;
             radioButton2.Visible = false;
             radioButton3.Visible = false;
@@ -3120,7 +2984,15 @@ namespace steamjazz
             radioButton13.Visible = false;
             radioButton14.Visible = false;
             radioButton15.Visible = false;
-            radioButton16.Visible = false;
+            radioButton16.Visible = false;            
+            radioButton25.Visible = false;
+            radioButton26.Visible = false;
+            radioButton27.Visible = false;
+            radioButton28.Visible = false;
+            radioButton29.Visible = false;
+            radioButton30.Visible = false;
+            radioButton31.Visible = false;
+            radioButton32.Visible = false;
         }
         /// <summary>
         /// muttaa halutun radiobuttonin näkyvyyden todeksi
@@ -3227,64 +3099,60 @@ namespace steamjazz
                         }
                 }
             }
-        }
-      
-        private void groupBox1Visibility(string att1)
-      
-        {
-            
-            attributeVisibility(att1, 1);
-        }
-        
-        private void groupBox1Visibility(string att1, string att2)
-        {
-            attributeVisibility(att1, 1);
-            attributeVisibility(att2, 1);
+            //groupbox4
+            if (x == 4)
+            {
+                groupBox4.Visible = true;
+                switch (att)
+                {
+                    case "str":
+                        {
+                            radioButton25.Visible = true;
+                            break;
+                        }
+                    case "con":
+                        {
+                            radioButton27.Visible = true;
+                            break;
+                        }
+                    case "dex":
+                        {
+                            radioButton29.Visible = true;
+                            break;
+                        }
+                    case "ref":
+                        {
+                            radioButton31.Visible = true;
+                            break;
+                        }
+                    case "int":
+                        {
+                            radioButton32.Visible = true;
+                            break;
+                        }
+                    case "wit":
+                        {
+                            radioButton30.Visible = true;
+                            break;
+                        }
+                    case "cha":
+                        {
+                            radioButton28.Visible = true;
+                            break;
+                        }
+                    case "emp":
+                        {
+                            radioButton26.Visible = true;
+                            break;
+                        }
+                }
+            }
         }
         private void groupBox1Visibility(string att1, string att2, string att3)
         {
             attributeVisibility(att1, 1);
             attributeVisibility(att2, 1);
             attributeVisibility(att3, 1);
-        }
-        private void groupBox1Visibility(string att1, string att2, string att3, string att4)
-        {
-            attributeVisibility(att1, 1);
-            attributeVisibility(att2, 1);
-            attributeVisibility(att3, 1);
-            attributeVisibility(att4, 1);
-        }
-        private void groupBox1Visibility(string att1, string att2, string att3, string att4, string att5)
-        {
-            attributeVisibility(att1, 1);
-            attributeVisibility(att2, 1);
-            attributeVisibility(att3, 1);
-            attributeVisibility(att4, 1);
-            attributeVisibility(att5, 1);
-        }
-
-        private void groupBox2Visibility(string att1)
-        {
-            attributeVisibility(att1, 2);
-        }
-
-        private void groupBox2Visibility(string att1, string att2)
-        {
-            attributeVisibility(att1, 2);
-            attributeVisibility(att2, 2);
-        }
-        private void groupBox2Visibility(string att1, string att2, string att3)
-        {
-            attributeVisibility(att1, 2);
-            attributeVisibility(att2, 2);
-            attributeVisibility(att3, 2);
-        }
-        private void groupBox2Visibility(string att1, string att2, string att3, string att4)
-        {
-            attributeVisibility(att1, 2);
-            attributeVisibility(att2, 2);
-            attributeVisibility(att3, 2);
-            attributeVisibility(att4, 2);
         }
         private void groupBox2Visibility(string att1, string att2, string att3, string att4, string att5)
         {
@@ -3293,6 +3161,35 @@ namespace steamjazz
             attributeVisibility(att3, 2);
             attributeVisibility(att4, 2);
             attributeVisibility(att5, 2);
+        }
+        private void groupBox4Visibility(string att1, string att2)
+        {
+            attributeVisibility(att1, 4);
+            attributeVisibility(att2, 4);
+        }
+        private void groupBox4Visibility(string att1, string att2, string att3)
+        {
+            attributeVisibility(att1, 4);
+            attributeVisibility(att2, 4);
+            attributeVisibility(att3, 4);
+        }
+        private void groupBox4Visibility(string att1, string att2, string att3, string att4)
+        {
+            attributeVisibility(att1, 4);
+            attributeVisibility(att2, 4);
+            attributeVisibility(att3, 4);
+            attributeVisibility(att4, 4);
+        }
+        private void groupBox4Visibility(string p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8)
+        {
+            attributeVisibility(p1, 4);
+            attributeVisibility(p2, 4);
+            attributeVisibility(p3, 4);
+            attributeVisibility(p4, 4);
+            attributeVisibility(p5, 4);
+            attributeVisibility(p6, 4);
+            attributeVisibility(p7, 4);
+            attributeVisibility(p8, 4);
         }
     }
 }

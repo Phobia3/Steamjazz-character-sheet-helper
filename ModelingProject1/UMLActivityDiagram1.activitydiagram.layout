@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLActivityDiagram1">
+  <activityRootModelMoniker Id="a8b6e29a-aa71-4a3e-9eda-b694207239f5" />
+  <nestedChildShapes>
+    <initialNodeShape Id="a806245a-d651-4c42-8f73-7d58787cfda0" absoluteBounds="0.875, 0.625, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="4918687f-71f4-4b96-89e5-f92b9305836e" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <objectNodeShape Id="73743ef0-0d5f-4568-aebb-ca008eb22489" absoluteBounds="2.125, 0.625, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="6589085a-56ed-4e6c-9703-ce43e8f40f98" LastKnownName="Aloitus ruutu" />
+    </objectNodeShape>
+    <decisionNodeShape Id="0b347504-3703-43c7-880c-2c09986aa9e8" absoluteBounds="5, 0.625, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="b374ee8c-d1d1-48c2-8a8e-7f1fb7763e82" LastKnownName="Decision1" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="0c1c069f-bdf8-45bb-bd91-9baa5e65da80" absoluteBounds="3.5, 0.625, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="95616b10-c1d4-4f5c-b493-6be2de71fcb0" LastKnownName="Uusi hahmo?" />
+    </actionShape>
+    <objectFlowConnector edgePoints="[(3.25 : 0.8125); (3.5 : 0.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="502fa9ce-15fc-4d91-8663-f4a1d5f34b81" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="73743ef0-0d5f-4568-aebb-ca008eb22489" />
+        <actionShapeMoniker Id="0c1c069f-bdf8-45bb-bd91-9baa5e65da80" />
+      </nodes>
+    </objectFlowConnector>
+    <controlFlowConnector edgePoints="[(4.625 : 0.8125); (5 : 0.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="eb18f903-982d-4323-923e-ba0470b748d5" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="0c1c069f-bdf8-45bb-bd91-9baa5e65da80" />
+        <decisionNodeShapeMoniker Id="0b347504-3703-43c7-880c-2c09986aa9e8" />
+      </nodes>
+    </controlFlowConnector>
+    <objectNodeShape Id="8eec41dd-5c65-4a68-af59-7c1549125688" absoluteBounds="4.625, 1.375, 1.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="5b391ae6-0061-4fae-930a-7f6e5517c568" LastKnownName="Oletus näkymä" />
+    </objectNodeShape>
+    <objectFlowConnector edgePoints="[(5.1875 : 1); (5.1875 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="c76a2736-cbb9-48ff-961a-dbfd8df2a844" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="0b347504-3703-43c7-880c-2c09986aa9e8" />
+        <objectNodeShapeMoniker Id="8eec41dd-5c65-4a68-af59-7c1549125688" />
+      </nodes>
+    </objectFlowConnector>
+    <objectFlowConnector edgePoints="[(1 : 0.6875); (2.125 : 0.6875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="5fb6596d-bef0-4160-b98e-9c11f71665a5" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="a806245a-d651-4c42-8f73-7d58787cfda0" />
+        <objectNodeShapeMoniker Id="73743ef0-0d5f-4568-aebb-ca008eb22489" />
+      </nodes>
+    </objectFlowConnector>
+    <actionShape Id="d147cbb1-6525-4181-b9d3-598ab12602ee" absoluteBounds="4.625, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="f71c43fd-78f5-4d74-8be0-3561236ad782" LastKnownName="Muutetaanko Rotua?" />
+    </actionShape>
+    <decisionNodeShape Id="1ae29b86-88f6-4795-b933-3f6f94b944f3" absoluteBounds="5, 3.25, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="7e3e59ad-2414-4eaa-a9ad-5fbb628aff0f" LastKnownName="Decision2" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="f853fd0e-50a3-458c-b281-19e170d3c554" absoluteBounds="2.875, 3.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="05aab2c9-5e60-4fcf-aee4-5d7dce6ff598" LastKnownName="Mikä rotu valittiin?" />
+    </actionShape>
+    <actionShape Id="f45bf08e-4e93-4a0e-bc46-f4b735ba9917" absoluteBounds="2.875, 2.625, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="e497870e-2146-4e09-9add-d3de7e918875" LastKnownName="Lisätään rodun boonukset" />
+    </actionShape>
+    <actionShape Id="e702e199-4376-4aeb-ae2a-30abc5837d65" absoluteBounds="2.875, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="00c4a6d8-efe8-4474-99c3-c83a70b582c2" LastKnownName="Poistetaan edeltävät bonukset" />
+    </actionShape>
+    <objectFlowConnector edgePoints="[(5.1875 : 1.75); (5.1875 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="95617330-8a52-4372-99a6-9f9ad88db99e" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="8eec41dd-5c65-4a68-af59-7c1549125688" />
+        <actionShapeMoniker Id="d147cbb1-6525-4181-b9d3-598ab12602ee" />
+      </nodes>
+    </objectFlowConnector>
+    <controlFlowConnector edgePoints="[(5.1875 : 2.375); (5.1875 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="28d8d566-0899-4c0a-89c9-e58a17363fbf" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="d147cbb1-6525-4181-b9d3-598ab12602ee" />
+        <decisionNodeShapeMoniker Id="1ae29b86-88f6-4795-b933-3f6f94b944f3" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5 : 3.4375); (4 : 3.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="1810f399-4f1b-431c-a81d-2a7065c355db" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="1ae29b86-88f6-4795-b933-3f6f94b944f3" />
+        <actionShapeMoniker Id="f853fd0e-50a3-458c-b281-19e170d3c554" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.4375 : 3.25); (3.4375 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="dfd86ba9-aace-403e-88ef-67698c255dc0" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="f853fd0e-50a3-458c-b281-19e170d3c554" />
+        <actionShapeMoniker Id="f45bf08e-4e93-4a0e-bc46-f4b735ba9917" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.4375 : 2.625); (3.4375 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="f1672e9a-1769-4527-998d-29598fbed91c" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="f45bf08e-4e93-4a0e-bc46-f4b735ba9917" />
+        <actionShapeMoniker Id="e702e199-4376-4aeb-ae2a-30abc5837d65" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4 : 2.1875); (4.625 : 2.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="6ea5773f-ac28-4139-bac8-8a13a243ece1" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="e702e199-4376-4aeb-ae2a-30abc5837d65" />
+        <actionShapeMoniker Id="d147cbb1-6525-4181-b9d3-598ab12602ee" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="dee6f7f9-a188-4f4d-91f7-3779e0f96ecd" absoluteBounds="4.625, 4, 1.125, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="7882b574-dc81-49e1-b3b3-299dbcdeea2f" LastKnownName="Muutetaanko kansalaisuutta/Mallia?" />
+    </actionShape>
+    <decisionNodeShape Id="e9b44311-3848-423c-bfbd-03c90fc4580d" absoluteBounds="5, 5.625, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="b771f3fb-6a5b-4190-9f4a-59657a0c0a8e" LastKnownName="Decision3" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="22e31203-9a12-4e0e-84e0-2a7d9c780a8b" absoluteBounds="3, 5.625, 1.125, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="9126457d-038b-4120-96df-4227d7d9abf4" LastKnownName="Mikä kansalaisuus/malli valittiin?" />
+    </actionShape>
+    <actionShape Id="9efe9979-28e2-4e91-beac-0e6c1a015012" absoluteBounds="3, 4.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="717fa319-aedb-4311-ae34-8511dc5d13fe" LastKnownName="Lisätään boonukset" />
+    </actionShape>
+    <actionShape Id="1a6ca69d-77a6-4ab6-8084-9913e7be2da6" absoluteBounds="3, 4.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="0c308764-5849-4c19-8b4e-46e72ddcf39b" LastKnownName="Poistetaan vanhat bonukset" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(5.1875 : 3.625); (5.1875 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="9595c127-f0fd-463c-b0df-658ec644eea7" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="1ae29b86-88f6-4795-b933-3f6f94b944f3" />
+        <actionShapeMoniker Id="dee6f7f9-a188-4f4d-91f7-3779e0f96ecd" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.1875 : 4.625); (5.1875 : 5.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="f6c9187d-f21e-4156-a0ce-2c1811dafbaa" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="dee6f7f9-a188-4f4d-91f7-3779e0f96ecd" />
+        <decisionNodeShapeMoniker Id="e9b44311-3848-423c-bfbd-03c90fc4580d" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5 : 5.8125); (4.125 : 5.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="5fa96ba0-1dc3-4a62-a69f-bb8bad957349" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="e9b44311-3848-423c-bfbd-03c90fc4580d" />
+        <actionShapeMoniker Id="22e31203-9a12-4e0e-84e0-2a7d9c780a8b" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.5625 : 5.625); (3.5625 : 5.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="cc3c3e5f-512b-4fe0-8649-5e8c2518e243" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="22e31203-9a12-4e0e-84e0-2a7d9c780a8b" />
+        <actionShapeMoniker Id="9efe9979-28e2-4e91-beac-0e6c1a015012" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.5625 : 4.875); (3.5625 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="666cbd8d-6339-4770-b1c1-ab4b96a310c6" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="9efe9979-28e2-4e91-beac-0e6c1a015012" />
+        <actionShapeMoniker Id="1a6ca69d-77a6-4ab6-8084-9913e7be2da6" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.125 : 4.4375); (4.625 : 4.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="2eee0c09-03ca-419c-a531-f60741b5c32a" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="1a6ca69d-77a6-4ab6-8084-9913e7be2da6" />
+        <actionShapeMoniker Id="dee6f7f9-a188-4f4d-91f7-3779e0f96ecd" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

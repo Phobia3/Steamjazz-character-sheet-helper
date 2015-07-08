@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steamjazz", "steamjazz\Steamjazz.csproj", "{E2BF9421-668D-4671-9D5A-946022F59613}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{D1F1E4AB-74BA-4671-8668-422FE73B33F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E2BF9421-668D-4671-9D5A-946022F59613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2BF9421-668D-4671-9D5A-946022F59613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2BF9421-668D-4671-9D5A-946022F59613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F1E4AB-74BA-4671-8668-422FE73B33F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F1E4AB-74BA-4671-8668-422FE73B33F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F1E4AB-74BA-4671-8668-422FE73B33F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F1E4AB-74BA-4671-8668-422FE73B33F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

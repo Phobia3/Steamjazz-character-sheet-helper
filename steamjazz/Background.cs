@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Steamjazz.Properties;
 using System.Reflection;
 
-namespace steamjazz
+namespace Steamjazz
 {
     class cBackground
     {
@@ -15,38 +15,47 @@ namespace steamjazz
         {
 
         }
+        private string palautus;
+        public string Palautus
+        {
+            get
+            { return palautus; }
+            set
+            { palautus = value; }
+        }
         public string Race(int Box1SelectedIndex)
         {
+
             if(Box1SelectedIndex==0)
             {
-                return "Steamjazz.Human.txt";
+                Palautus = "Steamjazz.Human.txt";
             }
             if (Box1SelectedIndex == 1)
             {
-                return "Steamjazz.Dracosaurian.txt";
+                Palautus = "Steamjazz.Dracosaurian.txt";
             }
             if (Box1SelectedIndex == 2)
             {
-                return "Steamjazz.Sylph.txt";
+                Palautus = "Steamjazz.Sylph.txt";
             }
             if (Box1SelectedIndex == 3)
             {
-                return "Steamjazz.KharzulDwarf.txt";
+                Palautus = "Steamjazz.KharzulDwarf.txt";
             }
             if (Box1SelectedIndex == 4)
             {
-                return "Steamjazz.beastfolk.txt";
+                Palautus = "Steamjazz.beastfolk.txt";
             }
             if (Box1SelectedIndex == 5)
             {
-                return "Steamjazz.Goliath.txt";
+                Palautus = "Steamjazz.Goliath.txt";
             }
             if (Box1SelectedIndex == 6)
             {
-                return "Steamjazz.Automaton.txt";
+                Palautus = "Steamjazz.Automaton.txt";
             }
             
-            return "-1";
+            return Palautus;
         }
         public string Nationality(int Box2SelectedIndex, int Box1SelectedIndex)
         {
@@ -59,27 +68,32 @@ namespace steamjazz
                     {
                         case 1:
                             {
-                                return "Steamjazz.BeastfolkBack.txt";
+                                Palautus = "Steamjazz.BeastfolkBack.txt";
+                                break;
                             }
                         case 2:
                             {
 
-                                return "Steamjazz.DracosaurianBack.txt";
+                                Palautus = "Steamjazz.DracosaurianBack.txt";
+                                break;
                             }
                         case 3:
                             {
 
-                                return "Steamjazz.GoliathBack.txt";
+                                Palautus = "Steamjazz.GoliathBack.txt";
+                                break;
                             }
                         case 4:
                             {
 
-                                return "Steamjazz.KharzulDwarfBack.txt";
+                                Palautus = "Steamjazz.KharzulDwarfBack.txt";
+                                break;
                             }
                         case 5:
                             {
 
-                                return "Steamjazz.SylphBack.txt";
+                                Palautus = "Steamjazz.SylphBack.txt";
+                                break;
                             }
                     }
 
@@ -88,22 +102,42 @@ namespace steamjazz
                 switch(Box2SelectedIndex)
                 {
                     case 0:
-                        return "Steamjazz.Victora.txt";
-                    case 1 :
-                        return "Steamjazz.Wolfgart.txt";
+                        {
+                            Palautus = "Steamjazz.Victora.txt";
+                            break;
+                        }
+                    case 1:
+                        {
+                            Palautus = "Steamjazz.Wolfgart.txt";
+                            break;
+                        }
                     case 2:
-                        return "Steamjazz.Hanseburg.txt";
+                        {
+                            Palautus = "Steamjazz.Hanseburg.txt";
+                            break;
+                        }
                     case 3:
-                        return "Steamjazz.FreeIsland.txt";
+                        {
+                            Palautus = "Steamjazz.FreeIsland.txt";
+                            break;
+                        }
                     case 4:
-                        return "Steamjazz.Kheiman.txt";
+                        {
+                            Palautus = "Steamjazz.Kheiman.txt";
+                            break;
+                        }
+                        
                     case 5:
-                        return "Steamjazz.Crimson.txt";
+                        {
+                            Palautus = "Steamjazz.Crimson.txt";
+                            break;
+                        }
+
                 }
             }
-            
-            return "-1";
+            return Palautus;
         }
+
         /// <summary>
         /// Palauttaa toivotun resurssinimen
         /// </summary>
@@ -112,8 +146,10 @@ namespace steamjazz
         /// <param name="Box3SelectedIndex"></param>
         /// comboBox3.SelectedIndex:n arvo
         /// <returns></returns>
+        
         public string SocialClass(int Box2SelectedIndex, int Box3SelectedIndex)
         {
+            
             //string teksti;
             if (Box2SelectedIndex==0)
             {
@@ -121,39 +157,37 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     //low class
-                    return "Steamjazz.VictoranLow.txt";
+                    Palautus = "Steamjazz.VictoranLow.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //middle clas
-                    return "Steamjazz.VictoranMiddle.txt";
+                    Palautus = "Steamjazz.VictoraMiddle.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     // upper class
-                    return "Steamjazz.VictoraUpper.txt";
+                    Palautus = "Steamjazz.VictoraUpper.txt";
                 }
-                return "-1";
             }
             if (Box2SelectedIndex==1)
             {
                 if (Box3SelectedIndex==0)
                 {
                     //worker
-                    return "Steamjazz.WolfgartWorker.txt";
+                    Palautus = "Steamjazz.WolfgartWorker.txt";
                 }
                 // wolfgart
                 if (Box3SelectedIndex==1)
                 {
-                    return "Steamjazz.WolfgartMilitary.txt";
+                    Palautus = "Steamjazz.WolfgartMilitary.txt";
                 }
                 
                 if (Box3SelectedIndex==2)
                 {
                     // upper class
-                    return "Steamjazz.WolfgartUpper.txt";
+                    Palautus = "Steamjazz.WolfgartUpper.txt";
                 }
-                return "-1";
             }
             if (Box2SelectedIndex==2)
             {
@@ -161,19 +195,18 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     // Worker
-                    return "Steamjazz.KheimanWorker.txt";
+                    Palautus = "Steamjazz.KheimanWorker.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //warior
-                    return "Steamjazz.KheimanWarior.txt";
+                    Palautus = "Steamjazz.KheimanWarior.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     //clergy
-                    return "Steamjazz.KheimanClergy.txt";
+                    Palautus = "Steamjazz.KheimanClergy.txt";
                 }
-                return "-1";
             }
             if (Box2SelectedIndex==3)
             {
@@ -181,19 +214,18 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     //Worker
-                    return "Steamjazz.HanseburgWorker.txt";
+                    Palautus = "Steamjazz.HanseburgWorker.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //merchant
-                    return "Steamjazz.HanseburgMerchant.txt";
+                    Palautus = "Steamjazz.HanseburgMerchant.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     //noble
-                    return "Steamjazz.HanseburgNoble.txt";
+                    Palautus = "Steamjazz.HanseburgNoble.txt";
                 }
-                return "-1";
             }
             if (Box2SelectedIndex==4)
             {
@@ -201,43 +233,42 @@ namespace steamjazz
                 if (Box3SelectedIndex==0)
                 {
                     //Monk
-                    return "Steamjazz.CrimsonCommoner.txt";
+                    Palautus = "Steamjazz.CrimsonCommoner.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //military
-                    return "Steamjazz.CrimsonMilitary.txt";
+                    Palautus = "Steamjazz.CrimsonMilitary.txt";
                 }
                 if (Box3SelectedIndex==2)
                 {
                     //commoner
-                    return "Steamjazz.CrimsonMonk.txt";
+                    Palautus = "Steamjazz.CrimsonMonk.txt";
                 }
-                return "-1";
             }
             if (Box2SelectedIndex==5)
             {
                 if (Box3SelectedIndex==1)
                 {
                     //island folk
-                    return "Steamjazz.FreeIslandFolk.txt";
+                    Palautus = "Steamjazz.FreeIslandFolk.txt";
                 }
                 if (Box3SelectedIndex==1)
                 {
                     //pirate
-                    return "Steamjazz.FreePirate.txt";
+                    Palautus = "Steamjazz.FreePirate.txt";
                 }
                 //free islands
                 if (Box3SelectedIndex==2)
                 {
                     //Pelethok
-                    return "Steamjazz.FreePelethok.txt";
+                    Palautus = "Steamjazz.FreePelethok.txt";
                 }
                 
                 
-                return "-1";
+                
             }
-            return "-1";
+            return Palautus;
         }
 
     }
