@@ -15,58 +15,8 @@ namespace Steamjazz
         }
         public void attributeChange(string att, int change, int points, Label attributeValue, Label attributePointBuy )
         {
-
-            //switch (att)
-            //{
-            //    case "str":
-            //        {
-                        attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-                        attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-                        //break;
-            //        }
-            //    case "con":
-            //        {
-            //            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-            //            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-            //            break;
-            //        }
-            //    case "dex":
-            //        {
-            //            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-            //            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-            //            break;
-            //        }
-            //    case "ref":
-            //        {
-            //            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-            //            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-            //            break;
-            //        }
-            //    case "int":
-            //        {
-            //            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-            //            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-            //            break;
-            //        }
-            //    case "wit":
-            //        {
-            //            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-            //            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-            //            break;
-            //        }
-            //    case "cha":
-            //        {
-            //            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-            //            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-            //            break;
-            //        }
-            //    case "emp":
-            //        {
-            //            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
-            //            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
-            //            break;
-            //        }
-            //}
+            attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
+            attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
         }
         /// <summary>
         /// Vastaa attribuutin lisäämisen tai vähentämisen vaikutuksesta attribuuttipisteiden määrään.
@@ -78,7 +28,7 @@ namespace Steamjazz
         /// <param name="change"></param>
         /// muutoksen määrä
         /// <returns></returns>
-        public int pointCalc(int x, int points, int change)
+        static int pointCalc(int x, int points, int change)
         {
             int[] hinta = new int[] { 0, 1, 4, 9, 16, 25, 36, 49, 64 };
 

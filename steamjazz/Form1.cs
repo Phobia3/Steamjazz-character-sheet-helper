@@ -60,7 +60,7 @@ namespace Steamjazz
 
 
             
-            if (comboBox2.SelectedIndex == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
+            if (ComboBox2.SelectedIndex == 1 || ComboBox1.SelectedIndex == 4 && ComboBox2.SelectedIndex == 6)
             {
                 comboBox5.Visible = true;
             }
@@ -68,54 +68,54 @@ namespace Steamjazz
             {
                 comboBox5.Visible = false;
             }
-            comboBox2.Items.Clear();
-            switch(comboBox1.SelectedIndex)
+            ComboBox2.Items.Clear();
+            switch(ComboBox1.SelectedIndex)
             {// rodun infon näyttäminen, sekä rodullisten erikoistaustojen lisääminen taustalistoihin
                 case 0:
                     {
                         string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire" };
-                        comboBox2.Items.AddRange(background);
+                        ComboBox2.Items.AddRange(background);
                         break;
                     }
                 case 1:
                     {
                         string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Beastfolk" };
-                        comboBox2.Items.AddRange(background);
+                        ComboBox2.Items.AddRange(background);
                         break;
                     }
                 case 2:
                     {
                         string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Dracosaurian" };
-                        comboBox2.Items.AddRange(background);
+                        ComboBox2.Items.AddRange(background);
                         break;
                     }
 
                 case 3:
                     {
                         string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Goliath" };
-                        comboBox2.Items.AddRange(background);
+                        ComboBox2.Items.AddRange(background);
                         break;
                     }
                 case 4:
                     {
                         string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Kharzul Dwarf" };
-                        comboBox2.Items.AddRange(background);
+                        ComboBox2.Items.AddRange(background);
                         break;
                     }
                 case 5:
                     {
                         string[] background = new string[] { "Victora", "Wolfgart", "Hanseburg", "Free Islands", "Kheiman Empire", "Crimson Empire", "Sylph" };
-                        comboBox2.Items.AddRange(background);
+                        ComboBox2.Items.AddRange(background);
                         break;
                     }
                 case 6:
                     {
                         string[] background = new string[] { "Basic", "Buttler", "Copper", "Craftsmann", "Doll", "Heavy Worker" };
-                        comboBox2.Items.AddRange(background);
+                        ComboBox2.Items.AddRange(background);
                         break;
                     }
             }
-            RichTextBoxTulostus(Background.Race(comboBox1.SelectedIndex));
+            RichTextBoxTulostus(Background.Race(ComboBox1.SelectedIndex));
             
             
         }
@@ -129,10 +129,10 @@ namespace Steamjazz
         private void combobox3init(string eka, string toka, string kolme)
         {
             
-            comboBox3.Items.Clear();
+            ComboBox3.Items.Clear();
             string[] race = new string[]{eka,toka,kolme};
-            comboBox3.Items.AddRange(race);
-            comboBox3.Visible = true;
+            ComboBox3.Items.AddRange(race);
+            ComboBox3.Visible = true;
         }
 
 	/// <summary>
@@ -146,7 +146,7 @@ namespace Steamjazz
             backAttribute();
             // riippuen kansalaisuudesta, luokkavaihtoehdot vaihtuvat. Valinnoista riippuen label5 saa eri tekstin. nuthing more to see here - moving along
             
-            if (comboBox2.SelectedIndex == 1 || comboBox1.SelectedIndex == 3 && comboBox2.SelectedIndex == 5)
+            if (ComboBox2.SelectedIndex == 1 || ComboBox1.SelectedIndex == 3 && ComboBox2.SelectedIndex == 5)
             {
                 comboBox5.Visible = true;
             }
@@ -154,7 +154,7 @@ namespace Steamjazz
             {
                 comboBox5.Visible = false;
             }
-            switch (comboBox2.SelectedIndex)
+            switch (ComboBox2.SelectedIndex)
             {
                 case 0:
                     {
@@ -194,10 +194,10 @@ namespace Steamjazz
                     }
                
                 default:
-                    comboBox3.Visible = false;
+                    ComboBox3.Visible = false;
                     break;
             }
-            RichTextBoxTulostus(Background.Nationality(comboBox2.SelectedIndex,comboBox1.SelectedIndex));
+            RichTextBoxTulostus(Background.Nationality(ComboBox2.SelectedIndex,ComboBox1.SelectedIndex));
 
         }
         /// <summary>
@@ -208,13 +208,13 @@ namespace Steamjazz
             // Combobox1 info 
             string[] race = new string[]{"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph"
             ,"Automaton"};
-            comboBox1.Items.AddRange(race);
+            ComboBox1.Items.AddRange(race);
            
             string[] career = new string[] { "Aristocrat","Artist","Assassin","Banker","Butler","Con Artist","Craftsman","Detective","Druid",
                 "Entertainer","Gangster","Gunner","Hunter","Inventor","Journalist","Law Enforcer","Lawyer","Martial Artist","Mechanic","Mercenary",
                 "Merchant","Musketeer","Officer","Personal Entertainer","Physician","Pirate","Politician","Ranger","Rogue","Sailor","Scholar",
                 "Scout","Servant","Soldier","Spy","Warrior","Wyrodian Priest"};
-            comboBox4.Items.AddRange(career);
+            ComboBox4.Items.AddRange(career);
 
             string[] mili = new string[] { "Deserter", "Military Service", "Non-military Service" };
             comboBox5.Items.AddRange(mili);
@@ -233,7 +233,7 @@ namespace Steamjazz
         private void button3_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
-            komento.Insert("INSERT INTO info (name, race, background, career, occupation, gender, age, player) VALUES ('" + textBox1.Text + "','" + comboBox1.Text + "','" + comboBox3.Text + "','" + comboBox4.Text + "',' ',' ',' ',' ')");
+            komento.Insert("INSERT INTO info (name, race, background, career, occupation, gender, age, player) VALUES ('" + textBox1.Text + "','" + ComboBox1.Text + "','" + ComboBox3.Text + "','" + ComboBox4.Text + "',' ',' ',' ',' ')");
               
         }
 
@@ -245,16 +245,16 @@ namespace Steamjazz
         private void button1_Click(Object sender, EventArgs e)
         {
             DBConnect komento = new DBConnect();
-            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + comboBox1.Text + "', background='" + comboBox3.Text + "', career='" + comboBox4.Text + "', occupation='" + comboBox4.Text + "', gender='', age='', player='' WHERE ID='" +"'");
+            komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + ComboBox1.Text + "', background='" + ComboBox3.Text + "', career='" + ComboBox4.Text + "', occupation='" + ComboBox4.Text + "', gender='', age='', player='' WHERE ID='" +"'");
         }
 
        /// <summary>
        /// tulosteita mahdollisten virheiden varalta.
        /// </summary>
        /// <param name="e"></param>
-        public void tulostus (string e)
+        public void tulostus (string text)
         {
-            richTextBox1.Text = e;
+            richTextBox1.Text = text;
         
         }
         /// <summary>
@@ -291,8 +291,8 @@ namespace Steamjazz
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             backAttribute();
-            int backgroundcase = comboBox2.SelectedIndex;
-            if (backgroundcase == 1 || comboBox1.SelectedIndex == 4 && comboBox2.SelectedIndex == 6)
+            int backgroundcase = ComboBox2.SelectedIndex;
+            if (backgroundcase == 1 || ComboBox1.SelectedIndex == 4 && ComboBox2.SelectedIndex == 6)
             {
                 comboBox5.Visible = true;
             }
@@ -300,7 +300,7 @@ namespace Steamjazz
             {
                 comboBox5.Visible = false;
             }
-            RichTextBoxTulostus(Background.SocialClass(comboBox2.SelectedIndex, comboBox3.SelectedIndex));
+            RichTextBoxTulostus(Background.SocialClass(ComboBox2.SelectedIndex, ComboBox3.SelectedIndex));
             
         }
         /// <summary>
@@ -310,387 +310,11 @@ namespace Steamjazz
         {
             backAttributeTake();
             groupBoxInit();
-            switch(comboBox1.SelectedIndex)
-            {
-                    //"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph" ,"Automaton"
-                case 0:
-                    {      
-                        //Human
-                        break;
-                    }
-                case 1:
-                    {
-                        // Beastfolk
-                        attributeChange("emp", -1);
-                        attributeChange("cha", -2);
-                        //allocate +2 to one of the following attributes: STR, CON, DEX, REF, WIT and +1 to another attribute from the list.
-                        groupBox2Visibility("str", "con", "dex", "ref", "wit");
-                        break;
-                    }
-                case 2:
-                    {
-                        //Dracosaurian CHA -2, REF +1; allocate +1 to one of the following: STR, CON or DEX
-                        attributeChange("cha", -2);
-                        attributeChange("ref", 1);
-                        groupBox1Visibility("str", "con", "dex");
-                        break;
-                    } 
-                case 3:
-                    {
-                        //Goliath STR +3, CON +3, REF -2, INT -2, WIT -2, CHA -2 Initial STR and CON must be at least 10.
-                        attributeChange("str", 3);
-                        attributeChange("con", 3);
-                        attributeChange("ref", -2);
-                        attributeChange("int", -2);
-                        attributeChange("wit", -2);
-                        attributeChange("cha", -2);
-                        break;
-                    } 
-                case 4:
-                    {
-                        //Kharzul Dwarf CON +2, CHA -2 Advantage: low light vision Advantage: mule Disadvantage: slow
-                        attributeChange("con", 2);
-                        attributeChange("cha", -2);
-                        break;
-                    }
-                case 5:
-                    {
-                        // Sylph STR -1, DEX +1 Sylphs can jump twice as high and far as humans. Sylphs gain a +1 racial bonus to dodge and athletics. The dodge bonus counts as a rank in the dodge skill for increasing PDM. Disadvantage: Frail
-                        attributeChange("str", -1);
-                        attributeChange("dex", 1);
-                        break;
-                    }
-               
-                
-               
-                case 6:
-                    {
-                        //Automaton
-                        break;
-                    }
-             
-            }
-            switch (comboBox2.SelectedIndex)
-            {
-                    
-                case 0:
-                    {
-                        //Victoria
-                        switch(comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    // Low  CON, REF or EMP +1 Initial skill ranks: Survival 2, Brawl 1, Stealth 1 15 CP can be used to buy ranks in the following skills: Athletics, Animal Handling, Bluff, Brawl, Cooking, Dodge, First Aid, Forgery, Gaming, Grappling, Handguns, Intimidate, Listen, Melee (Balanced), Melee (Powerful), Spot, Stealth, Survival, Throw or to purchase up to 10 CP worth of acquirable advantages. Starting Wealth level cannot be higher than ‘Well off’.
-                                    groupBox4Visibility("con", "ref", "emp");
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    // Middle DEX, INT or WIT +1 Initial skill ranks: Appraise 2, Persuade 1, Negotiate 1 15 CP can be used to buy ranks in the following skills: Appraise, Bluff, Brawl, Craft (any), Cooking, Negotiate, Etiquette, Handguns, Intimidate, Martial Arts (Victoran Pugilism), Mechanics, Perform (dancing), Persuade, Profession (any), Ride.
-                                    groupBox4Visibility("dex", "int", "wit");
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    // Upper Cost to play: 10CP INT or CHA +1 Initial skill ranks: Etiquette 3, Negotiate 2, Language: Victoran 1 The Starting wealth level of Victoran upper class characters must be Drifter or higher. The 5 CP cost of Drifter has already been calculated into the Background cost and can be further increased with CP during character creation. 15 CP can be used to buy ranks in the following skills: Art (any), Charm, Negotiate, Etiquette, Knowledge: Heraldry, Language (Victoran), Long Guns, Martial Arts (Fencing), Melee (Finesse), Melee (Balanced), Perform (Dancing), Perform (Oratory), Ride, or to improve the Starting wealth level by 10 CP or to purchase the Noble, Victoran advantage.
-                                    groupBox4Visibility("dex", "int", "wit");
-                                    break;
-                                }
-                        }
-                       
-                        break;
-                    }
-                case 1:
-                    {
-                        //Wolfgart
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    /*STR, CON or INT +1
-                                    Initial skill ranks: Craft (Gunsmithing 2), Craft (any) 1,
-                                    Mechanics 1
-                                    10 CP can be used to buy ranks in the following skills: Animal
-                                    Handling, Brawl, Clockwork, Cooking, Craft (any), Drive, 
-                                    First Aid, Locksmithing, Mechanics, Persuade, Profession (any),
-                                    Ride.
-                                    */
-                                    groupBox4Visibility("str", "con", "int");
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    /*STR or DEX +1
-                                    Initial skill ranks: Law: Wulffgart 2, Etiquette 1, Intimidate 1.
-                                    10 CP can be used to buy ranks in the following skills: Animal
-                                    Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &
-                                    Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),
-                                    Leadership, Long Guns, Martial Arts (Wolfbite), Melee
-                                    (Powerful), Ride, Stealth, Strategy/Tactics.
-                                    */
-                                    groupBox4Visibility("str", "dex");
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    /*INT or CHA +1
-                                    Initial skill ranks: Etiquette 2, Negotiate 1, Language:
-                                    Wulffgartian 1
-                                    10 CP can be used to buy ranks in the following skills: Charm,
-                                    Negotiate, Etiquette, Intimidate, Language (Wulffgartian), Law
-                                    (Wulffgart), Long Guns, Perform (Dancing), Perform (Oratory),
-                                    Ride, or to improve the Starting wealth level or to purchase the
-                                    Noble, Wulffgartian advantage.
-                                    */
-                                    groupBox4Visibility("int", "cha");
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 2:
-                    {
-                        //Kheiman Empire                        
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    /*STR, CON or INT +1
-                                    Initial skill ranks: Craft or Profession (any) 2, Knowledge
-                                    (Kheiman religion) 1, Art (any) 1
-                                    15 CP can be used to buy ranks in the following skills: Art
-                                    (any), Athletics, Brawl, Craft (any), Dodge, Mechanics,
-                                    Perform (Dancing), Persuade, Profession (any), Survival.
-                                    */
-                                    groupBox4Visibility("str", "con", "int");
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    /* STR, DEX or WIT +1
-                                    Initial skill ranks: Melee (Powerful) 2, Knowledge (Kheiman
-                                    religion) 1, Martial Arts (Kheiman spear) 1
-                                    15 CP can be used to buy ranks in the following skills:
-                                    Athletics, Block, Brawl, Craft (Blacksmithing), Gunsmithing,
-                                    Law (Kheiman), Leadership, Listen, Long Guns, Martial Arts
-                                    (Kheiman spear), Ride, Spot, Survival, Throw, Melee
-                                    (Powerful).
-                                    */
-                                    groupBox4Visibility("str", "dex", "wit");
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    /*
-                                     *  INT, WIT, EMP or CHA +1
-                                        Initial skill ranks: Knowledge: Kheiman religion 2, Negotiate 1,
-                                        Language: Kheiman 1.
-                                        15 CP can be used to buy ranks in the following skills:
-                                        Alchemy, Art (any), Clockwork, Negotiate, Etiquette, First Aid,
-                                        Knowledge (any), Law (Kheiman), Leadership, Mechanics,
-                                        Medicine and surgery, Persuade, Teaching, or to improve the
-                                        Starting wealth level.
-                                      */
-                                    groupBox4Visibility("int", "wit", "emp","cha");
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 3:
-                    {
-                        //Hansenburg
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    /*CON, INT or EMP +1
-                                    Initial skill ranks: Craft (any) or Profession (any) 2, Appraise 1,
-                                    Persuade 1
-                                    15 CP can be used to buy ranks in the following skills:
-                                    Appraise, Brawl, Clockwork, Cooking, Craft (any), Negotiate,
-                                    Drive, Locksmithing, Mechanics, Melee (Powerful), Persuade,
-                                    Profession (any), Ride.
-                                    */
-                                    groupBox4Visibility("con", "int", "emp");
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    /*DEX, WIT or CHA +1
-                                    Initial skill ranks: Appraise 2, Negotiate 1, Persuade 1
-                                    15 CP can be used to buy ranks in the following skills:
-                                    Appraise, Bluff, Cooking, Craft (any), Etiquette, Intimidate,
-                                    Martial Arts (Fencing), Mechanics, Melee (Finesse), Negotiate,
-                                    Persuade, Profession (any), Ride, or to improve the Starting
-                                    wealth level.
-                                    */
-                                    groupBox4Visibility( "dex", "wit", "cha");
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    /*Cost to play: 20CP
-                                    DEX, CHA or EMP +1
-                                    Initial skill ranks: Appraise 2, Charm 2, Negotiate 2, Etiquette 1.
-                                    Advantage: Noble, Hanseburg
-                                    Starting wealth level: Drifter. This can be further raised with CP
-                                    during character creation.
-                                    15 CP can be used to buy ranks in the following skills:
-                                    Appraise, Art (any), Charm, Etiquette, Knowledge (Heraldry),
-                                    Language (Victoran), Language (Wulffgartian), Martial Arts
-                                    (Fencing), Martial Arts (Hanseburgian Musketeer Fencing),
-                                    Melee (Finesse), Negotiate, Perform (Dancing), Perform
-                                    (Oratory), Persuade, Ride, or to improve the starting wealth
-                                    level.
-                                    */
-                                    groupBox4Visibility("dex", "cha", "emp");
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 4:
-                    {
-                        //Crimson Empire
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    /*
-                                     * STR, CON or EMP +1
-                                        Initial skill ranks: Persuade 2, Animal Handling 1, Profession
-                                        (farmer) 1
-                                        15 CP can be used to buy ranks in the following skills:
-                                        Animal handling, Brawl, Cooking, Craft (any), Listen, Melee
-                                        (Balanced), Melee (Powerful), Persuade, Profession (farmer),
-                                        Spot, Survival.
-                                        */
-                                    groupBox4Visibility("str", "con", "emp");
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    /* STR, DEX or CHA +1
-                                    Initial skill ranks: Melee (Balanced) 2, Dodge 1, Law
-                                    (Crimson) 1
-                                    15 CP can be used to buy ranks in the following skills:
-                                    Archery, Athletics, Brawl, Craft (Blacksmithing), Negotiate,
-                                    Dodge, Intimidate, Law (Crimson), Listen, Martial Art (one
-                                    from Crimson), Melee (Balanced), Melee (Powerful), Persuade,
-                                    Ride, Spot, Strategy/Tactics
-                                    */
-                                    groupBox4Visibility("str", "dex", "cha");
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    /*Cost to play: 20 CP
-                                    DEX, INT or WIT +1
-                                    Initial skill ranks: Law (Crimson) 3, Brawl 2, First aid 2,
-                                    Martial Art (any Crimson) 2, Teaching 2, Clockwork 1, Dodge 1
-                                    10 CP can be used to buy ranks in the following skills:
-                                    Athletics, Brawl, Clockwork, Dodge, First aid, Knowledge
-                                    (any), Law (Crimson), Listen, Persuade, Martial art (one from
-                                    Crimson), Melee (Balanced), Melee (Finesse), Melee
-                                    (Powerful), Negotiate, Sense motive, Survival, Teaching,
-                                    Advantage: Crimson monk status
-                                    All characters of the Way of the Black Dragon have this
-                                    advatage. It is worth 10CP and the cost is already calculated
-                                    into the cost of this background package.
-                                    */
-                                    groupBox4Visibility("dex", "int", "wit");
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 5:
-                    {
-                        //Free Islands
-                        switch (comboBox3.SelectedIndex)
-                        {
-                            case 0:
-                                {
-                                    /*Any attribute +1
-                                    Initial skill ranks: Athletics 1, Negotiate 1, Persuade 1, Sailing
-                                    1, Sense Motive 1
-                                    15 CP can be used to buy ranks in the following skills:
-                                    Appraise, Athletics, Bluff, Brawl, Craft (any), Navigation,
-                                    Melee (any), Negotiate, Perform (Dancing), Persuade, Sailing,
-                                    Sailing (Airship), Sense Motive, Spot, Survival.
-*/
-                                    groupBox4Visibility("str", "con", "dex", "ref", "int", "wit", "cha", "emp");
-
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    attributeChange("ref", 1);
-
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    groupBox1.Visible = true;
-                                    radioButton1.Visible = false;
-                                    radioButton2.Visible = true;
-                                    radioButton3.Visible = false;
-                                    radioButton4.Visible = true;
-                                    radioButton5.Visible = false;
-                                    radioButton6.Visible = true;
-                                    radioButton7.Visible = false;
-                                    radioButton8.Visible = true;
-
-                                    break;
-                                }
-                        } break;
-                    }
-                case 6:
-                    {
-
-                        if (comboBox1.SelectedIndex == 1)
-                        {
-                            attributeChange("int", 1);
-                            
-
-                        }
-                        if (comboBox1.SelectedIndex == 3)
-                        {
-                            attributeChange("ref", 1);
-                           
-                        }
-                        if (comboBox1.SelectedIndex == 4)
-                        {
-                            attributeChange("int", 1);
-                            
-                        }
-                        if (comboBox1.SelectedIndex == 5)
-                        {
-                            attributeChange("con", 1);
-                           
-                        }
-                        if (comboBox1.SelectedIndex == 6)
-                        {
-                            attributeChange("con", 1);
-                            attributeChange("cha", -1);
-                            
-                        }
-
-                        }
-                        break;
-                    }
-            backPrevious1 = comboBox1.SelectedIndex;
-            backPrevious2 = comboBox2.SelectedIndex;
-            backPrevious3 = comboBox3.SelectedIndex;
+            Background.BackgroundModifiers();
+            
+            backPrevious1 = ComboBox1.SelectedIndex;
+            backPrevious2 = ComboBox2.SelectedIndex;
+            backPrevious3 = ComboBox3.SelectedIndex;
             }
 
        
@@ -1002,17 +626,17 @@ namespace Steamjazz
         /// <param name="Wit"></param>
         /// <param name="Cha"></param>
         /// <param name="Emp"></param>
-        private void attributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp )
+        public void attributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp)
         {
             
-            label6.Text = Str;
-            label8.Text = Con;
-            label10.Text = Dex;
-            label12.Text = Ref;
-            label30.Text = Int;
-            label33.Text = Wit;
-            label35.Text = Cha;
-            label37.Text = Emp;
+            Label6.Text = Str;
+            Label8.Text = Con;
+            Label10.Text = Dex;
+            Label12.Text = Ref;
+            Label30.Text = Int;
+            Label33.Text = Wit;
+            Label35.Text = Cha;
+            Label37.Text = Emp;
 
         }
         /// <summary>
@@ -1022,51 +646,18 @@ namespace Steamjazz
         /// halutun attribuutin lyhenne
         /// <param name="change"></param>
         /// haluttu muutos
-        private void attributeChange(string att, int change)
+        public void attributeChange(string att, int change)
         {
-            switch (att)
-            {
-                case "str":
-                    {
-                        label6.Text = Convert.ToString(Convert.ToInt32(label6.Text) + change);
-                        break;
-                    }
-                case "con":
-                    {
-                        label8.Text = Convert.ToString(Convert.ToInt32(label8.Text) + change);
-                        break;
-                    }
-                case "dex":
-                    {
-                        label10.Text = Convert.ToString(Convert.ToInt32(label10.Text) + change);
-                        break;
-                    }
-                case "ref":
-                    {
-                        label12.Text = Convert.ToString(Convert.ToInt32(label12.Text) + change);
-                        break;
-                    }
-                case "int":
-                    {
-                        label30.Text = Convert.ToString(Convert.ToInt32(label30.Text) + change);
-                        break;
-                    }
-                case "wit":
-                    {
-                        label33.Text = Convert.ToString(Convert.ToInt32(label33.Text) + change);
-                        break;
-                    }
-                case "cha":
-                    {
-                        label35.Text = Convert.ToString(Convert.ToInt32(label35.Text) + change);
-                        break;
-                    }
-                case "emp":
-                    {
-                        label37.Text = Convert.ToString(Convert.ToInt32(label37.Text) + change);
-                        break;
-                    }
-            }
+           
+            if(att == "str") Label6.Text = Convert.ToString(Convert.ToInt32(Label6.Text) + change);
+            if(att == "con") Label8.Text = Convert.ToString(Convert.ToInt32(Label8.Text) + change);
+            if(att == "dex") Label10.Text = Convert.ToString(Convert.ToInt32(Label10.Text) + change);
+            if(att == "ref") Label12.Text = Convert.ToString(Convert.ToInt32(Label12.Text) + change);
+            if(att == "int") Label30.Text = Convert.ToString(Convert.ToInt32(Label30.Text) + change);
+            if(att == "wit") Label33.Text = Convert.ToString(Convert.ToInt32(Label33.Text) + change);
+            if(att == "cha") Label35.Text = Convert.ToString(Convert.ToInt32(Label35.Text) + change);
+            if(att == "emp") Label37.Text = Convert.ToString(Convert.ToInt32(Label37.Text) + change);
+
         }
 
         /// <summary>
@@ -1074,39 +665,39 @@ namespace Steamjazz
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void attributeAdd(Object sender, EventArgs e)
+        public void attributeAdd(Object sender, EventArgs e)
         {
-            if (sender==label13)
+            if (sender==Label13)
             {
-                Attributes.attributeChange("str", 1, Convert.ToInt32(label39.Text), label6, label39);
+                Attributes.attributeChange("str", 1, Convert.ToInt32(label39.Text), Label6, label39);
             }
-            if (sender == label15)
+            if (sender == Label15)
             {
-                Attributes.attributeChange("con", 1, Convert.ToInt32(label39.Text), label8, label39);
+                Attributes.attributeChange("con", 1, Convert.ToInt32(label39.Text), Label8, label39);
             }
-            if (sender == label17)
+            if (sender == Label17)
             {
-                Attributes.attributeChange("dex", 1, Convert.ToInt32(label39.Text), label10, label39);
+                Attributes.attributeChange("dex", 1, Convert.ToInt32(label39.Text), Label10, label39);
             }
-            if (sender == label19)
+            if (sender == Label19)
             {
-                Attributes.attributeChange("ref", 1, Convert.ToInt32(label39.Text), label12, label39);
+                Attributes.attributeChange("ref", 1, Convert.ToInt32(label39.Text), Label12, label39);
             }
-            if (sender == label21)
+            if (sender == Label21)
             {
-                Attributes.attributeChange("int", 1, Convert.ToInt32(label39.Text), label30, label39);
+                Attributes.attributeChange("int", 1, Convert.ToInt32(label39.Text), Label30, label39);
             }
-            if (sender == label23)
+            if (sender == Label23)
             {
-                Attributes.attributeChange("wit", 1, Convert.ToInt32(label39.Text), label33, label39);
+                Attributes.attributeChange("wit", 1, Convert.ToInt32(label39.Text), Label33, label39);
             }
-            if (sender == label25)
+            if (sender == Label25)
             {
-                Attributes.attributeChange("cha", 1, Convert.ToInt32(label39.Text), label35, label39);
+                Attributes.attributeChange("cha", 1, Convert.ToInt32(label39.Text), Label35, label39);
             }
-            if (sender == label27)
+            if (sender == Label27)
             {
-                Attributes.attributeChange("emp", 1, Convert.ToInt32(label39.Text), label37, label39);
+                Attributes.attributeChange("emp", 1, Convert.ToInt32(label39.Text), Label37, label39);
             }
         }
         /// <summary>
@@ -1114,39 +705,39 @@ namespace Steamjazz
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void attributeTake(Object sender, EventArgs e)
+        public void attributeTake(Object sender, EventArgs e)
         {
-            if (sender == label14)
+            if (sender == Label14)
             {//str
-                Attributes.attributeChange("str", -1, Convert.ToInt32(label39.Text),label6, label39);
+                Attributes.attributeChange("str", -1, Convert.ToInt32(label39.Text),Label6, label39);
             }
-            if (sender == label16)
+            if (sender == Label16)
             {
-                Attributes.attributeChange("con", -1, Convert.ToInt32(label39.Text),label8, label39);
+                Attributes.attributeChange("con", -1, Convert.ToInt32(label39.Text),Label8, label39);
             }
-            if (sender == label18)
+            if (sender == Label18)
             {
-                Attributes.attributeChange("dex", -1, Convert.ToInt32(label39.Text), label10, label39);
+                Attributes.attributeChange("dex", -1, Convert.ToInt32(label39.Text), Label10, label39);
             }
-            if (sender == label20)
+            if (sender == Label20)
             {
-                Attributes.attributeChange("ref", -1, Convert.ToInt32(label39.Text), label12, label39);
+                Attributes.attributeChange("ref", -1, Convert.ToInt32(label39.Text), Label12, label39);
             }
-            if (sender == label22)
+            if (sender == Label22)
             {
-                Attributes.attributeChange("int", -1, Convert.ToInt32(label39.Text), label30, label39);
+                Attributes.attributeChange("int", -1, Convert.ToInt32(label39.Text), Label30, label39);
             }
-            if (sender == label24)
+            if (sender == Label24)
             {
-                Attributes.attributeChange("wit", -1, Convert.ToInt32(label39.Text), label33, label39);
+                Attributes.attributeChange("wit", -1, Convert.ToInt32(label39.Text), Label33, label39);
             }
-            if (sender == label26)
+            if (sender == Label26)
             {
-                Attributes.attributeChange("cha", -1, Convert.ToInt32(label39.Text), label35, label39);
+                Attributes.attributeChange("cha", -1, Convert.ToInt32(label39.Text), Label35, label39);
             }
-            if (sender == label28)
+            if (sender == Label28)
             {
-                Attributes.attributeChange("emp", -1, Convert.ToInt32(label39.Text), label37, label39);
+                Attributes.attributeChange("emp", -1, Convert.ToInt32(label39.Text), Label37, label39);
             }
         }
         /// <summary>
@@ -1156,75 +747,24 @@ namespace Steamjazz
         /// <param name="e"></param>
          private void radioAdd(Object sender, EventArgs e)
         {
-            if (sender == radioButton1 )
-            {//str
-                attributeChange("str", 1);
-            }
-            if (sender == radioButton2)
-            {
-                attributeChange("con", 1);
-            }
-            if (sender == radioButton3 )
-            {
-                attributeChange("dex", 1);
-            }
-            if (sender == radioButton4)
-            {
-                attributeChange("ref", 1);
-            }
-            if (sender == radioButton5)
-            {
-                attributeChange("int", 1);
-            }
-            if (sender == radioButton6)
-            {
-                attributeChange("wit", 1);
-            }
-            if (sender == radioButton7)
-            {
-                attributeChange("cha", 1);
-            }
-            if (sender == radioButton8)
-            {
-                attributeChange("emp", 1);
-            }
-
-            if (sender == radioButton25)
-            {//str
-                attributeChange("str", 1);
-            }
-            if (sender == radioButton27)
-            {
-                attributeChange("con", 1);
-            }
-            if (sender == radioButton29)
-            {
-                attributeChange("dex", 1);
-            }
-            if (sender == radioButton31)
-            {
-                attributeChange("ref", 1);
-            }
-            if (sender == radioButton32)
-            {
-                attributeChange("int", 1);
-            }
-            if (sender == radioButton30)
-            {
-                attributeChange("wit", 1);
-            }
-            if (sender == radioButton28)
-            {
-                attributeChange("cha", 1);
-            }
-            if (sender == radioButton26)
-            {
-                attributeChange("emp", 1);
-            }
-
-            
-            radioTake(previous);
-            previous = sender;
+             if (sender == RadioButton1) attributeChange("str", 1);
+             if (sender == RadioButton2) attributeChange("con", 1);
+             if (sender == RadioButton3 ) attributeChange("dex", 1);
+             if (sender == RadioButton4) attributeChange("ref", 1);
+             if (sender == RadioButton5) attributeChange("int", 1);
+             if (sender == RadioButton6) attributeChange("wit", 1);
+             if (sender == RadioButton7) attributeChange("cha", 1);
+             if (sender == RadioButton8) attributeChange("emp", 1);
+             if (sender == radioButton25) attributeChange("str", 1);
+             if (sender == radioButton27) attributeChange("con", 1);
+             if (sender == radioButton29) attributeChange("dex", 1);
+             if (sender == radioButton31) attributeChange("ref", 1);
+             if (sender == radioButton32) attributeChange("int", 1);
+             if (sender == radioButton30) attributeChange("wit", 1);
+             if (sender == radioButton28) attributeChange("cha", 1);
+             if (sender == radioButton26) attributeChange("emp", 1);
+             radioTake(previous);
+             previous = sender;
         }
         /// <summary>
         /// samaa kuten radioAdd:sä
@@ -1240,37 +780,37 @@ namespace Steamjazz
              if (sender == radioButton10)
              {
                  attributeChange("con", 2);
-                 radioButton2.Visible = false;
+                 RadioButton2.Visible = false;
              }
              if (sender == radioButton11)
              {
                  attributeChange("dex", 2);
-                 radioButton3.Visible = false;
+                 RadioButton3.Visible = false;
              }
              if (sender == radioButton12)
              {
                  attributeChange("ref", 2);
-                 radioButton4.Visible = false;
+                 RadioButton4.Visible = false;
              }
              if (sender == radioButton13)
              {
                  attributeChange("int", 2);
-                 radioButton5.Visible = false;
+                 RadioButton5.Visible = false;
              }
              if (sender == radioButton14)
              {
                  attributeChange("wit", 2);
-                 radioButton6.Visible = false;
+                 RadioButton6.Visible = false;
              }
              if (sender == radioButton15)
              {
                  attributeChange("cha", 2);
-                 radioButton7.Visible = false;
+                 RadioButton7.Visible = false;
              }
              if (sender == radioButton16)
              {
                  attributeChange("emp", 2);
-                 radioButton8.Visible = false;
+                 RadioButton8.Visible = false;
              }
              radioTake2(previous2);
              previous2 = sender;
@@ -1284,42 +824,42 @@ namespace Steamjazz
              if (previous == radioButton9)
              {//str
                  attributeChange("str", -2);
-                 radioButton1.Visible = true;
+                 RadioButton1.Visible = true;
              }
              if (previous == radioButton10)
              {
                  attributeChange("con", -2);
-                 radioButton2.Visible = true;
+                 RadioButton2.Visible = true;
              }
              if (previous == radioButton11)
              {
                  attributeChange("dex", -2);
-                 radioButton3.Visible = true;
+                 RadioButton3.Visible = true;
              }
              if (previous == radioButton12)
              {
                  attributeChange("ref", -2);
-                 radioButton4.Visible = true;
+                 RadioButton4.Visible = true;
              }
              if (previous == radioButton13)
              {
                  attributeChange("int", -2);
-                 radioButton5.Visible = true;
+                 RadioButton5.Visible = true;
              }
              if (previous == radioButton14)
              {
                  attributeChange("wit", -2);
-                 radioButton6.Visible = true;
+                 RadioButton6.Visible = true;
              }
              if (previous == radioButton15)
              {
                  attributeChange("cha", -2);
-                 radioButton7.Visible = true;
+                 RadioButton7.Visible = true;
              }
              if (previous == radioButton16)
              {
                  attributeChange("emp", -2);
-                 radioButton8.Visible = true;
+                 RadioButton8.Visible = true;
              }
          }
          /// <summary>
@@ -1328,35 +868,35 @@ namespace Steamjazz
          /// <param name="previous"></param>
         private void radioTake(object previous)
          {
-             if (previous == radioButton1)
+             if (previous == RadioButton1)
              {//str
                  attributeChange("str", -1);
              }
-             if (previous == radioButton2)
+             if (previous == RadioButton2)
              {
                  attributeChange("con", -1);
              }
-             if (previous == radioButton3)
+             if (previous == RadioButton3)
              {
                  attributeChange("dex", -1);
              }
-             if (previous == radioButton4)
+             if (previous == RadioButton4)
              {
                  attributeChange("ref", -1);
              }
-             if (previous == radioButton5)
+             if (previous == RadioButton5)
              {
                  attributeChange("int", -1);
              }
-             if (previous == radioButton6)
+             if (previous == RadioButton6)
              {
                  attributeChange("wit", -1);
              }
-             if (previous == radioButton7)
+             if (previous == RadioButton7)
              {
                  attributeChange("cha", -1);
              }
-             if (previous == radioButton8)
+             if (previous == RadioButton8)
              {
                  attributeChange("emp", -1);
              }
@@ -1438,16 +978,16 @@ namespace Steamjazz
         private void  burden ( string x, string y)
         {
             double tulos2 = Convert.ToInt32(x) + Convert.ToInt32(y);
-            label105.Text = Convert.ToString(tulos2 * 2) + "kg";
-            label106.Text = Convert.ToString(tulos2 * 4) + "kg";
-            label107.Text = Convert.ToString(tulos2 * 6) + "kg";
+            Label105.Text = Convert.ToString(tulos2 * 2) + "kg";
+            Label106.Text = Convert.ToString(tulos2 * 4) + "kg";
+            Label107.Text = Convert.ToString(tulos2 * 6) + "kg";
         }
         private void speed ( string h, string i)
         {
             double x = Convert.ToInt32(h);
             double y = Convert.ToInt32(i);
             double tulos = x * 0.2 + y * 0.2;
-            label104.Text = Convert.ToString(tulos);
+            Label104.Text = Convert.ToString(tulos);
         }
 
         /// <summary>
@@ -1458,129 +998,129 @@ namespace Steamjazz
         /// <param name="e"></param>
         private void label_TextChanged ( object sender, EventArgs e)
         {
-            if ( sender == label6)
+            if ( sender == Label6)
             {
-                burden(label6.Text, label8.Text);
-                label32.Text = Convert.ToString(Calc(Convert.ToInt32(label6.Text) - 10));
-                label103.Text = label32.Text;
-                speed(label6.Text, label10.Text);
+                burden(Label6.Text, Label8.Text);
+                Label32.Text = Convert.ToString(Calc(Convert.ToInt32(Label6.Text) - 10));
+                Label103.Text = Label32.Text;
+                speed(Label6.Text, Label10.Text);
                 
                 
             }
-            if (sender == label8) 
+            if (sender == Label8) 
             {
 
-                burden(label6.Text, label8.Text);
-                label40.Text = Convert.ToString(Calc(Convert.ToInt32(label8.Text) - 10));
+                burden(Label6.Text, Label8.Text);
+                Label40.Text = Convert.ToString(Calc(Convert.ToInt32(Label8.Text) - 10));
 
             }
-            if (sender == label10)
+            if (sender == Label10)
              
             {
                 
-                speed(label6.Text, label10.Text);
-                label41.Text = Convert.ToString(Calc(Convert.ToInt32(label10.Text) - 10));
-                label54.Text = label41.Text;
-                label64.Text = label41.Text;
+                speed(Label6.Text, Label10.Text);
+                Label41.Text = Convert.ToString(Calc(Convert.ToInt32(Label10.Text) - 10));
+                Label54.Text = Label41.Text;
+                Label64.Text = Label41.Text;
                 //agility
-                label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(73, label73.Text, label54.Text)));
-                label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(74,label74.Text, label54.Text)));
-                label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(75,label75.Text, label54.Text)));
-                label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(76,label76.Text, label54.Text)));
-                label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(77,label77.Text, label54.Text)));
-                label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(78,label78.Text, label54.Text)));
-                label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(79,label79.Text, label54.Text)));
-                label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(80,label80.Text, label54.Text)));
+                Label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(73, Label73.Text, Label54.Text)));
+                Label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(74,Label74.Text, Label54.Text)));
+                Label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(75,Label75.Text, Label54.Text)));
+                Label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(76,Label76.Text, Label54.Text)));
+                Label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(77,Label77.Text, Label54.Text)));
+                Label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(78,Label78.Text, Label54.Text)));
+                //label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(79,label79.Text, label54.Text)));
+                //label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(80,label80.Text, label54.Text)));
                 //combat skills 2.pt. of agility
-                label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(174,label174.Text, label54.Text)));
-                label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(175,label175.Text, label54.Text)));
-                label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(176,label176.Text, label54.Text)));
-                label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(177,label177.Text, label54.Text)));
-                label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(178,label178.Text, label54.Text)));
-                label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(179,label179.Text, label54.Text)));
-                label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(180,label180.Text, label54.Text)));
-                label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(181,label181.Text, label54.Text)));
-                label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(182,label182.Text, label54.Text)));
-                label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(183,label183.Text, label54.Text)));
-                label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(184,label184.Text, label54.Text)));
-                label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(185,label185.Text, label54.Text)));
-                label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(186,label186.Text, label54.Text)));
-                label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(187,label187.Text, label54.Text)));
+                Label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(174,Label174.Text, Label54.Text)));
+                Label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(175,Label175.Text, Label54.Text)));
+                Label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(176,Label176.Text, Label54.Text)));
+                Label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(177,Label177.Text, Label54.Text)));
+                Label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(178,Label178.Text, Label54.Text)));
+                Label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(179,Label179.Text, Label54.Text)));
+                Label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(180,Label180.Text, Label54.Text)));
+                Label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(181,Label181.Text, Label54.Text)));
+                Label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(182,Label182.Text, Label54.Text)));
+                Label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(183,Label183.Text, Label54.Text)));
+                Label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(184,Label184.Text, Label54.Text)));
+                Label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(185,Label185.Text, Label54.Text)));
+                Label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(186,Label186.Text, Label54.Text)));
+                Label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(187,Label187.Text, Label54.Text)));
             
                 
             }
 
-            if ( sender==label12)
+            if ( sender==Label12)
             {
-                label42.Text = Convert.ToString(Calc(Convert.ToInt32(label12.Text) - 10));
+                Label42.Text = Convert.ToString(Calc(Convert.ToInt32(Label12.Text) - 10));
             }
             
-            if ( sender==label30)
+            if ( sender==Label30)
             {
                 //int
-                label43.Text = Convert.ToString(Calc(Convert.ToInt32(label30.Text) - 10));
-                label56.Text = label43.Text;
-                label192.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(192,label192.Text, label56.Text)));
-                label193.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(193,label193.Text, label56.Text)));
-                label194.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(194,label194.Text, label56.Text))); 
-                label195.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(195,label195.Text, label56.Text)));
-                label196.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(196,label196.Text, label56.Text)));
-                label197.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(197,label197.Text, label56.Text)));
-                label198.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(198,label198.Text, label56.Text)));
-                label199.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(199,label199.Text, label56.Text)));
-                label200.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(200,label200.Text, label56.Text)));
-                label201.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(201,label201.Text, label56.Text)));
-                label202.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(202,label202.Text, label56.Text)));
-                label203.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(203,label203.Text, label56.Text)));
-                label204.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(204,label204.Text, label56.Text)));
-                label205.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(205,label205.Text, label56.Text)));
-                label206.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(206,label206.Text, label56.Text)));
-                label207.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(207,label207.Text, label56.Text)));
-                label208.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(208,label208.Text, label56.Text)));
-                label209.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(209,label209.Text, label56.Text)));
-                label210.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(210,label210.Text, label56.Text)));
-                label211.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(211,label211.Text, label56.Text)));
-                label212.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(212,label212.Text, label56.Text)));
+                Label43.Text = Convert.ToString(Calc(Convert.ToInt32(Label30.Text) - 10));
+                Label56.Text = Label43.Text;
+                Label192.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(192,Label192.Text, Label56.Text)));
+                Label193.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(193,Label193.Text, Label56.Text)));
+                Label194.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(194,Label194.Text, Label56.Text))); 
+                Label195.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(195,Label195.Text, Label56.Text)));
+                Label196.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(196,Label196.Text, Label56.Text)));
+                Label197.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(197,Label197.Text, Label56.Text)));
+                Label198.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(198,Label198.Text, Label56.Text)));
+                Label199.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(199,Label199.Text, Label56.Text)));
+                Label200.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(200,Label200.Text, Label56.Text)));
+                Label201.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(201,Label201.Text, Label56.Text)));
+                Label202.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(202,Label202.Text, Label56.Text)));
+                Label203.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(203,Label203.Text, Label56.Text)));
+                Label204.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(204,Label204.Text, Label56.Text)));
+                Label205.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(205,Label205.Text, Label56.Text)));
+                Label206.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(206,Label206.Text, Label56.Text)));
+                Label207.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(207,Label207.Text, Label56.Text)));
+                Label208.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(208,Label208.Text, Label56.Text)));
+                Label209.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(209,Label209.Text, Label56.Text)));
+                //label210.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(210,label210.Text, label56.Text)));
+                //label211.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(211,label211.Text, label56.Text)));
+                //label212.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(212,label212.Text, label56.Text)));
 
             }
-            if ( sender==label33)
+            if ( sender==Label33)
             {
-                label44.Text = Convert.ToString(Calc(Convert.ToInt32(label33.Text) - 10));
-                label58.Text = label44.Text;
+                Label44.Text = Convert.ToString(Calc(Convert.ToInt32(Label33.Text) - 10));
+                Label58.Text = Label44.Text;
                 //WIT
-                label167.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(167,label167.Text, label58.Text)));
-                label168.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(168,label168.Text, label58.Text)));
-                label169.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(169,label169.Text, label58.Text)));
-                label170.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(170,label170.Text, label58.Text)));
-                label171.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(171,label171.Text, label58.Text)));
-                label172.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(172,label172.Text, label58.Text)));
-                label173.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(173,label173.Text, label58.Text)));
+                Label167.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(167,Label167.Text, Label58.Text)));
+                Label168.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(168,Label168.Text, Label58.Text)));
+                Label169.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(169,Label169.Text, Label58.Text)));
+                Label170.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(170,Label170.Text, Label58.Text)));
+                Label171.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(171,Label171.Text, Label58.Text)));
+                Label172.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(172,Label172.Text, Label58.Text)));
+                Label173.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(173,Label173.Text, Label58.Text)));
             }
-            if (sender == label35)
+            if (sender == Label35)
             {
-                label45.Text = Convert.ToString(Calc(Convert.ToInt32(label35.Text) - 10));
-                label60.Text = label45.Text;
+                Label45.Text = Convert.ToString(Calc(Convert.ToInt32(Label35.Text) - 10));
+                Label60.Text = Label45.Text;
                 //Social
-                label161.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(161,label161.Text, label54.Text)));
-                label162.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(162,label162.Text, label54.Text)));
-                label163.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(163,label163.Text, label54.Text)));
-                label164.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(164,label164.Text, label54.Text)));
-                label165.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(165,label165.Text, label54.Text)));
-                label166.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(166,label166.Text, label54.Text)));
+                Label161.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(161,Label161.Text, Label54.Text)));
+                Label162.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(162,Label162.Text, Label54.Text)));
+                Label163.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(163,Label163.Text, Label54.Text)));
+                Label164.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(164,Label164.Text, Label54.Text)));
+                Label165.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(165,Label165.Text, Label54.Text)));
+                Label166.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(166,Label166.Text, Label54.Text)));
             }
-            if (sender == label37)
+            if (sender == Label37)
             {
 
                 //EMP
-                label46.Text = Convert.ToString(Calc(Convert.ToInt32(label37.Text) - 10));
-                label62.Text = label46.Text;
-                label188.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(188,label188.Text, label46.Text)));
-                label189.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(189,label189.Text, label46.Text)));
-                label190.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(190,label190.Text, label46.Text)));
-                label191.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(191,label191.Text, label46.Text)));
+                Label46.Text = Convert.ToString(Calc(Convert.ToInt32(Label37.Text) - 10));
+                Label62.Text = Label46.Text;
+                Label188.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(188,Label188.Text, Label46.Text)));
+                Label189.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(189,Label189.Text, Label46.Text)));
+                Label190.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(190,Label190.Text, Label46.Text)));
+                Label191.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(191,Label191.Text, Label46.Text)));
                 SDM();
             }
-            if (sender == label190)
+            if (sender == Label190)
             {
 
                 SDM();
@@ -1592,20 +1132,93 @@ namespace Steamjazz
         /// </summary>
         private void SDM ()
         { 
-            label108.Text = Convert.ToString(12-Convert.ToInt32(label37.Text)-0.5*Convert.ToInt32(label190.Text));
+            Label108.Text = Convert.ToString(12-Convert.ToInt32(Label37.Text)-0.5*Convert.ToInt32(Label190.Text));
         }
         private void CareerClick(object sender, EventArgs e)
         {
             if (sender == label346)
             {
-                Label334 = Convert.ToString(Convert.ToInt32(Label334) + 1);
-                if(comboBox4.SelectedIndex==0)
+                Label334.Text = Convert.ToString(Convert.ToInt32(Label334.Text) + 1);
+                if(ComboBox4.SelectedIndex==0)
                 {
-                    label163.Text = Label334;
+                    Label163.Text = Label334.Text;
                 }
             }
         }
-        
+        private void AgilitySkillClick(object sender,int change)
+        {
+            if (sender == Label81 || sender == Label89) Skill.SkillLabelMod( change, Label213.Text, 73, Label73);
+            if (sender == Label82 || sender == Label90) Skill.SkillLabelMod( change, Label213.Text, 74, Label74);
+            if (sender == Label83 || sender == Label91) Skill.SkillLabelMod( change, Label213.Text, 75, Label75);
+            if (sender == Label84 || sender == Label92) Skill.SkillLabelMod( change, Label213.Text, 76, Label76);
+            if (sender == Label85 || sender == Label93) Skill.SkillLabelMod( change, Label213.Text, 77, Label77);
+            if (sender == Label86 || sender == Label94) Skill.SkillLabelMod( change, Label213.Text, 78, Label78);
+
+        }
+        private void SocialSkillClick(object sender)
+        {
+            if( sender == label214) Skill.SkillLabelMod( 1, Label213.Text, 161, Label161);
+            if (sender == label215) Skill.SkillLabelMod( 1, Label213.Text, 162, Label162);
+            if (sender == label216) Skill.SkillLabelMod( 1, Label213.Text, 163, Label163);
+            if (sender == label217) Skill.SkillLabelMod( 1, Label213.Text, 164, Label164);
+            if (sender == label218) Skill.SkillLabelMod( 1, Label213.Text, 165, Label165);
+            if (sender == label219) Skill.SkillLabelMod( 1, Label213.Text, 166, Label166);
+        }
+        private void IntuitionSkillClick(object sender)
+        { 
+            if (sender == label220) Skill.SkillLabelMod( 1, Label213.Text, 167, Label167);
+            if (sender == label221) Skill.SkillLabelMod( 1, Label213.Text, 168, Label168);
+            if (sender == label222) Skill.SkillLabelMod( 1, Label213.Text, 169, Label169);
+            if (sender == label223) Skill.SkillLabelMod( 1, Label213.Text, 170, Label170);
+            if (sender == label224) Skill.SkillLabelMod( 1, Label213.Text, 171, Label171);
+            if (sender == label225) Skill.SkillLabelMod( 1, Label213.Text, 172, Label172);
+            if (sender == label226) Skill.SkillLabelMod( 1, Label213.Text, 173, Label173);
+        }
+        private void CombatSkillClick(object sender)
+        {
+            if (sender == label227) Skill.SkillLabelMod(1, Label213.Text, 174, Label174);
+            if (sender == label228) Skill.SkillLabelMod(1, Label213.Text, 175, Label175);
+            if (sender == label229) Skill.SkillLabelMod(1, Label213.Text, 176, Label176);
+            if (sender == label230) Skill.SkillLabelMod(1, Label213.Text, 177, Label177);
+            if (sender == label231) Skill.SkillLabelMod(1, Label213.Text, 178, Label178);
+            if (sender == label232) Skill.SkillLabelMod(1, Label213.Text, 179, Label179);
+            if (sender == label233) Skill.SkillLabelMod(1, Label213.Text, 180, Label180);
+            if (sender == label234) Skill.SkillLabelMod(1, Label213.Text, 181, Label181);
+            if (sender == label235) Skill.SkillLabelMod(1, Label213.Text, 182, Label182);
+            if (sender == label236) Skill.SkillLabelMod(1, Label213.Text, 183, Label183);
+            if (sender == label237) Skill.SkillLabelMod(1, Label213.Text, 184, Label184);
+            if (sender == label238) Skill.SkillLabelMod(1, Label213.Text, 185, Label185);
+            if (sender == label239) Skill.SkillLabelMod(1, Label213.Text, 186, Label186);
+            if (sender == label240) Skill.SkillLabelMod(1, Label213.Text, 187, Label187);
+        }
+        private void EmpathySkillClick(object sender)
+        {
+            if (sender == label241) Skill.SkillLabelMod(1, Label213.Text, 188, Label188);
+            if (sender == label242) Skill.SkillLabelMod(1, Label213.Text, 189, Label189);
+            if (sender == label243) Skill.SkillLabelMod(1, Label213.Text, 190, Label190);
+            if (sender == label244) Skill.SkillLabelMod(1, Label213.Text, 191, Label191);
+        }
+        private void InteligenceSkillClick(object sender)
+        {
+            if (sender == label245) Skill.SkillLabelMod(1, Label213.Text, 192, Label192);
+            if (sender == label246) Skill.SkillLabelMod(1, Label213.Text, 193, Label193);
+            if (sender == label247) Skill.SkillLabelMod(1, Label213.Text, 194, Label194);
+            if (sender == label248) Skill.SkillLabelMod(1, Label213.Text, 195, Label195);
+            if (sender == label249) Skill.SkillLabelMod(1, Label213.Text, 196, Label196);
+            if (sender == label250) Skill.SkillLabelMod(1, Label213.Text, 197, Label197);
+            if (sender == label251) Skill.SkillLabelMod(1, Label213.Text, 198, Label198);
+            if (sender == label252) Skill.SkillLabelMod(1, Label213.Text, 199, Label199);
+            if (sender == label253) Skill.SkillLabelMod(1, Label213.Text, 200, Label200);
+            if (sender == label254) Skill.SkillLabelMod(1, Label213.Text, 201, Label201);
+            if (sender == label255) Skill.SkillLabelMod(1, Label213.Text, 202, Label202);
+            if (sender == label256) Skill.SkillLabelMod(1, Label213.Text, 203, Label203);
+            if (sender == label257) Skill.SkillLabelMod(1, Label213.Text, 204, Label204);
+            if (sender == label258) Skill.SkillLabelMod(1, Label213.Text, 205, Label205);
+            if (sender == label259) Skill.SkillLabelMod(1, Label213.Text, 206, Label206);
+            if (sender == label260) Skill.SkillLabelMod(1, Label213.Text, 207, Label207);
+            if (sender == label261) Skill.SkillLabelMod(1, Label213.Text, 208, Label208);
+            if (sender == label262) Skill.SkillLabelMod(1, Label213.Text, 209, Label209);
+        }
         /// <summary>
         /// Tarkastelee skill välilehden + ja - merkkien painalluksia. Tarkistaa painetun labelin ja toimii sen mukaisesti
         /// </summary>
@@ -1615,820 +1228,221 @@ namespace Steamjazz
         /// perus e event argumentti
         private void SkillClick(object sender, EventArgs e)
         {
-            if (sender == label81)
-            {
-                Skill.SkillLabelMod(label213.Text, 73, label73);
-            }
-            if (sender == label82)
-            {
-                Skill.SkillLabelMod(label213.Text, 74, label74);
-            }
-            if (sender == label83)
-            {
-                Skill.SkillLabelMod(label213.Text, 75, label75);
-            }
-            if (sender == label84)
-            {
-                Skill.SkillLabelMod(label213.Text, 76, label76);
-            }
-            if (sender == label85)
-            {
-                Skill.SkillLabelMod(label213.Text, 77, label77);
-            }
-            if (sender == label86)
-            {
-                Skill.SkillLabelMod(label213.Text, 78, label78);
-            }
-            if (sender == label87)
-            {
-                Skill.SkillLabelMod(label213.Text, 79, label79);
-            }
-            if (sender == label88)
-            {
-                Skill.SkillLabelMod(label213.Text, 80, label80);
-            }
-            //Social Skills
-            if( sender == label214)
-            {
-                Skill.SkillLabelMod(label213.Text, 161, label161);
-            }
-            if (sender == label215)
-            {
-                Skill.SkillLabelMod(label213.Text, 162, label162);
-            }
-            if (sender == label216)
-            {
-                Skill.SkillLabelMod(label213.Text, 163, label163);
-            }
-            if (sender == label217)
-            {
-                Skill.SkillLabelMod(label213.Text, 164, label164);
-            }
-            if (sender == label218)
-            {
-                Skill.SkillLabelMod(label213.Text, 165, label165);
-            }
-            if (sender == label219)
-            {
-                Skill.SkillLabelMod(label213.Text, 166, label166);
-            }
-            // Intution
-
-            if (sender == label220)
-            {
-                Skill.SkillLabelMod(label213.Text, 167, label167);
-            } 
-            
-            if (sender == label221)
-            {
-                Skill.SkillLabelMod(label213.Text, 168, label168);
-            } 
-            
-            if (sender == label222)
-            {
-                Skill.SkillLabelMod(label213.Text, 169, label169);
-            } 
-            
-            if (sender == label223)
-            {
-                Skill.SkillLabelMod(label213.Text, 170, label170);
-            } 
-            
-            if (sender == label224)
-            {
-                Skill.SkillLabelMod(label213.Text, 171, label171);
-            } 
-
-            if (sender == label225)
-            {
-                Skill.SkillLabelMod(label213.Text, 172, label172);
-            } 
-           
-            if (sender == label226)
-            {
-                Skill.SkillLabelMod(label213.Text, 173, label173);
-            }
-
-            //combat
-            if (sender == label227)
-            {
-                Skill.SkillLabelMod(label213.Text, 174, label174);
-            }
-            if (sender == label228)
-            {
-                Skill.SkillLabelMod(label213.Text, 175, label175);
-            }
-            if (sender == label229)
-            {
-                Skill.SkillLabelMod(label213.Text, 176, label176);
-            }
-            if (sender == label230)
-            {
-                Skill.SkillLabelMod(label213.Text, 177, label177);
-            }
-            if (sender == label231)
-            {
-                Skill.SkillLabelMod(label213.Text, 178, label178);
-            }
-            if (sender == label232)
-            {
-                Skill.SkillLabelMod(label213.Text, 179, label179);
-            }
-            if (sender == label233)
-            {
-                Skill.SkillLabelMod(label213.Text, 180, label180);
-            }
-            if (sender == label234)
-            {
-                Skill.SkillLabelMod(label213.Text, 181, label181);
-            }
-            if (sender == label235)
-            {
-                Skill.SkillLabelMod(label213.Text, 182, label182);
-            }
-            if (sender == label236)
-            {
-                Skill.SkillLabelMod(label213.Text, 183, label183);
-            }
-            if (sender == label237)
-            {
-                Skill.SkillLabelMod(label213.Text, 184, label184);
-            }
-            if (sender == label238)
-            {
-                Skill.SkillLabelMod(label213.Text, 185, label185);
-            }
-            if (sender == label239)
-            {
-                Skill.SkillLabelMod(label213.Text, 186, label186);
-            }
-            if (sender == label240)
-            {
-                Skill.SkillLabelMod(label213.Text, 187, label187);
-            }
-
-            //Empatia
-            if (sender == label241)
-            {
-                Skill.SkillLabelMod(label213.Text, 188, label188);
-            }
-
-            if (sender == label242)
-            {
-                Skill.SkillLabelMod(label213.Text, 189, label189);
-            }
-
-            if (sender == label243)
-            {
-                Skill.SkillLabelMod(label213.Text, 190, label190);
-            }
-
-            if (sender == label244)
-            {
-                Skill.SkillLabelMod(label213.Text, 191, label191);
-            }
-
-            //inteligence
-            if (sender == label245)
-            {
-                Skill.SkillLabelMod(label213.Text, 192, label192);
-            }
-
-            if (sender == label246)
-            {
-                Skill.SkillLabelMod(label213.Text, 193, label193);
-            }
-            if (sender == label247)
-            {
-                Skill.SkillLabelMod(label213.Text, 194, label194);
-            }
-            if (sender == label248)
-            {
-                Skill.SkillLabelMod(label213.Text, 195, label195);
-            }
-            if (sender == label249)
-            {
-                Skill.SkillLabelMod(label213.Text, 196, label196);
-            }
-            if (sender == label250)
-            {
-                Skill.SkillLabelMod(label213.Text, 197, label197);
-            }
-            if (sender == label251)
-            {
-                Skill.SkillLabelMod(label213.Text, 198, label198);
-            }
-            if (sender == label252)
-            {
-                Skill.SkillLabelMod(label213.Text, 199, label199);
-            }
-            if (sender == label253)
-            {
-                if (Skill.enough(label213.Text, 200) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 200);
-                    label200.Text = Skill.skillAdd(label200.Text,200);
-                }
-            }
-            if (sender == label254)
-            {
-                if (Skill.enough(label213.Text, 201) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 201);
-                    label201.Text = Skill.skillAdd(label201.Text,201);
-                }
-            }
-            if (sender == label255)
-            {
-                if (Skill.enough(label213.Text, 202) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 202);
-                    label202.Text = Skill.skillAdd(label202.Text,202);
-                }
-            }
-            if (sender == label256)
-            {
-                if (Skill.enough(label213.Text, 203) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 203);
-                    label203.Text = Skill.skillAdd(label203.Text,203);
-                }
-            }
-            if (sender == label257)
-            {
-                if (Skill.enough(label213.Text, 204) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 204);
-                    label204.Text = Skill.skillAdd(label204.Text,204);
-                }
-            }
-            if (sender == label258)
-            {
-                if (Skill.enough(label213.Text, 205) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 205);
-                    label205.Text = Skill.skillAdd(label205.Text,205);
-                }
-            }
-            if (sender == label259)
-            {
-                if (Skill.enough(label213.Text, 206) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 206);
-                    label206.Text = Skill.skillAdd(label206.Text,206);
-                }
-            }
-            if (sender == label260)
-            {
-                if (Skill.enough(label213.Text, 207) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 207);
-                    label207.Text = Skill.skillAdd(label207.Text,207);
-                }
-            }
-            if (sender == label261)
-            {
-                if (Skill.enough(label213.Text, 208) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 208);
-                    label208.Text = Skill.skillAdd(label208.Text,208);
-                }
-            }
-            if (sender == label262)
-            {
-                if (Skill.enough(label213.Text, 209) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 209);
-                    label209.Text = Skill.skillAdd(label209.Text,209);
-                }
-            }
-            if (sender == label263)
-            {
-                if (Skill.enough(label213.Text, 210) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 210);
-                    label210.Text = Skill.skillAdd(label210.Text,210);
-                }
-
-           if (sender == label264)
-           {
-                if (Skill.enough(label213.Text, 211) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 211);
-                    label211.Text = Skill.skillAdd(label211.Text,211);
-                }
-                }
-            }
-
-            if (sender == label265)
-            {
-                if (Skill.enough(label213.Text, 212) == true)
-                {
-                    label213.Text = Skill.pointBuy(label213.Text, 212);
-                    label212.Text = Skill.skillAdd(label212.Text,212);
-                }
-            }
-
-
-            
-            //
-            // vähennykset
-            //
-
-            //agility 73-80
-            if (sender == label89)
-            {
-                if (Skill.bonus[0,1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text,73);
-                    label73.Text = Skill.skillRemove(label73.Text, 73);
-                }
-            }
-            if (sender == label90)
-            {
-                if (Skill.bonus[1, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 74);
-                    label74.Text = Skill.skillRemove(label74.Text,74);
-                }
-            }
-            if (sender == label91)
-            {
-                if (Skill.bonus[2, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 75);
-                    label75.Text = Skill.skillRemove(label75.Text,75);
-                }
-            }
-            if (sender == label92)
-            {
-                if (Skill.bonus[3, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 76);
-                    label76.Text = Skill.skillRemove(label76.Text,76);
-                }
-            }
-            if (sender == label93)
-            {
-                if (Skill.bonus[4, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 77);
-                    label77.Text = Skill.skillRemove(label77.Text,77);
-                }
-            }
-            if (sender == label94)
-            {
-                if (Skill.bonus[5, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 78);
-                    label78.Text = Skill.skillRemove(label78.Text,78);
-                }
-            }
-            if (sender == label95)
-            {
-                if (Skill.bonus[6, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 79);
-                    label79.Text = Skill.skillRemove(label79.Text,79);
-                }
-            }
-            if (sender == label96)
-            {
-                if (Skill.bonus[7, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 80);
-                    label80.Text = Skill.skillRemove(label80.Text,80);
-                }
-            }
+            if (sender == Label81 || sender == Label82 || sender == Label83 || sender == Label84 || sender == Label85 || sender == Label86 || sender == Label89 || sender == Label90 || sender == Label91 || sender == Label92 || sender == Label93 || sender == Label94) AgilitySkillClick(sender,1);
+            if(sender == Label89 || sender == Label90 || sender == Label91 || sender == Label92 || sender == Label93 || sender == Label94) AgilitySkillClick(sender,-1);
+            if (sender == label214 || sender == label215 || sender == label216 || sender == label217 || sender == label218 || sender == label219) SocialSkillClick(sender);
+            if (sender == label220 || sender == label221 || sender == label222 || sender == label223 || sender == label224 || sender == label225 || sender == label226) IntuitionSkillClick(sender);
+            if (sender == label227 || sender == label228 || sender == label229 || sender == label230 || sender == label231 || sender == label232 || sender == label233 || sender == label234 || sender == label235 || sender == label236 || sender == label237 || sender == label238 || sender == label239 || sender == label240) CombatSkillClick(sender);
+            if (sender == label241 || sender == label242 || sender == label243 || sender == label244) EmpathySkillClick(sender);
+            if (sender == label245 || sender == label246 || sender == label247 || sender == label248 || sender == label249 || sender == label250 || sender == label251 || sender == label252 || sender == label253 || sender == label254 || sender == label255 || sender == label256 || sender == label257 || sender == label258 || sender == label259 || sender == label260 || sender == label261 || sender == label262) InteligenceSkillClick(sender);
             //social
             if (sender == label266)
             {
-                if (Skill.bonus[8, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 161);
-                    label161.Text = Skill.skillRemove(label161.Text, 161);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 161, Label161);
             } 
             if (sender == label267)
             {
-                if (Skill.bonus[9, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 162);
-                    label162.Text = Skill.skillRemove(label162.Text, 162);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 162, Label162);
             } 
             if (sender == label268)
             {
-                if (Skill.bonus[10, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 163);
-                    label163.Text = Skill.skillRemove(label163.Text, 163);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 163, Label163);
             } 
             if (sender == label269)
             {
-                if (Skill.bonus[11, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 164);
-                    label164.Text = Skill.skillRemove(label164.Text, 164);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 164, Label164);
             }
             if (sender == label270)
             {
-                if (Skill.bonus[12, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 165);
-                    label165.Text = Skill.skillRemove(label165.Text, 165);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 165, Label165);
             }
             if (sender == label271)
             {
-                if (Skill.bonus[13, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 166);
-                    label166.Text = Skill.skillRemove(label166.Text, 166);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 166, Label166);
             }
             //Intuition
             if (sender == label272)
             {
-                if (Skill.bonus[14, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 167);
-                    label167.Text = Skill.skillRemove(label167.Text, 167);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 167, Label167);
             } 
             if (sender == label273)
             {
-                if (Skill.bonus[15, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 168);
-                    label168.Text = Skill.skillRemove(label168.Text, 168);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 168, Label168);
             } 
             if (sender == label274)
             {
-                if (Skill.bonus[16, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 169);
-                    label169.Text = Skill.skillRemove(label169.Text, 169);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 169, Label169);
             } 
             if (sender == label275)
             {
-                if (Skill.bonus[17, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 170);
-                    label170.Text = Skill.skillRemove(label170.Text, 170);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 170, Label170);
             }
             if (sender == label276)
             {
-                if (Skill.bonus[18, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 171);
-                    label171.Text = Skill.skillRemove(label171.Text, 171);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 171, Label171);
             } 
             if (sender == label277)
             {
-                if (Skill.bonus[19, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 172);
-                    label172.Text = Skill.skillRemove(label172.Text, 172);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 172, Label172);
             }
             
             if (sender == label278)
             {
-                if (Skill.bonus[20, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 173);
-                    label173.Text = Skill.skillRemove(label173.Text, 173);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 173, Label173);
             } //combat
             
             if (sender == label279)
             {
-                if (Skill.bonus[21, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 174);
-                    label174.Text = Skill.skillRemove(label174.Text, 174);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 174, Label174);
             }
             if (sender == label280)
             {
-                if (Skill.bonus[22, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 175);
-                    label175.Text = Skill.skillRemove(label175.Text, 175);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 175, Label175);
             } 
             if (sender == label281)
             {
-                if (Skill.bonus[23, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 176);
-                    label176.Text = Skill.skillRemove(label176.Text, 176);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 176, Label176);
             } 
             if (sender == label282)
             {
-                if (Skill.bonus[24, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 177);
-                    label177.Text = Skill.skillRemove(label177.Text, 177);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 177, Label177);
             }
             if (sender == label283)
             {
-                if (Skill.bonus[25, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 178);
-                    label178.Text = Skill.skillRemove(label178.Text, 178);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 178, Label178);
             } 
             if (sender == label284)
             {
-                if (Skill.bonus[26, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 179);
-                    label179.Text = Skill.skillRemove(label179.Text, 179);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 179, Label179);
             }
             if (sender == label285)
             {
-                if (Skill.bonus[27, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 180);
-                    label180.Text = Skill.skillRemove(label180.Text, 180);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 180, Label180);
             }
             if (sender == label286)
             {
-                if (Skill.bonus[28, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 181);
-                    label181.Text = Skill.skillRemove(label181.Text, 181);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 181, Label181);
             }
             if (sender == label287)
             {
-                if (Skill.bonus[29, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 182);
-                    label182.Text = Skill.skillRemove(label182.Text, 182);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 182, Label182);
             }
             if (sender == label288)
             {
-                if (Skill.bonus[30,1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 183);
-                    label183.Text = Skill.skillRemove(label183.Text, 183);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 183, Label183);
             }
             if (sender == label289)
             {
-                if (Skill.bonus[31, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 184);
-                    label184.Text = Skill.skillRemove(label184.Text, 184);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 184, Label184);
             }
             if (sender == label290)
             {
-                if (Skill.bonus[32, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 185);
-                    label185.Text = Skill.skillRemove(label185.Text, 185);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 185, Label185);
             }
             if (sender == label291)
             {
-                if (Skill.bonus[33, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 186);
-                    label186.Text = Skill.skillRemove(label186.Text, 186);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 186, Label186);
             }
             if (sender == label292)
             {
-                if (Skill.bonus[34, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 187);
-                    label187.Text = Skill.skillRemove(label187.Text, 187);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 187, Label187);
             }
             // empatia ->
             if (sender == label293)
             {
-                if (Skill.bonus[35, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 188);
-                    label188.Text = Skill.skillRemove(label188.Text,188);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 188, Label188);
             }
 
             if (sender == label294)
             {
-                if (Skill.bonus[36, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 189);
-                    label189.Text = Skill.skillRemove(label189.Text,189);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 189, Label189);
             }
 
             if (sender == label295)
             {
-                if (Skill.bonus[37, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 190);
-                    label190.Text = Skill.skillRemove(label190.Text,190);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 190, Label190);
             }
 
             if (sender == label296)
             {
-                if (Skill.bonus[38, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 191);
-                    label191.Text = Skill.skillRemove(label191.Text,191);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 191, Label191);
             }
             //inteligence 192-212
             if (sender == label297)
             {
-                if (Skill.bonus[39, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 192);
-                    label192.Text = Skill.skillRemove(label192.Text,192);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 192, Label192);
             }
 
             if (sender == label298)
             {
-                if (Skill.bonus[40, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 193);
-                    label193.Text = Skill.skillRemove(label193.Text,193);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 193, Label193);
             }
             if (sender == label299)
             {
-                if (Skill.bonus[41, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 194);
-                    label194.Text = Skill.skillRemove(label194.Text,194);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 194, Label194);
             }
             if (sender == label300)
             {
-                if (Skill.bonus[42, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 195);
-                    label195.Text = Skill.skillRemove(label195.Text,195);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 195, Label195);
             }
             if (sender == label301)
             {
-                if (Skill.bonus[43, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 196);
-                    label196.Text = Skill.skillRemove(label196.Text,196);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 196, Label196);
             }
             if (sender == label302)
             {
-                if (Skill.bonus[44, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 197);
-                    label197.Text = Skill.skillRemove(label197.Text,197);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 197, Label197);
             }
             if (sender == label303)
             {
-                if (Skill.bonus[45, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 198);
-                    label198.Text = Skill.skillRemove(label198.Text,198);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 198, Label198);
             }
             if (sender == label304)
             {
-                if (Skill.bonus[46, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 199);
-                    label199.Text = Skill.skillRemove(label199.Text,199);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 199, Label199);
             }
             if (sender == label305)
             {
-                if (Skill.bonus[47, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 200);
-                    label200.Text = Skill.skillRemove(label200.Text,200);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 200, Label200);
             }
             if (sender == label306)
             {
-                if (Skill.bonus[48, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 201);
-                    label201.Text = Skill.skillRemove(label201.Text,201);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 201, Label201);
             }
             if (sender == label307)
             {
-                if (Skill.bonus[49, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 202);
-                    label202.Text = Skill.skillRemove(label202.Text,202);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 202, Label202);
             }
             if (sender == label308)
             {
-                if (Skill.bonus[50, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 203);
-                    label203.Text = Skill.skillRemove(label203.Text,203);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 203, Label203);
             }
             if (sender == label309)
             {
-                if (Skill.bonus[51, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 204);
-                    label204.Text = Skill.skillRemove(label204.Text,204);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 204, Label204);
             }
             if (sender == label310)
             {
-                if (Skill.bonus[52, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 205);
-                    label205.Text = Skill.skillRemove(label205.Text,205);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 205, Label205);
             }
             if (sender == label311)
             {
-                if (Skill.bonus[53, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 206);
-                    label206.Text = Skill.skillRemove(label206.Text,206);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 206, Label206);
             }
             if (sender == label312)
             {
-                if (Skill.bonus[54, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 207);
-                    label207.Text = Skill.skillRemove(label207.Text,207);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 207, Label207);
             }
             if (sender == label313)
             {
-                if (Skill.bonus[55,1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 208);
-                    label208.Text = Skill.skillRemove(label208.Text,208);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 208, Label208);
             }
             if (sender == label314)
             {
-                if (Skill.bonus[56, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 209);
-                    label209.Text = Skill.skillRemove(label209.Text,209);
-                }
+                Skill.SkillLabelMod(-1, Label213.Text, 209, Label209);
             }
-            if (sender == label315)
-            {
-                if (Skill.bonus[57, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 210);
-                    label210.Text = Skill.skillRemove(label210.Text,210);
-                }
-            }
-            if (sender == label316)
-            {
-                if (Skill.bonus[58, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 211);
-                    label211.Text = Skill.skillRemove(label211.Text,211);
-                }
-            }
-            if (sender == label317)
-            {
-                if (Skill.bonus[59, 1]>0)
-                {
-                    label213.Text = Skill.pointRefund(label213.Text, 212);
-                    label212.Text = Skill.skillRemove(label212.Text,212);
-                }
-            }
-
-
         }
+        
         /// <summary>
         /// Laskee todennäköisyydet onnistumiselle, sekä kriittiselle onnistumiselle
         /// </summary>
@@ -2436,530 +1450,54 @@ namespace Steamjazz
         /// <param name="e"></param>
         private void prob (object sender,EventArgs e )
         {
+            Label sender1 = new Label(); 
+            sender1 = (Label) sender;
             double[] prob3d6 ={0, 0 ,0, 0.46, 1.85, 4.63, 9.26, 16.2, 25.93, 37.5, 50, 62.5, 74.1, 83.83, 90.74, 95.37, 98.15, 99.54, 100 }  ;
             double[] prob2d6 = { 0, 0, 0, 0, 0, 0, 0, 0, 2.78, 8.33, 16.67, 27.78, 41.67, 58.33, 72.22, 83.33, 91.67, 97.22, 100 };
-
-            //agility
-            if(sender ==label73)
+            int value = Convert.ToInt32(sender1.Text);
+            if (value < 0)
             {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label73.Text)]);
+                label319.Text = "0";
+                Label321.Text = "0";
             }
-            if (sender == label74)
+            if (value > 18)
             {
-                label319.Text = Convert.ToString(prob3d6[Convert.ToInt32(label74.Text)]);
+                label319.Text = "100";
+                Label321.Text = "100";
             }
-            if(sender ==label75 )
+            else
             {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label75.Text)]);
-            }
-            if(sender ==label76 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label76.Text)]);
-            }
-            if(sender ==label77 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label77.Text)]);
-            }
-            if(sender ==label78 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label78.Text)]);
-            }
-            if(sender ==label79 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label79.Text)]);
-            }
-            if(sender ==label80 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label80.Text)]);
-            }
-            //social
-            if(sender ==label161 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label161.Text)]);
-            }
-            if(sender ==label162 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label162.Text)]);
-            }
-            if(sender ==label163 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label163.Text)]);
-            }
-            if(sender ==label164)
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label164.Text)]);
-            }
-            if(sender ==label165)
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label165.Text)]);
-            }
-            if(sender ==label166 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label166.Text)]);
-            }
-            //Intuition
-            if(sender ==label167 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label167.Text)]);
-            }
-            if(sender ==label168 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label168.Text)]);
-            }
-            if(sender ==label169 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label169.Text)]);
-            }
-            if(sender ==label170 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label170.Text)]);
-            }
-            if(sender ==label171 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label171.Text)]);
-            }
-            if(sender ==label172 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label172.Text)]);
-            }
-            if(sender ==label173 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label173.Text)]);
-            }
-            //combat skills
-            if(sender ==label174 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label174.Text)]);
-            }
-            if(sender ==label175 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label175.Text)]);
-            }
-            if(sender ==label176 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label176.Text)]);
-            }
-            if(sender ==label177 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label177.Text)]);
-            }
-            if(sender ==label178 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label178.Text)]);
-            }
-            if(sender ==label179 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label179.Text)]);
-            }
-            if(sender ==label180 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label180.Text)]);
-            }
-            if(sender ==label181 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label181.Text)]);
-            }
-            if(sender ==label182 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label182.Text)]);
-            }
-            if(sender ==label183 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label183.Text)]);
-            }
-            if(sender ==label184 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label184.Text)]);
-            }
-            if(sender ==label185 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label185.Text)]);
-            }
-            if(sender ==label186 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label186.Text)]);
-            }
-            if(sender ==label187 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label187.Text)]);
-            }
-            //empatia
-            if(sender ==label188 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label188.Text)]);
-            }
-            if(sender ==label189 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label189.Text)]);
-            }
-            if(sender ==label190 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label190.Text)]);
-            }
-            if(sender ==label191 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label191.Text)]);
-            }
-            //int
-            if(sender ==label192 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label192.Text)]);
-            }
-            if(sender ==label193 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label193.Text)]);
-            }
-            if(sender ==label194 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label194.Text)]);
-            }
-            if(sender ==label195 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label195.Text)]);
-            }
-            if(sender ==label196 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label196.Text)]);
-            }
-            if(sender ==label197 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label197.Text)]);
-            }
-            if(sender ==label198 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label198.Text)]);
-            }
-            if(sender ==label199 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label199.Text)]);
-            }
-            if(sender ==label200 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label200.Text)]);
-            }
-            if(sender ==label201 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label201.Text)]);
-            }
-            if(sender ==label202 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label202.Text)]);
-            }
-            if(sender ==label203 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label203.Text)]);
-            }
-            if(sender ==label204 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label204.Text)]);
-            }
-            if(sender ==label205 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label205.Text)]);
-            }
-            if(sender ==label206 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label206.Text)]);
-            }
-            if(sender ==label207 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label207.Text)]);
-            }
-            if(sender ==label208 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label208.Text)]);
-            }
-            if(sender ==label209 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label209.Text)]);
-            }
-            if(sender ==label210 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label210.Text)]);
-            }
-            if(sender ==label211 )
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label211.Text)]);
-            }
-            if(sender ==label212)
-            {
-                label319.Text=Convert.ToString(prob3d6[Convert.ToInt32(label212.Text)]);
-            }
-
-            // HOX POX
-            if (sender == label73)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label73.Text)]);
-            }
-            if (sender == label74)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label74.Text)]);
-            }
-            if (sender == label75)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label75.Text)]);
-            }
-            if (sender == label76)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label76.Text)]);
-            }
-            if (sender == label77)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label77.Text)]);
-            }
-            if (sender == label78)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label78.Text)]);
-            }
-            if (sender == label79)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label79.Text)]);
-            }
-            if (sender == label80)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label80.Text)]);
-            }
-            //social
-            if (sender == label161)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label161.Text)]);
-            }
-            if (sender == label162)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label162.Text)]);
-            }
-            if (sender == label163)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label163.Text)]);
-            }
-            if (sender == label164)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label164.Text)]);
-            }
-            if (sender == label165)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label165.Text)]);
-            }
-            if (sender == label166)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label166.Text)]);
-            }
-            //Intuition
-            if (sender == label167)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label167.Text)]);
-            }
-            if (sender == label168)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label168.Text)]);
-            }
-            if (sender == label169)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label169.Text)]);
-            }
-            if (sender == label170)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label170.Text)]);
-            }
-            if (sender == label171)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label171.Text)]);
-            }
-            if (sender == label172)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label172.Text)]);
-            }
-            if (sender == label173)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label173.Text)]);
-            }
-            //combat skills
-            if (sender == label174)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label174.Text)]);
-            }
-            if (sender == label175)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label175.Text)]);
-            }
-            if (sender == label176)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label176.Text)]);
-            }
-            if (sender == label177)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label177.Text)]);
-            }
-            if (sender == label178)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label178.Text)]);
-            }
-            if (sender == label179)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label179.Text)]);
-            }
-            if (sender == label180)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label180.Text)]);
-            }
-            if (sender == label181)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label181.Text)]);
-            }
-            if (sender == label182)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label182.Text)]);
-            }
-            if (sender == label183)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label183.Text)]);
-            }
-            if (sender == label184)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label184.Text)]);
-            }
-            if (sender == label185)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label185.Text)]);
-            }
-            if (sender == label186)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label186.Text)]);
-            }
-            if (sender == label187)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label187.Text)]);
-            }
-            //empatia
-            if (sender == label188)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label188.Text)]);
-            }
-            if (sender == label189)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label189.Text)]);
-            }
-            if (sender == label190)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label190.Text)]);
-            }
-            if (sender == label191)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label191.Text)]);
-            }
-            //int
-            if (sender == label192)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label192.Text)]);
-            }
-            if (sender == label193)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label193.Text)]);
-            }
-            if (sender == label194)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label194.Text)]);
-            }
-            if (sender == label195)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label195.Text)]);
-            }
-            if (sender == label196)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label196.Text)]);
-            }
-            if (sender == label197)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label197.Text)]);
-            }
-            if (sender == label198)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label198.Text)]);
-            }
-            if (sender == label199)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label199.Text)]);
-            }
-            if (sender == label200)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label200.Text)]);
-            }
-            if (sender == label201)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label201.Text)]);
-            }
-            if (sender == label202)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label202.Text)]);
-            }
-            if (sender == label203)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label203.Text)]);
-            }
-            if (sender == label204)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label204.Text)]);
-            }
-            if (sender == label205)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label205.Text)]);
-            }
-            if (sender == label206)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label206.Text)]);
-            }
-            if (sender == label207)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label207.Text)]);
-            }
-            if (sender == label208)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label208.Text)]);
-            }
-            if (sender == label209)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label209.Text)]);
-            }
-            if (sender == label210)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label210.Text)]);
-            }
-            if (sender == label211)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label211.Text)]);
-            }
-            if (sender == label212)
-            {
-                label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(label212.Text)]);
+                label319.Text = Convert.ToString(prob3d6[Convert.ToInt32(sender1.Text)]);
+                Label321.Text = Convert.ToString(prob2d6[Convert.ToInt32(sender1.Text)]);
             }
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            Label322 = Career.CareerSkillNames(comboBox4.SelectedIndex)[0];
-            Label323 = Career.CareerSkillNames(comboBox4.SelectedIndex)[1];
-            Label324 = Career.CareerSkillNames(comboBox4.SelectedIndex)[2];
-            Label325 = Career.CareerSkillNames(comboBox4.SelectedIndex)[3];
-            Label326 = Career.CareerSkillNames(comboBox4.SelectedIndex)[4];
-            Label327 = Career.CareerSkillNames(comboBox4.SelectedIndex)[5];
-            Label328 = Career.CareerSkillNames(comboBox4.SelectedIndex)[6];
-            Label329 = Career.CareerSkillNames(comboBox4.SelectedIndex)[7];
-            Label330 = Career.CareerSkillNames(comboBox4.SelectedIndex)[8];
-            Label331 = Career.CareerSkillNames(comboBox4.SelectedIndex)[9];
-            Label332 = Career.CareerSkillNames(comboBox4.SelectedIndex)[10];
-            Label333 = Career.CareerSkillNames(comboBox4.SelectedIndex)[11];
-            switch(comboBox4.SelectedIndex)
+
+            Label322.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[0];
+            Label323.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[1];
+            Label324.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[2];
+            Label325.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[3];
+            Label326.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[4];
+            Label327.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[5];
+            Label328.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[6];
+            Label329.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[7];
+            Label330.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[8];
+            Label331.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[9];
+            Label332.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[10];
+            Label333.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[11];
+            switch(ComboBox4.SelectedIndex)
             {
                 case 0:
                     {
-                        Label334 = label163.Text;
-                        Label335 = label199.Text;
-                        Label337 = label165.Text;
-                        Label338 = label184.Text;
-                        Label340 = label166.Text;
-                        Label341 = label76.Text;
-                        Label342 = label190.Text;
+                        Label334.Text = Label163.Text;
+                        Label335.Text = Label199.Text;
+                        Label337.Text = Label165.Text;
+                        Label338.Text = Label184.Text;
+                        Label340.Text = Label166.Text;
+                        Label341.Text = Label76.Text;
+                        Label342.Text = Label190.Text;
                         break;
                     }
             }
@@ -2967,16 +1505,16 @@ namespace Steamjazz
         private void groupBoxInit()
         {
             groupBox2.Visible = false;
-            groupBox1.Visible = false;
+            GroupBox1.Visible = false;
             groupBox4.Visible = false;
-            radioButton1.Visible = false;
-            radioButton2.Visible = false;
-            radioButton3.Visible = false;
-            radioButton4.Visible = false;
-            radioButton5.Visible = false;
-            radioButton6.Visible = false;
-            radioButton7.Visible = false;
-            radioButton8.Visible = false;
+            RadioButton1.Visible = false;
+            RadioButton2.Visible = false;
+            RadioButton3.Visible = false;
+            RadioButton4.Visible = false;
+            RadioButton5.Visible = false;
+            RadioButton6.Visible = false;
+            RadioButton7.Visible = false;
+            RadioButton8.Visible = false;
             radioButton9.Visible = false;
             radioButton10.Visible = false;
             radioButton11.Visible = false;
@@ -3007,47 +1545,47 @@ namespace Steamjazz
             
             if (x==1)
             {
-                groupBox1.Visible = true;
+                GroupBox1.Visible = true;
                 switch (att)
                 {
                     case "str":
                         {
-                            radioButton1.Visible = true;
+                            RadioButton1.Visible = true;
                             break;
                         }
                     case "con":
                         {
-                            radioButton2.Visible = true;
+                            RadioButton2.Visible = true;
                             break;
                         }
                     case "dex":
                         {
-                            radioButton3.Visible = true;
+                            RadioButton3.Visible = true;
                             break;
                         }
                     case "ref":
                         {
-                            radioButton4.Visible = true;
+                            RadioButton4.Visible = true;
                             break;
                         }
                     case "int":
                         {
-                            radioButton5.Visible = true;
+                            RadioButton5.Visible = true;
                             break;
                         }
                     case "wit":
                         {
-                            radioButton6.Visible = true;
+                            RadioButton6.Visible = true;
                             break;
                         }
                     case "cha":
                         {
-                            radioButton7.Visible = true;
+                            RadioButton7.Visible = true;
                             break;
                         }
                     case "emp":
                         {
-                            radioButton8.Visible = true;
+                            RadioButton8.Visible = true;
                             break;
                         }
                 } 
@@ -3148,13 +1686,13 @@ namespace Steamjazz
                 }
             }
         }
-        private void groupBox1Visibility(string att1, string att2, string att3)
+        public void groupBox1Visibility(string att1, string att2, string att3)
         {
             attributeVisibility(att1, 1);
             attributeVisibility(att2, 1);
             attributeVisibility(att3, 1);
         }
-        private void groupBox2Visibility(string att1, string att2, string att3, string att4, string att5)
+        public void groupBox2Visibility(string att1, string att2, string att3, string att4, string att5)
         {
             attributeVisibility(att1, 2);
             attributeVisibility(att2, 2);
@@ -3162,25 +1700,25 @@ namespace Steamjazz
             attributeVisibility(att4, 2);
             attributeVisibility(att5, 2);
         }
-        private void groupBox4Visibility(string att1, string att2)
+        public void groupBox4Visibility(string att1, string att2)
         {
             attributeVisibility(att1, 4);
             attributeVisibility(att2, 4);
         }
-        private void groupBox4Visibility(string att1, string att2, string att3)
+        public void groupBox4Visibility(string att1, string att2, string att3)
         {
             attributeVisibility(att1, 4);
             attributeVisibility(att2, 4);
             attributeVisibility(att3, 4);
         }
-        private void groupBox4Visibility(string att1, string att2, string att3, string att4)
+        public void groupBox4Visibility(string att1, string att2, string att3, string att4)
         {
             attributeVisibility(att1, 4);
             attributeVisibility(att2, 4);
             attributeVisibility(att3, 4);
             attributeVisibility(att4, 4);
         }
-        private void groupBox4Visibility(string p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8)
+        public void groupBox4Visibility(string p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8)
         {
             attributeVisibility(p1, 4);
             attributeVisibility(p2, 4);

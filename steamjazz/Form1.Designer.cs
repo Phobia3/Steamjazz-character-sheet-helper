@@ -1,5 +1,5 @@
 ﻿using Steamjazz.Properties;
-namespace steamjazz
+namespace Steamjazz
 {
     partial class Form1
     {
@@ -205,13 +205,11 @@ namespace steamjazz
             this.flowLayoutPanel32 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel30 = new System.Windows.Forms.FlowLayoutPanel();
             this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.flowLayoutPanel31 = new System.Windows.Forms.FlowLayoutPanel();
             this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.flowLayoutPanel33 = new System.Windows.Forms.FlowLayoutPanel();
             this.label73 = new System.Windows.Forms.Label();
@@ -220,8 +218,6 @@ namespace steamjazz
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
             this.flowLayoutPanel34 = new System.Windows.Forms.FlowLayoutPanel();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
@@ -229,8 +225,6 @@ namespace steamjazz
             this.label84 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
             this.flowLayoutPanel35 = new System.Windows.Forms.FlowLayoutPanel();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
@@ -238,8 +232,63 @@ namespace steamjazz
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel43 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel45 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
+            this.label165 = new System.Windows.Forms.Label();
+            this.label166 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel44 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label214 = new System.Windows.Forms.Label();
+            this.label215 = new System.Windows.Forms.Label();
+            this.label216 = new System.Windows.Forms.Label();
+            this.label217 = new System.Windows.Forms.Label();
+            this.label218 = new System.Windows.Forms.Label();
+            this.label219 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel46 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label266 = new System.Windows.Forms.Label();
+            this.label267 = new System.Windows.Forms.Label();
+            this.label268 = new System.Windows.Forms.Label();
+            this.label269 = new System.Windows.Forms.Label();
+            this.label270 = new System.Windows.Forms.Label();
+            this.label271 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel51 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label136 = new System.Windows.Forms.Label();
+            this.label137 = new System.Windows.Forms.Label();
+            this.label138 = new System.Windows.Forms.Label();
+            this.label139 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel52 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label188 = new System.Windows.Forms.Label();
+            this.label189 = new System.Windows.Forms.Label();
+            this.label190 = new System.Windows.Forms.Label();
+            this.label191 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel53 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label241 = new System.Windows.Forms.Label();
+            this.label242 = new System.Windows.Forms.Label();
+            this.label243 = new System.Windows.Forms.Label();
+            this.label244 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel54 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label293 = new System.Windows.Forms.Label();
+            this.label294 = new System.Windows.Forms.Label();
+            this.label295 = new System.Windows.Forms.Label();
+            this.label296 = new System.Windows.Forms.Label();
             this.flowLayoutPanel22 = new System.Windows.Forms.FlowLayoutPanel();
             this.label52 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -305,40 +354,6 @@ namespace steamjazz
             this.label290 = new System.Windows.Forms.Label();
             this.label291 = new System.Windows.Forms.Label();
             this.label292 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel20 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel26 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel43 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label109 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel45 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label161 = new System.Windows.Forms.Label();
-            this.label162 = new System.Windows.Forms.Label();
-            this.label163 = new System.Windows.Forms.Label();
-            this.label164 = new System.Windows.Forms.Label();
-            this.label165 = new System.Windows.Forms.Label();
-            this.label166 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel44 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label214 = new System.Windows.Forms.Label();
-            this.label215 = new System.Windows.Forms.Label();
-            this.label216 = new System.Windows.Forms.Label();
-            this.label217 = new System.Windows.Forms.Label();
-            this.label218 = new System.Windows.Forms.Label();
-            this.label219 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel46 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label266 = new System.Windows.Forms.Label();
-            this.label267 = new System.Windows.Forms.Label();
-            this.label268 = new System.Windows.Forms.Label();
-            this.label269 = new System.Windows.Forms.Label();
-            this.label270 = new System.Windows.Forms.Label();
-            this.label271 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel65 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
             this.label49 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -376,31 +391,7 @@ namespace steamjazz
             this.label276 = new System.Windows.Forms.Label();
             this.label277 = new System.Windows.Forms.Label();
             this.label278 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel27 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel51 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label136 = new System.Windows.Forms.Label();
-            this.label137 = new System.Windows.Forms.Label();
-            this.label138 = new System.Windows.Forms.Label();
-            this.label139 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel52 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label188 = new System.Windows.Forms.Label();
-            this.label189 = new System.Windows.Forms.Label();
-            this.label190 = new System.Windows.Forms.Label();
-            this.label191 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel53 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label241 = new System.Windows.Forms.Label();
-            this.label242 = new System.Windows.Forms.Label();
-            this.label243 = new System.Windows.Forms.Label();
-            this.label244 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel54 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label293 = new System.Windows.Forms.Label();
-            this.label294 = new System.Windows.Forms.Label();
-            this.label295 = new System.Windows.Forms.Label();
-            this.label296 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel65 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
             this.label48 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
@@ -426,8 +417,6 @@ namespace steamjazz
             this.label131 = new System.Windows.Forms.Label();
             this.label132 = new System.Windows.Forms.Label();
             this.label133 = new System.Windows.Forms.Label();
-            this.label134 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
             this.flowLayoutPanel48 = new System.Windows.Forms.FlowLayoutPanel();
             this.label192 = new System.Windows.Forms.Label();
             this.label193 = new System.Windows.Forms.Label();
@@ -447,9 +436,6 @@ namespace steamjazz
             this.label207 = new System.Windows.Forms.Label();
             this.label208 = new System.Windows.Forms.Label();
             this.label209 = new System.Windows.Forms.Label();
-            this.label210 = new System.Windows.Forms.Label();
-            this.label211 = new System.Windows.Forms.Label();
-            this.label212 = new System.Windows.Forms.Label();
             this.flowLayoutPanel49 = new System.Windows.Forms.FlowLayoutPanel();
             this.label245 = new System.Windows.Forms.Label();
             this.label246 = new System.Windows.Forms.Label();
@@ -469,9 +455,6 @@ namespace steamjazz
             this.label260 = new System.Windows.Forms.Label();
             this.label261 = new System.Windows.Forms.Label();
             this.label262 = new System.Windows.Forms.Label();
-            this.label263 = new System.Windows.Forms.Label();
-            this.label264 = new System.Windows.Forms.Label();
-            this.label265 = new System.Windows.Forms.Label();
             this.flowLayoutPanel50 = new System.Windows.Forms.FlowLayoutPanel();
             this.label297 = new System.Windows.Forms.Label();
             this.label298 = new System.Windows.Forms.Label();
@@ -491,9 +474,6 @@ namespace steamjazz
             this.label312 = new System.Windows.Forms.Label();
             this.label313 = new System.Windows.Forms.Label();
             this.label314 = new System.Windows.Forms.Label();
-            this.label315 = new System.Windows.Forms.Label();
-            this.label316 = new System.Windows.Forms.Label();
-            this.label317 = new System.Windows.Forms.Label();
             this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
             this.label213 = new System.Windows.Forms.Label();
             this.flowLayoutPanel66 = new System.Windows.Forms.FlowLayoutPanel();
@@ -502,6 +482,16 @@ namespace steamjazz
             this.flowLayoutPanel67 = new System.Windows.Forms.FlowLayoutPanel();
             this.label320 = new System.Windows.Forms.Label();
             this.label321 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.radioButton25 = new System.Windows.Forms.RadioButton();
+            this.radioButton26 = new System.Windows.Forms.RadioButton();
+            this.radioButton27 = new System.Windows.Forms.RadioButton();
+            this.radioButton28 = new System.Windows.Forms.RadioButton();
+            this.radioButton29 = new System.Windows.Forms.RadioButton();
+            this.radioButton30 = new System.Windows.Forms.RadioButton();
+            this.radioButton31 = new System.Windows.Forms.RadioButton();
+            this.radioButton32 = new System.Windows.Forms.RadioButton();
+            this.label109 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -546,31 +536,31 @@ namespace steamjazz
             this.flowLayoutPanel33.SuspendLayout();
             this.flowLayoutPanel34.SuspendLayout();
             this.flowLayoutPanel35.SuspendLayout();
-            this.flowLayoutPanel22.SuspendLayout();
-            this.flowLayoutPanel28.SuspendLayout();
-            this.flowLayoutPanel59.SuspendLayout();
-            this.flowLayoutPanel60.SuspendLayout();
-            this.flowLayoutPanel61.SuspendLayout();
-            this.flowLayoutPanel62.SuspendLayout();
             this.flowLayoutPanel20.SuspendLayout();
             this.flowLayoutPanel26.SuspendLayout();
             this.flowLayoutPanel43.SuspendLayout();
             this.flowLayoutPanel45.SuspendLayout();
             this.flowLayoutPanel44.SuspendLayout();
             this.flowLayoutPanel46.SuspendLayout();
-            this.flowLayoutPanel65.SuspendLayout();
-            this.flowLayoutPanel19.SuspendLayout();
-            this.flowLayoutPanel25.SuspendLayout();
-            this.flowLayoutPanel55.SuspendLayout();
-            this.flowLayoutPanel56.SuspendLayout();
-            this.flowLayoutPanel57.SuspendLayout();
-            this.flowLayoutPanel58.SuspendLayout();
             this.flowLayoutPanel21.SuspendLayout();
             this.flowLayoutPanel27.SuspendLayout();
             this.flowLayoutPanel51.SuspendLayout();
             this.flowLayoutPanel52.SuspendLayout();
             this.flowLayoutPanel53.SuspendLayout();
             this.flowLayoutPanel54.SuspendLayout();
+            this.flowLayoutPanel22.SuspendLayout();
+            this.flowLayoutPanel28.SuspendLayout();
+            this.flowLayoutPanel59.SuspendLayout();
+            this.flowLayoutPanel60.SuspendLayout();
+            this.flowLayoutPanel61.SuspendLayout();
+            this.flowLayoutPanel62.SuspendLayout();
+            this.flowLayoutPanel19.SuspendLayout();
+            this.flowLayoutPanel25.SuspendLayout();
+            this.flowLayoutPanel55.SuspendLayout();
+            this.flowLayoutPanel56.SuspendLayout();
+            this.flowLayoutPanel57.SuspendLayout();
+            this.flowLayoutPanel58.SuspendLayout();
+            this.flowLayoutPanel65.SuspendLayout();
             this.flowLayoutPanel18.SuspendLayout();
             this.flowLayoutPanel24.SuspendLayout();
             this.flowLayoutPanel47.SuspendLayout();
@@ -580,6 +570,7 @@ namespace steamjazz
             this.flowLayoutPanel15.SuspendLayout();
             this.flowLayoutPanel66.SuspendLayout();
             this.flowLayoutPanel67.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -956,10 +947,11 @@ namespace steamjazz
             this.flowLayoutPanel13.Controls.Add(this.label2);
             this.flowLayoutPanel13.Controls.Add(this.comboBox2);
             this.flowLayoutPanel13.Controls.Add(this.comboBox3);
+            this.flowLayoutPanel13.Controls.Add(this.groupBox4);
             this.flowLayoutPanel13.Controls.Add(this.comboBox5);
             this.flowLayoutPanel13.Location = new System.Drawing.Point(3, 242);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
-            this.flowLayoutPanel13.Size = new System.Drawing.Size(200, 109);
+            this.flowLayoutPanel13.Size = new System.Drawing.Size(200, 173);
             this.flowLayoutPanel13.TabIndex = 10;
             // 
             // label2
@@ -993,7 +985,7 @@ namespace steamjazz
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(3, 70);
+            this.comboBox5.Location = new System.Drawing.Point(3, 136);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(184, 21);
             this.comboBox5.TabIndex = 7;
@@ -1004,9 +996,9 @@ namespace steamjazz
             // 
             this.flowLayoutPanel14.Controls.Add(this.label4);
             this.flowLayoutPanel14.Controls.Add(this.comboBox4);
-            this.flowLayoutPanel14.Location = new System.Drawing.Point(3, 357);
+            this.flowLayoutPanel14.Location = new System.Drawing.Point(3, 421);
             this.flowLayoutPanel14.Name = "flowLayoutPanel14";
-            this.flowLayoutPanel14.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel14.Size = new System.Drawing.Size(200, 58);
             this.flowLayoutPanel14.TabIndex = 11;
             // 
             // label4
@@ -2391,7 +2383,7 @@ namespace steamjazz
             this.flowLayoutPanel23.Controls.Add(this.flowLayoutPanel35);
             this.flowLayoutPanel23.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel23.Name = "flowLayoutPanel23";
-            this.flowLayoutPanel23.Size = new System.Drawing.Size(190, 139);
+            this.flowLayoutPanel23.Size = new System.Drawing.Size(190, 120);
             this.flowLayoutPanel23.TabIndex = 3;
             // 
             // flowLayoutPanel32
@@ -2401,18 +2393,17 @@ namespace steamjazz
             this.flowLayoutPanel32.Controls.Add(this.flowLayoutPanel31);
             this.flowLayoutPanel32.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel32.Name = "flowLayoutPanel32";
-            this.flowLayoutPanel32.Size = new System.Drawing.Size(90, 133);
+            this.flowLayoutPanel32.Size = new System.Drawing.Size(90, 102);
             this.flowLayoutPanel32.TabIndex = 10;
             // 
             // flowLayoutPanel30
             // 
             this.flowLayoutPanel30.Controls.Add(this.label65);
-            this.flowLayoutPanel30.Controls.Add(this.label66);
             this.flowLayoutPanel30.Controls.Add(this.label67);
             this.flowLayoutPanel30.Controls.Add(this.label68);
             this.flowLayoutPanel30.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel30.Name = "flowLayoutPanel30";
-            this.flowLayoutPanel30.Size = new System.Drawing.Size(55, 56);
+            this.flowLayoutPanel30.Size = new System.Drawing.Size(55, 42);
             this.flowLayoutPanel30.TabIndex = 8;
             // 
             // label65
@@ -2424,19 +2415,10 @@ namespace steamjazz
             this.label65.TabIndex = 0;
             this.label65.Text = "Athletics";
             // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(3, 13);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(32, 13);
-            this.label66.TabIndex = 1;
-            this.label66.Text = "Climb";
-            // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(3, 26);
+            this.label67.Location = new System.Drawing.Point(3, 13);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(32, 13);
             this.label67.TabIndex = 2;
@@ -2445,7 +2427,7 @@ namespace steamjazz
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(3, 39);
+            this.label68.Location = new System.Drawing.Point(3, 26);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(29, 13);
             this.label68.TabIndex = 3;
@@ -2454,7 +2436,7 @@ namespace steamjazz
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(3, 62);
+            this.label69.Location = new System.Drawing.Point(3, 48);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(78, 13);
             this.label69.TabIndex = 4;
@@ -2463,11 +2445,10 @@ namespace steamjazz
             // flowLayoutPanel31
             // 
             this.flowLayoutPanel31.Controls.Add(this.label70);
-            this.flowLayoutPanel31.Controls.Add(this.label71);
             this.flowLayoutPanel31.Controls.Add(this.label72);
-            this.flowLayoutPanel31.Location = new System.Drawing.Point(3, 78);
+            this.flowLayoutPanel31.Location = new System.Drawing.Point(3, 64);
             this.flowLayoutPanel31.Name = "flowLayoutPanel31";
-            this.flowLayoutPanel31.Size = new System.Drawing.Size(48, 47);
+            this.flowLayoutPanel31.Size = new System.Drawing.Size(48, 27);
             this.flowLayoutPanel31.TabIndex = 9;
             // 
             // label70
@@ -2479,19 +2460,10 @@ namespace steamjazz
             this.label70.TabIndex = 5;
             this.label70.Text = "Stealth";
             // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(3, 13);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(32, 13);
-            this.label71.TabIndex = 6;
-            this.label71.Text = "Swim";
-            // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(3, 26);
+            this.label72.Location = new System.Drawing.Point(3, 13);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(37, 13);
             this.label72.TabIndex = 7;
@@ -2505,11 +2477,9 @@ namespace steamjazz
             this.flowLayoutPanel33.Controls.Add(this.label76);
             this.flowLayoutPanel33.Controls.Add(this.label77);
             this.flowLayoutPanel33.Controls.Add(this.label78);
-            this.flowLayoutPanel33.Controls.Add(this.label79);
-            this.flowLayoutPanel33.Controls.Add(this.label80);
             this.flowLayoutPanel33.Location = new System.Drawing.Point(99, 3);
             this.flowLayoutPanel33.Name = "flowLayoutPanel33";
-            this.flowLayoutPanel33.Size = new System.Drawing.Size(22, 130);
+            this.flowLayoutPanel33.Size = new System.Drawing.Size(22, 102);
             this.flowLayoutPanel33.TabIndex = 11;
             // 
             // label73
@@ -2579,28 +2549,6 @@ namespace steamjazz
             this.label78.Text = "8";
             this.label78.Click += new System.EventHandler(this.prob);
             // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(3, 90);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(14, 15);
-            this.label79.TabIndex = 6;
-            this.label79.Text = "8";
-            this.label79.Click += new System.EventHandler(this.prob);
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(3, 105);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(14, 15);
-            this.label80.TabIndex = 7;
-            this.label80.Text = "7";
-            this.label80.Click += new System.EventHandler(this.prob);
-            // 
             // flowLayoutPanel34
             // 
             this.flowLayoutPanel34.Controls.Add(this.label81);
@@ -2609,11 +2557,9 @@ namespace steamjazz
             this.flowLayoutPanel34.Controls.Add(this.label84);
             this.flowLayoutPanel34.Controls.Add(this.label85);
             this.flowLayoutPanel34.Controls.Add(this.label86);
-            this.flowLayoutPanel34.Controls.Add(this.label87);
-            this.flowLayoutPanel34.Controls.Add(this.label88);
             this.flowLayoutPanel34.Location = new System.Drawing.Point(127, 3);
             this.flowLayoutPanel34.Name = "flowLayoutPanel34";
-            this.flowLayoutPanel34.Size = new System.Drawing.Size(22, 130);
+            this.flowLayoutPanel34.Size = new System.Drawing.Size(22, 102);
             this.flowLayoutPanel34.TabIndex = 12;
             // 
             // label81
@@ -2625,7 +2571,7 @@ namespace steamjazz
             this.label81.Size = new System.Drawing.Size(14, 15);
             this.label81.TabIndex = 0;
             this.label81.Text = "+";
-            this.label81.Click += new System.EventHandler(this.skillClick);
+            this.label81.Click += new System.EventHandler(this.SkillClick);
             // 
             // label82
             // 
@@ -2636,7 +2582,7 @@ namespace steamjazz
             this.label82.Size = new System.Drawing.Size(14, 15);
             this.label82.TabIndex = 1;
             this.label82.Text = "+";
-            this.label82.Click += new System.EventHandler(this.skillClick);
+            this.label82.Click += new System.EventHandler(this.SkillClick);
             // 
             // label83
             // 
@@ -2647,7 +2593,7 @@ namespace steamjazz
             this.label83.Size = new System.Drawing.Size(14, 15);
             this.label83.TabIndex = 2;
             this.label83.Text = "+";
-            this.label83.Click += new System.EventHandler(this.skillClick);
+            this.label83.Click += new System.EventHandler(this.SkillClick);
             // 
             // label84
             // 
@@ -2658,7 +2604,7 @@ namespace steamjazz
             this.label84.Size = new System.Drawing.Size(14, 15);
             this.label84.TabIndex = 3;
             this.label84.Text = "+";
-            this.label84.Click += new System.EventHandler(this.skillClick);
+            this.label84.Click += new System.EventHandler(this.SkillClick);
             // 
             // label85
             // 
@@ -2669,7 +2615,7 @@ namespace steamjazz
             this.label85.Size = new System.Drawing.Size(14, 15);
             this.label85.TabIndex = 4;
             this.label85.Text = "+";
-            this.label85.Click += new System.EventHandler(this.skillClick);
+            this.label85.Click += new System.EventHandler(this.SkillClick);
             // 
             // label86
             // 
@@ -2680,29 +2626,7 @@ namespace steamjazz
             this.label86.Size = new System.Drawing.Size(14, 15);
             this.label86.TabIndex = 5;
             this.label86.Text = "+";
-            this.label86.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.Location = new System.Drawing.Point(3, 90);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(14, 15);
-            this.label87.TabIndex = 6;
-            this.label87.Text = "+";
-            this.label87.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.Location = new System.Drawing.Point(3, 105);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(14, 15);
-            this.label88.TabIndex = 7;
-            this.label88.Text = "+";
-            this.label88.Click += new System.EventHandler(this.skillClick);
+            this.label86.Click += new System.EventHandler(this.SkillClick);
             // 
             // flowLayoutPanel35
             // 
@@ -2712,11 +2636,9 @@ namespace steamjazz
             this.flowLayoutPanel35.Controls.Add(this.label92);
             this.flowLayoutPanel35.Controls.Add(this.label93);
             this.flowLayoutPanel35.Controls.Add(this.label94);
-            this.flowLayoutPanel35.Controls.Add(this.label95);
-            this.flowLayoutPanel35.Controls.Add(this.label96);
             this.flowLayoutPanel35.Location = new System.Drawing.Point(155, 3);
             this.flowLayoutPanel35.Name = "flowLayoutPanel35";
-            this.flowLayoutPanel35.Size = new System.Drawing.Size(22, 130);
+            this.flowLayoutPanel35.Size = new System.Drawing.Size(22, 102);
             this.flowLayoutPanel35.TabIndex = 13;
             // 
             // label89
@@ -2728,7 +2650,7 @@ namespace steamjazz
             this.label89.Size = new System.Drawing.Size(11, 15);
             this.label89.TabIndex = 0;
             this.label89.Text = "-";
-            this.label89.Click += new System.EventHandler(this.skillClick);
+            this.label89.Click += new System.EventHandler(this.SkillClick);
             // 
             // label90
             // 
@@ -2739,7 +2661,7 @@ namespace steamjazz
             this.label90.Size = new System.Drawing.Size(11, 15);
             this.label90.TabIndex = 1;
             this.label90.Text = "-";
-            this.label90.Click += new System.EventHandler(this.skillClick);
+            this.label90.Click += new System.EventHandler(this.SkillClick);
             // 
             // label91
             // 
@@ -2750,7 +2672,7 @@ namespace steamjazz
             this.label91.Size = new System.Drawing.Size(11, 15);
             this.label91.TabIndex = 2;
             this.label91.Text = "-";
-            this.label91.Click += new System.EventHandler(this.skillClick);
+            this.label91.Click += new System.EventHandler(this.SkillClick);
             // 
             // label92
             // 
@@ -2761,7 +2683,7 @@ namespace steamjazz
             this.label92.Size = new System.Drawing.Size(11, 15);
             this.label92.TabIndex = 3;
             this.label92.Text = "-";
-            this.label92.Click += new System.EventHandler(this.skillClick);
+            this.label92.Click += new System.EventHandler(this.SkillClick);
             // 
             // label93
             // 
@@ -2772,7 +2694,7 @@ namespace steamjazz
             this.label93.Size = new System.Drawing.Size(11, 15);
             this.label93.TabIndex = 4;
             this.label93.Text = "-";
-            this.label93.Click += new System.EventHandler(this.skillClick);
+            this.label93.Click += new System.EventHandler(this.SkillClick);
             // 
             // label94
             // 
@@ -2783,29 +2705,583 @@ namespace steamjazz
             this.label94.Size = new System.Drawing.Size(11, 15);
             this.label94.TabIndex = 5;
             this.label94.Text = "-";
-            this.label94.Click += new System.EventHandler(this.skillClick);
+            this.label94.Click += new System.EventHandler(this.SkillClick);
             // 
-            // label95
+            // flowLayoutPanel20
             // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.Location = new System.Drawing.Point(3, 90);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(11, 15);
-            this.label95.TabIndex = 8;
-            this.label95.Text = "-";
-            this.label95.Click += new System.EventHandler(this.skillClick);
+            this.flowLayoutPanel20.Controls.Add(this.label50);
+            this.flowLayoutPanel20.Controls.Add(this.label59);
+            this.flowLayoutPanel20.Controls.Add(this.label60);
+            this.flowLayoutPanel20.Controls.Add(this.flowLayoutPanel26);
+            this.flowLayoutPanel20.Location = new System.Drawing.Point(3, 142);
+            this.flowLayoutPanel20.Name = "flowLayoutPanel20";
+            this.flowLayoutPanel20.Size = new System.Drawing.Size(193, 144);
+            this.flowLayoutPanel20.TabIndex = 3;
             // 
-            // label96
+            // label50
             // 
-            this.label96.AutoSize = true;
-            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.Location = new System.Drawing.Point(3, 105);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(11, 15);
-            this.label96.TabIndex = 9;
-            this.label96.Text = "-";
-            this.label96.Click += new System.EventHandler(this.skillClick);
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(3, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(63, 13);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Social Skills";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(72, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(29, 13);
+            this.label59.TabIndex = 1;
+            this.label59.Text = "CHA";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(107, 0);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(41, 13);
+            this.label60.TabIndex = 2;
+            this.label60.Text = "label60";
+            // 
+            // flowLayoutPanel26
+            // 
+            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel43);
+            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel45);
+            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel44);
+            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel46);
+            this.flowLayoutPanel26.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel26.Name = "flowLayoutPanel26";
+            this.flowLayoutPanel26.Size = new System.Drawing.Size(177, 117);
+            this.flowLayoutPanel26.TabIndex = 3;
+            // 
+            // flowLayoutPanel43
+            // 
+            this.flowLayoutPanel43.Controls.Add(this.label110);
+            this.flowLayoutPanel43.Controls.Add(this.label111);
+            this.flowLayoutPanel43.Controls.Add(this.label109);
+            this.flowLayoutPanel43.Controls.Add(this.label112);
+            this.flowLayoutPanel43.Controls.Add(this.label113);
+            this.flowLayoutPanel43.Controls.Add(this.label114);
+            this.flowLayoutPanel43.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel43.Name = "flowLayoutPanel43";
+            this.flowLayoutPanel43.Size = new System.Drawing.Size(68, 108);
+            this.flowLayoutPanel43.TabIndex = 0;
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Location = new System.Drawing.Point(3, 0);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(28, 13);
+            this.label110.TabIndex = 1;
+            this.label110.Text = "Bluff";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(3, 13);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(37, 13);
+            this.label111.TabIndex = 2;
+            this.label111.Text = "Charm";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(3, 39);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(52, 13);
+            this.label112.TabIndex = 3;
+            this.label112.Text = "Intimidate";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(3, 52);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(59, 13);
+            this.label113.TabIndex = 4;
+            this.label113.Text = "Leadership";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(3, 65);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(52, 13);
+            this.label114.TabIndex = 5;
+            this.label114.Text = "Persuade";
+            // 
+            // flowLayoutPanel45
+            // 
+            this.flowLayoutPanel45.Controls.Add(this.label161);
+            this.flowLayoutPanel45.Controls.Add(this.label162);
+            this.flowLayoutPanel45.Controls.Add(this.label163);
+            this.flowLayoutPanel45.Controls.Add(this.label164);
+            this.flowLayoutPanel45.Controls.Add(this.label165);
+            this.flowLayoutPanel45.Controls.Add(this.label166);
+            this.flowLayoutPanel45.Location = new System.Drawing.Point(77, 3);
+            this.flowLayoutPanel45.Name = "flowLayoutPanel45";
+            this.flowLayoutPanel45.Size = new System.Drawing.Size(28, 108);
+            this.flowLayoutPanel45.TabIndex = 2;
+            this.flowLayoutPanel45.Click += new System.EventHandler(this.prob);
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Location = new System.Drawing.Point(3, 0);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(13, 13);
+            this.label161.TabIndex = 10;
+            this.label161.Text = "8";
+            this.label161.Click += new System.EventHandler(this.prob);
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Location = new System.Drawing.Point(3, 13);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(13, 13);
+            this.label162.TabIndex = 11;
+            this.label162.Text = "8";
+            this.label162.Click += new System.EventHandler(this.prob);
+            // 
+            // label163
+            // 
+            this.label163.AutoSize = true;
+            this.label163.Location = new System.Drawing.Point(3, 26);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(13, 13);
+            this.label163.TabIndex = 12;
+            this.label163.Text = "8";
+            this.label163.Click += new System.EventHandler(this.prob);
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Location = new System.Drawing.Point(3, 39);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(13, 13);
+            this.label164.TabIndex = 13;
+            this.label164.Text = "8";
+            this.label164.Click += new System.EventHandler(this.prob);
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Location = new System.Drawing.Point(3, 52);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(13, 13);
+            this.label165.TabIndex = 14;
+            this.label165.Text = "8";
+            this.label165.Click += new System.EventHandler(this.prob);
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Location = new System.Drawing.Point(3, 65);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(13, 13);
+            this.label166.TabIndex = 15;
+            this.label166.Text = "8";
+            this.label166.Click += new System.EventHandler(this.prob);
+            // 
+            // flowLayoutPanel44
+            // 
+            this.flowLayoutPanel44.Controls.Add(this.label214);
+            this.flowLayoutPanel44.Controls.Add(this.label215);
+            this.flowLayoutPanel44.Controls.Add(this.label216);
+            this.flowLayoutPanel44.Controls.Add(this.label217);
+            this.flowLayoutPanel44.Controls.Add(this.label218);
+            this.flowLayoutPanel44.Controls.Add(this.label219);
+            this.flowLayoutPanel44.Location = new System.Drawing.Point(111, 3);
+            this.flowLayoutPanel44.Name = "flowLayoutPanel44";
+            this.flowLayoutPanel44.Size = new System.Drawing.Size(22, 108);
+            this.flowLayoutPanel44.TabIndex = 1;
+            // 
+            // label214
+            // 
+            this.label214.AutoSize = true;
+            this.label214.Location = new System.Drawing.Point(3, 0);
+            this.label214.Name = "label214";
+            this.label214.Size = new System.Drawing.Size(13, 13);
+            this.label214.TabIndex = 0;
+            this.label214.Text = "+";
+            this.label214.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label215
+            // 
+            this.label215.AutoSize = true;
+            this.label215.Location = new System.Drawing.Point(3, 13);
+            this.label215.Name = "label215";
+            this.label215.Size = new System.Drawing.Size(13, 13);
+            this.label215.TabIndex = 1;
+            this.label215.Text = "+";
+            this.label215.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label216
+            // 
+            this.label216.AutoSize = true;
+            this.label216.Location = new System.Drawing.Point(3, 26);
+            this.label216.Name = "label216";
+            this.label216.Size = new System.Drawing.Size(13, 13);
+            this.label216.TabIndex = 2;
+            this.label216.Text = "+";
+            this.label216.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label217
+            // 
+            this.label217.AutoSize = true;
+            this.label217.Location = new System.Drawing.Point(3, 39);
+            this.label217.Name = "label217";
+            this.label217.Size = new System.Drawing.Size(13, 13);
+            this.label217.TabIndex = 3;
+            this.label217.Text = "+";
+            this.label217.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label218
+            // 
+            this.label218.AutoSize = true;
+            this.label218.Location = new System.Drawing.Point(3, 52);
+            this.label218.Name = "label218";
+            this.label218.Size = new System.Drawing.Size(13, 13);
+            this.label218.TabIndex = 4;
+            this.label218.Text = "+";
+            this.label218.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label219
+            // 
+            this.label219.AutoSize = true;
+            this.label219.Location = new System.Drawing.Point(3, 65);
+            this.label219.Name = "label219";
+            this.label219.Size = new System.Drawing.Size(13, 13);
+            this.label219.TabIndex = 5;
+            this.label219.Text = "+";
+            this.label219.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // flowLayoutPanel46
+            // 
+            this.flowLayoutPanel46.Controls.Add(this.label266);
+            this.flowLayoutPanel46.Controls.Add(this.label267);
+            this.flowLayoutPanel46.Controls.Add(this.label268);
+            this.flowLayoutPanel46.Controls.Add(this.label269);
+            this.flowLayoutPanel46.Controls.Add(this.label270);
+            this.flowLayoutPanel46.Controls.Add(this.label271);
+            this.flowLayoutPanel46.Location = new System.Drawing.Point(139, 3);
+            this.flowLayoutPanel46.Name = "flowLayoutPanel46";
+            this.flowLayoutPanel46.Size = new System.Drawing.Size(26, 108);
+            this.flowLayoutPanel46.TabIndex = 3;
+            // 
+            // label266
+            // 
+            this.label266.AutoSize = true;
+            this.label266.Location = new System.Drawing.Point(3, 0);
+            this.label266.Name = "label266";
+            this.label266.Size = new System.Drawing.Size(10, 13);
+            this.label266.TabIndex = 0;
+            this.label266.Text = "-";
+            this.label266.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label267
+            // 
+            this.label267.AutoSize = true;
+            this.label267.Location = new System.Drawing.Point(3, 13);
+            this.label267.Name = "label267";
+            this.label267.Size = new System.Drawing.Size(10, 13);
+            this.label267.TabIndex = 1;
+            this.label267.Text = "-";
+            this.label267.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label268
+            // 
+            this.label268.AutoSize = true;
+            this.label268.Location = new System.Drawing.Point(3, 26);
+            this.label268.Name = "label268";
+            this.label268.Size = new System.Drawing.Size(10, 13);
+            this.label268.TabIndex = 2;
+            this.label268.Text = "-";
+            this.label268.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label269
+            // 
+            this.label269.AutoSize = true;
+            this.label269.Location = new System.Drawing.Point(3, 39);
+            this.label269.Name = "label269";
+            this.label269.Size = new System.Drawing.Size(10, 13);
+            this.label269.TabIndex = 3;
+            this.label269.Text = "-";
+            this.label269.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label270
+            // 
+            this.label270.AutoSize = true;
+            this.label270.Location = new System.Drawing.Point(3, 52);
+            this.label270.Name = "label270";
+            this.label270.Size = new System.Drawing.Size(10, 13);
+            this.label270.TabIndex = 4;
+            this.label270.Text = "-";
+            this.label270.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label271
+            // 
+            this.label271.AutoSize = true;
+            this.label271.Location = new System.Drawing.Point(3, 65);
+            this.label271.Name = "label271";
+            this.label271.Size = new System.Drawing.Size(10, 13);
+            this.label271.TabIndex = 5;
+            this.label271.Text = "-";
+            this.label271.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // flowLayoutPanel21
+            // 
+            this.flowLayoutPanel21.Controls.Add(this.label51);
+            this.flowLayoutPanel21.Controls.Add(this.label61);
+            this.flowLayoutPanel21.Controls.Add(this.label62);
+            this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel27);
+            this.flowLayoutPanel21.Location = new System.Drawing.Point(3, 292);
+            this.flowLayoutPanel21.Name = "flowLayoutPanel21";
+            this.flowLayoutPanel21.Size = new System.Drawing.Size(190, 97);
+            this.flowLayoutPanel21.TabIndex = 4;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(3, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(78, 13);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Empathic Skills";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(87, 0);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(30, 13);
+            this.label61.TabIndex = 1;
+            this.label61.Text = "EMP";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(123, 0);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(41, 13);
+            this.label62.TabIndex = 2;
+            this.label62.Text = "label62";
+            // 
+            // flowLayoutPanel27
+            // 
+            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel51);
+            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel52);
+            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel53);
+            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel54);
+            this.flowLayoutPanel27.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
+            this.flowLayoutPanel27.Size = new System.Drawing.Size(177, 71);
+            this.flowLayoutPanel27.TabIndex = 3;
+            // 
+            // flowLayoutPanel51
+            // 
+            this.flowLayoutPanel51.Controls.Add(this.label136);
+            this.flowLayoutPanel51.Controls.Add(this.label137);
+            this.flowLayoutPanel51.Controls.Add(this.label138);
+            this.flowLayoutPanel51.Controls.Add(this.label139);
+            this.flowLayoutPanel51.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel51.Name = "flowLayoutPanel51";
+            this.flowLayoutPanel51.Size = new System.Drawing.Size(87, 57);
+            this.flowLayoutPanel51.TabIndex = 0;
+            // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.Location = new System.Drawing.Point(3, 0);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(78, 13);
+            this.label136.TabIndex = 1;
+            this.label136.Text = "Anim. Handling";
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Location = new System.Drawing.Point(3, 13);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(53, 13);
+            this.label137.TabIndex = 2;
+            this.label137.Text = "Negotiate";
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Location = new System.Drawing.Point(3, 26);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(71, 13);
+            this.label138.TabIndex = 3;
+            this.label138.Text = "Sense motive";
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Location = new System.Drawing.Point(3, 39);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(52, 13);
+            this.label139.TabIndex = 4;
+            this.label139.Text = "Teaching";
+            // 
+            // flowLayoutPanel52
+            // 
+            this.flowLayoutPanel52.Controls.Add(this.label188);
+            this.flowLayoutPanel52.Controls.Add(this.label189);
+            this.flowLayoutPanel52.Controls.Add(this.label190);
+            this.flowLayoutPanel52.Controls.Add(this.label191);
+            this.flowLayoutPanel52.Location = new System.Drawing.Point(96, 3);
+            this.flowLayoutPanel52.Name = "flowLayoutPanel52";
+            this.flowLayoutPanel52.Size = new System.Drawing.Size(21, 57);
+            this.flowLayoutPanel52.TabIndex = 1;
+            // 
+            // label188
+            // 
+            this.label188.AutoSize = true;
+            this.label188.Location = new System.Drawing.Point(3, 0);
+            this.label188.Name = "label188";
+            this.label188.Size = new System.Drawing.Size(13, 13);
+            this.label188.TabIndex = 10;
+            this.label188.Text = "8";
+            this.label188.Click += new System.EventHandler(this.prob);
+            // 
+            // label189
+            // 
+            this.label189.AutoSize = true;
+            this.label189.Location = new System.Drawing.Point(3, 13);
+            this.label189.Name = "label189";
+            this.label189.Size = new System.Drawing.Size(13, 13);
+            this.label189.TabIndex = 11;
+            this.label189.Text = "8";
+            this.label189.Click += new System.EventHandler(this.prob);
+            // 
+            // label190
+            // 
+            this.label190.AutoSize = true;
+            this.label190.Location = new System.Drawing.Point(3, 26);
+            this.label190.Name = "label190";
+            this.label190.Size = new System.Drawing.Size(13, 13);
+            this.label190.TabIndex = 12;
+            this.label190.Text = "8";
+            this.label190.Click += new System.EventHandler(this.prob);
+            // 
+            // label191
+            // 
+            this.label191.AutoSize = true;
+            this.label191.Location = new System.Drawing.Point(3, 39);
+            this.label191.Name = "label191";
+            this.label191.Size = new System.Drawing.Size(13, 13);
+            this.label191.TabIndex = 13;
+            this.label191.Text = "8";
+            this.label191.Click += new System.EventHandler(this.prob);
+            // 
+            // flowLayoutPanel53
+            // 
+            this.flowLayoutPanel53.Controls.Add(this.label241);
+            this.flowLayoutPanel53.Controls.Add(this.label242);
+            this.flowLayoutPanel53.Controls.Add(this.label243);
+            this.flowLayoutPanel53.Controls.Add(this.label244);
+            this.flowLayoutPanel53.Location = new System.Drawing.Point(123, 3);
+            this.flowLayoutPanel53.Name = "flowLayoutPanel53";
+            this.flowLayoutPanel53.Size = new System.Drawing.Size(23, 57);
+            this.flowLayoutPanel53.TabIndex = 2;
+            // 
+            // label241
+            // 
+            this.label241.AutoSize = true;
+            this.label241.Location = new System.Drawing.Point(3, 0);
+            this.label241.Name = "label241";
+            this.label241.Size = new System.Drawing.Size(13, 13);
+            this.label241.TabIndex = 1;
+            this.label241.Text = "+";
+            this.label241.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label242
+            // 
+            this.label242.AutoSize = true;
+            this.label242.Location = new System.Drawing.Point(3, 13);
+            this.label242.Name = "label242";
+            this.label242.Size = new System.Drawing.Size(13, 13);
+            this.label242.TabIndex = 2;
+            this.label242.Text = "+";
+            this.label242.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label243
+            // 
+            this.label243.AutoSize = true;
+            this.label243.Location = new System.Drawing.Point(3, 26);
+            this.label243.Name = "label243";
+            this.label243.Size = new System.Drawing.Size(13, 13);
+            this.label243.TabIndex = 3;
+            this.label243.Text = "+";
+            this.label243.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label244
+            // 
+            this.label244.AutoSize = true;
+            this.label244.Location = new System.Drawing.Point(3, 39);
+            this.label244.Name = "label244";
+            this.label244.Size = new System.Drawing.Size(13, 13);
+            this.label244.TabIndex = 4;
+            this.label244.Text = "+";
+            this.label244.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // flowLayoutPanel54
+            // 
+            this.flowLayoutPanel54.Controls.Add(this.label293);
+            this.flowLayoutPanel54.Controls.Add(this.label294);
+            this.flowLayoutPanel54.Controls.Add(this.label295);
+            this.flowLayoutPanel54.Controls.Add(this.label296);
+            this.flowLayoutPanel54.Location = new System.Drawing.Point(152, 3);
+            this.flowLayoutPanel54.Name = "flowLayoutPanel54";
+            this.flowLayoutPanel54.Size = new System.Drawing.Size(21, 57);
+            this.flowLayoutPanel54.TabIndex = 3;
+            // 
+            // label293
+            // 
+            this.label293.AutoSize = true;
+            this.label293.Location = new System.Drawing.Point(3, 0);
+            this.label293.Name = "label293";
+            this.label293.Size = new System.Drawing.Size(10, 13);
+            this.label293.TabIndex = 4;
+            this.label293.Text = "-";
+            this.label293.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label294
+            // 
+            this.label294.AutoSize = true;
+            this.label294.Location = new System.Drawing.Point(3, 13);
+            this.label294.Name = "label294";
+            this.label294.Size = new System.Drawing.Size(10, 13);
+            this.label294.TabIndex = 5;
+            this.label294.Text = "-";
+            this.label294.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label295
+            // 
+            this.label295.AutoSize = true;
+            this.label295.Location = new System.Drawing.Point(3, 26);
+            this.label295.Name = "label295";
+            this.label295.Size = new System.Drawing.Size(10, 13);
+            this.label295.TabIndex = 6;
+            this.label295.Text = "-";
+            this.label295.Click += new System.EventHandler(this.SkillClick);
+            // 
+            // label296
+            // 
+            this.label296.AutoSize = true;
+            this.label296.Location = new System.Drawing.Point(3, 39);
+            this.label296.Name = "label296";
+            this.label296.Size = new System.Drawing.Size(10, 13);
+            this.label296.TabIndex = 7;
+            this.label296.Text = "-";
+            this.label296.Click += new System.EventHandler(this.SkillClick);
             // 
             // flowLayoutPanel22
             // 
@@ -3223,7 +3699,7 @@ namespace steamjazz
             this.label227.Size = new System.Drawing.Size(14, 15);
             this.label227.TabIndex = 1;
             this.label227.Text = "+";
-            this.label227.Click += new System.EventHandler(this.skillClick);
+            this.label227.Click += new System.EventHandler(this.SkillClick);
             // 
             // label228
             // 
@@ -3234,7 +3710,7 @@ namespace steamjazz
             this.label228.Size = new System.Drawing.Size(14, 15);
             this.label228.TabIndex = 2;
             this.label228.Text = "+";
-            this.label228.Click += new System.EventHandler(this.skillClick);
+            this.label228.Click += new System.EventHandler(this.SkillClick);
             // 
             // label229
             // 
@@ -3245,7 +3721,7 @@ namespace steamjazz
             this.label229.Size = new System.Drawing.Size(14, 15);
             this.label229.TabIndex = 3;
             this.label229.Text = "+";
-            this.label229.Click += new System.EventHandler(this.skillClick);
+            this.label229.Click += new System.EventHandler(this.SkillClick);
             // 
             // label230
             // 
@@ -3256,7 +3732,7 @@ namespace steamjazz
             this.label230.Size = new System.Drawing.Size(14, 15);
             this.label230.TabIndex = 4;
             this.label230.Text = "+";
-            this.label230.Click += new System.EventHandler(this.skillClick);
+            this.label230.Click += new System.EventHandler(this.SkillClick);
             // 
             // label231
             // 
@@ -3267,7 +3743,7 @@ namespace steamjazz
             this.label231.Size = new System.Drawing.Size(14, 15);
             this.label231.TabIndex = 5;
             this.label231.Text = "+";
-            this.label231.Click += new System.EventHandler(this.skillClick);
+            this.label231.Click += new System.EventHandler(this.SkillClick);
             // 
             // label232
             // 
@@ -3278,7 +3754,7 @@ namespace steamjazz
             this.label232.Size = new System.Drawing.Size(14, 15);
             this.label232.TabIndex = 6;
             this.label232.Text = "+";
-            this.label232.Click += new System.EventHandler(this.skillClick);
+            this.label232.Click += new System.EventHandler(this.SkillClick);
             // 
             // label233
             // 
@@ -3289,7 +3765,7 @@ namespace steamjazz
             this.label233.Size = new System.Drawing.Size(14, 15);
             this.label233.TabIndex = 7;
             this.label233.Text = "+";
-            this.label233.Click += new System.EventHandler(this.skillClick);
+            this.label233.Click += new System.EventHandler(this.SkillClick);
             // 
             // label234
             // 
@@ -3300,7 +3776,7 @@ namespace steamjazz
             this.label234.Size = new System.Drawing.Size(14, 15);
             this.label234.TabIndex = 8;
             this.label234.Text = "+";
-            this.label234.Click += new System.EventHandler(this.skillClick);
+            this.label234.Click += new System.EventHandler(this.SkillClick);
             // 
             // label235
             // 
@@ -3311,7 +3787,7 @@ namespace steamjazz
             this.label235.Size = new System.Drawing.Size(14, 15);
             this.label235.TabIndex = 9;
             this.label235.Text = "+";
-            this.label235.Click += new System.EventHandler(this.skillClick);
+            this.label235.Click += new System.EventHandler(this.SkillClick);
             // 
             // label236
             // 
@@ -3322,7 +3798,7 @@ namespace steamjazz
             this.label236.Size = new System.Drawing.Size(14, 15);
             this.label236.TabIndex = 10;
             this.label236.Text = "+";
-            this.label236.Click += new System.EventHandler(this.skillClick);
+            this.label236.Click += new System.EventHandler(this.SkillClick);
             // 
             // label237
             // 
@@ -3333,7 +3809,7 @@ namespace steamjazz
             this.label237.Size = new System.Drawing.Size(14, 15);
             this.label237.TabIndex = 11;
             this.label237.Text = "+";
-            this.label237.Click += new System.EventHandler(this.skillClick);
+            this.label237.Click += new System.EventHandler(this.SkillClick);
             // 
             // label238
             // 
@@ -3344,7 +3820,7 @@ namespace steamjazz
             this.label238.Size = new System.Drawing.Size(14, 15);
             this.label238.TabIndex = 12;
             this.label238.Text = "+";
-            this.label238.Click += new System.EventHandler(this.skillClick);
+            this.label238.Click += new System.EventHandler(this.SkillClick);
             // 
             // label239
             // 
@@ -3355,7 +3831,7 @@ namespace steamjazz
             this.label239.Size = new System.Drawing.Size(14, 15);
             this.label239.TabIndex = 13;
             this.label239.Text = "+";
-            this.label239.Click += new System.EventHandler(this.skillClick);
+            this.label239.Click += new System.EventHandler(this.SkillClick);
             // 
             // label240
             // 
@@ -3366,7 +3842,7 @@ namespace steamjazz
             this.label240.Size = new System.Drawing.Size(14, 15);
             this.label240.TabIndex = 14;
             this.label240.Text = "+";
-            this.label240.Click += new System.EventHandler(this.skillClick);
+            this.label240.Click += new System.EventHandler(this.SkillClick);
             // 
             // flowLayoutPanel62
             // 
@@ -3398,7 +3874,7 @@ namespace steamjazz
             this.label279.Size = new System.Drawing.Size(11, 15);
             this.label279.TabIndex = 4;
             this.label279.Text = "-";
-            this.label279.Click += new System.EventHandler(this.skillClick);
+            this.label279.Click += new System.EventHandler(this.SkillClick);
             // 
             // label280
             // 
@@ -3409,7 +3885,7 @@ namespace steamjazz
             this.label280.Size = new System.Drawing.Size(11, 15);
             this.label280.TabIndex = 5;
             this.label280.Text = "-";
-            this.label280.Click += new System.EventHandler(this.skillClick);
+            this.label280.Click += new System.EventHandler(this.SkillClick);
             // 
             // label281
             // 
@@ -3420,7 +3896,7 @@ namespace steamjazz
             this.label281.Size = new System.Drawing.Size(11, 15);
             this.label281.TabIndex = 6;
             this.label281.Text = "-";
-            this.label281.Click += new System.EventHandler(this.skillClick);
+            this.label281.Click += new System.EventHandler(this.SkillClick);
             // 
             // label282
             // 
@@ -3431,7 +3907,7 @@ namespace steamjazz
             this.label282.Size = new System.Drawing.Size(11, 15);
             this.label282.TabIndex = 7;
             this.label282.Text = "-";
-            this.label282.Click += new System.EventHandler(this.skillClick);
+            this.label282.Click += new System.EventHandler(this.SkillClick);
             // 
             // label283
             // 
@@ -3442,7 +3918,7 @@ namespace steamjazz
             this.label283.Size = new System.Drawing.Size(11, 15);
             this.label283.TabIndex = 8;
             this.label283.Text = "-";
-            this.label283.Click += new System.EventHandler(this.skillClick);
+            this.label283.Click += new System.EventHandler(this.SkillClick);
             // 
             // label284
             // 
@@ -3453,7 +3929,7 @@ namespace steamjazz
             this.label284.Size = new System.Drawing.Size(11, 15);
             this.label284.TabIndex = 9;
             this.label284.Text = "-";
-            this.label284.Click += new System.EventHandler(this.skillClick);
+            this.label284.Click += new System.EventHandler(this.SkillClick);
             // 
             // label285
             // 
@@ -3464,7 +3940,7 @@ namespace steamjazz
             this.label285.Size = new System.Drawing.Size(11, 15);
             this.label285.TabIndex = 10;
             this.label285.Text = "-";
-            this.label285.Click += new System.EventHandler(this.skillClick);
+            this.label285.Click += new System.EventHandler(this.SkillClick);
             // 
             // label286
             // 
@@ -3475,7 +3951,7 @@ namespace steamjazz
             this.label286.Size = new System.Drawing.Size(11, 15);
             this.label286.TabIndex = 11;
             this.label286.Text = "-";
-            this.label286.Click += new System.EventHandler(this.skillClick);
+            this.label286.Click += new System.EventHandler(this.SkillClick);
             // 
             // label287
             // 
@@ -3486,7 +3962,7 @@ namespace steamjazz
             this.label287.Size = new System.Drawing.Size(11, 15);
             this.label287.TabIndex = 12;
             this.label287.Text = "-";
-            this.label287.Click += new System.EventHandler(this.skillClick);
+            this.label287.Click += new System.EventHandler(this.SkillClick);
             // 
             // label288
             // 
@@ -3497,7 +3973,7 @@ namespace steamjazz
             this.label288.Size = new System.Drawing.Size(11, 15);
             this.label288.TabIndex = 13;
             this.label288.Text = "-";
-            this.label288.Click += new System.EventHandler(this.skillClick);
+            this.label288.Click += new System.EventHandler(this.SkillClick);
             // 
             // label289
             // 
@@ -3508,7 +3984,7 @@ namespace steamjazz
             this.label289.Size = new System.Drawing.Size(11, 15);
             this.label289.TabIndex = 14;
             this.label289.Text = "-";
-            this.label289.Click += new System.EventHandler(this.skillClick);
+            this.label289.Click += new System.EventHandler(this.SkillClick);
             // 
             // label290
             // 
@@ -3519,7 +3995,7 @@ namespace steamjazz
             this.label290.Size = new System.Drawing.Size(11, 15);
             this.label290.TabIndex = 15;
             this.label290.Text = "-";
-            this.label290.Click += new System.EventHandler(this.skillClick);
+            this.label290.Click += new System.EventHandler(this.SkillClick);
             // 
             // label291
             // 
@@ -3530,7 +4006,7 @@ namespace steamjazz
             this.label291.Size = new System.Drawing.Size(11, 15);
             this.label291.TabIndex = 16;
             this.label291.Text = "-";
-            this.label291.Click += new System.EventHandler(this.skillClick);
+            this.label291.Click += new System.EventHandler(this.SkillClick);
             // 
             // label292
             // 
@@ -3541,351 +4017,7 @@ namespace steamjazz
             this.label292.Size = new System.Drawing.Size(11, 15);
             this.label292.TabIndex = 17;
             this.label292.Text = "-";
-            this.label292.Click += new System.EventHandler(this.skillClick);
-            // 
-            // flowLayoutPanel20
-            // 
-            this.flowLayoutPanel20.Controls.Add(this.label50);
-            this.flowLayoutPanel20.Controls.Add(this.label59);
-            this.flowLayoutPanel20.Controls.Add(this.label60);
-            this.flowLayoutPanel20.Controls.Add(this.flowLayoutPanel26);
-            this.flowLayoutPanel20.Location = new System.Drawing.Point(3, 161);
-            this.flowLayoutPanel20.Name = "flowLayoutPanel20";
-            this.flowLayoutPanel20.Size = new System.Drawing.Size(193, 115);
-            this.flowLayoutPanel20.TabIndex = 3;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(3, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(63, 13);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "Social Skills";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(72, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(29, 13);
-            this.label59.TabIndex = 1;
-            this.label59.Text = "CHA";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(107, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(41, 13);
-            this.label60.TabIndex = 2;
-            this.label60.Text = "label60";
-            // 
-            // flowLayoutPanel26
-            // 
-            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel43);
-            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel45);
-            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel44);
-            this.flowLayoutPanel26.Controls.Add(this.flowLayoutPanel46);
-            this.flowLayoutPanel26.Location = new System.Drawing.Point(3, 16);
-            this.flowLayoutPanel26.Name = "flowLayoutPanel26";
-            this.flowLayoutPanel26.Size = new System.Drawing.Size(177, 94);
-            this.flowLayoutPanel26.TabIndex = 3;
-            // 
-            // flowLayoutPanel43
-            // 
-            this.flowLayoutPanel43.Controls.Add(this.label109);
-            this.flowLayoutPanel43.Controls.Add(this.label110);
-            this.flowLayoutPanel43.Controls.Add(this.label111);
-            this.flowLayoutPanel43.Controls.Add(this.label112);
-            this.flowLayoutPanel43.Controls.Add(this.label113);
-            this.flowLayoutPanel43.Controls.Add(this.label114);
-            this.flowLayoutPanel43.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel43.Name = "flowLayoutPanel43";
-            this.flowLayoutPanel43.Size = new System.Drawing.Size(68, 83);
-            this.flowLayoutPanel43.TabIndex = 0;
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(3, 0);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(43, 13);
-            this.label109.TabIndex = 0;
-            this.label109.Text = "Bargain";
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(3, 13);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(28, 13);
-            this.label110.TabIndex = 1;
-            this.label110.Text = "Bluff";
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(3, 26);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(37, 13);
-            this.label111.TabIndex = 2;
-            this.label111.Text = "Charm";
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(3, 39);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(52, 13);
-            this.label112.TabIndex = 3;
-            this.label112.Text = "Intimidate";
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(3, 52);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(59, 13);
-            this.label113.TabIndex = 4;
-            this.label113.Text = "Leadership";
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(3, 65);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(52, 13);
-            this.label114.TabIndex = 5;
-            this.label114.Text = "Persuade";
-            // 
-            // flowLayoutPanel45
-            // 
-            this.flowLayoutPanel45.Controls.Add(this.label161);
-            this.flowLayoutPanel45.Controls.Add(this.label162);
-            this.flowLayoutPanel45.Controls.Add(this.label163);
-            this.flowLayoutPanel45.Controls.Add(this.label164);
-            this.flowLayoutPanel45.Controls.Add(this.label165);
-            this.flowLayoutPanel45.Controls.Add(this.label166);
-            this.flowLayoutPanel45.Location = new System.Drawing.Point(77, 3);
-            this.flowLayoutPanel45.Name = "flowLayoutPanel45";
-            this.flowLayoutPanel45.Size = new System.Drawing.Size(28, 83);
-            this.flowLayoutPanel45.TabIndex = 2;
-            this.flowLayoutPanel45.Click += new System.EventHandler(this.prob);
-            // 
-            // label161
-            // 
-            this.label161.AutoSize = true;
-            this.label161.Location = new System.Drawing.Point(3, 0);
-            this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(13, 13);
-            this.label161.TabIndex = 10;
-            this.label161.Text = "8";
-            this.label161.Click += new System.EventHandler(this.prob);
-            // 
-            // label162
-            // 
-            this.label162.AutoSize = true;
-            this.label162.Location = new System.Drawing.Point(3, 13);
-            this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(13, 13);
-            this.label162.TabIndex = 11;
-            this.label162.Text = "8";
-            this.label162.Click += new System.EventHandler(this.prob);
-            // 
-            // label163
-            // 
-            this.label163.AutoSize = true;
-            this.label163.Location = new System.Drawing.Point(3, 26);
-            this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(13, 13);
-            this.label163.TabIndex = 12;
-            this.label163.Text = "8";
-            this.label163.Click += new System.EventHandler(this.prob);
-            // 
-            // label164
-            // 
-            this.label164.AutoSize = true;
-            this.label164.Location = new System.Drawing.Point(3, 39);
-            this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(13, 13);
-            this.label164.TabIndex = 13;
-            this.label164.Text = "8";
-            this.label164.Click += new System.EventHandler(this.prob);
-            // 
-            // label165
-            // 
-            this.label165.AutoSize = true;
-            this.label165.Location = new System.Drawing.Point(3, 52);
-            this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(13, 13);
-            this.label165.TabIndex = 14;
-            this.label165.Text = "8";
-            this.label165.Click += new System.EventHandler(this.prob);
-            // 
-            // label166
-            // 
-            this.label166.AutoSize = true;
-            this.label166.Location = new System.Drawing.Point(3, 65);
-            this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(13, 13);
-            this.label166.TabIndex = 15;
-            this.label166.Text = "8";
-            this.label166.Click += new System.EventHandler(this.prob);
-            // 
-            // flowLayoutPanel44
-            // 
-            this.flowLayoutPanel44.Controls.Add(this.label214);
-            this.flowLayoutPanel44.Controls.Add(this.label215);
-            this.flowLayoutPanel44.Controls.Add(this.label216);
-            this.flowLayoutPanel44.Controls.Add(this.label217);
-            this.flowLayoutPanel44.Controls.Add(this.label218);
-            this.flowLayoutPanel44.Controls.Add(this.label219);
-            this.flowLayoutPanel44.Location = new System.Drawing.Point(111, 3);
-            this.flowLayoutPanel44.Name = "flowLayoutPanel44";
-            this.flowLayoutPanel44.Size = new System.Drawing.Size(22, 83);
-            this.flowLayoutPanel44.TabIndex = 1;
-            // 
-            // label214
-            // 
-            this.label214.AutoSize = true;
-            this.label214.Location = new System.Drawing.Point(3, 0);
-            this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(13, 13);
-            this.label214.TabIndex = 0;
-            this.label214.Text = "+";
-            this.label214.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label215
-            // 
-            this.label215.AutoSize = true;
-            this.label215.Location = new System.Drawing.Point(3, 13);
-            this.label215.Name = "label215";
-            this.label215.Size = new System.Drawing.Size(13, 13);
-            this.label215.TabIndex = 1;
-            this.label215.Text = "+";
-            this.label215.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label216
-            // 
-            this.label216.AutoSize = true;
-            this.label216.Location = new System.Drawing.Point(3, 26);
-            this.label216.Name = "label216";
-            this.label216.Size = new System.Drawing.Size(13, 13);
-            this.label216.TabIndex = 2;
-            this.label216.Text = "+";
-            this.label216.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label217
-            // 
-            this.label217.AutoSize = true;
-            this.label217.Location = new System.Drawing.Point(3, 39);
-            this.label217.Name = "label217";
-            this.label217.Size = new System.Drawing.Size(13, 13);
-            this.label217.TabIndex = 3;
-            this.label217.Text = "+";
-            this.label217.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label218
-            // 
-            this.label218.AutoSize = true;
-            this.label218.Location = new System.Drawing.Point(3, 52);
-            this.label218.Name = "label218";
-            this.label218.Size = new System.Drawing.Size(13, 13);
-            this.label218.TabIndex = 4;
-            this.label218.Text = "+";
-            this.label218.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label219
-            // 
-            this.label219.AutoSize = true;
-            this.label219.Location = new System.Drawing.Point(3, 65);
-            this.label219.Name = "label219";
-            this.label219.Size = new System.Drawing.Size(13, 13);
-            this.label219.TabIndex = 5;
-            this.label219.Text = "+";
-            this.label219.Click += new System.EventHandler(this.skillClick);
-            // 
-            // flowLayoutPanel46
-            // 
-            this.flowLayoutPanel46.Controls.Add(this.label266);
-            this.flowLayoutPanel46.Controls.Add(this.label267);
-            this.flowLayoutPanel46.Controls.Add(this.label268);
-            this.flowLayoutPanel46.Controls.Add(this.label269);
-            this.flowLayoutPanel46.Controls.Add(this.label270);
-            this.flowLayoutPanel46.Controls.Add(this.label271);
-            this.flowLayoutPanel46.Location = new System.Drawing.Point(139, 3);
-            this.flowLayoutPanel46.Name = "flowLayoutPanel46";
-            this.flowLayoutPanel46.Size = new System.Drawing.Size(26, 83);
-            this.flowLayoutPanel46.TabIndex = 3;
-            // 
-            // label266
-            // 
-            this.label266.AutoSize = true;
-            this.label266.Location = new System.Drawing.Point(3, 0);
-            this.label266.Name = "label266";
-            this.label266.Size = new System.Drawing.Size(10, 13);
-            this.label266.TabIndex = 0;
-            this.label266.Text = "-";
-            this.label266.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label267
-            // 
-            this.label267.AutoSize = true;
-            this.label267.Location = new System.Drawing.Point(3, 13);
-            this.label267.Name = "label267";
-            this.label267.Size = new System.Drawing.Size(10, 13);
-            this.label267.TabIndex = 1;
-            this.label267.Text = "-";
-            this.label267.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label268
-            // 
-            this.label268.AutoSize = true;
-            this.label268.Location = new System.Drawing.Point(3, 26);
-            this.label268.Name = "label268";
-            this.label268.Size = new System.Drawing.Size(10, 13);
-            this.label268.TabIndex = 2;
-            this.label268.Text = "-";
-            this.label268.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label269
-            // 
-            this.label269.AutoSize = true;
-            this.label269.Location = new System.Drawing.Point(3, 39);
-            this.label269.Name = "label269";
-            this.label269.Size = new System.Drawing.Size(10, 13);
-            this.label269.TabIndex = 3;
-            this.label269.Text = "-";
-            this.label269.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label270
-            // 
-            this.label270.AutoSize = true;
-            this.label270.Location = new System.Drawing.Point(3, 52);
-            this.label270.Name = "label270";
-            this.label270.Size = new System.Drawing.Size(10, 13);
-            this.label270.TabIndex = 4;
-            this.label270.Text = "-";
-            this.label270.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label271
-            // 
-            this.label271.AutoSize = true;
-            this.label271.Location = new System.Drawing.Point(3, 65);
-            this.label271.Name = "label271";
-            this.label271.Size = new System.Drawing.Size(10, 13);
-            this.label271.TabIndex = 5;
-            this.label271.Text = "-";
-            this.label271.Click += new System.EventHandler(this.skillClick);
-            // 
-            // flowLayoutPanel65
-            // 
-            this.flowLayoutPanel65.Controls.Add(this.flowLayoutPanel18);
-            this.flowLayoutPanel65.Location = new System.Drawing.Point(650, 3);
-            this.flowLayoutPanel65.Name = "flowLayoutPanel65";
-            this.flowLayoutPanel65.Size = new System.Drawing.Size(246, 572);
-            this.flowLayoutPanel65.TabIndex = 7;
+            this.label292.Click += new System.EventHandler(this.SkillClick);
             // 
             // flowLayoutPanel19
             // 
@@ -4134,7 +4266,7 @@ namespace steamjazz
             this.label220.Size = new System.Drawing.Size(14, 15);
             this.label220.TabIndex = 1;
             this.label220.Text = "+";
-            this.label220.Click += new System.EventHandler(this.skillClick);
+            this.label220.Click += new System.EventHandler(this.SkillClick);
             // 
             // label221
             // 
@@ -4145,7 +4277,7 @@ namespace steamjazz
             this.label221.Size = new System.Drawing.Size(14, 15);
             this.label221.TabIndex = 2;
             this.label221.Text = "+";
-            this.label221.Click += new System.EventHandler(this.skillClick);
+            this.label221.Click += new System.EventHandler(this.SkillClick);
             // 
             // label222
             // 
@@ -4156,7 +4288,7 @@ namespace steamjazz
             this.label222.Size = new System.Drawing.Size(14, 15);
             this.label222.TabIndex = 3;
             this.label222.Text = "+";
-            this.label222.Click += new System.EventHandler(this.skillClick);
+            this.label222.Click += new System.EventHandler(this.SkillClick);
             // 
             // label223
             // 
@@ -4167,7 +4299,7 @@ namespace steamjazz
             this.label223.Size = new System.Drawing.Size(14, 15);
             this.label223.TabIndex = 4;
             this.label223.Text = "+";
-            this.label223.Click += new System.EventHandler(this.skillClick);
+            this.label223.Click += new System.EventHandler(this.SkillClick);
             // 
             // label224
             // 
@@ -4178,7 +4310,7 @@ namespace steamjazz
             this.label224.Size = new System.Drawing.Size(14, 15);
             this.label224.TabIndex = 5;
             this.label224.Text = "+";
-            this.label224.Click += new System.EventHandler(this.skillClick);
+            this.label224.Click += new System.EventHandler(this.SkillClick);
             // 
             // label225
             // 
@@ -4189,7 +4321,7 @@ namespace steamjazz
             this.label225.Size = new System.Drawing.Size(14, 15);
             this.label225.TabIndex = 6;
             this.label225.Text = "+";
-            this.label225.Click += new System.EventHandler(this.skillClick);
+            this.label225.Click += new System.EventHandler(this.SkillClick);
             // 
             // label226
             // 
@@ -4200,7 +4332,7 @@ namespace steamjazz
             this.label226.Size = new System.Drawing.Size(14, 15);
             this.label226.TabIndex = 7;
             this.label226.Text = "+";
-            this.label226.Click += new System.EventHandler(this.skillClick);
+            this.label226.Click += new System.EventHandler(this.SkillClick);
             // 
             // flowLayoutPanel58
             // 
@@ -4225,7 +4357,7 @@ namespace steamjazz
             this.label272.Size = new System.Drawing.Size(11, 15);
             this.label272.TabIndex = 0;
             this.label272.Text = "-";
-            this.label272.Click += new System.EventHandler(this.skillClick);
+            this.label272.Click += new System.EventHandler(this.SkillClick);
             // 
             // label273
             // 
@@ -4236,7 +4368,7 @@ namespace steamjazz
             this.label273.Size = new System.Drawing.Size(11, 15);
             this.label273.TabIndex = 1;
             this.label273.Text = "-";
-            this.label273.Click += new System.EventHandler(this.skillClick);
+            this.label273.Click += new System.EventHandler(this.SkillClick);
             // 
             // label274
             // 
@@ -4247,7 +4379,7 @@ namespace steamjazz
             this.label274.Size = new System.Drawing.Size(11, 15);
             this.label274.TabIndex = 2;
             this.label274.Text = "-";
-            this.label274.Click += new System.EventHandler(this.skillClick);
+            this.label274.Click += new System.EventHandler(this.SkillClick);
             // 
             // label275
             // 
@@ -4258,7 +4390,7 @@ namespace steamjazz
             this.label275.Size = new System.Drawing.Size(11, 15);
             this.label275.TabIndex = 3;
             this.label275.Text = "-";
-            this.label275.Click += new System.EventHandler(this.skillClick);
+            this.label275.Click += new System.EventHandler(this.SkillClick);
             // 
             // label276
             // 
@@ -4269,7 +4401,7 @@ namespace steamjazz
             this.label276.Size = new System.Drawing.Size(11, 15);
             this.label276.TabIndex = 4;
             this.label276.Text = "-";
-            this.label276.Click += new System.EventHandler(this.skillClick);
+            this.label276.Click += new System.EventHandler(this.SkillClick);
             // 
             // label277
             // 
@@ -4280,7 +4412,7 @@ namespace steamjazz
             this.label277.Size = new System.Drawing.Size(11, 15);
             this.label277.TabIndex = 5;
             this.label277.Text = "-";
-            this.label277.Click += new System.EventHandler(this.skillClick);
+            this.label277.Click += new System.EventHandler(this.SkillClick);
             // 
             // label278
             // 
@@ -4291,256 +4423,15 @@ namespace steamjazz
             this.label278.Size = new System.Drawing.Size(11, 15);
             this.label278.TabIndex = 6;
             this.label278.Text = "-";
-            this.label278.Click += new System.EventHandler(this.skillClick);
+            this.label278.Click += new System.EventHandler(this.SkillClick);
             // 
-            // flowLayoutPanel21
+            // flowLayoutPanel65
             // 
-            this.flowLayoutPanel21.Controls.Add(this.label51);
-            this.flowLayoutPanel21.Controls.Add(this.label61);
-            this.flowLayoutPanel21.Controls.Add(this.label62);
-            this.flowLayoutPanel21.Controls.Add(this.flowLayoutPanel27);
-            this.flowLayoutPanel21.Location = new System.Drawing.Point(3, 282);
-            this.flowLayoutPanel21.Name = "flowLayoutPanel21";
-            this.flowLayoutPanel21.Size = new System.Drawing.Size(190, 97);
-            this.flowLayoutPanel21.TabIndex = 4;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(3, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(78, 13);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Empathic Skills";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(87, 0);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(30, 13);
-            this.label61.TabIndex = 1;
-            this.label61.Text = "EMP";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(123, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(41, 13);
-            this.label62.TabIndex = 2;
-            this.label62.Text = "label62";
-            // 
-            // flowLayoutPanel27
-            // 
-            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel51);
-            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel52);
-            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel53);
-            this.flowLayoutPanel27.Controls.Add(this.flowLayoutPanel54);
-            this.flowLayoutPanel27.Location = new System.Drawing.Point(3, 16);
-            this.flowLayoutPanel27.Name = "flowLayoutPanel27";
-            this.flowLayoutPanel27.Size = new System.Drawing.Size(177, 71);
-            this.flowLayoutPanel27.TabIndex = 3;
-            // 
-            // flowLayoutPanel51
-            // 
-            this.flowLayoutPanel51.Controls.Add(this.label136);
-            this.flowLayoutPanel51.Controls.Add(this.label137);
-            this.flowLayoutPanel51.Controls.Add(this.label138);
-            this.flowLayoutPanel51.Controls.Add(this.label139);
-            this.flowLayoutPanel51.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel51.Name = "flowLayoutPanel51";
-            this.flowLayoutPanel51.Size = new System.Drawing.Size(87, 57);
-            this.flowLayoutPanel51.TabIndex = 0;
-            // 
-            // label136
-            // 
-            this.label136.AutoSize = true;
-            this.label136.Location = new System.Drawing.Point(3, 0);
-            this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(78, 13);
-            this.label136.TabIndex = 1;
-            this.label136.Text = "Anim. Handling";
-            // 
-            // label137
-            // 
-            this.label137.AutoSize = true;
-            this.label137.Location = new System.Drawing.Point(3, 13);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(56, 13);
-            this.label137.TabIndex = 2;
-            this.label137.Text = "Diplomacy";
-            // 
-            // label138
-            // 
-            this.label138.AutoSize = true;
-            this.label138.Location = new System.Drawing.Point(3, 26);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(71, 13);
-            this.label138.TabIndex = 3;
-            this.label138.Text = "Sense motive";
-            // 
-            // label139
-            // 
-            this.label139.AutoSize = true;
-            this.label139.Location = new System.Drawing.Point(3, 39);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(52, 13);
-            this.label139.TabIndex = 4;
-            this.label139.Text = "Teaching";
-            // 
-            // flowLayoutPanel52
-            // 
-            this.flowLayoutPanel52.Controls.Add(this.label188);
-            this.flowLayoutPanel52.Controls.Add(this.label189);
-            this.flowLayoutPanel52.Controls.Add(this.label190);
-            this.flowLayoutPanel52.Controls.Add(this.label191);
-            this.flowLayoutPanel52.Location = new System.Drawing.Point(96, 3);
-            this.flowLayoutPanel52.Name = "flowLayoutPanel52";
-            this.flowLayoutPanel52.Size = new System.Drawing.Size(21, 57);
-            this.flowLayoutPanel52.TabIndex = 1;
-            // 
-            // label188
-            // 
-            this.label188.AutoSize = true;
-            this.label188.Location = new System.Drawing.Point(3, 0);
-            this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(13, 13);
-            this.label188.TabIndex = 10;
-            this.label188.Text = "7";
-            this.label188.Click += new System.EventHandler(this.prob);
-            // 
-            // label189
-            // 
-            this.label189.AutoSize = true;
-            this.label189.Location = new System.Drawing.Point(3, 13);
-            this.label189.Name = "label189";
-            this.label189.Size = new System.Drawing.Size(13, 13);
-            this.label189.TabIndex = 11;
-            this.label189.Text = "7";
-            this.label189.Click += new System.EventHandler(this.prob);
-            // 
-            // label190
-            // 
-            this.label190.AutoSize = true;
-            this.label190.Location = new System.Drawing.Point(3, 26);
-            this.label190.Name = "label190";
-            this.label190.Size = new System.Drawing.Size(13, 13);
-            this.label190.TabIndex = 12;
-            this.label190.Text = "7";
-            this.label190.Click += new System.EventHandler(this.prob);
-            // 
-            // label191
-            // 
-            this.label191.AutoSize = true;
-            this.label191.Location = new System.Drawing.Point(3, 39);
-            this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(13, 13);
-            this.label191.TabIndex = 13;
-            this.label191.Text = "7";
-            this.label191.Click += new System.EventHandler(this.prob);
-            // 
-            // flowLayoutPanel53
-            // 
-            this.flowLayoutPanel53.Controls.Add(this.label241);
-            this.flowLayoutPanel53.Controls.Add(this.label242);
-            this.flowLayoutPanel53.Controls.Add(this.label243);
-            this.flowLayoutPanel53.Controls.Add(this.label244);
-            this.flowLayoutPanel53.Location = new System.Drawing.Point(123, 3);
-            this.flowLayoutPanel53.Name = "flowLayoutPanel53";
-            this.flowLayoutPanel53.Size = new System.Drawing.Size(23, 57);
-            this.flowLayoutPanel53.TabIndex = 2;
-            // 
-            // label241
-            // 
-            this.label241.AutoSize = true;
-            this.label241.Location = new System.Drawing.Point(3, 0);
-            this.label241.Name = "label241";
-            this.label241.Size = new System.Drawing.Size(13, 13);
-            this.label241.TabIndex = 1;
-            this.label241.Text = "+";
-            this.label241.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label242
-            // 
-            this.label242.AutoSize = true;
-            this.label242.Location = new System.Drawing.Point(3, 13);
-            this.label242.Name = "label242";
-            this.label242.Size = new System.Drawing.Size(13, 13);
-            this.label242.TabIndex = 2;
-            this.label242.Text = "+";
-            this.label242.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label243
-            // 
-            this.label243.AutoSize = true;
-            this.label243.Location = new System.Drawing.Point(3, 26);
-            this.label243.Name = "label243";
-            this.label243.Size = new System.Drawing.Size(13, 13);
-            this.label243.TabIndex = 3;
-            this.label243.Text = "+";
-            this.label243.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label244
-            // 
-            this.label244.AutoSize = true;
-            this.label244.Location = new System.Drawing.Point(3, 39);
-            this.label244.Name = "label244";
-            this.label244.Size = new System.Drawing.Size(13, 13);
-            this.label244.TabIndex = 4;
-            this.label244.Text = "+";
-            this.label244.Click += new System.EventHandler(this.skillClick);
-            // 
-            // flowLayoutPanel54
-            // 
-            this.flowLayoutPanel54.Controls.Add(this.label293);
-            this.flowLayoutPanel54.Controls.Add(this.label294);
-            this.flowLayoutPanel54.Controls.Add(this.label295);
-            this.flowLayoutPanel54.Controls.Add(this.label296);
-            this.flowLayoutPanel54.Location = new System.Drawing.Point(152, 3);
-            this.flowLayoutPanel54.Name = "flowLayoutPanel54";
-            this.flowLayoutPanel54.Size = new System.Drawing.Size(21, 57);
-            this.flowLayoutPanel54.TabIndex = 3;
-            // 
-            // label293
-            // 
-            this.label293.AutoSize = true;
-            this.label293.Location = new System.Drawing.Point(3, 0);
-            this.label293.Name = "label293";
-            this.label293.Size = new System.Drawing.Size(10, 13);
-            this.label293.TabIndex = 4;
-            this.label293.Text = "-";
-            this.label293.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label294
-            // 
-            this.label294.AutoSize = true;
-            this.label294.Location = new System.Drawing.Point(3, 13);
-            this.label294.Name = "label294";
-            this.label294.Size = new System.Drawing.Size(10, 13);
-            this.label294.TabIndex = 5;
-            this.label294.Text = "-";
-            this.label294.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label295
-            // 
-            this.label295.AutoSize = true;
-            this.label295.Location = new System.Drawing.Point(3, 26);
-            this.label295.Name = "label295";
-            this.label295.Size = new System.Drawing.Size(10, 13);
-            this.label295.TabIndex = 6;
-            this.label295.Text = "-";
-            this.label295.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label296
-            // 
-            this.label296.AutoSize = true;
-            this.label296.Location = new System.Drawing.Point(3, 39);
-            this.label296.Name = "label296";
-            this.label296.Size = new System.Drawing.Size(10, 13);
-            this.label296.TabIndex = 7;
-            this.label296.Text = "-";
-            this.label296.Click += new System.EventHandler(this.skillClick);
+            this.flowLayoutPanel65.Controls.Add(this.flowLayoutPanel18);
+            this.flowLayoutPanel65.Location = new System.Drawing.Point(650, 3);
+            this.flowLayoutPanel65.Name = "flowLayoutPanel65";
+            this.flowLayoutPanel65.Size = new System.Drawing.Size(246, 572);
+            this.flowLayoutPanel65.TabIndex = 7;
             // 
             // flowLayoutPanel18
             // 
@@ -4608,15 +4499,13 @@ namespace steamjazz
             this.flowLayoutPanel47.Controls.Add(this.label127);
             this.flowLayoutPanel47.Controls.Add(this.label128);
             this.flowLayoutPanel47.Controls.Add(this.label129);
-            this.flowLayoutPanel47.Controls.Add(this.label130);
-            this.flowLayoutPanel47.Controls.Add(this.label131);
             this.flowLayoutPanel47.Controls.Add(this.label132);
             this.flowLayoutPanel47.Controls.Add(this.label133);
-            this.flowLayoutPanel47.Controls.Add(this.label134);
-            this.flowLayoutPanel47.Controls.Add(this.label135);
+            this.flowLayoutPanel47.Controls.Add(this.label130);
+            this.flowLayoutPanel47.Controls.Add(this.label131);
             this.flowLayoutPanel47.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel47.Name = "flowLayoutPanel47";
-            this.flowLayoutPanel47.Size = new System.Drawing.Size(94, 327);
+            this.flowLayoutPanel47.Size = new System.Drawing.Size(103, 327);
             this.flowLayoutPanel47.TabIndex = 0;
             // 
             // label115
@@ -4773,7 +4662,7 @@ namespace steamjazz
             // 
             this.label130.AutoSize = true;
             this.label130.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label130.Location = new System.Drawing.Point(3, 225);
+            this.label130.Location = new System.Drawing.Point(3, 240);
             this.label130.Name = "label130";
             this.label130.Size = new System.Drawing.Size(65, 15);
             this.label130.TabIndex = 15;
@@ -4783,16 +4672,16 @@ namespace steamjazz
             // 
             this.label131.AutoSize = true;
             this.label131.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label131.Location = new System.Drawing.Point(3, 240);
+            this.label131.Location = new System.Drawing.Point(3, 255);
             this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(57, 30);
+            this.label131.Size = new System.Drawing.Size(96, 15);
             this.label131.TabIndex = 16;
             this.label131.Text = "Steam Engineer";
             // 
             // label132
             // 
             this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(66, 240);
+            this.label132.Location = new System.Drawing.Point(90, 210);
             this.label132.Name = "label132";
             this.label132.Size = new System.Drawing.Size(10, 13);
             this.label132.TabIndex = 17;
@@ -4802,31 +4691,11 @@ namespace steamjazz
             // 
             this.label133.AutoSize = true;
             this.label133.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label133.Location = new System.Drawing.Point(3, 270);
+            this.label133.Location = new System.Drawing.Point(3, 225);
             this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(55, 15);
+            this.label133.Size = new System.Drawing.Size(60, 15);
             this.label133.TabIndex = 18;
-            this.label133.Text = "label133";
-            // 
-            // label134
-            // 
-            this.label134.AutoSize = true;
-            this.label134.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label134.Location = new System.Drawing.Point(3, 285);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(55, 15);
-            this.label134.TabIndex = 19;
-            this.label134.Text = "label134";
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label135.Location = new System.Drawing.Point(3, 300);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(55, 15);
-            this.label135.TabIndex = 20;
-            this.label135.Text = "label135";
+            this.label133.Text = "Research";
             // 
             // flowLayoutPanel48
             // 
@@ -4848,10 +4717,7 @@ namespace steamjazz
             this.flowLayoutPanel48.Controls.Add(this.label207);
             this.flowLayoutPanel48.Controls.Add(this.label208);
             this.flowLayoutPanel48.Controls.Add(this.label209);
-            this.flowLayoutPanel48.Controls.Add(this.label210);
-            this.flowLayoutPanel48.Controls.Add(this.label211);
-            this.flowLayoutPanel48.Controls.Add(this.label212);
-            this.flowLayoutPanel48.Location = new System.Drawing.Point(103, 3);
+            this.flowLayoutPanel48.Location = new System.Drawing.Point(112, 3);
             this.flowLayoutPanel48.Name = "flowLayoutPanel48";
             this.flowLayoutPanel48.Size = new System.Drawing.Size(35, 324);
             this.flowLayoutPanel48.TabIndex = 1;
@@ -4886,7 +4752,7 @@ namespace steamjazz
             this.label194.Name = "label194";
             this.label194.Size = new System.Drawing.Size(14, 15);
             this.label194.TabIndex = 12;
-            this.label194.Text = "7";
+            this.label194.Text = "8";
             this.label194.Click += new System.EventHandler(this.prob);
             // 
             // label195
@@ -4996,7 +4862,7 @@ namespace steamjazz
             this.label204.Name = "label204";
             this.label204.Size = new System.Drawing.Size(14, 15);
             this.label204.TabIndex = 22;
-            this.label204.Text = "8";
+            this.label204.Text = "7";
             this.label204.Click += new System.EventHandler(this.prob);
             // 
             // label205
@@ -5007,7 +4873,7 @@ namespace steamjazz
             this.label205.Name = "label205";
             this.label205.Size = new System.Drawing.Size(14, 15);
             this.label205.TabIndex = 23;
-            this.label205.Text = "6";
+            this.label205.Text = "8";
             this.label205.Click += new System.EventHandler(this.prob);
             // 
             // label206
@@ -5018,7 +4884,7 @@ namespace steamjazz
             this.label206.Name = "label206";
             this.label206.Size = new System.Drawing.Size(14, 15);
             this.label206.TabIndex = 24;
-            this.label206.Text = "8";
+            this.label206.Text = "7";
             this.label206.Click += new System.EventHandler(this.prob);
             // 
             // label207
@@ -5054,39 +4920,6 @@ namespace steamjazz
             this.label209.Text = "8";
             this.label209.Click += new System.EventHandler(this.prob);
             // 
-            // label210
-            // 
-            this.label210.AutoSize = true;
-            this.label210.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label210.Location = new System.Drawing.Point(3, 270);
-            this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(14, 15);
-            this.label210.TabIndex = 28;
-            this.label210.Text = "8";
-            this.label210.Click += new System.EventHandler(this.prob);
-            // 
-            // label211
-            // 
-            this.label211.AutoSize = true;
-            this.label211.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label211.Location = new System.Drawing.Point(3, 285);
-            this.label211.Name = "label211";
-            this.label211.Size = new System.Drawing.Size(14, 15);
-            this.label211.TabIndex = 29;
-            this.label211.Text = "7";
-            this.label211.Click += new System.EventHandler(this.prob);
-            // 
-            // label212
-            // 
-            this.label212.AutoSize = true;
-            this.label212.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label212.Location = new System.Drawing.Point(3, 300);
-            this.label212.Name = "label212";
-            this.label212.Size = new System.Drawing.Size(14, 15);
-            this.label212.TabIndex = 30;
-            this.label212.Text = "8";
-            this.label212.Click += new System.EventHandler(this.prob);
-            // 
             // flowLayoutPanel49
             // 
             this.flowLayoutPanel49.Controls.Add(this.label245);
@@ -5107,10 +4940,7 @@ namespace steamjazz
             this.flowLayoutPanel49.Controls.Add(this.label260);
             this.flowLayoutPanel49.Controls.Add(this.label261);
             this.flowLayoutPanel49.Controls.Add(this.label262);
-            this.flowLayoutPanel49.Controls.Add(this.label263);
-            this.flowLayoutPanel49.Controls.Add(this.label264);
-            this.flowLayoutPanel49.Controls.Add(this.label265);
-            this.flowLayoutPanel49.Location = new System.Drawing.Point(144, 3);
+            this.flowLayoutPanel49.Location = new System.Drawing.Point(153, 3);
             this.flowLayoutPanel49.Name = "flowLayoutPanel49";
             this.flowLayoutPanel49.Size = new System.Drawing.Size(23, 324);
             this.flowLayoutPanel49.TabIndex = 2;
@@ -5124,7 +4954,7 @@ namespace steamjazz
             this.label245.Size = new System.Drawing.Size(15, 15);
             this.label245.TabIndex = 1;
             this.label245.Text = "+";
-            this.label245.Click += new System.EventHandler(this.skillClick);
+            this.label245.Click += new System.EventHandler(this.SkillClick);
             // 
             // label246
             // 
@@ -5135,7 +4965,7 @@ namespace steamjazz
             this.label246.Size = new System.Drawing.Size(15, 15);
             this.label246.TabIndex = 2;
             this.label246.Text = "+";
-            this.label246.Click += new System.EventHandler(this.skillClick);
+            this.label246.Click += new System.EventHandler(this.SkillClick);
             // 
             // label247
             // 
@@ -5146,7 +4976,7 @@ namespace steamjazz
             this.label247.Size = new System.Drawing.Size(15, 15);
             this.label247.TabIndex = 3;
             this.label247.Text = "+";
-            this.label247.Click += new System.EventHandler(this.skillClick);
+            this.label247.Click += new System.EventHandler(this.SkillClick);
             // 
             // label248
             // 
@@ -5157,7 +4987,7 @@ namespace steamjazz
             this.label248.Size = new System.Drawing.Size(15, 15);
             this.label248.TabIndex = 4;
             this.label248.Text = "+";
-            this.label248.Click += new System.EventHandler(this.skillClick);
+            this.label248.Click += new System.EventHandler(this.SkillClick);
             // 
             // label249
             // 
@@ -5168,7 +4998,7 @@ namespace steamjazz
             this.label249.Size = new System.Drawing.Size(15, 15);
             this.label249.TabIndex = 5;
             this.label249.Text = "+";
-            this.label249.Click += new System.EventHandler(this.skillClick);
+            this.label249.Click += new System.EventHandler(this.SkillClick);
             // 
             // label250
             // 
@@ -5179,7 +5009,7 @@ namespace steamjazz
             this.label250.Size = new System.Drawing.Size(15, 15);
             this.label250.TabIndex = 6;
             this.label250.Text = "+";
-            this.label250.Click += new System.EventHandler(this.skillClick);
+            this.label250.Click += new System.EventHandler(this.SkillClick);
             // 
             // label251
             // 
@@ -5190,7 +5020,7 @@ namespace steamjazz
             this.label251.Size = new System.Drawing.Size(15, 15);
             this.label251.TabIndex = 7;
             this.label251.Text = "+";
-            this.label251.Click += new System.EventHandler(this.skillClick);
+            this.label251.Click += new System.EventHandler(this.SkillClick);
             // 
             // label252
             // 
@@ -5201,7 +5031,7 @@ namespace steamjazz
             this.label252.Size = new System.Drawing.Size(15, 15);
             this.label252.TabIndex = 8;
             this.label252.Text = "+";
-            this.label252.Click += new System.EventHandler(this.skillClick);
+            this.label252.Click += new System.EventHandler(this.SkillClick);
             // 
             // label253
             // 
@@ -5212,7 +5042,7 @@ namespace steamjazz
             this.label253.Size = new System.Drawing.Size(15, 15);
             this.label253.TabIndex = 9;
             this.label253.Text = "+";
-            this.label253.Click += new System.EventHandler(this.skillClick);
+            this.label253.Click += new System.EventHandler(this.SkillClick);
             // 
             // label254
             // 
@@ -5223,7 +5053,7 @@ namespace steamjazz
             this.label254.Size = new System.Drawing.Size(15, 15);
             this.label254.TabIndex = 10;
             this.label254.Text = "+";
-            this.label254.Click += new System.EventHandler(this.skillClick);
+            this.label254.Click += new System.EventHandler(this.SkillClick);
             // 
             // label255
             // 
@@ -5234,7 +5064,7 @@ namespace steamjazz
             this.label255.Size = new System.Drawing.Size(15, 15);
             this.label255.TabIndex = 11;
             this.label255.Text = "+";
-            this.label255.Click += new System.EventHandler(this.skillClick);
+            this.label255.Click += new System.EventHandler(this.SkillClick);
             // 
             // label256
             // 
@@ -5245,7 +5075,7 @@ namespace steamjazz
             this.label256.Size = new System.Drawing.Size(15, 15);
             this.label256.TabIndex = 12;
             this.label256.Text = "+";
-            this.label256.Click += new System.EventHandler(this.skillClick);
+            this.label256.Click += new System.EventHandler(this.SkillClick);
             // 
             // label257
             // 
@@ -5256,7 +5086,7 @@ namespace steamjazz
             this.label257.Size = new System.Drawing.Size(15, 15);
             this.label257.TabIndex = 13;
             this.label257.Text = "+";
-            this.label257.Click += new System.EventHandler(this.skillClick);
+            this.label257.Click += new System.EventHandler(this.SkillClick);
             // 
             // label258
             // 
@@ -5267,7 +5097,7 @@ namespace steamjazz
             this.label258.Size = new System.Drawing.Size(15, 15);
             this.label258.TabIndex = 14;
             this.label258.Text = "+";
-            this.label258.Click += new System.EventHandler(this.skillClick);
+            this.label258.Click += new System.EventHandler(this.SkillClick);
             // 
             // label259
             // 
@@ -5278,7 +5108,7 @@ namespace steamjazz
             this.label259.Size = new System.Drawing.Size(15, 15);
             this.label259.TabIndex = 15;
             this.label259.Text = "+";
-            this.label259.Click += new System.EventHandler(this.skillClick);
+            this.label259.Click += new System.EventHandler(this.SkillClick);
             // 
             // label260
             // 
@@ -5289,7 +5119,7 @@ namespace steamjazz
             this.label260.Size = new System.Drawing.Size(15, 15);
             this.label260.TabIndex = 16;
             this.label260.Text = "+";
-            this.label260.Click += new System.EventHandler(this.skillClick);
+            this.label260.Click += new System.EventHandler(this.SkillClick);
             // 
             // label261
             // 
@@ -5300,7 +5130,7 @@ namespace steamjazz
             this.label261.Size = new System.Drawing.Size(15, 15);
             this.label261.TabIndex = 17;
             this.label261.Text = "+";
-            this.label261.Click += new System.EventHandler(this.skillClick);
+            this.label261.Click += new System.EventHandler(this.SkillClick);
             // 
             // label262
             // 
@@ -5311,40 +5141,7 @@ namespace steamjazz
             this.label262.Size = new System.Drawing.Size(15, 15);
             this.label262.TabIndex = 18;
             this.label262.Text = "+";
-            this.label262.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label263
-            // 
-            this.label263.AutoSize = true;
-            this.label263.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label263.Location = new System.Drawing.Point(3, 270);
-            this.label263.Name = "label263";
-            this.label263.Size = new System.Drawing.Size(15, 15);
-            this.label263.TabIndex = 19;
-            this.label263.Text = "+";
-            this.label263.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label264
-            // 
-            this.label264.AutoSize = true;
-            this.label264.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label264.Location = new System.Drawing.Point(3, 285);
-            this.label264.Name = "label264";
-            this.label264.Size = new System.Drawing.Size(15, 15);
-            this.label264.TabIndex = 20;
-            this.label264.Text = "+";
-            this.label264.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label265
-            // 
-            this.label265.AutoSize = true;
-            this.label265.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label265.Location = new System.Drawing.Point(3, 300);
-            this.label265.Name = "label265";
-            this.label265.Size = new System.Drawing.Size(15, 15);
-            this.label265.TabIndex = 21;
-            this.label265.Text = "+";
-            this.label265.Click += new System.EventHandler(this.skillClick);
+            this.label262.Click += new System.EventHandler(this.SkillClick);
             // 
             // flowLayoutPanel50
             // 
@@ -5366,11 +5163,8 @@ namespace steamjazz
             this.flowLayoutPanel50.Controls.Add(this.label312);
             this.flowLayoutPanel50.Controls.Add(this.label313);
             this.flowLayoutPanel50.Controls.Add(this.label314);
-            this.flowLayoutPanel50.Controls.Add(this.label315);
-            this.flowLayoutPanel50.Controls.Add(this.label316);
-            this.flowLayoutPanel50.Controls.Add(this.label317);
             this.flowLayoutPanel50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel50.Location = new System.Drawing.Point(173, 3);
+            this.flowLayoutPanel50.Location = new System.Drawing.Point(182, 3);
             this.flowLayoutPanel50.Name = "flowLayoutPanel50";
             this.flowLayoutPanel50.Size = new System.Drawing.Size(25, 324);
             this.flowLayoutPanel50.TabIndex = 3;
@@ -5384,7 +5178,7 @@ namespace steamjazz
             this.label297.Size = new System.Drawing.Size(12, 15);
             this.label297.TabIndex = 4;
             this.label297.Text = "-";
-            this.label297.Click += new System.EventHandler(this.skillClick);
+            this.label297.Click += new System.EventHandler(this.SkillClick);
             // 
             // label298
             // 
@@ -5395,7 +5189,7 @@ namespace steamjazz
             this.label298.Size = new System.Drawing.Size(12, 15);
             this.label298.TabIndex = 5;
             this.label298.Text = "-";
-            this.label298.Click += new System.EventHandler(this.skillClick);
+            this.label298.Click += new System.EventHandler(this.SkillClick);
             // 
             // label299
             // 
@@ -5406,7 +5200,7 @@ namespace steamjazz
             this.label299.Size = new System.Drawing.Size(12, 15);
             this.label299.TabIndex = 6;
             this.label299.Text = "-";
-            this.label299.Click += new System.EventHandler(this.skillClick);
+            this.label299.Click += new System.EventHandler(this.SkillClick);
             // 
             // label300
             // 
@@ -5417,7 +5211,7 @@ namespace steamjazz
             this.label300.Size = new System.Drawing.Size(12, 15);
             this.label300.TabIndex = 7;
             this.label300.Text = "-";
-            this.label300.Click += new System.EventHandler(this.skillClick);
+            this.label300.Click += new System.EventHandler(this.SkillClick);
             // 
             // label301
             // 
@@ -5428,7 +5222,7 @@ namespace steamjazz
             this.label301.Size = new System.Drawing.Size(12, 15);
             this.label301.TabIndex = 8;
             this.label301.Text = "-";
-            this.label301.Click += new System.EventHandler(this.skillClick);
+            this.label301.Click += new System.EventHandler(this.SkillClick);
             // 
             // label302
             // 
@@ -5439,7 +5233,7 @@ namespace steamjazz
             this.label302.Size = new System.Drawing.Size(12, 15);
             this.label302.TabIndex = 9;
             this.label302.Text = "-";
-            this.label302.Click += new System.EventHandler(this.skillClick);
+            this.label302.Click += new System.EventHandler(this.SkillClick);
             // 
             // label303
             // 
@@ -5450,7 +5244,7 @@ namespace steamjazz
             this.label303.Size = new System.Drawing.Size(12, 15);
             this.label303.TabIndex = 10;
             this.label303.Text = "-";
-            this.label303.Click += new System.EventHandler(this.skillClick);
+            this.label303.Click += new System.EventHandler(this.SkillClick);
             // 
             // label304
             // 
@@ -5461,7 +5255,7 @@ namespace steamjazz
             this.label304.Size = new System.Drawing.Size(12, 15);
             this.label304.TabIndex = 11;
             this.label304.Text = "-";
-            this.label304.Click += new System.EventHandler(this.skillClick);
+            this.label304.Click += new System.EventHandler(this.SkillClick);
             // 
             // label305
             // 
@@ -5472,7 +5266,7 @@ namespace steamjazz
             this.label305.Size = new System.Drawing.Size(12, 15);
             this.label305.TabIndex = 12;
             this.label305.Text = "-";
-            this.label305.Click += new System.EventHandler(this.skillClick);
+            this.label305.Click += new System.EventHandler(this.SkillClick);
             // 
             // label306
             // 
@@ -5483,7 +5277,7 @@ namespace steamjazz
             this.label306.Size = new System.Drawing.Size(12, 15);
             this.label306.TabIndex = 13;
             this.label306.Text = "-";
-            this.label306.Click += new System.EventHandler(this.skillClick);
+            this.label306.Click += new System.EventHandler(this.SkillClick);
             // 
             // label307
             // 
@@ -5494,7 +5288,7 @@ namespace steamjazz
             this.label307.Size = new System.Drawing.Size(12, 15);
             this.label307.TabIndex = 14;
             this.label307.Text = "-";
-            this.label307.Click += new System.EventHandler(this.skillClick);
+            this.label307.Click += new System.EventHandler(this.SkillClick);
             // 
             // label308
             // 
@@ -5505,7 +5299,7 @@ namespace steamjazz
             this.label308.Size = new System.Drawing.Size(12, 15);
             this.label308.TabIndex = 15;
             this.label308.Text = "-";
-            this.label308.Click += new System.EventHandler(this.skillClick);
+            this.label308.Click += new System.EventHandler(this.SkillClick);
             // 
             // label309
             // 
@@ -5516,7 +5310,7 @@ namespace steamjazz
             this.label309.Size = new System.Drawing.Size(12, 15);
             this.label309.TabIndex = 16;
             this.label309.Text = "-";
-            this.label309.Click += new System.EventHandler(this.skillClick);
+            this.label309.Click += new System.EventHandler(this.SkillClick);
             // 
             // label310
             // 
@@ -5527,7 +5321,7 @@ namespace steamjazz
             this.label310.Size = new System.Drawing.Size(12, 15);
             this.label310.TabIndex = 17;
             this.label310.Text = "-";
-            this.label310.Click += new System.EventHandler(this.skillClick);
+            this.label310.Click += new System.EventHandler(this.SkillClick);
             // 
             // label311
             // 
@@ -5538,7 +5332,7 @@ namespace steamjazz
             this.label311.Size = new System.Drawing.Size(12, 15);
             this.label311.TabIndex = 18;
             this.label311.Text = "-";
-            this.label311.Click += new System.EventHandler(this.skillClick);
+            this.label311.Click += new System.EventHandler(this.SkillClick);
             // 
             // label312
             // 
@@ -5549,7 +5343,7 @@ namespace steamjazz
             this.label312.Size = new System.Drawing.Size(12, 15);
             this.label312.TabIndex = 19;
             this.label312.Text = "-";
-            this.label312.Click += new System.EventHandler(this.skillClick);
+            this.label312.Click += new System.EventHandler(this.SkillClick);
             // 
             // label313
             // 
@@ -5560,7 +5354,7 @@ namespace steamjazz
             this.label313.Size = new System.Drawing.Size(12, 15);
             this.label313.TabIndex = 20;
             this.label313.Text = "-";
-            this.label313.Click += new System.EventHandler(this.skillClick);
+            this.label313.Click += new System.EventHandler(this.SkillClick);
             // 
             // label314
             // 
@@ -5571,40 +5365,7 @@ namespace steamjazz
             this.label314.Size = new System.Drawing.Size(12, 15);
             this.label314.TabIndex = 21;
             this.label314.Text = "-";
-            this.label314.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label315
-            // 
-            this.label315.AutoSize = true;
-            this.label315.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label315.Location = new System.Drawing.Point(3, 270);
-            this.label315.Name = "label315";
-            this.label315.Size = new System.Drawing.Size(12, 15);
-            this.label315.TabIndex = 22;
-            this.label315.Text = "-";
-            this.label315.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label316
-            // 
-            this.label316.AutoSize = true;
-            this.label316.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label316.Location = new System.Drawing.Point(3, 285);
-            this.label316.Name = "label316";
-            this.label316.Size = new System.Drawing.Size(12, 15);
-            this.label316.TabIndex = 23;
-            this.label316.Text = "-";
-            this.label316.Click += new System.EventHandler(this.skillClick);
-            // 
-            // label317
-            // 
-            this.label317.AutoSize = true;
-            this.label317.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label317.Location = new System.Drawing.Point(3, 300);
-            this.label317.Name = "label317";
-            this.label317.Size = new System.Drawing.Size(12, 15);
-            this.label317.TabIndex = 24;
-            this.label317.Text = "-";
-            this.label317.Click += new System.EventHandler(this.skillClick);
+            this.label314.Click += new System.EventHandler(this.SkillClick);
             // 
             // flowLayoutPanel15
             // 
@@ -5680,6 +5441,129 @@ namespace steamjazz
             this.label321.Size = new System.Drawing.Size(27, 13);
             this.label321.TabIndex = 1;
             this.label321.Text = "N/A";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.radioButton25);
+            this.groupBox4.Controls.Add(this.radioButton26);
+            this.groupBox4.Controls.Add(this.radioButton27);
+            this.groupBox4.Controls.Add(this.radioButton28);
+            this.groupBox4.Controls.Add(this.radioButton29);
+            this.groupBox4.Controls.Add(this.radioButton30);
+            this.groupBox4.Controls.Add(this.radioButton31);
+            this.groupBox4.Controls.Add(this.radioButton32);
+            this.groupBox4.Location = new System.Drawing.Point(3, 70);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(188, 60);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "+1";
+            this.groupBox4.Visible = false;
+            // 
+            // radioButton25
+            // 
+            this.radioButton25.AutoSize = true;
+            this.radioButton25.Location = new System.Drawing.Point(4, 19);
+            this.radioButton25.Name = "radioButton25";
+            this.radioButton25.Size = new System.Drawing.Size(36, 17);
+            this.radioButton25.TabIndex = 2;
+            this.radioButton25.TabStop = true;
+            this.radioButton25.Text = "str";
+            this.radioButton25.UseVisualStyleBackColor = true;
+            this.radioButton25.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // radioButton26
+            // 
+            this.radioButton26.AutoSize = true;
+            this.radioButton26.Location = new System.Drawing.Point(139, 42);
+            this.radioButton26.Name = "radioButton26";
+            this.radioButton26.Size = new System.Drawing.Size(45, 17);
+            this.radioButton26.TabIndex = 9;
+            this.radioButton26.TabStop = true;
+            this.radioButton26.Text = "emp";
+            this.radioButton26.UseVisualStyleBackColor = true;
+            this.radioButton26.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // radioButton27
+            // 
+            this.radioButton27.AutoSize = true;
+            this.radioButton27.Location = new System.Drawing.Point(47, 19);
+            this.radioButton27.Name = "radioButton27";
+            this.radioButton27.Size = new System.Drawing.Size(43, 17);
+            this.radioButton27.TabIndex = 3;
+            this.radioButton27.TabStop = true;
+            this.radioButton27.Text = "con";
+            this.radioButton27.UseVisualStyleBackColor = true;
+            this.radioButton27.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // radioButton28
+            // 
+            this.radioButton28.AutoSize = true;
+            this.radioButton28.Location = new System.Drawing.Point(90, 43);
+            this.radioButton28.Name = "radioButton28";
+            this.radioButton28.Size = new System.Drawing.Size(43, 17);
+            this.radioButton28.TabIndex = 8;
+            this.radioButton28.TabStop = true;
+            this.radioButton28.Text = "cha";
+            this.radioButton28.UseVisualStyleBackColor = true;
+            this.radioButton28.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // radioButton29
+            // 
+            this.radioButton29.AutoSize = true;
+            this.radioButton29.Location = new System.Drawing.Point(91, 20);
+            this.radioButton29.Name = "radioButton29";
+            this.radioButton29.Size = new System.Drawing.Size(42, 17);
+            this.radioButton29.TabIndex = 4;
+            this.radioButton29.TabStop = true;
+            this.radioButton29.Text = "dex";
+            this.radioButton29.UseVisualStyleBackColor = true;
+            this.radioButton29.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // radioButton30
+            // 
+            this.radioButton30.AutoSize = true;
+            this.radioButton30.Location = new System.Drawing.Point(46, 43);
+            this.radioButton30.Name = "radioButton30";
+            this.radioButton30.Size = new System.Drawing.Size(38, 17);
+            this.radioButton30.TabIndex = 7;
+            this.radioButton30.TabStop = true;
+            this.radioButton30.Text = "wit";
+            this.radioButton30.UseVisualStyleBackColor = true;
+            this.radioButton30.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // radioButton31
+            // 
+            this.radioButton31.AutoSize = true;
+            this.radioButton31.Location = new System.Drawing.Point(139, 19);
+            this.radioButton31.Name = "radioButton31";
+            this.radioButton31.Size = new System.Drawing.Size(37, 17);
+            this.radioButton31.TabIndex = 5;
+            this.radioButton31.TabStop = true;
+            this.radioButton31.Text = "ref";
+            this.radioButton31.UseVisualStyleBackColor = true;
+            this.radioButton31.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // radioButton32
+            // 
+            this.radioButton32.AutoSize = true;
+            this.radioButton32.Location = new System.Drawing.Point(4, 42);
+            this.radioButton32.Name = "radioButton32";
+            this.radioButton32.Size = new System.Drawing.Size(36, 17);
+            this.radioButton32.TabIndex = 6;
+            this.radioButton32.TabStop = true;
+            this.radioButton32.Text = "int";
+            this.radioButton32.UseVisualStyleBackColor = true;
+            this.radioButton32.Click += new System.EventHandler(this.radioAdd);
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(3, 26);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(47, 13);
+            this.label109.TabIndex = 0;
+            this.label109.Text = "Disguise";
             // 
             // Form1
             // 
@@ -5759,17 +5643,6 @@ namespace steamjazz
             this.flowLayoutPanel34.PerformLayout();
             this.flowLayoutPanel35.ResumeLayout(false);
             this.flowLayoutPanel35.PerformLayout();
-            this.flowLayoutPanel22.ResumeLayout(false);
-            this.flowLayoutPanel22.PerformLayout();
-            this.flowLayoutPanel28.ResumeLayout(false);
-            this.flowLayoutPanel59.ResumeLayout(false);
-            this.flowLayoutPanel59.PerformLayout();
-            this.flowLayoutPanel60.ResumeLayout(false);
-            this.flowLayoutPanel60.PerformLayout();
-            this.flowLayoutPanel61.ResumeLayout(false);
-            this.flowLayoutPanel61.PerformLayout();
-            this.flowLayoutPanel62.ResumeLayout(false);
-            this.flowLayoutPanel62.PerformLayout();
             this.flowLayoutPanel20.ResumeLayout(false);
             this.flowLayoutPanel20.PerformLayout();
             this.flowLayoutPanel26.ResumeLayout(false);
@@ -5781,18 +5654,6 @@ namespace steamjazz
             this.flowLayoutPanel44.PerformLayout();
             this.flowLayoutPanel46.ResumeLayout(false);
             this.flowLayoutPanel46.PerformLayout();
-            this.flowLayoutPanel65.ResumeLayout(false);
-            this.flowLayoutPanel19.ResumeLayout(false);
-            this.flowLayoutPanel19.PerformLayout();
-            this.flowLayoutPanel25.ResumeLayout(false);
-            this.flowLayoutPanel55.ResumeLayout(false);
-            this.flowLayoutPanel55.PerformLayout();
-            this.flowLayoutPanel56.ResumeLayout(false);
-            this.flowLayoutPanel56.PerformLayout();
-            this.flowLayoutPanel57.ResumeLayout(false);
-            this.flowLayoutPanel57.PerformLayout();
-            this.flowLayoutPanel58.ResumeLayout(false);
-            this.flowLayoutPanel58.PerformLayout();
             this.flowLayoutPanel21.ResumeLayout(false);
             this.flowLayoutPanel21.PerformLayout();
             this.flowLayoutPanel27.ResumeLayout(false);
@@ -5804,6 +5665,29 @@ namespace steamjazz
             this.flowLayoutPanel53.PerformLayout();
             this.flowLayoutPanel54.ResumeLayout(false);
             this.flowLayoutPanel54.PerformLayout();
+            this.flowLayoutPanel22.ResumeLayout(false);
+            this.flowLayoutPanel22.PerformLayout();
+            this.flowLayoutPanel28.ResumeLayout(false);
+            this.flowLayoutPanel59.ResumeLayout(false);
+            this.flowLayoutPanel59.PerformLayout();
+            this.flowLayoutPanel60.ResumeLayout(false);
+            this.flowLayoutPanel60.PerformLayout();
+            this.flowLayoutPanel61.ResumeLayout(false);
+            this.flowLayoutPanel61.PerformLayout();
+            this.flowLayoutPanel62.ResumeLayout(false);
+            this.flowLayoutPanel62.PerformLayout();
+            this.flowLayoutPanel19.ResumeLayout(false);
+            this.flowLayoutPanel19.PerformLayout();
+            this.flowLayoutPanel25.ResumeLayout(false);
+            this.flowLayoutPanel55.ResumeLayout(false);
+            this.flowLayoutPanel55.PerformLayout();
+            this.flowLayoutPanel56.ResumeLayout(false);
+            this.flowLayoutPanel56.PerformLayout();
+            this.flowLayoutPanel57.ResumeLayout(false);
+            this.flowLayoutPanel57.PerformLayout();
+            this.flowLayoutPanel58.ResumeLayout(false);
+            this.flowLayoutPanel58.PerformLayout();
+            this.flowLayoutPanel65.ResumeLayout(false);
             this.flowLayoutPanel18.ResumeLayout(false);
             this.flowLayoutPanel18.PerformLayout();
             this.flowLayoutPanel24.ResumeLayout(false);
@@ -5821,6 +5705,8 @@ namespace steamjazz
             this.flowLayoutPanel66.PerformLayout();
             this.flowLayoutPanel67.ResumeLayout(false);
             this.flowLayoutPanel67.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5831,9 +5717,33 @@ namespace steamjazz
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.ComboBox comboBox1;
+
+        public System.Windows.Forms.ComboBox ComboBox1
+        {
+            get { return comboBox1; }
+            set { comboBox1 = value; }
+        }
         private System.Windows.Forms.ComboBox comboBox4;
+
+        public System.Windows.Forms.ComboBox ComboBox4
+        {
+            get { return comboBox4; }
+            set { comboBox4 = value; }
+        }
         private System.Windows.Forms.ComboBox comboBox3;
+
+        public System.Windows.Forms.ComboBox ComboBox3
+        {
+            get { return comboBox3; }
+            set { comboBox3 = value; }
+        }
         private System.Windows.Forms.ComboBox comboBox2;
+
+        public System.Windows.Forms.ComboBox ComboBox2
+        {
+            get { return comboBox2; }
+            set { comboBox2 = value; }
+        }
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -5842,38 +5752,182 @@ namespace steamjazz
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label6;
+
+        public System.Windows.Forms.Label Label6
+        {
+            get { return label6; }
+            set { label6 = value; }
+        }
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+
+        public System.Windows.Forms.Label Label8
+        {
+            get { return label8; }
+            set { label8 = value; }
+        }
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+
+        public System.Windows.Forms.Label Label10
+        {
+            get { return label10; }
+            set { label10 = value; }
+        }
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+
+        public System.Windows.Forms.Label Label12
+        {
+            get { return label12; }
+            set { label12 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label13;
+
+        public System.Windows.Forms.Label Label13
+        {
+            get { return label13; }
+            set { label13 = value; }
+        }
         private System.Windows.Forms.Label label14;
+
+        public System.Windows.Forms.Label Label14
+        {
+            get { return label14; }
+            set { label14 = value; }
+        }
         private System.Windows.Forms.Label label15;
+
+        public System.Windows.Forms.Label Label15
+        {
+            get { return label15; }
+            set { label15 = value; }
+        }
         private System.Windows.Forms.Label label16;
+
+        public System.Windows.Forms.Label Label16
+        {
+            get { return label16; }
+            set { label16 = value; }
+        }
         private System.Windows.Forms.Label label17;
+
+        public System.Windows.Forms.Label Label17
+        {
+            get { return label17; }
+            set { label17 = value; }
+        }
         private System.Windows.Forms.Label label18;
+
+        public System.Windows.Forms.Label Label18
+        {
+            get { return label18; }
+            set { label18 = value; }
+        }
         private System.Windows.Forms.Label label19;
+
+        public System.Windows.Forms.Label Label19
+        {
+            get { return label19; }
+            set { label19 = value; }
+        }
         private System.Windows.Forms.Label label20;
+
+        public System.Windows.Forms.Label Label20
+        {
+            get { return label20; }
+            set { label20 = value; }
+        }
         private System.Windows.Forms.Label label21;
+
+        public System.Windows.Forms.Label Label21
+        {
+            get { return label21; }
+            set { label21 = value; }
+        }
         private System.Windows.Forms.Label label22;
+
+        public System.Windows.Forms.Label Label22
+        {
+            get { return label22; }
+            set { label22 = value; }
+        }
         private System.Windows.Forms.Label label23;
+
+        public System.Windows.Forms.Label Label23
+        {
+            get { return label23; }
+            set { label23 = value; }
+        }
         private System.Windows.Forms.Label label24;
+
+        public System.Windows.Forms.Label Label24
+        {
+            get { return label24; }
+            set { label24 = value; }
+        }
         private System.Windows.Forms.Label label25;
+
+        public System.Windows.Forms.Label Label25
+        {
+            get { return label25; }
+            set { label25 = value; }
+        }
         private System.Windows.Forms.Label label26;
+
+        public System.Windows.Forms.Label Label26
+        {
+            get { return label26; }
+            set { label26 = value; }
+        }
         private System.Windows.Forms.Label label27;
+
+        public System.Windows.Forms.Label Label27
+        {
+            get { return label27; }
+            set { label27 = value; }
+        }
         private System.Windows.Forms.Label label28;
+
+        public System.Windows.Forms.Label Label28
+        {
+            get { return label28; }
+            set { label28 = value; }
+        }
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
+
+        public System.Windows.Forms.Label Label35
+        {
+            get { return label35; }
+            set { label35 = value; }
+        }
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
+
+        public System.Windows.Forms.Label Label37
+        {
+            get { return label37; }
+            set { label37 = value; }
+        }
         private System.Windows.Forms.Label label30;
+
+        public System.Windows.Forms.Label Label30
+        {
+            get { return label30; }
+            set { label30 = value; }
+        }
         private System.Windows.Forms.Label label33;
+
+        public System.Windows.Forms.Label Label33
+        {
+            get { return label33; }
+            set { label33 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
@@ -5890,13 +5944,61 @@ namespace steamjazz
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel13;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel14;
         private System.Windows.Forms.RadioButton radioButton1;
+
+        public System.Windows.Forms.RadioButton RadioButton1
+        {
+            get { return radioButton1; }
+            set { radioButton1 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton8;
+
+        public System.Windows.Forms.RadioButton RadioButton8
+        {
+            get { return radioButton8; }
+            set { radioButton8 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton7;
+
+        public System.Windows.Forms.RadioButton RadioButton7
+        {
+            get { return radioButton7; }
+            set { radioButton7 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton6;
+
+        public System.Windows.Forms.RadioButton RadioButton6
+        {
+            get { return radioButton6; }
+            set { radioButton6 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton5;
+
+        public System.Windows.Forms.RadioButton RadioButton5
+        {
+            get { return radioButton5; }
+            set { radioButton5 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton4;
+
+        public System.Windows.Forms.RadioButton RadioButton4
+        {
+            get { return radioButton4; }
+            set { radioButton4 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton3;
+
+        public System.Windows.Forms.RadioButton RadioButton3
+        {
+            get { return radioButton3; }
+            set { radioButton3 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton2;
+
+        public System.Windows.Forms.RadioButton RadioButton2
+        {
+            get { return radioButton2; }
+            set { radioButton2 = value; }
+        }
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton16;
         private System.Windows.Forms.RadioButton radioButton15;
@@ -5906,21 +6008,81 @@ namespace steamjazz
         private System.Windows.Forms.RadioButton radioButton11;
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.GroupBox groupBox1;
+
+        public System.Windows.Forms.GroupBox GroupBox1
+        {
+            get { return groupBox1; }
+            set { groupBox1 = value; }
+        }
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label32;
+
+        public System.Windows.Forms.Label Label32
+        {
+            get { return label32; }
+            set { label32 = value; }
+        }
         private System.Windows.Forms.Label label40;
+
+        public System.Windows.Forms.Label Label40
+        {
+            get { return label40; }
+            set { label40 = value; }
+        }
         private System.Windows.Forms.Label label41;
+
+        public System.Windows.Forms.Label Label41
+        {
+            get { return label41; }
+            set { label41 = value; }
+        }
         private System.Windows.Forms.Label label42;
+
+        public System.Windows.Forms.Label Label42
+        {
+            get { return label42; }
+            set { label42 = value; }
+        }
         private System.Windows.Forms.Label label43;
+
+        public System.Windows.Forms.Label Label43
+        {
+            get { return label43; }
+            set { label43 = value; }
+        }
         private System.Windows.Forms.Label label44;
+
+        public System.Windows.Forms.Label Label44
+        {
+            get { return label44; }
+            set { label44 = value; }
+        }
         private System.Windows.Forms.Label label45;
+
+        public System.Windows.Forms.Label Label45
+        {
+            get { return label45; }
+            set { label45 = value; }
+        }
         private System.Windows.Forms.Label label46;
+
+        public System.Windows.Forms.Label Label46
+        {
+            get { return label46; }
+            set { label46 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel16;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel17;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
+
+        public System.Windows.Forms.Label Label54
+        {
+            get { return label54; }
+            set { label54 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel23;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel32;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel30;
@@ -5933,52 +6095,169 @@ namespace steamjazz
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel33;
         private System.Windows.Forms.Label label73;
+
+        public System.Windows.Forms.Label Label73
+        {
+            get { return label73; }
+            set { label73 = value; }
+        }
         private System.Windows.Forms.Label label75;
+
+        public System.Windows.Forms.Label Label75
+        {
+            get { return label75; }
+            set { label75 = value; }
+        }
         private System.Windows.Forms.Label label76;
+
+        public System.Windows.Forms.Label Label76
+        {
+            get { return label76; }
+            set { label76 = value; }
+        }
         private System.Windows.Forms.Label label77;
+
+        public System.Windows.Forms.Label Label77
+        {
+            get { return label77; }
+            set { label77 = value; }
+        }
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label80;
+
+        public System.Windows.Forms.Label Label78
+        {
+            get { return label78; }
+            set { label78 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel18;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
+
+        public System.Windows.Forms.Label Label56
+        {
+            get { return label56; }
+            set { label56 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel24;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel19;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
+
+        public System.Windows.Forms.Label Label58
+        {
+            get { return label58; }
+            set { label58 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel25;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel20;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
+
+        public System.Windows.Forms.Label Label60
+        {
+            get { return label60; }
+            set { label60 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel26;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel21;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
+
+        public System.Windows.Forms.Label Label62
+        {
+            get { return label62; }
+            set { label62 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel27;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel22;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
+
+        public System.Windows.Forms.Label Label64
+        {
+            get { return label64; }
+            set { label64 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel28;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel15;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel34;
         private System.Windows.Forms.Label label81;
+
+        public System.Windows.Forms.Label Label81
+        {
+            get { return label81; }
+            set { label81 = value; }
+        }
         private System.Windows.Forms.Label label83;
+
+        public System.Windows.Forms.Label Label83
+        {
+            get { return label83; }
+            set { label83 = value; }
+        }
         private System.Windows.Forms.Label label84;
+
+        public System.Windows.Forms.Label Label84
+        {
+            get { return label84; }
+            set { label84 = value; }
+        }
         private System.Windows.Forms.Label label85;
+
+        public System.Windows.Forms.Label Label85
+        {
+            get { return label85; }
+            set { label85 = value; }
+        }
         private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label88;
+
+        public System.Windows.Forms.Label Label86
+        {
+            get { return label86; }
+            set { label86 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel35;
         private System.Windows.Forms.Label label89;
+
+        public System.Windows.Forms.Label Label89
+        {
+            get { return label89; }
+            set { label89 = value; }
+        }
         private System.Windows.Forms.Label label91;
+
+        public System.Windows.Forms.Label Label91
+        {
+            get { return label91; }
+            set { label91 = value; }
+        }
         private System.Windows.Forms.Label label92;
+
+        public System.Windows.Forms.Label Label92
+        {
+            get { return label92; }
+            set { label92 = value; }
+        }
         private System.Windows.Forms.Label label93;
+
+        public System.Windows.Forms.Label Label93
+        {
+            get { return label93; }
+            set { label93 = value; }
+        }
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label96;
+
+        public System.Windows.Forms.Label Label94
+        {
+            get { return label94; }
+            set { label94 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel36;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel37;
         private System.Windows.Forms.Label label97;
@@ -5989,11 +6268,47 @@ namespace steamjazz
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel38;
         private System.Windows.Forms.Label label103;
+
+        public System.Windows.Forms.Label Label103
+        {
+            get { return label103; }
+            set { label103 = value; }
+        }
         private System.Windows.Forms.Label label104;
+
+        public System.Windows.Forms.Label Label104
+        {
+            get { return label104; }
+            set { label104 = value; }
+        }
         private System.Windows.Forms.Label label105;
+
+        public System.Windows.Forms.Label Label105
+        {
+            get { return label105; }
+            set { label105 = value; }
+        }
         private System.Windows.Forms.Label label106;
+
+        public System.Windows.Forms.Label Label106
+        {
+            get { return label106; }
+            set { label106 = value; }
+        }
         private System.Windows.Forms.Label label107;
+
+        public System.Windows.Forms.Label Label107
+        {
+            get { return label107; }
+            set { label107 = value; }
+        }
         private System.Windows.Forms.Label label108;
+
+        public System.Windows.Forms.Label Label108
+        {
+            get { return label108; }
+            set { label108 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel41;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel42;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel39;
@@ -6001,7 +6316,6 @@ namespace steamjazz
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel63;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel64;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel43;
-        private System.Windows.Forms.Label label109;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.Label label112;
@@ -6068,64 +6382,359 @@ namespace steamjazz
         private System.Windows.Forms.Label label131;
         private System.Windows.Forms.Label label132;
         private System.Windows.Forms.Label label133;
-        private System.Windows.Forms.Label label134;
-        private System.Windows.Forms.Label label135;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel48;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel49;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel50;
         private System.Windows.Forms.Label label161;
+
+        public System.Windows.Forms.Label Label161
+        {
+            get { return label161; }
+            set { label161 = value; }
+        }
         private System.Windows.Forms.Label label162;
+
+        public System.Windows.Forms.Label Label162
+        {
+            get { return label162; }
+            set { label162 = value; }
+        }
         private System.Windows.Forms.Label label163;
+
+        public System.Windows.Forms.Label Label163
+        {
+            get { return label163; }
+            set { label163 = value; }
+        }
         private System.Windows.Forms.Label label164;
+
+        public System.Windows.Forms.Label Label164
+        {
+            get { return label164; }
+            set { label164 = value; }
+        }
         private System.Windows.Forms.Label label165;
+
+        public System.Windows.Forms.Label Label165
+        {
+            get { return label165; }
+            set { label165 = value; }
+        }
         private System.Windows.Forms.Label label166;
+
+        public System.Windows.Forms.Label Label166
+        {
+            get { return label166; }
+            set { label166 = value; }
+        }
         private System.Windows.Forms.Label label167;
+
+        public System.Windows.Forms.Label Label167
+        {
+            get { return label167; }
+            set { label167 = value; }
+        }
         private System.Windows.Forms.Label label168;
+
+        public System.Windows.Forms.Label Label168
+        {
+            get { return label168; }
+            set { label168 = value; }
+        }
         private System.Windows.Forms.Label label169;
+
+        public System.Windows.Forms.Label Label169
+        {
+            get { return label169; }
+            set { label169 = value; }
+        }
         private System.Windows.Forms.Label label170;
+
+        public System.Windows.Forms.Label Label170
+        {
+            get { return label170; }
+            set { label170 = value; }
+        }
         private System.Windows.Forms.Label label171;
+
+        public System.Windows.Forms.Label Label171
+        {
+            get { return label171; }
+            set { label171 = value; }
+        }
         private System.Windows.Forms.Label label172;
+
+        public System.Windows.Forms.Label Label172
+        {
+            get { return label172; }
+            set { label172 = value; }
+        }
         private System.Windows.Forms.Label label173;
+
+        public System.Windows.Forms.Label Label173
+        {
+            get { return label173; }
+            set { label173 = value; }
+        }
         private System.Windows.Forms.Label label174;
+
+        public System.Windows.Forms.Label Label174
+        {
+            get { return label174; }
+            set { label174 = value; }
+        }
         private System.Windows.Forms.Label label175;
+
+        public System.Windows.Forms.Label Label175
+        {
+            get { return label175; }
+            set { label175 = value; }
+        }
         private System.Windows.Forms.Label label176;
+
+        public System.Windows.Forms.Label Label176
+        {
+            get { return label176; }
+            set { label176 = value; }
+        }
         private System.Windows.Forms.Label label177;
+
+        public System.Windows.Forms.Label Label177
+        {
+            get { return label177; }
+            set { label177 = value; }
+        }
         private System.Windows.Forms.Label label178;
+
+        public System.Windows.Forms.Label Label178
+        {
+            get { return label178; }
+            set { label178 = value; }
+        }
         private System.Windows.Forms.Label label179;
+
+        public System.Windows.Forms.Label Label179
+        {
+            get { return label179; }
+            set { label179 = value; }
+        }
         private System.Windows.Forms.Label label180;
+
+        public System.Windows.Forms.Label Label180
+        {
+            get { return label180; }
+            set { label180 = value; }
+        }
         private System.Windows.Forms.Label label181;
+
+        public System.Windows.Forms.Label Label181
+        {
+            get { return label181; }
+            set { label181 = value; }
+        }
         private System.Windows.Forms.Label label182;
+
+        public System.Windows.Forms.Label Label182
+        {
+            get { return label182; }
+            set { label182 = value; }
+        }
         private System.Windows.Forms.Label label183;
+
+        public System.Windows.Forms.Label Label183
+        {
+            get { return label183; }
+            set { label183 = value; }
+        }
         private System.Windows.Forms.Label label184;
+
+        public System.Windows.Forms.Label Label184
+        {
+            get { return label184; }
+            set { label184 = value; }
+        }
         private System.Windows.Forms.Label label185;
+
+        public System.Windows.Forms.Label Label185
+        {
+            get { return label185; }
+            set { label185 = value; }
+        }
         private System.Windows.Forms.Label label186;
+
+        public System.Windows.Forms.Label Label186
+        {
+            get { return label186; }
+            set { label186 = value; }
+        }
         private System.Windows.Forms.Label label187;
+
+        public System.Windows.Forms.Label Label187
+        {
+            get { return label187; }
+            set { label187 = value; }
+        }
         private System.Windows.Forms.Label label188;
+
+        public System.Windows.Forms.Label Label188
+        {
+            get { return label188; }
+            set { label188 = value; }
+        }
         private System.Windows.Forms.Label label189;
+
+        public System.Windows.Forms.Label Label189
+        {
+            get { return label189; }
+            set { label189 = value; }
+        }
         private System.Windows.Forms.Label label190;
+
+        public System.Windows.Forms.Label Label190
+        {
+            get { return label190; }
+            set { label190 = value; }
+        }
         private System.Windows.Forms.Label label191;
+
+        public System.Windows.Forms.Label Label191
+        {
+            get { return label191; }
+            set { label191 = value; }
+        }
         private System.Windows.Forms.Label label192;
+        public System.Windows.Forms.Label Label192
+        {
+            get { return label192; }
+            set { label192 = value; }
+        }
+
         private System.Windows.Forms.Label label193;
+
+        public System.Windows.Forms.Label Label193
+        {
+            get { return label193; }
+            set { label193 = value; }
+        }
         private System.Windows.Forms.Label label194;
+
+        public System.Windows.Forms.Label Label194
+        {
+            get { return label194; }
+            set { label194 = value; }
+        }
         private System.Windows.Forms.Label label195;
+
+        public System.Windows.Forms.Label Label195
+        {
+            get { return label195; }
+            set { label195 = value; }
+        }
         private System.Windows.Forms.Label label196;
+
+        public System.Windows.Forms.Label Label196
+        {
+            get { return label196; }
+            set { label196 = value; }
+        }
         private System.Windows.Forms.Label label197;
+
+        public System.Windows.Forms.Label Label197
+        {
+            get { return label197; }
+            set { label197 = value; }
+        }
         private System.Windows.Forms.Label label198;
+
+        public System.Windows.Forms.Label Label198
+        {
+            get { return label198; }
+            set { label198 = value; }
+        }
         private System.Windows.Forms.Label label199;
+
+        public System.Windows.Forms.Label Label199
+        {
+            get { return label199; }
+            set { label199 = value; }
+        }
         private System.Windows.Forms.Label label200;
+
+        public System.Windows.Forms.Label Label200
+        {
+            get { return label200; }
+            set { label200 = value; }
+        }
         private System.Windows.Forms.Label label201;
+
+        public System.Windows.Forms.Label Label201
+        {
+            get { return label201; }
+            set { label201 = value; }
+        }
         private System.Windows.Forms.Label label202;
+
+        public System.Windows.Forms.Label Label202
+        {
+            get { return label202; }
+            set { label202 = value; }
+        }
         private System.Windows.Forms.Label label203;
+
+        public System.Windows.Forms.Label Label203
+        {
+            get { return label203; }
+            set { label203 = value; }
+        }
         private System.Windows.Forms.Label label204;
+
+        public System.Windows.Forms.Label Label204
+        {
+            get { return label204; }
+            set { label204 = value; }
+        }
         private System.Windows.Forms.Label label205;
+
+        public System.Windows.Forms.Label Label205
+        {
+            get { return label205; }
+            set { label205 = value; }
+        }
         private System.Windows.Forms.Label label206;
+
+        public System.Windows.Forms.Label Label206
+        {
+            get { return label206; }
+            set { label206 = value; }
+        }
         private System.Windows.Forms.Label label207;
+
+        public System.Windows.Forms.Label Label207
+        {
+            get { return label207; }
+            set { label207 = value; }
+        }
         private System.Windows.Forms.Label label208;
+
+        public System.Windows.Forms.Label Label208
+        {
+            get { return label208; }
+            set { label208 = value; }
+        }
         private System.Windows.Forms.Label label209;
-        private System.Windows.Forms.Label label210;
-        private System.Windows.Forms.Label label211;
-        private System.Windows.Forms.Label label212;
+
+        public System.Windows.Forms.Label Label209
+        {
+            get { return label209; }
+            set { label209 = value; }
+        }
         private System.Windows.Forms.Label label213;
+
+        public System.Windows.Forms.Label Label213
+        {
+            get { return label213; }
+            set { label213 = value; }
+        }
         private System.Windows.Forms.Label label214;
         private System.Windows.Forms.Label label215;
         private System.Windows.Forms.Label label216;
@@ -6175,9 +6784,6 @@ namespace steamjazz
         private System.Windows.Forms.Label label260;
         private System.Windows.Forms.Label label261;
         private System.Windows.Forms.Label label262;
-        private System.Windows.Forms.Label label263;
-        private System.Windows.Forms.Label label264;
-        private System.Windows.Forms.Label label265;
         private System.Windows.Forms.Label label266;
         private System.Windows.Forms.Label label267;
         private System.Windows.Forms.Label label268;
@@ -6227,192 +6833,197 @@ namespace steamjazz
         private System.Windows.Forms.Label label312;
         private System.Windows.Forms.Label label313;
         private System.Windows.Forms.Label label314;
-        private System.Windows.Forms.Label label315;
-        private System.Windows.Forms.Label label316;
-        private System.Windows.Forms.Label label317;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel66;
         private System.Windows.Forms.Label label318;
         private System.Windows.Forms.Label label319;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel67;
         private System.Windows.Forms.Label label320;
         private System.Windows.Forms.Label label321;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label71;
+        public System.Windows.Forms.Label Label321
+        {
+            get { return label321; }
+            set { label321 = value; }
+        }
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label79;
+
+        public System.Windows.Forms.Label Label74
+        {
+            get { return label74; }
+            set { label74 = value; }
+        }
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label87;
+
+        public System.Windows.Forms.Label Label82
+        {
+            get { return label82; }
+            set { label82 = value; }
+        }
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label95;
+
+        public System.Windows.Forms.Label Label90
+        {
+            get { return label90; }
+            set { label90 = value; }
+        }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel29;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel68;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel69;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel70;
         private System.Windows.Forms.Label label322;
-        public string Label322
-        {
-            get { return label322.Text; }
-            set { label322.Text = value; }
-        }
 
-        private System.Windows.Forms.Label label323;
-        public string Label323
+        public System.Windows.Forms.Label Label322
         {
-            get { return label323.Text; }
-            set { label323.Text = value; }
+            get { return label322; }
+            set { label322 = value; }
+        }
+        private System.Windows.Forms.Label label323;
+
+        public System.Windows.Forms.Label Label323
+        {
+            get { return label323; }
+            set { label323 = value; }
         }
         private System.Windows.Forms.Label label324;
 
-        public string Label324
+        public System.Windows.Forms.Label Label324
         {
-            get { return label324.Text; }
-            set { label324.Text = value; }
+            get { return label324; }
+            set { label324 = value; }
         }
-        
         private System.Windows.Forms.Label label325;
-        public string Label325
+
+        public System.Windows.Forms.Label Label325
         {
-            get { return label325.Text; }
-            set { label325.Text = value; }
+            get { return label325; }
+            set { label325 = value; }
         }
         private System.Windows.Forms.Label label326;
-        public string Label326
+
+        public System.Windows.Forms.Label Label326
         {
-            get { return label326.Text; }
-            set { label326.Text = value; }
+            get { return label326; }
+            set { label326 = value; }
         }
         private System.Windows.Forms.Label label327;
-        public string Label327
+
+        public System.Windows.Forms.Label Label327
         {
-            get { return label327.Text; }
-            set { label327.Text = value; }
+            get { return label327; }
+            set { label327 = value; }
         }
-       
         private System.Windows.Forms.Label label328;
-        public string Label328
+
+        public System.Windows.Forms.Label Label328
         {
-            get { return label328.Text; }
-            set { label328.Text = value; }
+            get { return label328; }
+            set { label328 = value; }
         }
-       
         private System.Windows.Forms.Label label329;
-        public string Label329
+        public System.Windows.Forms.Label Label329
         {
-            get { return label329.Text; }
-            set { label329.Text = value; }
+            get { return label329; }
+            set { label329 = value; }
         }
         private System.Windows.Forms.Label label330;
 
-        public string Label330
+        public System.Windows.Forms.Label Label330
         {
-            get { return label330.Text; }
-            set { label330.Text = value; }
+            get { return label330; }
+            set { label330 = value; }
         }
-        
         private System.Windows.Forms.Label label331;
-        public string Label331
+
+        public System.Windows.Forms.Label Label331
         {
-            get { return label331.Text; }
-            set { label331.Text = value; }
+            get { return label331; }
+            set { label331 = value; }
         }
-      
         private System.Windows.Forms.Label label332;
-        public string Label332
+
+        public System.Windows.Forms.Label Label332
         {
-            get { return label332.Text; }
-            set { label332.Text = value; }
+            get { return label332; }
+            set { label332 = value; }
         }
-    
         private System.Windows.Forms.Label label333;
-        public string Label333
+
+        public System.Windows.Forms.Label Label333
         {
-            get { return label333.Text; }
-            set { label333.Text = value; }
+            get { return label333; }
+            set { label333 = value; }
         }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel72;
         private System.Windows.Forms.Label label334;
-        public string Label334
+
+        public System.Windows.Forms.Label Label334
         {
-            get { return label334.Text; }
-            set { label334.Text = value; }
+            get { return label334; }
+            set { label334 = value; }
         }
-        
         private System.Windows.Forms.Label label335;
-        public string Label335
+
+        public System.Windows.Forms.Label Label335
         {
-            get { return label335.Text; }
-            set { label335.Text = value; }
+            get { return label335; }
+            set { label335 = value; }
         }
-       
         private System.Windows.Forms.Label label336;
-        public string Label336
-        {
-            get { return label336.Text; }
-            set { label336.Text = value; }
-        }
-       
-      
-        
         private System.Windows.Forms.Label label337;
-        public string Label337
+
+        public System.Windows.Forms.Label Label337
         {
-            get { return label337.Text; }
-            set { label337.Text = value; }
+            get { return label337; }
+            set { label337 = value; }
         }
         private System.Windows.Forms.Label label338;
-        public string Label338
+
+        public System.Windows.Forms.Label Label338
         {
-            get { return label338.Text; }
-            set { label338.Text = value; }
+            get { return label338; }
+            set { label338 = value; }
         }
-       
         private System.Windows.Forms.Label label339;
-        public string Label339
-        {
-            get { return label339.Text; }
-            set { label339.Text = value; }
-        }
-       
         private System.Windows.Forms.Label label340;
-        public string Label340
+
+        public System.Windows.Forms.Label Label340
         {
-            get { return label340.Text; }
-            set { label340.Text = value; }
+            get { return label340; }
+            set { label340 = value; }
         }
-       
         private System.Windows.Forms.Label label341;
-        public string Label341
+
+        public System.Windows.Forms.Label Label341
         {
-            get { return label341.Text; }
-            set { label341.Text = value; }
+            get { return label341; }
+            set { label341 = value; }
         }
-      
         private System.Windows.Forms.Label label342;
-        public string Label342
+
+        public System.Windows.Forms.Label Label342
         {
-            get { return label342.Text; }
-            set { label342.Text = value; }
+            get { return label342; }
+            set { label342 = value; }
         }
-     
         private System.Windows.Forms.Label label343;
-        public string Label343
+
+        public System.Windows.Forms.Label Label343
         {
-            get { return label343.Text; }
-            set { label343.Text = value; }
+            get { return label343; }
+            set { label343 = value; }
         }
-    
         private System.Windows.Forms.Label label344;
-        public string Label344
+
+        public System.Windows.Forms.Label Label344
         {
-            get { return label344.Text; }
-            set { label344.Text = value; }
+            get { return label344; }
+            set { label344 = value; }
         }
-  
         private System.Windows.Forms.Label label345;
-        public string Label345
+
+        public System.Windows.Forms.Label Label345
         {
-            get { return label345.Text; }
-            set { label345.Text = value; }
+            get { return label345; }
+            set { label345 = value; }
         }
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel73;
         private System.Windows.Forms.Label label346;
@@ -6441,6 +7052,17 @@ namespace steamjazz
         private System.Windows.Forms.Label label368;
         private System.Windows.Forms.Label label369;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton radioButton25;
+        private System.Windows.Forms.RadioButton radioButton26;
+        private System.Windows.Forms.RadioButton radioButton27;
+        private System.Windows.Forms.RadioButton radioButton28;
+        private System.Windows.Forms.RadioButton radioButton29;
+        private System.Windows.Forms.RadioButton radioButton30;
+        private System.Windows.Forms.RadioButton radioButton31;
+        private System.Windows.Forms.RadioButton radioButton32;
+        private System.Windows.Forms.Label label109;
+
     }
 }
 
