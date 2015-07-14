@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Steamjazz
 {
-    class Skill
+    class cSkill
     {
-        public Skill(int Value)
+        public cSkill(int Value)
         {
             BaseValue = Value;
             SkillRankValue = 0;

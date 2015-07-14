@@ -1281,7 +1281,7 @@ namespace Steamjazz
             this.label13.Size = new System.Drawing.Size(16, 17);
             this.label13.TabIndex = 0;
             this.label13.Text = "+";
-            this.label13.Click += new System.EventHandler(this.attributeAdd);
+            this.label13.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label14
             // 
@@ -1292,7 +1292,7 @@ namespace Steamjazz
             this.label14.Size = new System.Drawing.Size(13, 17);
             this.label14.TabIndex = 1;
             this.label14.Text = "-";
-            this.label14.Click += new System.EventHandler(this.attributeTake);
+            this.label14.Click += new System.EventHandler(this.AttributeTake);
             // 
             // label15
             // 
@@ -1303,7 +1303,7 @@ namespace Steamjazz
             this.label15.Size = new System.Drawing.Size(16, 17);
             this.label15.TabIndex = 2;
             this.label15.Text = "+";
-            this.label15.Click += new System.EventHandler(this.attributeAdd);
+            this.label15.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label16
             // 
@@ -1314,7 +1314,7 @@ namespace Steamjazz
             this.label16.Size = new System.Drawing.Size(13, 17);
             this.label16.TabIndex = 3;
             this.label16.Text = "-";
-            this.label16.Click += new System.EventHandler(this.attributeTake);
+            this.label16.Click += new System.EventHandler(this.AttributeTake);
             // 
             // label17
             // 
@@ -1325,7 +1325,7 @@ namespace Steamjazz
             this.label17.Size = new System.Drawing.Size(16, 17);
             this.label17.TabIndex = 4;
             this.label17.Text = "+";
-            this.label17.Click += new System.EventHandler(this.attributeAdd);
+            this.label17.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label18
             // 
@@ -1336,7 +1336,7 @@ namespace Steamjazz
             this.label18.Size = new System.Drawing.Size(13, 17);
             this.label18.TabIndex = 5;
             this.label18.Text = "-";
-            this.label18.Click += new System.EventHandler(this.attributeTake);
+            this.label18.Click += new System.EventHandler(this.AttributeTake);
             // 
             // label19
             // 
@@ -1347,7 +1347,7 @@ namespace Steamjazz
             this.label19.Size = new System.Drawing.Size(16, 17);
             this.label19.TabIndex = 6;
             this.label19.Text = "+";
-            this.label19.Click += new System.EventHandler(this.attributeAdd);
+            this.label19.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label20
             // 
@@ -1358,7 +1358,7 @@ namespace Steamjazz
             this.label20.Size = new System.Drawing.Size(13, 17);
             this.label20.TabIndex = 7;
             this.label20.Text = "-";
-            this.label20.Click += new System.EventHandler(this.attributeTake);
+            this.label20.Click += new System.EventHandler(this.AttributeTake);
             // 
             // label21
             // 
@@ -1369,7 +1369,7 @@ namespace Steamjazz
             this.label21.Size = new System.Drawing.Size(16, 17);
             this.label21.TabIndex = 8;
             this.label21.Text = "+";
-            this.label21.Click += new System.EventHandler(this.attributeAdd);
+            this.label21.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label22
             // 
@@ -1380,7 +1380,7 @@ namespace Steamjazz
             this.label22.Size = new System.Drawing.Size(13, 17);
             this.label22.TabIndex = 9;
             this.label22.Text = "-";
-            this.label22.Click += new System.EventHandler(this.attributeTake);
+            this.label22.Click += new System.EventHandler(this.AttributeTake);
             // 
             // label23
             // 
@@ -1391,7 +1391,7 @@ namespace Steamjazz
             this.label23.Size = new System.Drawing.Size(16, 17);
             this.label23.TabIndex = 10;
             this.label23.Text = "+";
-            this.label23.Click += new System.EventHandler(this.attributeAdd);
+            this.label23.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label24
             // 
@@ -1402,7 +1402,7 @@ namespace Steamjazz
             this.label24.Size = new System.Drawing.Size(13, 17);
             this.label24.TabIndex = 11;
             this.label24.Text = "-";
-            this.label24.Click += new System.EventHandler(this.attributeTake);
+            this.label24.Click += new System.EventHandler(this.AttributeTake);
             // 
             // label25
             // 
@@ -1413,7 +1413,7 @@ namespace Steamjazz
             this.label25.Size = new System.Drawing.Size(16, 17);
             this.label25.TabIndex = 12;
             this.label25.Text = "+";
-            this.label25.Click += new System.EventHandler(this.attributeAdd);
+            this.label25.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label26
             // 
@@ -1424,7 +1424,7 @@ namespace Steamjazz
             this.label26.Size = new System.Drawing.Size(13, 17);
             this.label26.TabIndex = 13;
             this.label26.Text = "-";
-            this.label26.Click += new System.EventHandler(this.attributeTake);
+            this.label26.Click += new System.EventHandler(this.AttributeTake);
             // 
             // label27
             // 
@@ -1435,7 +1435,7 @@ namespace Steamjazz
             this.label27.Size = new System.Drawing.Size(16, 17);
             this.label27.TabIndex = 14;
             this.label27.Text = "+";
-            this.label27.Click += new System.EventHandler(this.attributeAdd);
+            this.label27.Click += new System.EventHandler(this.AttributeAdd);
             // 
             // label28
             // 
@@ -1446,7 +1446,7 @@ namespace Steamjazz
             this.label28.Size = new System.Drawing.Size(13, 17);
             this.label28.TabIndex = 15;
             this.label28.Text = "-";
-            this.label28.Click += new System.EventHandler(this.attributeTake);
+            this.label28.Click += new System.EventHandler(this.AttributeTake);
             // 
             // flowLayoutPanel7
             // 

@@ -21,8 +21,8 @@ namespace Steamjazz
         
     {
         cBackground Background = new cBackground();
-        Skills Skill = new Skills();
-        cCareer Career = new cCareer();
+        cSkills Skill = new cSkills();
+        cCareer Careers = new cCareer();
         cAttributes Attributes = new cAttributes();
 
         object previous;
@@ -38,7 +38,7 @@ namespace Steamjazz
         {
             InitializeComponent();
             //InitializeSkills();
-            attributeChange("10", "10", "10", "10", "10", "10", "10", "10");
+            AttributeChange("10", "10", "10", "10", "10", "10", "10", "10");
             InitializeComboBox();
         }
 
@@ -55,10 +55,6 @@ namespace Steamjazz
         { 
             groupBoxInit();
             backAttribute();
-           
-           
-
-
             
             if (ComboBox2.SelectedIndex == 1 || ComboBox1.SelectedIndex == 4 && ComboBox2.SelectedIndex == 6)
             {
@@ -197,7 +193,7 @@ namespace Steamjazz
                     ComboBox3.Visible = false;
                     break;
             }
-            RichTextBoxTulostus(Background.Nationality(ComboBox2.SelectedIndex,ComboBox1.SelectedIndex));
+            RichTextBoxTulostus(Background.Nationality(ComboBox1.SelectedIndex, ComboBox2.SelectedIndex));
 
         }
         /// <summary>
@@ -205,22 +201,399 @@ namespace Steamjazz
         /// </summary>
         private void InitializeComboBox()
         {
-            // Combobox1 info 
             string[] race = new string[]{"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph"
             ,"Automaton"};
-            ComboBox1.Items.AddRange(race);
-           
-            string[] career = new string[] { "Aristocrat","Artist","Assassin","Banker","Butler","Con Artist","Craftsman","Detective","Druid",
-                "Entertainer","Gangster","Gunner","Hunter","Inventor","Journalist","Law Enforcer","Lawyer","Martial Artist","Mechanic","Mercenary",
-                "Merchant","Musketeer","Officer","Personal Entertainer","Physician","Pirate","Politician","Ranger","Rogue","Sailor","Scholar",
-                "Scout","Servant","Soldier","Spy","Warrior","Wyrodian Priest"};
-            ComboBox4.Items.AddRange(career);
 
             string[] mili = new string[] { "Deserter", "Military Service", "Non-military Service" };
+            ComboBox1.Items.AddRange(race);
+            ComboBox4.Items.AddRange(Careers.Career);
             comboBox5.Items.AddRange(mili);
            
         }
-       
+        public void BackgroundModifiers()
+        {
+            RaceModifiers();
+            SocialModifiers();
+        }
+        private void RaceModifiers()
+        {
+
+
+            switch (ComboBox1.SelectedIndex)
+            {
+                //"Human","Beastfolk","Dracosaurian","Goliath","Kharzul Dwarf","Sylph" ,"Automaton"
+                case 1:
+                    {
+                        // Beastfolk
+                        AttributeChange("emp", -1);
+                        AttributeChange("cha", -2);
+                        //allocate +2 to one of the following attributes: STR, CON, DEX, REF, WIT and +1 to another attribute from the list.
+                        groupBox2Visibility("str", "con", "dex", "ref", "wit");
+                        break;
+                    }
+                case 2:
+                    {
+                        //Dracosaurian CHA -2, REF +1; allocate +1 to one of the following: STR, CON or DEX
+                        AttributeChange("cha", -2);
+                        AttributeChange("ref", 1);
+                        groupBox1Visibility("str", "con", "dex");
+                        break;
+                    }
+                case 3:
+                    {
+                        //Goliath STR +3, CON +3, REF -2, INT -2, WIT -2, CHA -2 Initial STR and CON must be at least 10.
+                        AttributeChange("str", 3);
+                        AttributeChange("con", 3);
+                        AttributeChange("ref", -2);
+                        AttributeChange("int", -2);
+                        AttributeChange("wit", -2);
+                        AttributeChange("cha", -2);
+                        break;
+                    }
+                case 4:
+                    {
+                        //Kharzul Dwarf CON +2, CHA -2 Advantage: low light vision Advantage: mule Disadvantage: slow
+                        AttributeChange("con", 2);
+                        AttributeChange("cha", -2);
+                        break;
+                    }
+                case 5:
+                    {
+                        // Sylph STR -1, DEX +1 Sylphs can jump twice as high and far as humans. Sylphs gain a +1 racial bonus to dodge and athletics. The dodge bonus counts as a rank in the dodge skill for increasing PDM. Disadvantage: Frail
+                        AttributeChange("str", -1);
+                        AttributeChange("dex", 1);
+                        break;
+                    }
+                case 6:
+                    {
+                        //Automaton
+                        break;
+                    }
+
+            }
+        }
+        private void SocialModifiers()
+        {
+            switch (ComboBox2.SelectedIndex)
+                {
+
+                    case 0:
+                        {
+                            //Victoria
+                            switch (ComboBox3.SelectedIndex)
+                            {
+                                case 0:
+                                    {
+                                        // Low  CON, REF or EMP +1 Initial skill ranks: Survival 2, Brawl 1, Stealth 1 15 CP can be used to buy ranks in the following skills: Athletics, Animal Handling, Bluff, Brawl, Cooking, Dodge, First Aid, Forgery, Gaming, Grappling, Handguns, Intimidate, Listen, Melee (Balanced), Melee (Powerful), Spot, Stealth, Survival, Throw or to purchase up to 10 CP worth of acquirable advantages. Starting Wealth level cannot be higher than ‘Well off’.
+                                        groupBox4Visibility("con", "ref", "emp");
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        // Middle DEX, INT or WIT +1 Initial skill ranks: Appraise 2, Persuade 1, Negotiate 1 15 CP can be used to buy ranks in the following skills: Appraise, Bluff, Brawl, Craft (any), Cooking, Negotiate, Etiquette, Handguns, Intimidate, Martial Arts (Victoran Pugilism), Mechanics, Perform (dancing), Persuade, Profession (any), Ride.
+                                        groupBox4Visibility("dex", "int", "wit");
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        // Upper Cost to play: 10CP INT or CHA +1 Initial skill ranks: Etiquette 3, Negotiate 2, Language: Victoran 1 The Starting wealth level of Victoran upper class characters must be Drifter or higher. The 5 CP cost of Drifter has already been calculated into the Background cost and can be further increased with CP during character creation. 15 CP can be used to buy ranks in the following skills: Art (any), Charm, Negotiate, Etiquette, Knowledge: Heraldry, Language (Victoran), Long Guns, Martial Arts (Fencing), Melee (Finesse), Melee (Balanced), Perform (Dancing), Perform (Oratory), Ride, or to improve the Starting wealth level by 10 CP or to purchase the Noble, Victoran advantage.
+                                        groupBox4Visibility("dex", "int", "wit");
+                                        break;
+                                    }
+                            }
+
+                            break;
+                        }
+                    case 1:
+                        {
+                            //Wolfgart
+                            switch (ComboBox3.SelectedIndex)
+                            {
+                                case 0:
+                                    {
+                                        /*STR, CON or INT +1
+                                        Initial skill ranks: Craft (Gunsmithing 2), Craft (any) 1,
+                                        Mechanics 1
+                                        10 CP can be used to buy ranks in the following skills: Animal
+                                        Handling, Brawl, Clockwork, Cooking, Craft (any), Drive, 
+                                        First Aid, Locksmithing, Mechanics, Persuade, Profession (any),
+                                        Ride.
+                                        */
+                                        groupBox4Visibility("str", "con", "int");
+
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        /*STR or DEX +1
+                                        Initial skill ranks: Law: Wulffgart 2, Etiquette 1, Intimidate 1.
+                                        10 CP can be used to buy ranks in the following skills: Animal
+                                        Handling, Athletics, Brawl, Craft (Gunsmithing), Explosives &
+                                        Demolitions, First Aid, Handguns, Intimidate, Law (Wulffgart),
+                                        Leadership, Long Guns, Martial Arts (Wolfbite), Melee
+                                        (Powerful), Ride, Stealth, Strategy/Tactics.
+                                        */
+                                        groupBox4Visibility("str", "dex");
+
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        /*INT or CHA +1
+                                        Initial skill ranks: Etiquette 2, Negotiate 1, Language:
+                                        Wulffgartian 1
+                                        10 CP can be used to buy ranks in the following skills: Charm,
+                                        Negotiate, Etiquette, Intimidate, Language (Wulffgartian), Law
+                                        (Wulffgart), Long Guns, Perform (Dancing), Perform (Oratory),
+                                        Ride, or to improve the Starting wealth level or to purchase the
+                                        Noble, Wulffgartian advantage.
+                                        */
+                                        groupBox4Visibility("int", "cha");
+
+                                        break;
+                                    }
+                            } break;
+                        }
+                    case 4:
+                        {
+                            //Kheiman Empire                        
+                            switch (ComboBox3.SelectedIndex)
+                            {
+                                case 0:
+                                    {
+                                        /*STR, CON or INT +1
+                                        Initial skill ranks: Craft or Profession (any) 2, Knowledge
+                                        (Kheiman religion) 1, Art (any) 1
+                                        15 CP can be used to buy ranks in the following skills: Art
+                                        (any), Athletics, Brawl, Craft (any), Dodge, Mechanics,
+                                        Perform (Dancing), Persuade, Profession (any), Survival.
+                                        */
+                                        groupBox4Visibility("str", "con", "int");
+
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        /* STR, DEX or WIT +1
+                                        Initial skill ranks: Melee (Powerful) 2, Knowledge (Kheiman
+                                        religion) 1, Martial Arts (Kheiman spear) 1
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Athletics, Block, Brawl, Craft (Blacksmithing), Gunsmithing,
+                                        Law (Kheiman), Leadership, Listen, Long Guns, Martial Arts
+                                        (Kheiman spear), Ride, Spot, Survival, Throw, Melee
+                                        (Powerful).
+                                        */
+                                        groupBox4Visibility("str", "dex", "wit");
+
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        /*
+                                         *  INT, WIT, EMP or CHA +1
+                                            Initial skill ranks: Knowledge: Kheiman religion 2, Negotiate 1,
+                                            Language: Kheiman 1.
+                                            15 CP can be used to buy ranks in the following skills:
+                                            Alchemy, Art (any), Clockwork, Negotiate, Etiquette, First Aid,
+                                            Knowledge (any), Law (Kheiman), Leadership, Mechanics,
+                                            Medicine and surgery, Persuade, Teaching, or to improve the
+                                            Starting wealth level.
+                                          */
+                                        groupBox4Visibility("int", "wit", "emp", "cha");
+
+                                        break;
+                                    }
+                            } break;
+                        }
+                    case 2:
+                        {
+                            //Hansenburg
+                            switch (ComboBox3.SelectedIndex)
+                            {
+                                case 0:
+                                    {
+                                        /*CON, INT or EMP +1
+                                        Initial skill ranks: Craft (any) or Profession (any) 2, Appraise 1,
+                                        Persuade 1
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Appraise, Brawl, Clockwork, Cooking, Craft (any), Negotiate,
+                                        Drive, Locksmithing, Mechanics, Melee (Powerful), Persuade,
+                                        Profession (any), Ride.
+                                        */
+                                        groupBox4Visibility("con", "int", "emp");
+
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        /*DEX, WIT or CHA +1
+                                        Initial skill ranks: Appraise 2, Negotiate 1, Persuade 1
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Appraise, Bluff, Cooking, Craft (any), Etiquette, Intimidate,
+                                        Martial Arts (Fencing), Mechanics, Melee (Finesse), Negotiate,
+                                        Persuade, Profession (any), Ride, or to improve the Starting
+                                        wealth level.
+                                        */
+                                        groupBox4Visibility("dex", "wit", "cha");
+
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        /*Cost to play: 20CP
+                                        DEX, CHA or EMP +1
+                                        Initial skill ranks: Appraise 2, Charm 2, Negotiate 2, Etiquette 1.
+                                        Advantage: Noble, Hanseburg
+                                        Starting wealth level: Drifter. This can be further raised with CP
+                                        during character creation.
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Appraise, Art (any), Charm, Etiquette, Knowledge (Heraldry),
+                                        Language (Victoran), Language (Wulffgartian), Martial Arts
+                                        (Fencing), Martial Arts (Hanseburgian Musketeer Fencing),
+                                        Melee (Finesse), Negotiate, Perform (Dancing), Perform
+                                        (Oratory), Persuade, Ride, or to improve the starting wealth
+                                        level.
+                                        */
+                                        groupBox4Visibility("dex", "cha", "emp");
+
+                                        break;
+                                    }
+                            } break;
+                        }
+                    case 5:
+                        {
+                            //Crimson Empire
+                            switch (ComboBox3.SelectedIndex)
+                            {
+                                case 0:
+                                    {
+                                        /*
+                                         * STR, CON or EMP +1
+                                            Initial skill ranks: Persuade 2, Animal Handling 1, Profession
+                                            (farmer) 1
+                                            15 CP can be used to buy ranks in the following skills:
+                                            Animal handling, Brawl, Cooking, Craft (any), Listen, Melee
+                                            (Balanced), Melee (Powerful), Persuade, Profession (farmer),
+                                            Spot, Survival.
+                                            */
+                                        groupBox4Visibility("str", "con", "emp");
+
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        /* STR, DEX or CHA +1
+                                        Initial skill ranks: Melee (Balanced) 2, Dodge 1, Law
+                                        (Crimson) 1
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Archery, Athletics, Brawl, Craft (Blacksmithing), Negotiate,
+                                        Dodge, Intimidate, Law (Crimson), Listen, Martial Art (one
+                                        from Crimson), Melee (Balanced), Melee (Powerful), Persuade,
+                                        Ride, Spot, Strategy/Tactics
+                                        */
+                                        groupBox4Visibility("str", "dex", "cha");
+
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        /*Cost to play: 20 CP
+                                        DEX, INT or WIT +1
+                                        Initial skill ranks: Law (Crimson) 3, Brawl 2, First aid 2,
+                                        Martial Art (any Crimson) 2, Teaching 2, Clockwork 1, Dodge 1
+                                        10 CP can be used to buy ranks in the following skills:
+                                        Athletics, Brawl, Clockwork, Dodge, First aid, Knowledge
+                                        (any), Law (Crimson), Listen, Persuade, Martial art (one from
+                                        Crimson), Melee (Balanced), Melee (Finesse), Melee
+                                        (Powerful), Negotiate, Sense motive, Survival, Teaching,
+                                        Advantage: Crimson monk status
+                                        All characters of the Way of the Black Dragon have this
+                                        advatage. It is worth 10CP and the cost is already calculated
+                                        into the cost of this background package.
+                                        */
+                                        groupBox4Visibility("dex", "int", "wit");
+
+                                        break;
+                                    }
+                            } break;
+                        }
+                    case 3:
+                        {
+                            //Free Islands
+                            switch (ComboBox3.SelectedIndex)
+                            {
+                                case 0:
+                                    {
+                                        /*Any attribute +1
+                                        Initial skill ranks: Athletics 1, Negotiate 1, Persuade 1, Sailing
+                                        1, Sense Motive 1
+                                        15 CP can be used to buy ranks in the following skills:
+                                        Appraise, Athletics, Bluff, Brawl, Craft (any), Navigation,
+                                        Melee (any), Negotiate, Perform (Dancing), Persuade, Sailing,
+                                        Sailing (Airship), Sense Motive, Spot, Survival.
+                                        */
+                                        groupBox4Visibility("str", "con", "dex", "ref", "int", "wit", "cha", "emp");
+
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        AttributeChange("ref", 1);
+
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        GroupBox1.Visible = true;
+                                        RadioButton1.Visible = false;
+                                        RadioButton2.Visible = true;
+                                        RadioButton3.Visible = false;
+                                        RadioButton4.Visible = true;
+                                        RadioButton5.Visible = false;
+                                        RadioButton6.Visible = true;
+                                        RadioButton7.Visible = false;
+                                        RadioButton8.Visible = true;
+
+                                        break;
+                                    }
+                            } break;
+                        }
+                    case 6:
+                        {
+
+                            if (ComboBox3.SelectedIndex == 1)
+                            {
+                                AttributeChange("int", 1);
+
+
+                            }
+                            if (ComboBox3.SelectedIndex == 3)
+                            {
+                                AttributeChange("ref", 1);
+
+                            }
+                            if (ComboBox3.SelectedIndex == 4)
+                            {
+                                AttributeChange("int", 1);
+
+                            }
+                            if (ComboBox3.SelectedIndex == 5)
+                            {
+                                AttributeChange("con", 1);
+
+                            }
+                            if (ComboBox3.SelectedIndex == 6)
+                            {
+                                AttributeChange("con", 1);
+                                AttributeChange("cha", -1);
+
+                            }
+
+                        }
+                        break;
+                }
+            
+        }
        
        
         
@@ -232,7 +605,7 @@ namespace Steamjazz
         /// <param name="e"></param>
         private void button3_Click(Object sender, EventArgs e)
         {
-            DBConnect komento = new DBConnect();
+            cDBConnect komento = new cDBConnect();
             komento.Insert("INSERT INTO info (name, race, background, career, occupation, gender, age, player) VALUES ('" + textBox1.Text + "','" + ComboBox1.Text + "','" + ComboBox3.Text + "','" + ComboBox4.Text + "',' ',' ',' ',' ')");
               
         }
@@ -244,7 +617,7 @@ namespace Steamjazz
         /// <param name="e"></param>
         private void button1_Click(Object sender, EventArgs e)
         {
-            DBConnect komento = new DBConnect();
+            cDBConnect komento = new cDBConnect();
             komento.Insert("UPDATE info SET name='" + textBox1.Text + "', race='" + ComboBox1.Text + "', background='" + ComboBox3.Text + "', career='" + ComboBox4.Text + "', occupation='" + ComboBox4.Text + "', gender='', age='', player='' WHERE ID='" +"'");
         }
 
@@ -264,22 +637,25 @@ namespace Steamjazz
         /// tulostettavan resurssin nimi.
         private void RichTextBoxTulostus(string resurssi)
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            Stream stream = null;
-            try
+            if (resurssi != null)
             {
-                stream = assembly.GetManifestResourceStream(resurssi);
-                using (StreamReader sr = new StreamReader(stream))
+                var assembly = Assembly.GetExecutingAssembly();
+                Stream stream = null;
+                try
+                {
+                    stream = assembly.GetManifestResourceStream(resurssi);
+                    using (StreamReader sr = new StreamReader(stream))
                     {
                         stream = null;
                         String line = sr.ReadToEnd();
                         richTextBox1.Text = line;
                     }
-            }
-            finally
-            {
-                if (stream != null)
-                { stream.Dispose(); }
+                }
+                finally
+                {
+                    if (stream != null)
+                    { stream.Dispose(); }
+                }
             }
             
         }
@@ -310,7 +686,7 @@ namespace Steamjazz
         {
             backAttributeTake();
             groupBoxInit();
-            Background.BackgroundModifiers();
+            BackgroundModifiers();
             
             backPrevious1 = ComboBox1.SelectedIndex;
             backPrevious2 = ComboBox2.SelectedIndex;
@@ -378,40 +754,40 @@ namespace Steamjazz
                 case 1:
                     {
                         //Beatfolk
-                        attributeChange("emp", 1);
-                        attributeChange("cha", 2);
+                        AttributeChange("emp", 1);
+                        AttributeChange("cha", 2);
                         break;
                     }
                 case 2:
                     {
                         //Dracosaurian
-                        attributeChange("cha", 2);
-                        attributeChange("ref", -1);
+                        AttributeChange("cha", 2);
+                        AttributeChange("ref", -1);
                         break;
                     }
                 case 3:
                     {
                         //Goliath STR +3, CON +3, REF -2, INT -2, WIT -2, CHA -2
-                        attributeChange("str", -3);
-                        attributeChange("con", -3);
-                        attributeChange("ref", 2);
-                        attributeChange("int", 2);
-                        attributeChange("wit", 2);
-                        attributeChange("cha", 2);
+                        AttributeChange("str", -3);
+                        AttributeChange("con", -3);
+                        AttributeChange("ref", 2);
+                        AttributeChange("int", 2);
+                        AttributeChange("wit", 2);
+                        AttributeChange("cha", 2);
                         break;
                     }
                 case 4:
                     {
                         // Kharzul Dwarf
-                        attributeChange("cha", 2);
-                        attributeChange("con", -2);
+                        AttributeChange("cha", 2);
+                        AttributeChange("con", -2);
                         break;
                     }
                 case 5:
                     {
                         //Sylph
-                        attributeChange("str", 1);
-                        attributeChange("dex", -1);
+                        AttributeChange("str", 1);
+                        AttributeChange("dex", -1);
                         break;
                     }
                 case 6:
@@ -626,7 +1002,7 @@ namespace Steamjazz
         /// <param name="Wit"></param>
         /// <param name="Cha"></param>
         /// <param name="Emp"></param>
-        public void attributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp)
+        public void AttributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp)
         {
             
             Label6.Text = Str;
@@ -646,7 +1022,7 @@ namespace Steamjazz
         /// halutun attribuutin lyhenne
         /// <param name="change"></param>
         /// haluttu muutos
-        public void attributeChange(string att, int change)
+        public void AttributeChange(string att, int change)
         {
            
             if(att == "str") Label6.Text = Convert.ToString(Convert.ToInt32(Label6.Text) + change);
@@ -665,39 +1041,39 @@ namespace Steamjazz
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void attributeAdd(Object sender, EventArgs e)
+        public void AttributeAdd(Object sender, EventArgs e)
         {
             if (sender==Label13)
             {
-                Attributes.attributeChange("str", 1, Convert.ToInt32(label39.Text), Label6, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label6, label39);
             }
             if (sender == Label15)
             {
-                Attributes.attributeChange("con", 1, Convert.ToInt32(label39.Text), Label8, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label8, label39);
             }
             if (sender == Label17)
             {
-                Attributes.attributeChange("dex", 1, Convert.ToInt32(label39.Text), Label10, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label10, label39);
             }
             if (sender == Label19)
             {
-                Attributes.attributeChange("ref", 1, Convert.ToInt32(label39.Text), Label12, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label12, label39);
             }
             if (sender == Label21)
             {
-                Attributes.attributeChange("int", 1, Convert.ToInt32(label39.Text), Label30, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label30, label39);
             }
             if (sender == Label23)
             {
-                Attributes.attributeChange("wit", 1, Convert.ToInt32(label39.Text), Label33, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label33, label39);
             }
             if (sender == Label25)
             {
-                Attributes.attributeChange("cha", 1, Convert.ToInt32(label39.Text), Label35, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label35, label39);
             }
             if (sender == Label27)
             {
-                Attributes.attributeChange("emp", 1, Convert.ToInt32(label39.Text), Label37, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label37, label39);
             }
         }
         /// <summary>
@@ -705,39 +1081,39 @@ namespace Steamjazz
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void attributeTake(Object sender, EventArgs e)
+        public void AttributeTake(Object sender, EventArgs e)
         {
             if (sender == Label14)
             {//str
-                Attributes.attributeChange("str", -1, Convert.ToInt32(label39.Text),Label6, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text),Label6, label39);
             }
             if (sender == Label16)
             {
-                Attributes.attributeChange("con", -1, Convert.ToInt32(label39.Text),Label8, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text),Label8, label39);
             }
             if (sender == Label18)
             {
-                Attributes.attributeChange("dex", -1, Convert.ToInt32(label39.Text), Label10, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label10, label39);
             }
             if (sender == Label20)
             {
-                Attributes.attributeChange("ref", -1, Convert.ToInt32(label39.Text), Label12, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label12, label39);
             }
             if (sender == Label22)
             {
-                Attributes.attributeChange("int", -1, Convert.ToInt32(label39.Text), Label30, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label30, label39);
             }
             if (sender == Label24)
             {
-                Attributes.attributeChange("wit", -1, Convert.ToInt32(label39.Text), Label33, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label33, label39);
             }
             if (sender == Label26)
             {
-                Attributes.attributeChange("cha", -1, Convert.ToInt32(label39.Text), Label35, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label35, label39);
             }
             if (sender == Label28)
             {
-                Attributes.attributeChange("emp", -1, Convert.ToInt32(label39.Text), Label37, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label37, label39);
             }
         }
         /// <summary>
@@ -747,22 +1123,22 @@ namespace Steamjazz
         /// <param name="e"></param>
          private void radioAdd(Object sender, EventArgs e)
         {
-             if (sender == RadioButton1) attributeChange("str", 1);
-             if (sender == RadioButton2) attributeChange("con", 1);
-             if (sender == RadioButton3 ) attributeChange("dex", 1);
-             if (sender == RadioButton4) attributeChange("ref", 1);
-             if (sender == RadioButton5) attributeChange("int", 1);
-             if (sender == RadioButton6) attributeChange("wit", 1);
-             if (sender == RadioButton7) attributeChange("cha", 1);
-             if (sender == RadioButton8) attributeChange("emp", 1);
-             if (sender == radioButton25) attributeChange("str", 1);
-             if (sender == radioButton27) attributeChange("con", 1);
-             if (sender == radioButton29) attributeChange("dex", 1);
-             if (sender == radioButton31) attributeChange("ref", 1);
-             if (sender == radioButton32) attributeChange("int", 1);
-             if (sender == radioButton30) attributeChange("wit", 1);
-             if (sender == radioButton28) attributeChange("cha", 1);
-             if (sender == radioButton26) attributeChange("emp", 1);
+             if (sender == RadioButton1) AttributeChange("str", 1);
+             if (sender == RadioButton2) AttributeChange("con", 1);
+             if (sender == RadioButton3 ) AttributeChange("dex", 1);
+             if (sender == RadioButton4) AttributeChange("ref", 1);
+             if (sender == RadioButton5) AttributeChange("int", 1);
+             if (sender == RadioButton6) AttributeChange("wit", 1);
+             if (sender == RadioButton7) AttributeChange("cha", 1);
+             if (sender == RadioButton8) AttributeChange("emp", 1);
+             if (sender == radioButton25) AttributeChange("str", 1);
+             if (sender == radioButton27) AttributeChange("con", 1);
+             if (sender == radioButton29) AttributeChange("dex", 1);
+             if (sender == radioButton31) AttributeChange("ref", 1);
+             if (sender == radioButton32) AttributeChange("int", 1);
+             if (sender == radioButton30) AttributeChange("wit", 1);
+             if (sender == radioButton28) AttributeChange("cha", 1);
+             if (sender == radioButton26) AttributeChange("emp", 1);
              radioTake(previous);
              previous = sender;
         }
@@ -775,41 +1151,41 @@ namespace Steamjazz
          {
              if (sender == radioButton9 )
              {//str
-                 attributeChange("str", 2);
+                 AttributeChange("str", 2);
              }
              if (sender == radioButton10)
              {
-                 attributeChange("con", 2);
+                 AttributeChange("con", 2);
                  RadioButton2.Visible = false;
              }
              if (sender == radioButton11)
              {
-                 attributeChange("dex", 2);
+                 AttributeChange("dex", 2);
                  RadioButton3.Visible = false;
              }
              if (sender == radioButton12)
              {
-                 attributeChange("ref", 2);
+                 AttributeChange("ref", 2);
                  RadioButton4.Visible = false;
              }
              if (sender == radioButton13)
              {
-                 attributeChange("int", 2);
+                 AttributeChange("int", 2);
                  RadioButton5.Visible = false;
              }
              if (sender == radioButton14)
              {
-                 attributeChange("wit", 2);
+                 AttributeChange("wit", 2);
                  RadioButton6.Visible = false;
              }
              if (sender == radioButton15)
              {
-                 attributeChange("cha", 2);
+                 AttributeChange("cha", 2);
                  RadioButton7.Visible = false;
              }
              if (sender == radioButton16)
              {
-                 attributeChange("emp", 2);
+                 AttributeChange("emp", 2);
                  RadioButton8.Visible = false;
              }
              radioTake2(previous2);
@@ -823,42 +1199,42 @@ namespace Steamjazz
          {
              if (previous == radioButton9)
              {//str
-                 attributeChange("str", -2);
+                 AttributeChange("str", -2);
                  RadioButton1.Visible = true;
              }
              if (previous == radioButton10)
              {
-                 attributeChange("con", -2);
+                 AttributeChange("con", -2);
                  RadioButton2.Visible = true;
              }
              if (previous == radioButton11)
              {
-                 attributeChange("dex", -2);
+                 AttributeChange("dex", -2);
                  RadioButton3.Visible = true;
              }
              if (previous == radioButton12)
              {
-                 attributeChange("ref", -2);
+                 AttributeChange("ref", -2);
                  RadioButton4.Visible = true;
              }
              if (previous == radioButton13)
              {
-                 attributeChange("int", -2);
+                 AttributeChange("int", -2);
                  RadioButton5.Visible = true;
              }
              if (previous == radioButton14)
              {
-                 attributeChange("wit", -2);
+                 AttributeChange("wit", -2);
                  RadioButton6.Visible = true;
              }
              if (previous == radioButton15)
              {
-                 attributeChange("cha", -2);
+                 AttributeChange("cha", -2);
                  RadioButton7.Visible = true;
              }
              if (previous == radioButton16)
              {
-                 attributeChange("emp", -2);
+                 AttributeChange("emp", -2);
                  RadioButton8.Visible = true;
              }
          }
@@ -870,67 +1246,67 @@ namespace Steamjazz
          {
              if (previous == RadioButton1)
              {//str
-                 attributeChange("str", -1);
+                 AttributeChange("str", -1);
              }
              if (previous == RadioButton2)
              {
-                 attributeChange("con", -1);
+                 AttributeChange("con", -1);
              }
              if (previous == RadioButton3)
              {
-                 attributeChange("dex", -1);
+                 AttributeChange("dex", -1);
              }
              if (previous == RadioButton4)
              {
-                 attributeChange("ref", -1);
+                 AttributeChange("ref", -1);
              }
              if (previous == RadioButton5)
              {
-                 attributeChange("int", -1);
+                 AttributeChange("int", -1);
              }
              if (previous == RadioButton6)
              {
-                 attributeChange("wit", -1);
+                 AttributeChange("wit", -1);
              }
              if (previous == RadioButton7)
              {
-                 attributeChange("cha", -1);
+                 AttributeChange("cha", -1);
              }
              if (previous == RadioButton8)
              {
-                 attributeChange("emp", -1);
+                 AttributeChange("emp", -1);
              }
              if (previous == radioButton25)
              {//str
-                 attributeChange("str", -1);
+                 AttributeChange("str", -1);
              }
              if (previous == radioButton27)
              {
-                 attributeChange("con", -1);
+                 AttributeChange("con", -1);
              }
              if (previous == radioButton29)
              {
-                 attributeChange("dex", -1);
+                 AttributeChange("dex", -1);
              }
              if (previous == radioButton31)
              {
-                 attributeChange("ref", -1);
+                 AttributeChange("ref", -1);
              }
              if (previous == radioButton32)
              {
-                 attributeChange("int", -1);
+                 AttributeChange("int", -1);
              }
              if (previous == radioButton30)
              {
-                 attributeChange("wit", -1);
+                 AttributeChange("wit", -1);
              }
              if (previous == radioButton28)
              {
-                 attributeChange("cha", -1);
+                 AttributeChange("cha", -1);
              }
              if (previous == radioButton26)
              {
-                 attributeChange("emp", -1);
+                 AttributeChange("emp", -1);
              }
 
              
@@ -1110,7 +1486,6 @@ namespace Steamjazz
             }
             if (sender == Label37)
             {
-
                 //EMP
                 Label46.Text = Convert.ToString(Calc(Convert.ToInt32(Label37.Text) - 10));
                 Label62.Text = Label46.Text;
@@ -1120,12 +1495,8 @@ namespace Steamjazz
                 Label191.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(191,Label191.Text, Label46.Text)));
                 SDM();
             }
-            if (sender == Label190)
-            {
+            if (sender == Label190) SDM();
 
-                SDM();
-
-            }
         }      
         /// <summary>
         /// Laskee SDM lasketun attribuutin. 
@@ -1147,77 +1518,77 @@ namespace Steamjazz
         }
         private void AgilitySkillClick(object sender,int change)
         {
-            if (sender == Label81 || sender == Label89) Skill.SkillLabelMod( change, Label213.Text, 73, Label73);
-            if (sender == Label82 || sender == Label90) Skill.SkillLabelMod( change, Label213.Text, 74, Label74);
-            if (sender == Label83 || sender == Label91) Skill.SkillLabelMod( change, Label213.Text, 75, Label75);
-            if (sender == Label84 || sender == Label92) Skill.SkillLabelMod( change, Label213.Text, 76, Label76);
-            if (sender == Label85 || sender == Label93) Skill.SkillLabelMod( change, Label213.Text, 77, Label77);
-            if (sender == Label86 || sender == Label94) Skill.SkillLabelMod( change, Label213.Text, 78, Label78);
+            if (sender == Label81 || sender == Label89) Skill.SkillLabelMod(change, Label213.Text, 73, Label73);
+            if (sender == Label82 || sender == Label90) Skill.SkillLabelMod(change, Label213.Text, 74, Label74);
+            if (sender == Label83 || sender == Label91) Skill.SkillLabelMod(change, Label213.Text, 75, Label75);
+            if (sender == Label84 || sender == Label92) Skill.SkillLabelMod(change, Label213.Text, 76, Label76);
+            if (sender == Label85 || sender == Label93) Skill.SkillLabelMod(change, Label213.Text, 77, Label77);
+            if (sender == Label86 || sender == Label94) Skill.SkillLabelMod(change, Label213.Text, 78, Label78);
 
         }
-        private void SocialSkillClick(object sender)
+        private void SocialSkillClick(object sender, int change)
         {
-            if( sender == label214) Skill.SkillLabelMod( 1, Label213.Text, 161, Label161);
-            if (sender == label215) Skill.SkillLabelMod( 1, Label213.Text, 162, Label162);
-            if (sender == label216) Skill.SkillLabelMod( 1, Label213.Text, 163, Label163);
-            if (sender == label217) Skill.SkillLabelMod( 1, Label213.Text, 164, Label164);
-            if (sender == label218) Skill.SkillLabelMod( 1, Label213.Text, 165, Label165);
-            if (sender == label219) Skill.SkillLabelMod( 1, Label213.Text, 166, Label166);
+            if (sender == label214 || sender == label266) Skill.SkillLabelMod(change, Label213.Text, 161, Label161);
+            if (sender == label215 || sender == label267) Skill.SkillLabelMod(change, Label213.Text, 162, Label162);
+            if (sender == label216 || sender == label268) Skill.SkillLabelMod(change, Label213.Text, 163, Label163);
+            if (sender == label217 || sender == label269) Skill.SkillLabelMod(change, Label213.Text, 164, Label164);
+            if (sender == label218 || sender == label270) Skill.SkillLabelMod(change, Label213.Text, 165, Label165);
+            if (sender == label219 || sender == label271) Skill.SkillLabelMod(change, Label213.Text, 166, Label166);
         }
-        private void IntuitionSkillClick(object sender)
-        { 
-            if (sender == label220) Skill.SkillLabelMod( 1, Label213.Text, 167, Label167);
-            if (sender == label221) Skill.SkillLabelMod( 1, Label213.Text, 168, Label168);
-            if (sender == label222) Skill.SkillLabelMod( 1, Label213.Text, 169, Label169);
-            if (sender == label223) Skill.SkillLabelMod( 1, Label213.Text, 170, Label170);
-            if (sender == label224) Skill.SkillLabelMod( 1, Label213.Text, 171, Label171);
-            if (sender == label225) Skill.SkillLabelMod( 1, Label213.Text, 172, Label172);
-            if (sender == label226) Skill.SkillLabelMod( 1, Label213.Text, 173, Label173);
-        }
-        private void CombatSkillClick(object sender)
+        private void IntuitionSkillClick(object sender, int change)
         {
-            if (sender == label227) Skill.SkillLabelMod(1, Label213.Text, 174, Label174);
-            if (sender == label228) Skill.SkillLabelMod(1, Label213.Text, 175, Label175);
-            if (sender == label229) Skill.SkillLabelMod(1, Label213.Text, 176, Label176);
-            if (sender == label230) Skill.SkillLabelMod(1, Label213.Text, 177, Label177);
-            if (sender == label231) Skill.SkillLabelMod(1, Label213.Text, 178, Label178);
-            if (sender == label232) Skill.SkillLabelMod(1, Label213.Text, 179, Label179);
-            if (sender == label233) Skill.SkillLabelMod(1, Label213.Text, 180, Label180);
-            if (sender == label234) Skill.SkillLabelMod(1, Label213.Text, 181, Label181);
-            if (sender == label235) Skill.SkillLabelMod(1, Label213.Text, 182, Label182);
-            if (sender == label236) Skill.SkillLabelMod(1, Label213.Text, 183, Label183);
-            if (sender == label237) Skill.SkillLabelMod(1, Label213.Text, 184, Label184);
-            if (sender == label238) Skill.SkillLabelMod(1, Label213.Text, 185, Label185);
-            if (sender == label239) Skill.SkillLabelMod(1, Label213.Text, 186, Label186);
-            if (sender == label240) Skill.SkillLabelMod(1, Label213.Text, 187, Label187);
+            if (sender == label220 || sender == label272) Skill.SkillLabelMod(change, Label213.Text, 167, Label167);
+            if (sender == label221 || sender == label273) Skill.SkillLabelMod(change, Label213.Text, 168, Label168);
+            if (sender == label222 || sender == label274) Skill.SkillLabelMod(change, Label213.Text, 169, Label169);
+            if (sender == label223 || sender == label275) Skill.SkillLabelMod(change, Label213.Text, 170, Label170);
+            if (sender == label224 || sender == label276) Skill.SkillLabelMod(change, Label213.Text, 171, Label171);
+            if (sender == label225 || sender == label277) Skill.SkillLabelMod(change, Label213.Text, 172, Label172);
+            if (sender == label226 || sender == label278) Skill.SkillLabelMod(change, Label213.Text, 173, Label173);
         }
-        private void EmpathySkillClick(object sender)
+        private void CombatSkillClick(object sender, int change)
         {
-            if (sender == label241) Skill.SkillLabelMod(1, Label213.Text, 188, Label188);
-            if (sender == label242) Skill.SkillLabelMod(1, Label213.Text, 189, Label189);
-            if (sender == label243) Skill.SkillLabelMod(1, Label213.Text, 190, Label190);
-            if (sender == label244) Skill.SkillLabelMod(1, Label213.Text, 191, Label191);
+            if (sender == label227 || sender == label279) Skill.SkillLabelMod(change, Label213.Text, 174, Label174);
+            if (sender == label228 || sender == label280) Skill.SkillLabelMod(change, Label213.Text, 175, Label175);
+            if (sender == label229 || sender == label281) Skill.SkillLabelMod(change, Label213.Text, 176, Label176);
+            if (sender == label230 || sender == label282) Skill.SkillLabelMod(change, Label213.Text, 177, Label177);
+            if (sender == label231 || sender == label283) Skill.SkillLabelMod(change, Label213.Text, 178, Label178);
+            if (sender == label232 || sender == label284) Skill.SkillLabelMod(change, Label213.Text, 179, Label179);
+            if (sender == label233 || sender == label285) Skill.SkillLabelMod(change, Label213.Text, 180, Label180);
+            if (sender == label234 || sender == label286) Skill.SkillLabelMod(change, Label213.Text, 181, Label181);
+            if (sender == label235 || sender == label287) Skill.SkillLabelMod(change, Label213.Text, 182, Label182);
+            if (sender == label236 || sender == label288) Skill.SkillLabelMod(change, Label213.Text, 183, Label183);
+            if (sender == label237 || sender == label289) Skill.SkillLabelMod(change, Label213.Text, 184, Label184);
+            if (sender == label238 || sender == label290) Skill.SkillLabelMod(change, Label213.Text, 185, Label185);
+            if (sender == label239 || sender == label291) Skill.SkillLabelMod(change, Label213.Text, 186, Label186);
+            if (sender == label240 || sender == label292) Skill.SkillLabelMod(change, Label213.Text, 187, Label187);
         }
-        private void InteligenceSkillClick(object sender)
+        private void EmpathySkillClick(object sender, int change)
         {
-            if (sender == label245) Skill.SkillLabelMod(1, Label213.Text, 192, Label192);
-            if (sender == label246) Skill.SkillLabelMod(1, Label213.Text, 193, Label193);
-            if (sender == label247) Skill.SkillLabelMod(1, Label213.Text, 194, Label194);
-            if (sender == label248) Skill.SkillLabelMod(1, Label213.Text, 195, Label195);
-            if (sender == label249) Skill.SkillLabelMod(1, Label213.Text, 196, Label196);
-            if (sender == label250) Skill.SkillLabelMod(1, Label213.Text, 197, Label197);
-            if (sender == label251) Skill.SkillLabelMod(1, Label213.Text, 198, Label198);
-            if (sender == label252) Skill.SkillLabelMod(1, Label213.Text, 199, Label199);
-            if (sender == label253) Skill.SkillLabelMod(1, Label213.Text, 200, Label200);
-            if (sender == label254) Skill.SkillLabelMod(1, Label213.Text, 201, Label201);
-            if (sender == label255) Skill.SkillLabelMod(1, Label213.Text, 202, Label202);
-            if (sender == label256) Skill.SkillLabelMod(1, Label213.Text, 203, Label203);
-            if (sender == label257) Skill.SkillLabelMod(1, Label213.Text, 204, Label204);
-            if (sender == label258) Skill.SkillLabelMod(1, Label213.Text, 205, Label205);
-            if (sender == label259) Skill.SkillLabelMod(1, Label213.Text, 206, Label206);
-            if (sender == label260) Skill.SkillLabelMod(1, Label213.Text, 207, Label207);
-            if (sender == label261) Skill.SkillLabelMod(1, Label213.Text, 208, Label208);
-            if (sender == label262) Skill.SkillLabelMod(1, Label213.Text, 209, Label209);
+            if (sender == label241 || sender == label293) Skill.SkillLabelMod(change, Label213.Text, 188, Label188);
+            if (sender == label242 || sender == label294) Skill.SkillLabelMod(change, Label213.Text, 189, Label189);
+            if (sender == label243 || sender == label295) Skill.SkillLabelMod(change, Label213.Text, 190, Label190);
+            if (sender == label244 || sender == label296) Skill.SkillLabelMod(change, Label213.Text, 191, Label191);
+        }
+        private void InteligenceSkillClick(object sender,int change)
+        {
+            if (sender == label245 || sender == label297) Skill.SkillLabelMod(change, Label213.Text, 192, Label192);
+            if (sender == label246 || sender == label298) Skill.SkillLabelMod(change, Label213.Text, 193, Label193);
+            if (sender == label247 || sender == label299) Skill.SkillLabelMod(change, Label213.Text, 194, Label194);
+            if (sender == label248 || sender == label300) Skill.SkillLabelMod(change, Label213.Text, 195, Label195);
+            if (sender == label249 || sender == label301) Skill.SkillLabelMod(change, Label213.Text, 196, Label196);
+            if (sender == label250 || sender == label302) Skill.SkillLabelMod(change, Label213.Text, 197, Label197);
+            if (sender == label251 || sender == label303) Skill.SkillLabelMod(change, Label213.Text, 198, Label198);
+            if (sender == label252 || sender == label304) Skill.SkillLabelMod(change, Label213.Text, 199, Label199);
+            if (sender == label253 || sender == label305) Skill.SkillLabelMod(change, Label213.Text, 200, Label200);
+            if (sender == label254 || sender == label306) Skill.SkillLabelMod(change, Label213.Text, 201, Label201);
+            if (sender == label255 || sender == label307) Skill.SkillLabelMod(change, Label213.Text, 202, Label202);
+            if (sender == label256 || sender == label308) Skill.SkillLabelMod(change, Label213.Text, 203, Label203);
+            if (sender == label257 || sender == label309) Skill.SkillLabelMod(change, Label213.Text, 204, Label204);
+            if (sender == label258 || sender == label310) Skill.SkillLabelMod(change, Label213.Text, 205, Label205);
+            if (sender == label259 || sender == label311) Skill.SkillLabelMod(change, Label213.Text, 206, Label206);
+            if (sender == label260 || sender == label312) Skill.SkillLabelMod(change, Label213.Text, 207, Label207);
+            if (sender == label261 || sender == label313) Skill.SkillLabelMod(change, Label213.Text, 208, Label208);
+            if (sender == label262 || sender == label314) Skill.SkillLabelMod(change, Label213.Text, 209, Label209);
         }
         /// <summary>
         /// Tarkastelee skill välilehden + ja - merkkien painalluksia. Tarkistaa painetun labelin ja toimii sen mukaisesti
@@ -1228,219 +1599,32 @@ namespace Steamjazz
         /// perus e event argumentti
         private void SkillClick(object sender, EventArgs e)
         {
-            if (sender == Label81 || sender == Label82 || sender == Label83 || sender == Label84 || sender == Label85 || sender == Label86 || sender == Label89 || sender == Label90 || sender == Label91 || sender == Label92 || sender == Label93 || sender == Label94) AgilitySkillClick(sender,1);
-            if(sender == Label89 || sender == Label90 || sender == Label91 || sender == Label92 || sender == Label93 || sender == Label94) AgilitySkillClick(sender,-1);
-            if (sender == label214 || sender == label215 || sender == label216 || sender == label217 || sender == label218 || sender == label219) SocialSkillClick(sender);
-            if (sender == label220 || sender == label221 || sender == label222 || sender == label223 || sender == label224 || sender == label225 || sender == label226) IntuitionSkillClick(sender);
-            if (sender == label227 || sender == label228 || sender == label229 || sender == label230 || sender == label231 || sender == label232 || sender == label233 || sender == label234 || sender == label235 || sender == label236 || sender == label237 || sender == label238 || sender == label239 || sender == label240) CombatSkillClick(sender);
-            if (sender == label241 || sender == label242 || sender == label243 || sender == label244) EmpathySkillClick(sender);
-            if (sender == label245 || sender == label246 || sender == label247 || sender == label248 || sender == label249 || sender == label250 || sender == label251 || sender == label252 || sender == label253 || sender == label254 || sender == label255 || sender == label256 || sender == label257 || sender == label258 || sender == label259 || sender == label260 || sender == label261 || sender == label262) InteligenceSkillClick(sender);
-            //social
-            if (sender == label266)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 161, Label161);
-            } 
-            if (sender == label267)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 162, Label162);
-            } 
-            if (sender == label268)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 163, Label163);
-            } 
-            if (sender == label269)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 164, Label164);
-            }
-            if (sender == label270)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 165, Label165);
-            }
-            if (sender == label271)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 166, Label166);
-            }
-            //Intuition
-            if (sender == label272)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 167, Label167);
-            } 
-            if (sender == label273)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 168, Label168);
-            } 
-            if (sender == label274)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 169, Label169);
-            } 
-            if (sender == label275)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 170, Label170);
-            }
-            if (sender == label276)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 171, Label171);
-            } 
-            if (sender == label277)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 172, Label172);
-            }
+            //Agility skills
+            if (sender == Label81 || sender == Label82 || sender == Label83 || sender == Label84 || sender == Label85 || sender == Label86 || sender == Label89 || sender == Label90 || sender == Label91 || sender == Label92 || sender == Label93 || sender == Label94) AgilitySkillClick(sender, 1);
+            if(sender == Label89 || sender == Label90 || sender == Label91 || sender == Label92 || sender == Label93 || sender == Label94) AgilitySkillClick(sender, -1);
+
+            //Social skills
+            if (sender == label214 || sender == label215 || sender == label216 || sender == label217 || sender == label218 || sender == label219) SocialSkillClick(sender,1);
+            if (sender == label266 || sender == label267 || sender == label268 || sender == label269 || sender == label270 || sender == label271) SocialSkillClick(sender, -1);
+
+            //Intuition skills
+            if (sender == label220 || sender == label221 || sender == label222 || sender == label223 || sender == label224 || sender == label225 || sender == label226) IntuitionSkillClick(sender, 1);
+            if (sender == label272 || sender == label273 || sender == label274 || sender == label275 || sender == label276 || sender == label277 || sender == label278) IntuitionSkillClick(sender, -1);
+
+            //combat skills
+            if (sender == label227 || sender == label228 || sender == label229 || sender == label230 || sender == label231 || sender == label232 || sender == label233 || sender == label234 || sender == label235 || sender == label236 || sender == label237 || sender == label238 || sender == label239 || sender == label240) CombatSkillClick(sender, 1);
+            if (sender == label279 || sender == label280 || sender == label281 || sender == label282 || sender == label283 || sender == label284 || sender == label285 || sender == label286 || sender == label287 || sender == label288 || sender == label289 || sender == label290 || sender == label291 || sender == label292) CombatSkillClick(sender, -1);
+
+            //Empathy skills
+            if (sender == label241 || sender == label242 || sender == label243 || sender == label244) EmpathySkillClick(sender, 1);
+            if (sender == label293 || sender == label294 || sender == label295 || sender == label296) EmpathySkillClick(sender, -1);
+
+            //Inteligence skills
+            if (sender == label245 || sender == label246 || sender == label247 || sender == label248 || sender == label249 || sender == label250 || sender == label251 || sender == label252 || sender == label253 || sender == label254 || sender == label255 || sender == label256 || sender == label257 || sender == label258 || sender == label259 || sender == label260 || sender == label261 || sender == label262) InteligenceSkillClick(sender, 1);
+            if (sender == label297 || sender == label298 || sender == label299 || sender == label300 || sender == label301 || sender == label302 || sender == label303 || sender == label304 || sender == label305 || sender == label306 || sender == label307 || sender == label308 || sender == label309 || sender == label310 || sender == label311 || sender == label312 || sender == label313 || sender == label314) InteligenceSkillClick(sender, -1);
+
+           
             
-            if (sender == label278)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 173, Label173);
-            } //combat
-            
-            if (sender == label279)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 174, Label174);
-            }
-            if (sender == label280)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 175, Label175);
-            } 
-            if (sender == label281)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 176, Label176);
-            } 
-            if (sender == label282)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 177, Label177);
-            }
-            if (sender == label283)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 178, Label178);
-            } 
-            if (sender == label284)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 179, Label179);
-            }
-            if (sender == label285)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 180, Label180);
-            }
-            if (sender == label286)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 181, Label181);
-            }
-            if (sender == label287)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 182, Label182);
-            }
-            if (sender == label288)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 183, Label183);
-            }
-            if (sender == label289)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 184, Label184);
-            }
-            if (sender == label290)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 185, Label185);
-            }
-            if (sender == label291)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 186, Label186);
-            }
-            if (sender == label292)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 187, Label187);
-            }
-            // empatia ->
-            if (sender == label293)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 188, Label188);
-            }
-
-            if (sender == label294)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 189, Label189);
-            }
-
-            if (sender == label295)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 190, Label190);
-            }
-
-            if (sender == label296)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 191, Label191);
-            }
-            //inteligence 192-212
-            if (sender == label297)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 192, Label192);
-            }
-
-            if (sender == label298)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 193, Label193);
-            }
-            if (sender == label299)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 194, Label194);
-            }
-            if (sender == label300)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 195, Label195);
-            }
-            if (sender == label301)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 196, Label196);
-            }
-            if (sender == label302)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 197, Label197);
-            }
-            if (sender == label303)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 198, Label198);
-            }
-            if (sender == label304)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 199, Label199);
-            }
-            if (sender == label305)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 200, Label200);
-            }
-            if (sender == label306)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 201, Label201);
-            }
-            if (sender == label307)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 202, Label202);
-            }
-            if (sender == label308)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 203, Label203);
-            }
-            if (sender == label309)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 204, Label204);
-            }
-            if (sender == label310)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 205, Label205);
-            }
-            if (sender == label311)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 206, Label206);
-            }
-            if (sender == label312)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 207, Label207);
-            }
-            if (sender == label313)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 208, Label208);
-            }
-            if (sender == label314)
-            {
-                Skill.SkillLabelMod(-1, Label213.Text, 209, Label209);
-            }
         }
         
         /// <summary>
@@ -1475,18 +1659,18 @@ namespace Steamjazz
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            Label322.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[0];
-            Label323.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[1];
-            Label324.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[2];
-            Label325.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[3];
-            Label326.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[4];
-            Label327.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[5];
-            Label328.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[6];
-            Label329.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[7];
-            Label330.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[8];
-            Label331.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[9];
-            Label332.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[10];
-            Label333.Text = Career.CareerSkillNames(ComboBox4.SelectedIndex)[11];
+            Label322.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[0];
+            Label323.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[1];
+            Label324.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[2];
+            Label325.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[3];
+            Label326.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[4];
+            Label327.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[5];
+            Label328.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[6];
+            Label329.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[7];
+            Label330.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[8];
+            Label331.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[9];
+            Label332.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[10];
+            Label333.Text = Careers.CareerSkillNames(ComboBox4.SelectedIndex)[11];
             switch(ComboBox4.SelectedIndex)
             {
                 case 0:

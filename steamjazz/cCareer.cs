@@ -8,8 +8,16 @@ namespace Steamjazz
 {
     class cCareer
     {
-       
-        
+
+        string[] career = new string[] { "Aristocrat","Artist","Assassin","Banker","Butler","Con Artist","Craftsman","Detective","Druid",
+                "Entertainer","Gangster","Gunner","Hunter","Inventor","Journalist","Law Enforcer","Lawyer","Martial Artist","Mechanic","Mercenary",
+                "Merchant","Musketeer","Officer","Personal Entertainer","Physician","Pirate","Politician","Ranger","Rogue","Sailor","Scholar",
+                "Scout","Servant","Soldier","Spy","Warrior","Wyrodian Priest"};
+
+        public string[] Career
+        {
+            get { return career; }
+        }
         public cCareer()
         {
 

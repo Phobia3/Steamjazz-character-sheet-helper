@@ -7,74 +7,74 @@ using System.Windows.Forms;
 
 namespace Steamjazz
 {
-    class Skills
+    class cSkills
     {
-        public Skill[] aSkill = new Skill[60];
+        public cSkill[] aSkill = new cSkill[60];
         int cost = 0;
-        public Skills()
+        public cSkills()
         {
             //agility
-            aSkill[0] = new Skill(8);
-            aSkill[1] = new Skill(8);
-            aSkill[2] = new Skill(8);
-            aSkill[3] = new Skill(8);
-            aSkill[4] = new Skill(8);
-            aSkill[5] = new Skill(7);
+            aSkill[0] = new cSkill(8);
+            aSkill[1] = new cSkill(8);
+            aSkill[2] = new cSkill(8);
+            aSkill[3] = new cSkill(8);
+            aSkill[4] = new cSkill(8);
+            aSkill[5] = new cSkill(7);
             //Social
-            aSkill[6] = new Skill(8);
-            aSkill[7] = new Skill(8);
-            aSkill[8] = new Skill(8);
-            aSkill[9] = new Skill(8);
-            aSkill[10] = new Skill(8);
-            aSkill[11] = new Skill(8);
+            aSkill[6] = new cSkill(8);
+            aSkill[7] = new cSkill(8);
+            aSkill[8] = new cSkill(8);
+            aSkill[9] = new cSkill(8);
+            aSkill[10] = new cSkill(8);
+            aSkill[11] = new cSkill(8);
             //Intuition
-            aSkill[12] = new Skill(8);
-            aSkill[13] = new Skill(10);
-            aSkill[14] = new Skill(7);
-            aSkill[15] = new Skill(7);
-            aSkill[16] = new Skill(8);
-            aSkill[17] = new Skill(8);
-            aSkill[18] = new Skill(8);
+            aSkill[12] = new cSkill(8);
+            aSkill[13] = new cSkill(10);
+            aSkill[14] = new cSkill(7);
+            aSkill[15] = new cSkill(7);
+            aSkill[16] = new cSkill(8);
+            aSkill[17] = new cSkill(8);
+            aSkill[18] = new cSkill(8);
             //combat skills
-            aSkill[19] = new Skill(8);
-            aSkill[20] = new Skill(7);
-            aSkill[21] = new Skill(8);
-            aSkill[22] = new Skill(7);
-            aSkill[23] = new Skill(8);
-            aSkill[24] = new Skill(7);
-            aSkill[25] = new Skill(7);
-            aSkill[26] = new Skill(7);
-            aSkill[27] = new Skill(7);
-            aSkill[28] = new Skill(7);
-            aSkill[29] = new Skill(7);
-            aSkill[30] = new Skill(7);
-            aSkill[31] = new Skill(6);
-            aSkill[32] = new Skill(7);
+            aSkill[19] = new cSkill(8);
+            aSkill[20] = new cSkill(7);
+            aSkill[21] = new cSkill(8);
+            aSkill[22] = new cSkill(7);
+            aSkill[23] = new cSkill(8);
+            aSkill[24] = new cSkill(7);
+            aSkill[25] = new cSkill(7);
+            aSkill[26] = new cSkill(7);
+            aSkill[27] = new cSkill(7);
+            aSkill[28] = new cSkill(7);
+            aSkill[29] = new cSkill(7);
+            aSkill[30] = new cSkill(7);
+            aSkill[31] = new cSkill(6);
+            aSkill[32] = new cSkill(7);
             //empatia 35-38
-            aSkill[33] = new Skill(8);
-            aSkill[34] = new Skill(8);
-            aSkill[35] = new Skill(8);
-            aSkill[36] = new Skill(8);
+            aSkill[33] = new cSkill(8);
+            aSkill[34] = new cSkill(8);
+            aSkill[35] = new cSkill(8);
+            aSkill[36] = new cSkill(8);
             //int 39-59
-            aSkill[37] = new Skill(7);
-            aSkill[38] = new Skill(7);
-            aSkill[39] = new Skill(7);
-            aSkill[40] = new Skill(7);
-            aSkill[41] = new Skill(7);
-            aSkill[42] = new Skill(7);
-            aSkill[43] = new Skill(7);
-            aSkill[44] = new Skill(7);
-            aSkill[45] = new Skill(7);
-            aSkill[46] = new Skill(7);
-            aSkill[47] = new Skill(7);
-            aSkill[48] = new Skill(7);
-            aSkill[49] = new Skill(7);
-            aSkill[50] = new Skill(7);
-            aSkill[51] = new Skill(7);
-            aSkill[52] = new Skill(7);
-            aSkill[53] = new Skill(7);
-            aSkill[54] = new Skill(7);
-            aSkill[55] = new Skill(7);
+            aSkill[37] = new cSkill(7);
+            aSkill[38] = new cSkill(7);
+            aSkill[39] = new cSkill(7);
+            aSkill[40] = new cSkill(7);
+            aSkill[41] = new cSkill(7);
+            aSkill[42] = new cSkill(7);
+            aSkill[43] = new cSkill(7);
+            aSkill[44] = new cSkill(7);
+            aSkill[45] = new cSkill(7);
+            aSkill[46] = new cSkill(7);
+            aSkill[47] = new cSkill(7);
+            aSkill[48] = new cSkill(7);
+            aSkill[49] = new cSkill(7);
+            aSkill[50] = new cSkill(7);
+            aSkill[51] = new cSkill(7);
+            aSkill[52] = new cSkill(7);
+            aSkill[53] = new cSkill(7);
+            aSkill[54] = new cSkill(7);
+            aSkill[55] = new cSkill(7);
 
         }
         

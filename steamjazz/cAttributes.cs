@@ -13,7 +13,7 @@ namespace Steamjazz
         {
 
         }
-        public void attributeChange(string att, int change, int points, Label attributeValue, Label attributePointBuy )
+        public void AttributeChange(int change, int points, Label attributeValue, Label attributePointBuy )
         {
             attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
             attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
