@@ -1045,35 +1045,35 @@ namespace Steamjazz
         {
             if (sender==Label13)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label6, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label6, Label39);
             }
             if (sender == Label15)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label8, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label8, Label39);
             }
             if (sender == Label17)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label10, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label10, Label39);
             }
             if (sender == Label19)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label12, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label12, Label39);
             }
             if (sender == Label21)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label30, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label30, Label39);
             }
             if (sender == Label23)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label33, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label33, Label39);
             }
             if (sender == Label25)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label35, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label35, Label39);
             }
             if (sender == Label27)
             {
-                Attributes.AttributeChange(1, Convert.ToInt32(label39.Text), Label37, label39);
+                Attributes.AttributeChange(1, Convert.ToInt32(Label39.Text), Label37, Label39);
             }
         }
         /// <summary>
@@ -1085,35 +1085,35 @@ namespace Steamjazz
         {
             if (sender == Label14)
             {//str
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text),Label6, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text),Label6, Label39);
             }
             if (sender == Label16)
             {
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text),Label8, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text),Label8, Label39);
             }
             if (sender == Label18)
             {
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label10, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text), Label10, Label39);
             }
             if (sender == Label20)
             {
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label12, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text), Label12, Label39);
             }
             if (sender == Label22)
             {
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label30, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text), Label30, Label39);
             }
             if (sender == Label24)
             {
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label33, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text), Label33, Label39);
             }
             if (sender == Label26)
             {
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label35, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text), Label35, Label39);
             }
             if (sender == Label28)
             {
-                Attributes.AttributeChange(-1, Convert.ToInt32(label39.Text), Label37, label39);
+                Attributes.AttributeChange(-1, Convert.ToInt32(Label39.Text), Label37, Label39);
             }
         }
         /// <summary>
