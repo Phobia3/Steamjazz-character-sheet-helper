@@ -1405,9 +1405,6 @@ namespace Steamjazz
                 Label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(76,Label76.Text, Label54.Text)));
                 Label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(77,Label77.Text, Label54.Text)));
                 Label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(78,Label78.Text, Label54.Text)));
-                //label79.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(79,label79.Text, label54.Text)));
-                //label80.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(80,label80.Text, label54.Text)));
-                //combat skills 2.pt. of agility
                 Label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(174,Label174.Text, Label54.Text)));
                 Label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(175,Label175.Text, Label54.Text)));
                 Label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(176,Label176.Text, Label54.Text)));
