@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Steamjazz
+﻿namespace Steamjazz
 {
-    class cSkill
+    internal class cSkill
     {
         public cSkill(int Value)
         {
@@ -15,7 +9,9 @@ namespace Steamjazz
             AttributeBonusValue = 0;
             SkillValue = BaseValue;
         }
+
         private int skillValue;
+
         public int SkillValue
         {
             get
@@ -24,10 +20,12 @@ namespace Steamjazz
             }
             set
             {
-                if(value>=0) skillValue = value;
+                if (value >= 0) skillValue = value;
             }
         }
+
         private int baseValue;
+
         public int BaseValue
         {
             get
@@ -39,22 +37,26 @@ namespace Steamjazz
                 baseValue = value;
             }
         }
+
         private int attributeBonusValue;
+
         public int AttributeBonusValue
         {
-            get 
-            { 
-                return attributeBonusValue; 
+            get
+            {
+                return attributeBonusValue;
             }
-            set 
-            { 
-                attributeBonusValue = value; 
+            set
+            {
+                attributeBonusValue = value;
             }
         }
+
         private int skillRankValue;
+
         public int SkillRankValue
         {
-            get 
+            get
             {
                 return skillRankValue;
             }
@@ -63,6 +65,7 @@ namespace Steamjazz
                 if (value >= 0) skillRankValue = value;
             }
         }
+
         public void ValueChanged()
         {
             SkillValue = BaseValue + SkillRankValue + AttributeBonusValue;

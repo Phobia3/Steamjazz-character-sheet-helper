@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
 namespace Steamjazz
 {
-    class cDBConnect
+    internal class cDBConnect
     {
         private MySqlConnection yhteys;
         private string server;
@@ -47,7 +42,7 @@ namespace Steamjazz
             }
             catch (MySqlException ex)
             {
-                //When handling errors, you can your application's response based 
+                //When handling errors, you can your application's response based
                 //on the error number.
                 //The two most common error numbers when connecting are as follows:
                 //0: Cannot connect to server.
@@ -56,7 +51,7 @@ namespace Steamjazz
                 switch (ex.Number)
                 {
                     case 0:
-                formi.tulostus("Cannot connect to server.  Contact administrator");
+                        formi.tulostus("Cannot connect to server.  Contact administrator");
                         break;
 
                     case 1045:
@@ -90,15 +85,15 @@ namespace Steamjazz
             {
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(komento, yhteys);
-           
+
                 //Execute command
-                
+
                 cmd.ExecuteNonQuery();
                 //close connection
                 this.CloseConnection();
             }
         }
-       
+
         /*
         //Update statement
         public void Update()

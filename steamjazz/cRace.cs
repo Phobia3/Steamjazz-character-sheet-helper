@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Steamjazz
+﻿namespace Steamjazz
 {
-    class cRace
+    internal class cRace
     {
-        private cNation[] aNation= new cNation[7];
-        public string NationTextFile(int index) { return aNation[index].TextFileString ; }
-        public cRace(string textFile,int selectedIndex)
+        private cNation[] aNation = new cNation[7];
+
+        public string NationTextFile(int index)
+        {
+            return aNation[index].TextFileString;
+        }
+
+        public cRace(string textFile, int selectedIndex)
         {
             textFileString = textFile;
             if (selectedIndex != 6)
@@ -26,22 +25,22 @@ namespace Steamjazz
                     case 1:
                         {
                             aNation[6] = new cNation("Steamjazz.BeastfolkBack.txt");
-                            break; 
+                            break;
                         }
                     case 2:
                         {
                             aNation[6] = new cNation("Steamjazz.DracosaurianBack.txt");
-                            break; 
+                            break;
                         }
                     case 3:
                         {
                             aNation[6] = new cNation("Steamjazz.GoliathBack.txt");
-                            break; 
+                            break;
                         }
                     case 4:
                         {
                             aNation[6] = new cNation("Steamjazz.KharzulDwarfBack.txt");
-                            break; 
+                            break;
                         }
                     case 5:
                         {
@@ -51,8 +50,8 @@ namespace Steamjazz
                 }
             }
         }
+
         private string textFileString;
         public string TextFileString { get { return textFileString; } }
-
     }
 }

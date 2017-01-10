@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Steamjazz
 {
-    class cAttributes
+    internal class cAttributes
     {
         public cAttributes()
         {
-
         }
-        public void AttributeChange(int change, int points, Label attributeValue, Label attributePointBuy )
+
+        public void AttributeChange(int change, int points, Label attributeValue, Label attributePointBuy)
         {
             attributePointBuy.Text = Convert.ToString(pointCalc(Convert.ToInt32(attributeValue.Text), points, change));
             attributeValue.Text = Convert.ToString(Convert.ToInt32(attributeValue.Text) + change);
         }
+
         /// <summary>
         /// Vastaa attribuutin lisäämisen tai vähentämisen vaikutuksesta attribuuttipisteiden määrään.
         /// </summary>
@@ -28,7 +25,7 @@ namespace Steamjazz
         /// <param name="change"></param>
         /// muutoksen määrä
         /// <returns></returns>
-        static int pointCalc(int x, int points, int change)
+        private static int pointCalc(int x, int points, int change)
         {
             int[] hinta = new int[] { 0, 1, 4, 9, 16, 25, 36, 49, 64 };
 
@@ -44,7 +41,6 @@ namespace Steamjazz
             {
                 while (change > 0)
                 {
-
                     points = points - hinta[change];
                     change--;
                 }
@@ -53,20 +49,16 @@ namespace Steamjazz
             {
                 if (change > 0)
                 {
-
                     int diff = 0;
                     diff = x - 10;
 
                     points = points - hinta[diff + change];
-
                 }
                 if (change < 0)
                 {
                     int diff = 0;
                     diff = x - 10;
                     points = points + hinta[diff];
-
-
                 }
             }
             return points;

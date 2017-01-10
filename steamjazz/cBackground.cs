@@ -1,17 +1,9 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Steamjazz.Properties;
-using System.Reflection;
-
-namespace Steamjazz
+﻿namespace Steamjazz
 {
-    class cBackground
+    internal class cBackground
     {
         private cRace[] nations = new cRace[7];
+
         public cBackground()
         {
             nations[0] = new cRace("Steamjazz.Human.txt", 0);
@@ -22,7 +14,9 @@ namespace Steamjazz
             nations[5] = new cRace("Steamjazz.Goliath.txt", 5);
             nations[6] = new cRace("Steamjazz.Automaton.txt", 6);
         }
+
         private string palautus;
+
         public string Palautus
         {
             get
@@ -30,13 +24,13 @@ namespace Steamjazz
             set
             { palautus = value; }
         }
+
         public string Race(int box1SelectedIndex)
         {
-            
             if (box1SelectedIndex == -1) { return null; }
             else { return nations[box1SelectedIndex].TextFileString; }
-            
         }
+
         public string Nationality(int box1SelectedIndex, int box2SelectedIndex)
         {
             if (box1SelectedIndex == -1) { return null; }
@@ -70,112 +64,152 @@ namespace Steamjazz
                 Palautus = "Steamjazz.VictoraUpper.txt";
             }
         }
+
+        private string Wolfgart(int Box3SelectedIndex)
+        {
+            if (Box3SelectedIndex == 0)
+            {
+                //worker
+                return "Steamjazz.WolfgartWorker.txt";
+            }
+            // wolfgart
+            if (Box3SelectedIndex == 1)
+            {
+                return "Steamjazz.WolfgartMilitary.txt";
+            }
+
+            if (Box3SelectedIndex == 2)
+            {
+                // upper class
+                return "Steamjazz.WolfgartUpper.txt";
+            }
+            else
+            {
+                return "Virhe";
+            }
+        }
+
+        private string Kheiman(int Box3SelectedIndex)
+        {
+            //kheiman empire
+            if (Box3SelectedIndex == 0)
+            {
+                // Worker
+                return "Steamjazz.KheimanWorker.txt";
+            }
+            if (Box3SelectedIndex == 1)
+            {
+                //warior
+                return "Steamjazz.KheimanWarior.txt";
+            }
+            if (Box3SelectedIndex == 2)
+            {
+                //clergy
+                return "Steamjazz.KheimanClergy.txt";
+            }
+            else
+            {
+                return "Virhe";
+            }
+        }
+
+        private string Hanseburg(int Box3SelectedIndex)
+        {
+            //hanseburg
+            if (Box3SelectedIndex == 0)
+            {
+                //Worker
+                return "Steamjazz.HanseburgWorker.txt";
+            }
+            if (Box3SelectedIndex == 1)
+            {
+                //merchant
+                return "Steamjazz.HanseburgMerchant.txt";
+            }
+            if (Box3SelectedIndex == 2)
+            {
+                //noble
+                return "Steamjazz.HanseburgNoble.txt";
+            }
+            else
+            {
+                return "Virhe";
+            }
+        }
+
+        private string Crimson(int Box3SelectedIndex)
+        {
+            //crimson empire
+            if (Box3SelectedIndex == 0)
+            {
+                //Monk
+                return "Steamjazz.CrimsonCommoner.txt";
+            }
+            if (Box3SelectedIndex == 1)
+            {
+                //military
+                return "Steamjazz.CrimsonMilitary.txt";
+            }
+            if (Box3SelectedIndex == 2)
+            {
+                //commoner
+                return "Steamjazz.CrimsonMonk.txt";
+            }
+            else
+            {
+                return "Virhe";
+            }
+        }
+
+        private string Island(int Box3SelectedIndex)
+        {
+            if (Box3SelectedIndex == 1)
+            {
+                //island folk
+                return "Steamjazz.FreeIslandFolk.txt";
+            }
+            if (Box3SelectedIndex == 1)
+            {
+                //pirate
+                return "Steamjazz.FreePirate.txt";
+            }
+            //free islands
+            if (Box3SelectedIndex == 2)
+            {
+                //Pelethok
+                return "Steamjazz.FreePelethok.txt";
+            }
+            else
+            {
+                return "Virhe";
+            }
+        }
+
         public string SocialClass(int Box2SelectedIndex, int Box3SelectedIndex)
         {
-            
             //string teksti;
-            if (Box2SelectedIndex==0) VictoraText();
-            if (Box2SelectedIndex==1)
+            if (Box2SelectedIndex == 0) VictoraText();
+            if (Box2SelectedIndex == 1)
             {
-                if (Box3SelectedIndex==0)
-                {
-                    //worker
-                    Palautus = "Steamjazz.WolfgartWorker.txt";
-                }
-                // wolfgart
-                if (Box3SelectedIndex==1)
-                {
-                    Palautus = "Steamjazz.WolfgartMilitary.txt";
-                }
-                
-                if (Box3SelectedIndex==2)
-                {
-                    // upper class
-                    Palautus = "Steamjazz.WolfgartUpper.txt";
-                }
+                Palautus = Wolfgart(Box3SelectedIndex);
             }
-            if (Box2SelectedIndex==4)
+            if (Box2SelectedIndex == 4)
             {
-                //kheiman empire
-                if (Box3SelectedIndex==0)
-                {
-                    // Worker
-                    Palautus = "Steamjazz.KheimanWorker.txt";
-                }
-                if (Box3SelectedIndex==1)
-                {
-                    //warior
-                    Palautus = "Steamjazz.KheimanWarior.txt";
-                }
-                if (Box3SelectedIndex==2)
-                {
-                    //clergy
-                    Palautus = "Steamjazz.KheimanClergy.txt";
-                }
+                Palautus = Kheiman(Box3SelectedIndex);
             }
-            if (Box2SelectedIndex==2)
+            if (Box2SelectedIndex == 2)
             {
-                //hanseburg
-                if (Box3SelectedIndex==0)
-                {
-                    //Worker
-                    Palautus = "Steamjazz.HanseburgWorker.txt";
-                }
-                if (Box3SelectedIndex==1)
-                {
-                    //merchant
-                    Palautus = "Steamjazz.HanseburgMerchant.txt";
-                }
-                if (Box3SelectedIndex==2)
-                {
-                    //noble
-                    Palautus = "Steamjazz.HanseburgNoble.txt";
-                }
+                Palautus = Hanseburg(Box3SelectedIndex);
             }
-            if (Box2SelectedIndex==5)
+            if (Box2SelectedIndex == 5)
             {
-                //crimson empire
-                if (Box3SelectedIndex==0)
-                {
-                    //Monk
-                    Palautus = "Steamjazz.CrimsonCommoner.txt";
-                }
-                if (Box3SelectedIndex==1)
-                {
-                    //military
-                    Palautus = "Steamjazz.CrimsonMilitary.txt";
-                }
-                if (Box3SelectedIndex==2)
-                {
-                    //commoner
-                    Palautus = "Steamjazz.CrimsonMonk.txt";
-                }
+                Palautus = Crimson(Box3SelectedIndex);
             }
-            if (Box2SelectedIndex==3)
+            if (Box2SelectedIndex == 3)
             {
-                if (Box3SelectedIndex==1)
-                {
-                    //island folk
-                    Palautus = "Steamjazz.FreeIslandFolk.txt";
-                }
-                if (Box3SelectedIndex==1)
-                {
-                    //pirate
-                    Palautus = "Steamjazz.FreePirate.txt";
-                }
-                //free islands
-                if (Box3SelectedIndex==2)
-                {
-                    //Pelethok
-                    Palautus = "Steamjazz.FreePelethok.txt";
-                }
-                
-                
-                
+                Palautus = Island(Box3SelectedIndex);
             }
             return Palautus;
         }
-        
     }
 }
-

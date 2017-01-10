@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Steamjazz
 {
-    class cSkills
+    internal class cSkills
     {
         public cSkill[] aSkill = new cSkill[60];
-        int cost = 0;
+        private int cost = 0;
+
         public cSkills()
         {
             //agility
@@ -75,9 +72,8 @@ namespace Steamjazz
             aSkill[53] = new cSkill(7);
             aSkill[54] = new cSkill(7);
             aSkill[55] = new cSkill(7);
-
         }
-        
+
         /// <summary>
         /// laskee attribuuttiboonuksen vaikutuksen taitoihin
         /// </summary>
@@ -93,12 +89,12 @@ namespace Steamjazz
             aSkill[ArrayValue(label)].AttributeBonusValue = Convert.ToInt32(labelBonus);
             aSkill[ArrayValue(label)].ValueChanged();
             return Convert.ToString(aSkill[ArrayValue(label)].SkillValue);
-
         }
+
         private int ArrayValue(int label)
         {
-            int[] index = new int [210];
-            index[73]= 0;
+            int[] index = new int[210];
+            index[73] = 0;
             index[74] = 1;
             index[75] = 2;
             index[76] = 3;
@@ -155,6 +151,7 @@ namespace Steamjazz
             index[209] = 54;
             return index[label];
         }
+
         private string skillChange(string x, int label, int change)
         {
             aSkill[ArrayValue(label)].SkillRankValue = aSkill[ArrayValue(label)].SkillRankValue + change;
@@ -172,18 +169,17 @@ namespace Steamjazz
         /// <returns></returns>
         private bool enough(string pointsBuy, int label)
         {
-
             int point = aSkill[ArrayValue(label)].SkillRankValue;
             int pointBuy = Convert.ToInt32(pointsBuy);
             cost = 0;
             int add = point + 1;
-            while(point>0)
+            while (point > 0)
             {
                 cost = cost + point;
                 point--;
             }
-            cost= cost+add;
-            if(pointBuy>=cost)
+            cost = cost + add;
+            if (pointBuy >= cost)
             {
                 return true;
             }
@@ -192,19 +188,20 @@ namespace Steamjazz
                 return false;
             }
         }
+
         public void SkillLabelMod(int change, string labelPointsLeft, int labelNumber, Label label)
         {
-            if ( enough(labelPointsLeft, labelNumber) == true)
+            if (enough(labelPointsLeft, labelNumber) == true)
             {
                 labelPointsLeft = pointBuy(labelPointsLeft, labelNumber);
                 label.Text = skillChange(label.Text, labelNumber, change);
             }
         }
-        private string pointBuy(string points,int label)
+
+        private string pointBuy(string points, int label)
         {
             string tulos = Convert.ToString(Convert.ToInt32(points) - aSkill[ArrayValue(label)].SkillRankValue - 1);
             return tulos;
         }
-
     }
 }
