@@ -65,7 +65,7 @@
             }
         }
 
-        private string Wolfgart(int Box3SelectedIndex)
+        private static string Wolfgart(int Box3SelectedIndex)
         {
             if (Box3SelectedIndex == 0)
             {
@@ -89,7 +89,7 @@
             }
         }
 
-        private string Kheiman(int Box3SelectedIndex)
+        private static string Kheiman(int Box3SelectedIndex)
         {
             //kheiman empire
             if (Box3SelectedIndex == 0)
@@ -113,7 +113,7 @@
             }
         }
 
-        private string Hanseburg(int Box3SelectedIndex)
+        private static string Hanseburg(int Box3SelectedIndex)
         {
             //hanseburg
             if (Box3SelectedIndex == 0)
@@ -137,7 +137,7 @@
             }
         }
 
-        private string Crimson(int Box3SelectedIndex)
+        private static string Crimson(int Box3SelectedIndex)
         {
             //crimson empire
             if (Box3SelectedIndex == 0)
@@ -161,7 +161,7 @@
             }
         }
 
-        private string Island(int Box3SelectedIndex)
+        private static string Island(int Box3SelectedIndex)
         {
             if (Box3SelectedIndex == 1)
             {

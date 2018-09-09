@@ -1,7 +1,8 @@
+*.exe
+*.psess
+*.html
 steamjazz/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
 steamjazz/bin/Debug/steamjazz.exe
-*.exe
-*.v12.suo
 steamjazz/bin/Debug/steamjazz.pdb
 steamjazz/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 steamjazz/obj/Debug/steamjazz.csproj.FileListAbsolute.txt
@@ -9,8 +10,7 @@ steamjazz/obj/Debug/steamjazz.csproj.GenerateResource.Cache
 steamjazz/obj/Debug/steamjazz.pdb
 steamjazz/obj/Debug/
 steamjazz/bin/Debug/
-/steamjazz/steamjazz_TemporaryKey.pfx
-*.psess
+steamjazz/steamjazz_TemporaryKey.pfx
 /steamjazz150425(1).vsp
 /steamjazz150425.vsp
 /steamjazz/GlobalSuppressions.cs
@@ -20,4 +20,3 @@ steamjazz/bin/Debug/
 /steamjazz/obj/Release
 /ModelingProject1
 /UnitTestProject1/
-
