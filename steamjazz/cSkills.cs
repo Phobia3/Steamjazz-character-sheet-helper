@@ -78,20 +78,18 @@ namespace Steamjazz
         /// laskee attribuuttiboonuksen vaikutuksen taitoihin
         /// </summary>
         /// <param name="label"></param>
-        /// taidon label numero. esim. label73 olisi siis 73
-        /// <param name="labelSkill"></param>
-        /// sisältää attribuutti boonuksen vaikutuksen taitoihin
+        /// taidon label numero. esim. label73 on siis 73
         /// <param name="labelBonus"></param>
         /// varsinainen attribuutti boonus
         /// <returns></returns>
-        public string attBonus(int label, string labelSkill, string labelBonus)
+        public string attBonus(int label, string labelBonus)
         {
             aSkill[ArrayValue(label)].AttributeBonusValue = Convert.ToInt32(labelBonus);
             aSkill[ArrayValue(label)].ValueChanged();
             return Convert.ToString(aSkill[ArrayValue(label)].SkillValue);
         }
 
-        private int ArrayValue(int label)
+        private static int ArrayValue(int label)
         {
             int[] index = new int[210];
             index[73] = 0;
@@ -152,7 +150,7 @@ namespace Steamjazz
             return index[label];
         }
 
-        private string skillChange(string x, int label, int change)
+        private string skillChange(int label, int change)
         {
             aSkill[ArrayValue(label)].SkillRankValue = aSkill[ArrayValue(label)].SkillRankValue + change;
             aSkill[ArrayValue(label)].ValueChanged();
@@ -194,7 +192,7 @@ namespace Steamjazz
             if (enough(labelPointsLeft, labelNumber) == true)
             {
                 labelPointsLeft = pointBuy(labelPointsLeft, labelNumber);
-                label.Text = skillChange(label.Text, labelNumber, change);
+                label.Text = skillChange(labelNumber, change);
             }
         }
 

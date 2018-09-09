@@ -81,16 +81,16 @@ namespace Steamjazz
         /// <param name="Wit"></param>
         /// <param name="Cha"></param>
         /// <param name="Emp"></param>
-        public void AttributeChange(string Str, string Con, string Dex, string Ref, string Int, string Wit, string Cha, string Emp)
+        public void AttributeChange(string str, string con, string dex, string refl, string inte, string wit, string cha, string emp)
         {
-            Label6.Text = Str;
-            Label8.Text = Con;
-            Label10.Text = Dex;
-            Label12.Text = Ref;
-            Label30.Text = Int;
-            Label33.Text = Wit;
-            Label35.Text = Cha;
-            Label37.Text = Emp;
+            Label6.Text = str;
+            Label8.Text = con;
+            Label10.Text = dex;
+            Label12.Text = refl;
+            Label30.Text = inte;
+            Label33.Text = wit;
+            Label35.Text = cha;
+            Label37.Text = emp;
         }
 
         /// <summary>
@@ -166,7 +166,7 @@ namespace Steamjazz
             attributeVisibility(att3, 1);
         }
 
-        public void groupBox2Visibility(string att1, string att2, string att3, string att4, string att5)
+        public void GroupBox2Visibility(string att1, string att2, string att3, string att4, string att5)
         {
             attributeVisibility(att1, 2);
             attributeVisibility(att2, 2);
@@ -175,20 +175,20 @@ namespace Steamjazz
             attributeVisibility(att5, 2);
         }
 
-        public void groupBox4Visibility(string att1, string att2)
+        public void GroupBox4Visibility(string att1, string att2)
         {
             attributeVisibility(att1, 4);
             attributeVisibility(att2, 4);
         }
 
-        public void groupBox4Visibility(string att1, string att2, string att3)
+        public void GroupBox4Visibility(string att1, string att2, string att3)
         {
             attributeVisibility(att1, 4);
             attributeVisibility(att2, 4);
             attributeVisibility(att3, 4);
         }
 
-        public void groupBox4Visibility(string att1, string att2, string att3, string att4)
+        public void GroupBox4Visibility(string att1, string att2, string att3, string att4)
         {
             attributeVisibility(att1, 4);
             attributeVisibility(att2, 4);
@@ -196,7 +196,7 @@ namespace Steamjazz
             attributeVisibility(att4, 4);
         }
 
-        public void groupBox4Visibility(string p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8)
+        public void GroupBox4Visibility(string p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8)
         {
             attributeVisibility(p1, 4);
             attributeVisibility(p2, 4);
@@ -535,18 +535,6 @@ namespace Steamjazz
         {
             cDBConnect komento = new cDBConnect();
             komento.Insert("INSERT INTO info (name, race, background, career, occupation, gender, age, player) VALUES ('" + textBox1.Text + "','" + ComboBox1.Text + "','" + ComboBox3.Text + "','" + ComboBox4.Text + "',' ',' ',' ',' ')");
-        }
-
-        private void CareerClick(object sender, EventArgs e)
-        {
-            if (sender == label346)
-            {
-                Label334.Text = Convert.ToString(Convert.ToInt32(Label334.Text) + 1);
-                if (ComboBox4.SelectedIndex == 0)
-                {
-                    Label163.Text = Label334.Text;
-                }
-            }
         }
 
         private void CombatSkillClick(object sender, int change)
@@ -892,7 +880,7 @@ namespace Steamjazz
                         Drive, Locksmithing, Mechanics, Melee (Powerful), Persuade,
                         Profession (any), Ride.
                         */
-                        groupBox4Visibility("con", "int", "emp");
+                        GroupBox4Visibility("con", "int", "emp");
 
                         break;
                     }
@@ -906,7 +894,7 @@ namespace Steamjazz
                         Persuade, Profession (any), Ride, or to improve the Starting
                         wealth level.
                         */
-                        groupBox4Visibility("dex", "wit", "cha");
+                        GroupBox4Visibility("dex", "wit", "cha");
 
                         break;
                     }
@@ -926,7 +914,7 @@ namespace Steamjazz
                         (Oratory), Persuade, Ride, or to improve the starting wealth
                         level.
                         */
-                        groupBox4Visibility("dex", "cha", "emp");
+                        GroupBox4Visibility("dex", "cha", "emp");
 
                         break;
                     }
@@ -1016,7 +1004,7 @@ namespace Steamjazz
                         (any), Athletics, Brawl, Craft (any), Dodge, Mechanics,
                         Perform (Dancing), Persuade, Profession (any), Survival.
                         */
-                        groupBox4Visibility("str", "con", "int");
+                        GroupBox4Visibility("str", "con", "int");
 
                         break;
                     }
@@ -1031,7 +1019,7 @@ namespace Steamjazz
                         (Kheiman spear), Ride, Spot, Survival, Throw, Melee
                         (Powerful).
                         */
-                        groupBox4Visibility("str", "dex", "wit");
+                        GroupBox4Visibility("str", "dex", "wit");
 
                         break;
                     }
@@ -1047,7 +1035,7 @@ namespace Steamjazz
                             Medicine and surgery, Persuade, Teaching, or to improve the
                             Starting wealth level.
                           */
-                        groupBox4Visibility("int", "wit", "emp", "cha");
+                        GroupBox4Visibility("int", "wit", "emp", "cha");
 
                         break;
                     }
@@ -1104,26 +1092,26 @@ namespace Steamjazz
                 Label54.Text = Label41.Text;
                 Label64.Text = Label41.Text;
                 //agility
-                Label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(73, Label73.Text, Label54.Text)));
-                Label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(74, Label74.Text, Label54.Text)));
-                Label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(75, Label75.Text, Label54.Text)));
-                Label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(76, Label76.Text, Label54.Text)));
-                Label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(77, Label77.Text, Label54.Text)));
-                Label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(78, Label78.Text, Label54.Text)));
-                Label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(174, Label174.Text, Label54.Text)));
-                Label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(175, Label175.Text, Label54.Text)));
-                Label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(176, Label176.Text, Label54.Text)));
-                Label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(177, Label177.Text, Label54.Text)));
-                Label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(178, Label178.Text, Label54.Text)));
-                Label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(179, Label179.Text, Label54.Text)));
-                Label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(180, Label180.Text, Label54.Text)));
-                Label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(181, Label181.Text, Label54.Text)));
-                Label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(182, Label182.Text, Label54.Text)));
-                Label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(183, Label183.Text, Label54.Text)));
-                Label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(184, Label184.Text, Label54.Text)));
-                Label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(185, Label185.Text, Label54.Text)));
-                Label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(186, Label186.Text, Label54.Text)));
-                Label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(187, Label187.Text, Label54.Text)));
+                Label73.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(73, Label54.Text)));
+                Label74.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(74, Label54.Text)));
+                Label75.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(75, Label54.Text)));
+                Label76.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(76, Label54.Text)));
+                Label77.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(77, Label54.Text)));
+                Label78.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(78, Label54.Text)));
+                Label174.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(174, Label54.Text)));
+                Label175.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(175, Label54.Text)));
+                Label176.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(176, Label54.Text)));
+                Label177.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(177, Label54.Text)));
+                Label178.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(178, Label54.Text)));
+                Label179.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(179, Label54.Text)));
+                Label180.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(180, Label54.Text)));
+                Label181.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(181, Label54.Text)));
+                Label182.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(182, Label54.Text)));
+                Label183.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(183, Label54.Text)));
+                Label184.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(184, Label54.Text)));
+                Label185.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(185, Label54.Text)));
+                Label186.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(186, Label54.Text)));
+                Label187.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(187, Label54.Text)));
             }
 
             if (sender == Label12)
@@ -1136,24 +1124,24 @@ namespace Steamjazz
                 //int
                 Label43.Text = Convert.ToString(Calc(Convert.ToInt32(Label30.Text) - 10));
                 Label56.Text = Label43.Text;
-                Label192.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(192, Label192.Text, Label56.Text)));
-                Label193.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(193, Label193.Text, Label56.Text)));
-                Label194.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(194, Label194.Text, Label56.Text)));
-                Label195.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(195, Label195.Text, Label56.Text)));
-                Label196.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(196, Label196.Text, Label56.Text)));
-                Label197.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(197, Label197.Text, Label56.Text)));
-                Label198.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(198, Label198.Text, Label56.Text)));
-                Label199.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(199, Label199.Text, Label56.Text)));
-                Label200.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(200, Label200.Text, Label56.Text)));
-                Label201.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(201, Label201.Text, Label56.Text)));
-                Label202.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(202, Label202.Text, Label56.Text)));
-                Label203.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(203, Label203.Text, Label56.Text)));
-                Label204.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(204, Label204.Text, Label56.Text)));
-                Label205.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(205, Label205.Text, Label56.Text)));
-                Label206.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(206, Label206.Text, Label56.Text)));
-                Label207.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(207, Label207.Text, Label56.Text)));
-                Label208.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(208, Label208.Text, Label56.Text)));
-                Label209.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(209, Label209.Text, Label56.Text)));
+                Label192.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(192, Label56.Text)));
+                Label193.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(193, Label56.Text)));
+                Label194.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(194, Label56.Text)));
+                Label195.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(195, Label56.Text)));
+                Label196.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(196, Label56.Text)));
+                Label197.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(197, Label56.Text)));
+                Label198.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(198, Label56.Text)));
+                Label199.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(199, Label56.Text)));
+                Label200.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(200, Label56.Text)));
+                Label201.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(201, Label56.Text)));
+                Label202.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(202, Label56.Text)));
+                Label203.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(203, Label56.Text)));
+                Label204.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(204, Label56.Text)));
+                Label205.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(205, Label56.Text)));
+                Label206.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(206, Label56.Text)));
+                Label207.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(207, Label56.Text)));
+                Label208.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(208, Label56.Text)));
+                Label209.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(209, Label56.Text)));
                 //label210.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(210,label210.Text, label56.Text)));
                 //label211.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(211,label211.Text, label56.Text)));
                 //label212.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(212,label212.Text, label56.Text)));
@@ -1163,35 +1151,35 @@ namespace Steamjazz
                 Label44.Text = Convert.ToString(Calc(Convert.ToInt32(Label33.Text) - 10));
                 Label58.Text = Label44.Text;
                 //WIT
-                Label167.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(167, Label167.Text, Label58.Text)));
-                Label168.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(168, Label168.Text, Label58.Text)));
-                Label169.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(169, Label169.Text, Label58.Text)));
-                Label170.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(170, Label170.Text, Label58.Text)));
-                Label171.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(171, Label171.Text, Label58.Text)));
-                Label172.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(172, Label172.Text, Label58.Text)));
-                Label173.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(173, Label173.Text, Label58.Text)));
+                Label167.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(167, Label58.Text)));
+                Label168.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(168, Label58.Text)));
+                Label169.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(169, Label58.Text)));
+                Label170.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(170, Label58.Text)));
+                Label171.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(171, Label58.Text)));
+                Label172.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(172, Label58.Text)));
+                Label173.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(173, Label58.Text)));
             }
             if (sender == Label35)
             {
                 Label45.Text = Convert.ToString(Calc(Convert.ToInt32(Label35.Text) - 10));
                 Label60.Text = Label45.Text;
                 //Social
-                Label161.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(161, Label161.Text, Label54.Text)));
-                Label162.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(162, Label162.Text, Label54.Text)));
-                Label163.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(163, Label163.Text, Label54.Text)));
-                Label164.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(164, Label164.Text, Label54.Text)));
-                Label165.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(165, Label165.Text, Label54.Text)));
-                Label166.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(166, Label166.Text, Label54.Text)));
+                Label161.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(161, Label54.Text)));
+                Label162.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(162, Label54.Text)));
+                Label163.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(163, Label54.Text)));
+                Label164.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(164, Label54.Text)));
+                Label165.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(165, Label54.Text)));
+                Label166.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(166, Label54.Text)));
             }
             if (sender == Label37)
             {
                 //EMP
                 Label46.Text = Convert.ToString(Calc(Convert.ToInt32(Label37.Text) - 10));
                 Label62.Text = Label46.Text;
-                Label188.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(188, Label188.Text, Label46.Text)));
-                Label189.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(189, Label189.Text, Label46.Text)));
-                Label190.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(190, Label190.Text, Label46.Text)));
-                Label191.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(191, Label191.Text, Label46.Text)));
+                Label188.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(188, Label46.Text)));
+                Label189.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(189, Label46.Text)));
+                Label190.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(190, Label46.Text)));
+                Label191.Text = Convert.ToString(Convert.ToInt32(Skill.attBonus(191, Label46.Text)));
                 SDM();
             }
             if (sender == Label190) SDM();
@@ -1237,7 +1225,7 @@ namespace Steamjazz
                         AttributeChange("emp", -1);
                         AttributeChange("cha", -2);
                         //allocate +2 to one of the following attributes: STR, CON, DEX, REF, WIT and +1 to another attribute from the list.
-                        groupBox2Visibility("str", "con", "dex", "ref", "wit");
+                        GroupBox2Visibility("str", "con", "dex", "ref", "wit");
                         break;
                     }
                 case 2:
@@ -1432,69 +1420,69 @@ namespace Steamjazz
         /// Poistaa edeltävän valinnan muutokset
         /// </summary>
         /// <param name="previous"></param>
-        private void radioTake(object previous)
+        private void radioTake(object earlier)
         {
-            if (previous == RadioButton1)
+            if (earlier == RadioButton1)
             {//str
                 AttributeChange("str", -1);
             }
-            if (previous == RadioButton2)
+            if (earlier == RadioButton2)
             {
                 AttributeChange("con", -1);
             }
-            if (previous == RadioButton3)
+            if (earlier == RadioButton3)
             {
                 AttributeChange("dex", -1);
             }
-            if (previous == RadioButton4)
+            if (earlier == RadioButton4)
             {
                 AttributeChange("ref", -1);
             }
-            if (previous == RadioButton5)
+            if (earlier == RadioButton5)
             {
                 AttributeChange("int", -1);
             }
-            if (previous == RadioButton6)
+            if (earlier == RadioButton6)
             {
                 AttributeChange("wit", -1);
             }
-            if (previous == RadioButton7)
+            if (earlier == RadioButton7)
             {
                 AttributeChange("cha", -1);
             }
-            if (previous == RadioButton8)
+            if (earlier == RadioButton8)
             {
                 AttributeChange("emp", -1);
             }
-            if (previous == radioButton25)
+            if (earlier == radioButton25)
             {//str
                 AttributeChange("str", -1);
             }
-            if (previous == radioButton27)
+            if (earlier == radioButton27)
             {
                 AttributeChange("con", -1);
             }
-            if (previous == radioButton29)
+            if (earlier == radioButton29)
             {
                 AttributeChange("dex", -1);
             }
-            if (previous == radioButton31)
+            if (earlier == radioButton31)
             {
                 AttributeChange("ref", -1);
             }
-            if (previous == radioButton32)
+            if (earlier == radioButton32)
             {
                 AttributeChange("int", -1);
             }
-            if (previous == radioButton30)
+            if (earlier == radioButton30)
             {
                 AttributeChange("wit", -1);
             }
-            if (previous == radioButton28)
+            if (earlier == radioButton28)
             {
                 AttributeChange("cha", -1);
             }
-            if (previous == radioButton26)
+            if (earlier == radioButton26)
             {
                 AttributeChange("emp", -1);
             }
@@ -1661,7 +1649,7 @@ namespace Steamjazz
                                         (Balanced), Melee (Powerful), Persuade, Profession (farmer),
                                         Spot, Survival.
                                         */
-                                    groupBox4Visibility("str", "con", "emp");
+                                    GroupBox4Visibility("str", "con", "emp");
 
                                     break;
                                 }
@@ -1676,7 +1664,7 @@ namespace Steamjazz
                                     from Crimson), Melee (Balanced), Melee (Powerful), Persuade,
                                     Ride, Spot, Strategy/Tactics
                                     */
-                                    groupBox4Visibility("str", "dex", "cha");
+                                    GroupBox4Visibility("str", "dex", "cha");
 
                                     break;
                                 }
@@ -1696,7 +1684,7 @@ namespace Steamjazz
                                     advatage. It is worth 10CP and the cost is already calculated
                                     into the cost of this background package.
                                     */
-                                    groupBox4Visibility("dex", "int", "wit");
+                                    GroupBox4Visibility("dex", "int", "wit");
 
                                     break;
                                 }
@@ -1718,7 +1706,7 @@ namespace Steamjazz
                                     Melee (any), Negotiate, Perform (Dancing), Persuade, Sailing,
                                     Sailing (Airship), Sense Motive, Spot, Survival.
                                     */
-                                    groupBox4Visibility("str", "con", "dex", "ref", "int", "wit", "cha", "emp");
+                                    GroupBox4Visibility("str", "con", "dex", "ref", "int", "wit", "cha", "emp");
 
                                     break;
                                 }
@@ -1826,19 +1814,19 @@ namespace Steamjazz
                 case 0:
                     {
                         // Low  CON, REF or EMP +1 Initial skill ranks: Survival 2, Brawl 1, Stealth 1 15 CP can be used to buy ranks in the following skills: Athletics, Animal Handling, Bluff, Brawl, Cooking, Dodge, First Aid, Forgery, Gaming, Grappling, Handguns, Intimidate, Listen, Melee (Balanced), Melee (Powerful), Spot, Stealth, Survival, Throw or to purchase up to 10 CP worth of acquirable advantages. Starting Wealth level cannot be higher than ‘Well off’.
-                        groupBox4Visibility("con", "ref", "emp");
+                        GroupBox4Visibility("con", "ref", "emp");
                         break;
                     }
                 case 1:
                     {
                         // Middle DEX, INT or WIT +1 Initial skill ranks: Appraise 2, Persuade 1, Negotiate 1 15 CP can be used to buy ranks in the following skills: Appraise, Bluff, Brawl, Craft (any), Cooking, Negotiate, Etiquette, Handguns, Intimidate, Martial Arts (Victoran Pugilism), Mechanics, Perform (dancing), Persuade, Profession (any), Ride.
-                        groupBox4Visibility("dex", "int", "wit");
+                        GroupBox4Visibility("dex", "int", "wit");
                         break;
                     }
                 case 2:
                     {
                         // Upper Cost to play: 10CP INT or CHA +1 Initial skill ranks: Etiquette 3, Negotiate 2, Language: Victoran 1 The Starting wealth level of Victoran upper class characters must be Drifter or higher. The 5 CP cost of Drifter has already been calculated into the Background cost and can be further increased with CP during character creation. 15 CP can be used to buy ranks in the following skills: Art (any), Charm, Negotiate, Etiquette, Knowledge: Heraldry, Language (Victoran), Long Guns, Martial Arts (Fencing), Melee (Finesse), Melee (Balanced), Perform (Dancing), Perform (Oratory), Ride, or to improve the Starting wealth level by 10 CP or to purchase the Noble, Victoran advantage.
-                        groupBox4Visibility("dex", "int", "wit");
+                        GroupBox4Visibility("dex", "int", "wit");
                         break;
                     }
             }
@@ -1859,7 +1847,7 @@ namespace Steamjazz
                         First Aid, Locksmithing, Mechanics, Persuade, Profession (any),
                         Ride.
                         */
-                        groupBox4Visibility("str", "con", "int");
+                        GroupBox4Visibility("str", "con", "int");
 
                         break;
                     }
@@ -1873,7 +1861,7 @@ namespace Steamjazz
                         Leadership, Long Guns, Martial Arts (Wolfbite), Melee
                         (Powerful), Ride, Stealth, Strategy/Tactics.
                         */
-                        groupBox4Visibility("str", "dex");
+                        GroupBox4Visibility("str", "dex");
 
                         break;
                     }
@@ -1888,7 +1876,7 @@ namespace Steamjazz
                         Ride, or to improve the Starting wealth level or to purchase the
                         Noble, Wulffgartian advantage.
                         */
-                        groupBox4Visibility("int", "cha");
+                        GroupBox4Visibility("int", "cha");
 
                         break;
                     }
